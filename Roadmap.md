@@ -46,7 +46,7 @@ If you would like to get in contact with Benajmin (perhaps join forces?!), you c
 
 ### Financial Support / Bookings
 
-If you would like to provide financial support for NowPad or would like to book Benjamin to continue working on NowPad, here are the usual options:
+If you would like to provide financial support for DocPad or would like to book Benjamin to continue working on NowPad, here are the usual options:
 
 - **Donations**<br/>Donate money to Benjamin Lupton without any expectations
 
