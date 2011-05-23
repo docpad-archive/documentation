@@ -39,19 +39,3 @@ You can use it to provide a browser editing interface for your docpad src direct
 	```
 
 Because docpad watches the src directory for changes, whenever you save a change with filepad, your docpad website will be automatically regenerated :)
-
-
-### Hosting on a Node.js Server
-
-Here is the `server.js` file you'll want:
-
-``` javascript
-// Requires
-var docpad = require('docpad');
-
-// Configuration
-var websitePort = process.env.PORT || 10113;
-
-// Create Instances
-var docpadInstance = docpad.createInstance({port:websitePort});
-```
