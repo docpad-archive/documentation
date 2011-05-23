@@ -14,6 +14,9 @@ This page will talk about things to come, and then provide the mantra about the 
 1. Plugins
 1. Multiple Skeletons
 
+### Improvements
+
+1. Become Entirely Schema-less
 
 ### Markups
 
