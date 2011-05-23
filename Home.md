@@ -1,1 +1,2 @@
-Welcome to the docpad wiki!
+- [Roadmap](https://github.com/balupton/docpad/wiki/Roadmap)
+- [Everything Else](https://github.com/balupton/docpad/wiki/_pages)
