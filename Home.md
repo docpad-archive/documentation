@@ -1,5 +1,6 @@
 - [Roadmap](https://github.com/balupton/docpad/wiki/Roadmap) - Where is DocPad going?
 - [Showcase](https://github.com/balupton/docpad/wiki/Showcase) - Who's using DocPad?
+- [Hosting](https://github.com/balupton/docpad/wiki/Hosting) - Where can I host my DocPad Website?
 - [Plugins](https://github.com/balupton/docpad/wiki/Plugins) - How can I extend DocPad?
 - [Tips & Tricks](https://github.com/balupton/docpad/wiki/Tips-&-Tricks) - Nifty things you can do with DocPad
 - [Everything Else](https://github.com/balupton/docpad/wiki/_pages)
