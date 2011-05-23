@@ -1,2 +1,4 @@
-- [Roadmap](https://github.com/balupton/docpad/wiki/Roadmap)
+- [Roadmap](https://github.com/balupton/docpad/wiki/Roadmap) - Where is DocPad going?
+- [Showcase](https://github.com/balupton/docpad/wiki/Showcase) - Who's using DocPad?
+- [Plugins](https://github.com/balupton/docpad/wiki/Plugins) - How can I extend DocPad?
 - [Everything Else](https://github.com/balupton/docpad/wiki/_pages)
