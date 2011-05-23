@@ -1,7 +1,6 @@
-
 Post your DocPad tips and tricks here.
 
-## Using FilePad as a CMS for DocPad
+### Using FilePad as a CMS for DocPad
 
 [FilePad](https://github.com/balupton/filepad) is a local file browser and editor in your browser. It also utilises [NowPad](github.com/balupton/nowpad) for realtime collaborative editing.
 
