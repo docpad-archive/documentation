@@ -13,18 +13,15 @@ This page will talk about things to come, and then provide the mantra about the 
 1. Query Engine / MongoDB **-completed** 
 1. Plugins
 1. Multiple Skeletons
-
-### Improvements
-
-1. Become Entirely Schema-less
+1. Become Entirely Schema-less **-completed** 
 
 ### Markups
 
 1. Markdown **-completed**
 1. Jade **-completed**
 1. HTML **-completed**
-1. XML
-1. CoffeeScript (as plugin, will use coffee4clients)
+1. XML **-completed**
+1. CoffeeScript (as plugin)
 1. LessCSS (as plugin)
 
 
