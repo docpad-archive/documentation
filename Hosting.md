@@ -76,4 +76,4 @@ Works great with [no.de](http://no.de/) and [nodester](http://nodester.com/)
 
 	3. Login to your domain's DNS manager
 
-	4. Create an A Record for your domain point to that IP address
+	4. Create an A Record for your domain pointing to that IP address
