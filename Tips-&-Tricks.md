@@ -1,5 +1,10 @@
 Post your DocPad tips and tricks here.
 
+### Prevent certain files from being published
+
+Add `ignore: true` to the document meta data. In Jekyll, this is equivalent to doing `published: false`
+
+
 ### Using FilePad as a CMS for DocPad
 
 [FilePad](https://github.com/balupton/filepad) is a local file browser and editor in your browser. It also utilises [NowPad](github.com/balupton/nowpad) for realtime collaborative editing.
