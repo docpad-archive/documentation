@@ -39,7 +39,7 @@ markdownRenderer = class extends BaseRenderer
 
 jadeRenderer = class extends BaseRenderer
   supportedExtensionCombinations: [
-    {in:/^jade$/, out: /^xml|x?html?$/}
+    {in:/^jade$/, out: /^xml|x?html$/}
   ]
   render: (inExtension, outExtension, content) ->
     jade.render content
