@@ -20,4 +20,11 @@ document.md extends layout.html.eco
 document.md
 > md.render(document)
 > document.md (as html)
+
+document.md
+> document.md (as md)
+
+document.html.md
+> htmlFromMd.render(document)
+> document.html (as html)
 ```
