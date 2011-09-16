@@ -53,8 +53,8 @@ ecoRenderer = class extends BaseRenderer
 
 coffeeRenderer = class extends BaseRenderer
   supportedExtensionCombinations: [
-    {in:/^coffee|$/, out: /^js$/}
-    {in:/^js|$/, out: /^cofee$/}
+    {in:/^coffee$/, out: /^js$/}
+    {in:/^js$/, out: /^coffee$/}
   ]
   render: (inExtension, outExtension, content) ->
     if inExtension is 'coffee' and outExtension is 'js'
