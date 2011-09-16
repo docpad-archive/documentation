@@ -28,3 +28,19 @@ document.html.md
 > htmlFromMd.render(document)
 > document.html (as html)
 ```
+
+``` coffeescript
+markdownRenderer = class extends BaseRenderer
+  supportedExtensionCombinations: [
+    {in:/^md|markdown$/, out: /^html$/}
+  ]
+  render: (inExtension, outExtension, content) ->
+    markdown.render content
+
+ecoRenderer = class extends BaseRenderer
+  supportedExtensionCombinations: [
+    {in:/^.*$/, out: /^.*$/}
+  ]
+  render: (inExtension, outExtension, content) ->
+    eco.render content
+```
