@@ -43,4 +43,15 @@ ecoRenderer = class extends BaseRenderer
   ]
   render: (inExtension, outExtension, content) ->
     eco.render content
+
+coffeeRenderer = class extends BaseRenderer
+  supportedExtensionCombinations: [
+    {in:/^coffee|$/, out: /^js$/}
+    {in:/^js|$/, out: /^cofee$/}
+  ]
+  render: (inExtension, outExtension, content) ->
+    if inExtension is 'coffee' and outExtension is 'js'
+      coffee2js.render content
+    if inExtension is 'js' and outExtension is 'coffee'
+      js2coffee.render content
 ```
