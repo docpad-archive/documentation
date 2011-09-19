@@ -8,6 +8,6 @@ The extensions `.html.eco` means process this with Eco and render it as HTML. Al
 Need to find someone with a nerd hat.
 
 
-### Why docpad vs Jekyll, Octopress or Wheat?
+### How does docpad compare VS alternatives like Jekyll, Octopress or Wheat?
 
 Need to find someone with a sales hat.
