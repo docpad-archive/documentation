@@ -1,13 +1,13 @@
 ### What do the extensions mean?
 
-Blah
+The extensions `.html.eco` means process this with Eco and render it as HTML. Alternatively, we can get pretty inventive and do something like this: `.html.md.eco` which means process this with Eco, then Markdown and finally render it as HTML.
 
 
 ### How does docpad actually work?
 
-Blah
+Need to find someone with a nerd hat.
 
 
 ### Why docpad vs Jekyll, Octopress or Wheat?
 
-Blah
+Need to find someone with a sales hat.
