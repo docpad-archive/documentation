@@ -1,13 +1,13 @@
-## What's the deal with the extensions?
+### What do the extensions mean?
 
 Blah
 
 
-## How does docpad actually work?
+### How does docpad actually work?
 
 Blah
 
 
-## Why docpad vs Jekyll, Octopress or Wheat?
+### Why docpad vs Jekyll, Octopress or Wheat?
 
 Blah
