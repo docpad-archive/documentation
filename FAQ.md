@@ -35,6 +35,11 @@ Add the following to your document's meta data
     ignored: true
 
 
+### The growl notifications aren't displaying?
+
+I got confused by this too, turns out you need to download the growl installer from the [growl website](http://growl.info/), and inside it will be another installer at `Extras/growlnotify/growlnotify.pkg` which you need to install too. What this package does it provides command line applications that ability to call growl which is needed as docpad is a command line application.
+
+
 ### I upgraded, and it doesn't work
 
 [Check out the Upgrade Guides here](https://github.com/balupton/docpad/wiki/Upgrading)
