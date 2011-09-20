@@ -18,9 +18,9 @@ If you're using docpad, then definitely introduce yourself here so the community
 ## Contributors
 - **Lele aka El Dios**
   - Lucca, LU, Italy
-  - http://lele.amicofigo.com / https://github.com/eldios / https:/twitter.com/eldios / http://geekli.st/eldios
+  - http://lele.amicofigo.com / https://github.com/eldios / https://twitter.com/eldios / http://geekli.st/eldios
   - *nix senior SysAdmin , NodeJS enthusiast and overall life-hacking dude
-  - I love docpad cause it makes possible to create a site from scratch in a matter of minutes with all the power of Jade, express and the github markdown.. and it's even easier to maintain it! I'm loving it!
+  - I love docpad cause it makes it possible to create a site from scratch in a matter of minutes with all the power of Jade, express and the github markdown.. and it's even easier to maintain it! I'm loving it!
 
 
 ## Community
