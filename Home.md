@@ -2,7 +2,6 @@
 
 Welcome to the lifeblood of DocPad! The community!
 
-IRC: Join the `#docpad` channel on any freenode server :-)
 
 ## [Frequently Asked Questions](https://github.com/balupton/docpad/wiki/FAQ)
 
@@ -33,6 +32,11 @@ Need more power? Check out the extensions people are making for DocPad, or if yo
 ## [Extending DocPad](https://github.com/balupton/docpad/wiki/Extending)
 
 Want to learn how to add your own taste of power to DocPad? This is the place to start. Learn how to extend docpad so it can fit your awesome needs :-)
+
+## [IRC](irc://irc.freenode.net/docpad)
+
+Want to chat? Join the `#docpad` channel on any freenode server :-)
+
 
 ## [Everything Else](https://github.com/balupton/docpad/wiki/_pages)
 
