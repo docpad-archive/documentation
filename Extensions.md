@@ -1,6 +1,6 @@
 It's interesting to see what plugins others have come up with. Link to DocPad plugins here.
 
-## Standard
+## Core
 
 ### Renderers
 
@@ -16,7 +16,7 @@ It's interesting to see what plugins others have come up with. Link to DocPad pl
 - [Related Pages Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/helpers/relations.coffee) - scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents. Access them through `@document.relatedDocuments`
 
 
-## Non-Standard
+## User Created
 
 None yet, start creating!
 
