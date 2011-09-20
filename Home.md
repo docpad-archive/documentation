@@ -1,10 +1,10 @@
 ## Pages
 
 - [FAQ](https://github.com/balupton/docpad/wiki/FAQ) - Frequently Asked Questions
-- [Roadmap](https://github.com/balupton/docpad/wiki/Roadmap) - Where is DocPad going?
-- [Showcase](https://github.com/balupton/docpad/wiki/Showcase) - Who's using DocPad?
+- [Showcase](https://github.com/balupton/docpad/wiki/Showcase) - What has been created with DocPad? :-)
+- [Users](https://github.com/balupton/docpad/wiki/Users) - Who's behind the community? :-)
 - [Hosting](https://github.com/balupton/docpad/wiki/Hosting) - Where can I host my DocPad Website?
-- [Extensions](https://github.com/balupton/docpad/wiki/Extensions) - What extensions already exit?
+- [Extensions](https://github.com/balupton/docpad/wiki/Extensions) - What extensions already exist?
 - [Extending](https://github.com/balupton/docpad/wiki/Extending) - How can I extend DocPad?
 - [Tips & Tricks](https://github.com/balupton/docpad/wiki/Tips-&-Tricks) - Nifty things you can do with DocPad
 - [Everything Else](https://github.com/balupton/docpad/wiki/_pages)
