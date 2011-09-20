@@ -11,3 +11,8 @@ Need to find someone with a nerd hat.
 ### How does docpad compare VS alternatives like Jekyll, Octopress or Wheat?
 
 Need to find someone with a sales hat.
+
+
+### I upgraded, and it doesn't work
+
+[Check out the Upgrade Guides here](https://github.com/balupton/docpad/wiki/Upgrading)
