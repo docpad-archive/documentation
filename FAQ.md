@@ -6,7 +6,7 @@ At the start of each document is an optional area right up the top that looks so
     title: "My awesome blog post"
     ---
 
-That is your document's meta data. It won't be included in the output of the document, as is where you can assign extra data to your document such as title, date, tags, etc.
+That is your document's meta data. It won't be included in the output of the document, and is where you can assign extra data to your document such as title, date, tags, etc.
 
 
 ### Is a document aware of it's meta data?
