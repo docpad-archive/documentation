@@ -4,7 +4,7 @@ If you're using docpad, then definitely introduce yourself here so the community
   - Your location
   - Your websites
   - Your tagline (a 140 character introduction)
-  - Why you love docpad (140 characters)
+  - Why you love docpad (approx. 140 characters)
 
 
 ## Maintainers
