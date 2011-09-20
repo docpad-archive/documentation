@@ -9,7 +9,7 @@ If you're using docpad, then definitely introduce yourself here so the community
 
 ## Maintainers
 
-- Benjamin Lupton
+- **Benjamin Lupton**
   - Sydney, NSW, Australia
   - http://balupton.com / https://github.com/balupton / https://twitter.com/balupton
   - Courageous Web 2.0 Architect, Founder of [Bevry](http://bevry.me). Always learning and improving; appreciates the entire journey; loves life. Hey :)
