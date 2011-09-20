@@ -1,11 +1,10 @@
-
 ## Getting Started
 
 Inside your docpad website directory, create a `plugins` directory. Inside it, create a new file called `my-plugin.coffee` and let it contain the following:
 
 ``` coffeescript
 # Requires
-DocpadPlugin = require "#{__dirname}/../../plugin.coffee"
+DocpadPlugin = require "docpad/plugin.coffee"
 
 # Define Coffee Plugin
 class MyPlugin extends DocpadPlugin
@@ -29,7 +28,7 @@ At the core of it, a renderer is based entirely off the following `render` event
 
 ``` coffeescript
 # Requires
-DocpadPlugin = require "#{__dirname}/../../plugin.coffee"
+DocpadPlugin = require "docpad/plugin.coffee"
 formatter = require 'theFormatterYouWantToUse'
 
 # Define Coffee Plugin
