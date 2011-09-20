@@ -38,3 +38,8 @@ Add the following to your document's meta data
 ### I upgraded, and it doesn't work
 
 [Check out the Upgrade Guides here](https://github.com/balupton/docpad/wiki/Upgrading)
+
+
+### Where can I host my docpad website?
+
+[Check out the Hosting Guide here](https://github.com/balupton/docpad/wiki/Hosting)
