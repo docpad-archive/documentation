@@ -2,6 +2,8 @@ It's interesting to see what plugins others have come up with. Link to DocPad pl
 
 ## Core
 
+These plugins are already bundled with DocPad. This means their included by default :-)
+
 ### Renderers
 
 - [Markdown Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/markdown.coffee) - supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML
@@ -18,7 +20,9 @@ It's interesting to see what plugins others have come up with. Link to DocPad pl
 
 ## User Created
 
-None yet, start creating!
+These plugins you'll have to install manually.
+
+- None yet, start creating!
 
 
 ## Waiting to be implemented
