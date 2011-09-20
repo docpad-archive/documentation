@@ -1,6 +1,6 @@
 If you're using docpad, then definitely introduce yourself here so the community can get to know you :-) Some good details to list are:
 
-- Your name and website
+- Your name
   - Your location
   - Your websites
   - Your tagline (a 140 character introduction)
