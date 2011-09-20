@@ -1,3 +1,5 @@
+## Pages
+
 - [FAQ](https://github.com/balupton/docpad/wiki/FAQ) - Frequently Asked Questions
 - [Roadmap](https://github.com/balupton/docpad/wiki/Roadmap) - Where is DocPad going?
 - [Showcase](https://github.com/balupton/docpad/wiki/Showcase) - Who's using DocPad?
@@ -6,3 +8,7 @@
 - [Extending](https://github.com/balupton/docpad/wiki/Extending) - How can I extend DocPad?
 - [Tips & Tricks](https://github.com/balupton/docpad/wiki/Tips-&-Tricks) - Nifty things you can do with DocPad
 - [Everything Else](https://github.com/balupton/docpad/wiki/_pages)
+
+## Guidelines
+
+This is a community wiki. Which means, **feel FREE to make it better!**
