@@ -10,5 +10,5 @@ It's interesting to see what plugins others have come up with. Link to DocPad pl
 
 ## Helpers
 
-- [Clean Urls Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/helpers/cleanurls.coffee)
-- [Related Pages Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/helpers/relations.coffee)
+- [Clean Urls Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/helpers/cleanurls.coffee) - adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
+- [Related Pages Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/helpers/relations.coffee) - scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents. Access them through `@document.relatedDocuments`
