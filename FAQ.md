@@ -43,3 +43,8 @@ Add the following to your document's meta data
 ### Where can I host my docpad website?
 
 [Check out the Hosting Guide here](https://github.com/balupton/docpad/wiki/Hosting)
+
+
+### Where can I find tutorials about DocPad?
+
+[Check out the Tutorials Page here](https://github.com/balupton/docpad/wiki/Tutorials)
