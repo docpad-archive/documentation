@@ -19,3 +19,8 @@ It's interesting to see what plugins others have come up with. Link to DocPad pl
 ## Non-Standard
 
 None yet, start creating!
+
+
+## Waiting to be implemented
+
+[Here is a list of plugins waiting to be coded up :-)](https://github.com/balupton/docpad/issues?labels=plugin&sort=created&direction=desc&state=open&page=1)
