@@ -2,7 +2,7 @@
 
 Welcome to the lifeblood of DocPad! The community!
 
-Join us on IRC with the `#docpad` channel on any freenode server :-)
+IRC: Join the `#docpad` channel on any freenode server :-)
 
 ## [Frequently Asked Questions](https://github.com/balupton/docpad/wiki/FAQ)
 
