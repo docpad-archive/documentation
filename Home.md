@@ -17,21 +17,31 @@ Discover or post docpad related tutorials and guides here. Great for getting sta
 
 Want to check out websites which are using DocPad, this is the place. Also, as soon as you get your own DocPad website up, be sure to add it here :-)
 
+
 ## [The Community](https://github.com/balupton/docpad/wiki/Users)
 
 Discover the people behind the community here :-) If you're using DocPad, be sure to add yourself to the list as well :-)
+
 
 ## [Events and Competitions](https://github.com/balupton/docpad/wiki/Events)
 
 Looking to learn more about DocPad in real life? Check out the latest events or host your own.
 
+
 ## [Extensions](https://github.com/balupton/docpad/wiki/Extensions)
 
 Need more power? Check out the extensions people are making for DocPad, or if you've made your own, post it here :-)
 
+
 ## [Extending DocPad](https://github.com/balupton/docpad/wiki/Extending)
 
 Want to learn how to add your own taste of power to DocPad? This is the place to start. Learn how to extend docpad so it can fit your awesome needs :-)
+
+
+## [Skeletons and Themes](https://github.com/balupton/docpad/wiki/Skeletons)
+
+Check out the listing of all the different skeletons and themes available for DocPad :-)
+
 
 ## [IRC](irc://irc.freenode.net/docpad)
 
