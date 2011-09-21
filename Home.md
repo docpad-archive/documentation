@@ -21,7 +21,7 @@ Want to check out websites which are using DocPad, this is the place. Also, as s
 
 Discover the people behind the community here :-) If you're using DocPad, be sure to add yourself to the list as well :-)
 
-## [Upcoming and Past Events](https://github.com/balupton/docpad/wiki/Events)
+## [Events and Competitions](https://github.com/balupton/docpad/wiki/Events)
 
 Looking to learn more about DocPad in real life? Check out the latest events or host your own.
 
