@@ -8,9 +8,9 @@ Welcome to the lifeblood of DocPad! The community!
 Got a quick question? Or know a nifty answer that you think others will benefit from. Check out the FAQ.
 
 
-## [Tutorials and Guides](https://github.com/balupton/docpad/wiki/Tutorials)
+## [Articles and Guides](https://github.com/balupton/docpad/wiki/Tutorials)
 
-Discover or post docpad related tutorials and guides here. Great for getting started and learning new things.
+Discover or post docpad related articles and guides here. Great for getting started and learning new things.
 
 
 ## [Showcase and Examples](https://github.com/balupton/docpad/wiki/Showcase)
