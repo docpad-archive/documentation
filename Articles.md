@@ -1,4 +1,4 @@
-Post any tutorials about DocPad here :-)
+Post any articles about DocPad here :-)
 
 ### [Extending DocPad](https://github.com/balupton/docpad/wiki/Extending)
 
