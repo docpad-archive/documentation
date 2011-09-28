@@ -71,7 +71,7 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 - HAML: `!= content` instead of `= content`
 
 
-### Help! I get the error `error: An error occured: Error: Command failed: Error: Cannot find module 'buildr'`
+### Help! I get the error: `Cannot find module 'buildr'`
 
 Run `npm install -g buildr` and that'll fix it. This is because the skeleton you're currently running utilises the buildr plugin, as such we need to have buildr installed.
 
