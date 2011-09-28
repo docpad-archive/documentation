@@ -73,7 +73,7 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 
 ### Help! I get the error: `Cannot find module 'buildr'`
 
-Run `npm install -g buildr; npm install buildr` and that'll fix it. This is because the skeleton you're currently running utilises the buildr plugin, as such we need to have buildr installed.
+Run `npm install buildr` and that'll fix it. This is because the skeleton you're currently running utilises the buildr plugin, as such we need to have buildr installed.
 
 
 ### Help! The growl notifications aren't displaying?
