@@ -71,7 +71,12 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 - HAML: `!= content` instead of `= content`
 
 
-### The growl notifications aren't displaying?
+### Help! I get the error `error: An error occured: Error: Command failed: Error: Cannot find module 'buildr'`
+
+Run `npm install -g buildr` and that'll fix it. This is because the skeleton you're currently running utilises the buildr plugin, as such we need to have buildr installed.
+
+
+### Help! The growl notifications aren't displaying?
 
 I got confused by this too, turns out you need to download the growl installer from the [growl website](http://growl.info/), and inside it will be another installer at `Extras/growlnotify/growlnotify.pkg` which you need to install too. What this package does it provides command line applications that ability to call growl which is needed as docpad is a command line application.
 
