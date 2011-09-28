@@ -14,6 +14,7 @@ These plugins are already bundled with DocPad. This means their included by defa
 
 ### Helpers
 
+- [Buildr Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/helpers/buildr.coffee) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
 - [Clean Urls Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/helpers/cleanurls.coffee) - adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [Related Pages Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/helpers/relations.coffee) - scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents. Access them through `@document.relatedDocuments`
 
