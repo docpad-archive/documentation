@@ -9,7 +9,7 @@ These plugins are already bundled with DocPad. This means their included by defa
 - [Markdown Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/markdown.plugin.coffee) - supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML
 - [Coffee Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/coffee.plugin.coffee) - supports [CoffeeKup](http://coffeekup.org/) to anything and from HTML, and [CoffeeScript](http://jashkenas.github.com/coffee-script/) to and from JavaScript
 - [Eco Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/eco.plugin.coffee) - supports [Eco](https://github.com/sstephenson/eco) to anything
-- [Jade Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/jade.plugin.coffee) - supports [Jade](http://jade-lang.com/) to anything
+- [Jade Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/jade.plugin.coffee) - supports [Jade](http://jade-lang.com/) to anything, and HTML to Jade
 - [HAML Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/haml.plugin.coffee) - supports [HAML](http://haml-lang.com/) to anything
 - [Stylus Plugin](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/stylus.plugin.coffee) - supports [Stylus](http://learnboost.github.com/stylus/) to CSS
 
