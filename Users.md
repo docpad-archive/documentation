@@ -25,4 +25,10 @@ If you're using docpad, then definitely introduce yourself here so the community
 
 ## Community
 
+- **Aaron Powell**
+  - Sydney, Australia
+  - http://www.aaron-powell.com / http://javascriptquiz.com / https://github.com/aaronpowell / http://twitter.com/slace
+  - .NET developer, CMS nut and JavaScript fanboi
+  - Simple to use and I can do an entire website in JavaScript!
+
 Get introducing!
