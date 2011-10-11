@@ -4,7 +4,7 @@ Inside your docpad website directory, create a `plugins` directory. Inside it, c
 
 ``` coffeescript
 # Requires
-DocpadPlugin = require "docpad/plugin.coffee"
+DocpadPlugin = require "docpad/lib/plugin.coffee"
 
 # Define Coffee Plugin
 class MyPlugin extends DocpadPlugin
@@ -22,13 +22,13 @@ It's also a good idea to take a look at [what's inside the base plugin](https://
 
 ## Writing a renderer
 
-Renderers are used to convert one particular type of text format, to another type. For instance, to convert markdown content to HTML - [such a plugin is already included by docpad](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/markdown.coffee)
+Renderers are used to convert one particular type of text format, to another type. For instance, to convert markdown content to HTML - [such a plugin is already included by docpad](https://github.com/balupton/docpad/blob/master/lib/plugins/renderers/markdown.plugin.coffee)
 
 At the core of it, a renderer is based entirely off the following `render` event:
 
 ``` coffeescript
 # Requires
-DocpadPlugin = require "docpad/plugin.coffee"
+DocpadPlugin = require "docpad/lib/plugin.coffee"
 formatter = require 'theFormatterYouWantToUse'
 
 # Define Coffee Plugin
