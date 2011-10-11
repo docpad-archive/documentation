@@ -80,6 +80,30 @@ Run `npm install buildr` and that'll fix it. This is because the skeleton you're
 
 I got confused by this too, turns out you need to download the growl installer from the [growl website](http://growl.info/), and inside it will be another installer at `Extras/growlnotify/growlnotify.pkg` which you need to install too. What this package does it provides command line applications that ability to call growl which is needed as docpad is a command line application.
 
+### What is the list of properties on the default Document object?
+
+Here's a list of what you'll have on the `Document` object that is passed into a template (unless you've added your own :P):
+
+* fullPath
+* relativePath
+* extensions
+* tags
+* relatedDocuments
+* date
+* basename
+* extension
+* extensionRendered
+* filename
+* content
+* contentSrc
+* contentRaw
+* contentRendered
+* relativeBase
+* title
+* slug
+* id
+* url
+* layout
 
 ### I upgraded, and it doesn't work
 
