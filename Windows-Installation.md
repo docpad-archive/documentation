@@ -13,6 +13,7 @@ This guide will describe how to set up docpad to work under windows using the na
     1. Download the package you want from the [npm repository](http://search.npmjs.org/)
     2. Extract it to the packages folder
 8. You'll be busy for a while. But if you satisfy all dependencies, you should be fine.
+9. Lastly, to have a docpad executable in your path, you repeat the hint from 5.), adding this time the path to the bin/docgen script inbetween the parameters and the coffee script.
 
 ## Pitfalls  ##
 There are some pitfalls you have to workaround.
