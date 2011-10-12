@@ -11,3 +11,7 @@ FilePad is a local file browser and editor in your browser. It also utilises Now
 ### [Static Templates with Static HTML and Node.js](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html)
 
 Great writeup about the purpose of DocPad.
+
+### [Windows Installation](https://github.com/balupton/docpad/wiki/Windows-Installation)
+
+How to set up docpad on windows
