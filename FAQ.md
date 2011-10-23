@@ -81,6 +81,13 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 Run `npm install buildr` and that'll fix it. This is because the skeleton you're currently running utilises the buildr plugin, as such we need to have buildr installed.
 
 
+### Help! I get a whole bunch of npm / missing module/package / installation failed errors
+
+If your using [DropBox](http://db.tt/RxyNWZw) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
+
+If you're still experiencing issues, then be sure to post about it on the [issue tracker](https://github.com/balupton/docpad/issues).
+
+
 ### Help! The growl notifications aren't displaying?
 
 I got confused by this too, turns out you need to download the growl installer from the [growl website](http://growl.info/), and inside it will be another installer at `Extras/growlnotify/growlnotify.pkg` which you need to install too. What this package does it provides command line applications that ability to call growl which is needed as docpad is a command line application.
