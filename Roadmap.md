@@ -1,8 +1,5 @@
 This page serves as a roadmap that details the approximate milestones of DocPad's future.
 
-For released versions, refer to the "History" section of https://github.com/balupton/docpad
-
-
 ## Upcoming
 
 
