@@ -14,12 +14,12 @@ Version structure and timelines:
 
 ## Version 4
 
-Version 4 will enter the SaaS market. Allowing people to create their website entirely in the cloud.
+Version 4 will enter the SaaS market, allowing people to create their website entirely in the cloud.
 
 
 ## Version 3
 
-Version 3 focuses on connecting the community.
+Version 3 focuses on connecting the community, and building a profitable business for everyone around docpad.
 
 ### v3.1
 
