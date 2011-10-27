@@ -14,7 +14,7 @@ Version structure and timelines:
 
 ## Version 4
 
-Version 4 will enter the SaaS market, allowing people to create their website entirely in the cloud.
+Version 4 enters the SaaS market, allowing people to create their website entirely in the cloud.
 
 ### v4.0
 
