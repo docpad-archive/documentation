@@ -19,7 +19,7 @@ Version 4 will enter the SaaS market, allowing people to create their website en
 
 ## Version 3
 
-Version 3 focuses on connecting the community, and building a profitable business for everyone around docpad.
+Version 3 focuses on connecting the community.
 
 ### v3.1
 
