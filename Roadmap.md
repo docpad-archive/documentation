@@ -12,7 +12,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 			1. Selecting your skeleton
 			2. Selecting your plugins
 			3. Configuring docpad and plugins
-			4. Importing content from an existing source
+			4. Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
 	- Mission Control
 		- News, Blog, Polls, Stats, Resources (tutorials, screencasts, etc), Plugin Repository etc
 		- Plugin + Config administration
