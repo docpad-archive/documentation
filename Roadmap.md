@@ -15,6 +15,7 @@ For released versions, refer to the "History" section of https://github.com/balu
        1. Selecting your skeleton
        2. Selecting your plugins
        3. Configuring docpad and plugins
+       4. Importing content from an existing source
   - Mission Control
     - News, Blog, Polls, Stats, Resources (tutorials, screencasts, etc), Plugin Repository etc
     - Plugin + Config administration
