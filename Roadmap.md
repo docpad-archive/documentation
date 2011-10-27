@@ -2,6 +2,12 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 
 On your first read of this, you probably want to read it starting at the bottom and working your way up. That way you'll reading things in their planned released order. Instead of big picture to small picture.
 
+Version structure and timelines:
+
+- Version structure is Major.Minor.Patch
+- Major.Minor releases are estimated to take 2-4 weeks to complete
+- Major releases are estimated to take 4-8 weeks to complete.
+
 
 # Upcoming
 
