@@ -1,6 +1,6 @@
 This page serves as a roadmap that details the approximate milestones of DocPad's future.
 
-On your first read of this, you probably want to read it starting at the bottom and working your way up. That way you'll reading things in their planned released order. Instead of big picture to small picture.
+If this is your first read of this document, you'll probably want to read it starting at the bottom and working your way up. That way you'll be reading things in their planned released order. Instead of big picture to small picture.
 
 Version structure and timelines:
 
