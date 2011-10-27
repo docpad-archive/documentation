@@ -6,7 +6,8 @@ Version structure and timelines:
 
 - Version structure is Major.Minor.Patch
 - Major.Minor releases are estimated to take 2-4 weeks to complete
-- Major releases are estimated to take 4-8 weeks to complete.
+- Major releases are estimated to take 4-8 weeks to complete
+- Features may not be developed in order - remember this is only a guideline
 
 
 # Upcoming
