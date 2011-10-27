@@ -1,4 +1,3 @@
-
 ## Upcoming
 
 
@@ -22,9 +21,9 @@
   - Uses GitHub for authentication, validates email address against `package.json` maintainers
   - Adds in some client-side javascript
   - Login window trigger by `ctrl/cmd+shift+l`
-  - Utilises contentEditable with semantic properties to update** - done**
+  - Utilises contentEditable with semantic properties to update **- done**
 - REST Plugin
-  - Support read and write of files** - done**
+  - Support read and write of files **- done**
   - Requires some sort of authentication method... to be decided
 
 
