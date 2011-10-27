@@ -24,7 +24,7 @@ These plugins are already bundled with DocPad. This means their included by defa
 
 These plugins you'll have to install manually.
 
-- None yet, start creating!
+- [Markdown Reference Links](https://github.com/Delapouite/docpad-markdownreferencelinks) - provides a way to put links references into the header of a document so they can be used later inside its markdown content.
 
 
 ## Waiting to be implemented
