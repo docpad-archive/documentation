@@ -1,5 +1,7 @@
 This page serves as a roadmap that details the approximate milestones of DocPad's future.
 
+For released versions, refer to the "History" section of https://github.com/balupton/docpad
+
 
 ## Upcoming
 
@@ -37,6 +39,3 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
   - When the plugin is used, docpad will do a `cd $pluginDir; npm install`
 - Plugins and DocPad configurable through project's `package.json`
 - Plugins and DocPad configurable through project's `docpad.coffee`
-
-
-For released versions, refer to the "History" section of https://github.com/balupton/docpad
