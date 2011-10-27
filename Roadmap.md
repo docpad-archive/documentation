@@ -16,6 +16,13 @@ Version structure and timelines:
 
 Version 4 will enter the SaaS market, allowing people to create their website entirely in the cloud.
 
+### v4.0
+
+- Front-End Administration Plugin
+	- Support adding and removing of resources
+	- Support adding and removing of documents
+	- Support adding and removing of files (includes uploading if in the cloud)
+
 
 ## Version 3
 
@@ -45,13 +52,6 @@ Version 3 focuses on connecting the community.
 ## Version 2
 
 Version 2 focuses on ease of use. This is done with the addition of front-end administration, and the introduction of a web interface for installing and configuring your docpad instance.
-
-### v2.x
-
-- Front-End Administration Plugin
-	- Support adding and removing of resources
-	- Support adding and removing of documents
-	- Support adding and removing of files (includes uploading if in the cloud)
 
 
 ### v2.4
