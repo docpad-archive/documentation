@@ -1,5 +1,7 @@
 So you want to try out the latest and greatest DocPad version, we could sure do with the help! :D
 
+The current docpad version for testing is **version 2.0**, available on the **dev** branch.
+
 
 ## Warning
 
