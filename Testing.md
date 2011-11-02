@@ -3,7 +3,7 @@ So you want to try out the latest and greatest DocPad version, we could sure do 
 
 ## Warning
 
-**You are about to uninstall a non-stable version of docpad, so shit will probably break... this is good because we can file a bug report and it can get fixed. Although it is bad if we forgot to backup... Remember to always backup, use dropbox, or use git to ensure all the necessary safety measures are in place. All safe? Great, let's move on.**
+**You are about to install a non-stable version of docpad, so shit will probably break... this is good because we can file a bug report and it can get fixed. Although it is bad if we forgot to backup... Remember to always backup, use dropbox, or use git to ensure all the necessary safety measures are in place. All safe? Great, let's move on.**
 
 
 ## Pre-Requisites
