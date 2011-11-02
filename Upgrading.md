@@ -1,7 +1,7 @@
 ## Upgrading from 1.x to 2.0 (v2 is not yet released)
 
 1. CoffeeScript v1.1.2 does not work with Node 0.5 or 0.6, so in the meantime install the older version of CoffeeScript globally `npm install -g coffee-script@1.1.1`
-2. Plugins have been revised to make more future proof. Plugins must be in their own directory, with the following format: `plugins/${pluginName}/${pluginName}.plugin.coffee`
+2. Plugins have been revised to become more future proof and configurable. Plugins must be in their own directory, with the following format: `plugins/${pluginName}/${pluginName}.plugin.coffee`
 3. Plugin dependencies are no longer in the docpad or your project's `package.json`, but instead in their directory's `package.json` - e.g. `plugins/${pluginName}/package.json` - this file is optional.
 4. If a plugin's `package.json` exists, as well as it's `main` property, docpad will use that as the plugin file's location instead of the location in step 2.
 5. DocPad v2 brings some new features, you can read about them in the FAQ
