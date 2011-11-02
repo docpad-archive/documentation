@@ -42,6 +42,12 @@ npm link
 Try it out on your existing docpad website, or on a new one, try and break it, and find out what happens. Report any problems or feature requests to the [issue tracker](https://github.com/balupton/docpad/issues)
 
 
+## Things still to come
+
+- Specifying that we only want to load certain plugins
+- Plugin specific configurations via `package.json` files
+
+
 ## Thanks
 
 Love you guys! I really do appreciate all the help! You seriously rock!
