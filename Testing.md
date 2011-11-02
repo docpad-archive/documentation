@@ -10,7 +10,7 @@ The current docpad version for testing is **version 2.0**, available on the **de
 
 ## Pre-Requisites
 
-- DocPad v2 should run both Node.js 0.4 and 0.5/0.6, if you can test them both that would be amazing. As well as on Mac and Windows. To run multiple versions of node.js on the same machine you can use [NVM](https://github.com/creationix/nvm) - though be sure to UNINSTALL your original node.js before install NVM, as well as removing NODE_PATH from your dot profiles.
+- DocPad v2 should run on both Node.js 0.4 and 0.5/0.6, if you can test them both that would be amazing. As well as on Mac and Windows. To run multiple versions of node.js on the same machine you can use [NVM](https://github.com/creationix/nvm) - though be sure to UNINSTALL your original node.js before install NVM, as well as removing NODE_PATH from your dot profiles.
 
 
 ## Installing
