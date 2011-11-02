@@ -48,6 +48,11 @@ Try it out on your existing docpad website, or on a new one, try and break it, a
 - Plugin specific configurations via `package.json` files
 
 
+## Where does this release fit in?
+
+Check the [roadmap](https://github.com/balupton/docpad/wiki/Roadmap)
+
+
 ## Thanks
 
 Love you guys! I really do appreciate all the help! You seriously rock!
