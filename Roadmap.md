@@ -10,9 +10,6 @@ Version structure and timelines:
 - Features may not be developed in order - remember this is only a guideline
 
 
-# Upcoming
-
-
 ## Version 4
 
 Version 4 enters the SaaS market, allowing people to create their website entirely in the cloud.
@@ -87,31 +84,30 @@ Version 2 focuses on ease of use. This is done with the addition of front-end ad
 
 ### v2.1
 
-- Front-End Administration Plugin
+- Authentication Plugin
 	- Uses GitHub for authentication, validates email address against `package.json` maintainers
-	- Adds in some client-side javascript
 	- Login window trigger by `ctrl/cmd+shift+l`
-	- Utilises contentEditable with semantic properties to update **- done**
-- REST Plugin
-	- Support read and write of files **- done**
-	- Requires some sort of authentication method... to be decided
 
-
-### v2.0
+### v2.0 **- released**
 
 - Plugin's have their own `package.json`
 	- This specifies the plugin's dependencies
 	- When the plugin is used, docpad will do a `cd $pluginDir; npm install`
 - Plugins and DocPad configurable through project's `package.json`
 - Plugins and DocPad configurable through project's `docpad.coffee`
+- Front-End Administration Plugin
+	- Adds in some client-side javascript
+	- Utilises contentEditable with semantic properties to update
+- REST Plugin
+	- Support read and write of files
+	- Requires some sort of authentication method... to be decided
 
 
-# Released
 
-## Version 1
+## Version 1 **- released**
 
 Version 1 focused on improving the scalability, stability, and ease-of-use of docpad. Bringing it to a vastly superior alternative to other static site generators.
 
-## Version 0
+## Version 0 **- released**
 
 Version 0 focused on fixing the content creation and website development pain.
