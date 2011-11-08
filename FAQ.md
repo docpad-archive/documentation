@@ -113,6 +113,10 @@ Inside your website's `package.json` file, you'll want to customise the property
 }
 ```
 
+### Does it support client-side editing of documents?
+
+It sure does. Checkout `/nifty/client-side-editing.html` in the [kitchensink skeleton](https://github.com/balupton/kitchensink.docpad) for a demo :-)
+
 
 ### Does it work on windows?
 
