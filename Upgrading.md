@@ -1,4 +1,4 @@
-## Upgrading from 1.x to 2.0 (v2 is not yet released)
+## Upgrading from 1.x to 2.0 (v2 is the current stable version)
 
 1. CoffeeScript v1.1.2 does not work with Node 0.5 or 0.6, so in the meantime install the older version of CoffeeScript globally `npm install -g coffee-script@1.1.1`
 2. The following steps only apply to plugin developers:
@@ -9,7 +9,7 @@
 	5. To access docpad within a plugin, you should now use `@docpad` rather than having it passed through as an argument, this applies for logger too (now use `@logger`).
 
 
-## Upgrading from 0.x to 1.0 (v1 is the current stable version)
+## Upgrading from 0.x to 1.0
 
 1. Install docpad with the new global dependences `npm install -g coffee-script docpad`
 2. Any of your `documents` or `layouts` which use the eco templating engine should have the extension `.eco` appended. E.g. `layouts/default.html` to `layouts/default.html.eco`.
