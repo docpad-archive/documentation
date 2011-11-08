@@ -62,6 +62,58 @@ Add the following to your document's meta data
     ignored: true
 
 
+### How do I disable certain plugins?
+
+Inside your website's `package.json` file, you can add a `"docpad": {}` property - it may already be there. Inside that property, add `"enabledPlugins": {}` and inside that, add the name of the plugin you want to disable followed by `false` - e.g. if we wanted to disable the `eco` plugin we would have:
+
+``` javascript
+{
+	// ...
+	"docpad": {
+		"enabledPlugins": {
+			"eco": false
+		}
+	}
+}
+```
+
+
+### How do I only enable the plugins that I actually use?
+
+Inside your website's `package.json` file, you'll want to set the property `docpad.enableUnlistedPlugins` to `true`. This will only load plugins which are explicitly set to true inside in the `docpad.enabledPlugins` property. E.g. to only the run eco and stylus plugins we would have:
+
+``` javascript
+{
+	// ...
+	"docpad": {
+		"enableUnlistedPlugins": true,
+		"enabledPlugins": {
+			"eco": true,
+			"stylus": true
+		}
+	}
+}
+```
+
+
+### How do I customise the configuration sent to a plugin?
+
+Inside your website's `package.json` file, you'll want to customise the property `docpad.plugins`. This property contains the configuration sent to all the different plugins. So for example, if we wanted to tell the stylus plugin that we don't want it to include nib, then we can do:
+
+``` javascript
+{
+	// ...
+	"docpad": {
+		"plugins": {
+			"stylus": {
+				"useNib": false
+			}
+		}
+	}
+}
+```
+
+
 ### Does it work on windows?
 
 [It's work in progress, but you can try this guide here](https://github.com/balupton/docpad/wiki/Windows-Installation)
