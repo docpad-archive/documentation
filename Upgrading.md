@@ -8,6 +8,7 @@
 	4. Plugin configuration should be moved to their `package.json` file, to the key `docpad.plugin` which should be an object. This is then customisable by docpad's `package.json` as well as the website's via `docpad.plugin.#{pluginName}`. The configuration of a plugin is available via the `@config` property.
 	5. To access docpad within a plugin, you should now use `@docpad` rather than having it passed through as an argument, this applies for logger too (now use `@logger`).
 	6. A lot of docpad configuration has been moved to `@docpad.config`
+3. DocPad v2 also brings a bunch of new cool features, check out the changelog on the [homepage](https://github.com/balupton/docpad) for more info, and the [FAQ](https://github.com/balupton/docpad/wiki/FAQ) for information on how to use some of these new features :-)
 
 
 ## Upgrading from 0.x to 1.0
