@@ -1,5 +1,7 @@
 ## Getting Started
 
+_This guide applies to versions 1 and 2 of DocPad_
+
 Inside your docpad website directory, create a `plugins` directory. Inside it, create a new file called `my-plugin.coffee` and let it contain the following:
 
 ``` coffeescript
