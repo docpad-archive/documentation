@@ -30,7 +30,7 @@ Version 3 focuses on connecting the community.
 
 - Web GUI
 	- Connect
-		- Purchasable Content
+		- Purchasable Content (e.g. sell premium plugins, tutorials, themes, etc)
 
 ### v3.0
 
