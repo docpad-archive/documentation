@@ -118,35 +118,6 @@ Inside your website's `package.json` file, you'll want to customise the property
 It sure does. Checkout `/nifty/client-side-editing.html` in the [kitchensink skeleton](https://github.com/balupton/kitchensink.docpad) for a demo :-)
 
 
-### Does it work on windows?
-
-[It's work in progress, but you can try this guide here](https://github.com/balupton/docpad/wiki/Windows-Installation)
-
-
-### Help! Whenever I output a variable (like `content`) it is escaped (`<` rendered as `&lt;`)?
-
-Template engines by default _escape_ all variable output. Escaping is when we turn things like the open bracket `<` into it's _html entity_ equivalent `&lt;`. This helps prevent malicious code accidentally being injected into your website which can open the door to XSS attacks. As such, we have to use a special syntax to keep the variable _unescaped_ when outputted. The special syntax is different for the templating engine your using, so here are the ways we know:
-
-- Eco: `<%- content %>` instead of `<%= content %>`
-- Jade: `!{content}` instead of `#{content}`
-- HAML: `!= content` instead of `= content`
-
-
-### Help! I get the error: `Cannot find module 'buildr'`
-
-Run `npm install buildr` and that'll fix it. This is because the skeleton you're currently running utilises the buildr plugin, as such we need to have buildr installed.
-
-
-### Help! I get a whole bunch of npm / missing module/package / installation failed errors
-
-If your using [DropBox](http://db.tt/RxyNWZw) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
-
-If you're still experiencing issues, then be sure to post about it on the [issue tracker](https://github.com/balupton/docpad/issues).
-
-
-### Help! The growl notifications aren't displaying?
-
-I got confused by this too, turns out you need to download the growl installer from the [growl website](http://growl.info/), and inside it will be another installer at `Extras/growlnotify/growlnotify.pkg` which you need to install too. What this package does it provides command line applications that ability to call growl which is needed as docpad is a command line application.
 
 ### What is the list of properties on the default Document object?
 
@@ -173,9 +144,9 @@ Here's a list of what you'll have on the `Document` object that is passed into a
 * url
 * layout
 
-### I upgraded, and it doesn't work
+### Does it work on windows?
 
-[Check out the Upgrade Guides here](https://github.com/balupton/docpad/wiki/Upgrading)
+[It's work in progress, but you can try this guide here](https://github.com/balupton/docpad/wiki/Windows-Installation)
 
 
 ### Where can I host my docpad website?
@@ -186,3 +157,5 @@ Here's a list of what you'll have on the `Document` object that is passed into a
 ### Where can I find tutorials about DocPad?
 
 [Check out the Tutorials Page here](https://github.com/balupton/docpad/wiki/Tutorials)
+
+
