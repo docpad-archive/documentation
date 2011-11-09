@@ -159,10 +159,7 @@ Here's a list of what you'll have on the `Document` object that is passed into a
 
 [Check out the Tutorials Page here](https://github.com/balupton/docpad/wiki/Tutorials)
 
+
 ### I'm getting problems, can I get help?
 
 You sure can, [try troubleshooting](https://github.com/balupton/docpad/wiki/Troubleshooting) it first, and if that still fails then create a new issue in our [issue tracker](https://github.com/balupton/docpad/issues). Sorry for the inconvenience!
-
-
-[Check out the Hosting Guide here](https://github.com/balupton/docpad/wiki/Hosting)
-
