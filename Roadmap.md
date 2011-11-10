@@ -52,7 +52,7 @@ Version 3 focuses on connecting the community.
 Version 2 focuses on ease of use. This is done with the addition of front-end administration, and the introduction of a web interface for installing and configuring your docpad instance.
 
 
-### v2.4
+### v2.5
 
 - Web GUI
 	- News Centre
@@ -62,14 +62,14 @@ Version 2 focuses on ease of use. This is done with the addition of front-end ad
 		- Stats
 
 
-### v2.3
+### v2.4
 
 - Web GUI
 	- QuickStart
 		4. Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
 
 
-### v2.2
+### v2.3
 
 - Web GUI
 	- QuickStart
@@ -82,11 +82,17 @@ Version 2 focuses on ease of use. This is done with the addition of front-end ad
 		- Configure Plugins and Core
 
 
-### v2.1
+### v2.2
 
 - Authentication Plugin
 	- Uses GitHub for authentication, validates email address against `package.json` maintainers
 	- Login window trigger by `ctrl/cmd+shift+l`
+
+### v2.1 **- released**
+
+- Dynamic Documents
+	- These are rendered per request, and have access to the express.js request object
+	- They enable things like form handling, search, real-time updating data, etc.
 
 ### v2.0 **- released**
 
