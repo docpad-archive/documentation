@@ -10,6 +10,12 @@ Version structure and timelines:
 - Features may not be developed in order - remember this is only a guideline
 
 
+## Unscheduled
+
+- Asynchronous documents
+	- Could specify `async: true` in the meta data, and call `@next(err)` for completion
+
+
 ## Version 4
 
 Version 4 enters the SaaS market, allowing people to create their website entirely in the cloud.
