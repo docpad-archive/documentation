@@ -80,13 +80,13 @@ Inside your website's `package.json` file, you can add a `"docpad": {}` property
 
 ### How do I only enable the plugins that I actually use?
 
-Inside your website's `package.json` file, you'll want to set the property `docpad.enableUnlistedPlugins` to `true`. This will only load plugins which are explicitly set to true inside in the `docpad.enabledPlugins` property. E.g. to only the run eco and stylus plugins we would have:
+Inside your website's `package.json` file, you'll want to set the property `docpad.enableUnlistedPlugins` to `false`. This will only load plugins which are explicitly set to true inside in the `docpad.enabledPlugins` property. E.g. to only the run eco and stylus plugins we would have:
 
 ``` javascript
 {
 	// ...
 	"docpad": {
-		"enableUnlistedPlugins": true,
+		"enableUnlistedPlugins": false,
 		"enabledPlugins": {
 			"eco": true,
 			"stylus": true
