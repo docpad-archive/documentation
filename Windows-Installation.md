@@ -1,4 +1,4 @@
-(work in progress)
+NOTE: This will be much easier soon as npm is getting better windows support!
 ## Installation using the native binary ##
 
 This guide will describe how to set up docpad to work under windows using the native nodejs binary (v0.5.9 as of writing). I assume in this you want to have nodejs in C:\node and your packages in C:\node\packages. Change if you like it differently.
