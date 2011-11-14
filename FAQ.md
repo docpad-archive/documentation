@@ -147,7 +147,7 @@ Here's a list of what you'll have on the `Document` object that is passed into a
 
 ### Does it work on windows?
 
-[It's work in progress, but you can try this guide here](https://github.com/balupton/docpad/wiki/Windows-Installation)
+Sure does, check the installation instructions in the [readme](https://github.com/balupton/docpad).
 
 
 ### Where can I host my docpad website?
