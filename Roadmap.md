@@ -15,6 +15,10 @@ Version structure and timelines:
 - Asynchronous documents
 	- Could specify `async: true` in the meta data, and call `@next(err)` for completion
 
+- Authentication Plugin
+	- Uses GitHub for authentication, validates email address against `package.json` maintainers
+	- Login window trigger by `ctrl/cmd+shift+l`
+
 
 ## Version 4
 
@@ -41,7 +45,7 @@ Version 3 focuses on connecting the community.
 ### v3.0
 
 - Web GUI
-	- Connect
+	- Exchange
 		- Community Centre
 			- Chat
 			- Discussion Boards
@@ -61,18 +65,18 @@ Version 2 focuses on ease of use. This is done with the addition of front-end ad
 ### v2.5
 
 - Web GUI
-	- News Centre
-		- News
-		- Blog
-		- Polls
-		- Stats
+	- QuickStart
+		4. Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
 
 
 ### v2.4
 
 - Web GUI
-	- QuickStart
-		4. Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
+	- Connect
+		- News
+		- Blog
+		- Polls
+		- Stats
 
 
 ### v2.3
@@ -88,17 +92,17 @@ Version 2 focuses on ease of use. This is done with the addition of front-end ad
 		- Configure Plugins and Core
 
 
-### v2.2
+### v2.2 **- released**
 
-- Authentication Plugin
-	- Uses GitHub for authentication, validates email address against `package.json` maintainers
-	- Login window trigger by `ctrl/cmd+shift+l`
+- Windows Support
+
 
 ### v2.1 **- released**
 
 - Dynamic Documents
 	- These are rendered per request, and have access to the express.js request object
 	- They enable things like form handling, search, real-time updating data, etc.
+
 
 ### v2.0 **- released**
 
