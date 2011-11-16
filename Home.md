@@ -8,6 +8,11 @@ Welcome to the lifeblood of DocPad! The community!
 Got a quick question? Or know a nifty answer that you think others will benefit from. Check out the FAQ.
 
 
+## [The Roadmap](https://github.com/balupton/docpad/wiki/Roadmap)
+
+The eternal vision of DocPad and it's everlasting future lays here. Well worth checking out!
+
+
 ## [Articles and Guides](https://github.com/balupton/docpad/wiki/Articles)
 
 Discover or post docpad related articles and guides here. Great for getting started and learning new things.
