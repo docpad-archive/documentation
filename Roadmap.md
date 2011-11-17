@@ -19,6 +19,10 @@ Version structure and timelines:
 	- Uses GitHub for authentication, validates email address against `package.json` maintainers
 	- Login window trigger by `ctrl/cmd+shift+l`
 
+- c9.io Support
+	- Plugins as npm packages (actually published)
+	- c9.io detection in the quickstart to provide alternative instructions
+	- use npm module instead of spawn (nice to have)
 
 ## Version 4
 
