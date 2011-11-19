@@ -1,5 +1,6 @@
 It’s interesting to see what designs and features others have come up with. Link to DocPad-powered blogs and other sites here.
 
+- [The DocPad Kitchensink](http://docpad-kitchensink.herokuapp.com/) ([source](https://github.com/balupton/kitchensink.docpad)) - A showcase of everything docpad can do
 - [Benjamin Lupton's Website](http://balupton.com) ([source](https://github.com/balupton/balupton.docpad)) - Author of DocPad.
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
 - [ODF Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard.
