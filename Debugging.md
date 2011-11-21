@@ -2,12 +2,12 @@
 
 Sometimes shit just does bad and you need to get into Docpad and work out what's happening. A plugin may be not working as expected, content isn't being generated or you're just curious as to how to do it. Well for that you'll need to get your debugging on.
 
-*Note: I've only tested the following under OSX*
+*Note: I've only tested the following under OSX but Docpad and node-inspector both work under Windows from what I understand*
 
 ## What you'll need
 
 * [node-inspector](https://github.com/dannycoates/node-inspector)
-* A webkit based browser
+* A webkit based browser (you know, like Chrome :P)
 
 ## Debugging coffee-script
 
