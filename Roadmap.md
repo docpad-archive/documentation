@@ -24,11 +24,12 @@ Version structure and timelines:
 	- c9.io detection in the quickstart to provide alternative instructions
 	- use npm module instead of spawn (nice to have)
 
-## Version 4
 
-Version 4 enters the SaaS market, allowing people to create their website entirely in the cloud.
+## Version 5
 
-### v4.0
+Version 5 enters the SaaS market, allowing people to create their website entirely in the cloud.
+
+### v5.0
 
 - Front-End Administration Plugin
 	- Support adding and removing of resources
@@ -36,17 +37,17 @@ Version 4 enters the SaaS market, allowing people to create their website entire
 	- Support adding and removing of files (includes uploading if in the cloud)
 
 
-## Version 3
+## Version 4
 
-Version 3 focuses on connecting the community.
+Version 4 focuses on connecting the community.
 
-### v3.1
+### v4.1
 
 - Web GUI
 	- Connect
 		- Purchasable Content (e.g. sell premium plugins, tutorials, themes, etc)
 
-### v3.0
+### v4.0
 
 - Web GUI
 	- Exchange
@@ -61,19 +62,19 @@ Version 3 focuses on connecting the community.
 		- Learning Centre (tutorials, videos, etc)
 
 
-## Version 2
+## Version 3
 
-Version 2 focuses on ease of use. This is done with the addition of front-end administration, and the introduction of a web interface for installing and configuring your docpad instance.
+Version 3 focuses on ease of use. This is done by introducing a web interface for administration of your docpad instance, and providing a more modular API. It also focuses on stability by introducing unit tests.
 
 
-### v2.5
+### v3.2
 
 - Web GUI
 	- QuickStart
 		4. Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
 
 
-### v2.4
+### v3.1
 
 - Web GUI
 	- Connect
@@ -83,8 +84,12 @@ Version 2 focuses on ease of use. This is done with the addition of front-end ad
 		- Stats
 
 
-### v2.3
+### v3.0
 
+- Unit Tests
+- Modular API for rendering single files
+- Modular API for rendering single content blocks
+- Exploration into modularising the entire code
 - Web GUI
 	- QuickStart
 		Provides a web interface for
@@ -94,6 +99,16 @@ Version 2 focuses on ease of use. This is done with the addition of front-end ad
 	- Administration
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
+
+
+## Version 2
+
+Version 2 focused on improving the possibilities of the plugin infrastructure as well as adding support for windows and cloud based services.
+
+
+### v2.3 **- released**
+
+- Cloud Support
 
 
 ### v2.2 **- released**
