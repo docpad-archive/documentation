@@ -1,6 +1,7 @@
 ## Existing
 
 - [Bootstrap](https://github.com/balupton/bootstrap.docpad) - Twitter Bootstrap for DocPad
+- [DeckPad) (https://github.com/calvinmetcalf.deckpad) - Skeleton preloaded with [deck.js](https://github.com/imakewebthings/deck.js)
 
 
 ## Todo
