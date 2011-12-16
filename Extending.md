@@ -2,7 +2,7 @@
 
 *This guide applies to versions 1 and 2 of DocPad*
 
-Inside **your docpad** website directory, create a plugins directory. Inside it, create a new file called my-plugin.coffee and let it contain the following:
+Inside your docpad website directory, create a plugins directory. Inside it, create a new file called my-plugin.coffee and let it contain the following:
 
 	# Requires
 	DocpadPlugin = require "docpad/lib/plugin.coffee"
@@ -47,6 +47,6 @@ At the core of it, a renderer is based entirely off the following render event:
 
 This fires when we want to render a particular document or layout. It will take a document like `my-blog-post.html.md.eco` and run this function twice, once for the eco to markdown conversion, and again for the markdown to html conversion. In the first case `inExtension` would equal `eco` and `outExtension` would equal md, and in the second case inExtension would equal `md` and `outExtensio`n would equal html.
 
-We also wrap it in a `try ... catch` to prevent **docpad** from crashing if an error occurs during rendering.
+We also wrap it in a `try ... catch` to prevent docpad from crashing if an error occurs during rendering.
 
 Coolios.
