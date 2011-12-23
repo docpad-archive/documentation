@@ -51,4 +51,6 @@ Skeletons and Themes for DocPad that you can use
 
 ## Companies
 
+Companies spotted using DocPad
+
 - [Bevry](https://twitter.com/#!/bevryme) - The company behind DocPad
