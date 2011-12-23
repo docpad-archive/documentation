@@ -8,6 +8,11 @@ Welcome to the lifeblood of DocPad! The community!
 Got a quick question? Or know a nifty answer that you think others will benefit from. Check out the FAQ.
 
 
+## [Showcase and Examples](https://github.com/balupton/docpad/wiki/Showcase)
+
+The ultimate listing of everything docpad. Websites, web applications, companies, presentations, press, etc. Well worth checking out.
+
+
 ## [The Roadmap](https://github.com/balupton/docpad/wiki/Roadmap)
 
 The eternal vision of DocPad and it's everlasting future lays here. Well worth checking out!
@@ -16,11 +21,6 @@ The eternal vision of DocPad and it's everlasting future lays here. Well worth c
 ## [Articles and Guides](https://github.com/balupton/docpad/wiki/Articles)
 
 Discover or post docpad related articles and guides here. Great for getting started and learning new things.
-
-
-## [Showcase and Examples](https://github.com/balupton/docpad/wiki/Showcase)
-
-Want to check out websites which are using DocPad, this is the place. Also, as soon as you get your own DocPad website up, be sure to add it here :-)
 
 
 ## [The Community](https://github.com/balupton/docpad/wiki/Users)
