@@ -2,11 +2,12 @@ List nifty things created with docpad here! Listings are sorted alphabetically.
 
 ## Websites
 
-- [CoApp](http://coapp.org/) ([source](https://github.com/coapp/coapp.org)) - CoApp is an open-source package management system for Windows
-- [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) ([source](https://github.com/balupton/kitchensink.docpad)) - A showcase of everything docpad can do
+- [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
+- [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/balupton/kitchensink.docpad) - A showcase of everything docpad can do
+- [DogFeet](http://dogfeet.github.com/articles/2011/docpad.html) - [source](https://github.com/dogfeet/dogfeet.docpad) - A development blog written in Korean
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development, read about their usage of docpad [here](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html)
-- [Le blog d'Olivier](http://blog.bazoud.com) ([source](https://github.com/obazoud/blog.bazoud.com)) - blog about web, java, spring, node.js, ... (in french/english).
+- [Le blog d'Olivier](http://blog.bazoud.com) - [source](https://github.com/obazoud/blog.bazoud.com) - blog about web, java, spring, node.js, ... (in french/english).
 - [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard.
 - [uberFrak](http://uberfrak.com) - Silly uchronias and fake stories (in french).
