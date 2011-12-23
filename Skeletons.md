@@ -1,5 +1,3 @@
-## Existing
-
 Existing Skeletons and Themes are now listed on the [ShowCase Page](https://github.com/balupton/docpad/wiki/Showcase).
 
 ## Todo
