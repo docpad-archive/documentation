@@ -1,7 +1,9 @@
-List nifty things created with docpad here! Listings are sorted alphabetically.
+Listings are sorted alphabetically.
 
 
-## Articles
+## In the press
+
+DocPad mentioned around the web
 
 - [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: covers; what is docpad, getting started with docpad, customising docpad
 - [HTML UI on DocPad](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html) - Extensive writeup on their thoughts of docpad and how they are using it
@@ -9,6 +11,8 @@ List nifty things created with docpad here! Listings are sorted alphabetically.
 
 
 ## Websites
+
+Websites built with DocPad
 
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/balupton/kitchensink.docpad) - A showcase of everything docpad can do
@@ -24,15 +28,21 @@ List nifty things created with docpad here! Listings are sorted alphabetically.
 
 ## Applications
 
+Applications built with DocPad
+
 - [Node Chat](https://github.com/balupton/nodechat.docpad) - Node chat application, built with Socket.io, DocPad, Backbone.js, Twitter Bootstrap, written in CoffeeKup and CoffeeScript
 
 
 ## Presentations
 
+Presentations built with DocPad
+
 - [What is DeckPad](http://calvinmetcalf.github.com/deckpad/) - Talks about using [DeckPad](https://github.com/calvinmetcalf/deckpad) to create awesome HTML5 presentations with DocPad and [Deck.js](https://github.com/imakewebthings/deck.js)
 
 
-## Skeletons/Themes
+## Skeletons and Themes
+
+Skeletons and Themes for DocPad that you can use
 
 - [Blank Canvas](https://github.com/balupton/canvas.docpad) - The bare minimum you need to get hacking away with a new website
 - [Kitchensink](https://github.com/balupton/kitchensink.docpad) - Implementation of Twitter Bootstrap with examples of everything you can do in DocPad
