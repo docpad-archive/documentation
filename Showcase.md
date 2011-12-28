@@ -25,6 +25,7 @@ Websites built with DocPad
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard.
 - [uberFrak](http://uberfrak.com) - Silly uchronias and fake stories (in french).
 - [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Blog
+- [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - docpad theme for this years Beer Advent
 
 ## Applications
 
