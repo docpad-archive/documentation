@@ -28,6 +28,11 @@ Discover or post docpad related articles and guides here. Great for getting star
 Discover the people behind the community here :-) If you're using DocPad, be sure to add yourself to the list as well :-)
 
 
+## [Participate](https://github.com/balupton/docpad/wiki/Participate)
+
+Want to help make DocPad even more amazing and awesome? This page will provide an entire walkthrough and guide to getting started as a participant in the DocPad community :-) Looking forward to working with you soon!
+
+
 ## [Events and Competitions](https://github.com/balupton/docpad/wiki/Events)
 
 Looking to learn more about DocPad in real life? Check out the latest events or host your own.
