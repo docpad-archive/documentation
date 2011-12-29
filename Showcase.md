@@ -14,11 +14,11 @@ DocPad mentioned around the web
 
 Websites built with DocPad
 
-- [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - docpad theme for this years Beer Advent
+- [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/balupton/kitchensink.docpad) - A showcase of everything docpad can do
 - [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - A development blog written in Korean
-- [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Blog
+- [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - A development blog written in Chinese
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
