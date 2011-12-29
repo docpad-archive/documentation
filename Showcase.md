@@ -14,9 +14,11 @@ DocPad mentioned around the web
 
 Websites built with DocPad
 
+- [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - docpad theme for this years Beer Advent
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/balupton/kitchensink.docpad) - A showcase of everything docpad can do
 - [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - A development blog written in Korean
+- [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Blog
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
@@ -24,8 +26,6 @@ Websites built with DocPad
 - [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard.
 - [uberFrak](http://uberfrak.com) - Silly uchronias and fake stories (in french).
-- [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Blog
-- [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - docpad theme for this years Beer Advent
 
 ## Applications
 
