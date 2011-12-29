@@ -1,4 +1,4 @@
-DocPad is an Open-Source Startup, this means that while DocPad is entirely open-source, it has the intent on becoming a profitable business one day.
+DocPad is an Open-Source Startup, this means that while DocPad is entirely open-source (and will remain), it has the intent on becoming a profitable business one day.
 
 
 ## Progress
@@ -34,8 +34,9 @@ DocPad is an Open-Source Startup, this means that while DocPad is entirely open-
 
 ### Completed
 
-- Community of 20+ active users per month (users who have posted issues)
+- Community of 20+ active users per month (users who have participated in issues this month)
 - Community of 5+ loyal users (users who have continued to provide feedback over several months)
+- Community of 5+ active developers (users who have coded extensions etc this month)
 - Issue Tracker
 - MVP
 
