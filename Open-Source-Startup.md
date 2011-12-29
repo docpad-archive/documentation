@@ -22,11 +22,11 @@ DocPad is an Open-Source Startup, this means that while DocPad is entirely open-
 - A/B Testing
 - Monthly developer meetings
 - Prove money hypothesis
-- Statistic tracking (actionable data, not vanity metrics)
 
 
 ### Starting
 
+- Statistic tracking (actionable data, not vanity metrics)
 - Innovation accounting
 - Happiness accounting
 - Kanban
@@ -34,7 +34,7 @@ DocPad is an Open-Source Startup, this means that while DocPad is entirely open-
 
 ### Completed
 
-- Community of 20+ active users (active, as in users who have posted issues)
+- Community of 20+ active users per month (users who have posted issues)
 - Community of 5+ loyal users (users who have continued to provide feedback over several months)
 - Issue Tracker
 - MVP
