@@ -4,6 +4,14 @@ Existing Skeletons and Themes are now listed on the [Showcase Page](https://gith
 
 Please ensure the licenses are open-permissive for any themes that are implemented: (MIT and BSD are best)
 
+### MIT License
+
+- http://rsms.me/ - source https://github.com/rsms/tumblr-theme-hunch
+- http://couriertheme.tumblr.com/ - https://github.com/davidyeiser/courier
+
+
+### Unknown License
+
 - http://effectortheme.tumblr.com/
 - http://www.woothemes.com/2009/09/rockstar/
 - http://www.woothemes.com/2008/11/typebased/
