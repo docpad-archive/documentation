@@ -12,7 +12,7 @@ So what is a developer? A developer can be whatever you want it to be! But I gue
 
 ### Issue Tracker
 
-The best way to participate is to be active on the [Issue Tracker](https://github.com/balupton/docpad/issues). Anything that needs doing for DocPad is logged there. Batches of work are split into monthly sprints called [Milestones](https://github.com/balupton/docpad/issues/milestones). Issues are given a type, priority, and status (called buckets). Every issue is great for community participation, however issues with the label `discussion` are actively and urgently seeking developer feedback - so discuss those issues first! Any feedback would be great. Issues with the label `patches welcome` are issues which you can start implementing/coding up yourself, once you are done, submit a [pull request](http://help.github.com/send-pull-requests/) back to the original DocPad project and we'll review your changes and provide feedback :-)
+The best way to participate is to be active on the [Issue Tracker](https://github.com/bevry/docpad/issues). Anything that needs doing for DocPad is logged there. Batches of work are split into monthly sprints called [Milestones](https://github.com/bevry/docpad/issues/milestones). Issues are given a type, priority, and status (called buckets). Every issue is great for community participation, however issues with the label `discussion` are actively and urgently seeking developer feedback - so discuss those issues first! Any feedback would be great. Issues with the label `patches welcome` are issues which you can start implementing/coding up yourself, once you are done, submit a [pull request](http://help.github.com/send-pull-requests/) back to the original DocPad project and we'll review your changes and provide feedback :-)
 
 ### Meetups
 
@@ -20,11 +20,11 @@ As DocPad developers are spread across the entire world, arranging a time for ev
 
 You can get chatting with anyone who's around by visiting the IRC channel `#docpad` on Freenode. [Click here to join.](irc://irc.freenode.net/docpad)
 
-Every now and then, someone (anyone can) may be holding an event in the local area, these can be found on the [Events Page](https://github.com/balupton/docpad/wiki/Events).
+Every now and then, someone (anyone can) may be holding an event in the local area, these can be found on the [Events Page](https://github.com/bevry/docpad/wiki/Events).
 
 ### Priority Focus
 
-DocPad's long term vision can be found on the [Roadmap Page](https://github.com/balupton/docpad/wiki/Roadmap), which talks about the features that the visionaries behind DocPad feel it needs in order for critical success.
+DocPad's long term vision can be found on the [Roadmap Page](https://github.com/bevry/docpad/wiki/Roadmap), which talks about the features that the visionaries behind DocPad feel it needs in order for critical success.
 
 Each month, we do a sprint bundled with new features from the roadmap and bugs from the issue tracker. We will always aim to get high priority bugs fixed and released as soon as posible. Once the bugs are all done, then we focus on the new features. When a feature is done, we release it to the public right away and then test and validate it's value to the community. Once a feature has been proven to be valuable, we close it. You can read more about this process in the book [The Lean Startup](http://theleanstartup.com/).
 
