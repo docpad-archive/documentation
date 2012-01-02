@@ -115,7 +115,7 @@ Inside your website's `package.json` file, you'll want to customise the property
 
 ### Does it support client-side editing of documents?
 
-It sure does. Checkout `/nifty/client-side-editing.html` in the [kitchensink skeleton](https://github.com/balupton/kitchensink.docpad) for a demo :-)
+It sure does. Checkout `/nifty/client-side-editing.html` in the [kitchensink skeleton](https://github.com/bevry/kitchensink.docpad) for a demo :-)
 
 
 
@@ -147,19 +147,19 @@ Here's a list of what you'll have on the `Document` object that is passed into a
 
 ### Does it work on windows?
 
-Sure does, check the installation instructions in the [readme](https://github.com/balupton/docpad).
+Sure does, check the installation instructions in the [readme](https://github.com/bevry/docpad).
 
 
 ### Where can I host my docpad website?
 
-[Check out the Hosting Guide here](https://github.com/balupton/docpad/wiki/Hosting)
+[Check out the Hosting Guide here](https://github.com/bevry/docpad/wiki/Hosting)
 
 
 ### Where can I find tutorials about DocPad?
 
-[Check out the Tutorials Page here](https://github.com/balupton/docpad/wiki/Tutorials)
+[Check out the Tutorials Page here](https://github.com/bevry/docpad/wiki/Tutorials)
 
 
 ### I'm getting problems, can I get help?
 
-You sure can, [try troubleshooting](https://github.com/balupton/docpad/wiki/Troubleshooting) it first, and if that still fails then create a new issue in our [issue tracker](https://github.com/balupton/docpad/issues). Sorry for the inconvenience!
+You sure can, [try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting) it first, and if that still fails then create a new issue in our [issue tracker](https://github.com/bevry/docpad/issues). Sorry for the inconvenience!
