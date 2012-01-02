@@ -3,7 +3,7 @@
 
 ### I upgraded, and it doesn't work
 
-[Check out the Upgrade Guides here](https://github.com/balupton/docpad/wiki/Upgrading)
+[Check out the Upgrade Guides here](https://github.com/bevry/docpad/wiki/Upgrading)
 
 
 ### Whenever I output a variable (like `content`) it is escaped (`<` rendered as `&lt;`)?
@@ -22,7 +22,7 @@ Run `npm install buildr` and that'll fix it. This is because the skeleton you're
 
 ### I get CoffeeScript errors
 
-Try installing the latest version of CoffeeScript via `npm install -g coffee-script`. Versions 1.1.1, and 1.1.3 and up are supported. If you still get problems, post them in the [issue tracker](https://github.com/balupton/docpad/issues).
+Try installing the latest version of CoffeeScript via `npm install -g coffee-script`. Versions 1.1.1, and 1.1.3 and up are supported. If you still get problems, post them in the [issue tracker](https://github.com/bevry/docpad/issues).
 
 
 ### I get a whole bunch of permission denied errors
@@ -34,7 +34,7 @@ DocPad handles the installation of the npm modules of it's plugins automagically
 
 If your using [DropBox](http://db.tt/RxyNWZw) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
 
-If you're still experiencing issues, then be sure to post about it on the [issue tracker](https://github.com/balupton/docpad/issues).
+If you're still experiencing issues, then be sure to post about it on the [issue tracker](https://github.com/bevry/docpad/issues).
 
 
 ### The growl notifications aren't displaying?
