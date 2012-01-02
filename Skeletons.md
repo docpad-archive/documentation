@@ -7,7 +7,8 @@ Please ensure the licenses are open-permissive for any themes that are implement
 ### MIT License
 
 - http://rsms.me/ - source https://github.com/rsms/tumblr-theme-hunch
-- http://couriertheme.tumblr.com/ - https://github.com/davidyeiser/courier
+- http://couriertheme.tumblr.com/ - source https://github.com/davidyeiser/courier
+- http://www.getskeleton.com/ - source https://github.com/dhgamache/Skeleton
 
 
 ### Unknown License
