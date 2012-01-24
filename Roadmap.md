@@ -66,10 +66,6 @@ Version structure and timelines:
 
 ## Version 3
 
-### v3.5 (stability release) _- planned_
-
-- Unit tests
-
 ### v3.4 _- planned_
 
 - Support for themes
