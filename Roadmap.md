@@ -24,32 +24,14 @@ Version structure and timelines:
 	- c9.io detection in the quickstart to provide alternative instructions
 	- use npm module instead of spawn (nice to have)
 
-
-## Version 5
-
-Version 5 enters the SaaS market, allowing people to create their website entirely in the cloud.
-
-### v5.0
-
 - Front-End Administration Plugin
 	- Support adding and removing of resources
 	- Support adding and removing of documents
 	- Support adding and removing of files (includes uploading if in the cloud)
 
-
-## Version 4
-
-Version 4 focuses on connecting the community.
-
-### v4.1
-
 - Web GUI
 	- Connect
 		- Purchasable Content (e.g. sell premium plugins, tutorials, themes, etc)
-
-### v4.0
-
-- Web GUI
 	- Exchange
 		- Community Centre
 			- Chat
@@ -60,37 +42,13 @@ Version 4 focuses on connecting the community.
 			- Plugins
 			- Rate and Discuss
 		- Learning Centre (tutorials, videos, etc)
-
-
-## Version 3
-
-Version 3 focuses on ease of use. This is done by introducing a web interface for administration of your docpad instance, and providing a more modular API. It also focuses on stability by introducing unit tests.
-
-
-### v3.2
-
-- Web GUI
 	- QuickStart
 		4. Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
-
-
-### v3.1
-
-- Web GUI
 	- Connect
 		- News
 		- Blog
 		- Polls
 		- Stats
-
-
-### v3.0
-
-- Unit Tests
-- Modular API for rendering single files
-- Modular API for rendering single content blocks
-- Exploration into modularising the entire code
-- Web GUI
 	- QuickStart
 		Provides a web interface for
 		1. Selecting your skeleton
@@ -99,6 +57,41 @@ Version 3 focuses on ease of use. This is done by introducing a web interface fo
 	- Administration
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
+
+- Unit Tests
+- Modular API for rendering single files
+- Modular API for rendering single content blocks
+- Exploration into modularising the entire code
+
+
+## Version 3
+
+### v3.5 (stability release) _- planned_
+
+- Unit tests
+
+### v3.4 _- planned_
+
+- Support for themes
+
+### v3.3 (stability release) _- planned_
+
+- Regeneration now does a differential replace of the `out` directory
+- Hidden files are now ignored in watchr
+
+### v3.2 _**- development underway**_
+
+- Added the plugin and skeleton exchange
+- Plugins are now installed via npm dependencies
+- You can now select which skeleton on creation of a new project
+
+### v3.1 **- development completed**
+
+- Added an interactive CLI
+
+### v3.0 **- development completed**
+
+- New event system, which supports blocking and queuing of events
 
 
 ## Version 2
