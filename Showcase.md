@@ -26,6 +26,7 @@ Websites built with DocPad
 - [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard.
 - [uberFrak](http://uberfrak.com) - Silly uchronias and fake stories (in french).
+- [v1rtual](http://v1rtual.net) - blog about hacking, electronics, turtels and stuff (english/german).
 
 ## Applications
 
