@@ -1,4 +1,4 @@
-Listings are sorted alphabetically.
+Listings are sorted alphabetically. Feel free to [update this page](https://github.com/bevry/docpad/wiki/Showcase/_edit) with your own projects or others which you have found. Note: requires a github account.
 
 
 ## In the press
