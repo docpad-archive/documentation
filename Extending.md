@@ -38,10 +38,10 @@ At the core of it, a renderer is based entirely off the following render event:
 		render: ({inExtension,outExtension,templateData,file}, next) ->
 			try
 				if inExtension in ['formatExtension','formatOtherExtension']
-					file.content = formatter.render formatExtension
+					file.content = formatter.render(formatExtension)
 				next()
 			catch err
-				next err
+				next(err)
 	
 		# ...
 
@@ -49,4 +49,7 @@ This fires when we want to render a particular document or layout. It will take 
 
 We also wrap it in a `try ... catch` to prevent docpad from crashing if an error occurs during rendering.
 
-Coolios.
+
+### Coding Standards
+
+While you are free to write your plugins in whichever standards you wish, [you can find the coding standards which the DocPad core uses here.](https://github.com/bevry/external/wiki/Coding-Standards)
