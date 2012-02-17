@@ -1,4 +1,12 @@
-## Upgrading from 1.x to 2.0 (v2 is the current stable version)
+## Upgrading from 2.x to 3.x (v3 is the latest stable version)
+
+1. A lot of property names of the `File` class have changed. The `File` class is used for all documents and layouts, which would likely affect you when rendering properties from documents inside your templates (e.g. `@document.title`). This change was made to better correlate the names with their values (before the correlation was quite ambiguous). [You can find the current set of properties and their descriptions here.](https://github.com/bevry/docpad/blob/master/lib/file.coffee#L12)
+
+2. For plugin developers, the way you extend from the `BasePlugin`, and the way you `module.exports` your plugin has changed. [To learn about the new convention, refer to the new _Extending_ guide by clicking here.](https://github.com/bevry/docpad/wiki/Extending)
+
+3. For those using DocPad as a module, DocPad now supports a `next` callback on it's constructor, allowing you to do `new DocPad(config,next)`. Anything that depends on a DocPad action being completed should go inside the `next` callback. While this is optional, it has provided helpful in eliminating timing problems.
+
+## Upgrading from 1.x to 2.0
 
 1. CoffeeScript v1.1.2 does not work with Node 0.5 or 0.6, you have to use v1.1.3 or higher. To do this, re-install CoffeeScript with `npm install -g coffee-script`
 2. For plugin developers:
