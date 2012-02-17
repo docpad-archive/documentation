@@ -62,6 +62,13 @@ Add the following to your document's meta data
     ignored: true
 
 
+### How do I re-render a document on each request? E.g. dynamic documents.
+
+Add the following to your document's meta data
+
+    dynamic: true
+
+
 ### How do I disable certain plugins?
 
 Inside your website's `package.json` file, you can add a `"docpad": {}` property - it may already be there. Inside that property, add `"enabledPlugins": {}` and inside that, add the name of the plugin you want to disable followed by `false` - e.g. if we wanted to disable the `eco` plugin we would have:
