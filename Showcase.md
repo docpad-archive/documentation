@@ -32,7 +32,7 @@ Websites built with DocPad
 
 Applications built with DocPad
 
-- [Node Chat](https://github.com/bevry/nodechat.docpad) - Node chat application, built with Socket.io, DocPad, Backbone.js, Twitter Bootstrap, written in CoffeeKup and CoffeeScript
+- [Node Chat](https://github.com/balupton/nodechat.docpad) - Node chat application, built with Socket.io, DocPad, Backbone.js, Twitter Bootstrap, written in CoffeeKup and CoffeeScript
 
 
 ## Presentations
