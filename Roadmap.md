@@ -58,34 +58,36 @@ Version structure and timelines:
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
 
-- Unit Tests
-- Modular API for rendering single files
-- Modular API for rendering single content blocks
+- Importers
+	- WordPress
+	- Tumblr
+	- Jekyll
+	- Octopress
+
+- Plugins are now installed via npm dependencies
+- Added the plugin and skeleton exchange
 - Exploration into modularising the entire code
 
 
 ## Version 3
 
-### v3.4 _- planned_
+### v3.3 _- planned_
 
-- Support for themes
+- Differential replace of the `out` directory
 
-### v3.3 (stability release) _- planned_
+### v3.2 _**- released**_
 
-- Regeneration now does a differential replace of the `out` directory
+- You can now select which skeleton on creation of a new project
+- Unit Tests
+- Modular API for rendering single files
+- Modular API for rendering single content blocks
 - Hidden files are now ignored in watchr
 
-### v3.2 _**- development underway**_
-
-- Added the plugin and skeleton exchange
-- Plugins are now installed via npm dependencies
-- You can now select which skeleton on creation of a new project
-
-### v3.1 **- development completed**
+### v3.1 **- released**
 
 - Added an interactive CLI
 
-### v3.0 **- development completed**
+### v3.0 **- released**
 
 - New event system, which supports blocking and queuing of events
 
