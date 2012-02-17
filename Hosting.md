@@ -20,60 +20,53 @@ __(I'll admit, this isn't as nice as it could be, will improve this in future ve
 
 
 
-### Via a Node.js Server
+### Via a Node.js Hosting Provider
 
-Works great with [no.de](http://no.de/) and [nodester](http://nodester.com/)
+Works great with [hereoku](http://devcenter.heroku.com/articles/node-js), [no.de](http://no.de/), and [nodester](http://nodester.com/).
+
+Inside your website's directory:
+
+1. Create a `config.json` file which contains:
+
+	``` javascript
+	{"version":"latest"}
+	```
+
+1. Create a `Procfile` which contains:
+
+	``` javascript
+	web: node server.js
+	```
+
+1. Inside your website's `package.json` file, ensure it has the following dependencies. Set the DocPad version to whichever version you are using, keep it specific.
+
+	``` javascript
+	"dependencies": {
+		"coffee-script": "1.2.x",
+		"express": "2.5.x",
+		"docpad": "3.2.7"
+	},
+	```
 
 1. Create a `server.js` file which contains:
 
 	``` javascript
 	require('coffee-script');
-	require(__dirname+'/server.coffee');
+	require(require('path').join(__dirname,'server.coffee'));
 	```
 
-2. Create a `server.coffee` file which contains:
+1. Create a `server.coffee` file, [base it off the one inside the KitchenSink Skeleton.](https://github.com/bevry/kitchensink.docpad/blob/master/server.coffee)
 
-	``` coffeescript
-	# Requires
-	docpad = require 'docpad'
-	express = require 'express'
+	1. Be sure to change vhosts part to the domains that you will be using
 
-	# -------------------------------------
-	# Server
-
-	# Configuration
-	masterPort = process.env.PORT || 10113
-
-	# Create Instances
-	docpadInstance = docpad.createInstance port: masterPort
-
-	# Fetch Servers
-	docpadInstance.generateAction -> docpadInstance.serverAction ->
-		docpadServer = docpadInstance.server
-
-		# Master Server
-		masterServer = docpadServer
-
-		# DNS Servers
-		masterServer.use express.vhost 'balupton.*', docpadServer
-		masterServer.use express.vhost 'balupton.*.*', docpadServer
-
-	```
-
-3. Customise the _DNS Servers_ part to match your own
-
-	``` coffeescript
-	# DNS Servers
-	masterServer.use express.vhost 'balupton.*', docpadServer
-	masterServer.use express.vhost 'balupton.*.*', docpadServer
-	```
-
-4. If you want to use a custom domain:
+1. If you are going to be using a custom domain name:
 
 	1. Ping your server e.g. `ping balupton.no.de`
 
-	2. Grab the IP address from the output
+	1. Grab the IP address from the output
 
-	3. Login to your domain's DNS manager
+	1. Login to your domain's DNS manager
 
-	4. Create an A Record for your domain pointing to that IP address
+	1. Create an A Record for your domain pointing to that IP address
+
+1. Do a deploy to your server. For the instructions on how to do this, refer to your hosting providers guide.
