@@ -5,9 +5,10 @@ Listings are sorted alphabetically. Feel free to [update this page](https://gith
 
 DocPad mentioned around the web
 
-- [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: covers; what is docpad, getting started with docpad, customising docpad
+- [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: Covers what is DocPad, getting started with DocPad, and customising DocPad
 - [HTML UI on DocPad](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html) - Extensive writeup on their thoughts of docpad and how they are using it
 - [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
+- [Using DropBox to deploy your DocPad website to your server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
 
 
 ## Websites
@@ -16,17 +17,17 @@ Websites built with DocPad
 
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
-- [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/bevry/kitchensink.docpad) - A showcase of everything docpad can do
-- [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - A development blog written in Korean
-- [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - A development blog written in Chinese
+- [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/bevry/kitchensink.docpad) - A showcase of everything DocPad can do
+- [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
+- [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
-- [Le blog d'Olivier](http://blog.bazoud.com) - [source](https://github.com/obazoud/blog.bazoud.com) - blog about web, java, spring, node.js, ... (in french/english).
+- [Le blog d'Olivier](http://blog.bazoud.com) - [source](https://github.com/obazoud/blog.bazoud.com) - English & French: Blog about web, java, spring, node.js, ...
 - [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
-- [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard.
-- [uberFrak](http://uberfrak.com) - Silly uchronias and fake stories (in french).
-- [v1rtual](http://v1rtual.net) - blog about hacking, electronics, turtels and stuff (english/german).
+- [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
+- [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
+- [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 
 ## Applications
 
