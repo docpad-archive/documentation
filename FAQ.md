@@ -119,35 +119,14 @@ It sure does. Checkout `/nifty/client-side-editing.html` in the [kitchensink ske
 
 
 
-### What is the list of properties on the default Document object?
+### What properties do documents have?
 
-Here's a list of what you'll have on the `Document` object that is passed into a template (unless you've added your own :P):
-
-* fullPath
-* relativePath
-* extensions
-* tags
-* relatedDocuments
-* date
-* basename
-* extension
-* extensionRendered
-* filename
-* content
-* contentSrc
-* contentRaw
-* contentRendered
-* relativeBase
-* title
-* slug
-* id
-* url
-* layout
+Documents and Layouts both inherit from the `File` class. [You can discover the complete listing of the default properties the `File` class by browsing its source code by clicking here.](https://github.com/bevry/docpad/blob/master/lib/file.coffee#L12)
 
 
 ### Does it work on windows?
 
-Sure does, check the installation instructions in the [readme](https://github.com/bevry/docpad).
+Sure does, check the installation instructions in the [Readme](https://github.com/bevry/docpad).
 
 
 ### Where can I host my docpad website?
