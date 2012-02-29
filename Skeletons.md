@@ -14,6 +14,7 @@ Please ensure the licenses are open-permissive for any themes that are implement
 ### Unknown License
 
 - Effector Theme - preview http://effectortheme.tumblr.com/
+- Lightweight Theme - preview http://www.tumblr.com/theme/10820
 - http://www.woothemes.com/2009/09/rockstar/
 - http://www.woothemes.com/2008/11/typebased/
 - http://www.woothemes.com/2010/09/skeptical/
