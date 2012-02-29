@@ -1,4 +1,3 @@
-
 The following events are at your disposal in DocPad v3.3. 
 
 ``` coffeescript
@@ -56,7 +55,7 @@ renderBefore: ({templateData},next) ->
 	return next?()
 
 ###
-Render Extension
+Rende
 Called per file, for each extension conversion
 Used to render from one extension to another
 
@@ -71,7 +70,7 @@ against what extensions are expecting for your particular conversion.
 You would apply the conversion to the file.content value
 and save the results of the conversion back to the file.content variable
 ###
-renderExtension: ({inExtension,outExtension,templateData,file}, next) ->
+render: ({inExtension,outExtension,templateData,file}, next) ->
 	return next?()
 
 
