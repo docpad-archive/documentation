@@ -17,7 +17,7 @@ The most simplest version of this file will contain the following:
 
 What this does is receives our BasePlugin from DocPad, and returns the `YourPlugin` class. Of course you should change the your plugin references to whatever your plugin is actually called.
 
-The BasePlugin is important as it provides all the tucked away magic for our plugins. [You can take a look inside the base plugin here](https://github.com/bevry/docpad/blob/master/lib/base-plugin.coffee) - a good way to discover what events are at your disposal.
+The [BasePlugin](https://github.com/bevry/docpad/blob/master/lib/base-plugin.coffee) is important as it provides some of the tucked away magic for out plugins. But what is event more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you by visiting the Plugin Events wiki page here.](https://github.com/bevry/docpad/wiki/Plugin-Events)
 
 
 ### plugins/yourPlugin/package.json
