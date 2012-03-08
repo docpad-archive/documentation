@@ -131,6 +131,10 @@ It sure does. Checkout `/nifty/client-side-editing.html` in the [kitchensink ske
 Documents and Layouts both inherit from the `File` class. [You can discover the complete listing of the default properties the `File` class by browsing its source code by clicking here.](https://github.com/bevry/docpad/blob/master/lib/file.coffee#L12)
 
 
+### What events are available to my plugins?
+
+[You can discover the complete listing of the available plugin events by visting the Plugin Events wiki page by clicking here.](https://github.com/bevry/docpad/wiki/Plugin-Events).
+
 ### Does it work on windows?
 
 Sure does, check the installation instructions in the [Readme](https://github.com/bevry/docpad).
