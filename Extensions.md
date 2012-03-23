@@ -25,6 +25,7 @@ These plugins are already bundled with DocPad. [To view all the bundled plugins 
 These plugins you'll have to install manually.
 
 - [Markdown Reference Links](https://github.com/Delapouite/docpad-markdownreferencelinks) - provides a way to put links references into the header of a document so they can be used later inside its markdown content.
+- [Images](https://github.com/msutherl/docpad-images) - provide access to an array of paths to images associated with the current document during document rendering
 
 
 ## Waiting to be implemented
