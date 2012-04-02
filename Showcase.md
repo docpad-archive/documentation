@@ -8,8 +8,8 @@ DocPad mentioned around the web
 - [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: Covers what is DocPad, getting started with DocPad, and customising DocPad
 - [HTML UI on DocPad](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html) - Extensive writeup on their thoughts of docpad and how they are using it
 - [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
-- [Using DropBox to deploy your DocPad website to your server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
-
+- [Dropbox auf dem eigenen Server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
+- [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japenese: Covers getting started with DocPad and a comparison with other static site generators
 
 ## Websites
 
@@ -22,12 +22,13 @@ Websites built with DocPad
 - [Doug Neiner's Code Website](http://code.dougneiner.com/) - [source](https://github.com/dcneiner/dougneiner.docpad) - Husband to one, father to three, jQuery Team Member, Senior Designer at [appendTo](http://appendto.com/)
 - [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
+- [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
-- [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
 - [Le blog d'Olivier](http://blog.bazoud.com) - [source](https://github.com/obazoud/blog.bazoud.com) - English & French: Blog about web, java, spring, node.js, ...
-- [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
+- [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
+- [Tomohisa Oda](http://tomohisaoda.com/) - Japanese: Web engineer and designer from Japan
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
 - [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
