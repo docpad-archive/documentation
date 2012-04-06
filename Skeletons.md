@@ -6,15 +6,16 @@ Please ensure the licenses are open-permissive for any themes that are implement
 
 ### MIT License
 
-- Hunch Theme - preview http://rsms.me/ - source https://github.com/rsms/tumblr-theme-hunch
-- Courier Theme - preview http://couriertheme.tumblr.com/ - source https://github.com/davidyeiser/courier
-- Skeleton Theme - preview http://www.getskeleton.com/ - source https://github.com/dhgamache/Skeleton
+- Codex Hub - preview http://alogicalparadox.com/codex-hub/ - source https://github.com/logicalparadox/codex-hub
+- Hunch - preview http://rsms.me/ - source https://github.com/rsms/tumblr-theme-hunch
+- Courier - preview http://couriertheme.tumblr.com/ - source https://github.com/davidyeiser/courier
+- Skeleton - preview http://www.getskeleton.com/ - source https://github.com/dhgamache/Skeleton
 
 
 ### Unknown License
 
-- Effector Theme - preview http://effectortheme.tumblr.com/
-- Lightweight Theme - preview http://www.tumblr.com/theme/10820
+- Effector - preview http://effectortheme.tumblr.com/
+- Lightweight - preview http://www.tumblr.com/theme/10820
 - http://www.woothemes.com/2009/09/rockstar/
 - http://www.woothemes.com/2008/11/typebased/
 - http://www.woothemes.com/2010/09/skeptical/
