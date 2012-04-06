@@ -16,6 +16,7 @@ DocPad mentioned around the web
 Websites built with DocPad
 
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
+- [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Creator of DocPad
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/bevry/kitchensink.docpad) - A showcase of everything DocPad can do
 - [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
