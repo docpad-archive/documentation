@@ -1,8 +1,25 @@
-Existing Skeletons and Themes are now listed on the [Showcase Page](https://github.com/bevry/docpad/wiki/Showcase).
+## Skeletons
 
-## Todo
+### Bundled
 
-Please ensure the licenses are open-permissive for any themes that are implemented: (MIT and BSD are best)
+These are skeletons and themes officially available to you as part of the DocPad bootstrap process:
+
+- [canvas.docpad](https://github.com/bevry/canvas.docpad) `branch: docpad-3.x` - The bare minimum to get started, with a few bundled client-side libraries to make it easier.
+- [kitchensink.docpad](https://github.com/bevry/kitchensink.docpad) `branch: ocpad-3.x` - The entire kitchensink to showcase everything that docpad is capable of.
+- [balupton.docpad](https://github.com/balupton/balupton.docpad) `branch: 2012` - The personal website/blog of Benjamin Lupton, the creator of DocPad.
+- [deckpad](https://github.com/calvinmetcalf/deckpad) `branch: master` - Build rich HTML5 presentations with DocPad.
+- [nodechat.docpad](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js.\nNOTE: To run nodechat you must use `coffee server.coffee` instead of `docpad run`
+
+
+### Others
+
+So far all known skeletons are bundled. Yay :)
+
+
+## Requested
+
+These are skeletons and themes that have not yet been coded up, but have been requested. Please be sure to categorise them in their appropriate license, so we know that we are legally entitled to port them over to DocPad.
+
 
 ### MIT License
 
