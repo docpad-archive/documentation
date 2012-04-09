@@ -1,4 +1,4 @@
-This is a listing of all the tutorials for DocPad (that we know about). If you're written one, be sure to add it here :)
+This is a listing of all the guides for DocPad (that we know about). If you're written one, be sure to add it here :)
 
 
 ### [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending)
