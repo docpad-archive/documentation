@@ -1,6 +1,8 @@
-## Getting Started
+## Version Note
 
-*This guide applies to version 3 of DocPad. [If you are looking for the version 1 & 2 guide, click here.](https://github.com/bevry/docpad/wiki/Extending-v1-2)*
+**This guide applies to version 4 of DocPad.** [The version 1 and version 2 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v1v2). [The version 3 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v3).
+
+## Getting Started
 
 Inside your docpad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g. `plugins/yourPlugin`), and inside your plugin's directory create these two files:
 
