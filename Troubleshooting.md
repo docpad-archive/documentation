@@ -15,11 +15,6 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 - HAML: `!= content` instead of `= content`
 
 
-### I get the error: `Cannot find module 'buildr'`
-
-Run `npm install buildr` and that'll fix it. This is because the skeleton you're currently running utilises the buildr plugin, as such we need to have buildr installed.
-
-
 ### I get CoffeeScript errors
 
 Try installing the latest version of CoffeeScript via `npm install -g coffee-script`. Versions 1.1.1, and 1.1.3 and up are supported. If you still get problems, post them in the [issue tracker](https://github.com/bevry/docpad/issues).
