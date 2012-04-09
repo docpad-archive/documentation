@@ -81,7 +81,7 @@ Render Document
 Called per file, after all the extensions are rendered.
 It is also called for each of the layout renderings for the document, as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
 Used to perform transformations to the entire document.
-Only available from DocPad v3.3 and above.
+Available from DocPad v3.3 and above.
 
 Example:
 For instance, you want to search for all code snippets with the class highlight in order to syntax highlight them on the server-side
