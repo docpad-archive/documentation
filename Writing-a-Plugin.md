@@ -1,6 +1,6 @@
 ## Version Note
 
-**This guide applies to version 4 of DocPad.** [The version 1 and version 2 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v1v2). [The version 3 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v3).
+**This guide applies to version 4 of DocPad.** [The version 3 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v3). [The version 1 and version 2 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v1v2).
 
 ## Getting Started
 
