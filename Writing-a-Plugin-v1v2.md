@@ -50,8 +50,3 @@ At the core of it, a renderer is based entirely off the following render event:
 This fires when we want to render a particular document or layout. It will take a document like `my-blog-post.html.md.eco` and run this function twice, once for the eco to markdown conversion, and again for the markdown to html conversion. In the first case `inExtension` would equal `eco` and `outExtension` would equal md, and in the second case inExtension would equal `md` and `outExtensio`n would equal html.
 
 We also wrap it in a `try ... catch` to prevent docpad from crashing if an error occurs during rendering.
-
-
-### Coding Standards
-
-While you are free to write your plugins in whichever standards you wish, [you can find the coding standards which the DocPad core uses here.](https://github.com/bevry/external/wiki/Coding-Standards)
