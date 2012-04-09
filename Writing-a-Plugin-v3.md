@@ -118,11 +118,3 @@ DocPad knows when to call the render event based on the documents extensions. Fo
 
 Documentation about other types is soon to come.
 
-
-## Existing Plugins
-
-[You can take a look at the existing bundled plugins inside DocPad here](https://github.com/bevry/docpad/blob/master/lib/exchange) - they will give you a good foundation on how to go about your own. [You can also discover a showcase of all available plugins by clicking here.](https://github.com/bevry/docpad/wiki/Extensions)
-
-## Coding Standards
-
-While you are free to write your plugins in whichever standards you wish, [you can find the coding standards which the DocPad core uses here.](https://github.com/bevry/external/wiki/Coding-Standards)
