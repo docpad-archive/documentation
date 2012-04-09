@@ -1,5 +1,3 @@
-## Welcome
-
 Welcome to the lifeblood of DocPad! The community!
 
 
