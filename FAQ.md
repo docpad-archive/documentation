@@ -69,6 +69,27 @@ Add the following to your document's meta data
     dynamic: true
 
 
+### What data is exposed to my template engine?
+
+Templating engines are renderers for languages which support business logic. For instance, the template engine [Eco](https://github.com/sstephenson/eco) provides us with the following syntax `<% your business logic %>` or to output a variable we can use `<%=some variable%>`.
+
+As such, the data which we expose to our templating engines is called the `templateData`, and it contains the following:
+
+- `require`: a reference to node's [require](http://nodejs.org/api/globals.html#globals_require) function, use it to include other node modules on the fly
+- `docpad`: a reference to the currently running DocPad instance which is rendering the document
+- `database`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all our documents
+- `document`: a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/lib/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/lib/models/file.coffee)
+- `documents`: an array of all the website's documents, sorted newest to last
+- `site`: an object of several site-specific properties, contains:
+    - `date`: a javascript date object for the time that the website was last generated
+- `blocks`: an object that contains several properties relating to blocks to be inserted without our layout, contains:
+    - `scripts`: an array of strings which should be outputted where your script elements go
+    - `styles`: an array of strings which should be outputted where your style elements go
+    - `meta`: an array of strings which should be outputted where your meta elements go
+
+For instance, to output the current document's title with eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what eco uses) you access by using the `@` character.
+
+
 ### How do I disable certain plugins?
 
 Inside your website's `package.json` file, you can add a `"docpad": {}` property - it may already be there. Inside that property, add `"enabledPlugins": {}` and inside that, add the name of the plugin you want to disable followed by `false` - e.g. if we wanted to disable the `eco` plugin we would have:
@@ -119,16 +140,6 @@ Inside your website's `package.json` file, you'll want to customise the property
 	}
 }
 ```
-
-### Does it support client-side editing of documents?
-
-It sure does. Checkout `/nifty/client-side-editing.html` in the [kitchensink skeleton](https://github.com/bevry/kitchensink.docpad) for a demo :-)
-
-
-
-### What properties do documents have?
-
-Documents and Layouts both inherit from the `File` class. [You can discover the complete listing of the default properties the `File` class by browsing its source code by clicking here.](https://github.com/bevry/docpad/blob/master/lib/file.coffee#L12)
 
 
 ### What events are available to my plugins?
