@@ -15,8 +15,8 @@ The ultimate listing of everything docpad. Websites, web applications, companies
 This is the big picture vision page for DocPad and the steps needed to get there. Worth checking out.
 
 
-## [Tutorials](https://github.com/bevry/docpad/wiki/Tutorials)
-Tutorials related to DocPad are listed here, it's the place where you can learn how to accomplish cool new stuff with DocPad.
+## [Guides & Tutorials](https://github.com/bevry/docpad/wiki/Guides)
+Guides and Tutorials related to DocPad are listed here, it's the place where you can learn how to accomplish cool new stuff with DocPad.
 
 
 ## [Participate](https://github.com/bevry/docpad/wiki/Participate)
