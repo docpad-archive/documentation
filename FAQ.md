@@ -145,9 +145,9 @@ Sure does, check the installation instructions in the [Readme](https://github.co
 [Check out the Hosting Guide here](https://github.com/bevry/docpad/wiki/Hosting)
 
 
-### Where can I find tutorials about DocPad?
+### Where can I find guides and tutorials about DocPad?
 
-[Check out the Tutorials Page here](https://github.com/bevry/docpad/wiki/Tutorials)
+[Check out the Guides Page here](https://github.com/bevry/docpad/wiki/Guides)
 
 
 ### I'm getting problems, can I get help?
