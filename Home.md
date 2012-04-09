@@ -29,7 +29,7 @@ Need more power? Here is a listing of all the plugins people have made for DocPa
 Discover new Skeletons for DocPad, and themes waiting to be coded up right here.
 
 
-## [The Roadmap](https://github.com/bevry/docpad/wiki/Roadmap)
+## [Roadmap](https://github.com/bevry/docpad/wiki/Roadmap)
 This is the big picture vision page for DocPad and the steps needed to get there. Worth checking out.
 
 
