@@ -37,8 +37,14 @@ This is the big picture vision page for DocPad and the steps needed to get there
 Ready to help DocPad become even better? Learn what how you can help right here.
 
 
+## [Google Group](https://groups.google.com/forum/#!forum/docpad)
+Use the Google Group for general purpose discussions and questions about DocPad.
+
 ## [Facebook Group](https://www.facebook.com/groups/docpad/)
-With the Facebook Group you can join us for a more personal discussion, as well as discover any meetups and events happening in your area.
+Use the Facebook Group for a more personal discussion about DocPad. Including events, meetups, and getting to know each other posts.
+
+## [GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
+USe the GitHub issue tracker for bug reports and feature requests.
 
 
 ## [IRC](irc://irc.freenode.net/docpad)
