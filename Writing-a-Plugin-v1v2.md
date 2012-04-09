@@ -1,6 +1,8 @@
-## Getting Started
+## Version Note
 
-*This guide applies to versions 1 and 2 of DocPad. [If you are looking for the latest guide, click here.](https://github.com/bevry/docpad/wiki/Writing-a-Plugin)*
+**This guide applies to version 1 and version 2 of DocPad.** [The latest version guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin).
+
+## Getting Started
 
 Inside your docpad website directory, create a plugins directory. Inside it, create a new file called my-plugin.coffee and let it contain the following:
 
