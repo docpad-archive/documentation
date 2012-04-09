@@ -1,4 +1,4 @@
-It's interesting to see what plugins others have come up with. Link to DocPad plugins here.
+Here is a listing of all the plugins available for DocPad. If you have created a plugin, be sure to list it here :-)
 
 ## Bundled
 
@@ -20,7 +20,7 @@ These plugins are already bundled with DocPad. [To view all the bundled plugins 
 - [Related Pages Plugin](https://github.com/bevry/docpad/blob/master/lib/exchange/plugins/related/related.plugin.coffee) - scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents. Access them through `@document.relatedDocuments`
 
 
-## User Created
+## Extras
 
 These plugins you'll have to install manually.
 
@@ -28,6 +28,6 @@ These plugins you'll have to install manually.
 - [Images](https://github.com/msutherl/docpad-images) - provide access to an array of paths to images associated with the current document during document rendering
 
 
-## Waiting to be implemented
+## Requested
 
 [Here is a list of plugins waiting to be coded up :-)](https://github.com/bevry/docpad/issues?labels=plugin&sort=created&direction=desc&state=open&page=1)
