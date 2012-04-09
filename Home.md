@@ -9,16 +9,8 @@ Got a quick question? Or know a nifty answer that you think others will benefit 
 The ultimate listing of everything docpad. Websites, web applications, companies, presentations, press, etc. Well worth checking out.
 
 
-## [The Roadmap](https://github.com/bevry/docpad/wiki/Roadmap)
-This is the big picture vision page for DocPad and the steps needed to get there. Worth checking out.
-
-
 ## [Guides & Tutorials](https://github.com/bevry/docpad/wiki/Guides)
 Guides and Tutorials related to DocPad are listed here, it's the place where you can learn how to accomplish cool new stuff with DocPad.
-
-
-## [Participate](https://github.com/bevry/docpad/wiki/Participate)
-Ready to help DocPad become even better? Learn what how you can help right here.
 
 
 ## [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending)
@@ -35,6 +27,14 @@ Discover new Skeletons for DocPad, and themes waiting to be coded up right here.
 
 ## [Upgrade Guides](https://github.com/balupton/docpad/wiki/Upgrading)
 Ready to upgrade to a new version of DocPad? Be sure to check out the upgrade guides to find out what is involved.
+
+
+## [The Roadmap](https://github.com/bevry/docpad/wiki/Roadmap)
+This is the big picture vision page for DocPad and the steps needed to get there. Worth checking out.
+
+
+## [Participate](https://github.com/bevry/docpad/wiki/Participate)
+Ready to help DocPad become even better? Learn what how you can help right here.
 
 
 ## [Facebook Group](https://www.facebook.com/groups/docpad/)
