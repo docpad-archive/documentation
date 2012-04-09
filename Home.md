@@ -13,6 +13,10 @@ The ultimate listing of everything docpad. Websites, web applications, companies
 Guides and Tutorials related to DocPad are listed here, it's the place where you can learn how to accomplish cool new stuff with DocPad.
 
 
+## [Upgrade Guides](https://github.com/bevry/docpad/wiki/Upgrading)
+Ready to upgrade to a new version of DocPad? Be sure to check out the upgrade guides to find out what is involved.
+
+
 ## [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending)
 Where to go to learn how to add more power to DocPad.
 
@@ -23,10 +27,6 @@ Need more power? Here is a listing of all the plugins people have made for DocPa
 
 ## [Skeletons](https://github.com/bevry/docpad/wiki/Skeletons)
 Discover new Skeletons for DocPad, and themes waiting to be coded up right here.
-
-
-## [Upgrade Guides](https://github.com/balupton/docpad/wiki/Upgrading)
-Ready to upgrade to a new version of DocPad? Be sure to check out the upgrade guides to find out what is involved.
 
 
 ## [The Roadmap](https://github.com/bevry/docpad/wiki/Roadmap)
