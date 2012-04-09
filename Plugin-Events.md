@@ -1,4 +1,4 @@
-The following events are at your disposal in DocPad v3.3. 
+These are the plugin events at your disposal.
 
 ``` coffeescript
 
