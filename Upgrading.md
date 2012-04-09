@@ -1,4 +1,19 @@
-## Upgrading from 2.x to 3.x (v3 is the latest stable version)
+## Upgrading from 3.x to 4.x (v4 is the latest stable version)
+
+1. Skeletons are no longer cached, which means that you can no longer create a new website using a skeleton while offline. While this can be a pain, it was an essential change in order to improve stability and reduce complexity of the code base.
+
+2. A document's `title` will no longer default to the document's `filename` if not set. Instead a new property called `name` exists, which can be set by your document meta data. This is so the `title` property can be used for Page Titles (e.g. `<title>`) whereas the `name` property can be used for navigation listings etc.
+
+3. The DocPad core has been cleaned up a lot, and as such so has the way plugin events are triggered. We now utilise [balUtil's](https://github.com/balupton/bal-util.npm) [emitSync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L257) and [emitAsync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L241) instead of the old `triggerPluginEvent`. This means that for now, plugin priorities are discarded - however they may be added back in the future (so leave them in there if you have them).
+
+4. Plugin rendering has had a significant change, which is you should no longer use `file.content` to read and update the current document's content. Instead a new argument called `content` wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending) wiki page.
+
+5. When an error occurs, the error will now be sent back to DocPad using the [AirBrake](http://airbrake.io/) service. If you would like this disabled then you can turn it off by setting `reportErrors` to `false` in your docpad configuration.
+
+6. A lot of unstable or not as popular plugins has been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: admin, authenticate, autoupdate, buildr, html2jade, move, php, rest, roy, and ruby. If you would like to continue using them, you will have to download them manually from the docpad-extras repository and insert them into your website's `plugins` directory. More info on this on the [Installing a Plugin Guide](https://github.com/bevry/docpad/wiki/Installing-a-Plugin).
+
+
+## Upgrading from 2.x to 3.x
 
 1. A lot of property names of the `File` class have changed. The `File` class is used for all documents and layouts, which would likely affect you when rendering properties from documents inside your templates (e.g. `@document.title`). This change was made to better correlate the names with their values (before the correlation was quite ambiguous). [You can find the current set of properties and their descriptions here.](https://github.com/bevry/docpad/blob/master/lib/file.coffee#L12)
 
