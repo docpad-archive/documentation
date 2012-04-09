@@ -23,20 +23,20 @@ Guides and Tutorials related to DocPad are listed here, it's the place where you
 Ready to help DocPad become even better? Learn what how you can help right here.
 
 
+## [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending)
+Where to go to learn how to add more power to DocPad.
+
+
 ## [Plugins](https://github.com/bevry/docpad/wiki/Plugins)
 Need more power? Here is a listing of all the plugins people have made for DocPad. If you've made a plugin, be sure to list it here.
 
 
-## [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending)
-Learn how to write your own extensions for DocPad here.
+## [Skeletons](https://github.com/bevry/docpad/wiki/Skeletons)
+Discover new Skeletons for DocPad, and themes waiting to be coded up right here.
 
 
 ## [Upgrade Guides](https://github.com/balupton/docpad/wiki/Upgrading)
 Ready to upgrade to a new version of DocPad? Be sure to check out the upgrade guides to find out what is involved.
-
-
-## [Themes](https://github.com/bevry/docpad/wiki/Themes)
-Discover new themes for DocPad, and themes waiting to be coded up right here.
 
 
 ## [Facebook Group](https://www.facebook.com/groups/docpad/)
