@@ -49,15 +49,6 @@ Presentations built with DocPad
 - [What is DeckPad](http://calvinmetcalf.github.com/deckpad/) - Talks about using [DeckPad](https://github.com/calvinmetcalf/deckpad) to create awesome HTML5 presentations with DocPad and [Deck.js](https://github.com/imakewebthings/deck.js)
 
 
-## Skeletons and Themes
-
-Skeletons and Themes for DocPad that you can use
-
-- [Blank Canvas](https://github.com/bevry/canvas.docpad) - The bare minimum you need to get hacking away with a new website
-- [Kitchensink](https://github.com/bevry/kitchensink.docpad) - Implementation of Twitter Bootstrap with examples of everything you can do in DocPad
-- [DeckPad](https://github.com/calvinmetcalf/deckpad) - Build your presentations with DocPad and [Deck.js](https://github.com/imakewebthings/deck.js)
-
-
 ## Companies
 
 Companies spotted using DocPad
