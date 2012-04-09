@@ -89,6 +89,7 @@ As such, the data which we expose to our templating engines is called the `templ
     - `scripts`: an array of strings which should be outputted where your script elements go
     - `styles`: an array of strings which should be outputted where your style elements go
     - `meta`: an array of strings which should be outputted where your meta elements go
+- `req`: dynamic documents will also have this available to the, it is a reference to the current request object created by the [ExpressJS](http://expressjs.com/) framework
 
 For instance, to output the current document's title with eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what eco uses) you access by using the `@` character.
 
