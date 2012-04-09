@@ -23,24 +23,14 @@ The eternal vision of DocPad and it's everlasting future lays here. Well worth c
 Discover or post docpad related articles and guides here. Great for getting started and learning new things.
 
 
-## [The Community](https://github.com/bevry/docpad/wiki/Users)
-
-Discover the people behind the community here :-) If you're using DocPad, be sure to add yourself to the list as well :-)
-
-
 ## [Participate](https://github.com/bevry/docpad/wiki/Participate)
 
 Want to help make DocPad even more amazing and awesome? This page will provide an entire walkthrough and guide to getting started as a participant in the DocPad community :-) Looking forward to working with you soon!
 
 
-## [Events and Competitions](https://github.com/bevry/docpad/wiki/Events)
+## [Plugins](https://github.com/bevry/docpad/wiki/Plugins)
 
-Looking to learn more about DocPad in real life? Check out the latest events or host your own.
-
-
-## [Extensions](https://github.com/bevry/docpad/wiki/Extensions)
-
-Need more power? Check out the extensions people are making for DocPad, or if you've made your own, post it here :-)
+Need more power? Check out the plugins people are making for DocPad, or if you've made your own, post it here :-)
 
 
 ## [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending)
@@ -48,9 +38,14 @@ Need more power? Check out the extensions people are making for DocPad, or if yo
 Want to learn how to add your own taste of power to DocPad? This is the place to start. Learn how to extend docpad so it can fit your awesome needs :-)
 
 
-## [Skeletons and Themes](https://github.com/bevry/docpad/wiki/Skeletons)
+## [Themes](https://github.com/bevry/docpad/wiki/Themes)
 
-Check out the listing of all the different skeletons and themes available for DocPad :-)
+Check out the listing of all the different themes available for DocPad :-)
+
+
+## [Facebook Group](https://www.facebook.com/groups/docpad/)
+
+Join us for a more personal discussion on the Facebook Group, any meetups will be posted here.
 
 
 ## [IRC](irc://irc.freenode.net/docpad)
