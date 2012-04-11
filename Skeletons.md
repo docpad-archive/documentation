@@ -5,7 +5,7 @@
 These are skeletons and themes officially available to you as part of the DocPad bootstrap process:
 
 - [canvas.docpad](https://github.com/bevry/canvas.docpad) `branch: docpad-3.x` - The bare minimum to get started, with a few bundled client-side libraries to make it easier.
-- [kitchensink.docpad](https://github.com/bevry/kitchensink.docpad) `branch: docpad-3.x` - [preview](docpad-kitchensink.herokuapp.com) - The entire kitchensink to showcase everything that docpad is capable of.
+- [kitchensink.docpad](https://github.com/bevry/kitchensink.docpad) `branch: docpad-3.x` - [preview](http://docpad-kitchensink.herokuapp.com) - The entire kitchensink to showcase everything that docpad is capable of.
 - [balupton.docpad](https://github.com/balupton/balupton.docpad) `branch: 2012` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad.
 - [deckpad](https://github.com/calvinmetcalf/deckpad) `branch: master` - Build rich HTML5 presentations with DocPad.
 - [nodechat.docpad](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js.\nNOTE: To run nodechat you must use `coffee server.coffee` instead of `docpad run`
