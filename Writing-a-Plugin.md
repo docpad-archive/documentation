@@ -1,6 +1,6 @@
 ## Version Note
 
-**This guide applies to version 4 of DocPad.** [The version 3 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v3). [The version 1 and version 2 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v1v2).
+**This guide applies to version 4 and 5 of DocPad.** [The version 3 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v3). [The version 1 and version 2 guide is here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin-v1v2).
 
 
 ## Getting Started
@@ -41,43 +41,26 @@ This file should look something like this:
 		"something",
 		"somethingElse"
 	],
-	"author": {
-		"name": "Your firstname and lastname go here",
-		"email": "your@email.address",
-		"url": "http://your.website"
-	},
+	"author": "Name <email> (url)",
 	"maintainers": [
-		{
-			"name": "Your firstname and lastname go here",
-			"email": "your@email.address",
-			"url": "http://your.website"
-		}
+		"Name <email> (url)",
 	],
 	"contributors": [
-		{
-			"name": "Your firstname and lastname go here",
-			"email": "your@email.address",
-			"url": "http://your.website"
-		}
+		"Name <email> (url)",
 	],
 	"bugs": {
 		"url": "https://github.com/your-github-username/docpad-yourPlugin/issues"
 	},
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://creativecommons.org/licenses/MIT/"
-		}
-	],
 	"repository" : {
 		"type": "git",
 		"url": "http://github.com/your-github-username/docpad-yourPlugin.git"
 	},
+	"engines" : {
+		"node": ">=0.4.0",
+		"docpad": "5.x"
+	},
 	"dependencies": {
 		"something": "1.0.x"
-	},
-	"engines" : {
-		"node": ">=0.4.0"
 	},
 	"main": "./something.plugin.coffee"
 }
@@ -105,7 +88,7 @@ module.exports = (BasePlugin) ->
 	# Render some content
 	render: (opts, next) ->
 		# Prepare
-		{inExtension,outExtension,templateData,file,content} = opts
+		{inExtension,outExtension,templateData,file} = opts
 
 		# Check extensions
 		if inExtension in ['something'] and outExtension in ['somethingElse']
@@ -113,7 +96,7 @@ module.exports = (BasePlugin) ->
 			something = require('something')
 
 			# Render
-			opts.content = something.renderToSomethingElse(content)
+			opts.content = something.renderToSomethingElse(opts.content)
 	
 		# Done, return back to DocPad
 		return next()
