@@ -40,7 +40,7 @@
 
 3. For those using DocPad as a module, DocPad now supports a `next` callback on it's constructor, allowing you to do `new DocPad(config,next)`. Anything that depends on a DocPad action being completed should go inside the `next` callback. While this is optional, it has provided helpful in eliminating timing problems.
 
-## Upgrading from 1.x to 2.0
+## Upgrading from 1.x to 2.x
 
 1. CoffeeScript v1.1.2 does not work with Node 0.5 or 0.6, you have to use v1.1.3 or higher. To do this, re-install CoffeeScript with `npm install -g coffee-script`
 2. For plugin developers:
@@ -54,7 +54,7 @@
 4. The Bootstrap Skeleton is now the [Kitchensink Skeleton](https://github.com/balupton/kitchensink.docpad)
 
 
-## Upgrading from 0.x to 1.0
+## Upgrading from 0.x to 1.x
 
 1. Install docpad with the new global dependences `npm install -g coffee-script docpad`
 2. Any of your `documents` or `layouts` which use the eco templating engine should have the extension `.eco` appended. E.g. `layouts/default.html` to `layouts/default.html.eco`.
