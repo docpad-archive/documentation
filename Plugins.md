@@ -9,18 +9,18 @@ To install a plugin, do a `npm install docpad-plugin-#{pluginName}` inside your 
 
 These plugins add support for extra markups and languages to DocPad
 
-- [coffee](https://github.com/bevry/docpad-extras/blob/plugins/coffee/) - Supports [CoffeeKup](http://coffeekup.org/) to anything and from HTML, and [CoffeeScript](http://jashkenas.github.com/coffee-script/) to and from JavaScript
+- [coffee](https://github.com/bevry/docpad-extras/blob/plugins/coffee/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee` and JavaScript to CoffeeScript `.coffee.js`, as well as [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee|coffeekup|ck` and HTML to CoffeeKup `.coffee|coffeekup|ck.html`
 - [eco](https://github.com/bevry/docpad-extras/blob/plugins/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
 - [haml](https://github.com/bevry/docpad-extras/blob/plugins/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
 - [hogan](https://github.com/bevry/docpad-extras/blob/plugins/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
-- [html2jade](https://github.com/bevry/docpad-extras/tree/master/plugins/html2jade) - Supports HTML to [Jade](http://jade-lang.com/)
+- [html2jade](https://github.com/bevry/docpad-extras/tree/master/plugins/html2jade) - Supports HTML to [Jade](http://jade-lang.com/) `.jade.html`
 - [jade](https://github.com/bevry/docpad-extras/blob/plugins/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
 - [less](https://github.com/bevry/docpad-extras/blob/plugins/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
 - [markdown](https://github.com/bevry/docpad-extras/blob/plugins/markdown/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown`
-- [move](https://github.com/bevry/docpad-extras/tree/master/plugins/move) - Supports [Move](http://movelang.org/) to JavaScript
-- [php](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [PHP](http://php.net/) to anything
-- [roy](https://github.com/bevry/docpad-extras/tree/master/plugins/roy) - Supports [Roy](http://roy.brianmckenna.org/) to JavaScript
-- [ruby](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything
+- [move](https://github.com/bevry/docpad-extras/tree/master/plugins/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
+- [php](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [PHP](http://php.net/) to anything `.anything.php|phtml`
+- [roy](https://github.com/bevry/docpad-extras/tree/master/plugins/roy) - Supports [Roy](http://roy.brianmckenna.org/) to JavaScript `.js.roy`
+- [ruby](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.ruby|erb`
 - [sass](https://github.com/bevry/docpad-extras/blob/plugins/sass/) - Supports [SASS](http://sass-lang.com/) to CSS `.css.sass|scss`
 - [stylus](https://github.com/bevry/docpad-extras/blob/plugins/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.styl|stylus`
 
