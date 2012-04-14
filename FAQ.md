@@ -81,7 +81,8 @@ As such, the data which we expose to our templating engines is called the `templ
 - `require`: a reference to node's [require](http://nodejs.org/api/globals.html#globals_require) function, use it to include other node modules on the fly
 - `docpad`: a reference to the currently running DocPad instance which is rendering the document
 - `database`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all our documents
-- `document`: a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/lib/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/lib/models/file.coffee)
+- `document`: a JavaScript Object containing the serialised values of our `documentModel` (e.g. `documentModel.toJSON()`)
+- `documentModel`: a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/lib/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/lib/models/file.coffee) which extends a [Backbone Model](http://documentcloud.github.com/backbone/#Model)
 - `documents`: an array of all the website's documents, sorted newest to last
 - `site`: an object of several site-specific properties, contains:
     - `date`: a javascript date object for the time that the website was last generated
