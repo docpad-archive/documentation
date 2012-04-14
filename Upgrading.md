@@ -1,4 +1,31 @@
-## Upgrading from 3.x to 4.x (v4 is the latest stable version)
+## Upgrading from 4.x to 5.x (v5 is the latest stable version)
+
+1. Documents, Partials and Layouts (which extend from the File Class) are now [Backbone Models](http://documentcloud.github.com/backbone/#Model)
+	
+	- For end-users this will have minimal effect, as `@document` inside the `templateData` will have all the same attributes. However, any function calls will now only be accessible via the new `@documentModel`. This is because `@documentModel` is the backbone model, and `@document` is the JSONified version of the backbone model (e.g. `@document` is the same as `@documentModel.toJSON()`).
+
+	- For plugin developers this affects how you will retrieve and set attributes for documents - which now use the [Backbone getters and setters](http://documentcloud.github.com/backbone/#Model-get) instead of directly reading and writing to and from the attributes directly. E.g. `document.relatedDocuments = []` now becomes `document.set(relatedDocuments:[])` instead.
+
+2. [Query-Engine](https://github.com/bevry/query-engine) has been updated from version 0.6 to version 1.1
+	
+	- For end-users this will have an effect wherever `@database` is used, as that is now represented by the new Query-Engine v1.1 collection, which has several changes. The most significant re `@database.find` is now `@database.findAll`, and that they now only have a synchronous interface - e.g. `@database.findAll selector, (err,results) ->` should now be `results = @database.findAll(selector)`
+
+	- For plugin developers, this affects any `docpad.documents`, `docpad.partials`, and `docpad.layouts` calls with the same advice as those for end-users.
+
+3. Plugins are now handled via [npm dependencies](http://npmjs.org/doc/json.html#dependencies) instead of being directly handled by docpad and end-users. This is the most significant change and affects everybody.
+
+	- For end-users, you will need to add the plugins you use to your website's `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this.
+
+	- For plugin developers, there have been several important changes:
+
+		1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin's name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
+
+		2. You can now feel free to publish your plugin via npm (e.g. `npm publish`) and add your plugin to the [Plugins wiki page](https://github.com/bevry/docpad/wiki/Plugins) so others can install it themselves (e.g. `npm install docpad-plugin-#{pluginName}`).
+
+4. That should be all, if you have any problems be sure to report them on the [GitHub Issue Tracker](https://github.com/bevry/docpad/issues). Thanks.
+
+
+## Upgrading from 3.x to 4.x
 
 1. Skeletons are no longer cached, which means that you can no longer create a new website using a skeleton while offline. While this can be a pain, it was an essential change in order to improve stability and reduce complexity of the code base.
 
