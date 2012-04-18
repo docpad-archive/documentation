@@ -9,7 +9,7 @@
     - For plugin developers, this affects any `docpad.documents`, `docpad.partials`, and `docpad.layouts` calls with the same advice as those for end-users.
 
 3. Plugins are now handled via [npm dependencies](http://npmjs.org/doc/json.html#dependencies) instead of being directly handled by docpad and end-users. This is the most significant change and affects everybody.
-    - For end-users, you will need to add the plugins you use to your website's `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this.
+    - For end-users, you will need to add the plugins you use to your website's `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this. Once added to your website's `package.json` file, run a `npm install` to install them.
     - For plugin developers, there have been several important changes:
         1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin's name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
         2. You can now feel free to publish your plugin via npm (e.g. `npm publish`) and add your plugin to the [Plugins wiki page](https://github.com/bevry/docpad/wiki/Plugins) so others can install it themselves (e.g. `npm install docpad-plugin-#{pluginName}`).
