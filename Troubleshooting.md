@@ -6,6 +6,11 @@
 [Check out the Upgrade Guides here](https://github.com/bevry/docpad/wiki/Upgrading)
 
 
+### None of my renderers are working?
+
+As of DocPad v5, plugins are not installed by default. You will need to install them manually. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for what your `package.json` dependencies could look like. Once added to your website's `package.json` file, run a `npm install` to install them.
+
+
 ### Whenever I output a variable (like `content`) it is escaped (`<` rendered as `&lt;`)?
 
 Template engines by default _escape_ all variable output. Escaping is when we turn things like the open bracket `<` into it's _html entity_ equivalent `&lt;`. This helps prevent malicious code accidentally being injected into your website which can open the door to XSS attacks. As such, we have to use a special syntax to keep the variable _unescaped_ when outputted. The special syntax is different for the templating engine your using, so here are the ways we know:
