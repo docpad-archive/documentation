@@ -22,7 +22,7 @@ module.exports = (BasePlugin) ->
 
 What this does is receives our BasePlugin from DocPad, and returns the `YourPlugin` class. Of course you should change the your plugin references to whatever your plugin is actually called.
 
-The [BasePlugin](https://github.com/bevry/docpad/blob/master/lib/base-plugin.coffee) is important as it provides some of the tucked away magic for out plugins. But what is event more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you by visiting the Plugin Events wiki page here.](https://github.com/bevry/docpad/wiki/Plugin-Events)
+The [BasePlugin](https://github.com/bevry/docpad/blob/master/lib/plugin.coffee is important as it provides some of the tucked away magic for out plugins. But what is event more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you by visiting the Plugin Events wiki page here.](https://github.com/bevry/docpad/wiki/Plugin-Events)
 
 
 ### plugins/yourPlugin/package.json
@@ -73,7 +73,7 @@ While it is optional, it is highly recommended - and required if you wish to sha
 
 ### Renderers
 
-Renderers are used to convert one particular type of text format, to another type, or rather something to something else. A concrete example of this is the [bundled markdown plugin](https://github.com/bevry/docpad/blob/master/lib/exchange/plugins/markdown/markdown.plugin.coffee), which renders [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML.
+Renderers are used to convert one particular type of text format, to another type, or rather something to something else.
 
 DocPad will perform these conversions from one format to another by triggering the `render` event. A plugin can hook into this event by adding the `render` function inside it. An example of a something plugin, that renders something to somethingElse would look like this.
 
