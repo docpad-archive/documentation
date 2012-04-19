@@ -6,10 +6,10 @@ Listings are sorted alphabetically. Feel free to [update this page](https://gith
 DocPad mentioned around the web
 
 - [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: Covers what is DocPad, getting started with DocPad, and customising DocPad
-- [HTML UI on DocPad](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html) - Extensive writeup on their thoughts of docpad and how they are using it
-- [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
 - [Dropbox auf dem eigenen Server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
+- [HTML UI on DocPad](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html) - Extensive writeup on their thoughts of docpad and how they are using it
 - [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japenese: Covers getting started with DocPad and a comparison with other static site generators
+- [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
 
 ## Websites
 
@@ -27,6 +27,7 @@ Websites built with DocPad
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
 - [Le blog d'Olivier](http://blog.bazoud.com) - [source](https://github.com/obazoud/blog.bazoud.com) - English & French: Blog about web, java, spring, node.js, ...
+- [QUnit](http://qunitjs.com/) - [source](https://github.com/jquery/qunitjs.com) - QUnit by jQuery: A JavaScript Unit Testing framework
 - [Rio.js](http://www.riojs.org/) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de janeiro's JavaScript User Group
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
 - [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
