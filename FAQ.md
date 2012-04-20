@@ -154,7 +154,7 @@ Inside your website's `package.json` file, you'll want to customise the property
 
 
 
-## Need more help?
+## Want more help?
 
 - Getting errors? [Try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting)
 - Found a bug? [File a Bug Report on the Github Issue Tracker](https://github.com/bevry/docpad/issues)
