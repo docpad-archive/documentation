@@ -1,4 +1,3 @@
-
 1. Say you were to create the following website structure:
 
 	> - myWebsite
@@ -81,3 +80,70 @@
 
 1. Great thanks! I think I will give it a go right now!
 
+
+
+## Using the CLI
+
+
+
+- To create your website (if it doesn't already exist), watch for changes, and start the webserver, use:
+	
+	``` bash
+	docpad run
+	```
+
+- To just generate your website from one of the existing skeletons, use:
+
+	``` bash
+	docpad scaffold
+	```
+
+- To just generate your compiled website, use:
+
+	``` bash
+	docpad generate
+	```
+
+- To just watch your website for changes and re-generate whenever a change is made, use:
+
+	``` bash
+	docpad watch
+	```
+
+- To just run the DocPad server to access your already generated website, use:
+
+	``` bash
+	docpad server
+	```
+
+- To render standalone files with DocPad programatically (will output to stdout)
+
+	``` bash
+	docpad render filePath
+	```
+
+	E.g. To render a markdown file and save the result to an output file, we would use:
+	
+	``` bash
+	docpad render inputMarkdownFile.html.md > outputMarkdownFile.html
+	```
+
+- To render stdin with DocPad programatically (will output to stdout)
+
+	``` bash
+	echo $content | docpad render sampleFileNameWithExtensions
+	```
+
+	E.g. To render passed markdown content and save the result to a file, we would use:
+	
+	``` bash
+	echo "**awesome**" | docpad render input.html.md > output.html
+	```
+
+
+## Need help?
+
+- Not info information? [Try the FAQ](https://github.com/bevry/docpad/wiki/FAQ)
+- Getting errors? [Try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting)
+- Found a bug? [File a Bug Report on the Github Issue Tracker](https://github.com/bevry/docpad/issues)
+- Need support? [Post a message in our Google Group Community](https://groups.google.com/forum/#!forum/docpad)
