@@ -38,3 +38,12 @@ I got confused by this too, turns out you need to [download and install the grow
 
 ### The exception raised by the jade plug-in during documents generation makes no sense
 The jade compiler uses the full file content on the disk to show where the parsing error is. But since Docpad strips the meta header before submitting the data to the jade compiler, you must add the number of lines of this header to get the right error spot in your code.
+
+
+
+## Want more help?
+
+- Got questions? [Try the FAQ](https://github.com/bevry/docpad/wiki/FAQ)
+- Getting errors? [Try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting)
+- Found a bug? [File a Bug Report on the Github Issue Tracker](https://github.com/bevry/docpad/issues)
+- Need support? [Post a message in our Google Group Community](https://groups.google.com/forum/#!forum/docpad)
