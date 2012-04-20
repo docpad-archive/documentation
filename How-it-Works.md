@@ -143,7 +143,7 @@
 
 ## Need help?
 
-- Not info information? [Try the FAQ](https://github.com/bevry/docpad/wiki/FAQ)
+- Got questions? [Try the FAQ](https://github.com/bevry/docpad/wiki/FAQ)
 - Getting errors? [Try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting)
 - Found a bug? [File a Bug Report on the Github Issue Tracker](https://github.com/bevry/docpad/issues)
 - Need support? [Post a message in our Google Group Community](https://groups.google.com/forum/#!forum/docpad)
