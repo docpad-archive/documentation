@@ -33,16 +33,9 @@ Need more power? Here is a listing of all the plugins people have made for DocPa
 Discover new Skeletons for DocPad, and themes waiting to be coded up right here.
 
 
-## [Roadmap](https://github.com/bevry/docpad/wiki/Roadmap)
-This is the big picture vision page for DocPad and the steps needed to get there. Worth checking out.
-
-
-## [Participate](https://github.com/bevry/docpad/wiki/Participate)
-Ready to help DocPad become even better? Learn what how you can help right here.
-
-
 ## [Troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting)
 Getting bugs and errrors? Try here first.
+
 
 ## [GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
 Use the GitHub issue tracker for bug reports and feature requests.
@@ -58,6 +51,14 @@ Use the Facebook Group for a more personal discussion about DocPad. Including ev
 
 ## [IRC Chat Room](irc://irc.freenode.net/docpad)
 Want to hangout on IRC for an online chat? Then join the `#docpad` channel on any freenode server.
+
+
+## [Roadmap](https://github.com/bevry/docpad/wiki/Roadmap)
+This is the big picture vision page for DocPad and the steps needed to get there. Worth checking out.
+
+
+## [Participate](https://github.com/bevry/docpad/wiki/Participate)
+Ready to help DocPad become even better? Learn what how you can help right here.
 
 
 ## [Everything Else](https://github.com/bevry/docpad/wiki/_pages)
