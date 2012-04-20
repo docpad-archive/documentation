@@ -152,5 +152,10 @@ Inside your website's `package.json` file, you'll want to customise the property
 [Check out the Guides Page here](https://github.com/bevry/docpad/wiki/Guides)
 
 
-### I'm getting problems, can I get help?
-You sure can, [try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting) it first, and if that still fails then create a new issue in our [issue tracker](https://github.com/bevry/docpad/issues). Sorry for the inconvenience!
+
+
+## Need more help?
+
+- Getting errors? [Try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting)
+- Found a bug? [File a Bug Report on the Github Issue Tracker](https://github.com/bevry/docpad/issues)
+- Need support? [Post a message in our Google Group Community](https://groups.google.com/forum/#!forum/docpad)
