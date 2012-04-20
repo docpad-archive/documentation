@@ -1,6 +1,10 @@
 Welcome to the lifeblood of DocPad! The community! As this is a wiki, feel free to make it better! For major rewrites of the wiki, be sure to check on the [GitHub Issue Tracker](https://github.com/bevry/docpad/issues) but we're sure it will be okay in one form or another :) All wiki content is licensed under the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/).
 
 
+## [How it Works](https://github.com/bevry/docpad/wiki/How-it-Works)
+A quick introduction to how DocPad works, and how to use the CLI.
+
+
 ## [Frequently Asked Questions](https://github.com/bevry/docpad/wiki/FAQ)
 Got a quick question? Or know a nifty answer that you think others will benefit from. Check out the FAQ.
 
