@@ -31,10 +31,10 @@ This file should look something like this:
 
 ``` json
 {
-	"name": "docpad-yourPlugin",
+	"name": "docpad-plugin-yourPluginName",
 	"version": "0.1.0",
 	"description": "DocPad plugin which adds the ability to render Something to Something Else.",
-	"homepage": "https://github.com/your-github-username/docpad-yourPlugin",
+	"homepage": "https://github.com/your-github-username/docpad-plugin-yourPluginName",
 	"keywords": [
 		"docpad",
 		"docpad-plugin",
@@ -49,11 +49,11 @@ This file should look something like this:
 		"Name <email> (url)",
 	],
 	"bugs": {
-		"url": "https://github.com/your-github-username/docpad-yourPlugin/issues"
+		"url": "https://github.com/your-github-username/docpad-plugin-yourPluginName/issues"
 	},
 	"repository" : {
 		"type": "git",
-		"url": "http://github.com/your-github-username/docpad-yourPlugin.git"
+		"url": "http://github.com/your-github-username/docpad-plugin-yourPluginName.git"
 	},
 	"engines" : {
 		"node": ">=0.4.0",
@@ -62,7 +62,7 @@ This file should look something like this:
 	"dependencies": {
 		"something": "1.0.x"
 	},
-	"main": "./something.plugin.coffee"
+	"main": "./yourPluginName.plugin.coffee"
 }
 ```
 
