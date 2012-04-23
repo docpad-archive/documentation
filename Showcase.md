@@ -15,6 +15,7 @@ DocPad mentioned around the web
 
 Websites built with DocPad
 
+- [24b](http://www.24b.is) - A gallery, a design studio in Paris.
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
 - [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of Bevry, History.js & DocPad. Open-Source leader, HTML5, JavaScript and Node.js expert.
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
