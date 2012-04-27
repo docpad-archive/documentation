@@ -8,7 +8,7 @@ DocPad mentioned around the web
 - [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: Covers what is DocPad, getting started with DocPad, and customising DocPad
 - [Dropbox auf dem eigenen Server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
 - [HTML UI on DocPad](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html) - Extensive writeup on their thoughts of docpad and how they are using it
-- [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japenese: Covers getting started with DocPad and a comparison with other static site generators
+- [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japanese: Covers getting started with DocPad and a comparison with other static site generators
 - [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
 - [ShopTalk](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and [Doug Neiner](http://code.dougneiner.com/)'s workflow (4 minutes in)
 
