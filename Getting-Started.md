@@ -4,7 +4,7 @@
 		- src
 		     - documents
 		     - layouts
-		     - public
+		     - public (in new version this folder was renamed to 'files')
 
 1. Install a few plugins:
 
