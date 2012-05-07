@@ -2,9 +2,9 @@
 
 	> - myWebsite
 		- src
-		- documents
-		- layouts
-		- public
+		     - documents
+		     - layouts
+		     - public
 
 1. Install a few plugins:
 
