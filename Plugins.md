@@ -20,7 +20,7 @@ These plugins add support for extra markups and languages to DocPad
 - [move](https://github.com/bevry/docpad-extras/tree/master/plugins/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
 - [php](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [PHP](http://php.net/) to anything `.anything.php|phtml`
 - [roy](https://github.com/bevry/docpad-extras/tree/master/plugins/roy) - Supports [Roy](http://roy.brianmckenna.org/) to JavaScript `.js.roy`
-- [ruby](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.ruby|erb`
+- [ruby](https://github.com/bevry/docpad-extras/tree/master/plugins/ruby) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.ruby|erb`
 - [sass](https://github.com/bevry/docpad-extras/tree/master/plugins/sass/) - Supports [SASS](http://sass-lang.com/) to CSS `.css.sass|scss`
 - [stylus](https://github.com/bevry/docpad-extras/tree/master/plugins/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.styl|stylus`
 
