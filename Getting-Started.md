@@ -3,7 +3,7 @@
 	> - myWebsite
 		- src
 		     - documents
-		     - files (previously called 'public')
+		     - files
 		     - layouts
 
 1. Install a few plugins:
