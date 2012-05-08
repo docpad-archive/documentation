@@ -3,8 +3,8 @@
 	> - myWebsite
 		- src
 		     - documents
+		     - files (previously called 'public')
 		     - layouts
-		     - public (in new version this folder was renamed to 'files')
 
 1. Install a few plugins:
 
@@ -58,7 +58,7 @@
 	</html>
 	```
 
-1. And any files that you have in `src/public` will be copied to the `out` directory. E.g. `src/public/styles/style.css` -> `out/styles/style.css`
+1. And any files that you have in `src/files` will be copied to the `out` directory. E.g. `src/files/styles/style.css` -> `out/styles/style.css`
 
 1. Allowing you to easily generate a website which only changes (and automatically updates) when a document changes (which when you think about it; is the majority of websites)
 
