@@ -55,9 +55,7 @@ Inside your website's directory:
 	require(require('path').join(__dirname,'server.coffee'));
 	```
 
-1. Create a `server.coffee` file, [base it off the one inside the KitchenSink Skeleton.](https://github.com/bevry/kitchensink.docpad/blob/master/server.coffee)
-
-	1. Be sure to change vhosts part to the domains that you will be using
+1. Create a `server.coffee` file, [base it off the one inside the KitchenSink Skeleton](https://github.com/bevry/kitchensink.docpad/blob/master/server.coffee)
 
 1. If you are going to be using a custom domain name:
 
