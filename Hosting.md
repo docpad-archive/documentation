@@ -3,23 +3,6 @@ DocPad websites can be hosted anywhere as they are just a generated static websi
 Here is how you can host them on several different server types.
 
 
-
-### Via a Standard Apache Server
-
-Upload the generated `mywebsite/out` directory to your apache server's `public_html` or `htdocs` directory :)
-
-
-
-### Via GitHub Pages
-
-1. [Follow these instructions to get setup with your GitHub Pages Repository](https://github.com/blog/272-github-pages)
-2. Copy the generated `mywebsite/out` directory to your repository.
-3. Push the repository to GitHub
-
-__(I'll admit, this isn't as nice as it could be, will improve this in future versions)__
-
-
-
 ### Via a Node.js Hosting Provider
 
 Works great with [Heroku](http://www.heroku.com/), [Nodester](http://nodester.com/) and [no.de](http://no.de/)
@@ -70,3 +53,21 @@ Inside your website's directory:
 1. Do a deploy to your server. Follow the guide of your hosting provider in order to do this.
 
 	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
+
+
+
+
+
+### Via a Standard Apache Server
+
+Upload the generated `mywebsite/out` directory to your apache server's `public_html` or `htdocs` directory :)
+
+
+
+### Via GitHub Pages
+
+1. [Follow these instructions to get setup with your GitHub Pages Repository](https://github.com/blog/272-github-pages)
+2. Copy the generated `mywebsite/out` directory to your repository.
+3. Push the repository to GitHub
+
+__(I'll admit, this isn't as nice as it could be, will improve this in future versions)__
