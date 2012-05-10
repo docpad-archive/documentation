@@ -42,7 +42,7 @@ Inside your website's directory:
 
 	``` javascript
 	"dependencies": {
-		"coffee-script": "1.2.x",
+		"coffee-script": "1.3.x",
 		"express": "2.5.x",
 		"docpad": "latest"
 	},
