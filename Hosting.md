@@ -21,7 +21,7 @@ Inside your website's directory:
 	web: node server.js
 	```
 
-1. Inside your website's `package.json` file, ensure it has the following dependencies. Set the DocPad version to whichever version you are using, keep it specific.
+1. Inside your website's `package.json` file, ensure it has the following dependencies. Set the DocPad version to whichever version you are using, keep it specific
 
 	``` javascript
 	"dependencies": {
@@ -67,5 +67,5 @@ Upload the generated `mywebsite/out` directory to your apache server's `public_h
 ## Via GitHub Pages
 
 1. [Follow these instructions to get setup with your GitHub Pages Repository](https://github.com/blog/272-github-pages)
-2. Copy the generated `mywebsite/out` directory to your repository.
+2. Copy the generated `mywebsite/out` directory to your repository
 3. Push the repository to GitHub
