@@ -35,7 +35,7 @@ Inside your website's directory:
 
 	``` javascript
 	require('coffee-script');
-	require(require('path').join(__dirname,'server.coffee'));
+	require(__dirname+'/server.coffee');
 	```
 
 1. Create a `server.coffee` file, [base it off the one inside the KitchenSink Skeleton](https://github.com/bevry/kitchensink.docpad/blob/master/server.coffee)
