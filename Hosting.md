@@ -44,7 +44,7 @@ Inside your website's directory:
 	"dependencies": {
 		"coffee-script": "1.2.x",
 		"express": "2.5.x",
-		"docpad": "3.2.7"
+		"docpad": "latest"
 	},
 	```
 
