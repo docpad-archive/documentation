@@ -67,6 +67,6 @@ Inside your website's directory:
 
 	1. Create an A Record for your domain pointing to that IP address
 
-1. Do a deploy to your server. For the instructions on how to do this, refer to your hosting providers guide.
+1. Do a deploy to your server. Follow the guide of your hosting provider in order to do this.
 
 	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
