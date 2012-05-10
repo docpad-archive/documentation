@@ -1,4 +1,4 @@
- ### Does it work on windows?
+### Does it work on windows?
 Sure does, check the installation instructions in the [Readme](https://github.com/bevry/docpad).
 
 
