@@ -22,7 +22,7 @@ __(I'll admit, this isn't as nice as it could be, will improve this in future ve
 
 ### Via a Node.js Hosting Provider
 
-Works great with [hereoku](http://devcenter.heroku.com/articles/node-js), [no.de](http://no.de/), and [nodester](http://nodester.com/).
+Works great with [Heroku](http://www.heroku.com/), [Nodester](http://nodester.com/) and [no.de](http://no.de/)
 
 Inside your website's directory:
 
@@ -70,3 +70,5 @@ Inside your website's directory:
 	1. Create an A Record for your domain pointing to that IP address
 
 1. Do a deploy to your server. For the instructions on how to do this, refer to your hosting providers guide.
+
+	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
