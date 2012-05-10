@@ -69,5 +69,3 @@ Upload the generated `mywebsite/out` directory to your apache server's `public_h
 1. [Follow these instructions to get setup with your GitHub Pages Repository](https://github.com/blog/272-github-pages)
 2. Copy the generated `mywebsite/out` directory to your repository.
 3. Push the repository to GitHub
-
-__(I'll admit, this isn't as nice as it could be, will improve this in future versions)__
