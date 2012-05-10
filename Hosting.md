@@ -60,7 +60,7 @@ Inside your website's directory:
 
 ## Via a Standard Apache Server
 
-Upload the generated `mywebsite/out` directory to your apache server's `public_html` or `htdocs` directory :)
+Upload the generated `mywebsite/out` directory to your apache server's `public_html` or `htdocs` directory
 
 
 
