@@ -64,19 +64,42 @@ Version structure and timelines:
 	- Jekyll
 	- Octopress
 
-- Plugins are now installed via npm dependencies
-- Added the plugin and skeleton exchange
-- Exploration into modularising the entire code
+
+
+## Version 5
+
+### v5.5 _- planned_
+- Provide differential rendering
+
+### v5.3 _- planned_
+- Provide templateData helpers
+
+### v5.2 _**- released**_
+- Everything is now parsed into the in-memory database
+- Added `docpad.cson` configuration
+- Added custom collections via configuration support
+
+### v5.1 _**- released**_
+- Added support for binary files
+
+### v5.0 _**- released**_
+- Plugins are now handled via NPM
+- Uses Backbone for Models and Collections
+- Differential replace of the `out` directory
+
+
+## Version 4
+
+### v4.1 _**- released**_
+- Added skeleton exchange
+
+### v4.0 _**- released**_
+- Differential replace of the `out` directory
 
 
 ## Version 3
 
-### v3.3 _- planned_
-
-- Differential replace of the `out` directory
-
 ### v3.2 _**- released**_
-
 - You can now select which skeleton on creation of a new project
 - Unit Tests
 - Modular API for rendering single files
@@ -84,11 +107,9 @@ Version structure and timelines:
 - Hidden files are now ignored in watchr
 
 ### v3.1 **- released**
-
 - Added an interactive CLI
 
 ### v3.0 **- released**
-
 - New event system, which supports blocking and queuing of events
 
 
@@ -98,24 +119,17 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 
 
 ### v2.3 **- released**
-
 - Cloud Support
 
-
 ### v2.2 **- released**
-
 - Windows Support
 
-
 ### v2.1 **- released**
-
 - Dynamic Documents
 	- These are rendered per request, and have access to the express.js request object
 	- They enable things like form handling, search, real-time updating data, etc.
 
-
 ### v2.0 **- released**
-
 - Plugin's have their own `package.json`
 	- This specifies the plugin's dependencies
 	- When the plugin is used, docpad will do a `cd $pluginDir; npm install`
@@ -128,12 +142,8 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 	- Support read and write of files
 	- Requires some sort of authentication method... to be decided
 
-
-
 ## Version 1 **- released**
-
 Version 1 focused on improving the scalability, stability, and ease-of-use of docpad. Bringing it to a vastly superior alternative to other static site generators.
 
 ## Version 0 **- released**
-
 Version 0 focused on fixing the content creation and website development pain.
