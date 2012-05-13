@@ -13,7 +13,7 @@ So what is a developer? A developer can be whatever you want it to be! But I gue
 The best way to participate is to be active on the [Issue Tracker](https://github.com/bevry/docpad/issues). Anything that needs doing for DocPad is logged there. Batches of work are split into monthly sprints called [Milestones](https://github.com/bevry/docpad/issues/milestones). Issues are given a type, priority, and status (called buckets). Every issue is great for community participation, however issues with the label `discussion` are actively and urgently seeking developer feedback - so discuss those issues first! Any feedback would be great. Issues with the label `patches welcome` are issues which you can start implementing/coding up yourself, once you are done, submit a [pull request](http://help.github.com/send-pull-requests/) back to the original DocPad project and we'll review your changes and provide feedback :-)
 
 
-## Contribute Code
+### Contribute Code
 If you've found a bug in DocPad, or want to add a new feature yourself. You can get hacking away at the source code, and submit a pull request to get your changes back into the official repository. [You can read more about this on the Contributing Wiki Page here](https://github.com/bevry/docpad/wiki/Contributing).
 
 
