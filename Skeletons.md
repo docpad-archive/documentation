@@ -39,11 +39,13 @@ These are skeletons and themes that have not yet been coded up, but have been re
 - Twitter Bootstrap - [preview](http://twitter.github.com/bootstrap/) - [source](https://github.com/twitter/bootstrap/)
 
 
-### Unknown License
-- Effector - [preview](http://effectortheme.tumblr.com/)
-- Lightweight - [preview](http://www.tumblr.com/theme/10820)
+### GPL Licensed
 - Rockstar - [preview](http://www.woothemes.com/2009/09/rockstar/)
 - Type Based - [preview](http://www.woothemes.com/2008/11/typebased/)
 - Skeptical - [preview](http://www.woothemes.com/2010/09/skeptical/)
 - The Morning After - [preview](http://www.woothemes.com/2010/06/themorningafter/)
 - Bueno - [preview](http://www.woothemes.com/2009/11/bueno/)
+
+### Unknown License
+- Effector - [preview](http://effectortheme.tumblr.com/)
+- Lightweight - [preview](http://www.tumblr.com/theme/10820)
