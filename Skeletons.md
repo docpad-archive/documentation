@@ -24,16 +24,22 @@ These are skeletons and themes for older versions of DocPad
 These are skeletons and themes that have not yet been coded up, but have been requested. Please be sure to categorise them in their appropriate license, so we know that we are legally entitled to port them over to DocPad.
 
 
-### MIT License
+### Public Domain
+- HTML5 Boiler Plate - [preview](http://html5boilerplate.com/) - [source](https://github.com/h5bp/html5-boilerplate)
 
+
+### MIT License
 - Codex Hub - [preview](http://alogicalparadox.com/codex-hub/) - [source](https://github.com/logicalparadox/codex-hub)
 - Hunch - [preview](http://rsms.me/) - [source](https://github.com/rsms/tumblr-theme-hunch)
 - Courier - [preview](http://couriertheme.tumblr.com/) - [source](https://github.com/davidyeiser/courier)
 - Skeleton - [preview](http://www.getskeleton.com/) - [source](https://github.com/dhgamache/Skeleton)
 
 
-### Unknown License
+### Apache License
+- Twitter Bootstrap - [preview](http://twitter.github.com/bootstrap/) - [source](https://github.com/twitter/bootstrap/)
 
+
+### Unknown License
 - Effector - [preview](http://effectortheme.tumblr.com/)
 - Lightweight - [preview](http://www.tumblr.com/theme/10820)
 - Rockstar - [preview](http://www.woothemes.com/2009/09/rockstar/)
