@@ -35,7 +35,7 @@ Explain the available commands.
 
 ## Getting started with website.docpad
 
-This section could be step-by-step guide to using DocPad. Could be a whole section of its own, maybe hosted in the [website.docpad](https://github.com/bevry/website.docpad) wiki itself. Not sure where it should go, but a basic step-by-step guide would be useful very useful for the "not-so-technical" people.
+This section could be step-by-step guide to using DocPad. Could be a whole section of its own, maybe hosted in the [website.docpad](https://github.com/bevry/website.docpad) wiki itself. Not sure where it should go, but a basic step-by-step guide would be useful for beginners.
 
 ## Skeletons
 
