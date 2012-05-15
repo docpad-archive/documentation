@@ -174,3 +174,5 @@ DocPad can be used as a node module inside your project. Explain here how to do 
 Invite people to contribute ! The existing [Contributing](https://github.com/bevry/docpad/wiki/Contributing) page holds useful informations.
 
 Maybe add a section about how to write tests, or how tests are written so people can jump in (I know I would love this section).
+
+And explain the coding standards.
