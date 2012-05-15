@@ -88,7 +88,7 @@ Every file under the `src` directory is a `File` (Anchor), apart from files unde
 - Explains the `toJSON()` method (difference between a `document` and `documentModel`)
 - Explains helpers
 
-### `TemplateData`
+### The `TemplateData` variables
 
 - Explain what is `TemplateData` : context passed into the template files, accessible with the `this` keyword
 - Explain what variables it holds
@@ -97,6 +97,22 @@ Every file under the `src` directory is a `File` (Anchor), apart from files unde
   - Those from the [Document Class](https://github.com/bevry/docpad/blob/master/src/models/document.coffee#L32)
 
 This may also need some precisions about what variables are available and when during the rendering process.
+
+### Collections
+
+Collections are set of data models of a specific types :
+- collections of `documents`
+- collections of `files`
+- collections of `scripts` (javascript files)
+- custom collections
+
+Explain what collections are, which one are available by default and how to add custom collections.
+
+## QueryEngine
+
+[QueryEngine](https://github.com/bevry/query-engine) is a MongoDB-compliant tool that provides extensive Querying, Filtering, Sorting and Searching abilities for Backbone.js Collections as well as JavaScript arrays and objects. In DocPad it gives great power to the site builder since it allows to create dynamic lists of content and to find a piece(s) of content very finely, using every metadata available.
+
+Explain how to use QueryEngine in DocPad. This section shouldn't (IMHO) replace a proper documentation in QueryEngine's repo.
 
 ## Custom site configuration
 
@@ -142,6 +158,12 @@ Errors may appear, so DocPad provides a detailed log of activity thanks to the `
 The final step before pushing the site to production is to build it : aggregate and compress javascript and css files, mainly. This compression reduces files size and is good for site performance (less HTTP requests). Explain here how to do it.
 
 I don't know to how to do with DocPad though. This may need the existing [Buildr](https://github.com/bevry/docpad-extras/tree/master/plugins/buildr) plugin, or the (soon to come ?) [Grunt](https://github.com/bevry/docpad/issues/212) plugin.
+
+## Deployment and hosting
+
+- Explain the way of hosting static sites (copy the out directory somewhere) as well as dynamic sites backed up by [Express](http://expressjs.com/) (if it's possible : I know nothing of it).
+- Explain briefly the role of .htaccess files (and the equivalent for IIS and NGinX), and remind that one could make use of .htaccess.eco and the power behind with a few examples : redirection rules, access rules, etc. Yes we can.
+- Once CLI has deploy commands (to Github, Heroku and other places), explain how to deploy here.
 
 ## Using DocPad as a node module
 
