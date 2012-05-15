@@ -5,6 +5,10 @@ Welcome to the lifeblood of DocPad! The community! As this is a wiki, feel free 
 A quick walkthrough on the basics of DocPad, and how to use the CLI.
 
 
+## [Documentation](https://github.com/bevry/docpad/wiki/Documentation)
+The detailed documentation about DocPad.
+
+
 ## [Frequently Asked Questions](https://github.com/bevry/docpad/wiki/FAQ)
 Got a quick question? Or know a nifty answer that you think others will benefit from. Check out the FAQ.
 
