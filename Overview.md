@@ -67,7 +67,7 @@ Explain... how to write a skeleton.
 ### The `layouts` directory
 
 - Explain the layout system, and the ability of nesting them.
-_ Explain how to manipulate content in a layout.
+- Explain how to manipulate content in a layout.
 
 ## Data models
 
