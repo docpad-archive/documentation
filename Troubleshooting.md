@@ -1,5 +1,7 @@
 ## HELP!
 
+### I'm getting "We couldn't find an existing DocPad project inside your current directory..."
+This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](https://github.com/bevry/docpad/wiki/Skeletons) for the basis of your new website, as closing out a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run docpad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](https://github.com/bevry/docpad/wiki/Getting-Started) guide. Hope that helps :) If it doesn't feel free to ask for help on our [Support Forum](https://groups.google.com/forum/#!forum/docpad).
 
 ### I upgraded, and it doesn't work
 [Check out the Upgrade Guides here](https://github.com/bevry/docpad/wiki/Upgrading)
