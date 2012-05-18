@@ -64,7 +64,7 @@ Explain... how to write a skeleton.
 
 - Static files copied as is in the out directory. Useful for media assets, javascript libraries, stylesheet.
 
-### The `layout` directory
+### The `layouts` directory
 
 - Explain the layout system, and the ability of nesting them.
 _ Explain how to manipulate content in a layout.
