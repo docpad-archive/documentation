@@ -316,3 +316,68 @@ The page you should see corresponds to the our content file, wrapped inside the 
 ### A last word about Eco
 
 A Last thing before we move to the next step of this guide. You have noticed that some the metadata are enclosed in `<%= %>` eco tag, whereas others are inside `<%- %>`. The difference (`-` or `=`) is that Eco _escapes_ the content when using the `=` variation, and displays it as is when using the `-` variation. A good rule of thumb as to when using one or the other : when displaying a document's metadata, use `<%= @document.mymetadata %>` ; when displaying the main content of a document, use `<%- @content %>`.
+
+
+## Step 8 : Content listing
+
+You now know how to create dynamic pages using layouts and metadata. We will now show you how to create content listings.
+
+John Doe wants to display the five latest articles in his home page, with links to the corresponding pages. To do so and a little more, we'll introduce 2 awesome features of DocPad : the `docpad.cson` file and QueryEngine. Those 2 features requires a better knowledge of Javascript and CoffeeScript, but don't worry, you don't need to be a javascript ninja to uderstand the usage we're gonna make of them.
+Read on !
+
+### The docpad.cson
+
+DocPad allows us to describe some data about our website in a single configuration file, the `docpad.cson` file. This file should be located in the root folder of the website, at the same level of the `src` and `out` folders. The `.cson` extension comes from the [CSON](https://github.com/bevry/cson) library. It allows to write `.json` files in CoffeeScript, and DocPad uses it for this file.
+
+We're going to show basic usage of the file. A good practice is to store in this file the textual elements common to all or several pages of the website. The website name and author are good examples, as well as a common footer message. To add such data, create a `docpad.cson` file in the root folder, and paste the content below. The content is easy to understand and is self-documented, read the comments to understand it :
+
+```
+# The DocPad Configuration File
+# It is simply a CoffeeScript Object that is parsed by CSON
+# The lines starting with a '#' are comments
+{
+  # TemplateData data are accessible directly from the 'this/@' keyword in layouts and documents.
+  templateData:
+    # Let's create a place where we gather all data about the site...
+    site:
+      # ... like its author ...
+      author: "John Doe"
+      # ... its name ...
+      name: "John Doe loves animals"
+      # ... and a custom footer message. The """ notation comes from CoffeeScript and is used to embed long strings and can contain HTML tags too.
+      footerMessage: """
+        John Doe loves animals is property of John Doe. Copyright 2012 John Doe. All your animals are belong to us.
+      """
+}
+```
+
+With such a file, we could display the site name in an Eco file by writing `<%= @site.name %>`. Easy, right ? The important thing here is that under `templateData` no naming convention is enforced, you're free to name oand organize your custom data as you see fit.
+
+Let's add them in `default.html.eco`, like this :
+
+``` html
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="<%= @site.author %>" />
+  <title><%= @document.title %> - <%= @site.name %></title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<a href="/" class="logo">John Doe loves animals</a>
+<%- @content %>
+<footer><%= @site.footerMessage %></footer>
+</body>
+</html>
+```
+
+The `docpad.cson` possibilities are beyond the scope of this guide. To discover them, I suggest looking at the well documented example [`docpad.cson`](https://github.com/bevry/website.docpad/blob/master/docpad.cson) file from the [website.docpad](https://github.com/bevry/website.docpad) skeleton.
+
+### QueryEngine
+
+Coming soon.
+
+### Creating a dynamic homepage
+
+Coming soon.
