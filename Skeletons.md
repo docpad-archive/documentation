@@ -2,12 +2,18 @@
 
 ### Current
 
-These are skeletons and themes currently available to you as part of the DocPad bootstrap process:
+These are skeletons currently available to you as part of the DocPad bootstrap process:
 
 - [canvas.docpad](https://github.com/bevry/canvas.docpad) `branch: docpad-5.x` - The bare minimum to get started, with a few bundled client-side libraries to make it easier
 - [balupton.docpad](https://github.com/balupton/balupton.docpad) `branch: docpad-5.x` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
 - [kitchensink.docpad](https://github.com/bevry/kitchensink.docpad) `branch: docpad-5.x` - [preview](http://docpad-kitchensink.herokuapp.com) - The entire kitchensink to showcase everything that docpad is capable of
 
+
+### Expiremental
+
+These are skeletons that are currently under contruction:
+
+- [website.docpad](https://github.com/bevry/website.docpad) `branch: master` - A DocPad skeleton for Websites. Includes themes for HTML5 Boiler Plate, Initializr, Twitter Bootstrap, among others.
 
 ### Older
 
