@@ -40,6 +40,7 @@ Websites built with DocPad
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
 - [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
+- [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 
 ## Applications
 
