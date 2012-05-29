@@ -1,9 +1,9 @@
-Listings are sorted alphabetically. Feel free to [update this page](https://github.com/bevry/docpad/wiki/Showcase/_edit) with your own projects or others which you have found. Note: requires a github account.
+Feel free to [update this page](https://github.com/bevry/docpad/wiki/Showcase/_edit) with your own projects or others which you have found. Note: requires a github account.
 
 
 ## In the press
 
-DocPad mentioned around the web
+DocPad mentioned around the web. Alphabetically sorted.
 
 - [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: Covers what is DocPad, getting started with DocPad, and customising DocPad
 - [Dropbox auf dem eigenen Server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
@@ -14,7 +14,7 @@ DocPad mentioned around the web
 
 ## Websites
 
-Websites built with DocPad
+Websites built with DocPad. Alphabetically sorted.
 
 - [24b](http://www.24b.is) - A gallery, a design studio in Paris
 - [Acherno Interior Design](http://acherno.com) - Corporate web site of the biggest interior design studio in Bulgaria
@@ -32,6 +32,7 @@ Websites built with DocPad
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
 - [Le blog d'Olivier](http://blog.bazoud.com) - [source](https://github.com/obazoud/blog.bazoud.com) - English & French: Blog about web, java, spring, node.js, ...
+- [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [QUnit](http://qunitjs.com/) - [source](https://github.com/jquery/qunitjs.com) - QUnit by jQuery: A JavaScript Unit Testing framework
 - [Rio.js](http://www.riojs.org/) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de janeiro's JavaScript User Group
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
@@ -40,24 +41,23 @@ Websites built with DocPad
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
 - [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
-- [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 
 ## Applications
 
-Applications built with DocPad
+Applications built with DocPad. Alphabetically sorted.
 
 - [Node Chat](https://github.com/balupton/nodechat.docpad) - Node chat application, built with Socket.io, DocPad, Backbone.js, Twitter Bootstrap, written in CoffeeKup and CoffeeScript
 
 
 ## Presentations
 
-Presentations built with DocPad
+Presentations built with DocPad. Alphabetically sorted.
 
 - [What is DeckPad](http://calvinmetcalf.github.com/deckpad/) - Talks about using [DeckPad](https://github.com/calvinmetcalf/deckpad) to create awesome HTML5 presentations with DocPad and [Deck.js](https://github.com/imakewebthings/deck.js)
 
 
 ## Companies
 
-Companies spotted using DocPad
+Companies spotted using DocPad. Alphabetically sorted.
 
 - [Bevry](https://twitter.com/#!/bevryme) - The company behind DocPad
