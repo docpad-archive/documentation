@@ -38,6 +38,7 @@ These are skeletons and themes that have not yet been coded up, but have been re
 - Hunch - [preview](http://rsms.me/) - [source](https://github.com/rsms/tumblr-theme-hunch)
 - Courier - [preview](http://couriertheme.tumblr.com/) - [source](https://github.com/davidyeiser/courier)
 - Skeleton - [preview](http://www.getskeleton.com/) - [source](https://github.com/dhgamache/Skeleton)
+- Svbtle - [preview](http://gravityonmars.com/2012/03/28/svbtle-based-on-wordpress/) - [source](https://github.com/gravityonmars/wp-svbtle)
 
 ### Creative Commons
 - Manifest - [preview](http://themes.jimbarraud.com/manifest/) - download via preview link
