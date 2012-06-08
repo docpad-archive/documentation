@@ -41,7 +41,7 @@ These are skeletons and themes that have not yet been coded up, but have been re
 - Svbtle - [preview](http://gravityonmars.com/2012/03/28/svbtle-based-on-wordpress/) - [source](https://github.com/gravityonmars/wp-svbtle)
 
 ### Creative Commons
-- Manifest - [preview](http://themes.jimbarraud.com/manifest/) - download via preview link
+- Manifest - [preview](http://demo.jimbarraud.com/manifest/) - [download](http://themes.jimbarraud.com/manifest/)
 
 ### Apache License
 - Twitter Bootstrap - [preview](http://twitter.github.com/bootstrap/) - [source](https://github.com/twitter/bootstrap/)
