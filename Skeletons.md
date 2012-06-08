@@ -45,6 +45,7 @@ These are skeletons and themes that have not yet been coded up, but have been re
 
 ### Apache License
 - Twitter Bootstrap - [preview](http://twitter.github.com/bootstrap/) - [source](https://github.com/twitter/bootstrap/)
+- [Bootswatch](http://bootswatch.com/)
 
 ### GPL Licensed
 - Rockstar - [preview](http://www.woothemes.com/2009/09/rockstar/)
@@ -56,3 +57,6 @@ These are skeletons and themes that have not yet been coded up, but have been re
 ### Unknown License
 - Effector - [preview](http://effectortheme.tumblr.com/)
 - Lightweight - [preview](http://www.tumblr.com/theme/10820)
+
+### Paid
+- [Wrap Bootstrap Themes](http://wrapbootstrap.com/themes)
