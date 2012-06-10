@@ -140,6 +140,8 @@
 	echo "**awesome**" | docpad render input.html.md > output.html
 	```
 
+## What's next?
+Advance onto the [Beginner Guide](https://github.com/bevry/docpad/wiki/Beginner-Guide) for DocPad :)
 
 ## Need help?
 
