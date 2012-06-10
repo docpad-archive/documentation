@@ -1,5 +1,5 @@
-# Beginner's guide
-Welcome to the beginner's guide to DocPad.
+# Beginner Guide
+Welcome to the Beginner Guide to DocPad.
 
 
 ## Intro
