@@ -8,6 +8,7 @@ Installing DocPad for the first time? Here's the steps:
 	```
 3. If you want [Growl](http://growl.info/) notifications on OSX, [you'll need to install the growl command line tool](http://growl.cachefly.net/GrowlNotify-1.3.zip)
 
+Looking for upgrade instructions instead? [Find them here on the Upgrade Guide](https://github.com/bevry/docpad/wiki/Upgrading)
 
 
 ## What's next?
