@@ -1,3 +1,15 @@
+## Upgrade Instructions
+To upgrade your DocPad installation from an older version to the latest, run the following in your console:
+
+``` bash
+[sudo] npm cache clean
+[sudo] npm install -g docpad
+docpad install
+```
+
+Be sure to read any specific upgrade notes for the versions you are installing from and to below.
+
+
 ## Upgrading from 4.x to 5.x (v5 is the latest stable version)
 
 1. Documents, Partials and Layouts (which extend from the File Class) are now [Backbone Models](http://documentcloud.github.com/backbone/#Model)
