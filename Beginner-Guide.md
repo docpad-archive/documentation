@@ -320,7 +320,7 @@ A Last thing before we move to the next step of this guide. You have noticed tha
 ## Step 8 : Content listing
 You now know how to create dynamic pages using layouts and metadata. We will now show you how to create content listings.
 
-John Doe wants to display the five latest articles in his home page, with links to the corresponding pages. To do so and a little more, we'll introduce 2 awesome features of DocPad : the `docpad.cson` file and QueryEngine. Those 2 features requires a better knowledge of Javascript and CoffeeScript, but don't worry, you don't need to be a javascript ninja to uderstand the usage we're gonna make of them.
+John Doe wants to display the five latest articles in his home page, with links to the corresponding pages. To do so and a little more, we'll introduce 2 awesome features of DocPad : the `docpad.cson` file and QueryEngine. Those 2 features requires a better knowledge of Javascript and CoffeeScript, but don't worry, you don't need to be a javascript ninja to understand the usage we're gonna make of them.
 Read on !
 
 
