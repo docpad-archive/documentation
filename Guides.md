@@ -1,5 +1,7 @@
 This is a listing of all the guides for DocPad (that we know about). If you're written one, be sure to add it here :)
 
+### [Beginner Guide](https://github.com/bevry/docpad/wiki/Beginner-Guide)
+A step by step introduction to using DocPad, from installation to creating content and dynamic pages.
 
 ### [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending)
 How to write your own DocPad extensions :-)
