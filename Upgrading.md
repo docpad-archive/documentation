@@ -3,14 +3,29 @@ To upgrade your DocPad installation from an older version to the latest, run the
 
 ``` bash
 [sudo] npm cache clean
-[sudo] npm install -g docpad
+[sudo] npm install -g docpad@6.0
 docpad install
 ```
 
 Be sure to read any specific upgrade notes for the versions you are installing from and to below.
 
 
-## Upgrading from 4.x to 5.x (v5 is the latest stable version)
+## Upgrading from 5.x to 6.x (v6 is the latest stable version)
+
+- Changes affecting configuration:
+	- Removed `documentsPath`, `filesPath`, `layoutsPath` configuration options. Instead, use their array based alternatives: `documentsPaths`, `filesPaths`, `layoutsPaths`
+- Changes affecting templates:
+	- Removed `require` from `templateData`. Instead, specify it in your `docpad.cson` or `server.coffee` file instead
+	- Removed `database`, `documents`, `collections`, `blocks` from `templatedata`. Instead, use their helper based alternatives: `getDatabase()`, `getCollection('documents')`, `getCollection('collectionName')`, `getBlock('blockName')`
+- Changes affecting everything:
+	- Removed the prototypes `String::startsWith`, `String::finishesWith`, `Array::hasCount`, `Array::has` as no one ever used them
+- Changes affecting pugin developers:
+	- Removed `docpadInstance.documents`. Instead, use `docpadInstance.getCollection('documents')`
+	- Plugin tests are now run via `npm test` on your plugin directory, allowing you to use whatever test runner you want
+	- DocPad and the tester helpers have moved from Mocha to [Joe](http://github.com/bevry/joe), you'll probably want to do the same
+
+
+## Upgrading from 4.x to 5.x
 
 1. Documents, Partials and Layouts (which extend from the File Class) are now [Backbone Models](http://documentcloud.github.com/backbone/#Model)
     - For end-users this will have minimal effect, as `@document` inside the `templateData` will have all the same attributes. However, any function calls will now only be accessible via the new `@documentModel`. This is because `@documentModel` is the backbone model, and `@document` is the JSONified version of the backbone model (e.g. `@document` is the same as `@documentModel.toJSON()`).
