@@ -374,8 +374,121 @@ The `docpad.cson` possibilities are beyond the scope of this guide. To discover 
 
 ### QueryEngine
 
-Coming soon.
+DocPad, in its internals, creates a "database" of all the content located in the `src` folder and gives access to it through [QueryEngine](https://github.com/bevry/query-engine). QueryEngine provides extensive Querying, Filtering, and Searching abilities for [Backbone.js](http://documentcloud.github.com/backbone/) Collections as well as JavaScript arrays and objects. For the technical note, every content in DocPad's internals is represented as a Backbone Model. (I can see some of you smiling :)
+
+DocPad provides a few Collections ready to use :
+
+ - `database` is a Collections of all files under the `src` folder
+ - `documents` is a collection of all files under the `src/documents` folder
+ - `layouts` is a collection of all files under the `src/layouts` folder
+ - `files` is a collection of all files under the `src/public` folder
+
+What that means is that we can use QueryEngine to select very precisely some pieces of content from the `documents` collection, and display them where we want in our website.
+
+We could directly use QueryEngine capabilities in our home page file, writing a complete query directly in our template. But instead, we will declare the collections we want to use in the docpad.cson file and make use of it in our template.
+
+The `docpad.cson` file gives us the possibility to describe custom collections using the QueryEngine API. Just add a `collections` entry and start describing the collection :
+
+``` coffee
+# The DocPad Configuration File
+# It is simply a CoffeeScript Object which is parsed by CSON
+{
+  # We're extending the core collections object
+  collections:
+    # This collection named 'articles' fetches the documents with the 'layout' property set to 'article'
+    articles: (database) ->
+      database.createLiveChildCollection().findAll(layout: 'article.html.eco').setComparator(date:-1)
+}
+```
+
+Let's break up the code we've added and explain step-by-step.
+
+- `collections:` : We're telling DocPad that we're going to declare custom collections. This line is mandatory and every custom collection must be indented below this line.
+
+- `articles: (database) ->` : We're telling DocPad that our new custom collection is called `articles`. The name could whatever you like, apart from the core collections (`documents`, `layouts`, `files`). The rest of the line is mandatory as well, it means that we're using the whole DocPad's database to create our custom collection.
+
+- `database.createLiveChildCollection().findAll(layout: 'article.html.eco').setComparator(date:1)` : This is where the magic happens. This line of code makes use of the QueryEngine API. Let's break it up too :
+
+  * `database.createLiveChildCollection()` : We're creating a collection off of the complete database, ready to be manipulated.
+  * `.findAll(layout: 'article.html.eco')` : The real query. We're asking QueryEngine to retrieve all database content that have a `layout` property set to `article.html.eco`. As we wrote every article for John Doe with the metadata `layout: article`, this way of filtering the database works fine and retrieves only the articles.
+  * `.setComparator(date:1)` : We're telling QueryEngine to sort our articles by date descending, date being the `date` metadata present in our articles files. `-1` means "descending", so the most recent will appear first. If we wanted to show the oldest first, we would just change `-1` by `1`.
+
+That's it ! Our custom collection is ready, and whenever we'll make use of it it will always be up-to-date.
+
+QueryEngine is way more powerful than that, but it's beyond the scope of this guide. Visit [its wiki](https://github.com/bevry/query-engine/wiki/Using) to learn more about it.
 
 ### Creating a dynamic homepage
 
-Coming soon.
+Now we have everything in place to display a list of articles and to create a dynamic homepage.
+
+First create others articles the same way we created `dogs-are-wonderful-too.html.md` and `my-favorite-animal-the-cat.html.md`.
+
+When you're done, we're going to change our static `index.html` home page and transform it into a dynamic page.
+
+Let's rename `index.html` to `index.html.eco`. Now we can write Eco code to make use of our custom collection.
+
+In `index.html.eco`, add a title metadata which value is the title of our home page :
+
+```
+---
+layout: default
+title: John Doe loves animals
+---
+```
+
+Then change its content to :
+
+``` eco
+<ul>
+<% for article in @getCollection('articles').toJSON()[0..4] : %>
+  <li>
+    <h3><%= article.title %></h3>
+    <div class="date">written on <span class="date"><%= article.date.toShortDateString() %></span></div>
+    <a href="<%= article.url %>">Read the full article</a>
+  </li>
+<% end %>
+</ul>
+```
+
+Again, let's explain this code step by step :
+
+#### Step 1 : Looping through our custom collection.
+
+```
+<% for article in @getCollection('articles').toJSON()[0..4] : %>
+  ...
+<% end %>
+```
+
+We're looping in each article of our custom `articles` collection. The important things here :
+ 1. We're using the `for ... in ...` loop from CoffeeScript, that allows us to loop through each element of an array (an array is a list of elements).
+ 2. The `article` word is deliberately choosen, you could use any word you like.
+ 3. `@getCollection('articles')` is a helper function provided by DocPad to retrieve a collection. Pass it the name of any collection, core or custom.
+ 4. `.toJSON()` is a helper provided by Backbone to transform a Backbone.Collection object to an array. We call it to so the `for` loop can work.
+ 5. `[0..4]` comes from CoffeeScript and allows to limit the number of elements in an array to 5. We just converted the Collection into an Array with `toJSON()`, so it works fine to limit results here. If you're wondering why we go up to 4 and not 5, it's because computers start to count from 0... So "from 0 to 4" really means "from the first to the fifth" !
+ 5. The `:` at the end of the `for` line and the `<% end %>` come from Eco. They delimit what will happen inside the loop.
+
+#### Step 2 : Printing each collection element.
+
+Inside the loop, everything written will appear in the final markup for each element of our collection. Here's we're just printing a list of article's title, along with its date and a link to the full article.
+
+Some explanations :
+
+- `<%= article.title %>` will print the `title` as we wrote it in our articles' metadata
+- `<%= article.date.toShortDateString() %>` : If we had printed `article.date` directly, it would have printed something like `Sun May 20 2012 02:00:00 GMT+0200 (CEST)`, which is not very user-friendly. Hopefully DocPad provides the `toShortDateString()` helper function to format the date in a much nicer way.
+- `<%= article.url %>` is using the `url` metadata, set by DocPad and automatically containing the path to the document.
+
+And we're done ! We can now `docpad generate` then `docpad server` our site and view the result in our web browser of choice, where we'll see a home page with a header and a footer and in-between the list we just created, and the links work too. Pretty cool !
+
+## A last word
+
+To sum it up :
+
+1. We create a global layout (`default.html.eco`), and a document specific layout `article.html.eco`.
+2. We created some content.
+3. We added some site-wide data in `docpad.cson`, as well as a custom collection of articles.
+4. We used these site-wide data in our global layout, and the custom collection in our home page to create a dynamic listing of content.
+
+This is all it takes to start making use of the power hidden under DocPad. The way presented above is by no mean the _right way_, as there's no such thing in DocPad. But dividing pages into layout and content, and using the `docpad.cson` file for site-wide data and collections is a best practice I recommend that's all about _separation of concern_, a good habit in programming in general.
+
+We've just skimmed the surface of DocPad, but what we saw should already give you enough power to create your own website. Feel free to ask questions in the [issue tracker](https://github.com/bevry/docpad/issues), and even edit this guide !
