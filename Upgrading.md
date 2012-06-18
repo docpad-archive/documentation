@@ -19,7 +19,7 @@ Be sure to read any specific upgrade notes for the versions you are installing f
 	- Removed `database`, `documents`, `collections`, `blocks` from `templatedata`. Instead, use their helper based alternatives: `getDatabase()`, `getCollection('documents')`, `getCollection('collectionName')`, `getBlock('blockName')`
 - Changes affecting everyone:
 	- Removed the prototypes `String::startsWith`, `String::finishesWith`, `Array::hasCount`, `Array::has` as no one ever used them
-	- Plugin versions have been bumped to `2.x` for DocPad v6.x compatibility. You should update all your docpad plugins versions in your `package.json` to `2.x` (e.g. `"docpad-plugin-eco": "2.x"`) then run `npm install` to install the new versions of the plugins
+	- Plugin versions have been bumped to `2.x` for DocPad v6.x compatibility. You should update all your docpad plugins versions in your `package.json` to `2.0.x` (e.g. `"docpad-plugin-eco": "2.0.x"`) then run `npm install` to install the new versions of the plugins
 - Changes affecting pugin developers:
 	- Removed `docpadInstance.documents`. Instead, use `docpadInstance.getCollection('documents')`
 	- Plugin tests are now run via `npm test` on your plugin directory, allowing you to use whatever test runner you want
