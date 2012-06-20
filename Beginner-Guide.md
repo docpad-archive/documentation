@@ -397,7 +397,7 @@ The `docpad.cson` file gives us the possibility to describe custom collections u
   collections:
     # This collection named 'articles' fetches the documents with the 'layout' property set to 'article'
     articles: (database) ->
-      database.createLiveChildCollection().setQuery(layout: 'article.html.eco').setComparator(date:-1)
+      database.findAllLive({layout: 'article.html.eco'}, {date:-1})
 }
 ```
 
@@ -407,15 +407,11 @@ Let's break up the code we've added and explain step-by-step.
 
 - `articles: (database) ->` : We're telling DocPad that our new custom collection is called `articles`. The name could whatever you like, apart from the core collections (`documents`, `layouts`, `files`). The rest of the line is mandatory as well, it means that we're using the whole DocPad's database to create our custom collection.
 
-- `database.createLiveChildCollection().setQuery(layout: 'article.html.eco').setComparator(date:1)` : This is where the magic happens. This line of code makes use of the QueryEngine API. Let's break it up too :
-
-  * `database.createLiveChildCollection()` : We're creating a collection off of the complete database, ready to be manipulated.
-  * `.setQuery(layout: 'article.html.eco')` : The real query. We're asking QueryEngine to retrieve all database content that have a `layout` property set to `article.html.eco`. As we wrote every article for John Doe with the metadata `layout: article`, this way of filtering the database works fine and retrieves only the articles.
-  * `.setComparator(date:1)` : We're telling QueryEngine to sort our articles by date descending, date being the `date` metadata present in our articles files. `-1` means "descending", so the most recent will appear first. If we wanted to show the oldest first, we would just change `-1` by `1`.
+- `database.findAllLive({layout: 'article.html.eco'}, {date:-1})` : This is where the magic happens. This line of code makes use of the [QueryEngine API](https://github.com/bevry/query-engine/wiki/Using). What we are doing here is find everything from the database with the layout `article.html.eco`, sorting by `date` in descending order (for ascending use `1` instead of `-1`), and always keep it up to date (this is the `Live` bit in `findAllLive`).
 
 That's it ! Our custom collection is ready, and whenever we'll make use of it it will always be up-to-date.
 
-QueryEngine is way more powerful than that, but it's beyond the scope of this guide. Visit [its wiki](https://github.com/bevry/query-engine/wiki/Using) to learn more about it.
+QueryEngine is way more powerful than that, but it's beyond the scope of this guide. Visit [API Guide](https://github.com/bevry/query-engine/wiki/Using) to learn more about it.
 
 ### Creating a dynamic homepage
 
