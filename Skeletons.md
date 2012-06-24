@@ -4,24 +4,18 @@
 
 These are skeletons currently available to you as part of the DocPad bootstrap process:
 
-- [canvas.docpad](https://github.com/bevry/canvas.docpad) `branch: docpad-5.x` - The bare minimum to get started, with a few bundled client-side libraries to make it easier
-- [balupton.docpad](https://github.com/balupton/balupton.docpad) `branch: docpad-5.x` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
-- [kitchensink.docpad](https://github.com/bevry/kitchensink.docpad) `branch: docpad-5.x` - [preview](http://docpad-kitchensink.herokuapp.com) - The entire kitchensink to showcase everything that docpad is capable of
-
-
-### Expiremental
-
-These are skeletons that are currently under contruction:
-
-- [website.docpad](https://github.com/bevry/website.docpad) `branch: master` - A DocPad skeleton for Websites. Includes themes for HTML5 Boiler Plate, Initializr, Twitter Bootstrap, among others.
+- [HTML5 Boilerplate](https://github.com/docpad/html5-boilerplate.docpad) `branch: docpad-6.x` - HTML5 Boilerplate skeleton for DocPad. Bare essentials for building a modern website with best practices
+- [Website Skeleton](https://github.com/docpad/website.docpad) `branch: docpad-6.x` - Website skeleton for DocPad. Useful for personal websites and blogs. Pulls in social streams and github information
+- [Kitchensink](https://github.com/bevry/kitchensink.docpad) `branch: docpad-6.x` - [preview](http://docpad-kitchensink.herokuapp.com) - A DocPad Skeleton useful for showcasing different features and functionality of DocPad. Implemented using Twitter Bootstrap
 
 ### Older
 
 These are skeletons and themes for older versions of DocPad
 
-- [deckpad](https://github.com/calvinmetcalf/deckpad) `branch: master` - Build rich HTML5 presentations with DocPad
-- [nodechat.docpad](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js.\nNOTE: To run nodechat you must use `coffee server.coffee` instead of `docpad run`
-
+- [Blank Canvas](https://github.com/bevry/canvas.docpad) `branch: docpad-5.x` - The bare minimum to get started, with a few bundled client-side libraries to make it easier
+- [Deckpad](https://github.com/calvinmetcalf/deckpad) `branch: master` - Build rich HTML5 presentations with DocPad
+- [Node Chat](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js.\nNOTE: To run nodechat you must use `coffee server.coffee` instead of `docpad run`
+- [Balupton](https://github.com/balupton/balupton.docpad) `branch: docpad-5.x` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
 
 
 
