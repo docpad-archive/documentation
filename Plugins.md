@@ -12,6 +12,7 @@ These plugins add support for extra markups and languages to DocPad
 - [coffee](https://github.com/bevry/docpad-extras/tree/master/plugins/coffee/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee` and JavaScript to CoffeeScript `.coffee.js`, as well as [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee|coffeekup|ck` and HTML to CoffeeKup `.coffee|coffeekup|ck.html`
 - [eco](https://github.com/bevry/docpad-extras/tree/master/plugins/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
 - [haml](https://github.com/bevry/docpad-extras/tree/master/plugins/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
+- [handlebars](https://github.com/bevry/docpad-extras/tree/master/plugins/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com/) to anything `.anything.hb|hbs|handlebars`
 - [hogan](https://github.com/bevry/docpad-extras/tree/master/plugins/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
 - [html2jade](https://github.com/bevry/docpad-extras/tree/master/plugins/html2jade) - Supports HTML to [Jade](http://jade-lang.com/) `.jade.html`
 - [jade](https://github.com/bevry/docpad-extras/tree/master/plugins/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
