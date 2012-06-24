@@ -4,7 +4,7 @@
 
 These are skeletons currently available to you as part of the DocPad bootstrap process:
 
-- [HTML5 Boilerplate](https://github.com/docpad/html5-boilerplate.docpad) `branch: docpad-6.x` - HTML5 Boilerplate skeleton for DocPad. Bare essentials for building a modern website with best practices
+- [HTML5 Boilerplate](https://github.com/docpad/html5-boilerplate.docpad) `branch: docpad-6.x` - [HTML5 Boilerplate](http://html5boilerplate.com/) skeleton for DocPad. Bare essentials for building a modern website with best practices
 - [Website Skeleton](https://github.com/docpad/website.docpad) `branch: docpad-6.x` - Website skeleton for DocPad. Useful for personal websites and blogs. Pulls in social streams and github information
 - [Kitchensink](https://github.com/bevry/kitchensink.docpad) `branch: docpad-6.x` - [preview](http://docpad-kitchensink.herokuapp.com) - A DocPad Skeleton useful for showcasing different features and functionality of DocPad. Implemented using Twitter Bootstrap
 
@@ -25,7 +25,7 @@ These are skeletons and themes that have not yet been coded up, but have been re
 
 
 ### Public Domain
-- HTML5 Boiler Plate - [preview](http://html5boilerplate.com/) - [source](https://github.com/h5bp/html5-boilerplate)
+- all implemented so far
 
 ### MIT License
 - Codex Hub - [preview](http://alogicalparadox.com/codex-hub/) - [source](https://github.com/logicalparadox/codex-hub)
