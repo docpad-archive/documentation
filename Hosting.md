@@ -21,24 +21,26 @@ Inside your website's directory:
 	web: node server.js
 	```
 
-1. Inside your website's `package.json` file, ensure it has the following dependencies. Set the DocPad version to whichever version you are using, keep it specific
+1. Inside your website's `package.json` file, ensure it has the following dependencies. Set the DocPad version to whichever version you are using, keep it specific. Add all the plugins you use here as well.
 
 	``` javascript
 	"dependencies": {
-		"coffee-script": "1.3.x",
-		"express": "2.5.x",
-		"docpad": "latest"
+		"docpad": "latest",
+		"docpad-plugin-blah": "latest"
 	},
 	```
 
 1. Create a `server.js` file which contains:
 
 	``` javascript
-	require('coffee-script');
-	require(__dirname+'/server.coffee');
+	require('docpad').createInstance(function(err,docpadInstance){
+		if (err)  return console.log(err.stack);
+		docpadInstance.action('generate server',function(err){
+			if (err)  return console.log(err.stack);
+			console.log('OK')
+		});
+	});
 	```
-
-1. Create a `server.coffee` file, [base it off the one inside the KitchenSink Skeleton](https://github.com/bevry/kitchensink.docpad/blob/master/server.coffee)
 
 1. If you are going to be using a custom domain name:
 
