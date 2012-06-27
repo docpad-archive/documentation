@@ -3,6 +3,7 @@ Currently, there are three ways which DocPad can be extended:
 - Skeletons are essentially re-usable websites/projects/webapps that you've created with DocPad
 
 ## In regards to configuration files
+- [You can discover how use the configuration files here](https://github.com/bevry/docpad/wiki/Beginner-Guide)
 - [You can discover the events available to you here](https://github.com/bevry/docpad/wiki/Events)
 
 ## In regards to plugins
