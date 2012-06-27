@@ -1,4 +1,3 @@
-
 ## Using Events
 
 ### Event Handler Structure
@@ -100,7 +99,7 @@ Called just before we start rendering all the files. Options:
 
 ### renderAfter
 Called just just after we've rendered all the files. Options:
-- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
+- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
 
 ### render
 Called per document, for each extension conversion. Used to render one extension to another. Options:
