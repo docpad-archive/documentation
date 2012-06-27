@@ -7,7 +7,7 @@ Currently, there are two ways which DocPad can be extended:
 
 - [You can discover existing plugins here](https://github.com/bevry/docpad/wiki/Plugins)
 - [You can learn to write plugins here](https://github.com/bevry/docpad/wiki/Writing-a-Plugin)
-- [You can discover the events available to your plugins here](https://github.com/bevry/docpad/wiki/Plugin-Events)
+- [You can discover the events available to you here](https://github.com/bevry/docpad/wiki/Events)
 
 ## In regards to skeletons
 
