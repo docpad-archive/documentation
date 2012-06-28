@@ -64,7 +64,17 @@ Version structure and timelines:
 	- Jekyll
 	- Octopress
 
+- Deployers
+	- Heroku
+	- GitHub Pages
 
+## Next
+
+- More skeletons
+- [Element based renderers](https://github.com/bevry/docpad/issues/194)
+- DocPad Website
+- Importers
+- Deployers
 
 ## Version 6
 
