@@ -8,10 +8,10 @@ When you go the [DocPad GitHub Page](https://github.com/bevry/docpad), there wil
 ## 2. Configuring your Environment
 Once you've cloned out your fork's repository, you'll need to setup your clone for development. To do this, run the following inside your clone's directory:
 
-    ``` bash
-    make clean
-    make dev
-    ```
+``` bash
+make clean
+make dev
+```
 
 This will install all dependencies that we need for development, as well as start watching our source [CoffeeScript](http://coffeescript.org/) files for changes and re-compile them when a change is made. You'll probably want to open a new tab (or console window) to perform your git commands while the CoffeeScript watcher runs in that window.
 
