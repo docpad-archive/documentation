@@ -72,6 +72,7 @@ Version structure and timelines:
 - Added differential rendering
 - Allow configuration files to hook into events
 - Streamlined and cleaned
+- Extensible CLI
 
 ## Version 5
 
