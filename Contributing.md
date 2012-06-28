@@ -16,10 +16,8 @@ make dev
 This will install all dependencies that we need for development, as well as start watching our source [CoffeeScript](http://coffeescript.org/) files for changes and re-compile them when a change is made. You'll probably want to open a new tab (or console window) to perform your git commands while the CoffeeScript watcher runs in that window.
 
 
-## 3. Writing Unit Tests
-Our unit tests are written with [Mocha](http://visionmedia.github.com/mocha/) and can be found in the `test` directory. We use the [BDD](http://visionmedia.github.com/mocha/#bdd-interface) interface for writing our unit tests.
-
-Use `npm test` to run our unit tests.
+## 3. Writing Tests
+Our tests are written with [Joe](https://github.com/bevry/joe/) and can be found in the `src/test` directory. Use `npm test` to run the tests.
 
 
 ## 4. Submitting your Pull Request
