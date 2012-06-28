@@ -66,13 +66,14 @@ Version structure and timelines:
 
 
 
+## Version 6
+
+### v6.0 _**- released**_
+- Added differential rendering
+- Allow configuration files to hook into events
+- Streamlined and cleaned
+
 ## Version 5
-
-### v5.5 _- planned_
-- Provide differential rendering
-
-### v5.3 _- planned_
-- Provide templateData helpers
 
 ### v5.2 _**- released**_
 - Everything is now parsed into the in-memory database
