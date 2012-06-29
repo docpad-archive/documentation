@@ -2,7 +2,7 @@ This page will go into details about the differences between DocPad and other so
 
 ## Rails (Web Development Framework)
 
-Verdict: Overkill, Constraining.
+Verdict: Overkill, Constraining
 
 Rails is incredibly powerful and for the most part intuitive framework, perfect for streamlined systems. However the strong opinions and enforced conventions often lock you in to a particular way of doing things, which isn't always the best for your use case, and sometimes makes it incredibly painful to accomplish what you want when you have to stray from the standard way of doing things.
 
@@ -13,7 +13,7 @@ For simple websites such as blogs and other static websites, where we just need 
 
 ## Wordpress (<s>Content Management</s> Blogging System)
 
-Verdict: Underkill, Constraining.
+Verdict: Underkill, Constraining
 
 Wordpress is king of the blog world, perhaps soley because it is king of the blog world.
 
@@ -33,7 +33,7 @@ Jekyll is the most popular static site generator out right now, and it is exactl
 
 ## Grunt (Build System & Compiler)
 
-Verdict: Powerful, Ignorant
+Verdict: Powerful, Simplistic
 
 Grunt (sames goes for Buildr, Brunch and CodeKit too) are build systems which are able to compile pre-processors, concantenate the result with other files, and finally minify them for web consuption. They can also be extended more or less infinitely to accomplish more functionality such as starting a simple web server, linting your files before compiling, and running unit tests. Which is fantastic for their use case of taking a bunch of files, and processing them with particular actions. Outside of these use case however, they ability platues as they only process documents rather than parse them leaving the naively unaware of the information their handling, making things such as complete static site generation impossible. Leaving them to be used only for their particular use case of build tasks.
 
