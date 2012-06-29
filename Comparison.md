@@ -1,4 +1,4 @@
-This page will go into details about the differences between DocPad and other solutions like Rails, WordPress, Jekyll and Grunt.
+This page goes into details about the differences between DocPad and other solutions like Rails, WordPress, Jekyll and Grunt.
 
 ## Rails (Web Development Framework)
 
