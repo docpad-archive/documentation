@@ -46,7 +46,7 @@ DocPad on the other hand, takes a book from all of these systems. It provides th
 
 It does this by parsing your website assets into an in memory database, with different directories for different purposes. The `documents` directory are files that are to be rendered, such as blog listings, markdown files, coffeescript files, etc. The `files` directory is for everything else. Layouts and partials also have their own directories.
 
-Pre-precossors and template engines are provided by plugins, and are implemented in a similar way to the rails asset pipeline in that if you have the document `my-blog-post.html.md.eco` this will be rendering with the templating engine eco first to markdown, then with markdown to html. As such, we would write coffee-script files like `my-script.js.coffee`.
+Pre-processors and template engines are provided by plugins, and are implemented in a similar way to the rails asset pipeline in that if you have the document `my-blog-post.html.md.eco` this will be rendering with the templating engine eco first to markdown, then with markdown to html. As such, we would write coffee-script files like `my-script.js.coffee`.
 
 At compilation, DocPad renders all the documents and merges them with the files into an `out` directory. Unlike Jekyll, which just takes the source files, compiles them, and then regurgitates it all on top of the source files again - disgusting. Also unlike Jekyll, DocPad provides the templating engines with an in memory queryable database of everything we parsed, allowing you to do custom listings of documents, fetch in external data, and do all sorts of amazing things that using Jekyll are simply impossible.
 
