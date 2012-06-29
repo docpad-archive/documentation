@@ -33,7 +33,7 @@ Jekyll is the most popular static site generator out right now, and it is exactl
 
 ## Grunt (Build System & Compiler)
 
-Verdict: Powerful, Stupid
+Verdict: Powerful, Ignorant
 
 Grunt (sames goes for Buildr, Brunch and CodeKit too) are build systems which are able to compile pre-processors, concantenate the result with other files, and finally minify them for web consuption. They can also be extended more or less infinitely to accomplish more functionality such as starting a simple web server, linting your files before compiling, and running unit tests. Which is fantastic for their use case of taking a bunch of files, and processing them with particular actions. Outside of these use case however, they ability platues as they only process documents rather than parse them leaving the naively unaware of the information their handling, making things such as complete static site generation impossible. Leaving them to be used only for their particular use case of build tasks.
 
