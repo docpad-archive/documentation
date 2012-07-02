@@ -17,7 +17,7 @@ module.exports = (BasePlugin) ->
 
 What this does is receives our BasePlugin from DocPad, and returns the `YourPlugin` class. Of course you should change the your plugin references to whatever your plugin is actually called.
 
-The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/plugin.coffee) is important as it provides some of the tucked away magic for out plugins. But what is even more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you by visiting the Plugin Events wiki page here.](https://github.com/bevry/docpad/wiki/Plugin-Events)
+The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/plugin.coffee) is important as it provides some of the tucked away magic for out plugins. But what is even more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you by visiting the Plugin Events wiki page here.](https://github.com/bevry/docpad/wiki/Events)
 
 
 ### plugins/yourPlugin/package.json
