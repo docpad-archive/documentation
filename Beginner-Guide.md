@@ -349,7 +349,7 @@ We're going to show basic usage of the file. A good practice is to store in this
 }
 ```
 
-With such a file, we could display the site name in an Eco file by writing `<%= @site.name %>`. Easy, right ? The important thing here is that under `templateData` no naming convention is enforced, you're free to name oand organize your custom data as you see fit.
+With such a file, we could display the site name in an Eco file by writing `<%= @site.name %>`. Easy, right ? The important thing here is that under `templateData` no naming convention is enforced, you're free to name and organize your custom data as you see fit.
 
 Let's add them in `default.html.eco`, like this :
 
