@@ -16,6 +16,8 @@ require('docpad').createInstance(docpadInstanceConfiguration, function(err,docpa
 
 ## Rendering individual files
 
+You can use DocPad as a module to render individual files very easily. This allows you to utilise DocPad for all the rendering inside your application, instead of having to _write **and maintain**_ specific wrappers for each rendering engine yourself.
+
 ### Render some text with DocPad
 
 ``` javascript
