@@ -46,6 +46,8 @@ docpadInstance.action('render', renderOpts, function(err,result){
 
 ## DocPad CLI Actions
 
+Here is how you would normalise common tasks you would typically achieve with the DocPad command line interface.
+
 ### Performing a generation
 
 ``` javascript
