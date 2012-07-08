@@ -27,6 +27,7 @@ var renderOpts = {
 docpadInstance.action('render', renderOpts, function(err,result){
 	console.log(result);
 });
+```
 
 ### Render a file path with DocPad
 
