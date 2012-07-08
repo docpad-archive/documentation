@@ -42,7 +42,11 @@ Inside your website's directory:
 	});
 	```
 
-1. If you are going to be using a custom domain name:
+1. Do a deploy to your hosting provider. Follow the guide of your hosting provider in order to do this.
+
+	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
+
+1. _Optional:_ If you're also wanting to use a custom domain for your DocPad website, here is the [Heroku Guide](https://devcenter.heroku.com/articles/custom-domains), alternatively here is a generic guide:
 
 	1. Ping your server e.g. `ping balupton.no.de`
 
@@ -51,12 +55,6 @@ Inside your website's directory:
 	1. Login to your domain's DNS manager
 
 	1. Create an A Record for your domain pointing to that IP address
-
-1. Do a deploy to your hosting provider. Follow the guide of your hosting provider in order to do this.
-
-	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
-
-
 
 
 
