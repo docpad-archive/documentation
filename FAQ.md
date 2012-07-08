@@ -78,19 +78,17 @@ Templating engines are renderers for languages which support business logic. For
 
 As such, the data which we expose to our templating engines is called the `templateData`, and it contains the following:
 
-- `require`: a reference to node's [require](http://nodejs.org/api/globals.html#globals_require) function, use it to include other node modules on the fly
-- `docpad`: a reference to the currently running DocPad instance which is rendering the document
-- `database`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all our documents
-- `document`: a JavaScript Object containing the serialised values of our `documentModel` (e.g. `documentModel.toJSON()`)
-- `documentModel`: a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/src/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/src/models/file.coffee) which extends a [Backbone Model](http://documentcloud.github.com/backbone/#Model)
-- `documents`: an array of all the website's documents, sorted newest to last
 - `site`: an object of several site-specific properties, contains:
     - `date`: a javascript date object for the time that the website was last generated
-- `blocks`: an object that contains several properties relating to blocks to be inserted without our layout, contains:
-    - `scripts`: an array of strings which should be outputted where your script elements go
-    - `styles`: an array of strings which should be outputted where your style elements go
-    - `meta`: an array of strings which should be outputted where your meta elements go
+- `document`: a JavaScript Object containing the serialised values of our `documentModel` (e.g. `documentModel.toJSON()`)
 - `req`: dynamic documents will also have this available to the, it is a reference to the current request object created by the [ExpressJS](http://expressjs.com/) framework
+- `getDatabase()`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all our documents
+- `getCollection(collectionName)`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all a particular sub collection
+- `getDocument()`: a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/src/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/src/models/file.coffee) which extends a [Backbone Model](http://documentcloud.github.com/backbone/#Model)
+- `getBlock(blockName)`: valid block names are:
+    - `scripts`: a collection of scripts to be outputted
+    - `styles`: a collection of styles to be outputted
+    - `meta`: a collection of meta to be outputted
 
 For instance, to output the current document's title with eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what eco uses) you access by using the `@` character.
 
