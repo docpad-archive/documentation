@@ -20,7 +20,6 @@ These plugins add support for extra markups and languages to DocPad
 - [markdown](https://github.com/bevry/docpad-extras/tree/master/plugins/markdown/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown`
 - [move](https://github.com/bevry/docpad-extras/tree/master/plugins/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
 - [php](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [PHP](http://php.net/) to anything `.anything.php|phtml`
-- [roy](https://github.com/bevry/docpad-extras/tree/master/plugins/roy) - Supports [Roy](http://roy.brianmckenna.org/) to JavaScript `.js.roy`
 - [ruby](https://github.com/bevry/docpad-extras/tree/master/plugins/ruby) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.ruby|erb`
 - [sass](https://github.com/bevry/docpad-extras/tree/master/plugins/sass/) - Supports [SASS](http://sass-lang.com/) to CSS `.css.sass|scss`
 - [stylus](https://github.com/bevry/docpad-extras/tree/master/plugins/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.styl|stylus`
@@ -38,6 +37,7 @@ These plugins add extra functionality to DocPad
 - [partials](https://github.com/bevry/docpad-extras/tree/master/plugins/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](https://github.com/bevry/docpad-extras/tree/master/plugins/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
 - [related](https://github.com/bevry/docpad-extras/tree/master/plugins/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
+- [text](https://github.com/bevry/docpad-extras/tree/master/plugins/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
 
 
 ## Older plugins
