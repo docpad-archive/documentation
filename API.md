@@ -1,7 +1,14 @@
 This page will go over using DocPad as a module, and the API available to you.
 
 
-## Create a DocPad Instance
+## Install DocPad
+
+Besides having [Node.js installed](https://github.com/bevry/community/wiki/Installing-Node), you'll want to install DocPad locally to your project, you can do this by running `npm install -f docpad` in your command line. This will install DocPad into `./node_modules/docpad` and make it accessible via [Node.js's require function](http://nodejs.org/docs/latest/api/all.html#all_require) (e.g. `require('docpad')`)
+
+If you are wanting to utilise DocPad for rendering, you'll also want to install some rendering [Plugins](https://github.com/bevry/docpad/wiki/Plugins).
+
+
+## Create your DocPad Instance
 
 Firstly, you need to create your DocPad instance, you can do this like so:
 
