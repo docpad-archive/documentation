@@ -1,5 +1,9 @@
 Currently, there are three ways which DocPad can be extended
 
+## Module
+DocPad can also be used as a module in other systems
+- [You can discover the API accessible to your here](https://github.com/bevry/docpad/wiki/API)
+
 ## Configuration Files
 Configuration files allow you to apply site specific extensions and configurations
 - [You can discover how use the configuration files here](https://github.com/bevry/docpad/wiki/Beginner-Guide)
