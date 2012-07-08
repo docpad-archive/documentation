@@ -1,6 +1,6 @@
 Currently, there are three ways which DocPad can be extended
 
-## Module
+## Module/API
 DocPad can also be used as a module in other systems
 - [You can discover the API accessible to your here](https://github.com/bevry/docpad/wiki/API)
 
