@@ -9,10 +9,6 @@ A quick walkthrough on the basics of DocPad, and how to use the CLI.
 Got a quick question? Or know a nifty answer that you think others will benefit from. Check out the FAQ.
 
 
-## [Documentation Overview](https://github.com/bevry/docpad/wiki/Overview)
-A quick overview about everything possible with DocPad.
-
-
 ## [Showcase and Examples](https://github.com/bevry/docpad/wiki/Showcase)
 The ultimate listing of everything docpad. Websites, web applications, companies, presentations, press, etc. Well worth checking out.
 
