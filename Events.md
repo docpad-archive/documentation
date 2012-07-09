@@ -74,8 +74,8 @@ Called once DocPad when DocPad is now ready to perform actions which is once it 
 
 ### consoleSetup
 Called once the command line interface for DocPad has loaded. Options:
-- `docpadInterface` the console interface instance we are using
-- `commanderInstance` the instance of [commander](https://github.com/visionmedia/commander.js) we are using
+- `consoleInterface` the console interface instance we are using
+- `commander` the instance of [commander](https://github.com/visionmedia/commander.js) we are using
 
 
 ### generateBefore
