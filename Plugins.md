@@ -21,7 +21,7 @@ These plugins add support for extra markups and languages to DocPad
 - [move](https://github.com/bevry/docpad-extras/tree/master/plugins/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
 - [php](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [PHP](http://php.net/) to anything `.anything.php|phtml`
 - [ruby](https://github.com/bevry/docpad-extras/tree/master/plugins/ruby) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.ruby|erb`
-- [sass](https://github.com/bevry/docpad-extras/tree/master/plugins/sass/) - Supports [SASS](http://sass-lang.com/) to CSS `.css.sass|scss`
+- [sass](https://github.com/bevry/docpad-extras/tree/master/plugins/sass/) - Supports [SCSS and SASS](http://sass-lang.com/) to CSS (includes [compass](http://compass-style.org/) support) `.css.sass|scss`
 - [stylus](https://github.com/bevry/docpad-extras/tree/master/plugins/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.styl|stylus`
 
 
@@ -29,6 +29,7 @@ These plugins add support for extra markups and languages to DocPad
 
 These plugins add extra functionality to DocPad
 
+- [associated-files](https://github.com/bevry/docpad-extras/tree/master/plugins/associated-files) - Lets you easily associate files to a particular document, and then grab the collection for them
 - [buildr](https://github.com/bevry/docpad-extras/tree/master/plugins/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/bevry/buildr.npm)
 - [cachr](https://github.com/bevry/docpad-extras/tree/master/plugins/cachr/) - Allows you to cache remote urls locally from within your templates
 - [cleanurls](https://github.com/bevry/docpad-extras/tree/master/plugins/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
