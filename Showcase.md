@@ -27,6 +27,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [Doug Neiner's Code Website](http://code.dougneiner.com/) - [source](https://github.com/dcneiner/dougneiner.docpad) - Husband to one, father to three, jQuery Team Member, Senior Designer at [appendTo](http://appendto.com/)
 - [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
+- [Game-Icons](http://game-icons.net) - Heaps of free SVG icons
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
 - [Imaginatr](http://www.imaginatr.com/) - Imaginatr is a creative independent studio focused on the development of mobile applications and innovative software
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
