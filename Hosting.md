@@ -1,6 +1,4 @@
-DocPad websites can be hosted anywhere as they are just a generated static website, nothing special about them at all (well besides them being awesome!).
-
-Here is how you can host them on several different server types.
+DocPad websites can be deployed anywhere. Here are a few of the most common deployments.
 
 
 ## Via a Node.js Hosting Provider
