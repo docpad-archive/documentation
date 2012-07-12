@@ -46,25 +46,21 @@ Inside your website's directory:
 
 ## Via a Standard Apache Server
 
-Upload the generated `mywebsite/out` directory to your apache server's `public_html` or `htdocs` directory
+1. Perform a generation for an apache and production environment using `docpad generate --env apache,production`
 
+2. Upload the generated directory to your apache server's `public_html` or `htdocs` directory
 
 
 ## Via GitHub Pages
 
-1. Ensure the following exists inside your website's configuration file (e.g. `docpad.cson`):
+1. For GitHub Pages we want our output directory to our website's root directory. To do this, ensure the following exists inside your website's configuration file (e.g. `docpad.cson`):
 
 	``` coffee
 	{
 		outPath: '.'
-		environments:
-			production:
-				enabledPlugins:
-					'cleanurls': false
-					'live-reload': false
 	}
 	```
 
-2. Perform a generation for the production environment using `docpad generate --env production`
+2. Perform a generation for an apache and production environment using `docpad generate --env apache,production`
 
 3. Commit your changes to the `gh-pages` branch, and push the branch to github
