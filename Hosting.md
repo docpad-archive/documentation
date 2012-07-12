@@ -32,7 +32,7 @@ Inside your website's directory:
 
 	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
 
-1. Optional: If you're also wanting to use a custom domain for your DocPad website, here is the [Heroku Guide](https://devcenter.heroku.com/articles/custom-domains), alternatively here is a generic guide:
+1. Optional: If you're also wanting to use a custom domain for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
 
 	1. Ping your server e.g. `ping balupton.no.de`
 
@@ -64,3 +64,5 @@ Inside your website's directory:
 2. Perform a generation for an apache and production environment using `docpad generate --env apache,production`
 
 3. Commit your changes to the `gh-pages` branch, and push the branch to github
+
+4. Optional: If you're also wanting to use a custom domain for your website, [follow the GitHub Pages guide here](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)
