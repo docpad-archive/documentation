@@ -9,37 +9,23 @@ Works great with [Heroku](http://www.heroku.com/), [Nodester](http://nodester.co
 
 Inside your website's directory:
 
-1. Create a `config.json` file which contains:
+1. Create a `Procfile` file that contains:
 
-	``` javascript
-	{"version":"latest"}
+	```
+	web: node_modules/docpad/bin/docpad-server
 	```
 
-1. Create a `Procfile` which contains:
+1. Add the following to your website's package.json file. Add all the dependencies you are using and make sure their versions are correct.
 
 	``` javascript
-	web: node server.js
-	```
-
-1. Inside your website's `package.json` file, ensure it has the following dependencies. Set the DocPad version to whichever version you are using, keep it specific. Add all the plugins you use here as well.
-
-	``` javascript
-	"dependencies": {
-		"docpad": "latest",
-		"docpad-plugin-blah": "latest"
+	"engines" : {
+		"node": "0.8.x",
+		"npm": "1.1.x"
 	},
-	```
-
-1. Create a `server.js` file which contains:
-
-	``` javascript
-	require('docpad').createInstance(function(err,docpadInstance){
-		if (err)  return console.log(err.stack);
-		docpadInstance.action('generate server',function(err){
-			if (err)  return console.log(err.stack);
-			console.log('OK')
-		});
-	});
+	"dependencies": {
+		"docpad": "6.x",
+		"docpad-plugin-blah": "2.x"
+	},
 	```
 
 1. Do a deploy to your hosting provider. Follow the guide of your hosting provider in order to do this.
@@ -66,6 +52,19 @@ Upload the generated `mywebsite/out` directory to your apache server's `public_h
 
 ## Via GitHub Pages
 
-1. [Follow these instructions to get setup with your GitHub Pages Repository](https://github.com/blog/272-github-pages)
-2. Copy the generated `mywebsite/out` directory to your repository
-3. Push the repository to GitHub
+1. Ensure the following exists inside your website's configuration file (e.g. `docpad.cson`):
+
+	``` coffee
+	{
+		outPath: '.'
+		environments:
+			production:
+				enabledPlugins:
+					'cleanurls': false
+					'live-reload': false
+	}
+	```
+
+2. Perform a generation for the production environment using `docpad generate --env production`
+
+3. Commit your changes to the `gh-pages` branch, and push the branch to github
