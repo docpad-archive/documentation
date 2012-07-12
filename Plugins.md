@@ -35,6 +35,7 @@ These plugins add extra functionality to DocPad
 - [cleanurls](https://github.com/bevry/docpad-extras/tree/master/plugins/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [feedr](https://github.com/bevry/docpad-extras/tree/master/plugins/feedr/) - Allows you to render remote feeds within your templates
 - [images](https://github.com/bevry/docpad-extras/tree/master/plugins/images/) - Provides access to an array of paths to images associated with the current document during document rendering
+- [live-reload](https://github.com/bevry/docpad-extras/tree/master/plugins/live-reload) - Automatically reloads the page whenever a regeneration is performed
 - [partials](https://github.com/bevry/docpad-extras/tree/master/plugins/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](https://github.com/bevry/docpad-extras/tree/master/plugins/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
 - [related](https://github.com/bevry/docpad-extras/tree/master/plugins/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
