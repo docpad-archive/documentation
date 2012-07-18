@@ -44,7 +44,7 @@ Inside your website's directory:
 
 ## Via a Standard Apache Server
 
-1. Perform a generation for an apache and production environment using `docpad generate --env apache,production`
+1. Perform a generation for an apache and production environment using `docpad generate --env static`
 
 2. Upload the generated directory to your apache server's `public_html` or `htdocs` directory
 
@@ -59,7 +59,7 @@ Inside your website's directory:
 	}
 	```
 
-2. Perform a generation for an apache and production environment using `docpad generate --env apache,production`
+2. Perform a generation for an apache and production environment using `docpad generate --env static`
 
 3. Commit your changes to the `gh-pages` branch, and push the branch to github
 
