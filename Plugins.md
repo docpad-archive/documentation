@@ -9,13 +9,16 @@ To install a plugin, do a `npm install -f docpad-plugin-#{pluginName}` inside yo
 
 These plugins add support for extra markups and languages to DocPad
 
-- [coffee](https://github.com/bevry/docpad-extras/tree/master/plugins/coffee/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee` and JavaScript to CoffeeScript `.coffee.js`, as well as [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee|coffeekup|ck` and HTML to CoffeeKup `.coffee|coffeekup|ck.html`
+- [coffeescript](https://github.com/bevry/docpad-extras/tree/master/plugins/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
+- [coffeekup](https://github.com/bevry/docpad-extras/tree/master/plugins/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
 - [eco](https://github.com/bevry/docpad-extras/tree/master/plugins/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
 - [haml](https://github.com/bevry/docpad-extras/tree/master/plugins/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
 - [handlebars](https://github.com/bevry/docpad-extras/tree/master/plugins/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com/) to anything `.anything.hb|hbs|handlebars`
 - [hogan](https://github.com/bevry/docpad-extras/tree/master/plugins/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
+- [html2coffee](https://github.com/bevry/docpad-extras/tree/master/plugins/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
 - [html2jade](https://github.com/bevry/docpad-extras/tree/master/plugins/html2jade) - Supports HTML to [Jade](http://jade-lang.com/) `.jade.html`
 - [jade](https://github.com/bevry/docpad-extras/tree/master/plugins/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
+- [js2coffee](https://github.com/bevry/docpad-extras/tree/master/plugins/js2coffee/) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [less](https://github.com/bevry/docpad-extras/tree/master/plugins/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
 - [markdown](https://github.com/bevry/docpad-extras/tree/master/plugins/markdown/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown`
 - [move](https://github.com/bevry/docpad-extras/tree/master/plugins/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
