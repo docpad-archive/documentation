@@ -29,13 +29,12 @@ These plugins add support for extra markups and languages to DocPad
 
 These plugins add extra functionality to DocPad
 
-- [associated-files](https://github.com/bevry/docpad-extras/tree/master/plugins/associated-files) - Lets you easily associate files to a particular document, and then grab the collection for them
+- [associatedfiles](https://github.com/bevry/docpad-extras/tree/master/plugins/associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
 - [buildr](https://github.com/bevry/docpad-extras/tree/master/plugins/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/bevry/buildr.npm)
 - [cachr](https://github.com/bevry/docpad-extras/tree/master/plugins/cachr/) - Allows you to cache remote urls locally from within your templates
 - [cleanurls](https://github.com/bevry/docpad-extras/tree/master/plugins/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [feedr](https://github.com/bevry/docpad-extras/tree/master/plugins/feedr/) - Allows you to render remote feeds within your templates
-- [images](https://github.com/bevry/docpad-extras/tree/master/plugins/images/) - Provides access to an array of paths to images associated with the current document during document rendering
-- [live-reload](https://github.com/bevry/docpad-extras/tree/master/plugins/live-reload) - Automatically reloads the page whenever a regeneration is performed
+- [livereload](https://github.com/bevry/docpad-extras/tree/master/plugins/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [partials](https://github.com/bevry/docpad-extras/tree/master/plugins/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](https://github.com/bevry/docpad-extras/tree/master/plugins/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
 - [related](https://github.com/bevry/docpad-extras/tree/master/plugins/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
@@ -46,7 +45,8 @@ These plugins add extra functionality to DocPad
 
 These plugins are for older versions of DocPad
 
-- [Markdown Reference Links](https://github.com/Delapouite/docpad-markdownreferencelinks) - Provides a way to put links references into the header of a document so they can be used later inside its markdown content.
+- [markdownreferencelinks](https://github.com/Delapouite/docpad-markdownreferencelinks) - Provides a way to put links references into the header of a document so they can be used later inside its markdown content
+- [images](https://github.com/bevry/docpad-extras/tree/master/plugins/images/) - Provides access to an array of paths to images associated with the current document during document rendering
 
 
 ## Requested
