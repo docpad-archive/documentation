@@ -24,6 +24,7 @@ Inside your website's directory:
 		"docpad": "6.x",
 		"docpad-plugin-blah": "2.x"
 	},
+	"main": "node_modules/docpad/bin/docpad-server",
 	```
 
 1. Do a deploy to your hosting provider. Follow the guide of your hosting provider in order to do this.
