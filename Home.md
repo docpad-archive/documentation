@@ -21,6 +21,10 @@ Guides and Tutorials related to DocPad are listed here, it's the place where you
 Ready to upgrade to a new version of DocPad? Be sure to check out the upgrade guides to find out what is involved.
 
 
+## [Hosting DocPad](https://github.com/bevry/docpad/wiki/Hosting)
+Ready to publish your DocPad website for the world to see? Learn your options here.
+
+
 ## [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending)
 Where to go to learn how to add more power to DocPad.
 
