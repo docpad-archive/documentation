@@ -60,7 +60,7 @@ Create a `default.html.eco` file in the `src/layouts` directory, and paste in th
 <html>
 <head>
   <meta charset="utf-8">
-  <title><%= @document.title or "Joe Doe's Site" %>/title>
+  <title><%= @document.title or "Joe Doe's Site" %></title>
   <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
