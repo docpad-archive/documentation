@@ -16,7 +16,7 @@ These are skeletons and themes for older versions of DocPad
 
 - [Deckpad](https://github.com/calvinmetcalf/deckpad) `branch: master` - Build rich HTML5 presentations with DocPad
 - [Node Chat](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js.\nNOTE: To run nodechat you must use `coffee server.coffee` instead of `docpad run`
-- [Balupton](https://github.com/balupton/balupton.docpad) `branch: docpad-5.x` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
+- [Benjamin Lupton](https://github.com/balupton/balupton.docpad) `branch: docpad-5.x` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
 
 
 
