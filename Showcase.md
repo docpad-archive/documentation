@@ -11,6 +11,7 @@ DocPad mentioned around the web. Alphabetically sorted.
 - [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japanese: Covers getting started with DocPad and a comparison with other static site generators
 - [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
 - [Shop Talk Show Podcast](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and [Doug Neiner](http://code.dougneiner.com/)'s workflow (4 minutes in)
+- [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6
 
 ## Websites
 
@@ -28,6 +29,8 @@ Websites built with DocPad. Alphabetically sorted.
 - [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
 - [Game-Icons](http://game-icons.net) - Heaps of free SVG icons
+- [GeorgeOsd](http://george-osd-site.cloudfoundry.com/)  - Hi there, my name is Takeharu.Oshida(GeorgeOsd)
+welcome to my online portfolio
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
 - [Imaginatr](http://www.imaginatr.com/) - Imaginatr is a creative independent studio focused on the development of mobile applications and innovative software
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
@@ -36,6 +39,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [QUnit](http://qunitjs.com/) - [source](https://github.com/jquery/qunitjs.com) - QUnit by jQuery: A JavaScript Unit Testing framework
 - [Rio.js](http://www.riojs.org/) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de janeiro's JavaScript User Group
+- [Rob Rawkes](http://rawkes.com/) - Rawkes is the home of Rob Hawkes, part-time Rawket Scientist and full-time geek. Join him as he explores the outer-reaches of programming, digital media, games, and everything in-between.
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
 - [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
 - [Tomohisa Oda](http://tomohisaoda.com/) - Japanese: Web engineer and designer from Japan
