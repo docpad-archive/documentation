@@ -11,7 +11,8 @@ DocPad mentioned around the web. Oldest first.
 - [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
 - [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japanese: Covers getting started with DocPad and a comparison with other static site generators
 - [Shop Talk Show Podcast](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and [Doug Neiner](http://code.dougneiner.com/)'s workflow (4 minutes in)
-- [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6- - [SlidePad](http://slidepad.herokuapp.com/) - Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server. Once You write document in markdown syntax, it becomes HTML5 Slides.
+- [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6
+- [SlidePad](http://slidepad.herokuapp.com/) - Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server. Once You write document in markdown syntax, it becomes HTML5 Slides.
 
 ## Websites
 
