@@ -3,15 +3,15 @@ Feel free to [update this page](https://github.com/bevry/docpad/wiki/Showcase/_e
 
 ## In the press
 
-DocPad mentioned around the web. Alphabetically sorted.
+DocPad mentioned around the web. Oldest first.
 
 - [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: Covers what is DocPad, getting started with DocPad, and customising DocPad
 - [Dropbox auf dem eigenen Server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
 - [HTML UI on DocPad](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html) - Extensive writeup on their thoughts of docpad and how they are using it
-- [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japanese: Covers getting started with DocPad and a comparison with other static site generators
 - [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
+- [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japanese: Covers getting started with DocPad and a comparison with other static site generators
 - [Shop Talk Show Podcast](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and [Doug Neiner](http://code.dougneiner.com/)'s workflow (4 minutes in)
-- [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6
+- [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6- - [SlidePad](http://slidepad.herokuapp.com/) - Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server. Once You write document in markdown syntax, it becomes HTML5 Slides.
 
 ## Websites
 
@@ -36,6 +36,7 @@ welcome to my online portfolio
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
 - [Le blog d'Olivier](http://blog.bazoud.com) - [source](https://github.com/obazoud/blog.bazoud.com) - English & French: Blog about web, java, spring, node.js, ...
+- [Melt Media](http://meltmedia.com/) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [QUnit](http://qunitjs.com/) - [source](https://github.com/jquery/qunitjs.com) - QUnit by jQuery: A JavaScript Unit Testing framework
 - [Rio.js](http://www.riojs.org/) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de janeiro's JavaScript User Group
@@ -52,17 +53,3 @@ welcome to my online portfolio
 Applications built with DocPad. Alphabetically sorted.
 
 - [Node Chat](https://github.com/balupton/nodechat.docpad) - Node chat application, built with Socket.io, DocPad, Backbone.js, Twitter Bootstrap, written in CoffeeKup and CoffeeScript
-
-
-## Presentations
-
-Presentations built with DocPad. Alphabetically sorted.
-
-- [What is DeckPad](http://calvinmetcalf.github.com/deckpad/) - Talks about using [DeckPad](https://github.com/calvinmetcalf/deckpad) to create awesome HTML5 presentations with DocPad and [Deck.js](https://github.com/imakewebthings/deck.js)
-
-
-## Companies
-
-Companies spotted using DocPad. Alphabetically sorted.
-
-- [Bevry](https://twitter.com/#!/bevryme) - The company behind DocPad
