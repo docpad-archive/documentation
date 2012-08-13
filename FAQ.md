@@ -84,7 +84,7 @@ As such, the data which we expose to our templating engines is called the `templ
 - `req`: dynamic documents will also have this available to the, it is a reference to the current request object created by the [ExpressJS](http://expressjs.com/) framework
 - `getDatabase()`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all our documents
 - `getCollection(collectionName)`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all a particular sub collection
-- `getDocument()`: a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/src/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/src/models/file.coffee) which extends a [Backbone Model](http://documentcloud.github.com/backbone/#Model)
+- `getDocument()`: a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/src/lib/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/src/lib/models/file.coffee) which extends a [Backbone Model](http://documentcloud.github.com/backbone/#Model)
 - `getBlock(blockName)`: valid block names are:
     - `scripts`: a collection of scripts to be outputted
     - `styles`: a collection of styles to be outputted
