@@ -49,6 +49,7 @@ welcome to my online portfolio
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
 - [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
+- [Workshop 33](http://www.workshop33.com/) - Hand-crafted websites, made in Sonoma County since 1999
 
 ## Applications
 
