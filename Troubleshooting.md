@@ -26,7 +26,7 @@ Try installing the latest version of CoffeeScript via `npm install -g coffee-scr
 
 
 ### I get a whole bunch of permission denied errors
-DocPad handles the installation of the npm modules of it's plugins automagically, as such it needs write access to it's own directory (usually `/usr/local/lib/node_modules/docpad`). If you didn't follow the [recommended installation instructions](https://github.com/balupton/node/wiki/Installing-Node.js), you can try running `sudo chown -R $USER /usr/local` to rectify the permission problems. Alternatively, you can run docpad under sudo, but that probably isn't the best solution. If all fails, uninstall node, and re-install it using the [recommended installation instructions](https://github.com/balupton/node/wiki/Installing-Node.js).
+DocPad handles the installation of the npm modules of it's plugins automagically, as such it needs write access to it's own directory (usually `/usr/local/lib/node_modules/docpad`). If you didn't follow the [recommended installation instructions](https://github.com/bevry/community/wiki/Installing-Node), you can try running `sudo chown -R $USER /usr/local` to rectify the permission problems. Alternatively, you can run docpad under sudo, but that probably isn't the best solution. If all fails, uninstall node, and re-install it using the [recommended installation instructions](https://github.com/bevry/community/wiki/Installing-Node).
 
 
 ### I get a whole bunch of npm / missing module/package / installation failed errors
