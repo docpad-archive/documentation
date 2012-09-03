@@ -25,6 +25,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of Bevry, History.js & DocPad. Open-Source leader, HTML5, JavaScript and Node.js expert.
 - [chrisbuchholz.me](http://chrisbuchholz.me/) - [source](https://github.com/ChrisBuchholz/chrisbuchholz.github.com) - Personal website of chrisbuchholz
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
+- [DataTables Taglib](http://tduchateau.github.com/DataTables-taglib/) - [source](https://github.com/tduchateau/DataTables-taglib/tree/gh-pages) - Website of DataTables-taglib, a JSP taglib that allows to quickly create [DataTables](http://datatables.net) in Java/JEE based web application
 - [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/bevry/kitchensink.docpad) - A showcase of everything DocPad can do
 - [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
 - [Doug Neiner's Code Website](http://code.dougneiner.com/) - [source](https://github.com/dcneiner/dougneiner.docpad) - Husband to one, father to three, jQuery Team Member, Senior Designer at [appendTo](http://appendto.com/)
