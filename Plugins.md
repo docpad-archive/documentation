@@ -20,7 +20,7 @@ These plugins add support for extra markups and languages to DocPad
 - [jade](https://github.com/bevry/docpad-extras/tree/master/plugins/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
 - [js2coffee](https://github.com/bevry/docpad-extras/tree/master/plugins/js2coffee/) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [less](https://github.com/bevry/docpad-extras/tree/master/plugins/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
-- [markdown](https://github.com/bevry/docpad-extras/tree/master/plugins/markdown/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown`
+- [marked](https://github.com/bevry/docpad-extras/tree/master/plugins/marked/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown`
 - [move](https://github.com/bevry/docpad-extras/tree/master/plugins/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
 - [php](https://github.com/bevry/docpad-extras/tree/master/plugins/php) - Supports [PHP](http://php.net/) to anything `.anything.php|phtml`
 - [ruby](https://github.com/bevry/docpad-extras/tree/master/plugins/ruby) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.ruby|erb`
@@ -46,10 +46,10 @@ These plugins add extra functionality to DocPad
 
 ## Older plugins
 
-These plugins are for older versions of DocPad
+These plugins are for older versions of DocPad, or have been deprecated in favour of other plugins.
 
 - [markdownreferencelinks](https://github.com/Delapouite/docpad-markdownreferencelinks) - Provides a way to put links references into the header of a document so they can be used later inside its markdown content
-- [images](https://github.com/bevry/docpad-extras/tree/master/plugins/images/) - Provides access to an array of paths to images associated with the current document during document rendering
+- [markdown](https://github.com/bevry/docpad-extras/tree/master/plugins-old/markdown/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown` - deprecated in favor of marked
 
 
 ## Requested
