@@ -37,6 +37,7 @@ These plugins add extra functionality to DocPad
 - [cachr](https://github.com/bevry/docpad-extras/tree/master/plugins/cachr/) - Allows you to cache remote urls locally from within your templates
 - [cleanurls](https://github.com/bevry/docpad-extras/tree/master/plugins/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [feedr](https://github.com/bevry/docpad-extras/tree/master/plugins/feedr/) - Allows you to render remote feeds within your templates
+- [highlightjs](https://github.com/chase/docpad-plugin-highlightjs) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [livereload](https://github.com/bevry/docpad-extras/tree/master/plugins/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [partials](https://github.com/bevry/docpad-extras/tree/master/plugins/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](https://github.com/bevry/docpad-extras/tree/master/plugins/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
