@@ -33,7 +33,7 @@ These plugins add support for extra markups and languages to DocPad
 These plugins add extra functionality to DocPad
 
 - [associatedfiles](https://github.com/bevry/docpad-extras/tree/master/plugins/associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
-- [buildr](https://github.com/bevry/docpad-extras/tree/master/plugins/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/bevry/buildr.npm)
+- [buildr](https://github.com/bevry/docpad-extras/tree/master/plugins/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
 - [cachr](https://github.com/bevry/docpad-extras/tree/master/plugins/cachr/) - Allows you to cache remote urls locally from within your templates
 - [cleanurls](https://github.com/bevry/docpad-extras/tree/master/plugins/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [feedr](https://github.com/bevry/docpad-extras/tree/master/plugins/feedr/) - Allows you to render remote feeds within your templates
