@@ -9,4 +9,4 @@ The advantage of `docpad.js` and `docpad.coffee` over `docpad.json` and `docpad.
 
 The advantage of `docpad.coffee` and `docpad.cson` over `docpad.js` and `docpad.json` is that they allow us to use the CoffeeScript syntax which is a lot more leaniant.
 
-Generally, you'll always find either a `docpad.coffee` file or a `docpad.cson` file.
+Generally, you'll usually always find either a `docpad.coffee` file or a `docpad.cson` file.
