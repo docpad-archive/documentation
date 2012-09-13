@@ -94,51 +94,36 @@ For instance, to output the current document's title with eco, you would use: `<
 
 
 ### How do I disable certain plugins?
-Inside your website's `package.json` file, you can add a `"docpad": {}` property - it may already be there. Inside that property, add `"enabledPlugins": {}` and inside that, add the name of the plugin you want to disable followed by `false` - e.g. if we wanted to disable the `eco` plugin we would have:
+Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration-File) up. Create a `enabledPlugins` property, inside that specify the plugin's name and set it to `false`. E.g. to disable the eco plugin we would do the following:
 
-``` javascript
-{
+``` coffeescript
 	// ...
-	"docpad": {
-		"enabledPlugins": {
-			"eco": false
-		}
-	}
-}
+	enabledPlugins:
+		eco: false
+
 ```
 
 
 ### How do I only enable the plugins that I actually use?
-Inside your website's `package.json` file, you'll want to set the property `docpad.enableUnlistedPlugins` to `false`. This will only load plugins which are explicitly set to true inside in the `docpad.enabledPlugins` property. E.g. to only the run eco and stylus plugins we would have:
+Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration-File) up. Set `enableUnlistedPlugins` to `false`. Create the `enabledPlugins` property, have that filled with a hashtable of the plugin names on the left, and `true` on the right to enable them. E.g. to only enable the eco and stylus plugins we would do the following:
 
-``` javascript
-{
+``` coffeescript
 	// ...
-	"docpad": {
-		"enableUnlistedPlugins": false,
-		"enabledPlugins": {
-			"eco": true,
-			"stylus": true
-		}
-	}
-}
+	enableUnlistedPlugins: false
+	enabledPlugins:
+		eco: true
+		stylus: true
 ```
 
 
 ### How do I customise the configuration sent to a plugin?
-Inside your website's `package.json` file, you'll want to customise the property `docpad.plugins`. This property contains the configuration sent to all the different plugins. So for example, if we wanted to tell the stylus plugin that we don't want it to include nib, then we can do:
+Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration-File) up. Create a `plugins` property. Inside that, create a property for the plugin's name that you want to customise, and specify its configuration inside it. E.g. to customise the stylus plugin configuration we would do the following:
 
-``` javascript
-{
+``` coffeescript
 	// ...
-	"docpad": {
-		"plugins": {
-			"stylus": {
-				"useNib": false
-			}
-		}
-	}
-}
+	plugins:
+		stylus:
+			useNib: false
 ```
 
 
