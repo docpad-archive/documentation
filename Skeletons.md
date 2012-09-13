@@ -6,7 +6,7 @@ These are skeletons currently available to you as part of the DocPad bootstrap p
 
 - [HTML5 Boilerplate](https://github.com/docpad/html5-boilerplate.docpad) `branch: docpad-6.x` - [HTML5 Boilerplate](http://html5boilerplate.com/) skeleton for DocPad. Bare essentials for building a modern website with best practices
 - [Twitter Bootstrap](https://github.com/docpad/twitter-bootstrap.docpad) `branch: docpad-6.x` - [Twitter Bootstrap](http://twitter.github.com/bootstrap/) skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
-- [Kitchensink](https://github.com/bevry/kitchensink.docpad) `branch: docpad-6.x` - [preview](http://docpad-kitchensink.herokuapp.com) - A DocPad Skeleton useful for showcasing different features and functionality of DocPad. Implemented using Twitter Bootstrap
+- [Kitchensink](https://github.com/docpad/kitchensink.docpad) `branch: docpad-6.x` - [preview](http://docpad-kitchensink.herokuapp.com) - A DocPad Skeleton useful for showcasing different features and functionality of DocPad. Implemented using Twitter Bootstrap
 - [Website Skeleton](https://github.com/docpad/website.docpad) `branch: docpad-6.x` - Website skeleton for DocPad. Useful for personal websites and blogs. Pulls in social streams and github informationp
 - [Hogan.js Project Page](http://twitter.github.com/hogan.js/) `branch: docpad-6.x` - The [Hogan.js](http://twitter.github.com/hogan.js/) project page ported to DocPad
 
