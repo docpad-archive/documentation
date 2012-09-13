@@ -43,11 +43,11 @@ Inside your website's directory:
 
 
 
-## Via a Standard Apache Server
+## Via a Standard Static Server (apache/nginx)
 
-1. Perform a generation for an apache and production environment using `docpad generate --env static`
+1. Perform a generation for a static production environment using `docpad generate --env static`
 
-2. Upload the generated directory to your apache server's `public_html` or `htdocs` directory
+2. Upload the generated directory to your server's `public_html` or `htdocs` directory
 
 
 ## Via GitHub Pages
