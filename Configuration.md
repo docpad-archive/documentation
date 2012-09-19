@@ -1,3 +1,5 @@
+## Configuration Files
+
 The DocPad configuration file sits within the root of your DocPad project and be named as one of the following. Each name provides a special meaing. Here are the valid names:
 
 - `docpad.js` a node javascript file, will generally look like: `module.exports = {/*the configuration*/}`
@@ -12,9 +14,7 @@ The advantage of `docpad.coffee` and `docpad.cson` over `docpad.js` and `docpad.
 Generally, you'll usually always find either a `docpad.coffee` file or a `docpad.cson` file.
 
 
-## Examples
-
-### docpad.coffee
+### Example `docpad.coffee` file
 
 ``` coffeescript
 # The DocPad Configuration File
@@ -75,6 +75,11 @@ docpadConfig = {
 	# =================================
 	# Plugins
 
+	# Enabled Plugins
+	enabledPlugins:
+		# Disable the Pokemon Plugin
+		pokemon: false
+
 	# Configure Plugins
 	plugins:
 
@@ -97,6 +102,14 @@ docpadConfig = {
 			{server} = opts
 			docpad = @docpad
 
+	# =================================
+	# Environments
+
+	environments:
+	
+		development:
+
+			# anything here will be merged with the top-level (production) configuration if we are running inside the development environment
 }
 
 # Export our DocPad Configuration
