@@ -22,7 +22,8 @@ Websites built with DocPad. Alphabetically sorted.
 - [24b](http://www.24b.is) - A gallery, a design studio in Paris
 - [Acherno Interior Design](http://acherno.com) - Corporate web site of the biggest interior design studio in Bulgaria
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
-- [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of Bevry, History.js & DocPad. Open-Source leader, HTML5, JavaScript and Node.js expert.
+- [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of [Bevry](http://bevry.me), [DocPad](http://docpad.org), [History.js](http://historyjs.net) and [StartupHostel](http://startuphostel.org). Liberating and empowering the world by making your dreams more accessible.
+- [Black Market](http://blackmarket.bg/) - Bulgarian fashion company
 - [chrisbuchholz.me](http://chrisbuchholz.me/) - [source](https://github.com/ChrisBuchholz/chrisbuchholz.github.com) - Personal website of chrisbuchholz
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [DataTables Taglib](http://tduchateau.github.com/DataTables-taglib/) - [source](https://github.com/tduchateau/DataTables-taglib/tree/gh-pages) - Website of DataTables-taglib, a JSP taglib that allows to quickly create [DataTables](http://datatables.net) in Java/JEE based web application
@@ -49,6 +50,7 @@ welcome to my online portfolio
 - [Tomohisa Oda](http://tomohisaoda.com/) - Japanese: Web engineer and designer from Japan
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
 - [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
+- [Vicktor Ilieff](http://www.viktorilieff.com/) - Viktor Ilieff is an artist, conductor, composer and visionary. His art rests on the principle that the aesthetics of the means of expression should align with the times we live in.
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 - [Workshop 33](http://www.workshop33.com/) - Hand-crafted websites, made in Sonoma County since 1999
 
