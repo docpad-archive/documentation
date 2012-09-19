@@ -6,7 +6,7 @@ DocPad can also be used as a module in other systems
 
 ## Configuration Files
 Configuration files allow you to apply site specific extensions and configurations
-- [You can discover how use the configuration files here](https://github.com/bevry/docpad/wiki/Beginner-Guide)
+- [You can discover how use the configuration files here](https://github.com/bevry/docpad/wiki/Configuration)
 - [You can discover the events available to you here](https://github.com/bevry/docpad/wiki/Events)
 
 ## Plugins
