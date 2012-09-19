@@ -94,7 +94,7 @@ For instance, to output the current document's title with eco, you would use: `<
 
 
 ### How do I disable certain plugins?
-Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration-File) up. Create a `enabledPlugins` property, inside that specify the plugin's name and set it to `false`. E.g. to disable the eco plugin we would do the following:
+Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration) up. Create a `enabledPlugins` property, inside that specify the plugin's name and set it to `false`. E.g. to disable the eco plugin we would do the following:
 
 ``` coffeescript
 	enabledPlugins:
@@ -104,7 +104,7 @@ Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Confi
 
 
 ### How do I only enable the plugins that I actually use?
-Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration-File) up. Set `enableUnlistedPlugins` to `false`. Create the `enabledPlugins` property, have that filled with a hashtable of the plugin names on the left, and `true` on the right to enable them. E.g. to only enable the eco and stylus plugins we would do the following:
+Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration) up. Set `enableUnlistedPlugins` to `false`. Create the `enabledPlugins` property, have that filled with a hashtable of the plugin names on the left, and `true` on the right to enable them. E.g. to only enable the eco and stylus plugins we would do the following:
 
 ``` coffeescript
 	enableUnlistedPlugins: false
@@ -115,7 +115,7 @@ Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Confi
 
 
 ### How do I customise the configuration sent to a plugin?
-Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration-File) up. Create a `plugins` property. Inside that, create a property for the plugin's name that you want to customise, and specify its configuration inside it. E.g. to customise the stylus plugin configuration we would do the following:
+Open your [DocPad configuration file](https://github.com/bevry/docpad/wiki/Configuration) up. Create a `plugins` property. Inside that, create a property for the plugin's name that you want to customise, and specify its configuration inside it. E.g. to customise the stylus plugin configuration we would do the following:
 
 ``` coffeescript
 	plugins:
