@@ -39,7 +39,6 @@ welcome to my online portfolio
 - [Imaginatr](http://www.imaginatr.com/) - Imaginatr is a creative independent studio focused on the development of mobile applications and innovative software
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
-- [Le blog d'Olivier](http://blog.bazoud.com) - [source](https://github.com/obazoud/blog.bazoud.com) - English & French: Blog about web, java, spring, node.js, ...
 - [Melt Media](http://meltmedia.com/) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [QUnit](http://qunitjs.com/) - [source](https://github.com/jquery/qunitjs.com) - QUnit by jQuery: A JavaScript Unit Testing framework
