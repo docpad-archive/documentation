@@ -109,7 +109,7 @@ Create the `src/documents` folder, and create a `index.html` file. In this file,
 
 ``` html
 ---
-layouts: default
+layout: default
 title: "John Doe loves animals"
 ---
 
