@@ -10,7 +10,7 @@
 
 	```
 	cd myWebsite
-	npm install docpad-plugin-eco docpad-plugin-markdown
+	npm install --save docpad-plugin-eco docpad-plugin-marked
 	```
 
 1. Create the following files:
