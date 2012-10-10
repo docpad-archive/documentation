@@ -39,7 +39,10 @@ Refer to the [DocPad's Readme](https://github.com/bevry/docpad#readme)
 ### Installing DocPad
 Refer to the [DocPad's Readme](https://github.com/bevry/docpad#readme)
 
-Once you're done with the installation instructions, you're ready to move the next section.
+### Create your website directory and install the eco and marked [plugins](https://github.com/bevry/docpad/wiki/Plugins)
+
+	cd my-new-website
+	npm install --save docpad-plugin-eco docpad-plugin-marked
 
 
 ## Step 2 : The layouts
