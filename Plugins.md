@@ -2,7 +2,7 @@ Here is a listing of all the plugins available for DocPad. If you have created a
 
 ## Installing
 
-To install a plugin, do a `npm install -f docpad-plugin-#{pluginName}` inside your website's directory. For instance, to install the [eco](https://github.com/bevry/docpad-extras/tree/master/plugins/eco/) plugin, you would do `npm install -f docpad-plugin-eco`
+To install a plugin, do a `npm install --save docpad-plugin-#{pluginName}` inside your website's directory. For instance, to install the [eco](https://github.com/bevry/docpad-extras/tree/master/plugins/eco/) plugin, you would do `npm install --save docpad-plugin-eco`
 
 
 ## Renderers
