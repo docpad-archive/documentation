@@ -23,6 +23,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [24b](http://www.24b.is) - A gallery, a design studio in Paris
 - [Acherno Interior Design](http://acherno.com) - Corporate web site of the biggest interior design studio in Bulgaria
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
+- [Bevry](http://bevry.me) - Creators of DocPad / Sydney based Node.js, JavaScript and HTML5 company focused on empowering developers.
 - [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of [Bevry](http://bevry.me), [DocPad](http://docpad.org), [History.js](http://historyjs.net) and [StartupHostel](http://startuphostel.org). Liberating and empowering the world by making your dreams more accessible.
 - [Black Market](http://blackmarket.bg/) - Bulgarian fashion company
 - [chrisbuchholz.me](http://chrisbuchholz.me/) - [source](https://github.com/ChrisBuchholz/chrisbuchholz.github.com) - Personal website of chrisbuchholz
