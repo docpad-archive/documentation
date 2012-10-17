@@ -38,7 +38,7 @@ These plugins add extra functionality to DocPad
 - [cleanurls](http://docpad.org/plugin/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [csv](https://github.com/CycoPH/docpad-plugin-csv/) - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2
 - [feedr](http://docpad.org/plugin/feedr/) - Allows you to render remote feeds within your templates
-- [highlightjs](https://github.com/chase/docpad-plugin-highlightjs) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
+- [highlightjs](http://docpad.org/plugin/highlightjs) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [livereload](http://docpad.org/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [partials](http://docpad.org/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](http://docpad.org/plugin/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
