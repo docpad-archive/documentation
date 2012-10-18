@@ -22,6 +22,13 @@ Generally, you'll usually always find either a `docpad.coffee` file or a `docpad
 docpadConfig = {
 
 	# =================================
+	# DocPad Configuration
+
+	# Change the port DocPad uses from the default 9778 to 8080
+	port: 8080
+	
+
+	# =================================
 	# Template Data
 	# These are variables that will be accessible via our templates
 	# To access one of these within our templates, refer to the FAQ: https://github.com/bevry/docpad/wiki/FAQ
