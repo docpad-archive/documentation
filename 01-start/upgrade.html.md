@@ -1,14 +1,11 @@
-## Upgrade Instructions
-To upgrade your DocPad installation from an older version to the latest, run the following in your console:
-
-``` bash
-[sudo] npm cache clean
-[sudo] npm install -fg docpad
-docpad install
+```
+title: "Upgrade Guides"
 ```
 
-Be sure to read any specific upgrade notes for the versions you are installing from and to below.
 
+## Upgrade Instructions
+
+To upgrade your DocPad installation from an older version to the latest, check out the [latest installation instructions](/docpad/install) as well as the upgrade manuals below.
 
 ## Upgrading from 5.x to 6.x (v6 is the latest stable version)
 
@@ -29,20 +26,20 @@ Be sure to read any specific upgrade notes for the versions you are installing f
 ## Upgrading from 4.x to 5.x
 
 1. Documents, Partials and Layouts (which extend from the File Class) are now [Backbone Models](http://documentcloud.github.com/backbone/#Model)
-    - For end-users this will have minimal effect, as `@document` inside the `templateData` will have all the same attributes. However, any function calls will now only be accessible via the new `@documentModel`. This is because `@documentModel` is the backbone model, and `@document` is the JSONified version of the backbone model (e.g. `@document` is the same as `@documentModel.toJSON()`).
-    - For plugin developers this affects how you will retrieve and set attributes for documents - which now use the [Backbone getters and setters](http://documentcloud.github.com/backbone/#Model-get) instead of directly reading and writing to and from the attributes directly. E.g. `document.relatedDocuments = []` now becomes `document.set(relatedDocuments:[])` instead.
+	- For end-users this will have minimal effect, as `@document` inside the `templateData` will have all the same attributes. However, any function calls will now only be accessible via the new `@documentModel`. This is because `@documentModel` is the backbone model, and `@document` is the JSONified version of the backbone model (e.g. `@document` is the same as `@documentModel.toJSON()`).
+	- For plugin developers this affects how you will retrieve and set attributes for documents - which now use the [Backbone getters and setters](http://documentcloud.github.com/backbone/#Model-get) instead of directly reading and writing to and from the attributes directly. E.g. `document.relatedDocuments = []` now becomes `document.set(relatedDocuments:[])` instead.
 
 2. [Query-Engine](https://github.com/bevry/query-engine) has been updated from version 0.6 to version 1.1
-    - For end-users this will have an effect wherever `@database` is used, as that is now represented by the new Query-Engine v1.1 collection, which has several changes. The most significant re `@database.find` is now `@database.findAll`, and that they now only have a synchronous interface - e.g. `@database.findAll selector, (err,results) ->` should now be `results = @database.findAll(selector)`
-    - For plugin developers, this affects any `docpad.documents`, `docpad.partials`, and `docpad.layouts` calls with the same advice as those for end-users.
+	- For end-users this will have an effect wherever `@database` is used, as that is now represented by the new Query-Engine v1.1 collection, which has several changes. The most significant re `@database.find` is now `@database.findAll`, and that they now only have a synchronous interface - e.g. `@database.findAll selector, (err,results) ->` should now be `results = @database.findAll(selector)`
+	- For plugin developers, this affects any `docpad.documents`, `docpad.partials`, and `docpad.layouts` calls with the same advice as those for end-users.
 
 3. Plugins are now handled via [npm dependencies](http://npmjs.org/doc/json.html#dependencies) instead of being directly handled by docpad and end-users. This is the most significant change and affects everybody.
-    - For end-users, you will need to add the plugins you use to your website's `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this. Once added to your website's `package.json` file, run a `npm install` to install them.
-    - For plugin developers, there have been several important changes:
-        1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin's name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
-        2. You can now feel free to publish your plugin via npm (e.g. `npm publish`) and add your plugin to the [Plugins wiki page](https://github.com/bevry/docpad/wiki/Plugins) so others can install it themselves (e.g. `npm install docpad-plugin-#{pluginName}`).
+	- For end-users, you will need to add the plugins you use to your website's `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this. Once added to your website's `package.json` file, run a `npm install` to install them.
+	- For plugin developers, there have been several important changes:
+		1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin's name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
+		2. You can now feel free to publish your plugin via npm (e.g. `npm publish`) and add your plugin to the [Plugins wiki page](/docpad/plugins) so others can install it themselves (e.g. `npm install docpad-plugin-#{pluginName}`).
 
-4. That should be all, if you have any problems be sure to report them on the [GitHub Issue Tracker](https://github.com/bevry/docpad/issues). Thanks.
+4. That should be all, if you have any problems be sure to report them on the [Issue Tracker](http://docpad.org/issues). Thanks.
 
 
 ## Upgrading from 3.x to 4.x
@@ -53,18 +50,18 @@ Be sure to read any specific upgrade notes for the versions you are installing f
 
 3. The DocPad core has been cleaned up a lot, and as such so has the way plugin events are triggered. We now utilise [balUtil's](https://github.com/balupton/bal-util.npm) [emitSync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L257) and [emitAsync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L241) instead of the old `triggerPluginEvent`. This means that for now, plugin priorities are discarded - however they may be added back in the future (so leave them in there if you have them).
 
-4. Plugin rendering has had a significant change, which is you should no longer use `file.content` to read and update the current document's content. Instead a new argument called `content` wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the [Extending DocPad](https://github.com/bevry/docpad/wiki/Extending) wiki page.
+4. Plugin rendering has had a significant change, which is you should no longer use `file.content` to read and update the current document's content. Instead a new argument called `content` wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the [Extending DocPad](/docpad/extend) wiki page.
 
 5. When an error occurs, the error will now be sent back to DocPad using the [AirBrake](http://airbrake.io/) service. If you would like this disabled then you can turn it off by setting `reportErrors` to `false` in your docpad configuration.
 
-6. A lot of unstable or not as popular plugins has been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: admin, authenticate, autoupdate, buildr, html2jade, move, php, rest, roy, and ruby. If you would like to continue using them, you will have to download them manually from the docpad-extras repository and insert them into your website's `plugins` directory. More info on this on the [Installing a Plugin Guide](https://github.com/bevry/docpad/wiki/Installing-a-Plugin).
+6. A lot of unstable or not as popular plugins has been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: admin, authenticate, autoupdate, buildr, html2jade, move, php, rest, roy, and ruby. If you would like to continue using them, you will have to download them manually from the docpad-extras repository and insert them into your website's `plugins` directory.
 
 
 ## Upgrading from 2.x to 3.x
 
 1. A lot of property names of the `File` class have changed. The `File` class is used for all documents and layouts, which would likely affect you when rendering properties from documents inside your templates (e.g. `@document.title`). This change was made to better correlate the names with their values (before the correlation was quite ambiguous). [You can find the current set of properties and their descriptions here.](https://github.com/bevry/docpad/blob/master/lib/file.coffee#L12)
 
-2. For plugin developers, the way you extend from the `BasePlugin`, and the way you `module.exports` your plugin has changed. [To learn about the new convention, refer to the new _Extending_ guide by clicking here.](https://github.com/bevry/docpad/wiki/Extending)
+2. For plugin developers, the way you extend from the `BasePlugin`, and the way you `module.exports` your plugin has changed. [To learn about the new convention, refer to the new _Extending_ guide by clicking here.](/docpad/extend)
 
 3. For those using DocPad as a module, DocPad now supports a `next` callback on it's constructor, allowing you to do `new DocPad(config,next)`. Anything that depends on a DocPad action being completed should go inside the `next` callback. While this is optional, it has provided helpful in eliminating timing problems.
 

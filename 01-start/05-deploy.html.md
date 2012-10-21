@@ -52,13 +52,7 @@ Inside your website's directory:
 
 ## Via GitHub Pages
 
-1. For GitHub Pages we want our output directory to our website's root directory. To do this, ensure the following exists inside your website's configuration file (e.g. `docpad.cson`):
-
-	``` coffee
-	{
-		outPath: '.'
-	}
-	```
+1. For GitHub Pages we want our output directory to our website's root directory. To do this, we'll add `outPath: '.'` to our [docpad configuration file](/docpad/config)
 
 2. Perform a generation for an apache and production environment using `docpad generate --env static`
 

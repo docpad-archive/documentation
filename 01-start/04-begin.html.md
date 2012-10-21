@@ -1,4 +1,7 @@
-# Beginner Guide
+```
+title: "Beginner Guide"
+```
+
 Welcome to the Beginner Guide to DocPad.
 
 
@@ -39,10 +42,13 @@ Refer to the [DocPad's Readme](https://github.com/bevry/docpad#readme)
 ### Installing DocPad
 Refer to the [DocPad's Readme](https://github.com/bevry/docpad#readme)
 
-### Create your website directory and install the eco and marked [plugins](https://github.com/bevry/docpad/wiki/Plugins)
+### Create your website directory and install the eco and marked [plugins](/docpad/plugins)
 
-	cd my-new-website
-	npm install --save docpad-plugin-eco docpad-plugin-marked
+```
+cd myWebsite
+npm install --save docpad-plugin-eco docpad-plugin-marked
+```
+
 
 
 ## Step 2 : The layouts
@@ -52,7 +58,7 @@ Refer to the [DocPad's Readme](https://github.com/bevry/docpad#readme)
 ### Understanding the `src/layouts` folder
 All _layouts_ are created in the `src/layouts` folder. They follow a simple naming convention: `[layout-name].html.eco`. "What's `.eco`?". It's the [eco templating engine](https://github.com/sstephenson/eco). Eco allows us to embed CoffeeScript within our templates, by wrapping our CoffeeScript code like this `<% coffeescript code %>`, you can output a variable like `<%= variableName %>`, or output a variable without escaping it using `<%- variableName %>`
 
-> It's important to notehere that while this example uses the `.eco` extension to render our layout with eco, DocPad can also use several other templating engines as well - [you can read more about the renderers available here](https://github.com/bevry/docpad/wiki/Plugins)). Though, for the purpose of this guide we will eco as it is very beginner friendly.
+> It's important to notehere that while this example uses the `.eco` extension to render our layout with eco, DocPad can also use several other templating engines as well - [you can read more about the renderers available here](/docpad/plugins)). Though, for the purpose of this guide we will eco as it is very beginner friendly.
 
 
 ### Creating a default layout
@@ -62,14 +68,14 @@ Create a `default.html.eco` file in the `src/layouts` directory, and paste in th
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title><%= @document.title or "Joe Doe's Site" %></title>
-  <link rel="stylesheet" href="/styles/style.css">
+	<meta charset="utf-8">
+	<title><%= @document.title or "Joe Doe's Site" %></title>
+	<link rel="stylesheet" href="/styles/style.css" />
 </head>
 <body>
-<a href="/" class="logo">John Doe loves animals</a>
-<%- @content %>
-<footer>Copyright 2012 John Doe.</footer>
+	<a href="/" class="logo">John Doe loves animals</a>
+	<%- @content %>
+	<footer>Copyright 2012 John Doe.</footer>
 </body>
 </html>
 ```
@@ -117,10 +123,10 @@ title: "John Doe loves animals"
 ---
 
 <article>
-  <h2>My favorite animal : the cat !</h2>
+	<h2>My favorite animal : the cat !</h2>
 
-  <div class="date">written on <span class="date">2012-05-19</span></div>
-  <p>Who doesn't love cats ? </p>
+	<div class="date">written on <span class="date">2012-05-19</span></div>
+	<p>Who doesn't love cats ? </p>
 </article>
 ```
 
@@ -132,17 +138,17 @@ Here we're asking DocPad to use the `default` layout we created before for this 
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>John Doe loves animals</title>
-  <link rel="stylesheet" href="/css/styles.css">
+	<meta charset="utf-8">
+	<title>John Doe loves animals</title>
+	<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 <a href="/" class="logo">John Doe loves animals</a>
 <article>
-  <h2>My favorite animal : the cat !</h2>
+	<h2>My favorite animal : the cat !</h2>
 
-  <div class="date">written on <span class="date">2012-05-19</span></div>
-  <p>Who doesn't love cats ? </p>
+	<div class="date">written on <span class="date">2012-05-19</span></div>
+	<p>Who doesn't love cats ? </p>
 </article>
 <footer>Copyright 2012 John Doe.</footer>
 </body>
@@ -157,7 +163,7 @@ We'll talk about metadata and the power they hold, but for now let's generate th
 
 DocPad is manipulated through the CLI, the Command Line Interface. This is the _Console_ under Linux, the _Terminal_ under Mac OS X, and the _Command.exe_ under Windows. This guide is written under Mac OS X, but the commands are the same under Linux.
 
-DocPad offers several commands to create and render the website. They're documented in the in [Getting Started](https://github.com/bevry/docpad/wiki/Getting-Started) wiki page, under the section "Using the CLI". Here we'll present only the necessary commands to generate the website.
+DocPad offers several commands to create and render the website. They're documented in the in [Getting Started](/docpad/start) wiki page, under the section "Using the CLI". Here we'll present only the necessary commands to generate the website.
 
 ### Generating the website
 
@@ -215,14 +221,14 @@ To use a document's metadata in the document itself, we need to use the Eco temp
 
 ``` html
 <article>
-  <h2><%= @document.title %></h2>
+	<h2><%= @document.title %></h2>
 
-  <div class="date">written on <span class="date"><%= @document.date.toShortDateString() %></span></div>
-  <p>Who doesn't love cats ? </p>
+	<div class="date">written on <span class="date"><%= @document.date.toShortDateString() %></span></div>
+	<p>Who doesn't love cats ? </p>
 </article>
 ```
 
-Notice that we replaced the title wrapped in the `h2` tags by `<%= @document.title %>`, and the date by `<%= @document.date.toShortDateString() %>`. We're basically asking DocPad to use its metadata. Regarding the date, if we had written `<%= @document.date %>` the result would have been _Sat May 19 2012 02:00:00 GMT+0200 (CEST)_. It's because DocPad makes use of dates internally, but it offers a few helper functions to display dates in a fancier manner. Using `<%= @document.date.toShortDateString() %>` will display _May 19 2012_,  which is much nicer, right ?
+Notice that we replaced the title wrapped in the `h2` tags by `<%= @document.title %>`, and the date by `<%= @document.date.toShortDateString() %>`. We're basically asking DocPad to use its metadata. Regarding the date, if we had written `<%= @document.date %>` the result would have been _Sat May 19 2012 02:00:00 GMT+0200 (CEST)_. It's because DocPad makes use of dates internally, but it offers a few helper functions to display dates in a fancier manner. Using `<%= @document.date.toShortDateString() %>` will display _May 19 2012_,	which is much nicer, right ?
 
 
 #### Metadata in the layout
@@ -266,10 +272,10 @@ layout: default
 ---
 
 <article>
-  <h2><%= @document.title %></h2>
+	<h2><%= @document.title %></h2>
 
-  <div class="date">written on <span class="date"><%= @document.date.toShortDateString() %></span></div>
-  <%- @content %>
+	<div class="date">written on <span class="date"><%= @document.date.toShortDateString() %></span></div>
+	<%- @content %>
 </article>
 ```
 
@@ -337,18 +343,18 @@ We're going to show basic usage of the file. A good practice is to store in this
 # It is simply a CoffeeScript Object that is parsed by CSON
 # The lines starting with a '#' are comments
 {
-  # TemplateData data are accessible directly from the 'this/@' keyword in layouts and documents.
-  templateData:
-    # Let's create a place where we gather all data about the site...
-    site:
-      # ... like its author ...
-      author: "John Doe"
-      # ... its name ...
-      name: "John Doe loves animals"
-      # ... and a custom footer message. The """ notation comes from CoffeeScript and is used to embed long strings and can contain HTML tags too.
-      footerMessage: """
-        John Doe loves animals is property of John Doe. Copyright 2012 John Doe. All your animals are belong to us.
-      """
+	# TemplateData data are accessible directly from the 'this/@' keyword in layouts and documents.
+	templateData:
+	# Let's create a place where we gather all data about the site...
+	site:
+		# ... like its author ...
+		author: "John Doe"
+		# ... its name ...
+		name: "John Doe loves animals"
+		# ... and a custom footer message. The """ notation comes from CoffeeScript and is used to embed long strings and can contain HTML tags too.
+		footerMessage: """
+		John Doe loves animals is property of John Doe. Copyright 2012 John Doe. All your animals are belong to us.
+		"""
 }
 ```
 
@@ -360,10 +366,10 @@ Let's add them in `default.html.eco`, like this :
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="<%= @site.author %>" />
-  <title><%= @document.title %> - <%= @site.name %></title>
-  <link rel="stylesheet" href="/css/styles.css">
+	<meta charset="utf-8">
+	<meta name="author" content="<%= @site.author %>" />
+	<title><%= @document.title %> - <%= @site.name %></title>
+	<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 <a href="/" class="logo">John Doe loves animals</a>
@@ -396,11 +402,11 @@ The `docpad.cson` file gives us the possibility to describe custom collections u
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
 {
-  # We're extending the core collections object
-  collections:
-    # This collection named 'articles' fetches the documents with the 'layout' property set to 'article'
-    articles: (database) ->
-      database.findAllLive({layout: 'article.html.eco'}, {date:-1})
+	# We're extending the core collections object
+	collections:
+	# This collection named 'articles' fetches the documents with the 'layout' property set to 'article'
+	articles: (database) ->
+		database.findAllLive({layout: 'article.html.eco'}, {date:-1})
 }
 ```
 
@@ -440,11 +446,11 @@ Then change its content to :
 ``` eco
 <ul>
 <% for article in @getCollection('articles').toJSON()[0..4] : %>
-  <li>
-    <h3><%= article.title %></h3>
-    <div class="date">written on <span class="date"><%= article.date.toShortDateString() %></span></div>
-    <a href="<%= article.url %>">Read the full article</a>
-  </li>
+	<li>
+	<h3><%= article.title %></h3>
+	<div class="date">written on <span class="date"><%= article.date.toShortDateString() %></span></div>
+	<a href="<%= article.url %>">Read the full article</a>
+	</li>
 <% end %>
 </ul>
 ```
@@ -455,7 +461,7 @@ Again, let's explain this code step by step :
 
 ```
 <% for article in @getCollection('articles').toJSON()[0..4] : %>
-  ...
+	...
 <% end %>
 ```
 
@@ -490,4 +496,4 @@ To sum it up :
 
 This is all it takes to start making use of the power hidden under DocPad. The way presented above is by no mean the _right way_, as there's no such thing in DocPad. But dividing pages into layout and content, and using the `docpad.cson` file for site-wide data and collections is a best practice I recommend that's all about _separation of concern_, a good habit in programming in general.
 
-We've just skimmed the surface of DocPad, but what we saw should already give you enough power to create your own website. Feel free to ask questions in the [issue tracker](https://github.com/bevry/docpad/issues), and even edit this guide !
+We've just skimmed the surface of DocPad, but what we saw should already give you enough power to create your own website. Feel free to ask questions in the [issue tracker](http://docpad.org/issues), and even edit this guide !

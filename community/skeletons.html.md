@@ -1,3 +1,8 @@
+```
+cssClasses: ['no-compact']
+```
+
+
 ## Skeletons
 
 ### Current

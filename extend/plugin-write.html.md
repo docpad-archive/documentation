@@ -1,3 +1,7 @@
+```
+title: Write a Plugin
+```
+
 ## Getting Started
 
 Inside your docpad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g. `plugins/yourPlugin`), and inside your plugin's directory create these two files:
@@ -17,7 +21,7 @@ module.exports = (BasePlugin) ->
 
 What this does is receives our BasePlugin from DocPad, and returns the `YourPlugin` class. Of course you should change the your plugin references to whatever your plugin is actually called.
 
-The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/plugin.coffee) is important as it provides some of the tucked away magic for out plugins. But what is even more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you by visiting the Plugin Events wiki page here.](https://github.com/bevry/docpad/wiki/Events)
+The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) is important as it provides some of the tucked away magic for out plugins. But what is even more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you by visiting the Plugin Events wiki page here.](/docpad/events)
 
 
 ### plugins/yourPlugin/package.json
@@ -77,7 +81,7 @@ DocPad will perform these conversions from one format to another by triggering t
 module.exports = (BasePlugin) ->
 	# Define Plugin
 	class SomethingPlugin extends BasePlugin
-	
+
 	# ...
 
 	# Render some content
@@ -92,7 +96,7 @@ module.exports = (BasePlugin) ->
 
 			# Render
 			opts.content = something.renderToSomethingElse(opts.content)
-	
+
 		# Done, return back to DocPad
 		return next()
 

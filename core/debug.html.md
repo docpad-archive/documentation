@@ -19,7 +19,7 @@ For the click impaired you need to append `--nodejs --debug-brk` to get a good d
 
 Once you've installed [node-inspector](https://github.com/dannycoates/node-inspector) and got it running in the background (running it in the background is much easier) you can start docpad with the following command:
 
-    ./node_modules/.bin/coffee --nodejs --debug-brk ./node_modules/.bin/docpad run
+	./node_modules/.bin/coffee --nodejs --debug-brk ./node_modules/.bin/docpad run
 
 1. I assumed CoffeeScript and Docpad are installed locally not globally with `npm`
 2. You can use any of the docpad commandline switches

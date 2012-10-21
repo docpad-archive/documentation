@@ -1,4 +1,8 @@
-Feel free to [update this page](https://github.com/bevry/docpad/wiki/Showcase/_edit) with your own projects or others which you have found. Note: requires a github account.
+```
+cssClasses: ['no-compact']
+```
+
+Feel free to [update this page](/docpad/showcase/_edit) with your own projects or others which you have found. Note: requires a github account.
 
 
 ## In the press
@@ -35,13 +39,13 @@ Websites built with DocPad. Alphabetically sorted.
 - [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
 - [Game-Icons](http://game-icons.net) - Heaps of free SVG icons
-- [GeorgeOsd](http://george-osd-site.cloudfoundry.com/)  - Hi there, my name is Takeharu.Oshida(GeorgeOsd)
+- [GeorgeOsd](http://george-osd-site.cloudfoundry.com/)	- Hi there, my name is Takeharu.Oshida(GeorgeOsd)
 welcome to my online portfolio
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
 - [Imaginatr](http://www.imaginatr.com/) - Imaginatr is a creative independent studio focused on the development of mobile applications and innovative software
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
-- [Melt Media](http://meltmedia.com/) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
+- [MeltMedia](http://meltmedia.com/) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [QUnit](http://qunitjs.com/) - [source](https://github.com/jquery/qunitjs.com) - QUnit by jQuery: A JavaScript Unit Testing framework
 - [Rio.js](http://www.riojs.org/) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de janeiro's JavaScript User Group

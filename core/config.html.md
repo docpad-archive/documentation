@@ -1,3 +1,7 @@
+```
+title: "Configuration"
+```
+
 ## Configuration Files
 
 The DocPad configuration file sits within the root of your DocPad project and be named as one of the following. Each name provides a special meaing. Here are the valid names:
@@ -23,15 +27,14 @@ docpadConfig = {
 
 	# =================================
 	# DocPad Configuration
-
+	
 	# Change the port DocPad uses from the default 9778 to 8080
 	port: 8080
-	
 
+	
 	# =================================
 	# Template Data
 	# These are variables that will be accessible via our templates
-	# To access one of these within our templates, refer to the FAQ: https://github.com/bevry/docpad/wiki/FAQ
 
 	templateData:
 
@@ -108,7 +111,6 @@ docpadConfig = {
 			# Extract the server from the options
 			{server} = opts
 			docpad = @docpad
-
 
 	# =================================
 	# Environments

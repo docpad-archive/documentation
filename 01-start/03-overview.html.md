@@ -1,10 +1,12 @@
+## The Basics
+
 1. Say you were to create the following website structure:
 
 	> - myWebsite
 		- src
-		     - documents
-		     - files
-		     - layouts
+			- documents
+			- files
+			- layouts
 
 1. Install a few plugins:
 
@@ -65,7 +67,7 @@
 1. Cool, now what was with the `<%=...%>` and `<%-...%>` parts which were substituted away?
 
 	1. This is possible because we parse the documents and layouts through a template rendering engine. The template rendering engine used in this example was [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things, in fact we could display all the titles and links of our posts with the following:
-		
+
 		``` erb
 		<% for document in @documents: %>
 			<% if document.url.indexOf('/posts') is 0: %>
@@ -87,7 +89,7 @@
 
 
 - To create your website (if it doesn't already exist), watch for changes, and start the webserver, use:
-	
+
 	``` bash
 	docpad run
 	```
@@ -123,7 +125,7 @@
 	```
 
 	E.g. To render a markdown file and save the result to an output file, we would use:
-	
+
 	``` bash
 	docpad render inputMarkdownFile.html.md > outputMarkdownFile.html
 	```
@@ -135,17 +137,10 @@
 	```
 
 	E.g. To render passed markdown content and save the result to a file, we would use:
-	
+
 	``` bash
 	echo "**awesome**" | docpad render input.html.md > output.html
 	```
 
 ## What's next?
-Advance onto the [Beginner Guide](https://github.com/bevry/docpad/wiki/Beginner-Guide) for DocPad :)
-
-## Need help?
-
-- Got questions? [Try the FAQ](https://github.com/bevry/docpad/wiki/FAQ)
-- Getting errors? [Try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting)
-- Found a bug? [File a Bug Report on the Github Issue Tracker](https://github.com/bevry/docpad/issues)
-- Need support? [Post a message in our Google Group Community](https://groups.google.com/forum/#!forum/docpad)
+Advance onto the [Beginner Guide](/docpad/begin) for DocPad :)

@@ -1,21 +1,13 @@
-Installing DocPad for the first time? Here's the steps:
+_If you are upgrading from one major version to another, be sure to checkout our [Upgrade Guide](/docpad/upgrade) for information relating to backwards compatibility breaks._
 
-1. [Install Node.js](https://github.com/balupton/node/wiki/Installing-Node.js)
-2. Install DocPad
+1. [Install Node.js & Other Dependencies](/node/install)
+
+1. Install DocPad
+
 	``` bash
-	[sudo] npm install -g docpad@6.0
-	[sudo] docpad install
+	[sudo] npm install -fg docpad@6.8
 	```
-3. If you want [Growl](http://growl.info/) notifications on OSX, [you'll need to install the growl command line tool](http://growl.cachefly.net/GrowlNotify-1.3.zip)
 
-Looking for upgrade instructions instead? [Find them here on the Upgrade Guide](https://github.com/bevry/docpad/wiki/Upgrading)
+1. If you also want growl notifications (OSX), then download and install the `GrowlNotify` tool from the [Growl Download Page](/docpad/growl)
 
-
-## What's next?
-Probably time to start [Getting Started](https://github.com/bevry/docpad/wiki/Getting-Started) with DocPad :)
-
-## Need help?
-- Got questions? [Try the FAQ](https://github.com/bevry/docpad/wiki/FAQ)
-- Getting errors? [Try troubleshooting](https://github.com/bevry/docpad/wiki/Troubleshooting)
-- Found a bug? [File a Bug Report on the Github Issue Tracker](https://github.com/bevry/docpad/issues)
-- Need support? [Post a message in our Google Group Community](https://groups.google.com/forum/#!forum/docpad)
+_If you get any errors, refer to our [Troubleshooting Guide](/docpad/troubleshoot) as their is likely an easy fix :)._

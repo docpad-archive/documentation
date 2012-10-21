@@ -1,17 +1,10 @@
-## HELP!
+## Common Problems
 
 ### I'm getting "We couldn't find an existing DocPad project inside your current directory..."
-This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](https://github.com/bevry/docpad/wiki/Skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run docpad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](https://github.com/bevry/docpad/wiki/Getting-Started) guide. Hope that helps :) If it doesn't feel free to ask for help on our [Support Forum](https://groups.google.com/forum/#!forum/docpad).
+This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run docpad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) If it doesn't feel free to ask for help on our [Support Forum](http://docpad.org/forum).
 
 ### I upgraded, and it doesn't work
-[Check out the Upgrade Guides here](https://github.com/bevry/docpad/wiki/Upgrading)
-
-### I'm getting "possible EventEmitter memory leak detected"
-That's totally okay, it just means we are doing a lot of events. We'll surpress this warning in a future release :)
-
-### None of my renderers are working?
-As of DocPad v5, plugins are not installed by default. You will need to install them manually. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for what your `package.json` dependencies could look like. Once added to your website's `package.json` file, run a `npm install` to install them.
-
+[Check out the Upgrade Guides here](/docpad/upgrade)
 
 ### Whenever I output a variable (like `content`) it is escaped (`<` rendered as `&lt;`)?
 Template engines by default _escape_ all variable output. Escaping is when we turn things like the open bracket `<` into it's _html entity_ equivalent `&lt;`. This helps prevent malicious code accidentally being injected into your website which can open the door to XSS attacks. As such, we have to use a special syntax to keep the variable _unescaped_ when outputted. The special syntax is different for the templating engine your using, so here are the ways we know:
@@ -22,17 +15,17 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 
 
 ### I get CoffeeScript errors
-Try installing the latest version of CoffeeScript via `npm install -g coffee-script`. Versions 1.1.1, and 1.1.3 and up are supported. If you still get problems, post them in the [issue tracker](https://github.com/bevry/docpad/issues).
+Try installing the latest version of CoffeeScript via `npm install -g coffee-script`. Versions 1.1.1, and 1.1.3 and up are supported. If you still get problems, post them in the [issue tracker](http://docpad.org/issues).
 
 
 ### I get a whole bunch of permission denied errors
-DocPad handles the installation of the npm modules of it's plugins automagically, as such it needs write access to it's own directory (usually `/usr/local/lib/node_modules/docpad`). If you didn't follow the [recommended installation instructions](https://github.com/bevry/community/wiki/Installing-Node), you can try running `sudo chown -R $USER /usr/local` to rectify the permission problems. Alternatively, you can run docpad under sudo, but that probably isn't the best solution. If all fails, uninstall node, and re-install it using the [recommended installation instructions](https://github.com/bevry/community/wiki/Installing-Node).
+DocPad handles the installation of the npm modules of it's plugins automagically, as such it needs write access to it's own directory (usually `/usr/local/lib/node_modules/docpad`). If you didn't follow the [recommended installation instructions](https://github.com/bevry/community/wiki/Installing-Node), you can try running `sudo chown -R $USER /usr/local` to rectify the permission problems. Alternatively, you can run docpad under sudo, but that probably isn't the best solution. If all fails, uninstall node, and re-install it using the [recommended installation instructions](/node/install).
 
 
 ### I get a whole bunch of npm / missing module/package / installation failed errors
 If your using [DropBox](http://db.tt/RxyNWZw) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
 
-If you're still experiencing issues, then be sure to post about it on the [issue tracker](https://github.com/bevry/docpad/issues).
+If you're still experiencing issues, then be sure to post about it on the [issue tracker](/docpad/issues).
 
 
 ### The growl notifications aren't displaying?
@@ -43,8 +36,7 @@ The jade compiler uses the full file content on the disk to show where the parsi
 
 
 
-## Want more help?
+## Need more help?
 
-- Got questions? [Try the FAQ](https://github.com/bevry/docpad/wiki/FAQ)
-- Found a bug? [File a Bug Report on the Github Issue Tracker](https://github.com/bevry/docpad/issues)
-- Need support? [Post a message in our Google Group Community](https://groups.google.com/forum/#!forum/docpad)
+- Found a bug? [File a Bug Report on the Issue Tracker](/docpad/issues)
+- Need support? [Post a message in our Google Group Community](/docpad/forum)

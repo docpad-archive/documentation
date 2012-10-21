@@ -1,3 +1,7 @@
+```
+title: "API"
+```
+
 This page will go over using DocPad as a module, and the API available to you.
 
 
@@ -5,7 +9,7 @@ This page will go over using DocPad as a module, and the API available to you.
 
 Besides having [Node.js installed](https://github.com/bevry/community/wiki/Installing-Node), you'll want to install DocPad locally to your project, you can do this by running `npm install -f docpad` in your command line. This will install DocPad into `./node_modules/docpad` and make it accessible via [Node.js's require function](http://nodejs.org/docs/latest/api/all.html#all_require) (e.g. `require('docpad')`)
 
-If you are wanting to utilise DocPad for rendering, you'll also want to install some rendering [Plugins](https://github.com/bevry/docpad/wiki/Plugins).
+If you are wanting to utilise DocPad for rendering, you'll also want to install some rendering [Plugins](/docpad/plugins).
 
 
 ## Create your DocPad Instance
@@ -122,6 +126,7 @@ resultModel = docpadInstance.getFileAtPath(path,sorting,paging);
 ```
 
 
+
 ## Using with Express
 
 If you already have an Express.js application, you can do the following to just stick DocPad straight ontop of it:
@@ -147,10 +152,10 @@ var docpadInstanceConfiguration = {
 	middlewareStandard: false
 };
 var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguration, function(err){
-	if (err)	return console.log(err.stack);
+	if (err)  return console.log(err.stack);
 	// Tell DocPad to perform a generation, extend our server with its routes, and watch for changes
 	docpad.action('generate server watch', function(err){
-		if (err)	return console.log(err.stack);
+		if (err)  return console.log(err.stack);
 	});
 });
 
