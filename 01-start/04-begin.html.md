@@ -1,5 +1,6 @@
 ```
 title: "Beginner Guide"
+cssClasses: ['compact']
 ```
 
 Welcome to the Beginner Guide to DocPad.

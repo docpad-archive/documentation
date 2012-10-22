@@ -1,5 +1,6 @@
 ```
 title: "FAQ"
+cssClasses: ['compact']
 ```
 
 ### Does it work on windows?

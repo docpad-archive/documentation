@@ -1,5 +1,6 @@
 ```
 title: "Upgrade Guides"
+cssClasses: ['compact']
 ```
 
 

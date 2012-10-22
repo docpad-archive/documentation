@@ -1,7 +1,3 @@
-```
-cssClasses: ['no-compact']
-```
-
 Feel free to [update this page](/docpad/showcase/_edit) with your own projects or others which you have found. Note: requires a github account.
 
 
