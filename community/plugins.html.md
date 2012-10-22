@@ -20,10 +20,11 @@ These plugins add support for extra markups and languages to DocPad
 - [jade](http://docpad.org/plugin/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
 - [js2coffee](http://docpad.org/plugin/js2coffee/) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [less](http://docpad.org/plugin/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
-- [marked](http://docpad.org/plugin/marked/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown`
+- [marked](http://docpad.org/plugin/marked/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown` via [marked](https://github.com/chjj/marked)
 - [move](http://docpad.org/plugin/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
 - [php](http://docpad.org/plugin/php) - Supports [PHP](http://php.net/) to anything `.anything.php|phtml`
 - [ruby](http://docpad.org/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.ruby|erb`
+- [robotskirt](http://docpad.org/plugin/robotskirt/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown` via [robotskirt](https://github.com/benmills/robotskirt)
 - [sass](http://docpad.org/plugin/sass/) - Supports [SCSS and SASS](http://sass-lang.com/) to CSS (includes [compass](http://compass-style.org/) support) `.css.sass|scss`
 - [stylus](http://docpad.org/plugin/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.styl|stylus`
 
