@@ -68,15 +68,20 @@ Version structure and timelines:
 	- Heroku
 	- GitHub Pages
 
+
 ## Next
 
-- More skeletons
-- [Element based renderers](https://github.com/bevry/docpad/issues/194)
 - DocPad Website
+- Improved Documentation
+- More skeletons
 - Importers
 - Deployers
 
+
 ## Version 6
+
+### v6.1 _**- released**_
+- [Element based renderers](https://github.com/bevry/docpad/issues/194)
 
 ### v6.0 _**- released**_
 - Added differential rendering
