@@ -80,6 +80,29 @@ Version structure and timelines:
 
 ## Version 6
 
+### v6.8 _**- released**_
+- `.env` file support
+
+### v6.7 _**- released**_
+- [Express.js](http://expressjs.com/) v3 support
+
+### v6.6 _**- released**_
+- Better debugging
+
+### v6.5 _**- released**_
+- Cleanup
+
+### v6.4 _**- released**_
+- Custom error pages
+
+### v6.3 _**- released**_
+- Multiple environment support
+
+### v6.2 _**- released**_
+- Environment specific configuration
+- Better node.js deployments
+- Better extensibility
+
 ### v6.1 _**- released**_
 - [Element based renderers](https://github.com/bevry/docpad/issues/194)
 
