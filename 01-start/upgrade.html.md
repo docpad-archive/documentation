@@ -8,6 +8,7 @@ cssClasses: ['compact']
 
 To upgrade your DocPad installation from an older version to the latest, check out the [latest installation instructions](/docpad/install) as well as the upgrade manuals below.
 
+
 ## Upgrading from 5.x to 6.x (v6 is the latest stable version)
 
 - Changes affecting configuration:
