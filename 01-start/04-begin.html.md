@@ -405,9 +405,9 @@ The `docpad.cson` file gives us the possibility to describe custom collections u
 {
 	# We're extending the core collections object
 	collections:
-	# This collection named 'articles' fetches the documents with the 'layout' property set to 'article'
-	articles: (database) ->
-		database.findAllLive({layout: 'article.html.eco'}, {date:-1})
+		# This collection named 'articles' fetches the documents with the 'layout' property set to 'article'
+		articles: (database) ->
+			database.findAllLive({layout: 'article.html.eco'}, {date:-1})
 }
 ```
 
