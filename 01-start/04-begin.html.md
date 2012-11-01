@@ -69,21 +69,32 @@ Create a `default.html.eco` file in the `src/layouts` directory, and paste in th
 <!doctype html>
 <html>
 <head>
+	<!-- Our Meta -->
 	<meta charset="utf-8">
 	<title><%= @document.title or "Joe Doe's Site" %></title>
-	<link rel="stylesheet" href="/styles/style.css" />
+
+	<!-- DocPad Meta -->
+	<%- @getBlock('meta').toHTML() %>
+
+	<!-- DocPad Styles + Our Own -->
+	<%- @getBlock('styles').add(['/styles/style.css']).toHTML() %>
 </head>
 <body>
 	<a href="/" class="logo">John Doe loves animals</a>
 	<%- @content %>
 	<footer>Copyright 2012 John Doe.</footer>
+
+	<!-- DocPad Scripts + Our Own -->
+	<%- @getBlock('scripts').toHTML() %>
 </body>
 </html>
 ```
 
-The eco part, `<%- @content %>` tells DocPad to insert the page's content here, and the `<%= @document.title or "Joe Doe's Site" %>` part outputs our page's title, or if not present outputs `Joe Doe's Site`. All pages that use the `default` layout will be wrapped in this markup. Simple!
+The eco part, `<%- @content %>` tells DocPad to insert the page's content here, and the `<%= @document.title or "Joe Doe's Site" %>` part outputs our page's title, or if not present outputs `Joe Doe's Site`. All pages that use the `default` layout will be wrapped in this markup.
 
-Let's move to the next step!
+The `@getBlock` stuff is how we output blocks into our page. Blocks allow DocPad, DocPad's Plugins, and yourself to easily inject content into your page (be it meta, scripts, or styles). For instance, if we install a plugin that needs to inject a javascript file, it will add it to the scripts block - which we then output with `<%- @getBlock('scripts').toHTML() %>`. All blocks support `.add(['something','something'])` where something can be html or a url to the asset - while it is encouraged to use blocks, you don't have to (but if you don't you'll wonder why some plugins don't work).
+
+Awesome! Let's move to the next step!
 
 
 ## Step 3 : Adding static assets
@@ -139,19 +150,28 @@ Here we're asking DocPad to use the `default` layout we created before for this 
 <!doctype html>
 <html>
 <head>
+	<!-- Our Meta -->
 	<meta charset="utf-8">
-	<title>John Doe loves animals</title>
-	<link rel="stylesheet" href="/css/styles.css">
+	<title><%= @document.title or "Joe Doe's Site" %></title>
+
+	<!-- DocPad Meta -->
+	<%- @getBlock('meta').toHTML() %>
+
+	<!-- DocPad Styles + Our Own -->
+	<%- @getBlock('styles').add(['/styles/style.css']).toHTML() %>
 </head>
 <body>
-<a href="/" class="logo">John Doe loves animals</a>
-<article>
-	<h2>My favorite animal : the cat !</h2>
+	<a href="/" class="logo">John Doe loves animals</a>
+	<article>
+		<h2>My favorite animal : the cat !</h2>
 
-	<div class="date">written on <span class="date">2012-05-19</span></div>
-	<p>Who doesn't love cats ? </p>
-</article>
-<footer>Copyright 2012 John Doe.</footer>
+		<div class="date">written on <span class="date">2012-05-19</span></div>
+		<p>Who doesn't love cats ? </p>
+	</article>
+	<footer>Copyright 2012 John Doe.</footer>
+
+	<!-- DocPad Scripts + Our Own -->
+	<%- @getBlock('scripts').toHTML() %>
 </body>
 </html>
 ```
