@@ -62,69 +62,31 @@ The extensions `.html.eco` means process this with Eco and render it as HTML. Al
 
 
 ## How do I hide a document from being rendered? E.g. a draft post.
-Add the following to your document's meta data
-
-``` coffee
-ignored: true
-```
+Check out the `ignored` [meta data property](/docpad/meta-data).
 
 
 ## How do I re-render a document on each request? E.g. dynamic documents.
-Add the following to your document's meta data
-
-``` coffee
-dynamic: true
-```
+Check out the `dynamic` [meta data property](/docpad/meta-data).
 
 
 ## What data is exposed to my template engine?
 Templating engines are renderers for languages which support business logic. For instance, the template engine [Eco](https://github.com/sstephenson/eco) provides us with the following syntax `<% your business logic %>` or to output a variable we can use `<%=some variable%>`.
 
-As such, the data which we expose to our templating engines is called the `templateData`, and it contains the following:
-
-- `site`: an object of several site-specific properties, contains:
-    - `date`: a javascript date object for the time that the website was last generated
-- `document`: a JavaScript Object containing the serialised values of our `documentModel` (e.g. `documentModel.toJSON()`)
-- `req`: dynamic documents will also have this available to the, it is a reference to the current request object created by the [ExpressJS](http://expressjs.com/) framework
-- `getDatabase()`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all our documents
-- `getCollection(collectionName)`: a [Query-Engine](https://github.com/bevry/query-engine) collection of all a particular sub collection
-- `getDocument()`: a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/src/lib/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/src/lib/models/file.coffee) which extends a [Backbone Model](http://documentcloud.github.com/backbone/#Model)
-- `getBlock(blockName)`: valid block names are:
-    - `scripts`: a collection of scripts to be outputted
-    - `styles`: a collection of styles to be outputted
-    - `meta`: a collection of meta to be outputted
+As such, the data which we expose to our templating engines is called the `templateData`. [Check out the full listing of template data & helpers here.](/docpad/template-data)
 
 For instance, to output the current document's title with eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what eco uses) you access by using the `@` character.
 
 
 ## How do I disable certain plugins?
-Open your [DocPad configuration file](/docpad/config) up. Create a `enabledPlugins` property, inside that specify the plugin's name and set it to `false`. E.g. to disable the eco plugin we would do the following:
-
-``` coffee
-	enabledPlugins:
-		eco: false
-```
+Check out the `enabledPlugins` [configuration property](/docpad/config).
 
 
 ## How do I only enable the plugins that I actually use?
-Open your [DocPad configuration file](/docpad/config) up. Set `enableUnlistedPlugins` to `false`. Create the `enabledPlugins` property, have that filled with a hashtable of the plugin names on the left, and `true` on the right to enable them. E.g. to only enable the eco and stylus plugins we would do the following:
-
-``` coffee
-	enableUnlistedPlugins: false
-	enabledPlugins:
-		eco: true
-		stylus: true
-```
+Check out the `enableUnlistedPlugins` [configuration property](/docpad/config).
 
 
 ## How do I customise the configuration sent to a plugin?
-Open your [DocPad configuration file](/docpad/config) up. Create a `plugins` property. Inside that, create a property for the plugin's name that you want to customise, and specify its configuration inside it. E.g. to customise the stylus plugin configuration we would do the following:
-
-``` coffee
-	plugins:
-		stylus:
-			useNib: false
-```
+Check out the `plugins` [configuration property](/docpad/config).
 
 
 ## Where can I host my docpad website?

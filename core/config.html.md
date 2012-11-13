@@ -20,7 +20,7 @@ Generally, you'll usually always find either a `docpad.coffee` file or a `docpad
 
 ### Example `docpad.coffee` file
 
-``` coffeescript
+``` coffee
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
@@ -84,6 +84,9 @@ docpadConfig = {
 
 	# =================================
 	# Plugins
+
+	# Enable Unlisted Plugins
+	enabledUnlistedPlugins: true
 
 	# Enabled Plugins
 	enabledPlugins:

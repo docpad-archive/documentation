@@ -1,146 +1,43 @@
-## The Basics
-
-1. Say you were to create the following website structure:
-
-	> - myWebsite
-		- src
-			- documents
-			- files
-			- layouts
-
-1. Install a few plugins:
-
-	```
-	cd myWebsite
-	npm install --save docpad-plugin-eco docpad-plugin-marked
-	```
-
-1. Create the following files:
-
-	1. A layout at `src/layouts/default.html.eco`, which contains
-
-		``` erb
-		<html>
-		<head><title><%=@document.title%></title></head>
-		<body>
-			<%-@content%>
-		</body>
-		</html>
-		```
-
-	2. And another layout at `src/layouts/post.html.eco`, which contains:
-
-		``` erb
-		---
-		layout: default
-		---
-		<h1><%=@document.title%></h1>
-		<div><%-@content%></div>
-		```
-
-	3. And a document at `src/documents/posts/hello.html.md`, which contains:
-
-		``` html
-		---
-		layout: post
-		title: Hello World!
-		---
-		Hello **World!**
-		```
-
-1. Then when you generate your website with DocPad using `docpad run` you will get a html file at `out/posts/hello.html`, which contains:
-
-	``` html
-	<html>
-		<head><title>Hello World!</title></head>
-		<body>
-		<h1>Hello World!</h1>
-		<div>Hello <strong>World!</strong></div>
-		</body>
-	</html>
-	```
-
-1. And any files that you have in `src/files` will be copied to the `out` directory. E.g. `src/files/styles/style.css` -> `out/styles/style.css`
-
-1. Allowing you to easily generate a website which only changes (and automatically updates) when a document changes (which when you think about it; is the majority of websites)
-
-1. Cool, now what was with the `<%=...%>` and `<%-...%>` parts which were substituted away?
-
-	1. This is possible because we parse the documents and layouts through a template rendering engine. The template rendering engine used in this example was [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things, in fact we could display all the titles and links of our posts with the following:
-
-		``` erb
-		<% for document in @documents: %>
-			<% if document.url.indexOf('/posts') is 0: %>
-				<a href="<%= document.url %>"><%= document.title %></a><br/>
-			<% end %>
-		<% end %>
-		```
-
-1. Cool that makes sense... now how did `Hello **World!**` in our document get converted into `Hello <strong>World!</strong>`?
-
-	1. That was possible as that file was a [Markdown](http://daringfireball.net/projects/markdown/basics) file (hence the `.md` extension it had). Markdown is fantastic for working with text based documents, as it really allows you to focus in on your content instead of the syntax for formatting the document!
-
-1. Great thanks! I think I will give it a go right now!
+```
+title: "Overview"
+```
 
 
+## Standard Project Structure
 
-## Using the CLI
+Here is the standard project structure you'll come accross with DocPad projects:
+
+- `my-website/`
+	- `out/`
+	- `src/`
+		- `documents/`
+		- `files/`
+		- `layouts/`
+	- `package.json`
 
 
+### The Documents Directory
 
-- To create your website (if it doesn't already exist), watch for changes, and start the webserver, use:
+Documents are files that we would like to render. Rendering occurs extension to extension in the same way the ruby on rails asset pipeline works. This means the document `src/documents/hello.ext1.ext2.ext3` in rendered from `ext3` to `ext2` then from `ext2` to `ext1`, resulting in the file `out/hello.ext1`. More common examples of this are rendering [CoffeeScript](http://coffeescript.org/) to JavaScript with the document `src/documents/script.js.coffee` to `out/script.js` or writing a blog post that renders from [Markdown](http://daringfireball.net/projects/markdown/) to HTML with the document `src/documents/blog/hello.html.md` to `out/blog/hello.html`.
 
-	``` bash
-	docpad run
-	```
+The reason we do not support direct rendering from `script.coffee` to `script.js` is that such a convention would eliminate the ability to combine extension renderings, as well as cause ambiguity between extensions that can be rendered in multiple ways. For instance the `coffee` extension could be rendered using [CoffeeScript](http://coffeescript.org/) to JavaScript or using [CoffeeKup](http://coffeekup.org/) to HTML. However, if you really want to use just a single extension, such a thing is supported by the `renderSingleExtensions` meta property.
 
-- To just generate your website from one of the existing skeletons, use:
+The other important aspect of documents it that they support meta data. Meta data goes at the top of a document and defines information about that particular document. For instance, its title, date, and layout it uses are good examples. Meta data is not restricted to particular values, meaning you can define whatever meta data you want against a document. There are some special meta data properties however which perform certain functions (e.g. `layout` is used for telling us which layout to wrap the document with). You can find the complete listing of special meta data properties on the [Meta Data Page](/docpad/meta-data).
 
-	``` bash
-	docpad scaffold
-	```
 
-- To just generate your compiled website, use:
+### The Layouts Directory
 
-	``` bash
-	docpad generate
-	```
+Layouts work in a very similar way to documents in that they are rendered and support meta data, however unlike documents, they don't get output'ed to the out directory - as they only exist to wrap documents and other layouts within themselves. Layouts work in a nested fashion, with the desired layout being defined by the `layout` meta data property within the child layout/document.
 
-- To just watch your website for changes and re-generate whenever a change is made, use:
+Layouts should include the child content; this is done using the `content` [template data](/docpad/template-data) variable. Doing such a thing using the [Eco](https://github.com/sstephenson/eco/) templating engine via the [Eco Plugin](https://github.com/docpad/docpad-plugin-eco)  would look like so `<%- @content %>`.
 
-	``` bash
-	docpad watch
-	```
 
-- To just run the DocPad server to access your already generated website, use:
+### The Files Directory
 
-	``` bash
-	docpad server
-	```
+Files are like documents in that they are outputted to the out directory, however unlike documents, they are not rendered and do not having meta data. This is where you should put everything that doens't need to be rendered or need meta data. For example, images, vendor files, plain stylesheet and javascript files, etc.
 
-- To render standalone files with DocPad programatically (will output to stdout)
 
-	``` bash
-	docpad render filePath
-	```
+### The `package.json` File
 
-	E.g. To render a markdown file and save the result to an output file, we would use:
+This file is needed for every node application. It defines the dependencies that your application requires - such as the DocPad version your site is created against, as well as what plugins you are running and whatever else. You can learn more about `package.json` files on [this page](/node/ecosystem) of our [Hands on Node Training](http://localhost:9778/learn/node-preface).
 
-	``` bash
-	docpad render inputMarkdownFile.html.md > outputMarkdownFile.html
-	```
-
-- To render stdin with DocPad programatically (will output to stdout)
-
-	``` bash
-	echo $content | docpad render sampleFileNameWithExtensions
-	```
-
-	E.g. To render passed markdown content and save the result to a file, we would use:
-
-	``` bash
-	echo "**awesome**" | docpad render input.html.md > output.html
-	```
-
-## What's next?
-Advance onto the [Beginner Guide](/docpad/begin) for DocPad :)
