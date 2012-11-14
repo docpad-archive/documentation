@@ -94,7 +94,7 @@ If you'd rather get your hands dirty by making your own real basic website from 
 	1. This is possible because we parse the documents and layouts through a template rendering engine. In this example, we use a template rendering engine called [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things, in fact we could display all the titles and links of our posts with the following:
 
 		``` erb
-		<% for post in @getFilesAtPath("posts").toJSON() -> : %>
+		<% for post in @getFilesAtPath("posts").toJSON(): %>
 			<a href="<%= post.url %>"><%= post.title %></a><br/>
 		<% end %>
 		```
