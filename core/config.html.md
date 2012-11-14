@@ -86,6 +86,7 @@ docpadConfig = {
 	# Plugins
 
 	# Enable Unlisted Plugins
+	# If set to false (defaults to true), we will only enable plugins that have been explicitly set to true inside enabledPlugins
 	enabledUnlistedPlugins: true
 
 	# Enabled Plugins
@@ -93,10 +94,15 @@ docpadConfig = {
 		# Disable the Pokemon Plugin
 		pokemon: false
 
+		# Enable the Digimon Plugin
+		# Unless, enableUnlistedPlugins is set to false, all plugins are enabled by default
+		digimon: true
+
 	# Configure Plugins
+	# Should contain the plugin short names on the left, and the configuration to pass the plugin on the right
 	plugins:
 
-		# Disable NIB in the Stylus Plugin
+		# Disable NIB within the Stylus Plugin
 		stylus:
 			useNib: false
 
