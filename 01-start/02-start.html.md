@@ -39,9 +39,14 @@ If you'd rather get your hands dirty by making your own real basic website from 
 
 		``` erb
 		<html>
-		<head><title><%=@document.title%></title></head>
+		<head>
+			<title><%= @document.title %></title>
+			<%- @getBlock("meta").toHTML() %>
+			<%- @getBlock("styles").toHTML() %>
+		</head>
 		<body>
-			<%-@content%>
+			<%- @content %>
+			<%- @getBlock("scripts").toHTML() %>
 		</body>
 		</html>
 		```
@@ -52,8 +57,8 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		---
 		layout: default
 		---
-		<h1><%=@document.title%></h1>
-		<div><%-@content%></div>
+		<h1><%= @document.title %></h1>
+		<div><%- @content %></div>
 		```
 
 	3. A document at `src/documents/posts/hello.html.md` that contains:
@@ -66,34 +71,39 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		Hello **World!**
 		```
 
-1. Then generate your website by running `docpad run` and you will get a html file at `out/posts/hello.html` that contains:
+1. Then when you generate your website by running `docpad run`
+	
+	1. You will get a html file at `out/posts/hello.html` that contains:
 
-	``` html
-	<html>
-		<head><title>Hello World!</title></head>
+		``` html
+		<html>
+		<head>
+			<title>Hello World!</title>
+		</head>
 		<body>
-		<h1>Hello World!</h1>
-		<div>Hello <strong>World!</strong></div>
+			<h1>Hello World!</h1>
+			<div>Hello <strong>World!</strong></div>
 		</body>
-	</html>
-	```
+		</html>
+		```
+		
+	1. And any files inside the `src/files` directory will be copied to the `out` directory. E.g. `src/files/styles/style.css` -> `out/styles/style.css`
 
-1. Any files that are in `src/files` will be copied to the `out` directory. E.g. `src/files/styles/style.css` -> `out/styles/style.css`
+1. Awesome. Now how did the `<%=...%>` and `<%-...%>` parts get substituted away?
 
-1. Awesome. Now what was with the `<%=...%>` and `<%-...%>` parts which were substituted away?
-
-	1. This is possible because we parse the documents and layouts through a template rendering engine. The template rendering engine used in this example was [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things, in fact we could display all the titles and links of our posts with the following:
+	1. This is possible because we parse the documents and layouts through a template rendering engine. In this example, we use a template rendering engine called [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things, in fact we could display all the titles and links of our posts with the following:
 
 		``` erb
-		<% for document in @documents: %>
-			<% if document.url.indexOf('/posts') is 0: %>
-				<a href="<%= document.url %>"><%= document.title %></a><br/>
-			<% end %>
+		<% for post in @getFilesAtPath("posts").toJSON() -> : %>
+			<a href="<%= post.url %>"><%= post.title %></a><br/>
 		<% end %>
 		```
 
-1. That makes sense... now how did `Hello **World!**` in our document get converted into `Hello <strong>World!</strong>`?
+	3. The `@getBlock` stuff is used so plugins can easily add new meta, scripts, and styles to our website. For instance, the [livereload plugin](http://docpad.org/plugin/livereload) in order to reload our web page whenever a regeneration occurs will inject a script into our script block, which is then outputted to our page when we do the `<%- @getBlock("scripts").toHTML() %>` in our layout :)
+
+1. Cool. Now how did `Hello **World!**` in our document get converted into `Hello <strong>World!</strong>`?
 
 	1. That was possible as that file was a [Markdown](http://daringfireball.net/projects/markdown/basics) file (hence the `.md` extension it had). Markdown is fantastic for working with text based documents, as it really allows you to focus in on your content instead of the syntax for formatting the document!
 
-1. Awesome! Thanks for that!
+1. Fantastic! Thanks for that! Continue on with the guide to learn a lot more, as this was just the tip of the ice berg - there's a lot more opt-in awesomeness yet to be discovered.
+
