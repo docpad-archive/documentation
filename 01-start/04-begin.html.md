@@ -5,6 +5,8 @@ cssClasses: ['compact']
 
 Welcome to the Beginner Guide to DocPad.
 
+*Please note:* portions of this guide are a bit expiremental, if you ever get stuck, have a question, or need help - [then jump onto any of our official support channels and we'll be right with you](/support). Cheers!
+
 
 ## Intro
 
