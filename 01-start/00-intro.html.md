@@ -45,8 +45,8 @@ On the other hand, lets compare that with DocPad, which is:
 	- Migrations and deployments are handled via git, the tool we're use to
 - **Robust**
 	- Use your desktop counterparts to edit content naturally (sublime, vim, word, byword)
-	- Abstraction friendly, code the way you want, how you want
-	- Use whatever language, pre-processor, markup, templating engine you want? It's all handled via our opt-in plugins.
+	- Abstraction friendly - code the way you want, how you want
+	- Use whatever language, pre-processor, markup, templating engine you want - it's all covered via our opt-in plugins
 
 Besides this, thanks to the opt-in modular philosophy of node, we benefit from all the innovations of the community as a whole, including:
 - [Socket.io](http://socket.io/) for realtime communication between the server and client side
