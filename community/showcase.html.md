@@ -14,7 +14,7 @@ DocPad mentioned around the web. Oldest first.
 - [DocPad Talk @ Paris.js](http://djebbz.github.com/docpad-paris-js/) - Presentation of DocPad at Paris.js, May 30th 2012
 - [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6
 - [SlidePad](http://slidepad.herokuapp.com/) - Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server. Once You write document in markdown syntax, it becomes HTML5 Slides.
-- [DocPad featured on Webification](http://webification.com/create-awesome-websites-intuitively-docpad) - _"Seriously, if my grandparents ever wanted to create a website, I’d direct them to DocPad. Splendid docs, easy building, DocPad has it all."_
+- [DocPad featured on Webification](http://webification.com/create-awesome-websites-intuitively-docpad) - "Splendid docs, easy building, DocPad has it all."
 
 ## Websites
 

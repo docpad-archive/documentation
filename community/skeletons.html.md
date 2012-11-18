@@ -9,13 +9,14 @@ These are skeletons currently available to you as part of the DocPad bootstrap p
 - [Kitchensink](https://github.com/docpad/kitchensink.docpad) `branch: docpad-6.x` - [preview](http://docpad-kitchensink.herokuapp.com) - A DocPad Skeleton useful for showcasing different features and functionality of DocPad. Implemented using Twitter Bootstrap
 - [Website Skeleton](https://github.com/docpad/website.docpad) `branch: docpad-6.x` - Website skeleton for DocPad. Useful for personal websites and blogs. Pulls in social streams and github informationp
 - [Hogan.js Project Page](http://twitter.github.com/hogan.js/) `branch: docpad-6.x` - The [Hogan.js](http://twitter.github.com/hogan.js/) project page ported to DocPad
+- [SlidePad](http://slidepad.herokuapp.com/) - Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server. Once You write document in markdown syntax, it becomes HTML5 Slides.
 
 ### Older
 
 These are skeletons and themes for older versions of DocPad
 
 - [Deckpad](https://github.com/calvinmetcalf/deckpad) `branch: master` - Build rich HTML5 presentations with DocPad
-- [Node Chat](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js.\nNOTE: To run nodechat you must use `coffee server.coffee` instead of `docpad run`
+- [Node Chat](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js
 - [Benjamin Lupton](https://github.com/balupton/balupton.docpad) `branch: docpad-5.x` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
 
 
