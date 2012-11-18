@@ -39,5 +39,5 @@ Files are like documents in that they are outputted to the out directory, howeve
 
 ### The `package.json` File
 
-This file is needed for every node application. It defines the dependencies that your application requires - such as the DocPad version your site is created against, as well as what plugins you are running and whatever else. You can learn more about `package.json` files on [this page](/node/ecosystem) of our [Hands on Node Training](http://localhost:9778/learn/node-preface).
+This file is needed for every node application. It defines the dependencies that your application requires - such as the DocPad version your site is created against, as well as what plugins you are running and whatever else. You can learn more about `package.json` files on [this page](/node/ecosystem) of our [Hands on Node Training](/node/preface).
 
