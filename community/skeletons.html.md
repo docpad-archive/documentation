@@ -13,7 +13,7 @@ These are skeletons currently available to you as part of the DocPad bootstrap p
 - [Hogan.js Project Page](http://twitter.github.com/hogan.js/) `branch: docpad-6.x` - The [Hogan.js](http://twitter.github.com/hogan.js/) project page ported to DocPad
 - [SlidePad](https://github.com/georgeOsdDev/slidepad) `branch: master` - Create HTML5 Presentations easily with DocPad
 - [Reveal.js](https://github.com/DjebbZ/revealjs-docpad) `branch: master` - Create [Reveal.js](http://lab.hakim.se/reveal-js/) presentations easily with DocPad
-- [Reveal.js](https://github.com/braziljs/conf-boilerplate) `branch: master` - A kickstart to create websites for conference/events
+- [Conference Boilerplate](https://github.com/braziljs/conf-boilerplate) `branch: master` - A kickstart to create websites for conference/events
 
 
 ### Older
