@@ -8,11 +8,11 @@ These skeletons are currently available to you as part of the DocPad bootstrap p
 - [Twitter Bootstrap](https://github.com/docpad/twitter-bootstrap.docpad) `branch: docpad-6.x` - [Twitter Bootstrap](http://twitter.github.com/bootstrap/) skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
 - [Kitchensink](https://github.com/docpad/kitchensink.docpad) `branch: docpad-6.x` - [preview](http://docpad-kitchensink.herokuapp.com) - A DocPad Skeleton useful for showcasing different features and functionality of DocPad. Implemented using Twitter Bootstrap
 - [Benjamin Lupton's Website](https://github.com/balupton/balupton.docpad) `branch: master` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
-- [Hogan.js Project Page](http://twitter.github.com/hogan.js/) `branch: docpad-6.x` - The [Hogan.js](http://twitter.github.com/hogan.js/) project page ported to DocPad
-- [SlidePad](https://github.com/georgeOsdDev/slidepad) `branch: master` - Create HTML5 Presentations easily with DocPad
+- [Hogan.js Project Page](https://github.com/docpad/hogan.docpad) `branch: docpad-6.x` - The [Hogan.js](http://twitter.github.com/hogan.js/) project page ported to DocPad
+- [SlidePad](https://github.com/georgeOsdDev/slidepad) `branch: master` - [preview](http://slidepad.herokuapp.com/) - Create HTML5 Presentations easily with DocPad
 - [Reveal.js](https://github.com/DjebbZ/revealjs-docpad) `branch: master` - Create [Reveal.js](http://lab.hakim.se/reveal-js/) presentations easily with DocPad
-- [Conference Boilerplate](https://github.com/braziljs/conf-boilerplate) `branch: master` - A kickstart to create websites for conference/events
-
+- [Conference Boilerplate](https://github.com/braziljs/conf-boilerplate) `branch: master` - [preview](http://confboilerplate.com/) A kickstart to create websites for conference/events
+- [Nodechat](https://github.com/balupton/nodechat.docpad) `branch: master` - [preview](http://docpad-nodechat.herokuapp.com/) - Node Chat, built using Socket.io, DocPad, Backbone.js and Twitter Bootstrap
 
 
 ### Expiremental
