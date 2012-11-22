@@ -7,9 +7,14 @@ These are skeletons currently available to you as part of the DocPad bootstrap p
 - [HTML5 Boilerplate](https://github.com/docpad/html5-boilerplate.docpad) `branch: docpad-6.x` - [HTML5 Boilerplate](http://html5boilerplate.com/) skeleton for DocPad. Bare essentials for building a modern website with best practices
 - [Twitter Bootstrap](https://github.com/docpad/twitter-bootstrap.docpad) `branch: docpad-6.x` - [Twitter Bootstrap](http://twitter.github.com/bootstrap/) skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
 - [Kitchensink](https://github.com/docpad/kitchensink.docpad) `branch: docpad-6.x` - [preview](http://docpad-kitchensink.herokuapp.com) - A DocPad Skeleton useful for showcasing different features and functionality of DocPad. Implemented using Twitter Bootstrap
-- [Website Skeleton](https://github.com/docpad/website.docpad) `branch: docpad-6.x` - Website skeleton for DocPad. Useful for personal websites and blogs. Pulls in social streams and github informationp
+- [Website Skeleton](https://github.com/docpad/website.docpad) `branch: docpad-6.x` - Expiremental: Website skeleton for DocPad. Useful for personal websites and blogs. Pulls in social streams and github information
+- [Benjamin Lupton's Website](https://github.com/balupton/balupton.docpad) `branch: master` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
+- [Syte](https://github.com/docpad/syte.docpad) `branch: master` - Expiremental: A simple pre-made personal website with blogging and social integrations.
 - [Hogan.js Project Page](http://twitter.github.com/hogan.js/) `branch: docpad-6.x` - The [Hogan.js](http://twitter.github.com/hogan.js/) project page ported to DocPad
-- [SlidePad](http://slidepad.herokuapp.com/) - Slidepad makes it easy to create HTML5 slides with major HTML5 slide templates and Docpad server. Once You write document in markdown syntax, it becomes HTML5 Slides.
+- [SlidePad](https://github.com/georgeOsdDev/slidepad) `branch: master` - Create HTML5 Presentations easily with DocPad
+- [Reveal.js](https://github.com/DjebbZ/revealjs-docpad) `branch: master` - Create [Reveal.js](http://lab.hakim.se/reveal-js/) presentations easily with DocPad
+- [Reveal.js](https://github.com/braziljs/conf-boilerplate) `branch: master` - A kickstart to create websites for conference/events
+
 
 ### Older
 
