@@ -9,7 +9,7 @@ _If you are upgrading from one major version to another, be sure to checkout our
 1. Install DocPad
 
 	``` bash
-	[sudo] npm install -fg docpad@6.11
+	[sudo] npm install -fg docpad@6.12
 	```
 
 1. If you also want growl notifications (OSX), then download and install the `GrowlNotify` tool from the [Growl Download Page](/docpad/growl)
