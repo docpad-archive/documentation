@@ -57,7 +57,7 @@ Now that's done, we'll want to add our "About Me" page so people browsing our we
 </head>
 <body>
 	<h1>About Me</h1>
-	<p>I like long walks on the beach. Plus I rock at DocPad!</p>
+	<p>I like long walks on the beach. <strong>Plus I rock at DocPad!</strong></p>
 </body>
 </html>
 ```
@@ -101,7 +101,7 @@ Layouts wrap around our documents, so we can define the surrounding areas of a d
 	layout: "default"
 	---
 
-	<p>I like long walks on the beach. Plus I rock at DocPad!</p>
+	<p>I like long walks on the beach. <strong>Plus I rock at DocPad!</strong></p>
 	```
 
 However, if you go to either the home page or the about page on our web server, you'll notice that their content is just the layout, and don't actually contain any of the document content! This is because we haven't installed the templating engine for our layout yet!
@@ -178,11 +178,62 @@ So to add the three default blocks to our layout, we'll update our layout to con
 Saving that, and manually reloading our browser, we'll notice that our page now has the needed scripts injected right where the scripts block was outputted. Now if we make a change to any of the files, we'll notice the browser will automatically refresh. Amazing!
 
 
-## Adding our Configuration File
 
-### Adding the Configuration File
+## Getting the benefits of Pre-Processors
+Pre-Processors are amazing things. They allow us to write documents in one language (the source language), but export them to a different language (the target language). This is extremely benefifical as you always get to use the syntax that you enjoy, instead of the syntax that you are forced to work with - but most importantly, pre-processors usually offer you more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
 
-### Applying Template Data Abstractions
+
+### Using Markdown, a HTML Pre-Processor
+Open the About Page we created earlier (`documents/pages/about.html`). HTML's verbose syntax is terrible for writing content that is more text than markup (e.g. articles, comments, etc). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) ([one of the many HTML Pre-Processors available to us](/docpad/plugins)) is to the rescue!
+
+With Markdown, we can update our About Page's content to become:
+
+``` markdown
+I like long walks on the beach. **Plus I rock at DocPad!**
+```
+
+Which gives us the same result, but with all the benefits of Markdown. Now, just like all rendering engines, we have to:
+
+1. Indicate the rendering we want to perform - so rename `about.html` to `about.html.md` to indicate we want to render from Markdown to HTML
+1. Install the plugin that can do the rendering - so to install the [RobotSkirt Markdown Plugin](http://docpad.org/plugin/robotskirt) we'll run `npm install --save docpad-plugin-robotskirt`
+
+Sweet, you're now ready to rock the house with Markdown.
+
+
+### Using Stylus, a CSS Pre-Processor
+Open the Stylesheet document we created earlier (`documents/styles/style.css`). CSS really hasn't come that far over the years, it has absolutely no abstractions available to us, making it incredibly redundant and painful to write. Fortunately, [Stylus](http://learnboost.github.com/stylus/) ([one of the many CSS Pre-Processors available to us](/docpad/plugins)) is to the rescue!
+
+Using Stylus, we can update our stylesheet's content to become:
+
+``` stylus
+h1
+	color: red
+```
+
+Which gives us the same result, but with all the benefits of Stylus. Now, just like all rendering engines, we have to:
+
+1. Indicate the rendering we want to perform - so rename `style.css` to `style.css.styl` to indicate we want to render from Stylus to CSS
+1. Install the plugin that can do the rendering - so to install the [Stylus Plugin](http://docpad.org/plugin/stylus) we'll run `npm install --save docpad-plugin-stylus`
+
+Sweet, you're now ready to rock the house with Stylus.
+
+
+### Using CoffeeScript, a JavaScript Pre-Processor
+Open the JavaScript document we created earlier (`documents/scripts/script.js`). Sometimes people can get a quite annoyed with JavaScript's verboseness, and very annoyed when they forget a comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org/) ([one of the many JavaScript Pre-Processors available to us](/docpad/plugins)) is to the rescue!
+
+Using CoffeeScript, we can update our script's content to become:
+
+``` coffeescript
+$ ->
+	$("body").hide().fadeIn(2000)
+```
+
+Which gives us the same result, but with all the benefits of CoffeeScript. Now, just like all rendering engines, we have to:
+
+1. Indicate the rendering we want to perform - so rename `script.js` to `script.css.coffee` to indicate we want to render from CoffeeScript to JavaScript
+1. Install the plugin that can do the rendering - so to install the [CoffeeSCript Plugin](http://docpad.org/plugin/coffeescript) we'll run `npm install --save docpad-plugin-coffeescript`
+
+Sweet, you're now ready to rock the house with CoffeeScript.
 
 
 
@@ -190,11 +241,26 @@ Saving that, and manually reloading our browser, we'll notice that our page now 
 
 ### Writing the Blog Posts
 
+It's now time for us to add some blog posts. So lets create a new document at 
+
 ### Using Markdown
+
+
+## Listing the Blog Posts
 
 ### Creating the Listing for our Home Page
 
 ### Displaying the Listing on our Home Page
+
+
+## Applying Abstractions with a Configuration File
+
+### Adding the Configuration File
+
+It's now time to add our [configuration file](http://localhost:9778/learn/docpad-config). Configuration files can take a few different formats, in this guide we will use the `docpad.coffee` format.
+
+### Applying Template Data Abstractions
+
 
 
 ## Adding the Assets
