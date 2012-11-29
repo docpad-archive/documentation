@@ -12,6 +12,6 @@ _If you are upgrading from one major version to another, be sure to checkout our
 	[sudo] npm install -fg docpad@6.14
 	```
 
-1. If you also want operating system notifications, then follow [these additional instructions](https://github.com/visionmedia/node-growl#install) - ignore the npm instructions though as we already completed them above.
+1. If you also want operating system notifications, then follow [these additional instructions](https://github.com/visionmedia/node-growl#install) - ignore the npm instructions as we already completed them earlier
 
 _If you get any errors, refer to our [Troubleshooting Guide](/docpad/troubleshoot) as their is likely an easy fix for it :)._
