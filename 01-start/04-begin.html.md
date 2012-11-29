@@ -178,6 +178,83 @@ So to add the three default blocks to our layout, we'll update our layout to con
 Saving that, and manually reloading our browser, we'll notice that our page now has the needed scripts injected right where the scripts block was outputted. Now if we make a change to any of the files, we'll notice the browser will automatically refresh. Amazing!
 
 
+## Adding our Configuration File
+
+### Purpose of a Configuration File
+
+The [DocPad Configuration File](/docpad/config) allows us to configure our DocPad instance, listen to events, and perform some nifty abstractions.
+
+Consider the case where our document title is empty. With our current solution the title of the page would be ` | My Website`, in which case just having `My Website` would be far more ideal when our document doesn't have a title.
+
+We could update our title code in our layout template to become:
+
+``` erb
+<title><%= if @document.title then "@document.title | My Website" else "My Website" %></title>
+```
+
+Which would achieve the goal, but then we have to update the website title in two places if we want to use something else besides `My Website`, and considering this a common abstraction it would be nice if we could abstract it out, say into a configuration file!
+
+So lets create our configuration at the location `my-website/docpad.coffee` and give it the contents:
+
+``` coffee
+# Define the Configuration
+docpadConfig = {
+	# ...
+}
+
+# Export the Configuration
+module.exports = docpadConfig
+```
+
+The first part is where we actually define our configuration, and the second part is a [node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we say add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
+
+
+### Using TemplateData for Abstractions
+
+Everything that is available to our templates is called [TemplateData](/docpad/template-data) - for instance `@document` is part of our template data. So to be able to abstract out something that our templates wil use, we will need to extend our template data. We can do this by modifying our template data configuration property like so:
+
+``` coffee
+docpadConfig =
+	templateData:
+		site:
+			title: "My Website"
+```
+
+With that, our website title is now abstracted out. We can now update our title element in the template to look be:
+
+``` erb
+<title><%= if @document.title then "@document.title | @site.title" else @site.title %></title>
+```
+
+However, if we really wanted to (and we probably do) we can abstract out that logic into a function inside our template data.
+
+
+### Abstracting Logic into Template Helpers
+
+When using `.coffee` or `.js` files to define our Configuration File, we are allowed to define functions. Doing so, allows us to use functions within our template data - we call these functions Template Helpers.
+
+When calling a template helper, the scope of the template helper is exactly the same as the scope of what is calling it. This makes abstracting out logic really really easy. Lets see what it would look like:
+
+``` coffee
+docpadConfig =
+	templateData:
+		site:
+			title: "My Website"
+
+		getPreparedTitle: -> if @document.title then "@document.title | @site.title" else @site.title
+```
+
+And our template would become:
+
+``` erb
+<title><%= @getPreparedTitle() %></title>
+```
+
+Now that is awesome. While this was a simple example, we can use this to do some really cool stuff. For instance, [here is an example of it being used to localise dates into french](https://gist.github.com/4166882).
+
+If you're writing a plugin, you can use [the extendTemplateData event](/docpad/events) to extend the template data.
+
+
 
 ## Getting the benefits of Pre-Processors
 Pre-Processors are amazing things. They allow us to write documents in one language (the source language), but export them to a different language (the target language). This is extremely benefifical as you always get to use the syntax that you enjoy, instead of the syntax that you are forced to work with - but most importantly, pre-processors usually offer you more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
