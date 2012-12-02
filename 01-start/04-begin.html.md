@@ -1,6 +1,6 @@
 ```
 title: "Beginner Guide"
-cssClasses: []
+cssClasses: ['compact']
 ```
 
 ## Introduction
@@ -10,6 +10,14 @@ Welcome to the Beginner Guide for DocPad. By the end of this guide, you'll have 
 For this guide we'll create a blog and explain what we do step by step. A blog is just a listing of posts/articles as well as some pages. Posts are like status updates on how something is going. Pages on the other hand are something we always want to show.
 
 Great! Lets get started. Oh, and if you ever get stuck, have a question, or need help - [then jump onto any of our official support channels and we'll be right with you](/support). Cheers!
+
+
+
+
+
+
+
+
 
 
 ## Creating the Standard Project Structure
@@ -44,6 +52,15 @@ Lets create our first document, our home page for our website. So lets create th
 ```
 
 Once you've saved it, if you go to [http://localhost:9778](http://localhost:9778) you'll notice that DocPad has already regenerated your website and you'll see the the page we created above rendered by the browser. Fantastic!
+
+
+
+
+
+
+
+
+
 
 
 ## Adding the About Page and a Layout
@@ -159,7 +176,7 @@ Then once you've restarted DocPad, whenever you make a change to the files you'l
 
 Blocks are a way for plugins and even ourselves to be able to easily add scripts, styles and meta elements to our pages. In the instance of the live reload plugin, it needs the script block to be able to inject the needed scripts into the page so it can refresh browser whenever changes are made. There are many use cases for blocks, but one thing at a time.
 
-So to add the three default blocks to our layout, we'll update our layout to contain:
+So to add the three default blocks to our layout, we'll update our layout to become:
 
 ``` erb
 <html>
@@ -169,6 +186,7 @@ So to add the three default blocks to our layout, we'll update our layout to con
 	<%- @getBlock("styles").toHTML() %>
 </head>
 <body>
+	<h1><%= @document.title %></h1>
 	<%- @content %>
 	<%- @getBlock("scripts").toHTML() %>
 </body>
@@ -178,7 +196,16 @@ So to add the three default blocks to our layout, we'll update our layout to con
 Saving that, and manually reloading our browser, we'll notice that our page now has the needed scripts injected right where the scripts block was outputted. Now if we make a change to any of the files, we'll notice the browser will automatically refresh. Amazing!
 
 
-## Adding our Configuration File
+
+
+
+
+
+
+
+
+
+## Adding some Template Data and Template Helpers via a Configuration File
 
 ### Purpose of a Configuration File
 
@@ -256,6 +283,79 @@ If you're writing a plugin, you can use [the extendTemplateData event](/docpad/e
 
 
 
+
+
+
+
+
+
+
+
+## Adding Assets
+
+Now that we have two documents, a layout, and blocks all done. It's time to start adding some assets. Before proceeding with this section, please have read the [DocPad Overview Page](/docpad/overview) so you know what each of the directories within our website structure are for.
+
+
+### Images
+
+Lets add our logo to our layout's header. We'll [download the DocPad logo](http://d.pr/i/cfmt+) and place it inside our files directory at `src/files/images/logo.gif` (binary files should always go inside the files directory). Then inside our layout, we'll add the following to get our logo on each page:
+
+``` html
+<img src="images/logo.gif" />
+```
+
+
+### Stylesheets
+
+Now lets make all our `h1` headers red, to do this lets add a stylesheet file inside our documents directory at `src/documents/styles/style.css` that contains:
+
+``` css
+h1 {
+	color: red;
+}
+```
+
+Then to include it inside our pages, we'll update the styles block inside our layout to:
+
+``` erb
+<%- @getBlock("styles").add(["/styles/style.css"]).toHTML() %>
+```
+
+Upon saving, we'll notice that our browser will automatically reload, and that our css file will be injected into the layout making our header red!
+
+
+
+### Scripts
+
+Now lets add a nifty loading effect using JavaScript and the [jQuery JavaScript Library](http://jquery.com). As always, there's plenty of other JavaScript Libaries you can use, but in this guide we'll go with jQuery.
+
+ To do this, we'll forst [download the jQuery library](http://code.jquery.com/jquery.js) and put it inside our files directory at `src/files/vendor/jquery.js`. The reason we use the file directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them all inside our files directory is a good choice for consitency and speed.
+
+ Now that we have jQuery inside our project, we'll add our nifty loading effect by adding a script file at `src/documents/scripts/script.js` and let it contain:
+
+``` javascript
+(function(){
+	$("body").hide().fadeIn(1000);
+})();
+```
+Now that's done, lets add those files to our scripts block in our layout:
+
+``` erb
+<%- @getBlock("scripts").add(["/vendor/jquery.js","/scripts/script.js"]).toHTML() %>
+```
+
+Upon saving, we'll notice that our content will fade in over a duration of two seconds. Nifty!
+
+
+
+
+
+
+
+
+
+
+
 ## Getting the benefits of Pre-Processors
 Pre-Processors are amazing things. They allow us to write documents in one language (the source language), but export them to a different language (the target language). This is extremely benefifical as you always get to use the syntax that you enjoy, instead of the syntax that you are forced to work with - but most importantly, pre-processors usually offer you more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
 
@@ -301,8 +401,7 @@ Open the JavaScript document we created earlier (`documents/scripts/script.js`).
 Using CoffeeScript, we can update our script's content to become:
 
 ``` coffeescript
-$ ->
-	$("body").hide().fadeIn(2000)
+$("body").hide().fadeIn(1000)
 ```
 
 Which gives us the same result, but with all the benefits of CoffeeScript. Now, just like all rendering engines, we have to:
@@ -314,129 +413,43 @@ Sweet, you're now ready to rock the house with CoffeeScript.
 
 
 
+
+
+
+
+
+
+
+
 ## Adding the Blog Posts
 
-### Writing the Blog Posts
+### Writing Blog Posts with Markdown
 
-It's now time for us to add some blog posts. So lets create a new document at 
+### Adding a new Layout
 
-### Using Markdown
+### Listing our Blog Posts
 
-
-## Listing the Blog Posts
-
-### Creating the Listing for our Home Page
-
-### Displaying the Listing on our Home Page
-
-
-## Applying Abstractions with a Configuration File
-
-### Adding the Configuration File
-
-It's now time to add our [configuration file](http://localhost:9778/learn/docpad-config). Configuration files can take a few different formats, in this guide we will use the `docpad.coffee` format.
-
-### Applying Template Data Abstractions
+### Abstracting our Listing
 
 
 
-## Adding the Assets
-
-Now that we have two documents, a layout, and blocks all done. It's time to start adding assets to our website.
-
-
-### Stylesheets + Pre-Processors
-
-Lets start by adding a stylesheet located at `src/documents/styles/style.css` that contains:
-
-``` css
-h1 {
-	color: red;
-}
-```
-
-And then update our styles block in our layout to become:
-
-``` erb
-<%- @getBlock("styles").add(["/styles/style.css"]).toHTML() %>
-```
-
-Upon saving, we'll notice that our browser will automatically reload, our css file will be injected into the layout, and our header will now be red! This is getting cool! It can get even cooler though.
-
-If you've ever done CSS before on a large project, you'll know that it really hasn't come far in the past 10 years and is a painfully verbose to write. Luckily, there are things called pre-processors which allow us to write CSS in a much nicer way, and compile that cleaner way into plain CSS that the browser can understand. Pre-processors are a life saver, and for the most part we'll always want to use one.
-
-In this guide, we'll use [Stylus](http://learnboost.github.com/stylus/) by installing the [stylus plugin](http://docpad.org/plugin/stylus). As always, there's plenty of other options which you can discover on our [Plugins Page](/docpad/plugins). Lets install the stylus plugin by doing:
-
-``` bash
-npm install docpad-plugin-stylus
-```
-
-Once DocPad is restarted, we now have stylus available to us, but we aren't yet using it yet - know why? It's because we need to update the extension for our stylesheet document to say lets use stylus! So lets do that now.
-
-Lets change it from `style.css` to `style.css.styl` and change the content to the following to make use of the awesomeness that stylus gives us:
-
-``` css
-h1
-	color: red
-```
-
-Save, and then bang, our website will have reloaded in our browser and we'll now have red headers just like before - but with a much nicer, powerful, and lenient syntax. Woot woot.
-
-
-### Files Directory
-
-So far, we have just used the documents directory, but there is also the files directory. 
-There are a few key reasons for this:
-1. The document directory renders based on extensions, the files directory performs no rendering. Therefore, anything that does not need to be rendered should go inside the files directory.
-2. 
-1. As the documents directory performs rendering based on extensions, if we were to have a file called `jquery-1.8.2.js` inside the `documents` directory, then DocPad would output it as `jquery-1.8` as it would believe we wanted to render from `2` to `8` due to the extensions. However placing our `jquery-1.8.2.js` file inside the `files` directory doesn't have this issue, as the files directory is not rendered. Generally, anything you don't want to render should go in the files directory.
-2. 
 
 
 
-### Scripts + Files Directory + Pre-Processors
-
-Next step, is to add a JavaScript file. We don't really need to add one yet, but we'll do it anyway to showcase how you would do so.
-
-Just like as we did with our stylesheets, lets create a document at `src/documents/scripts/script.js` containing:
-
-``` javascript
-$(function(){
-	$("body").hide().fadeIn(2000);
-});
-```
-
-Don't forget to update your scripts block in your layout as well!
-
-``` erb
-<%- @getBlock("scripts").add(["/scripts/script.js"]).toHTML() %>
-```
-
-Now, notice the mentions of `$` in our javascript code? That is because we are using the [jQuery](http://jquery.com/) JavaScript Library. jQuery lets us do a lot of powerful awesome javascript stuff with barely any code. As always, there's plenty of other JavaScript Libaries you can use, but in this guide we'll go with jQuery.
-
-So that JavaScript file we just added will error on you so far, as we haven't installed jQuery yet on our website. To do so, lets [download jQuery](http://code.jquery.com/jquery.js) and put it here `src/files/vendor/jquery.js` and update our scripts block like so:
-
-``` erb
-<%- @getBlock("scripts").add(["/vendor/jquery.js","/scripts/script.js"]).toHTML() %>
-```
-
-An important thing to notice, is how we put the jquery library into our files directory instead of into our documents directory. The reason for this is that we will never ever want to render jquery, nor will we ever want it to contain meta data - the two things that putting it in the documents directory gives us. Therefore, we will just put it in the files directory. Another important difference is that if we were to name the jquery file something like `jquery-1.8.2.js` and had it in the documents directory, then DocPad would render it from `2` to `8` resulting in the file `jquery-1.8` instead of the original file name - however placing such a file inside our files directory, we don't have that issue as there is no rendering happening in the files directory so file names will remain intact.
-
-Awesome. Now that's covered, lets take advantage of a JavaScript pre-processor called [CoffeeScript](http://coffeescript.org/). CoffeeScript gives us a nice syntax for JavaScript, as well as giving us easy abstractions for complex things in JavaScript - it's well worth reading up about. To update our script file to use CoffeeScript we would install the [CoffeeScript Plugin](http://docpad.org/plugin/coffeescript) by doing:
-
-``` bash
-npm install --save docpad-plugin-coffeescript
-```
-
-And as always, restart DocPad after any plugin installations. Then rename our script document to use the CoffeeScript extension by changing it from `script.js` to `script.js.coffee` and update its contents to:
-
-``` coffee
-$ ->
-	$("body").hide().fadeIn(2000)
-````
 
 
-### Awesome
+
+
+
+## Deployment
+
+
+
+
+
+
+
+
 
 
 ## CONTENTS
