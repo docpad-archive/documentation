@@ -46,7 +46,7 @@ These plugins add extra functionality to DocPad
 - [pygments](http://docpad.org/plugin/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
 - [related](http://docpad.org/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
 - [text](http://docpad.org/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
-
+- [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation.
 
 ## Older plugins
 
