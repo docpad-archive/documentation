@@ -216,7 +216,7 @@ Consider the case where our document title is empty. With our current solution t
 We could update our title code in our layout template to become:
 
 ``` erb
-<title><%= if @document.title then "@document.title | My Website" else "My Website" %></title>
+<title><%= if @document.title then "#{@document.title} | My Website" else "My Website" %></title>
 ```
 
 Which would achieve the goal, but then we have to update the website title in two places if we want to use something else besides `My Website`, and considering this a common abstraction it would be nice if we could abstract it out, say into a configuration file!
@@ -241,16 +241,19 @@ The first part is where we actually define our configuration, and the second par
 Everything that is available to our templates is called [TemplateData](/docpad/template-data) - for instance `@document` is part of our template data. So to be able to abstract out something that our templates wil use, we will need to extend our template data. We can do this by modifying our template data configuration property like so:
 
 ``` coffee
-docpadConfig =
+docpadConfig = {
+	# ...
 	templateData:
 		site:
 			title: "My Website"
+	# ...
+}
 ```
 
 With that, our website title is now abstracted out. We can now update our title element in the template to look be:
 
 ``` erb
-<title><%= if @document.title then "@document.title | @site.title" else @site.title %></title>
+<title><%= if @document.title then "#{@document.title} | #{@site.title}" else @site.title %></title>
 ```
 
 However, if we really wanted to (and we probably do) we can abstract out that logic into a function inside our template data.
@@ -263,12 +266,15 @@ When using `.coffee` or `.js` files to define our Configuration File, we are all
 When calling a template helper, the scope of the template helper is exactly the same as the scope of what is calling it. This makes abstracting out logic really really easy. Lets see what it would look like:
 
 ``` coffee
-docpadConfig =
+docpadConfig = {
+	# ...
 	templateData:
 		site:
 			title: "My Website"
 
-		getPreparedTitle: -> if @document.title then "@document.title | @site.title" else @site.title
+		getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
+	# ...
+}
 ```
 
 And our template would become:
@@ -421,15 +427,86 @@ Sweet, you're now ready to rock the house with CoffeeScript.
 
 
 
+## Adding a Menu Listing for our Pages
+
+Remeber our About Page, wouldn't it be nice that when we list more pages, our menu updates automaticaly. It sure would be, so lets do that.
+
+
+### Updating our Layout
+
+Open up your Default Layout (`src/layouts/default.html.eco`) and before the `h1` we'll add the following:
+
+``` erb
+<nav>
+	<% for page in @getCollection("html").findAll({relativeOutDirPath:$in:["","pages"]}).toJSON(): %>
+		<li>
+			<a href="<%= @document.url %>">
+				<%= @document.title %>
+			</a>
+		</li>
+	<% end %>
+</nav>
+```
+
+Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then with that collection we find all the files that their `relativeOutDirPath` [attribute](/docpad/meta-data) set to either `''` (so empty - like our `index.html` file) or `'pages'` (like our About Page). With that we then convert it from a [Backbone](http://backbonejs.org/#Collection)/[QueryEngine](/queryengine/guide) Collection into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
+
+That's a bit of a mouthful, but give it a while and you'll be a pro in no time. There is one major ineffeciency with the above approach, can you guess it?
+
+The ineffeciency is that we perform that query every single time we render a layout, which is a bit silly as the results of that query don't change between renders, so really we only have to query it once and provide access to the results to our collection. Good thing we can do this.
+
+
+### Creating Custom Collections via the Configuration File
+
+So then, lets go back to our [DocPad Configuration File](/docpad/config) (`docpad.coffee`) and open it up. This time we want to add the following:
+
+``` coffee
+docpadConfig = {
+	# ...
+	collections:
+		pages: (database) ->
+			database.findAllLive({relativeOutDirPath:$in:["","pages"]})
+	# ...
+}
+```
+
+Then inside our Default Layout, we'll update the `getCollection` line to become:
+	
+``` erb
+<% for page in @getCollection("pages").toJSON(): %>
+```
+
+Much better, and way more effecient. Did you spot the difference with the call we used? When creating our custom collections, we use the `findAllLive` call instead of the `findAll` call. The reasoning behind this is that `findAllLive` utilises [QueryEngine's Live Collections](/queryengine/guide) which means that we define our criteria once, then throughout time, we keep our collection up to date. In more technical detail, this works by creating a live child collection of the database collection, the child collection then subscribes to `add`, `remove`, and `change` events of the parent collection (the database collection) and tests the model that the event was for against our child collection's criteria (the pages collection) if it passes the collection it adds it, if it doesn't pass it removes it. This is way way better than querying everything every single time.
+
+So then, what about sorting? That's easy enough, we can sort by changing `database.findAllLive({relativeOutDirPath:$in:['','pages']})` to add a second argument which is the sorting argument `database.findAllLive({relativeOutDirPath:$in:['','pages']},[filename:1])` which in this case will sort by the filename in ascending order. To do descending order we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add a `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging, to learn about that one as well as what type of queryies are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide)
+
+
+### Setting Default Meta Data Attributes for our Pages
+
+Considering we'd probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages without us always having to add `layout: default` to our [meta data](/docpad/meta-data) for each page. Just like everything, its pretty darn easy if you know how, and here's how:
+
+``` coffee
+docpadConfig = {
+	# ...
+	collections:
+		pages: (database) ->
+			database.findAllLive({relativeOutDirPath:$in:["","pages"]}).on "add", (model) ->
+				model.setMetaDefaults({layout:"page"})
+	# ...
+}
+```
+
+So what does this do? Its exactly the same as before, but we use the `add` event automaticaly fired by [backbone](http://backbonejs.org/#Collection-add) whenever a model (a page, file, document, whatever) is added to our collection. Then inside our event, we say we want to set our default meta data attributes for the model - them being setting the layout to `page`.
+
+This ability is priceless when doing more complicated things with DocPad, for instance we use it for this documentation to be able to base the navigation structure of our documentation files off their physical location of our file system pretty easily. For instance, if we have a file `docs/docpad/01-start/04-begin.html.md` we can detect that the project is `docpad` so assign `project: "docpad"` to the meta data, as well as the section is "start" and it is order first - so set `category: "start"` and `categoryOrder: 1` as well, and that our file is `begin` and ordered 4th. That's just one example of more nifty things, there's plenty more you'll discover and event on your own epic journey :)
+
+
 ## Adding the Blog Posts
 
-### Writing Blog Posts with Markdown
+Finally, adding the blog posts can be left up to an exercise for you to figure out!
 
-### Adding a new Layout
+- If you need pointers: you'll create a new layout called `post` that will use the `default` layout. From there, you'll create a new directory called `posts` that contains your blog posts. We recommend giving them `date` meta data in the format of `2012-12-25` so you can sort your blog posts by the date in descending order.
 
-### Listing our Blog Posts
-
-### Abstracting our Listing
+- If you get stuck: ust hop on our IRC Support Channel - details available via our [Official Support Channels](/support) listing.
 
 
 
@@ -443,56 +520,4 @@ Sweet, you're now ready to rock the house with CoffeeScript.
 
 ## Deployment
 
-
-
-
-
-
-
-
-
-
-## CONTENTS
-
-- Creating the Standard Directories
-- Hello World
-	- Create a document
-	- Hit redundancy when we want more
-- Plugins
-	- Install the live reload plugin
-	- Quick rundown of plugins
-- Adding a stylesheet
-	- Create the stylesheet
-	- Problems with plain CSS
-	- Using Stylus (intro to pre-processors)
-- Adding an image
-	- Introduction to the files directory
-	- Adding the image to files
-	- Adding the image to our markup
-	- How the directories work together
-- Adding a layout
-	- Benefits of a layout (in relation to our posts)
-	- Create the layout file
-	- Take out the layout from our document
-	- Introduction to meta data
-	- Introduction to eco
-- Adding our posts
-	- Create the directory
-	- Add our posts with layout
-	- Make them markdown
-- Nested layouts
-	- Different layout for the posts
-	- How do nested layouts work
-- Listing our posts
-	- Introduction to collections and models
-	- Introduction to querying, sorting
-- Further abstractions
-	- Configuration files introduction
-	- Template data variables
-	- Template helpers
-	- Collections
-- Deployment
-	- Generate for static server
-	- Different environments
-	- Deploy to apache demonstration
-- All done
+[Deployment is the next page in this guide.](/docpad/deploy)
