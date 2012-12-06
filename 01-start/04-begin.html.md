@@ -480,7 +480,7 @@ docpadConfig = {
 	# ...
 	collections:
 		pages: ->
-			@getCollection('html').findAllLive({isPage:""})
+			@getCollection('html').findAllLive({isPage:true})
 	# ...
 }
 ```
@@ -505,7 +505,7 @@ docpadConfig = {
 	# ...
 	collections:
 		pages: ->
-			@getCollection('html').findAllLive({isPage:""}).on "add", (model) ->
+			@getCollection('html').findAllLive({isPage:true}).on "add", (model) ->
 				model.setMetaDefaults({layout:"default"})
 	# ...
 }
