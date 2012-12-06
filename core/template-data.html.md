@@ -20,7 +20,7 @@ title: "Template Data & Helpers"
 - `getFile(query,sorting,paging)` get a single file that matches the arguments
 - `getFilesAtPath(relativePath)` get a file at the given path, path is processed through `getPath`
 - `getDatabase()` &mdash; a [Query-Engine](https://github.com/bevry/query-engine) collection of all our documents
-- `getCollection(collectionName)` &mdash; a [Query-Engine](https://github.com/bevry/query-engine) collection of all a particular sub collection, built in collections are:
+- `getCollection(collectionName)` &mdash; a [Query-Engine](https://github.com/bevry/query-engine) collection of a particular sub collection, built in collections are:
 	- `documents` &mdash; for all documents
 	- `files` &mdash; for all files
 	- `layouts` &mdash; for all files
