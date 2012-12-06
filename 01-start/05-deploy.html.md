@@ -40,7 +40,7 @@ Inside your website's directory:
 
 	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
 	1. [Here is the guide for Nodejitsu](http://nodejitsu.com/paas/getting-started.html)
-	1. [Here is the gude for AppFog](https://docs.appfog.com/getting-started)
+	1. [Here is the guide for AppFog](https://docs.appfog.com/getting-started)
 
 1. Optional: If you're also wanting to use a custom domain for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
 
