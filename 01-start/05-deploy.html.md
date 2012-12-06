@@ -44,7 +44,7 @@ Inside your website's directory:
 
 1. Optional: If you're also wanting to use a custom domain for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
 
-	1. Ping your server e.g. `ping balupton.no.de`
+	1. Ping your server e.g. `ping balupton.herokuapp.com`
 
 	1. Grab the IP address from the output
 
