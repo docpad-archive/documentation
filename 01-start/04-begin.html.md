@@ -197,7 +197,7 @@ So to add the three default blocks to our layout, we'll update our layout to bec
 </html>
 ```
 
-Saving that, and manually reloading our browser, we'll notice that our page now has the needed scripts for the Live Reloaded Plugin automaticly injected right where the scripts block is outputted. Now if we make a change to any of the files, we'll notice the browser will automatically refresh. Amazing!
+Saving that, and manually reloading our browser, we'll notice that our page now has the needed scripts for the Live Reloaded Plugin automatically injected right where the scripts block is outputted. Now if we make a change to any of the files, we'll notice the browser will automatically refresh. Amazing!
 
 In the next part, we'll work with blocks some more by adding our assets to them.
 
@@ -250,9 +250,9 @@ Upon saving, we'll notice that our browser will automatically reload, and that o
 
 ### Scripts
 
-Now lets add a nifty loading effect using JavaScript and the [jQuery JavaScript Library](http://jquery.com). As always, there's plenty of other JavaScript Libaries you can use, but in this guide we'll go with jQuery.
+Now lets add a nifty loading effect using JavaScript and the [jQuery JavaScript Library](http://jquery.com). As always, there's plenty of other JavaScript Libraries you can use, but in this guide we'll go with jQuery.
 
- To do this, we'll forst [download the jQuery library](http://code.jquery.com/jquery.js) and put it inside our files directory at `src/files/vendor/jquery.js`. The reason we use the file directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them all inside our files directory is a good choice for consitency and speed. Whereas for our own scripts and styles, we probably want to eventually render them with something, so generally we'll just put them in the documents directory to make the transition to rendering engines easier.
+ To do this, we'll first [download the jQuery library](http://code.jquery.com/jquery.js) and put it inside our files directory at `src/files/vendor/jquery.js`. The reason we use the file directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them all inside our files directory is a good choice for consistency and speed. Whereas for our own scripts and styles, we probably want to eventually render them with something, so generally we'll just put them in the documents directory to make the transition to rendering engines easier.
 
  Now that we have jQuery inside our project, we'll add our nifty loading effect by adding a script file at `src/documents/scripts/script.js` and let it contain:
 
@@ -283,7 +283,7 @@ Now some of you may wonder why we omitted the [jQuery onDomReady](http://api.jqu
 
 
 ## Getting the benefits of Pre-Processors
-Pre-Processors are amazing things. They allow us to write documents in one language (the source language), but export them to a different language (the target language). This is extremely benefifical as you always get to use the syntax that you enjoy, instead of the syntax that you are forced to work with - but most importantly, pre-processors usually offer you more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
+Pre-Processors are amazing things. They allow us to write documents in one language (the source language), but export them to a different language (the target language). This is extremely beneficial as you always get to use the syntax that you enjoy, instead of the syntax that you are forced to work with - but most importantly, pre-processors usually offer you more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
 
 
 ### Using Markdown, a HTML Pre-Processor
@@ -333,7 +333,7 @@ $("body").hide().fadeIn(1000)
 Which gives us the same result, but with all the benefits of CoffeeScript. Now, just like all rendering engines, we have to:
 
 1. Indicate the rendering we want to perform - so rename `script.js` to `script.js.coffee` to indicate we want to render from CoffeeScript to JavaScript
-1. Install the plugin that can do the rendering - so to install the [CoffeeSCript Plugin](http://docpad.org/plugin/coffeescript) we'll run `npm install --save docpad-plugin-coffeescript`
+1. Install the plugin that can do the rendering - so to install the [CoffeeScript Plugin](http://docpad.org/plugin/coffeescript) we'll run `npm install --save docpad-plugin-coffeescript`
 
 Sweet, you're now ready to rock the house with CoffeeScript.
 
@@ -384,7 +384,7 @@ For more information on configuration files and what configuration is available 
 
 ### Using TemplateData for Abstractions
 
-Everything that is available to our templates is called [TemplateData](/docpad/template-data) - for instance `@document` is part of our template data. So to be able to abstract out something that our templates wil use, we will need to extend our template data. We can do this by modifying our template data configuration property like so:
+Everything that is available to our templates is called [TemplateData](/docpad/template-data) - for instance `@document` is part of our template data. So to be able to abstract out something that our templates will use, we will need to extend our template data. We can do this by modifying our template data configuration property like so:
 
 ``` coffee
 docpadConfig = {
@@ -429,7 +429,7 @@ And our template would become:
 <title><%= @getPreparedTitle() %></title>
 ```
 
-Now that is awesome. While this was a simple example, we can use this to do some really cool stuff. For instance, [here is an example of it being used to localise dates into french](https://gist.github.com/4166882).
+Now that is awesome. While this was a simple example, we can use this to do some really cool stuff. For instance, [here is an example of it being used to localize dates into french](https://gist.github.com/4166882).
 
 If you're writing a plugin, you can use [the extendTemplateData event](/docpad/events) to extend the template data.
 
@@ -466,9 +466,9 @@ Open up your Default Layout (`src/layouts/default.html.eco`) and before the `h1`
 
 Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then with that collection we find everything that has a `isPage` attribute set to `true` - which is the attribute we defined earlier when first applying our layout to our pages. With that we then convert it from a [Backbone](http://backbonejs.org/#Collection)/[QueryEngine](/queryengine/guide) Collection into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
 
-That's a bit of a mouthful, but give it a while and you'll be a pro in no time. There is one major ineffeciency with the above approach, can you guess it?
+That's a bit of a mouthful, but give it a while and you'll be a pro in no time. There is one major inefficiency with the above approach, can you guess it?
 
-The ineffeciency is that we perform that query every single time we render a layout, which is a bit silly as the results of that query don't change between renders, so really we only have to query it once and provide access to the results to our collection. Good thing we can do this.
+The inefficiency is that we perform that query every single time we render a layout, which is a bit silly as the results of that query don't change between renders, so really we only have to query it once and provide access to the results to our collection. Good thing we can do this.
 
 
 ### Creating Custom Collections via the Configuration File
@@ -480,7 +480,7 @@ docpadConfig = {
 	# ...
 	collections:
 		pages: ->
-			@getCollection('html').findAllLive({isPage:true})
+			@getCollection("html").findAllLive({isPage:true})
 	# ...
 }
 ```
@@ -491,9 +491,9 @@ Then inside our Default Layout, we'll update the `getCollection` line to become:
 <% for page in @getCollection("pages").toJSON(): %>
 ```
 
-Much better, and way more effecient. Did you spot the difference with the call we used? When performing our query we used the `findAllLive` method instead of the `findAll` method. The reasoning behind this is that `findAllLive` utilises [QueryEngine's Live Collections](/queryengine/guide) which means that we define our criteria once, then throughout time, we keep our collection up to date. In more technical detail, this works by creating a live child collection of the parent collection (in this case the `html` collection is the parent collection, and our `pages` collection is the child collection). The child collection then subscribes to `add`, `remove`, and `change` events of the parent collection and tests the model that the event was for against our child collection's criteria, and if it passes the collection it adds it, or if it doesn't pass then it removes it. This is way way better than querying everything every single time.
+Much better, and way more efficient. Did you spot the difference with the call we used? When performing our query we used the `findAllLive` method instead of the `findAll` method. The reasoning behind this is that `findAllLive` utilizes [QueryEngine's Live Collections](/queryengine/guide) which means that we define our criteria once, then throughout time, we keep our collection up to date. In more technical detail, this works by creating a live child collection of the parent collection (in this case the `html` collection is the parent collection, and our `pages` collection is the child collection). The child collection then subscribes to `add`, `remove`, and `change` events of the parent collection and tests the model that the event was for against our child collection's criteria, and if it passes the collection it adds it, or if it doesn't pass then it removes it. This is way way better than querying everything every single time.
 
-So then, what about sorting? That's easy enough, we can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument which is the sorting argument `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` which in this case will sort by the filename in ascending order. To do descending order we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add a `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging, to learn about that one as well as what type of queryies are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide)
+So then, what about sorting? That's easy enough, we can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument which is the sorting argument `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` which in this case will sort by the filename in ascending order. To do descending order we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add a `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging, to learn about that one as well as what type of queries are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide)
 
 
 ### Setting Default Meta Data Attributes for our Pages
@@ -505,7 +505,7 @@ docpadConfig = {
 	# ...
 	collections:
 		pages: ->
-			@getCollection('html').findAllLive({isPage:true}).on "add", (model) ->
+			@getCollection("html").findAllLive({isPage:true}).on "add", (model) ->
 				model.setMetaDefaults({layout:"default"})
 	# ...
 }
@@ -527,16 +527,26 @@ This ability is priceless when doing more complicated things with DocPad, for in
 
 ## Adding the Blog Posts
 
-We now have all the tools and knowledge to be able to create our blog post section, so we'll leave that bit as an exercise for yourself so you have a chance to cement the knowledge in. Time to get cracking! :)
+As you now have all the tools and knowledge required to be able to create the blog post section, we've left that part as an exercise for you! We've done this so you can best retain and make use of all the awesomeness you've just learned.
 
-- If you need pointers:
+- If you need a few pointers to help you get started, here you go :)
 	- Create a new layout called `post` that will use the default layout, use this layout to perform custom styling for your blog post (e.g. `<div class="post"><%- @content %></div>`).
 	- When creating your blog posts, we recommend giving them a `date` meta data attribute in the format of `date: 2012-12-25` so you can sort your blog posts by that date in descending order.
 	- Create a new directory called `posts` that contains all your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection to get all documents inside the `posts` output directory (`/my-new-website/out/posts`). You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.
 	- Create a new page called `posts.html.eco` that lists all your blog posts, this will be more or less the same as our navigation menu. If you would like to display descriptons of the blog posts, just add that as a meta data attribute for the blog posts, then output that meta data attribute. If you want to show the rendered content of the data, you can use `post.contentRenderedWithoutLayouts`. You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.
 
-- If you get stuck just hop on over to our [IRC Support Channel (docpad on freenode)](http://webchat.freenode.net/?channels=docpad) and someone will help you out soon enough :) [You can also discover all of our Official Support Channels via our Support Page.](/support)
+- If you're stuck and need some help, just hop on over to our [IRC Support Channel (docpad on freenode)](http://webchat.freenode.net/?channels=docpad) and someone will be with you soon enough :) [You can also discover all of our available Support Channels via our Support Page.](/support)
 
+By the way, congratulations - you now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [showcase](/docpad/showcase). To recap, you now know how to:
+
+- write documents in any language, markup, pre-processor, templating engine, whatever you wish by installing the necessary plugin for it and changing the extensions for the document
+- perform powerful abstractions using layouts, meta data, template data, and configuration files
+- create incredibly efficient custom collections filtered and sorted by your own criteria
+- do your own custom listings of content
+
+But it doesn't stop there, these were just the foundations - if you can think it, then you're able to accomplish it with DocPad. Really, there are no limits with DocPad - that's why DocPad sets you free.
+
+So, farewell and enjoy your epic journey. The power is yours!
 
 
 
@@ -549,4 +559,4 @@ We now have all the tools and knowledge to be able to create our blog post secti
 
 ## Deployment
 
-[Deployment is the next page in this guide.](/docpad/deploy)
+[Deployment is the next page of this guide.](/docpad/deploy)
