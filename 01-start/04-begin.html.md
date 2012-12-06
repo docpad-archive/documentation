@@ -105,6 +105,7 @@ Layouts wrap around our documents, so we can define the surrounding areas of a d
 	---
 	title: "Welcome!"
 	layout: "default"
+	isPage: true
 	---
 
 	<p>Welcome to My Website!</p>
@@ -116,12 +117,15 @@ Layouts wrap around our documents, so we can define the surrounding areas of a d
 	---
 	title: "About Me"
 	layout: "default"
+	isPage: true
 	---
 
 	<p>I like long walks on the beach. <strong>Plus I rock at DocPad!</strong></p>
 	```
 
 However, if you go to either the home page or the about page on our web server, you'll notice that their content is just the layout, and don't actually contain any of the document content! This is because we haven't installed the templating engine for our layout yet!
+
+We've also added a new `isPage` attribute, this is our own custom attribute and has no special meaning in DocPad. However, we will give it special meaning later on when we generating our menu listings :)
 
 
 ### Installing the Templating Engine
@@ -450,7 +454,7 @@ Open up your Default Layout (`src/layouts/default.html.eco`) and before the `h1`
 
 ``` erb
 <ul>
-	<% for page in @getCollection("html").findAll({relativeOutDirPath:""}).toJSON(): %>
+	<% for page in @getCollection("html").findAll({isPage:true}).toJSON(): %>
 		<li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
 			<a href="<%= page.url %>">
 				<%= page.title %>
@@ -460,7 +464,7 @@ Open up your Default Layout (`src/layouts/default.html.eco`) and before the `h1`
 </ul>
 ```
 
-Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then with that collection we find all the files that their `relativeOutDirPath` [attribute](/docpad/meta-data) set to `''` (which means find everything that will be outputted to the root directory of our website - so all Index and About Pages). With that we then convert it from a [Backbone](http://backbonejs.org/#Collection)/[QueryEngine](/queryengine/guide) Collection into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
+Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then with that collection we find everything that has a `isPage` attribute set to `true` - which is the attribute we defined earlier when first applying our layout to our pages. With that we then convert it from a [Backbone](http://backbonejs.org/#Collection)/[QueryEngine](/queryengine/guide) Collection into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
 
 That's a bit of a mouthful, but give it a while and you'll be a pro in no time. There is one major ineffeciency with the above approach, can you guess it?
 
@@ -476,7 +480,7 @@ docpadConfig = {
 	# ...
 	collections:
 		pages: ->
-			@getCollection('html').findAllLive({relativeOutDirPath:""})
+			@getCollection('html').findAllLive({isPage:""})
 	# ...
 }
 ```
@@ -489,7 +493,7 @@ Then inside our Default Layout, we'll update the `getCollection` line to become:
 
 Much better, and way more effecient. Did you spot the difference with the call we used? When performing our query we used the `findAllLive` method instead of the `findAll` method. The reasoning behind this is that `findAllLive` utilises [QueryEngine's Live Collections](/queryengine/guide) which means that we define our criteria once, then throughout time, we keep our collection up to date. In more technical detail, this works by creating a live child collection of the parent collection (in this case the `html` collection is the parent collection, and our `pages` collection is the child collection). The child collection then subscribes to `add`, `remove`, and `change` events of the parent collection and tests the model that the event was for against our child collection's criteria, and if it passes the collection it adds it, or if it doesn't pass then it removes it. This is way way better than querying everything every single time.
 
-So then, what about sorting? That's easy enough, we can sort by changing `@getCollection('html').findAllLive({relativeOutDirPath:""})` to add a second argument which is the sorting argument `@getCollection('html').findAllLive({relativeOutDirPath:""},[{filename:1}])` which in this case will sort by the filename in ascending order. To do descending order we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add a `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging, to learn about that one as well as what type of queryies are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide)
+So then, what about sorting? That's easy enough, we can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument which is the sorting argument `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` which in this case will sort by the filename in ascending order. To do descending order we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add a `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging, to learn about that one as well as what type of queryies are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide)
 
 
 ### Setting Default Meta Data Attributes for our Pages
@@ -501,7 +505,7 @@ docpadConfig = {
 	# ...
 	collections:
 		pages: ->
-			@getCollection('html').findAllLive({relativeOutDirPath:""}).on "add", (model) ->
+			@getCollection('html').findAllLive({isPage:""}).on "add", (model) ->
 				model.setMetaDefaults({layout:"default"})
 	# ...
 }
@@ -510,6 +514,15 @@ docpadConfig = {
 So what does this do? Its exactly the same as before, but we use the `add` event automaticaly fired by [backbone](http://backbonejs.org/#Collection-add) whenever a model (a page, file, document, whatever) is added to our collection. Then inside our event, we say we want to set our default meta data attributes for the model - them being setting the layout to `"default"`.
 
 This ability is priceless when doing more complicated things with DocPad, for instance we use it for this documentation to be able to base the navigation structure of our documentation files off their physical location of our file system pretty easily. For instance, if we have a file `docs/docpad/01-start/04-begin.html.md` we can detect that the project is `docpad` so assign `project: "docpad"` to the meta data, as well as the section is "start" and it is order first - so set `category: "start"` and `categoryOrder: 1` as well, and that our file is `begin` and ordered 4th. That's just one example of more nifty things, there's plenty more you'll discover even more on your own epic journey :)
+
+
+
+
+
+
+
+
+
 
 
 ## Adding the Blog Posts
