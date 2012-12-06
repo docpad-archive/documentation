@@ -11,7 +11,7 @@ title: "Template Data & Helpers"
 
 ## Standard Template Helpers
 
-- `getEnvironment()` &mdash;	a string of the current environment(s) we are running under
+- `getEnvironment()` &mdash; a string of the current environment(s) we are running under
 - `getEnvironments()` &mdash; an array of the current environments we are running under
 - `referencesOthers()` &mdash; when called, will set the document's `referenceOthers` [meta data](/docpad/meta-data) property to `true`
 - `getDocument()` &mdash; a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/src/lib/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/src/lib/models/file.coffee) which extends a [Backbone Model](http://documentcloud.github.com/backbone/#Model)
