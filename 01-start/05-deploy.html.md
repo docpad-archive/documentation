@@ -1,7 +1,7 @@
 DocPad websites can be deployed anywhere. Here are a few of the most common deployments.
 
 
-## Via a Node.js Hosting Provider
+## To a Node.js Hosting Provider
 
 Works great with [Heroku](http://www.heroku.com/), [Nodejitsu](http://nodejitsu.com/) and [AppFog](https://www.appfog.com/).
 
@@ -54,14 +54,14 @@ Inside your website's directory:
 
 
 
-## Via a Standard Static Server (apache/nginx)
+## To a Standard Static Server (apache/nginx)
 
 1. Perform a generation for a static production environment using `docpad generate --env static`
 
 2. Upload the generated directory to your server's `public_html` or `htdocs` directory
 
 
-## Via GitHub Pages
+## To GitHub Pages
 
 1. For GitHub Pages we want our output directory to our website's root directory. To do this, we'll add `outPath: '.'` to our [docpad configuration file](/docpad/config)
 
@@ -70,3 +70,8 @@ Inside your website's directory:
 3. Commit your changes to the `gh-pages` branch, and push the branch to github
 
 4. Optional: If you're also wanting to use a custom domain for your website, [follow the GitHub Pages guide here](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)
+
+
+## To a Cloud Data Storage Provider (AWS S3, Google Storage, etc)
+
+[Checkout the DocPad Sunny Plugin](https://github.com/bobobo1618/docpad-plugin-sunny)
