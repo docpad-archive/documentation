@@ -125,7 +125,7 @@ Layouts wrap around our documents, so we can define the surrounding areas of a d
 
 However, if you go to either the home page or the about page on our web server, you'll notice that their content is just the layout, and don't actually contain any of the document content! This is because we haven't installed the templating engine for our layout yet!
 
-We've also added a new `isPage` attribute, this is our own custom attribute and has no special meaning in DocPad. However, we will give it special meaning later on when we generating our menu listings :)
+We've also added a new `isPage` attribute, this is our own custom attribute and has no special meaning in DocPad. However, we will give it special meaning later on when we add our menu listings :)
 
 
 ### Installing the Templating Engine
