@@ -24,7 +24,7 @@ title: "Template Data & Helpers"
 	- `documents` &mdash; for all documents
 	- `files` &mdash; for all files
 	- `layouts` &mdash; for all files
-	- `html` &mdash; for all html documents and files
+	- `html` &mdash; for all documents and files and result in a html file
 	- `stylesheet` &mdash; for all stylesheet files (includes stylesheet pre-processor files)
 - `getBlock(blockName)` &mdash; valid block names are:
 	- `scripts` &mdash; a collection of scripts to be outputted
