@@ -25,8 +25,8 @@ Great! Lets get started. Oh, and if you ever get stuck, have a question, or need
 Before we get hacking away on content, we have to create our project and set it up with the [standard structure](/docpad/overview) that DocPad uses. To do this, we'll run the following:
 
 ``` bash
-mkdir my-website
-cd my-website
+mkdir my-new-website
+cd my-new-website
 docpad run
 ```
 
@@ -218,8 +218,10 @@ It's time to start adding some assets. Before proceeding with this section, plea
 Lets add our logo to our layout's header. We'll [download the DocPad logo](http://d.pr/i/cfmt+) and place it inside our files directory at `src/files/images/logo.gif` (binary files should always go inside the files directory). Then inside our layout, we'll add the following to get our logo on each page:
 
 ``` html
-<img src="images/logo.gif" />
+<img src="/images/logo.gif" />
 ```
+
+If you are downloading the file directory into the specified location, you may have to restart DocPad. We're working on this.
 
 
 ### Stylesheets
@@ -326,7 +328,7 @@ $("body").hide().fadeIn(1000)
 
 Which gives us the same result, but with all the benefits of CoffeeScript. Now, just like all rendering engines, we have to:
 
-1. Indicate the rendering we want to perform - so rename `script.js` to `script.css.coffee` to indicate we want to render from CoffeeScript to JavaScript
+1. Indicate the rendering we want to perform - so rename `script.js` to `script.js.coffee` to indicate we want to render from CoffeeScript to JavaScript
 1. Install the plugin that can do the rendering - so to install the [CoffeeSCript Plugin](http://docpad.org/plugin/coffeescript) we'll run `npm install --save docpad-plugin-coffeescript`
 
 Sweet, you're now ready to rock the house with CoffeeScript.
@@ -357,7 +359,7 @@ We could update our title code in our layout template to become:
 
 Which would achieve the goal, but then we have to update the website title in two places if we want to use something else besides `My Website`, and considering this a common abstraction it would be nice if we could abstract it out, say into a configuration file!
 
-So lets create our configuration at the location `where-your-website-is-located/docpad.coffee` and give it the contents:
+So lets create our configuration at the location `my-new-website/docpad.coffee` and give it the contents:
 
 ``` coffee
 # Define the Configuration
@@ -369,7 +371,9 @@ docpadConfig = {
 module.exports = docpadConfig
 ```
 
-And restart DocPad, so DocPad is now aware that we are using our configuration file (so it can now watch it). The first of this configuration is where we actually define our configuration (where the `# ...` is located), and the second part is a [node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we say add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
+You'll have to restart DocPad so that DocPad can become aware of the configuration file. Then on, DocPad will automatically reload your configuration when changes occur.
+
+The first part of this configuration is where we actually define our configuration (where the `# ...` is located), and the second part is a [node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we say add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
 
 For more information on configuration files and what configuration is available to your, refer to our [Configuration Page](/docpad/config).
 
@@ -447,16 +451,16 @@ Open up your Default Layout (`src/layouts/default.html.eco`) and before the `h1`
 ``` erb
 <ul>
 	<% for page in @getCollection("html").findAll({relativeOutDirPath:""}).toJSON(): %>
-		<li>
-			<a href="<%= @document.url %>">
-				<%= @document.title %>
+		<li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
+			<a href="<%= page.url %>">
+				<%= page.title %>
 			</a>
 		</li>
 	<% end %>
 </ul>
 ```
 
-Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then with that collection we find all the files that their `relativeOutDirPath` [attribute](/docpad/meta-data) set to either `''` (so empty - like our `index.html` file) or `'pages'` (like our About Page). With that we then convert it from a [Backbone](http://backbonejs.org/#Collection)/[QueryEngine](/queryengine/guide) Collection into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
+Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then with that collection we find all the files that their `relativeOutDirPath` [attribute](/docpad/meta-data) set to `''` (which means find everything that will be outputted to the root directory of our website - so all Index and About Pages). With that we then convert it from a [Backbone](http://backbonejs.org/#Collection)/[QueryEngine](/queryengine/guide) Collection into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
 
 That's a bit of a mouthful, but give it a while and you'll be a pro in no time. There is one major ineffeciency with the above approach, can you guess it?
 
@@ -471,8 +475,8 @@ So then, lets go back to our [DocPad Configuration File](/docpad/config) (`docpa
 docpadConfig = {
 	# ...
 	collections:
-		pages: (database) ->
-			database.findAllLive({relativeOutDirPath:""})
+		pages: ->
+			@getCollection('html').findAllLive({relativeOutDirPath:""})
 	# ...
 }
 ```
@@ -483,9 +487,9 @@ Then inside our Default Layout, we'll update the `getCollection` line to become:
 <% for page in @getCollection("pages").toJSON(): %>
 ```
 
-Much better, and way more effecient. Did you spot the difference with the call we used? When creating our custom collections, we use the `findAllLive` call instead of the `findAll` call. The reasoning behind this is that `findAllLive` utilises [QueryEngine's Live Collections](/queryengine/guide) which means that we define our criteria once, then throughout time, we keep our collection up to date. In more technical detail, this works by creating a live child collection of the database collection, the child collection then subscribes to `add`, `remove`, and `change` events of the parent collection (the database collection) and tests the model that the event was for against our child collection's criteria (the pages collection) if it passes the collection it adds it, if it doesn't pass it removes it. This is way way better than querying everything every single time.
+Much better, and way more effecient. Did you spot the difference with the call we used? When performing our query we used the `findAllLive` method instead of the `findAll` method. The reasoning behind this is that `findAllLive` utilises [QueryEngine's Live Collections](/queryengine/guide) which means that we define our criteria once, then throughout time, we keep our collection up to date. In more technical detail, this works by creating a live child collection of the parent collection (in this case the `html` collection is the parent collection, and our `pages` collection is the child collection). The child collection then subscribes to `add`, `remove`, and `change` events of the parent collection and tests the model that the event was for against our child collection's criteria, and if it passes the collection it adds it, or if it doesn't pass then it removes it. This is way way better than querying everything every single time.
 
-So then, what about sorting? That's easy enough, we can sort by changing `database.findAllLive({relativeOutDirPath:""})` to add a second argument which is the sorting argument `database.findAllLive({relativeOutDirPath:""},[{filename:1}])` which in this case will sort by the filename in ascending order. To do descending order we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add a `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging, to learn about that one as well as what type of queryies are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide)
+So then, what about sorting? That's easy enough, we can sort by changing `@getCollection('html').findAllLive({relativeOutDirPath:""})` to add a second argument which is the sorting argument `@getCollection('html').findAllLive({relativeOutDirPath:""},[{filename:1}])` which in this case will sort by the filename in ascending order. To do descending order we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add a `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging, to learn about that one as well as what type of queryies are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide)
 
 
 ### Setting Default Meta Data Attributes for our Pages
@@ -496,14 +500,14 @@ Considering we'd probably like all our pages to use the default layout, we may b
 docpadConfig = {
 	# ...
 	collections:
-		pages: (database) ->
-			database.findAllLive({relativeOutDirPath:""}).on "add", (model) ->
-				model.setMetaDefaults({layout:"page"})
+		pages: ->
+			@getCollection('html').findAllLive({relativeOutDirPath:""}).on "add", (model) ->
+				model.setMetaDefaults({layout:"default"})
 	# ...
 }
 ```
 
-So what does this do? Its exactly the same as before, but we use the `add` event automaticaly fired by [backbone](http://backbonejs.org/#Collection-add) whenever a model (a page, file, document, whatever) is added to our collection. Then inside our event, we say we want to set our default meta data attributes for the model - them being setting the layout to `page`.
+So what does this do? Its exactly the same as before, but we use the `add` event automaticaly fired by [backbone](http://backbonejs.org/#Collection-add) whenever a model (a page, file, document, whatever) is added to our collection. Then inside our event, we say we want to set our default meta data attributes for the model - them being setting the layout to `"default"`.
 
 This ability is priceless when doing more complicated things with DocPad, for instance we use it for this documentation to be able to base the navigation structure of our documentation files off their physical location of our file system pretty easily. For instance, if we have a file `docs/docpad/01-start/04-begin.html.md` we can detect that the project is `docpad` so assign `project: "docpad"` to the meta data, as well as the section is "start" and it is order first - so set `category: "start"` and `categoryOrder: 1` as well, and that our file is `begin` and ordered 4th. That's just one example of more nifty things, there's plenty more you'll discover even more on your own epic journey :)
 
