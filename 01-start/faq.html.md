@@ -97,6 +97,5 @@ Check out the `plugins` [configuration property](/docpad/config).
 
 ## Want more help?
 
-- Getting errors? [Try troubleshooting](/docpad/troubleshoot)
-- Found a bug? [File a Bug Report on the Github Issue Tracker](/docpad/issues)
-- Need support? [Post a message in our Google Group Community](/docpad/forum)
+- Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
+- Need support? [Check out our Support Channels](/support)
