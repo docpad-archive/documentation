@@ -90,7 +90,7 @@ Check out the `plugins` [configuration property](/docpad/config).
 
 
 ## Where can I host my docpad website?
-[Check out our deployment section here.(/docpad/deploy)
+[Check out our deployment section here.](/docpad/deploy)
 
 
 

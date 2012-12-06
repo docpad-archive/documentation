@@ -530,9 +530,10 @@ This ability is priceless when doing more complicated things with DocPad, for in
 We now have all the tools and knowledge to be able to create our blog post section, so we'll leave that bit as an exercise for yourself so you have a chance to cement the knowledge in. Time to get cracking! :)
 
 - If you need pointers:
-	- Create a new layout called `post` that will use the default layout
-	- Create a new directory called `posts` that contains your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection
-	- When creating your blog posts, we recommend giving them a `data` meta data attribute in the format of `date: 2012-12-25` so you can sort your blog posts by that date.
+	- Create a new layout called `post` that will use the default layout, use this layout to perform custom styling for your blog post (e.g. `<div class="post"><%- @content %></div>`).
+	- When creating your blog posts, we recommend giving them a `date` meta data attribute in the format of `date: 2012-12-25` so you can sort your blog posts by that date in descending order.
+	- Create a new directory called `posts` that contains all your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection to get all documents inside the `posts` output directory (`/my-new-website/out/posts`). You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.
+	- Create a new page called `posts.html.eco` that lists all your blog posts, this will be more or less the same as our navigation menu. If you would like to display descriptons of the blog posts, just add that as a meta data attribute for the blog posts, then output that meta data attribute. If you want to show the rendered content of the data, you can use `post.contentRenderedWithoutLayouts`. You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.
 
 - If you get stuck just hop on over to our [IRC Support Channel (docpad on freenode)](http://webchat.freenode.net/?channels=docpad) and someone will help you out soon enough :) [You can also discover all of our Official Support Channels via our Support Page.](/support)
 
