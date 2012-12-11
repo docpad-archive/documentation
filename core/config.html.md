@@ -134,3 +134,18 @@ docpadConfig = {
 # Export our DocPad Configuration
 module.exports = docpadConfig
 ```
+
+
+## Environment Configuration File
+
+We also support `.env` environment configuration file, the format works like so:
+
+```
+KEY=VALUE
+KEY2=VALUE2
+```
+
+With all key value pairs being added to the `process.env` environment variable.
+
+It is useful for setting sensitive information such as API keys and database information etc - if using for this purpose, then be sure to add the `.env` file to your `.gitignore` file.
+
