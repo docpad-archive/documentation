@@ -31,7 +31,7 @@ This file should look something like this:
 ``` json
 {
 	"name": "docpad-plugin-yourPlugin",
-	"version": "0.1.0",
+	"version": "2.0.0",
 	"description": "DocPad plugin which adds the ability to render Something to Something Else.",
 	"homepage": "https://github.com/your-github-username/docpad-plugin-yourPlugin",
 	"keywords": [
@@ -55,8 +55,8 @@ This file should look something like this:
 		"url": "http://github.com/your-github-username/docpad-plugin-yourPlugin.git"
 	},
 	"engines" : {
-		"node": ">=0.4.0",
-		"docpad": "5.x"
+		"node": ">=0.6.0",
+		"docpad": "6.x"
 	},
 	"dependencies": {
 		"something": "1.0.x"
@@ -66,6 +66,8 @@ This file should look something like this:
 ```
 
 While it is optional, it is highly recommended - and required if you wish to share your plugin, or if you want DocPad to automatically handle your plugin's dependencies. While DocPad utilizes the [MIT License](http://creativecommons.org/licenses/MIT/), you don't have to.
+
+The reason reason why we do version `2.0.0` is just a general convention. Version 2 plugins are compatible for with DocPad v6, whereas Version 1 plugins are compatible with DocPad v5 (before DocPad v5 plugins were bundled).
 
 
 ## Types of plugins
@@ -119,11 +121,11 @@ Here's an example directory structure for a plugin:
 
 ```
 docpad-plugin-yourPlugin/
-						 src/
-							 yourPlugin.plugin.coffee
-						 Makefile
-						 README.md
-						 package.json
+	 src/
+		 yourPlugin.plugin.coffee
+	 Makefile
+	 README.md
+	 package.json
 ```
 
 #### docpad-plugin-yourPlugin/src/yourPlugin.plugin.coffee
@@ -138,7 +140,7 @@ This is the same as previously specified above.
 
 A makefile makes it a bit easier to compile and test your plugin. This is fairly standard so you probably won't need to modify this file for your plugin.
 
-```
+``` bash
 # If you change something here, be sure to reflect the changes in:
 # - the scripts section of the package.json file
 # - the .travis.yml file
@@ -156,10 +158,10 @@ SRC=src
 # Documentation
 
 # Usage: coffee [options] path/to/script.coffee -- [args]
-# -b, --bare         compile without a top-level function wrapper
-# -c, --compile      compile to JavaScript and save as .js files
-# -o, --output       set the output directory for compiled JavaScript
-# -w, --watch        watch scripts for changes and rerun commands
+# -b, --bare		 compile without a top-level function wrapper
+# -c, --compile	  compile to JavaScript and save as .js files
+# -o, --output	   set the output directory for compiled JavaScript
+# -w, --watch		watch scripts for changes and rerun commands
 
 
 # -----------------
@@ -210,21 +212,22 @@ If you're going to release a plugin for other people to use its probably wise to
 
 ```
 docpad-plugin-yourPlugin/
-					src/
-						yourPlugin.plugin.coffee
-						yourPlugin.tester.coffee
-					test/
-						 out-expected/
-						 	yourPluginTest.html
-						 src/
-							 documents/
-							 	yourPluginTest.html.eco
-						 yourPlugin.test.js
-						 package.json
-					Makefile
-					README.md
-					package.json
+	src/
+		yourPlugin.plugin.coffee
+		yourPlugin.tester.coffee
+	test/
+		 out-expected/
+		 	yourPluginTest.html
+		 src/
+			 documents/
+			 	yourPluginTest.html.eco
+		 yourPlugin.test.js
+		 package.json
+	Makefile
+	README.md
+	package.json
 ```
+
 Notice the new `yourPlugin.tester.coffee` and `test` folder. These contain the test runner and the tests themselves.
 
 #### docpad-plugin-yourPlugin/src/yourPlugin.tester.coffee
@@ -232,6 +235,7 @@ Notice the new `yourPlugin.tester.coffee` and `test` folder. These contain the t
 This file exports a class that will be used to test your plugin. For now there's just the one tester type to extend from, `RendererTester` which by default runs your plugin against a folder of documents and compares the output to the contents of the `out-expected` folder. This is all you'll need for most plugins as we're only really concerned about the input and output of our plugins. For more complex plugins you might want to take a look at the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee) for more details and other potential testers to extend from.
 
 Below is a simple tester implementation:
+
 ``` coffee
 # Export Plugin Tester
 module.exports = (testers) ->
@@ -250,6 +254,7 @@ Note you would need to change `yourPlugin` to whatever you named your plugin in 
 #### docpad-plugin-yourPlugin/test/package.json
 
 The `package.json` in the `test` folder should specify all the dependencies for your tests:
+
 ``` json
 {
 	"name": "docpad-plugin-yourPlugin-testsuite",
@@ -260,6 +265,7 @@ The `package.json` in the `test` folder should specify all the dependencies for 
 	}
 }
 ```
+
 #### docpad-plugin-yourPlugin/test/yourPlugin.test.js
 
 This file simply calls into DocPad and tell it to test our plugin, you will need to modify the `pluginName` property to match your plugin:
@@ -267,20 +273,21 @@ This file simply calls into DocPad and tell it to test our plugin, you will need
 ```
 require('docpad').require('testers').test({pluginPath: __dirname+'/..',pluginName:'yourPlugin'});
 ```
+
 #### docpad-plugin-yourPlugin/package.json
 
 You'll want to modify the `package.json` for your plugin to support the test process, simply add the `devDependencies` and `scripts` objects to the configuration as shown below:
 
 ``` json
 {
-...
-    "devDependencies": {
-        "coffee-script": "1.4.x"
-    },
-    "scripts": {
-        "test": "node ./test/yourPlugin.test.js"
-    }
-...
+	// ...
+	"devDependencies": {
+		"coffee-script": "1.4.x"
+	},
+	"scripts": {
+		"test": "node ./test/yourPlugin.test.js"
+	}
+	// ...
 }
 ```
 
@@ -294,7 +301,7 @@ DocPad's `RendererTester` will setup an instance of DocPad using the configurati
 
 Before we can run our unit tests we'll need to get DocPad and your plugin setup correctly. First you will need to clone a copy of the DocPad repository as you'll need the original source to run the tests. You'll then want to set it up and compile it. We're also going to link this copy of DocPad into your NPM module cache so that whenever you use DocPad it actually points to this copy.
 
-```
+``` bash
 git clone https://github.com/bevry/docpad.git
 cd docpad
 npm install
@@ -304,7 +311,7 @@ make compile
 
 This sets up your copy of DocPad and makes it so that NPM will use this copy instead of the one in the NPM repository. Next you'll need to do a similar setup for your plugin.
 
-```
+``` bash
 cd docpad-plugin-yourPlugin
 npm install
 npm link docpad
@@ -315,7 +322,7 @@ This will install all the dependencies for your plugin, and link the DocPad inst
 
 Now we're ready to run the tests!
 
-```
+``` bash
 make test
 ```
 

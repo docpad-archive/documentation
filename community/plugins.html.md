@@ -42,13 +42,13 @@ These plugins add extra functionality to DocPad
 - [feedr](http://docpad.org/plugin/feedr/) - Allows you to render remote feeds within your templates
 - [highlightjs](http://docpad.org/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [livereload](http://docpad.org/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
+- [paged](https://github.com/benjamind/docpad-plugin-paged) - Adds multiple page support to documents allowing you to render one document out to many pages.
 - [partials](http://docpad.org/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](http://docpad.org/plugin/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
 - [related](http://docpad.org/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
-- [text](http://docpad.org/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
-- [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation.
-- [paged](https://github.com/benjamind/docpad-plugin-paged) - Adds multiple page support to documents allowing you to render one document out to many pages.
 - [sitemap](https://github.com/benjamind/docpad-plugin-sitemap) - Generates a `sitemap.xml` file for your site from the `html` documents collection
+- [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation
+- [text](http://docpad.org/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
 
 ## Older plugins
 
