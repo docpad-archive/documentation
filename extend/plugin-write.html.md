@@ -267,6 +267,31 @@ This file simply calls into DocPad and tell it to test our plugin, you will need
 ```
 require('docpad').require('testers').test({pluginPath: __dirname+'/..',pluginName:'yourPlugin'});
 ```
+### docpad-plugin-yourPlugin/package.json
+
+You'll want to modify the `package.json` for your plugin to support the test process, simply add these two objects to the file:
+
+``` json
+{
+...
+	"engines" : {
+		"node": ">=0.4.0",
+		"docpad": "5.x"
+	},
+	"dependencies": {
+		"something": "1.0.x"
+	},
+	"main": "./yourPlugin.plugin.coffee",
+    "devDependencies": {
+        "coffee-script": "1.4.x"
+    },
+    "scripts": {
+        "test": "node ./test/yourPlugin.test.js"
+    }
+}
+```
+
+These tell NPM how to test the plugin and add the coffee script dependency for development purposes.
 
 ### Writing the tests
 
