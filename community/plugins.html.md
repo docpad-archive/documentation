@@ -47,6 +47,8 @@ These plugins add extra functionality to DocPad
 - [related](http://docpad.org/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
 - [text](http://docpad.org/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
 - [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation.
+- [paged](https://github.com/benjamind/docpad-plugin-paged) - Adds multiple page support to documents allowing you to render one document out to many pages.
+- [sitemap](https://github.com/benjamind/docpad-plugin-sitemap) - Generates a `sitemap.xml` file for your site from the `html` documents collection
 
 ## Older plugins
 
