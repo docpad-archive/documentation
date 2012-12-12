@@ -267,7 +267,7 @@ This file simply calls into DocPad and tell it to test our plugin, you will need
 ```
 require('docpad').require('testers').test({pluginPath: __dirname+'/..',pluginName:'yourPlugin'});
 ```
-### docpad-plugin-yourPlugin/package.json
+#### docpad-plugin-yourPlugin/package.json
 
 You'll want to modify the `package.json` for your plugin to support the test process, simply add the `devDependencies` and `scripts` objects to the configuration as shown below:
 
