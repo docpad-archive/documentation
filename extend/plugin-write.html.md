@@ -269,25 +269,18 @@ require('docpad').require('testers').test({pluginPath: __dirname+'/..',pluginNam
 ```
 ### docpad-plugin-yourPlugin/package.json
 
-You'll want to modify the `package.json` for your plugin to support the test process, simply add these two objects to the file:
+You'll want to modify the `package.json` for your plugin to support the test process, simply add the `devDependencies` and `scripts` objects to the configuration as shown below:
 
 ``` json
 {
 ...
-	"engines" : {
-		"node": ">=0.4.0",
-		"docpad": "5.x"
-	},
-	"dependencies": {
-		"something": "1.0.x"
-	},
-	"main": "./yourPlugin.plugin.coffee",
     "devDependencies": {
         "coffee-script": "1.4.x"
     },
     "scripts": {
         "test": "node ./test/yourPlugin.test.js"
     }
+...
 }
 ```
 
