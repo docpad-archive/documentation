@@ -1,4 +1,4 @@
-Feel free to [update this page](/docpad/showcase/_edit) with your own projects or others which you have found. Note: requires a github account.
+Feel free to [update this page](https://github.com/bevry/docpad-documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
 
 
 ## In the press
