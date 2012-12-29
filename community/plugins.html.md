@@ -1,4 +1,4 @@
-Here is a listing of all the plugins available for DocPad. If you have created a plugin, be sure to list it here :-)
+Here is a listing of all the plugins available for DocPad. If you have created a plugin, be sure to [include it in this listing!](https://github.com/bevry/docpad-documentation/edit/master/community/plugins.html.md) :)
 
 ## Installing
 
