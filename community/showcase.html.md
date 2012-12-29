@@ -14,6 +14,8 @@ DocPad mentioned around the web. Oldest first.
 - [DocPad Talk @ Paris.js](http://djebbz.github.com/docpad-paris-js/) - Presentation of DocPad at Paris.js, May 30th 2012
 - [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6
 - [DocPad featured on Webification](http://webification.com/create-awesome-websites-intuitively-docpad) - Splendid docs, easy building, DocPad has it all.
+- [Rapid Web Development with DocPad at Node Ninjas, Sydney](https://vimeo.com/53755097) - Overview of DocPad from its creator
+
 
 ## Websites
 
@@ -54,6 +56,7 @@ welcome to my online portfolio
 - [Vicktor Ilieff](http://www.viktorilieff.com/) - Viktor Ilieff is an artist, conductor, composer and visionary. His art rests on the principle that the aesthetics of the means of expression should align with the times we live in.
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 - [Workshop 33](http://www.workshop33.com/) - Hand-crafted websites, made in Sonoma County since 1999
+
 
 ## Applications
 
