@@ -42,6 +42,7 @@ These are plugins that add extra functionality to DocPad:
 - [feedr](http://docpad.org/plugin/feedr/) - Allows you to render remote feeds within your templates
 - [highlightjs](http://docpad.org/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [livereload](http://docpad.org/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
+- [nativecomments](http://docpad.org/plugin/nativecomments/) - Adds support for native comments to DocPad
 - [paged](https://github.com/benjamind/docpad-plugin-paged) - Adds multiple page support to documents allowing you to render one document out to many pages.
 - [partials](http://docpad.org/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](http://docpad.org/plugin/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
