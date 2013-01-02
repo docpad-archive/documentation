@@ -7,7 +7,7 @@ To install a plugin, do a `npm install --save docpad-plugin-#{pluginName}` insid
 
 ## Renderers
 
-These plugins add support for extra markups and languages to DocPad
+These are plugins that add support for extra markups and languages to DocPad:
 
 - [coffeescript](http://docpad.org/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
 - [coffeekup](http://docpad.org/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
@@ -32,7 +32,7 @@ These plugins add support for extra markups and languages to DocPad
 
 ## Helpers
 
-These plugins add extra functionality to DocPad
+These are plugins that add extra functionality to DocPad:
 
 - [associatedfiles](http://docpad.org/plugin/associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
 - [buildr](http://docpad.org/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
@@ -51,9 +51,29 @@ These plugins add extra functionality to DocPad
 - [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation
 - [text](http://docpad.org/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
 
-## Older plugins
 
-These plugins are for older versions of DocPad, or have been deprecated in favour of other plugins.
+## NIFTIES
+
+These are miscellaneous nifty things that you can do with DocPad:
+
+- [Localising Dates](https://gist.github.com/4166882)
+- [Automatically set custom meta data for collections](https://gist.github.com/4166806)
+- [Absolute URL Helper](https://gist.github.com/3939146)
+- [Benchmarking DocPad](https://gist.github.com/3906050)
+- [Sitemap Generation](https://gist.github.com/3898935)
+- [Concatenate your scripts with Browserify](https://gist.github.com/4398093)
+- [Minify your assets with Grunt](https://gist.github.com/3898915)
+- [Minify your assets automatically post-deployment with Cloudflare](http://blog.cloudflare.com/an-all-new-and-improved-autominify)
+- [Custom Routing](https://gist.github.com/3695936)
+- [Paging Solutions](https://gist.github.com/3695876)
+- [Responsive Layouts in Stylus](https://gist.github.com/1549029)
+- [Thoughts on a DocPad GUI](https://gist.github.com/2906284)
+- [Getting Ruby, SASS and DocPad working on Heroku](https://gist.github.com/4342818)
+
+
+## Older
+
+These are plugins for older versions of DocPad, or have been deprecated in favour of other plugins:
 
 - [markdownreferencelinks](https://github.com/Delapouite/docpad-markdownreferencelinks) - Provides a way to put links references into the header of a document so they can be used later inside its markdown content
 - [markdown](http://docpad.org/plugin/markdown/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown` - deprecated in favor of marked
