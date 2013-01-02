@@ -13,8 +13,9 @@ DocPad mentioned around the web. Oldest first.
 - [Shop Talk Show Podcast](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and [Doug Neiner](http://code.dougneiner.com/)'s workflow (4 minutes in)
 - [DocPad Talk @ Paris.js](http://djebbz.github.com/docpad-paris-js/) - Presentation of DocPad at Paris.js, May 30th 2012
 - [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6
-- [DocPad featured on Webification](http://webification.com/create-awesome-websites-intuitively-docpad) - Splendid docs, easy building, DocPad has it all.
+- [DocPad featured on Webification](http://webification.com/create-awesome-websites-intuitively-docpad) - Splendid docs, easy building, DocPad has it all
 - [Rapid Web Development with DocPad at Node Ninjas, Sydney](https://vimeo.com/53755097) - Overview of DocPad from its creator
+- [The Source, with Scott Hanselman: Static Sites with DocPad](http://tekpub.com/shows/the_source/3) - In this episode we kick up a site, look at how it works, and have a discussion about the relevance of static sites in general
 
 
 ## Websites
