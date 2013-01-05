@@ -93,9 +93,16 @@ Check out the `plugins` [configuration property](/docpad/config).
 [Check out our deployment section here.](/docpad/deploy)
 
 
-## How can I get jade, handlebars, whatever to render markdown, coffeescript, eco, whatever?
-Jade has a convention of `:theFilter` to render content with a particular filter (e.g. `:markdown`) the issue is that the rendering of these filters is handled entirely by jade instead of being handled by docpad - which often causes unexpected issues. To use the docpad rendering engine, you can use the [text plugin](http://docpad.org/plugin/text) and then output the following html to render markdown content `<text render="markdown># your markdown</text>`, you can also combine renderings just like we do with extensions by doing `<text render="html.md.eco"># <%='eco'%> to *markdown* to html</text>`.
+## How can I get jade to render other DocPad supported markups?
+[Check out the usage section on the Jade Plugin.](https://github.com/docpad/docpad-plugin-jade#usage)
 
+
+## How can I get my templating engine to render other DocPad supported markups?
+[Check out the text plugin.](http://docpad.org/plugin/text/)
+
+
+## How can I re-use particular templates again and again throughout my site?
+[Check out the partials plugin.](http://docpad.org/plugin/partials/)
 
 
 
