@@ -43,7 +43,7 @@ These are plugins that add extra functionality to DocPad:
 - [highlightjs](http://docpad.org/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [livereload](http://docpad.org/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [nativecomments](http://docpad.org/plugin/nativecomments/) - Adds support for native comments to DocPad
-- [paged](https://github.com/benjamind/docpad-plugin-paged) - Adds multiple page support to documents allowing you to render one document out to many pages.
+- [paged](http://docpad.org/plugin/paged/) - Adds multiple page support to documents allowing you to render one document out to many pages.
 - [partials](http://docpad.org/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](http://docpad.org/plugin/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
 - [related](http://docpad.org/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
