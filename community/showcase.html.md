@@ -17,6 +17,7 @@ DocPad mentioned around the web. Oldest first.
 - [Ben Dellare's Blog](http://www.delarre.net/) - Great blog full of DocPad articles, including [Going Static](http://www.delarre.net/posts/going-static.html), [Blogging with DocPad](http://www.delarre.net/posts/blogging-with-docpad.html), and [Creating a DocPad Plugin](http://www.delarre.net/posts/creating-a-docpad-plugin.html)
 - [Rapid Web Development with DocPad at Node Ninjas, Sydney](https://vimeo.com/53755097) - Overview of DocPad from its creator
 - [The Source, with Scott Hanselman: Static Sites with DocPad](http://tekpub.com/shows/the_source/3) - In this episode we kick up a site, look at how it works, and have a discussion about the relevance of static sites in general
+- [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](http://www.windowsazure.com/en-us/home/scenarios/web-sites/).
 
 
 ## Websites
