@@ -60,7 +60,7 @@ Inside your website's directory:
 		IF !ERRORLEVEL! NEQ 0 goto error
 		```
 
-1. Your now ready to do a deploy to your hosting provider. Follow the guide of your hosting provider in order to do this.
+1. You're now ready to do a deploy to your hosting provider. Follow the guide of your hosting provider in order to do this.
 
 	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
 	1. [Here is the guide for Nodejitsu](http://nodejitsu.com/paas/getting-started.html)
