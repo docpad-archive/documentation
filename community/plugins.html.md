@@ -70,7 +70,7 @@ These are miscellaneous nifty things that you can do with DocPad:
 - [Responsive Layouts in Stylus](https://gist.github.com/1549029)
 - [Thoughts on a DocPad GUI](https://gist.github.com/2906284)
 - [Getting Ruby, SASS and DocPad working on Heroku](https://gist.github.com/4342818)
-
+- [Respond with JSON when asked to](https://github.com/lzrski/docpad-plugin-json)
 
 ## Older
 
