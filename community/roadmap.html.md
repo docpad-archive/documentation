@@ -12,17 +12,9 @@ Version structure and timelines:
 
 ## Unscheduled
 
-- Asynchronous documents
-	- Could specify `async: true` in the meta data, and call `@next(err)` for completion
-
 - Authentication Plugin
 	- Uses GitHub for authentication, validates email address against `package.json` maintainers
 	- Login window trigger by `ctrl/cmd+shift+l`
-
-- c9.io Support
-	- Plugins as npm packages (actually published)
-	- c9.io detection in the quickstart to provide alternative instructions
-	- use npm module instead of spawn (nice to have)
 
 - Front-End Administration Plugin
 	- Support adding and removing of resources
@@ -43,14 +35,13 @@ Version structure and timelines:
 			- Rate and Discuss
 		- Learning Centre (tutorials, videos, etc)
 	- QuickStart
-		4. Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
+		- Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
 	- Connect
 		- News
 		- Blog
 		- Polls
 		- Stats
 	- QuickStart
-		Provides a web interface for
 		1. Selecting your skeleton
 		2. Selecting your plugins
 		3. Configuring docpad and plugins
@@ -58,27 +49,26 @@ Version structure and timelines:
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
 
-- Importers
+- Importer Plugins
 	- WordPress
 	- Tumblr
 	- Jekyll
 	- Octopress
 
-- Deployers
-	- Heroku
-	- GitHub Pages
-
 
 ## Next
 
-- DocPad Website
-- Improved Documentation
-- More skeletons
 - Importers
-- Deployers
+- Abstractions
 
 
 ## Version 6
+
+### v6.15 _**- released**_
+- Nodejitsu support
+
+### v6.13 _**- released**_
+- Statistics
 
 ### v6.8 _**- released**_
 - `.env` file support
@@ -87,10 +77,7 @@ Version structure and timelines:
 - [Express.js](http://expressjs.com/) v3 support
 
 ### v6.6 _**- released**_
-- Better debugging
-
-### v6.5 _**- released**_
-- Cleanup
+- `docpad-debug` executable
 
 ### v6.4 _**- released**_
 - Custom error pages
