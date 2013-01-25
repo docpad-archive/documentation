@@ -14,6 +14,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [cson](http://docpad.org/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
 - [eco](http://docpad.org/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
 - [haml](http://docpad.org/plugin/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
+- [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [HAML-COFFEE](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
 - [handlebars](http://docpad.org/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com/) to anything `.anything.hb|hbs|handlebars`
 - [hogan](http://docpad.org/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
 - [html2coffee](http://docpad.org/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
