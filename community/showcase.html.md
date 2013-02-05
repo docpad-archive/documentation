@@ -26,6 +26,7 @@ Websites built with DocPad. Alphabetically sorted.
 
 - [24b](http://www.24b.is) - A gallery, a design studio in Paris
 - [Acherno Interior Design](http://acherno.com) - Corporate web site of the biggest interior design studio in Bulgaria
+- [AlloyUI](http://alloyui.com/) - [source](https://github.com/liferay/alloy-ui) - AlloyUI is a UI framework built on top of YUI3 that provides a simple API for building high scalable applications
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
 - [Bevry](http://bevry.me) - Creators of DocPad / Sydney based Node.js, JavaScript and HTML5 company focused on empowering developers.
 - [Ben Dellare](http://www.delarre.net/) - [source](https://github.com/benjamind/delarre.docpad) - Coder, maker, hacker, infrequent blogger.
