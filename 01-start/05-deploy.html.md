@@ -38,27 +38,53 @@ Inside your website's directory:
 
 1. For deployment to Windows Azure:
 
-	1. Create a `server.js` file that contains:
-
-		``` javascript
-		module.exports = require(__dirname+'/node_modules/docpad/out/bin/docpad-server');
-		```
-
 	1. Create a deployment script that triggers the static content generation. To create the script run the following command using the [Windows Azure CLI Tools](http://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/command-line-tools/):
 
 		```
-		azure site deploymentscript --node
+		azure site deploymentscript --basic -t bash
 		```
 
-	1. Modify the `deploy.cmd` file by adding the following lines immediately after the `:: Deployment` section:
+	1. Modify the `deploy.sh` file by chaning the `# Deployment` section to the following lines. You can see a complete example of the deploy.sh file [here](https://gist.github.com/ntotten/4715760#file-deploy-sh).
 
 		```
-		:: 3. Build DocPad Site
+		echo Handling deployment.
+
+		# 1. Install npm packages
+		if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
+		  cd "$DEPLOYMENT_SOURCE"
+		  npm install --production --silent
+		  exitWithMessageOnError "npm failed"
+		  cd - > /dev/null
+		fi
+
+		# 2. Build DocPad Site
 		echo Building the DocPad site
-		pushd %DEPLOYMENT_TARGET%
-		call  %DEPLOYMENT_TARGET%\node_modules\.bin\docpad.cmd generate
-		IF !ERRORLEVEL! NEQ 0 goto error
+		cd "$DEPLOYMENT_SOURCE"
+		node ./node_modules/docpad/bin/docpad generate
+		exitWithMessageOnError "Docpad generation failed"
+
+		# 3. KuduSync
+		echo Kudu Sync from "$DEPLOYMENT_SOURCE/out" to "$DEPLOYMENT_TARGET"
+		$KUDU_SYNC_COMMAND -q -f "$DEPLOYMENT_SOURCE/out" -t "$DEPLOYMENT_TARGET" -n "$NEXT_MANIFEST_PATH" -p "$PREVIOUS_MANIFEST_PATH" -i ".git;.deployment;deploy.sh" 2> /dev/null
+		exitWithMessageOnError "Kudu Sync failed"
 		```
+
+	1. Last, create a web.config file in the files directory of your site with the URL rewrite rules shown below. These rules remove the html extensions from your urls. You can see the main portions of this web.config file below. You can download the complete file [here](https://gist.github.com/ntotten/4715760#file-web-config).
+
+	```
+	<rule name="RemoveHTMLExtensions" stopProcessing="true">
+      <match url="^(.*)\.html$" />
+      <action type="Redirect" url="{R:1}" appendQueryString="true" />
+    </rule>
+    <rule name="RewriteHTMLExtensions" stopProcessing="true">
+      <match url="(.*)" />
+      <conditions>
+        <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true"/>
+        <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true"/>
+      </conditions>
+      <action type="Rewrite" url="{R:1}.html" />
+    </rule>
+    ```
 
 1. You're now ready to do a deploy to your hosting provider. Follow the guide of your hosting provider in order to do this.
 
