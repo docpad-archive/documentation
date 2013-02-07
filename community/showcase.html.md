@@ -40,12 +40,13 @@ Websites built with DocPad. Alphabetically sorted.
 - [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
 - [Doug Neiner's Code Website](http://code.dougneiner.com/) - [source](https://github.com/dcneiner/dougneiner.docpad) - Husband to one, father to three, jQuery Team Member, Senior Designer at [appendTo](http://appendto.com/)
 - [Emmet.io's Website](http://emmet.io/) - [source](https://github.com/emmetio/emmet-docs/) - Emmet (previously known as Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow
-- [Evbogue.com](http://docpad.evbogue/) - [source](https://github.com/evbogue/docpad.evbogue.com) - Ev Bogue is a technical writer and web developer fascinated by Node.js and Bitcoin. Site built on Docpad.
+- [Evbogue.com](http://docpad.evbogue.com/) - [source](https://github.com/evbogue/docpad.evbogue.com) - Ev Bogue is a technical writer and web developer fascinated by Node.js and Bitcoin. Site built on Docpad.
 - [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
 - [FooUnit](http://foounit.org) - Test your javascript everywhere!
 - [Game-Icons](http://game-icons.net) - Heaps of free SVG icons
 - [GeorgeOsd](http://george-osd-site.cloudfoundry.com/)	- Hi there, my name is Takeharu.Oshida(GeorgeOsd)
 welcome to my online portfolio
+- [Gwen Bell](http://gwenbell.com) - [source](https://github.com/gwenbell/docpad.gwenbell.com) - Gwen Bell deploys apps, writes about technology and thinks DocPad is the cat's pyjamas.
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
 - [Imaginatr](http://www.imaginatr.com/) - Imaginatr is a creative independent studio focused on the development of mobile applications and innovative software
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
