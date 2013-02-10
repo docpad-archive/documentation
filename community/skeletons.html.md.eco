@@ -21,7 +21,7 @@ These skeletons are currently under construction:
 
 - [Website Skeleton](https://github.com/docpad/website.docpad) `branch: docpad-6.x` - Website skeleton for DocPad. Useful for personal websites and blogs. Pulls in social streams and github information
 - [Syte](https://github.com/docpad/syte.docpad) `branch: master` - A simple pre-made personal website with blogging and social integrations.
-
+- [Zurb Foundation] (https://github.com/axyz/zurb-foundation.docpad) `branch: master` - [Zurb Foundation](https://github.com/zurb/foundation) skeleton for [DocPad](https://github.com/bevry/docpad)
 
 
 ### Older
