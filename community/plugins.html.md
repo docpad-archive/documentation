@@ -54,7 +54,7 @@ These are plugins that add extra functionality to DocPad:
 - [text](http://docpad.org/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
 
 
-## NIFTIES
+## Nifties
 
 These are miscellaneous nifty things that you can do with DocPad:
 
@@ -73,6 +73,11 @@ These are miscellaneous nifty things that you can do with DocPad:
 - [Getting Ruby, SASS and DocPad working on Heroku](https://gist.github.com/4342818)
 - [Respond with JSON when asked to](https://github.com/lzrski/docpad-plugin-json)
 - [Require authentication to view certain documents](http://stackoverflow.com/q/14327676/130638)
+
+
+## Uncurated
+
+You can find a [complete listing of all DocPad Plugins on the NPM Registry using the `docpad-plugin` keyword.](https://npmjs.org/browse/keyword/docpad-plugin) Though note, this listing is not curated by the DocPad Team, so be careful.
 
 
 ## Older
