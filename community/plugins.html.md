@@ -54,6 +54,13 @@ These are plugins that add extra functionality to DocPad:
 - [text](http://docpad.org/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
 
 
+## Deployers
+
+These are plugins that make [deploying](/docpad/deploy) to particular services even easier:
+
+- [ghpages](http://docpad.org/plugin/ghpages) - Deploy to [GitHub Pages](http://pages.github.com/) as easy as `docpad deploy-ghpages`
+
+
 ## Nifties
 
 These are miscellaneous nifty things that you can do with DocPad:
