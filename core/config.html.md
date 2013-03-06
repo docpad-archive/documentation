@@ -215,6 +215,12 @@ docpadConfig = {
 
 	# =================================
 	# Other Configuration
+	
+	# Detect Encoding
+	# Should we attempt to auto detect the encoding of our files?
+	# Useful when you are using foreign encoding (e.g. GBK) for your files
+	# Only works on unix systems currently (limit of iconv module)
+	detectEncoding: false
 
 	# Render Single Extensions
 	# Whether or not we should render single extensions by default
