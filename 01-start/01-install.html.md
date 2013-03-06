@@ -9,9 +9,15 @@ _If you are upgrading from one major version to another, be sure to checkout our
 1. Install DocPad
 
 	``` bash
-	[sudo] npm install -fg docpad@6.21
+	[sudo] npm install -fg docpad@6.24
 	```
 
-1. If you also want operating system notifications, then follow [these additional instructions](https://github.com/visionmedia/node-growl#install) - ignore the npm instructions as we already completed them earlier
+1. If you're upgrading, run this inside your project directory to ensure you get the latest plugin versions
 
-_If you get any errors, refer to our [Troubleshooting Guide](/docpad/troubleshoot) as their is likely an easy fix for it :)._
+	``` bash
+	rm -Rf node_modules; npm install -f
+	```
+
+1. If you want operating system notifications, follow [these additional instructions](https://github.com/visionmedia/node-growl#install) - ignore the install npm instructions as we already completed them earlier
+
+_If you get any errors, try running docpad anyway (most installation errors are non fatal and just for debugging purposes) - if you do get a fatal error then refer to our [Troubleshooting Guide](/docpad/troubleshoot) as it is probably easily fixed. :)._
