@@ -445,7 +445,7 @@ If you're writing a plugin, you can use [the extendTemplateData event](/docpad/e
 
 ## Adding a Menu Listing for our Pages
 
-Remember our About Page, wouldn't it be nice that when we list more pages, our menu updates automaticaly. It sure would be, so lets do that.
+Remember our About Page, wouldn't it be nice that when we list more pages, our menu updates automatically. It sure would be, so lets do that.
 
 
 ### Updating our Layout
