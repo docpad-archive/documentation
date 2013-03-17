@@ -4,7 +4,7 @@ ignored: true
 
 ## Welcome to DocPad's Documentation Repository
 
-It's pulled into the Bevry and DocPad websites and rendered by DocPad into beautiful documentation. Feel free to submit pull requests and post issues for it - one of our moderators will get to your changes as quickly as possible :)
+It's pulled into the Bevry and [DocPad](https://github.com/bevry/docpad-website) websites and rendered by DocPad into beautiful documentation. Feel free to submit pull requests and post issues for it - one of our moderators will get to your changes as quickly as possible :)
 
 
 ## Note on Links
