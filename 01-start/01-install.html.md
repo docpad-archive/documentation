@@ -6,6 +6,12 @@ _If you are upgrading from one major version to another, be sure to checkout our
 
 1. [Install Node.js & Other Dependencies](/node/install)
 
+1. Ensure NPM is the latest version
+
+	``` bash
+	npm install -fg npm
+	```
+
 1. Install DocPad
 
 	``` bash
