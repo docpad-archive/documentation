@@ -109,4 +109,4 @@ Check out the `plugins` [configuration property](/docpad/config).
 ## Want more help?
 
 - Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
-- Need support? [Check out our Support Channels](/support)
+- Need support? [Check out our Support Channels](http://docpad.org/support)
