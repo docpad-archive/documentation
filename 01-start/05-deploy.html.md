@@ -24,19 +24,33 @@ Inside your website's directory:
 	}
 	```
 
-1. For deployment to Heroku, you'll have to create a `Procfile` file that contains:
-
-	```
-	web: node_modules/docpad/bin/docpad-server
-	```
-
-1. For deployment to AppFog, you'll have to create a `app.js` file that contains:
+1. For deployment to Heroku
 	
-	``` javascript
-	module.exports = require(__dirname+'/node_modules/docpad/out/bin/docpad-server');
-	```
+	1. Create a `Procfile` file inside your project that contains:
 
-1. For deployment to Windows Azure:
+		```
+		web: node_modules/docpad/bin/docpad-server
+		```
+	
+	1. Set your heroku instance to run in production mode
+	
+		```
+		heroku config:add NODE_ENV=production
+		```
+
+	1. [Follow the rest of the Heroku guide here](http://devcenter.heroku.com/articles/node-js)
+
+1. For deployment to AppFog
+
+	1. Create a `app.js` file inside your project that contains:
+	
+		``` javascript
+		module.exports = require(__dirname+'/node_modules/docpad/out/bin/docpad-server');
+		```
+
+	1. [Follow the rest of the AppFog guide here](https://docs.appfog.com/getting-started)
+
+1. For deployment to Windows Azure
 
 	1. Create a deployment script that triggers the static content generation. To create the script run the following command using the [Windows Azure CLI Tools](http://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/command-line-tools/):
 
@@ -85,13 +99,12 @@ Inside your website's directory:
       <action type="Rewrite" url="{R:1}.html" />
     </rule>
     ```
+    
+	1. [Follow the rest of the Azure guide here](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/)
 
-1. You're now ready to do a deploy to your hosting provider. Follow the guide of your hosting provider in order to do this.
+1. For deployment to Nodejitsu
 
-	1. [Here is the guide for Heroku](http://devcenter.heroku.com/articles/node-js)
-	1. [Here is the guide for Nodejitsu](http://nodejitsu.com/paas/getting-started.html)
-	1. [Here is the guide for AppFog](https://docs.appfog.com/getting-started)
-	1. [Here is the guide for Windows Azure](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/)
+	1. [Follow the rest of the Nodejitsu guide here](http://nodejitsu.com/paas/getting-started.html)
 
 1. Optional: If you're also wanting to use a custom domain for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
 
