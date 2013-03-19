@@ -12,7 +12,7 @@ Inside your website's directory:
 	``` javascript
 	"engines" : {
 		"node": "0.8.x",
-		"npm": "1.1.x"
+		"npm": "1.2.x"
 	},
 	"dependencies": {
 		"docpad": "6.x",
