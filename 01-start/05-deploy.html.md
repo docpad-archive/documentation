@@ -60,7 +60,7 @@ Inside your website's directory:
 
 	1. Modify the `deploy.sh` file by chaning the `# Deployment` section to the following lines. You can see a complete example of the deploy.sh file [here](https://gist.github.com/ntotten/4715760#file-deploy-sh).
 
-		```
+		``` bash
 		echo Handling deployment.
 
 		# 1. Install npm packages
@@ -85,21 +85,21 @@ Inside your website's directory:
 
 	1. Last, create a web.config file in the files directory of your site with the URL rewrite rules shown below. These rules remove the html extensions from your urls. You can see the main portions of this web.config file below. You can download the complete file [here](https://gist.github.com/ntotten/4715760#file-web-config).
 
-	```
-	<rule name="RemoveHTMLExtensions" stopProcessing="true">
-      <match url="^(.*)\.html$" />
-      <action type="Redirect" url="{R:1}" appendQueryString="true" />
-    </rule>
-    <rule name="RewriteHTMLExtensions" stopProcessing="true">
-      <match url="(.*)" />
-      <conditions>
-        <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true"/>
-        <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true"/>
-      </conditions>
-      <action type="Rewrite" url="{R:1}.html" />
-    </rule>
-    ```
-    
+		``` xml
+		<rule name="RemoveHTMLExtensions" stopProcessing="true">
+			<match url="^(.*)\.html$" />
+			<action type="Redirect" url="{R:1}" appendQueryString="true" />
+		</rule>
+		<rule name="RewriteHTMLExtensions" stopProcessing="true">
+			<match url="(.*)" />
+			<conditions>
+				<add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true"/>
+				<add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true"/>
+			</conditions>
+			<action type="Rewrite" url="{R:1}.html" />
+		</rule>
+		```
+		
 	1. [Follow the rest of the Azure guide here](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/)
 
 1. For deployment to Nodejitsu
@@ -118,7 +118,7 @@ Inside your website's directory:
 
 
 
-## To a Standard Static Server (apache/nginx)
+## To Static Servers (Apache, Nginx, etc)
 
 1. Perform a generation for a static production environment using `docpad generate --env static`
 
@@ -127,13 +127,17 @@ Inside your website's directory:
 
 ## To GitHub Pages
 
-1. For GitHub Pages we want our output directory to our website's root directory. To do this, we'll add `outPath: '.'` to our [docpad configuration file](/docpad/config)
+1. Install the [GitHub Pages Plugin](http://docpad.org/plugin/ghpages)
 
-2. Perform a generation for an apache and production environment using `docpad generate --env static`
+	```
+	npm install --save docpad-plugin-ghpages
+	```
 
-3. Commit your changes to the `gh-pages` branch, and push the branch to github
+2. Deploy to GitHub Pages using the Plugin
 
-4. Optional: If you're also wanting to use a custom domain for your website, [follow the GitHub Pages guide here](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)
+	```
+	docpad deploy-ghpages
+	```
 
 
 ## To a Cloud Data Storage Provider (AWS S3, Google Storage, etc)
