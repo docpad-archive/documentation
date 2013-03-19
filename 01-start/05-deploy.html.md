@@ -133,7 +133,7 @@ Inside your website's directory:
 	npm install --save docpad-plugin-ghpages
 	```
 
-2. Deploy to GitHub Pages using the Plugin
+2. Deploy to GitHub Pages using the plugin
 
 	```
 	docpad deploy-ghpages
@@ -142,4 +142,4 @@ Inside your website's directory:
 
 ## To a Cloud Data Storage Provider (AWS S3, Google Storage, etc)
 
-[Checkout the DocPad Sunny Plugin](https://github.com/bobobo1618/docpad-plugin-sunny)
+1. [Checkout the DocPad Sunny Plugin](https://github.com/bobobo1618/docpad-plugin-sunny)
