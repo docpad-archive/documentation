@@ -114,7 +114,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 
 
-### Custom domains
+### Optional: Custom domains
 
 If you're also wanting to use custom domains for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
 
