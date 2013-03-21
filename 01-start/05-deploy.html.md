@@ -11,8 +11,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 	``` javascript
 	"engines" : {
-		"node": "0.8.x",
-		"npm": "1.2.x"
+		"node": "0.10",
+		"npm": "1.2"
 	},
 	"dependencies": {
 		"docpad": "6.x",
@@ -24,7 +24,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	}
 	```
 
-### For deployment to [Heroku]([Heroku](http://www.heroku.com/)
+### For deployment to [Heroku](http://www.heroku.com/)
 
 1. Create a `Procfile` file inside your project that contains:
 
