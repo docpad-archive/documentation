@@ -28,10 +28,6 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 - HAML: `!= content` instead of `= content`
 
 
-### I get CoffeeScript errors
-Try installing the latest version of CoffeeScript via `npm install -g coffee-script`. Versions 1.1.1, and 1.1.3 and up are supported. If you still get problems, post them in the [issue tracker](http://docpad.org/issues).
-
-
 ### I get a whole bunch of npm / missing module/package / installation failed errors
 If your using [DropBox](http://db.tt/RxyNWZw) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
 
