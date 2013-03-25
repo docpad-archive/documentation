@@ -1,5 +1,19 @@
 ## Common Problems
 
+### I'm getting permission errors when installing things
+Chances are this isn't a problem within DocPad, but rather one of your node/npm installation. Run the following in Terminal, once done, try your original action again:
+
+``` bash
+sudo chown -R $USER /usr/local ~/.npm
+chmod -R 755 ~/.npm
+```
+
+If that fails, we'd recommend either:
+
+- Re-Installing Node.js with [Bevry's recommended installation instructions](http://bevry.me/node/install)
+- Asking about it on the [Node.js IRC Chat Room](http://webchat.freenode.net/?channels=node.js) (`#node.js` on freenode)
+
+
 ### I'm getting "We couldn't find an existing DocPad project inside your current directory..."
 This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run docpad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](http://docpad.org/support).
 
@@ -16,10 +30,6 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 
 ### I get CoffeeScript errors
 Try installing the latest version of CoffeeScript via `npm install -g coffee-script`. Versions 1.1.1, and 1.1.3 and up are supported. If you still get problems, post them in the [issue tracker](http://docpad.org/issues).
-
-
-### I get a whole bunch of permission denied errors
-DocPad handles the installation of the npm modules of it's plugins automagically, as such it needs write access to it's own directory (usually `/usr/local/lib/node_modules/docpad`). If you didn't follow the [recommended installation instructions](https://github.com/bevry/community/wiki/Installing-Node), you can try running `sudo chown -R $USER /usr/local` to rectify the permission problems. Alternatively, you can run docpad under sudo, but that probably isn't the best solution. If all fails, uninstall node, and re-install it using the [recommended installation instructions](/node/install).
 
 
 ### I get a whole bunch of npm / missing module/package / installation failed errors
