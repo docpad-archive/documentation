@@ -15,7 +15,7 @@ _If you are upgrading from one major version to another, be sure to checkout our
 1. Install DocPad
 
 	``` bash
-	npm install -fg docpad@6.27
+	npm install -fg docpad@6.28
 	```
 
 1. If you're upgrading, run this inside your project directory to ensure you get the latest plugin versions
