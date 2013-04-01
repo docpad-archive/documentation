@@ -9,19 +9,19 @@ _If you are upgrading from one major version to another, be sure to checkout our
 1. Ensure NPM is the latest version
 
 	``` bash
-	npm install -fg npm
+	npm install -g npm
 	```
 
 1. Install DocPad
 
 	``` bash
-	npm install -fg docpad@6.28
+	npm install -g docpad@6.29
 	```
 
 1. If you're upgrading, run this inside your project directory to ensure you get the latest plugin versions
 
 	``` bash
-	rm -Rf node_modules; npm install -f
+	rm -Rf node_modules; npm install
 	```
 
 1. If you want operating system notifications, follow [these additional instructions](https://github.com/visionmedia/node-growl#install) - ignore the install npm instructions as we already completed them earlier
