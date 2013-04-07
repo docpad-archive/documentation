@@ -15,7 +15,7 @@ _If you are upgrading from one major version to another, be sure to checkout our
 1. Install DocPad
 
 	``` bash
-	npm install -g docpad<%= (v = @feedr?.feeds?.latestPackage?.version) ? '@'+@getVersion(v,2) or '' %>
+	npm install -g docpad<%= if (v = @feedr?.feeds?.latestPackage?.version) then '@'+@getVersion(v,2) else '' %>
 	```
 
 1. If you're upgrading, run this inside your project directory to ensure you get the latest plugin versions
