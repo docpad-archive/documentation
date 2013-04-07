@@ -14,6 +14,14 @@ If that fails, we'd recommend either:
 - Asking about it on the [Node.js IRC Chat Room](http://webchat.freenode.net/?channels=node.js) (`#node.js` on freenode)
 
 
+### Watching doesn't work, or only works some of the time
+File watching is a pretty timid thing that we are currently doing all we can to make it better. There are currently two methods we can watch files, `watch` and `watchFile`. `watch` is the default and uses the operating system's watching mechanisms, however sometimes the operating system's watching mechanisms may not be the best. If that is the case, we'd like to switch our watching method to `watchFile` which is a slower, but does work when `watch` doesn't. To do this, add the following to your [docpad configuration file](/docpad/config):
+
+``` coffee
+watchOptions: preferredMethods: ['watchFile','watch']
+```
+
+
 ### I'm getting "We couldn't find an existing DocPad project inside your current directory..."
 This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run docpad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](http://docpad.org/support).
 
