@@ -25,8 +25,19 @@ watchOptions: preferredMethods: ['watchFile','watch']
 ### I'm getting "We couldn't find an existing DocPad project inside your current directory..."
 This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run docpad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](http://docpad.org/support).
 
+
+### I'm getting "Could not locate git binary"
+This happens when the [git](http://git-scm.com) installation is not exposed to your [PATH variable](http://en.wikipedia.org/wiki/PATH_%28variable%29). You can solve this in either of these two ways:
+
+- Reinstall git and make sure to select the option during installation that asks if you would like to add it to your PATH variable (may also be called, would you like git to be available to the command line)
+- Manually add the location your git binary resides in to your PATH variable
+
+[More information about this here.](https://github.com/bevry/docpad/issues/425)
+
+
 ### I upgraded, and it doesn't work
 [Check out the Upgrade Guides here](/docpad/upgrade)
+
 
 ### Whenever I output a variable (like `content`) it is escaped (`<` rendered as `&lt;`)?
 Template engines by default _escape_ all variable output. Escaping is when we turn things like the open bracket `<` into it's _html entity_ equivalent `&lt;`. This helps prevent malicious code accidentally being injected into your website which can open the door to XSS attacks. As such, we have to use a special syntax to keep the variable _unescaped_ when outputted. The special syntax is different for the templating engine your using, so here are the ways we know:
@@ -44,6 +55,7 @@ If you're still experiencing issues, then be sure to post about it on the [issue
 
 ### The growl notifications aren't displaying?
 I got confused by this too, turns out you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [growl website](http://growl.info/). What this package does it provides command line applications the ability to call growl which is needed as docpad is a command line application.
+
 
 ### The exception raised by the jade plug-in during documents generation makes no sense
 The jade compiler uses the full file content on the disk to show where the parsing error is. But since Docpad strips the meta header before submitting the data to the jade compiler, you must add the number of lines of this header to get the right error spot in your code.
