@@ -1,5 +1,7 @@
 This page will talk about being a developer for DocPad and what is involved.
 
+This guide is also a bit out of date, check out the new [Contributing Guide](/docpad/contribute) for the latest instructions.
+
 
 ## Who? What? Why?
 Anyone can be a developer for DocPad, this is because DocPad is entirely open-source, meaning anyone can browse, edit, and share the source-code of DocPad. The source-code is like the original code, the code that developers write to make things happen.
@@ -9,18 +11,19 @@ So what is a developer? A developer can be whatever you want it to be! But I gue
 
 ## How to participate as a developer?
 
+
 ### Issue Tracker
 The best way to participate is to be active on the [Issue Tracker](http://docpad.org/issues). Anything that needs doing for DocPad is logged there. Batches of work are split into monthly sprints called [Milestones](http://docpad.org/issues/milestones). Issues are given a type, priority, and status (called buckets). Every issue is great for community participation, however issues with the label `discussion` are actively and urgently seeking developer feedback - so discuss those issues first! Any feedback would be great. Issues with the label `patches welcome` are issues which you can start implementing/coding up yourself, once you are done, submit a [pull request](http://help.github.com/send-pull-requests/) back to the original DocPad project and we'll review your changes and provide feedback :-)
 
 
 ### Contribute Code
-If you've found a bug in DocPad, or want to add a new feature yourself. You can get hacking away at the source code, and submit a pull request to get your changes back into the official repository. [You can read more about this on the Contributing Wiki Page here](/docpad/contribute).
+If you've found a bug in DocPad, or want to add a new feature yourself. You can get hacking away at the source code, and submit a pull request to get your changes back into the official repository. [You can read more about this on the Contributing Guide here](/docpad/contribute).
 
 
 ### Discuss
 As DocPad developers are spread across the entire world, arranging a time for everyone to get chatting together is quite hard. However, that doesn't mean we don't try.
 
-You can get chatting with anyone who's around by visiting the IRC channel `#docpad` on Freenode. [Click here to join.](irc://irc.freenode.net/docpad)
+You can get chatting with anyone who's around by visiting the IRC channel `#docpad` on Freenode. [Click here to join.](http://webchat.freenode.net/?channels=docpad)
 
 
 ### Priority Focus
