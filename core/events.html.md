@@ -133,7 +133,7 @@ Called per document, after all the extensions have been rendered. Used to perfor
 
 Notes: It is also called for each of the layout renderings for the document, as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
 
-Example: [The Pygments Plugin](http://docpad.org/plugin/pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g. `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org/) syntax highlighting engine.
+Example: [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments/blob/master/src/pygments.plugin.coffee#L111) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g. `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org/) syntax highlighting engine.
 
 
 
@@ -157,3 +157,5 @@ Called just after we finished setting up the server. Often used to extend the se
 ### `serverExtend`
 Called just while we are setting up the server, and just before the DocPad routes are applied. Used to extend the server with routes that will be triggered before the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
+
+Example: [The basicAuth Plugin](https://github.com/mikeumus/docpad-plugin-basicauth/blob/master/basicauth.plugin.coffee) uses 'serverExtend' to add express' basicAuth to a route.
