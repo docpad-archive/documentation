@@ -158,4 +158,4 @@ Called just after we finished setting up the server. Often used to extend the se
 Called just while we are setting up the server, and just before the DocPad routes are applied. Used to extend the server with routes that will be triggered before the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
 
-Example: [The basicAuth Plugin](https://github.com/mikeumus/docpad-plugin-basicauth/blob/master/basicauth.plugin.coffee) uses 'serverExtend' to add express' basicAuth to a route.
+Example: [The basicAuth Plugin](https://github.com/mikeumus/docpad-plugin-basicauth/blob/master/basicauth.plugin.coffee#L1) uses 'serverExtend' to add express' basicAuth to a route.
