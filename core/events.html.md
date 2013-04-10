@@ -133,7 +133,7 @@ Called per document, after all the extensions have been rendered. Used to perfor
 
 Notes: It is also called for each of the layout renderings for the document, as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
 
-Example: [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments/blob/master/src/pygments.plugin.coffee#L111) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g. `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org/) syntax highlighting engine.
+Example: [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments/blob/master/src/pygments.plugin.coffee#L1) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g. `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org/) syntax highlighting engine.
 
 
 
