@@ -26,7 +26,7 @@ To get support:
 
 To add a new skeleton to the skeleton listing:
 
-1. Add your new skeleton to our [`exchange.json` file](https://github.com/bevry/docpad-extras/edit/docpad-6.x/exchange.json)
+1. [Add your new skeleton to our `exchange.json` file](https://github.com/bevry/docpad-extras/edit/docpad-6.x/exchange.json)
 2. Submit the pull request for it (the page for this should appear automatically once you click "Commit Changes" from the previous link)
 
 
@@ -103,7 +103,7 @@ To publish a new version:
 1. Add any new contributors to the `package.json` file, for their URL use their github profile URL
 1. Increment the version number in the `package.json` file according to the [semver](http://semver.org/) standard, that is:
 	1. If everything will break, increment the major version
-	2. If somethings will break, increment the minor version
+	2. If something will break, increment the minor version
 	3. If nothing will break, increment the revision version
 1. Commit the changes with the title set to something like `v6.29.0. Bugfix. Improvement.` and description set to the changelog entry.
 1. Tag the commit as the version number, e.g. `git tag v6.29.0`
