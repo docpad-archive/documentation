@@ -21,12 +21,14 @@ To get support:
 - For everything else that isn't bug reports (e.g. questions, support, etc), use our [Official Support Channels](http://docpad.org/support)
 
 
+
 ## Skeletons
 
-To add a new skeleton to your skeleton listing:
+To add a new skeleton to the skeleton listing:
 
 1. Add your new skeleton to this JSON file: https://github.com/bevry/docpad-extras/blob/docpad-6.x/exchange.json
-2. and submitting a pull request
+2. Submit the pull request for it (the page for this should appear automatically when you click "Commit Changes")
+
 
 
 ## Documentation
@@ -38,6 +40,7 @@ To update our documentation:
 3. You can edit a file by opening that file in the repository browser, and then clicking the "Edit" button
 4. Once done, click save changes or whatever the button says and this will then take you to a "Submit Pull Request" page
 5. Fill in the details and click submit
+
 
 
 ## Development
@@ -52,6 +55,7 @@ To get started making changes to the DocPad core:
 1. Run `cake dev` to compile our source files and recompile on changes
 
 
+
 ## Pull Requests
 
 To get some changes you've made into the official repository:
@@ -61,6 +65,7 @@ To get some changes you've made into the official repository:
 1. **When submitting the pull request, specify the `dev` branch as the integration branch (the integration branch is which branch your pull request will be merged into on the official repo)**
 1. If you'd like, feel free to add yourself to the contributors section of the `package.json` file if it exists
 1. By submitting a pull request, you agree that your submission can be used freely and without restraint by those whom your submitting the pull request to
+
 
 
 ## Testing
