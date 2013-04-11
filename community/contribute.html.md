@@ -53,6 +53,7 @@ To get started making changes to the DocPad core:
 1. Run `cake setup` to setup our project for development
 1. Run `npm link` to link our local copy as the global instance (so it is available via `docpad`)
 1. Run `cake dev` to compile our source files and recompile on changes
+1. Follow the [Bevry Coding Standards](https://github.com/bevry/community/wiki/Coding-Standards) when writing your changes
 
 
 
