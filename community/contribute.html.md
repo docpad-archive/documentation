@@ -75,3 +75,33 @@ Before you submit your changes you'll want to make sure your changes still work 
 	1. Make your docpad setup available: `npm link docpad`
 	1. Clone out the plugins: `cake clone`
 	1. Test the plugins: `cake test`
+
+
+
+## Publishing
+
+To publish a new version:
+
+1. Pull in the latest changes from the master and dev branches
+1. Make sure the tests work, if your publishing a new docpad verison also make sure the [docpad-extras](https://github.com/bevry/docpad-extras) tests work
+1. Add an entry to the changelog following the format of the previous entries, an example of this is:
+	
+	``` markdown
+	- v6.29.0 April 1, 2013
+		- Progress on [issue #474](https://github.com/bevry/docpad/issues/474)
+		- DocPad will now set permissions based on the process's ability
+			- Thanks to [Avi Deitcher](https://github.com/deitch), [Stephan Lough](https://github.com/stephanlough) for [issue #165](https://github.com/bevry/docpad/issues/165)
+		- Updated dependencies
+	```
+
+1. Add any new contributors to the `package.json` file, for their URL use their github profile URL
+1. Increment the version number in the `package.json` file according to the [semver](http://semver.org/) standard, that is:
+	1. If everything will break, increment the major version
+	2. If somethings will break, increment the minor version
+	3. If nothing will break, increment the revision version
+1. Commit the changes with the title set to something like `v6.29.0. Bugfix. Improvement.` and description set to the changelog entry.
+1. Tag the commit as the version number, e.g. `git tag v6.29.0`
+1. Publish the module: `npm publish`
+1. Merge your changes into the master and dev branches
+1. Push your changes and new tag up to the git repo: `git push origin --all; git push origin --tags`
+1. Party!
