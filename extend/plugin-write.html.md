@@ -306,7 +306,7 @@ git clone https://github.com/bevry/docpad.git
 cd docpad
 npm install
 npm link
-make compile
+cake compile
 ```
 
 This sets up your copy of DocPad and makes it so that NPM will use this copy instead of the one in the NPM repository. Next you'll need to do a similar setup for your plugin.
@@ -315,7 +315,7 @@ This sets up your copy of DocPad and makes it so that NPM will use this copy ins
 cd docpad-plugin-yourPlugin
 npm install
 npm link docpad
-make compile
+cake compile
 ```
 
 This will install all the dependencies for your plugin, and link the DocPad instance in your plugin with the one we just cloned from GitHub.
@@ -323,7 +323,7 @@ This will install all the dependencies for your plugin, and link the DocPad inst
 Now we're ready to run the tests!
 
 ``` bash
-make test
+cake test
 ```
 
 Hopefully you should now see output similar to the following:
