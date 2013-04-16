@@ -108,7 +108,7 @@ You can find the contents of these files on our [example plugin repository](http
 
 The `Cakefile` however is worth mentioning, as it makes it to compile our plugin (`cake compile` to compile once, `cake dev` to compile on change) so we don't have to compile it at run-time each time. If you decide to use the cake file to pre-compile our plugin, you'll want to update your `main` property in your plugin's `package.json` to point to the compiled file like so:
 
-``` json
+``` javascript
 {
 	// ...
 	"main": "./out/yourpluginname.plugin.js"
@@ -170,7 +170,7 @@ The [Text Plugin](https://github.com/docpad/docpad-plugin-text) is a great examp
 
 You'll want to modify the `package.json` for your plugin to support the test process, simply add the `devDependencies` and `scripts` objects to the configuration as shown below:
 
-``` json
+``` javascript
 {
 	// ...
 	"devDependencies": {
