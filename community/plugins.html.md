@@ -87,12 +87,9 @@ These are miscellaneous nifty things that you can do with DocPad:
 You can find a [complete listing of all DocPad Plugins on the NPM Registry using the `docpad-plugin` keyword.](https://npmjs.org/browse/keyword/docpad-plugin) Though note, this listing is not curated by the DocPad Team, so be careful.
 
 
-## Older
+## Roll Your Own!
 
-These are plugins for older versions of DocPad, or have been deprecated in favour of other plugins:
-
-- [markdownreferencelinks](https://github.com/Delapouite/docpad-markdownreferencelinks) - Provides a way to put links references into the header of a document so they can be used later inside its markdown content
-- [markdown](http://docpad.org/plugin/markdown/) - Supports [Markdown](ttp://daringfireball.net/projects/markdown/basics) to HTML `.html.md|markdown` - deprecated in favor of marked
+It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Page!](/docpad/plugin-write)
 
 
 ## Requested
