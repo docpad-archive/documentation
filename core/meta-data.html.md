@@ -173,8 +173,8 @@ Defaults to `false`. Set to `true` once we have been rendered.
 #### `contentRendered`
 The rendered content (after is has been wrapped in the layouts).
 
-#### `contentReneredWithoutLayouts`
-The rendered content (nenfore being wrapped by the layouts).
+#### `contentRenderedWithoutLayouts`
+The rendered content (before being wrapped by the layouts).
 
 
 
