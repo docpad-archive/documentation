@@ -93,15 +93,14 @@ Plugins of other types are generated in the same way as Renderers, they simply a
 
 If you are just adding some basic functionality that is specific to a site then everything we've described thus far is probably enough. However if you're doing something thats more generic, or could be useful to other people, then why not create your plugin so its reusable? This has many advantages, you can distribute your plugin on NPM, you can use it across multiple projects, and you can setup unit tests to ensure your plugin works correctly.
 
-Here's the extra files that we will need to add to our project:
+Here's the extra files that we will need to add to our plugin:
 
 ```
-docpad-plugin-yourpluginname/
-	.gitignore
-	.npmignore
-	Cakefile
-	LICENSE.md
-	README.md
+.gitignore
+.npmignore
+Cakefile
+LICENSE.md
+README.md
 ```
 
 You can find the contents of these files on our [example plugin repository](https://github.com/balupton/docpad-plugin-yourpluginname).
@@ -123,20 +122,19 @@ The `Cakefile` however is worth mentioning, as it makes it to compile our plugin
 We can also add tests for our plugin to ensure it is working correctly. DocPad makes this process pretty darn easy. To do so, we'll need to add these extra files:
 
 
-Here's the extra files that we will need to add to our project:
+Here's the extra files that we will need to add to our plugin:
 
 ```
-docpad-plugin-yourpluginname/
+src/
+	pluginname.test.coffee
+	pluginname.tester.coffee (optional)
+test/
+	out-expected/
+		...
 	src/
-		pluginname.test.coffee
-		pluginname.tester.coffee (optional)
-	test/
-		out-expected/
+		documents/
 			...
-		src/
-			documents/
-				...
-		package.json (optional)
+	package.json (optional)
 ```
 
 
