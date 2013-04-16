@@ -118,7 +118,7 @@ The `Cakefile` however is worth mentioning, as it makes it to compile our plugin
 
 
 
-## Adding testss
+## Adding tests
 
 We can also add tests for our plugin to ensure it is working correctly. DocPad makes this process pretty darn easy. To do so, we'll need to add these extra files:
 
