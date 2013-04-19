@@ -8,7 +8,7 @@ title: "Intro"
 DocPad is a next generation web framework; allowing for content management via the file system, rendering via plugins, and static site generation for deployment anywhere. It's built with Node and Express.js, making it naturally fast and easily extendable.
 
 ## Problems with Traditional Web Architectures
-Despite all the amazing wonder of current web application architectures, their mostly:
+Despite all the amazing wonder of current web application architectures, they're mostly:
 
 - **Inherently slow**
 	- Usually built on live then die and blocking platforms
