@@ -1,5 +1,10 @@
 ## Common Problems
 
+
+### I'm getting "EMFILE, too many open files"
+As node.js is like an octopus, able to do many things at the same time, sometimes node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running `ulimit -n 8192` in your terminal.
+
+
 ### I'm getting permission errors when installing things
 Chances are this isn't a problem within DocPad, but rather one of your node/npm installation. Run the following in Terminal, once done, try your original action again:
 
