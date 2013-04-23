@@ -1,4 +1,4 @@
-## Common Problems
+## Known Issues
 
 
 ### It just hangs after accepting the TOS or subscribing to the newsletter
