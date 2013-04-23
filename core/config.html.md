@@ -398,6 +398,7 @@ module.exports = docpadConfig
 ```
 
 
+
 ## Environment Configuration File
 
 We also support `.env` environment configuration file, the format works like so:
@@ -410,4 +411,20 @@ KEY2=VALUE2
 With all key value pairs being added to the `process.env` environment variable.
 
 It is useful for setting sensitive information such as API keys and database information etc - if using for this purpose, then be sure to add the `.env` file to your `.gitignore` file.
+
+
+
+
+## Global Configuration File
+DocPad will also create a global configuration file located at `~/.docpad.cson` (or `~/Dropbox/.docpad.cson` if you have [Dropbox](http://j.mp/dropbox-bal) installed). This file is typically used to store information relating to your DocPad preferences, such as whether or not you have agreed to the [TOS](/tos) and subscribed to our newsletter or not, however it can also be used to load in configuration that you would like applied to all of your projects.
+
+For instance, if we wanted to set the default DocPad port to always be `9779` instead of `9778`, we can update the global configuration file to include:
+
+```
+{
+	port: 9779
+}
+```
+
+Normally, we never want to touch this file. However it is useful to on the odd occasion.
 
