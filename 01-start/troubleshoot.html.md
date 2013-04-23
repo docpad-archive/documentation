@@ -1,8 +1,9 @@
 ## Common Problems
 
 
-### I'm getting "EMFILE, too many open files"
-As node.js is like an octopus, able to do many things at the same time, sometimes node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running `ulimit -n 8192` in your terminal.
+### It just hangs after accepting the TOS or subscribing to the newsletter
+It seems that this is associated to being behind a firewall or a proxy. [For the meantime, you can apply this workaround.](https://github.com/bevry/docpad/issues/488)
+
 
 
 ### I'm getting permission errors when installing things
@@ -27,8 +28,10 @@ watchOptions: preferredMethods: ['watchFile','watch']
 ```
 
 
+
 ### I'm getting "We couldn't find an existing DocPad project inside your current directory..."
 This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run docpad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](http://docpad.org/support).
+
 
 
 ### I'm getting "Could not locate git binary"
@@ -40,8 +43,15 @@ This happens when the [git](http://git-scm.com) installation is not exposed to y
 [More information about this here.](https://github.com/bevry/docpad/issues/425)
 
 
+
+### I'm getting "EMFILE, too many open files"
+As node.js is like an octopus, able to do many things at the same time, sometimes node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running `ulimit -n 8192` in your terminal.
+
+
+
 ### I upgraded, and it doesn't work
 [Check out the Upgrade Guides here](/docpad/upgrade)
+
 
 
 ### Whenever I output a variable (like `content`) it is escaped (`<` rendered as `&lt;`)?
@@ -52,14 +62,17 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 - HAML: `!= content` instead of `= content`
 
 
+
 ### I get a whole bunch of npm / missing module/package / installation failed errors
 If your using [DropBox](http://db.tt/RxyNWZw) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
 
 If you're still experiencing issues, then be sure to post about it on the [issue tracker](http://docpad.org/issues).
 
 
+
 ### The growl notifications aren't displaying?
 I got confused by this too, turns out you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [growl website](http://growl.info/). What this package does it provides command line applications the ability to call growl which is needed as docpad is a command line application.
+
 
 
 ### The exception raised by the jade plug-in during documents generation makes no sense
