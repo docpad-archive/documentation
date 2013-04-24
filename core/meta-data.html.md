@@ -147,7 +147,7 @@ The encoding of the file.  Either `binary` or `utf8`.
 When `encoding` isnt `binary`, this is set to the raw contents of the file, stored as a string.
 
 #### `content`
-When `encoding` isnt `binary`, this is set to the  contents of the file, stored as a string. The different with this and `source` is that trailing whitespace is removed as well as the tab character is converted to 4 spaces.
+When `encoding` isnt `binary`, this is set to the contents of the file, stored as a string. This is used internally during the rendering process, end-users should never use this property.
 
 
 ## For Documents
