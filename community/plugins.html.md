@@ -40,6 +40,7 @@ These are plugins that add extra functionality to DocPad:
 - [cachr](http://docpad.org/plugin/cachr/) - Allows you to cache remote urls locally from within your templates
 - [cleanurls](http://docpad.org/plugin/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [csv](https://github.com/CycoPH/docpad-plugin-csv/) - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2
+- [dateurls](https://github.com/mgroves84/docpad-plugin-dateurls/) - Adds support for date based urls like `/2013/04/27/hello.html`
 - [feedr](http://docpad.org/plugin/feedr/) - Allows you to render remote feeds within your templates
 - [highlightjs](http://docpad.org/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [livereload](http://docpad.org/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
