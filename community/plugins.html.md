@@ -99,9 +99,9 @@ So far we have created the following importers that pull in data from remote ser
 
 
 
-## Nifties
+## Guides
 
-These are miscellaneous nifty things that you can do with DocPad:
+These are miscellaneous things that you can do with DocPad:
 
 - [Localising and formatting dates](https://gist.github.com/4166882)
 - [Automatically set custom meta data for collections](https://gist.github.com/4166806)
@@ -122,7 +122,7 @@ These are miscellaneous nifty things that you can do with DocPad:
 
 
 
-## Uncurated
+## Complete Plugin Listing
 
 You can find a [complete listing of all DocPad Plugins on the NPM Registry using the `docpad-plugin` keyword.](https://npmjs.org/browse/keyword/docpad-plugin) Though note, this listing is not curated by the DocPad Team, so be careful.
 
