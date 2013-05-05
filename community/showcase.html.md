@@ -19,6 +19,10 @@ DocPad mentioned around the web. Oldest first.
 - [The Source, with Scott Hanselman: Static Sites with DocPad](http://tekpub.com/shows/the_source/3) - In this episode we kick up a site, look at how it works, and have a discussion about the relevance of static sites in general
 - [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](http://www.windowsazure.com/en-us/home/scenarios/web-sites/).
 - [DocPad on Redit](http://www.reddit.com/r/docpad/) - a sub-redit dedicated entirely to DocPad stuff
+- [Why DocPad](http://takitapart.com/posts/why-docpad/) - Why I've built takitapart using a static site generator, and why DocPad won me over
+- [Organising DocPad](http://takitapart.com/posts/organizing-docpad/) - Setting up the basic taxonomy of [takitapart.](http://takitapart.com/)
+- [WordPress → Aegea → DocPad](http://blog.sapegin.me/all/docpad) - It was much simpler than I thought and I like the result very much
+- [70Decibels Generational Podcast](http://www.70decibels.com/generational/2013/4/27/032-blogging-platforms-with-bob-vanderclay.html) - DocPad featured on episode "032 - Blogging Platforms with Bob VanderClay"
 
 
 ## Websites
@@ -60,6 +64,7 @@ welcome to my online portfolio
 - [Rob Rawkes](http://rawkes.com/) - Rawkes is the home of Rob Hawkes, part-time Rawket Scientist and full-time geek. Join him as he explores the outer-reaches of programming, digital media, games, and everything in-between.
 - [RunGRE](http://rungre.com/) - RunGRE is the first memory flashcard system designed to be used while exercising. Study the 500 most important GRE words while you move. Join us as we wage a war on sitting! Site built on Docpad :)
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
+- [takitapart.](http://takitapart.com/) - akitapart. - pronounced "take-it-apart" - is the blog of Bob VanderClay, web application developer, founding partner at high90, and all around nerd
 - [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
 - [Tomohisa Oda](http://tomohisaoda.com/) - Japanese: Web engineer and designer from Japan
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
