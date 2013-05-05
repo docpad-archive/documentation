@@ -84,7 +84,7 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 
 ## Admin Interfaces & Importers
 
-These are plugins that provide an administration interface ontop of DocPad:
+These are plugins that provide administration interfaces on top of DocPad:
 
 - [DocPad Collections Editor](https://github.com/cauld/docpad-collections-editor) - A simple WYSIWYG editor for DocPad Collections
 - [MiniCMS](https://npmjs.org/package/docpad-plugin-minicms) - Adds an admin interface to DocPad
