@@ -15,10 +15,12 @@ DocPad mentioned around the web. Oldest first.
 - [DocPad keeps moving forward... really really fast](http://ferrari.github.com/blog/2012-07-22-docpad-keep-forward.html) - Talks about the upgrade and happenings from the early versions of DocPad the latest version 6
 - [DocPad featured on Webification](http://webification.com/create-awesome-websites-intuitively-docpad) - Splendid docs, easy building, DocPad has it all
 - [Ben Dellare's Blog](http://www.delarre.net/) - Great blog full of DocPad articles, including [Going Static](http://www.delarre.net/posts/going-static.html), [Blogging with DocPad](http://www.delarre.net/posts/blogging-with-docpad.html), and [Creating a DocPad Plugin](http://www.delarre.net/posts/creating-a-docpad-plugin.html)
-- [Rapid Web Development with DocPad at Node Ninjas, Sydney](https://vimeo.com/53755097) - Overview of DocPad from its creator
+- [Rapid Web Development with DocPad](https://vimeo.com/53755097) - DocPad founder Benjamin Lupton gives an overview of DocPad and showcases what building a site is like in it
 - [The Source, with Scott Hanselman: Static Sites with DocPad](http://tekpub.com/shows/the_source/3) - In this episode we kick up a site, look at how it works, and have a discussion about the relevance of static sites in general
 - [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](http://www.windowsazure.com/en-us/home/scenarios/web-sites/).
 - [DocPad on Redit](http://www.reddit.com/r/docpad/) - a sub-redit dedicated entirely to DocPad stuff
+- [Why the next big thing sucks](https://www.youtube.com/watch?v=nt4Gt6-T8N0) - DocPad founder Benjamin Lupton talks about his experiences founding open-source projects
+- [Intro to Static Site Generators & DocPad](https://www.youtube.com/watch?v=Zu1uhI0uT2o) - DocPad founder Benjamin Lupton talks about the emergence of Static Site Generators and what makes DocPad diffirent to the rest
 - [Why DocPad](http://takitapart.com/posts/why-docpad/) - Why I've built takitapart using a static site generator, and why DocPad won me over
 - [Organising DocPad](http://takitapart.com/posts/organizing-docpad/) - Setting up the basic taxonomy of [takitapart.](http://takitapart.com/)
 - [WordPress → Aegea → DocPad](http://blog.sapegin.me/all/docpad) - It was much simpler than I thought and I like the result very much
