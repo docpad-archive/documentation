@@ -82,21 +82,19 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 
 
 
-## Admin Interfaces
+## Admin Interfaces & Importers
 
 These are plugins that provide an administration interface ontop of DocPad:
 
 - [DocPad Collections Editor](https://github.com/cauld/docpad-collections-editor) - A simple WYSIWYG editor for DocPad Collections
 - [MiniCMS](https://npmjs.org/package/docpad-plugin-minicms) - Adds an admin interface to DocPad
-- [Use GitHub or Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how you can setup DocPad as a Wiki
+- [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/about.html) as an Admin Interface for DocPad
 
+We're also working very hard on improving support for importers. Importers allow you to import documents from external services into the DocPad database, allowing you to use whatever you want as an admin interface for DocPad. Eventually we will have importers for say Tumblr, WordPress, Joomla, whatever. Allowing you to use DocPad to write and render your website, and them to create and edit your content.
 
+So far we have created the following importers that pull in data from remote services and make them available as DocPad documents:
 
-## Importers
-
-These are plugins that pull in data from remote services and make them available as DocPad documents:
-
-- [downloader](http://docpad.org/plugin/downloader/) - Download (and optionally extract) files into your project
+- [downloader](http://docpad.org/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap](https://github.com/docpad/twitter-bootstrap.docpad) skeleton to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
 - [repocloner](http://docpad.org/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
 
 
