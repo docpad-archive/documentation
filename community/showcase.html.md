@@ -81,3 +81,4 @@ welcome to my online portfolio
 Applications built with DocPad. Alphabetically sorted.
 
 - [Node Chat](https://github.com/balupton/nodechat.docpad) - Node chat application, built with Socket.io, DocPad, Backbone.js, Twitter Bootstrap, written in CoffeeKup and CoffeeScript
+- [Query Engine](https://github.com/bevry/query-engine) - Query Engine adds support for advanced querying to Backbone.js. We use DocPad to compile, watch, and test our project automatically.
