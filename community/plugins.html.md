@@ -88,6 +88,7 @@ These are plugins that provide an administration interface ontop of DocPad:
 
 - [DocPad Collections Editor](https://github.com/cauld/docpad-collections-editor) - A simple WYSIWYG editor for DocPad Collections
 - [MiniCMS](https://npmjs.org/package/docpad-plugin-minicms) - Adds an admin interface to DocPad
+- [Use GitHub or Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how you can setup DocPad as a Wiki
 
 
 
