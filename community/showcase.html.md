@@ -74,6 +74,7 @@ welcome to my online portfolio
 - [Vicktor Ilieff](http://www.viktorilieff.com/) - Viktor Ilieff is an artist, conductor, composer and visionary. His art rests on the principle that the aesthetics of the means of expression should align with the times we live in.
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 - [Workshop 33](http://www.workshop33.com/) - Hand-crafted websites, made in Sonoma County since 1999
+- [Artem Sapegin](http://blog.sapegin.me/) - [source](https://github.com/sapegin/blog.sapegin.me) - Blog of Russian front-end developer: JavaScript, Stylus, Grunt.js, etc.
 
 
 ## Applications
