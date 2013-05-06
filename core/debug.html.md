@@ -18,8 +18,8 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 1. Open up our local DocPad instance for debugging by running:
 
-``` bash
-node --debug-brk ./node_modules/.bin/docpad run
-```
+	``` bash
+	node --debug-brk ./node_modules/.bin/docpad run
+	```
 
 1. Navigate to http://127.0.0.1:8080/debug?port=5858 in your webkit based browser and start debugging (sometimes you may have to refresh or restart the node inspector or docpad instances).
