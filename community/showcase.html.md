@@ -34,6 +34,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [24b](http://www.24b.is) - A gallery, a design studio in Paris
 - [Acherno Interior Design](http://acherno.com) - Corporate web site of the biggest interior design studio in Bulgaria
 - [AlloyUI](http://alloyui.com/) - [source](https://github.com/liferay/alloyui.com) - AlloyUI is a UI framework built on top of YUI3 that provides a simple API for building high scalable applications
+- [Artem Sapegin](http://blog.sapegin.me/) - [source](https://github.com/sapegin/blog.sapegin.me) - Blog of Russian front-end developer: JavaScript, Stylus, Grunt.js, etc.
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
 - [Bevry](http://bevry.me) - Creators of DocPad / Sydney based Node.js, JavaScript and HTML5 company focused on empowering developers.
 - [Ben Dellare](http://www.delarre.net/) - [source](https://github.com/benjamind/delarre.docpad) - Coder, maker, hacker, infrequent blogger.
@@ -74,7 +75,6 @@ welcome to my online portfolio
 - [Vicktor Ilieff](http://www.viktorilieff.com/) - Viktor Ilieff is an artist, conductor, composer and visionary. His art rests on the principle that the aesthetics of the means of expression should align with the times we live in.
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 - [Workshop 33](http://www.workshop33.com/) - Hand-crafted websites, made in Sonoma County since 1999
-- [Artem Sapegin](http://blog.sapegin.me/) - [source](https://github.com/sapegin/blog.sapegin.me) - Blog of Russian front-end developer: JavaScript, Stylus, Grunt.js, etc.
 
 
 ## Applications
