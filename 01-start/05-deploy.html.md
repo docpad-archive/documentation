@@ -113,6 +113,10 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 1. [Follow the rest of the Nodejitsu guide here](http://nodejitsu.com/paas/getting-started.html)
 
 
+### For deployment to [Modulus](http://modulus.io)
+
+1. [Follow getting started guide](https://modulus.io/codex/getting_started)
+
 
 ### Optional: Custom domains
 
