@@ -27,6 +27,7 @@ DocPad mentioned around the web. Oldest first.
 - [WordPress → Aegea → DocPad](http://blog.sapegin.me/all/docpad) - It was much simpler than I thought and I like the result very much
 - [70Decibels Generational Podcast](http://www.70decibels.com/generational/2013/4/27/032-blogging-platforms-with-bob-vanderclay.html) - DocPad featured on episode "032 - Blogging Platforms with Bob VanderClay"
 - [Jekyll/Octopress to DocPad](http://blog.scriptybooks.com/from-jekyll-octopress-to-docpad/) - DocPad turned out to be the best platform for authoring interactive online technical books
+- [Static Site Generation with Node.js and CoffeeScript](http://www.coffeescriptlove.com/2013/05/static-site-generation-with-nodejs-and.html) - DocPad embraces CoffeeScript in a big way.
 
 
 ## Websites
