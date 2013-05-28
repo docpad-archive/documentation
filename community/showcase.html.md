@@ -1,4 +1,4 @@
-Feel free to [update this page](https://github.com/bevry/docpad-documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
+Feel free to [update this page](http://prose.io/#bevry/docpad-documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
 
 
 ## In the press
@@ -19,6 +19,7 @@ DocPad mentioned around the web. Oldest first.
 - [The Source, with Scott Hanselman: Static Sites with DocPad](http://tekpub.com/shows/the_source/3) - In this episode we kick up a site, look at how it works, and have a discussion about the relevance of static sites in general
 - [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](http://www.windowsazure.com/en-us/home/scenarios/web-sites/)
 - [DocPad on Redit](http://www.reddit.com/r/docpad/) - a sub-redit dedicated entirely to DocPad stuff
+- [Create professional websites with DocPad](http://emmet.io/blog/docpad/) - DocPad was an ideal solution for [Emmet documentation website](http://docs.emmet.io/) because it not only provides a simplified development process, but allows me to reduce my hosting costs greatly
 - [Why the next big thing sucks](https://www.youtube.com/watch?v=nt4Gt6-T8N0) - DocPad founder Benjamin Lupton talks about his experiences founding open-source projects
 - [Intro to Static Site Generators & DocPad](https://www.youtube.com/watch?v=Zu1uhI0uT2o) - DocPad founder Benjamin Lupton talks about the emergence of Static Site Generators and what makes DocPad diffirent to the rest
 - [Why DocPad](http://takitapart.com/posts/why-docpad/) - Why I've built takitapart using a static site generator, and why DocPad won me over
