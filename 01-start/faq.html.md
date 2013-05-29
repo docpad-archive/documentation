@@ -69,6 +69,20 @@ Check out the `ignored` [meta data property](/docpad/meta-data).
 Check out the `dynamic` [meta data property](/docpad/meta-data).
 
 
+## How do I create custom 404 and 500 pages?
+Add a `src/documents/404.html` for 404 pages, and `src/documents/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header as mentioned above) your templating engine (e.g. `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/documents/500.html.md.eco`:
+
+```
+---
+layout: default
+title: "An internal error occured - 500"
+dynamic: true
+---
+
+## An error occured on <%= @req.url %>: <%= @err.message %>
+```
+
+
 ## What data is exposed to my template engine?
 Templating engines are renderers for languages which support business logic. For instance, the template engine [Eco](https://github.com/sstephenson/eco) provides us with the following syntax `<% your business logic %>` or to output a variable we can use `<%=some variable%>`.
 
