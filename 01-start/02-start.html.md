@@ -20,11 +20,12 @@ This will ask you which pre-made website you'd like to use (or even if you don't
 
 If you'd rather get your hands dirty by making your own real basic website from scratch, here's the steps:
 
-1. Create a directory for your website and get into it:
+1. Create a directory for your website, get inside of it, and initialize an empty docpad project:
 
 	``` bash
 	mkdir my-website
 	cd my-website
+    docpad init
 	```
 
 1. Install the [Eco](http://docpad.org/plugin/eco) and [Marked](http://docpad.org/plugin/marked) rendering plugins:
