@@ -60,6 +60,7 @@ welcome to my online portfolio
 - [Gwen Bell](http://gwenbell.com) - [source](https://github.com/gwenbell/docpad.gwenbell.com) - Gwen Bell deploys apps, writes about technology and thinks DocPad is the cat's pyjamas.
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
 - [Imaginatr](http://www.imaginatr.com/) - Imaginatr is a creative independent studio focused on the development of mobile applications and innovative software
+- [Invisible Weight](http://invisibleweight.com/) - The Eating Disorder documentary
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Jose Quesada](http://josequesada.com/) - [source](https://github.com/quesada/josequesada.docpad) - Homepage of Jose Quesada, a specialist with e-commerce database marketing
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
