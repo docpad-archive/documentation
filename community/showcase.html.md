@@ -27,7 +27,8 @@ DocPad mentioned around the web. Oldest first.
 - [WordPress → Aegea → DocPad](http://blog.sapegin.me/all/docpad) - It was much simpler than I thought and I like the result very much
 - [70Decibels Generational Podcast](http://www.70decibels.com/generational/2013/4/27/032-blogging-platforms-with-bob-vanderclay.html) - DocPad featured on episode "032 - Blogging Platforms with Bob VanderClay"
 - [Jekyll/Octopress to DocPad](http://blog.scriptybooks.com/from-jekyll-octopress-to-docpad/) - DocPad turned out to be the best platform for authoring interactive online technical books
-- [Static Site Generation with Node.js and CoffeeScript](http://www.coffeescriptlove.com/2013/05/static-site-generation-with-nodejs-and.html) - DocPad embraces CoffeeScript in a big way.
+- [Static Site Generation with Node.js and CoffeeScript](http://www.coffeescriptlove.com/2013/05/static-site-generation-with-nodejs-and.html) - DocPad embraces CoffeeScript in a big way
+- [Converting to Docpad](http://fulljamesnet.herokuapp.com/articles/converting-to-docpad) - Web development worked perfectly
 
 
 ## Websites
@@ -67,6 +68,7 @@ welcome to my online portfolio
 - [MeltMedia](http://meltmedia.com/) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de/) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
+- [Remy Bach](http://remy.bach.me.uk/) - I'm a Christian, husband and father, front-end dev, gamer, and all around tech nerd!
 - [Rio.js](http://www.riojs.org/) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de janeiro's JavaScript User Group
 - [Rob Rawkes](http://rawkes.com/) - Rawkes is the home of Rob Hawkes, part-time Rawket Scientist and full-time geek. Join him as he explores the outer-reaches of programming, digital media, games, and everything in-between.
 - [RunGRE](http://rungre.com/) - RunGRE is the first memory flashcard system designed to be used while exercising. Study the 500 most important GRE words while you move. Join us as we wage a war on sitting! Site built on Docpad :)
