@@ -66,6 +66,7 @@ welcome to my online portfolio
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Jose Quesada](http://josequesada.com/) - [source](https://github.com/quesada/josequesada.docpad) - Homepage of Jose Quesada, a specialist with e-commerce database marketing
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
+- [Leigh Howells](http://leighhowells.com/) - Home planet, blog and portfolio of Designer, tunesmith and UX Consultant, Cambridge, UK.  With added aliens. 
 - [MeltMedia](http://meltmedia.com/) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de/) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
