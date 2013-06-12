@@ -29,6 +29,7 @@ DocPad mentioned around the web. Oldest first.
 - [Jekyll/Octopress to DocPad](http://blog.scriptybooks.com/from-jekyll-octopress-to-docpad/) - DocPad turned out to be the best platform for authoring interactive online technical books
 - [Static Site Generation with Node.js and CoffeeScript](http://www.coffeescriptlove.com/2013/05/static-site-generation-with-nodejs-and.html) - DocPad embraces CoffeeScript in a big way
 - [Converting to Docpad](http://fulljamesnet.herokuapp.com/articles/converting-to-docpad) - Web development worked perfectly
+- [How to contribute to the Topcoat blog](http://vimeo.com/68060525) - Walks you through Adobe's workflow of using DocPad for the [Topcoat website](http://topcoat.io/) and deploying to a GitHub Organisation Page
 
 
 ## Websites
@@ -76,6 +77,7 @@ welcome to my online portfolio
 - [takitapart.](http://takitapart.com/) - akitapart. - pronounced "take-it-apart" - is the blog of Bob VanderClay, web application developer, founding partner at high90, and all around nerd
 - [The Open Document Format](http://www.opendocumentformat.org/) - The official website of the OpenOffice ODF file format
 - [Tomohisa Oda](http://tomohisaoda.com/) - Japanese: Web engineer and designer from Japan
+- [Topcoat.io](http://topcoat.io/) - CSS for clean and fast web apps by Adobe
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org/) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
 - [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
 - [Vicktor Ilieff](http://www.viktorilieff.com/) - Viktor Ilieff is an artist, conductor, composer and visionary. His art rests on the principle that the aesthetics of the means of expression should align with the times we live in.
