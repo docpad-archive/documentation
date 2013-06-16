@@ -30,6 +30,7 @@ DocPad mentioned around the web. Oldest first.
 - [Static Site Generation with Node.js and CoffeeScript](http://www.coffeescriptlove.com/2013/05/static-site-generation-with-nodejs-and.html) - DocPad embraces CoffeeScript in a big way
 - [Converting to Docpad](http://fulljamesnet.herokuapp.com/articles/converting-to-docpad) - Web development worked perfectly
 - [How to contribute to the Topcoat blog](http://vimeo.com/68060525) - Walks you through Adobe's workflow of using DocPad for the [Topcoat website](http://topcoat.io/) and deploying to a GitHub Organisation Page
+- [WordPress out, DocPad in](http://joefleming.net/posts/wordpress-out-docpad-in/) - Docpad looked super flexible for generating static sites, but it also allowed you to add dynamic pages to the mix. I couldn't be happier!
 
 
 ## Websites
