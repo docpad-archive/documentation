@@ -9,7 +9,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 ### What you'll need
 
-1. Get Node Inspector by following the installation instructions [here](https://gist.github.com/balupton/3944017)
+1. Get Node Inspector by following the installation instructions [here](http://stackoverflow.com/a/16512303/130638)
 2. Get a Webkit based browser (stable channel of Google Chrome and Safari both work great)
 
 ### Debugging
