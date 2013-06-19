@@ -5,7 +5,7 @@ title: "Debugging"
 Sometimes things go bad and you need to get into DocPad and work out what's happening. A plugin may be not working as expected, content isn't being generated or you're just curious as to how to do it. Well for that you'll need to get your debugging on.
 
 
-## Debugging with Node Inspector
+## Debugging with [Node Inspector](https://github.com/dannycoates/node-inspector)
 
 ### What you'll need
 
@@ -29,9 +29,14 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 1. Get [TraceGL](https://trace.gl/) from their website, requires payment
 
-2. Download it to somewhere in your PATH, and rename it from `tracegl.js` to `tracegl`, and run `chmod +x tracegl`
+2. Download it to somewhere in your PATH, and run the followig on it:
 
-3. Run tracegl and follow the instructions
+	``` bash
+    mv tracegl.js tracegl
+    chmod +x tracegl
+    ```
+
+3. Run TraceGL on DocPad, and follow the outputted instructions
 
 	``` bash
     tracegl -no:coffee-script ./node_modules/.bin/docpad run
