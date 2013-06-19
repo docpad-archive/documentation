@@ -23,3 +23,16 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 	```
 
 1. Navigate to http://127.0.0.1:8080/debug?port=5858 in your webkit based browser and start debugging (sometimes you may have to refresh or restart the node inspector or docpad instances).
+
+
+## Debugging with [TraceGL](https://trace.gl/) - shareware
+
+1. Get [TraceGL](https://trace.gl/) from their website, requires payment
+
+2. Download it to somewhere in your PATH, and rename it from `tracegl.js` to `tracegl`, and run `chmod +x tracegl`
+
+3. Run tracegl and follow the instructions
+
+	``` bash
+    tracegl -no:coffee-script ./node_modules/.bin/docpad run
+    ```
