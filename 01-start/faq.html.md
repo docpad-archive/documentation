@@ -91,6 +91,13 @@ As such, the data which we expose to our templating engines is called the `templ
 For instance, to output the current document's title with eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what eco uses) you access by using the `@` character.
 
 
+## How can I use environment variables in DocPad?
+All environment variables are automatically available in node applications through [`process.env`](http://nodejs.org/api/process.html#process_process_env). DocPad also loads varibles from a special [environment file](/docpad/config#environment-configuration-file). To quickly override existing environment variables for a single invocation of DocPad, specify it on the command line before the `docpad` command:
+```
+$ API_URL=localhost:1234 docpad run
+```
+
+
 ## How do I disable certain plugins?
 Check out the `enabledPlugins` [configuration property](/docpad/config).
 
@@ -117,7 +124,6 @@ Check out the `plugins` [configuration property](/docpad/config).
 
 ## How can I re-use particular templates again and again throughout my site?
 [Check out the partials plugin.](http://docpad.org/plugin/partials/)
-
 
 
 ## Want more help?
