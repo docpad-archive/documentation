@@ -5,7 +5,7 @@ title: Contributing
 
 ## Donations
 
-[With your help, we'll be able to work on DocPad full time! Isn't that awesome? Donate now to let that happen!](http:/docpad.org/donate/)
+[With your help, we'll be able to work on DocPad full time! Isn't that awesome? Donate now to let that happen!](http://docpad.org/donate/)
 
 
 ## Support
