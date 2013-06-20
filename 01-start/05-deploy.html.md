@@ -138,7 +138,8 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 
 2. Upload the generated directory to your server's `public_html` or `htdocs` directory
 
-[Checkout the DocPad rsync Deploy Script](https://gist.github.com/Hypercubed/5804999)
+	1. If you use rsync, [checkout our DocPad rsync deploy script](https://gist.github.com/Hypercubed/5804999)
+
 
 ## To [GitHub Pages](http://pages.github.com/)
 
