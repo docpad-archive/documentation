@@ -5,7 +5,7 @@ title: "Debugging"
 Sometimes things go bad and you need to get into DocPad and work out what's happening. A plugin may be not working as expected, content isn't being generated or you're just curious as to how to do it. Well for that you'll need to get your debugging on.
 
 
-### What you'll need
+## What you'll need
 
 1. Get a Webkit based browser (both [Google Chrome](http://www.google.com/chrome/) and Safari work great)
 
