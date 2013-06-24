@@ -40,11 +40,13 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
     chmod +x tracegl
     ```
 
-3. Run TraceGL on DocPad, and follow the outputted instructions
+3. Run TraceGL on DocPad
 
 	``` bash
     docpad-trace run
     ```
+
+4. Follow the outputted instructions
 
 
 ## Profiling with [NodeTime](https://nodetime.com/)
