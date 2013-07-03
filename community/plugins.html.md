@@ -3,7 +3,9 @@ Here is a listing of all the plugins available for DocPad. If you have created a
 
 ## Installing
 
-To install a plugin, do a `npm install --save docpad-plugin-#{pluginName}` inside your website's directory. For instance, to install the [eco](http://docpad.org/plugin/eco/) plugin, you would do `npm install --save docpad-plugin-eco`
+To install a plugin, run `docpad install #{thePluginName}` inside your website's directory. As an example, to install the [eco](http://docpad.org/plugin/eco/) plugin, you would run `docpad install eco`
+
+In older versions of DocPad, you would run `npm install --save docpad-plugin-#{thePluginName}` instead
 
 
 
