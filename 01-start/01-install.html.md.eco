@@ -18,11 +18,7 @@ _If you are upgrading from one major version to another, be sure to checkout our
 	npm install -g docpad<%= if (v = @feedr?.feeds?.latestPackage?.version) then '@'+@getVersion(v,2) else '' %>
 	```
 
-1. If you're upgrading, run this inside _your project directory_ to ensure that your local installations of DocPad and its plugins are updated to their latest compatible version
-
-	``` bash
-	docpad update
-	```
+1. If you're upgrading, in addition to the above, run `docpad update` inside your project directory to ensure that your local installations of DocPad and its plugins are updated to their latest compatible version
 
 1. If you want operating system notifications, follow [these additional instructions](https://github.com/visionmedia/node-growl#install) - ignore the install npm instructions as we already completed them earlier
 
