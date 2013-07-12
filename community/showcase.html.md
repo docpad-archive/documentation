@@ -41,6 +41,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [24b](http://www.24b.is) - A gallery, a design studio in Paris
 - [Acherno Interior Design](http://acherno.com) - Corporate web site of the biggest interior design studio in Bulgaria
 - [AlloyUI](http://alloyui.com/) - [source](https://github.com/liferay/alloyui.com) - AlloyUI is a UI framework built on top of YUI3 that provides a simple API for building high scalable applications
+- [Ameda Indonesia](http://ameda.co.id) - A distributor site of Ameda breastfeeding & breastpump in Indonesia.
 - [Artem Sapegin](http://blog.sapegin.me/) - [source](https://github.com/sapegin/blog.sapegin.me) - Blog of Russian front-end developer: JavaScript, Stylus, Grunt.js, etc.
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
 - [Bevry](http://bevry.me) - Creators of DocPad / Sydney based Node.js, JavaScript and HTML5 company focused on empowering developers.
@@ -70,6 +71,7 @@ welcome to my online portfolio
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
 - [Leigh Howells](http://leighhowells.com/) - Home planet, blog and portfolio of Designer, tunesmith and UX Consultant, Cambridge, UK.  With added aliens. 
 - [MeltMedia](http://meltmedia.com/) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
+- [Mimijumi Indonesia](http://mimijumi.co.id) - A distributor site of Mimijumi in Indonesia.
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de/) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
 - [Remy Bach](http://remy.bach.me.uk/) - I'm a Christian, husband and father, front-end dev, gamer, and all around tech nerd!
