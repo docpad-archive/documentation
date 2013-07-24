@@ -1,3 +1,7 @@
+---
+published: false
+---
+
 ## Known Issues
 
 
@@ -21,6 +25,10 @@ If that fails, we'd recommend either:
 
 - Re-Installing Node.js with [Bevry's recommended installation instructions](http://bevry.me/node/install)
 - Asking about it on the [Node.js IRC Chat Room](http://webchat.freenode.net/?channels=node.js) (`#node.js` on freenode)
+
+
+### When I run `docpad run`, Windows asks me what program I would like to open the file in
+It turns out that windows will prefer to treat the local `docpad.js` file as the executable versus the global `docpad.cmd` file. To get around this, type `docpad.cmd run` instead in projects that have a `docpad.js` file. [More information here.](https://github.com/bevry/docpad/issues/561#issuecomment-21494426)
 
 
 ### Watching doesn't work, works only some of the time, or I get `EISDIR` errors
