@@ -8,6 +8,18 @@ title: Contributing
 [With your help, we'll be able to work on DocPad full time! Isn't that awesome? Donate now to let that happen!](http://docpad.org/donate/)
 
 
+## Publicize
+
+Help spread the word of DocPad:
+
+- Star our [GitHub Repository](https://github.com/bevry/docpad) by clicking the "Star" button on the top right
+- Star our [NPM Package](https://npmjs.org/package/docpad) by running `npm star docpad` in your terminal
+- Talk about us on Social Media; Twitter, Blogging, Etc
+- Write about your experiences of DocPad on your blog
+- Do a short less than a minute video testimonial of DocPad on Youtube!
+- and just continuing to be awesome
+
+
 ## Support
 
 To get support:
@@ -16,13 +28,15 @@ To get support:
 - For bug reports relating to plugins, use their GitHub Issue Tracker
   - You can find the link by going to the plugin's page, then looking for the "Issues" button
 - With your bug reports, be sure to specify:
-		- Your docpad version `docpad --version`
-		- Your node version `node --version`
-		- Your npm version `npm --version`
-		- Your operating system's name, architecture, and version
-		- What you did
-		- What happened
-		- What you expected
+	- Your docpad version `docpad --version`
+	- Your node version `node --version`
+	- Your npm version `npm --version`
+	- Your operating system's name, architecture, and version
+	- What you did
+	- What happened
+	- What you expected
+	- The skeleton that was affected (if applicable)
+	- The `docpad-debug.log` file when you run docpad in debug mode by specifying the `-d` flag, e.g. `docpad run -d`
 - For everything else that isn't bug reports (e.g. questions, support, etc), use our [Official Support Channels](http://docpad.org/support)
 
 
