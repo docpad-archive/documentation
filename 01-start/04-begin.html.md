@@ -486,7 +486,7 @@ docpadConfig = {
 ```
 
 Then inside our Default Layout, we'll update the `getCollection` line to become:
-	
+
 ``` erb
 <% for page in @getCollection("pages").toJSON(): %>
 ```
@@ -506,7 +506,7 @@ docpadConfig = {
 	collections:
 		pages: ->
 			@getCollection("html").findAllLive({isPage:true}).on "add", (model) ->
-				model.setMetaDefaults({layout:"default"})
+				model.setDefaults({layout:"default"})
 	# ...
 }
 ```
