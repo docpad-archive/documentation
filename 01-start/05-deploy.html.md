@@ -146,7 +146,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 1. Install the [GitHub Pages Plugin](http://docpad.org/plugin/ghpages)
 
 	```
-	npm install --save docpad-plugin-ghpages
+	docpad install ghpages
 	```
 
 2. Deploy to GitHub Pages using the plugin

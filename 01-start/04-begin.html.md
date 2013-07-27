@@ -135,7 +135,7 @@ Templating Engines allow us to embed abstractions inside our documents - which i
 For this guide, the templating engine we'll be using is [eco](https://github.com/sstephenson/eco) and is available to us via the [eco plugin](http://docpad.org/plugin/eco). So lets install that now by quitting DocPad (`CTRL+C`), and running:
 
 ``` bash
-npm install --save docpad-plugin-eco
+docpad install eco
 ```
 
 Once installed, if we run DocPad again (`docpad run`), then go our home page or about page, we'll see that the content actually contains the document content! In other words, it's actually rendered correctly through our eco templating engine! Woot woot.
@@ -171,7 +171,7 @@ Now what on earth was with the stuff between the `---` at the top of our documen
 Sweet. So we're going good so far. We've got two documents going, and a layout to abstract them. But as we are making this changes, it sure would be nice if our browser refreshed the page automatically. We can do this with the [live reload plugin](http://docpad.org/plugin/livereload), so lets install that now:
 
 ``` bash
-npm install --save docpad-plugin-livereload
+docpad install livereload
 ```
 
 Then once you've restarted DocPad, whenever you make a change to the files you'll notice the browser still doesn't refresh automatically to show the changes! Why? The reason is that we have to add our Blocks.
@@ -298,7 +298,7 @@ I like long walks on the beach. **Plus I rock at DocPad!**
 Which gives us the same result, but with all the benefits of Markdown. Now, just like all rendering engines, we have to:
 
 1. Indicate the rendering we want to perform - so rename `about.html` to `about.html.md` to indicate we want to render from Markdown to HTML
-1. Install the plugin that can do the rendering - so to install the [RobotSkirt Markdown Plugin](http://docpad.org/plugin/robotskirt) we'll run `npm install --save docpad-plugin-robotskirt`
+1. Install the plugin that can do the rendering - so to install the [Marked Markdown Plugin](http://docpad.org/plugin/marked) we'll run `docpad install marked`
 
 Sweet, you're now ready to rock the house with Markdown.
 
@@ -316,7 +316,7 @@ h1
 Which gives us the same result, but with all the benefits of Stylus. Now, just like all rendering engines, we have to:
 
 1. Indicate the rendering we want to perform - so rename `style.css` to `style.css.styl` to indicate we want to render from Stylus to CSS
-1. Install the plugin that can do the rendering - so to install the [Stylus Plugin](http://docpad.org/plugin/stylus) we'll run `npm install --save docpad-plugin-stylus`
+1. Install the plugin that can do the rendering - so to install the [Stylus Plugin](http://docpad.org/plugin/stylus) we'll run `docpad install stylus`
 
 Sweet, you're now ready to rock the house with Stylus.
 
@@ -333,7 +333,7 @@ $("body").hide().fadeIn(1000)
 Which gives us the same result, but with all the benefits of CoffeeScript. Now, just like all rendering engines, we have to:
 
 1. Indicate the rendering we want to perform - so rename `script.js` to `script.js.coffee` to indicate we want to render from CoffeeScript to JavaScript
-1. Install the plugin that can do the rendering - so to install the [CoffeeScript Plugin](http://docpad.org/plugin/coffeescript) we'll run `npm install --save docpad-plugin-coffeescript`
+1. Install the plugin that can do the rendering - so to install the [CoffeeScript Plugin](http://docpad.org/plugin/coffeescript) we'll run `docpad install coffeescript`
 
 Sweet, you're now ready to rock the house with CoffeeScript.
 

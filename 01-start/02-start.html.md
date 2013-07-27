@@ -31,7 +31,7 @@ If you'd rather get your hands dirty by making your own real basic website from 
 1. Install the [Eco](http://docpad.org/plugin/eco) and [Marked](http://docpad.org/plugin/marked) rendering plugins:
 
 	``` bash
-	npm install --save docpad-plugin-eco docpad-plugin-marked
+	docpad install eco,marked
 	```
 
 1. Create the following files:
