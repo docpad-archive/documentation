@@ -15,7 +15,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 1. Install Node Inspector with the following:
 
 	``` bash
-	npm install -g node-inspector@0.1.10
+	npm install -g node-inspector
 	```
 
 1. Open Node Inspector up by running `node-inspector` in another Terminal window:
