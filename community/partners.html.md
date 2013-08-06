@@ -15,8 +15,8 @@ MyPlanet funded the development of the Importers Functionality of DocPad. They a
 ## [Melt Media. Medium to Corporate Sized Clients.](http://meltmedia.com/)
 Melt Media designed the DocPad website.
 
-## [АЛМЕРО.  Medium to Corporate Sized Clients.](http://almero.bg/)
-Almero description goes here.
+## [Almero.  Medium to Corporate Sized Clients.](http://almero.bg/)
+Almero is digital marketing agency based in Bulgaria. It is specialized in providing services that seamlessly incorporate market analysis, user insights, strategic and tactical brand development, graphic design, web design, advertising and video production. They have experience in building corporate sites based on DocPad which they use almost exclusively for their web projects.
 
 ## [Mass Distribution Media. Small to Medium Sized Clients.](http://massdistributionmedia.com/)
 MDM desscription goes here.
