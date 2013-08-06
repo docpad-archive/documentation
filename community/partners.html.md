@@ -21,5 +21,6 @@ Almero is digital marketing agency based in Bulgaria. It is specialized in provi
 ## [Mass Distribution Media. Small to Medium Sized Clients.](http://massdistributionmedia.com/)
 MDM desscription goes here.
 
-## [DockYard. Small to Medium Sized Clients.](http://dockyard.com/)
-DockYard description goes here.
+## [DockYard. Small to Corporate Sized Clients.](http://dockyard.com/)
+We are designers, software engineers, and storytellers creating beautiful products
+and building brands. Based out of Boston, MA & Washington, DC, we build web & mobile-web applications using Ruby on Rails, PostgreSQL, and Ember.js. We provide services and support for many tech solutions, including our favorite static website generator: DocPad.
