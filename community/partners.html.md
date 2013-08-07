@@ -19,7 +19,7 @@ Melt Media designed the DocPad website.
 Almero is digital marketing agency based in Bulgaria. It is specialized in providing services that seamlessly incorporate market analysis, user insights, strategic and tactical brand development, graphic design, web design, advertising and video production. They have experience in building corporate sites based on DocPad which they use almost exclusively for their web projects.
 
 ## [Mass Distribution Media. Small to Medium Sized Clients.](http://massdistributionmedia.com/)
-MDM desscription goes here.
+MDM is a US based web design & development company specializing in Node.js websites, web apps, mobile apps and training. We also offter DocPad training. 
 
 ## [DockYard. Small to Corporate Sized Clients.](http://dockyard.com/)
 We are designers, software engineers, and storytellers creating beautiful products
