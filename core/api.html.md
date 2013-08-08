@@ -151,7 +151,7 @@ var docpadInstanceConfiguration = {
 	// Tell it not to load the standard middlewares (as we handled that above)
 	middlewareStandard: false
 };
-var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguration, function(err){
+var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguration, function(err,docpad){
 	if (err)  return console.log(err.stack);
 	// Tell DocPad to perform a generation, extend our server with its routes, and watch for changes
 	docpad.action('generate server watch', function(err){
