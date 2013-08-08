@@ -1,5 +1,4 @@
 ```
-ignored: true
 title: Consulting & Support Partners
 ```
 
