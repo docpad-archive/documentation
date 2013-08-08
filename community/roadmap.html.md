@@ -16,12 +16,13 @@ Version structure and timelines:
 	- Uses GitHub for authentication, validates email address against `package.json` maintainers
 	- Login window trigger by `ctrl/cmd+shift+l`
 
-- Front-End Administration Plugin
-	- Support adding and removing of resources
-	- Support adding and removing of documents
-	- Support adding and removing of files (includes uploading if in the cloud)
+- REST Plugin
 
 - Web GUI
+	- Editing
+		- Support adding and removing of resources
+		- Support adding and removing of documents
+		- Support adding and removing of files (includes uploading if in the cloud)
 	- Connect
 		- Purchasable Content (e.g. sell premium plugins, tutorials, themes, etc)
 	- Exchange
@@ -49,23 +50,69 @@ Version structure and timelines:
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
 
+
+## Current Focus
+
 - Importer Plugins
 	- WordPress
-	- Tumblr
 	- Jekyll
 	- Octopress
-
-
-## Next
-
-- Importers
-- Abstractions
+	- Dropbox
+	- Youtube
+	- Tumblr _**- released**_
+	- Tags _**- released**_
+- Importer Speed Optimisations
+- [More prominance to Providers/Partners](https://github.com/bevry/docpad-website/issues/19)
+- [Web GUI](https://github.com/docpad/gui/issues)
+- [Performance optimisations](https://github.com/bevry/docpad/issues/529)
+- [Run DocPad on the Client Side](https://github.com/bevry/docpad/issues/542)
+- [Official DocPad Blog](https://github.com/bevry/docpad-website/issues/29)
+- [Fix Watchr once and for all](https://github.com/bevry/watchr/issues/33)
 
 
 ## Version 6
 
-### v6.15 _**- released**_
-- Nodejitsu support
+### v6.46 _**- released**_
+- Importer support
+
+### v6.45 _**- released**_
+- Added `docpad update` command
+
+### v6.44 _**- released**_
+- Virtual document support
+
+### v6.43 _**- released**_
+- Added `docpad install` command
+
+### v6.41 _**- released**_
+- Debugging and tracing improvements
+
+### v6.38 _**- released**_
+- Init empty directories
+
+### v6.35 _**- released**_
+- Plugin priorities
+
+### v6.32 _**- released**_
+- Streams based logging
+
+### v6.31 _**- released**_
+- Progress bar for generation
+
+### v6.30 _**- released**_
+- Abstracting out the core begins
+
+### v6.26 _**- released**_
+- Node 0.10 support
+
+### v6.25 _**- released**_
+- Persistant database
+
+### v6.24 _**- released**_
+- Plugins can now extend the CLI
+
+### v6.23 _**- released**_
+- Foreign encoding support
 
 ### v6.13 _**- released**_
 - Statistics
@@ -77,7 +124,7 @@ Version structure and timelines:
 - [Express.js](http://expressjs.com/) v3 support
 
 ### v6.6 _**- released**_
-- `docpad-debug` executable
+- Added `docpad-debug` executable
 
 ### v6.4 _**- released**_
 - Custom error pages
@@ -88,7 +135,7 @@ Version structure and timelines:
 ### v6.2 _**- released**_
 - Environment specific configuration
 - Better node.js deployments
-- Better extensibility
+- Better extendability
 
 ### v6.1 _**- released**_
 - [Element based renderers](https://github.com/bevry/docpad/issues/194)
