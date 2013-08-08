@@ -20,3 +20,6 @@ MDM is a US based web design & development company specializing in Node.js websi
 ## [DockYard. Small to Corporate Sized Clients.](http://dockyard.com/)
 We are designers, software engineers, and storytellers creating beautiful products
 and building brands. Based out of Boston, MA & Washington, DC, we build web & mobile-web applications using Ruby on Rails, PostgreSQL, and Ember.js. We provide services and support for many tech solutions, including our favorite static website generator: DocPad.
+
+## [Liferay. Enterprise Clients.](http://liferay.com/)
+Liferay is a professional open-source company that provides free documentation and paid professional service to users of its software, the [Liferay Portal](http://www.liferay.com/en/products/liferay-portal/overview). Mainly focused on enterprise portal technology, the company has its headquarters in Los Angeles, California. Besides Liferay Portal we also have a product called [AlloyUI](http://alloyui.com), which is an open source UI framework and we decided to build its website on top of DocPad.
