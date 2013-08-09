@@ -53,15 +53,13 @@ Version structure and timelines:
 
 ## Current Focus
 
-- Importer Plugins
-	- WordPress
-	- Jekyll
-	- Octopress
-	- Dropbox
-	- Youtube
-	- Tumblr _**- released**_
-	- Tags _**- released**_
-- Importer Speed Optimisations
+- [Importer Plugins](https://github.com/bevry/docpad/issues?labels=affects+importer)
+	- [WordPress](https://github.com/bevry/docpad/issues/49)
+	- [Dropbox](https://github.com/bevry/docpad/issues/386)
+	- [Youtube](https://github.com/bevry/docpad/issues/571)
+	- [Tumblr](/plugin/tumblr) _**- released**_
+	- [Tags](/plugin/tags) _**- released**_
+- [Importer Speed Optimisations](https://github.com/bevry/docpad/issues/590)
 - [More prominance to Providers/Partners](https://github.com/bevry/docpad-website/issues/19)
 - [Web GUI](https://github.com/docpad/gui/issues)
 - [Performance optimisations](https://github.com/bevry/docpad/issues/529)
