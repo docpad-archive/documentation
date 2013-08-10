@@ -119,14 +119,14 @@ Check out the `plugins` [configuration property](/docpad/config).
 
 
 ## How can I get my templating engine to render other DocPad supported markups?
-[Check out the text plugin.](http://docpad.org/plugin/text/)
+[Check out the text plugin.](/plugin/text/)
 
 
 ## How can I re-use particular templates again and again throughout my site?
-[Check out the partials plugin.](http://docpad.org/plugin/partials/)
+[Check out the partials plugin.](/plugin/partials/)
 
 
 ## Want more help?
 
 - Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
-- Need support? [Check out our Support Channels](http://docpad.org/support)
+- Need support? [Check out our Support Channels](/support)

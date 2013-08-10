@@ -5,7 +5,7 @@ title: Contributing
 
 ## Donations
 
-[With your help, we'll be able to work on DocPad full time! Isn't that awesome? Donate now to let that happen!](http://docpad.org/donate/)
+[With your help, we'll be able to work on DocPad full time! Isn't that awesome? Donate now to let that happen!](/donate)
 
 
 ## Publicize
@@ -37,7 +37,7 @@ To get support:
 	- What you expected
 	- The skeleton that was affected (if applicable)
 	- The `docpad-debug.log` file when you run docpad in debug mode by specifying the `-d` flag, e.g. `docpad run -d`
-- For everything else that isn't bug reports (e.g. questions, support, etc), use our [Official Support Channels](http://docpad.org/support)
+- For everything else that isn't bug reports (e.g. questions, support, etc), use our [Official Support Channels](/support)
 
 
 

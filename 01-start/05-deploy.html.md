@@ -143,7 +143,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 
 ## To [GitHub Pages](http://pages.github.com/)
 
-1. Install the [GitHub Pages Plugin](http://docpad.org/plugin/ghpages)
+1. Install the [GitHub Pages Plugin](/plugin/ghpages)
 
 	```
 	docpad install ghpages

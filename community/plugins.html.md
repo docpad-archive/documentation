@@ -3,7 +3,7 @@ Here is a listing of all the plugins available for DocPad. If you have created a
 
 ## Installing
 
-To install a plugin, run `docpad install #{thePluginName}` inside your website's directory. As an example, to install the [eco](http://docpad.org/plugin/eco/) plugin, you would run `docpad install eco`
+To install a plugin, run `docpad install #{thePluginName}` inside your website's directory. As an example, to install the [eco](/plugin/eco/) plugin, you would run `docpad install eco`
 
 In older versions of DocPad, you would run `npm install --save docpad-plugin-#{thePluginName}` instead
 
@@ -13,28 +13,28 @@ In older versions of DocPad, you would run `npm install --save docpad-plugin-#{t
 
 These are plugins that add support for extra markups and languages to DocPad:
 
-- [coffeescript](http://docpad.org/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
-- [coffeekup](http://docpad.org/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
-- [cson](http://docpad.org/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
-- [eco](http://docpad.org/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
-- [haml](http://docpad.org/plugin/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
+- [coffeescript](/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
+- [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
+- [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
+- [eco](/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
+- [haml](/plugin/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
 - [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [HAML Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
-- [handlebars](http://docpad.org/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com/) to anything `.anything.(hb|hbs|handlebars)`
-- [hogan](http://docpad.org/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
-- [html2coffee](http://docpad.org/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
-- [html2jade](http://docpad.org/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com/) `.jade.html`
-- [jade](http://docpad.org/plugin/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
-- [js2coffee](http://docpad.org/plugin/js2coffee/) - Supports JavaScript to CoffeeScript `.coffee.js`
-- [less](http://docpad.org/plugin/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
-- [marked](http://docpad.org/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
-- [move](http://docpad.org/plugin/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
+- [handlebars](/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com/) to anything `.anything.(hb|hbs|handlebars)`
+- [hogan](/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
+- [html2coffee](/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
+- [html2jade](/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com/) `.jade.html`
+- [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
+- [js2coffee](/plugin/js2coffee/) - Supports JavaScript to CoffeeScript `.coffee.js`
+- [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
+- [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
+- [move](/plugin/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
 - [multimarkdown](https://github.com/takitapart/docpad-plugin-multimarkdown) - Supports [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) to HTML `.html.(md|markdown)` via [node-multimarkdown](https://github.com/dtjm/node-multimarkdown)
-- [php](http://docpad.org/plugin/php) - Supports [PHP](http://php.net/) to anything `.anything.(php|phtml)`
-- [robotskirt](http://docpad.org/plugin/robotskirt/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [robotskirt](https://github.com/benmills/robotskirt)
+- [php](/plugin/php) - Supports [PHP](http://php.net/) to anything `.anything.(php|phtml)`
+- [robotskirt](/plugin/robotskirt/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [robotskirt](https://github.com/benmills/robotskirt)
 - [roole](https://github.com/georgeosddev/docpad-plugin-roole) - Supports [Roole](http://roole.org/) to CSS `.css.roo`
-- [ruby](http://docpad.org/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.(ruby|erb)`
-- [sass](http://docpad.org/plugin/sass/) - Supports [SCSS and SASS](http://sass-lang.com/) to CSS (includes [compass](http://compass-style.org/) support) `.css.(sass|scss)`
-- [stylus](http://docpad.org/plugin/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.(styl|stylus)`
+- [ruby](/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.(ruby|erb)`
+- [sass](/plugin/sass/) - Supports [SCSS and SASS](http://sass-lang.com/) to CSS (includes [compass](http://compass-style.org/) support) `.css.(sass|scss)`
+- [stylus](/plugin/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.(styl|stylus)`
 - [teacup](https://github.com/hurrymaplelad/docpad-plugin-teacup/) - Supports [Teacup](http://goodeggs.github.io/teacup/) to HTML `.html.coffee`
 - [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](http://textile.sitemonks.com/) to HTML `.html.textile`
 - [typescript](https://github.com/bpampuch/docpad-plugin-tsc) - Supports [TypeScript](http://www.typescriptlang.org/) to JavaScript `.js.ts`
@@ -46,35 +46,35 @@ These are plugins that add support for extra markups and languages to DocPad:
 These are plugins that add extra functionality to DocPad:
 
 - [addthis](https://github.com/mikeumus/docpad-plugin-addthis) - Adds the [AddThis](http://www.addthis.com/) toolbar into your project
-- [associatedfiles](http://docpad.org/plugin/associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
+- [associatedfiles](/plugin/associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
 - [basicauth](https://github.com/mikeumus/docpad-plugin-basicauth) - Adds basic authentication to your project
-- [buildr](http://docpad.org/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
+- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
 - [datefromfilename](https://github.com/grassator/docpad-plugin-datefromfilename) - Automaticaly set the date meta-data property by determining it from the document's filename
 - [dateurls](https://npmjs.org/package/docpad-plugin-dateurls) - Automatically add `/YEAR/MONTH/DAY/NAME` routes for your posts
-- [cachr](http://docpad.org/plugin/cachr/) - Allows you to cache remote urls locally from within your templates
-- [cleanurls](http://docpad.org/plugin/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
+- [cachr](/plugin/cachr/) - Allows you to cache remote urls locally from within your templates
+- [cleanurls](/plugin/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [csv](https://github.com/CycoPH/docpad-plugin-csv/) - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2
 - [dateurls](https://github.com/mgroves84/docpad-plugin-dateurls/) - Adds support for date based urls like `/2013/04/27/hello.html`
 - [facebookcomments](https://github.com/mikeumus/docpad-plugin-facebookcomments) - Adds the [Facebook Comment Widget](https://developers.facebook.com/docs/reference/plugins/comments/) to your project
-- [feedr](http://docpad.org/plugin/feedr/) - Allows you to render remote feeds within your templates
+- [feedr](/plugin/feedr/) - Allows you to render remote feeds within your templates
 - [frontend](https://npmjs.org/package/docpad-plugin-frontend) - CSS and JavaScript asset manager and compiler for DocPad
-- [gist](http://docpad.org/plugin/gist/)  - Pulls in gists into your document
-- [highlightjs](http://docpad.org/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
+- [gist](/plugin/gist/)  - Pulls in gists into your document
+- [highlightjs](/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [jsexc](https://github.com/JeffreyZhao/docpad-plugin-jscexc) - Adds the ability to apply AOT compilation to JavaScript files
-- [livereload](http://docpad.org/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
+- [livereload](/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from documents folder
-- [nativecomments](http://docpad.org/plugin/nativecomments/) - Adds support for native comments to DocPad
-- [paged](http://docpad.org/plugin/paged/) - Adds multiple page support to documents allowing you to render one document out to many pages
-- [partials](http://docpad.org/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
-- [pygments](http://docpad.org/plugin/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
-- [related](http://docpad.org/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
+- [nativecomments](/plugin/nativecomments/) - Adds support for native comments to DocPad
+- [paged](/plugin/paged/) - Adds multiple page support to documents allowing you to render one document out to many pages
+- [partials](/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
+- [pygments](/plugin/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
+- [related](/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
 - [rss](https://github.com/hurrymaplelad/docpad-plugin-rss) - Generates an RSS feed for a configurable collection
-- [services](http://docpad.org/plugin/services/) - Adds support for many 3rd party services to DocPad
+- [services](/plugin/services/) - Adds support for many 3rd party services to DocPad
 - [sitemap](https://github.com/benjamind/docpad-plugin-sitemap) - Generates a `sitemap.xml` file for your site from the `html` documents collection
-- [text](http://docpad.org/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
+- [text](/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
 - [tableofcontents](https://github.com/takitapart/docpad-plugin-tableofcontents) - Automatically generate table of contents
 - [thumbnails](https://github.com/rantecki/docpad-plugin-thumbnails) - Manages thumbnail generation of your image files
-- [umd](http://docpad.org/plugin/umd/) - Wrap specified JavaScript documents in the Universal Module Definition (UMD) allowing them to run in AMD, Require.js, CommonJS/Node.js and Vanilla environments automatically
+- [umd](/plugin/umd/) - Wrap specified JavaScript documents in the Universal Module Definition (UMD) allowing them to run in AMD, Require.js, CommonJS/Node.js and Vanilla environments automatically
 - [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate .json file for quick loading via AJAX.
 - [navlinks](https://github.com/lucor/docpad-plugin-navlinks) - Adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection.
 
@@ -83,7 +83,7 @@ These are plugins that add extra functionality to DocPad:
 
 These are plugins that make [deploying](/docpad/deploy) to particular services even easier:
 
-- [ghpages](http://docpad.org/plugin/ghpages) - Deploy to [GitHub Pages](http://pages.github.com/) as easy as `docpad deploy-ghpages`
+- [ghpages](/plugin/ghpages) - Deploy to [GitHub Pages](http://pages.github.com/) as easy as `docpad deploy-ghpages`
 - [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation
 
 
@@ -100,8 +100,8 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 
 So far we have the following importers that pull in data from remote services and make them available as DocPad documents:
 
-- [downloader](http://docpad.org/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap](https://github.com/docpad/twitter-bootstrap.docpad) skeleton to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
-- [repocloner](http://docpad.org/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
+- [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap](https://github.com/docpad/twitter-bootstrap.docpad) skeleton to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
+- [repocloner](/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
 
 
 
@@ -142,4 +142,4 @@ It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Pag
 
 ## Requested
 
-[Here is a list of plugins waiting to be coded up :-)](http://docpad.org/issues?labels=plugin&sort=created&direction=desc&state=open&page=1)
+[Here is a list of plugins waiting to be coded up :-)](/issues?labels=plugin&sort=created&direction=desc&state=open&page=1)
