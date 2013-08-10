@@ -1,6 +1,6 @@
 This page serves as a roadmap that details the approximate milestones of DocPad's future.
 
-Want to help? [Contribute!](/docpad/contribute)
+[Want to help? Contribute!](/docpad/contribute)
 
 
 ## Current
@@ -65,7 +65,7 @@ Want to help? [Contribute!](/docpad/contribute)
 ### Version 6
 
 - v6.46
-	- Importer support
+	- [Importer support](https://github.com/bevry/watchr/issues/500)
 
 - v6.45
 	- Added `docpad update` command
