@@ -7,7 +7,7 @@ urls: ['/docs/partners', '/partners', '/support']
 
 StackOverflow is a community of passionate programmers dedicated to solving problems for each other for any type of programming questions. As you post questions and answers you’ll earn reputation which gives you more abilities on the site. _Be aware that StackOverflow is a community for anything programming, and not just for DocPad so be sure to use the `docpad` tag when asking your question. [If you’re new to Stack Overflow, read their FAQ first.](http://stackoverflow.com/faq)_
 
-[Ask your question now. Be sure to use the `docpad` tag.](http://stackoverflow.com/questions/ask)
+[Ask your question. Be sure to use the `docpad` tag.](http://stackoverflow.com/questions/ask)
 
 [Find existing questions and answers.](http://stackoverflow.com/questions/tagged/docpad)
 
