@@ -182,7 +182,7 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 
 
 - v2.3
-- Cloud Support
+	- Cloud Support
 
 - v2.2
 	- Windows Support
