@@ -10,7 +10,6 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- [Tumblr](/plugin/tumblr) _**- released**_
 	- [Tags](/plugin/tags) _**- released**_
 - [Importer Speed Optimisations](https://github.com/bevry/docpad/issues/590)
-- [More prominance to Providers/Partners](https://github.com/bevry/docpad-website/issues/19)
 - [Web GUI](https://github.com/docpad/gui/issues)
 - [Performance optimisations](https://github.com/bevry/docpad/issues/529)
 - [Run DocPad on the Client Side](https://github.com/bevry/docpad/issues/542)
@@ -57,7 +56,6 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- Administration
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
-
 
 
 ## Done
