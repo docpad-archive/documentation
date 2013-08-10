@@ -20,26 +20,6 @@ Help spread the word of DocPad:
 - and just continuing to be awesome
 
 
-## Support
-
-To get support:
-
-- For bug reports relating to the core, use our [GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
-- For bug reports relating to plugins, use their GitHub Issue Tracker
-  - You can find the link by going to the plugin's page, then looking for the "Issues" button
-- With your bug reports, be sure to specify:
-	- Your docpad version `docpad --version`
-	- Your node version `node --version`
-	- Your npm version `npm --version`
-	- Your operating system's name, architecture, and version
-	- What you did
-	- What happened
-	- What you expected
-	- The skeleton that was affected (if applicable)
-	- The `docpad-debug.log` file when you run docpad in debug mode by specifying the `-d` flag, e.g. `docpad run -d`
-- For everything else that isn't bug reports (e.g. questions, support, etc), use our [Official Support Channels](/support)
-
-
 
 ## Skeletons
 
