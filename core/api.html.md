@@ -136,7 +136,7 @@ If you already have an Express.js application, you can do the following to just 
 var express = require('express');
 var http = require('http');
 var app = express();
-var server = http.createServer(app).listen(80);
+var server = http.createServer(app).listen(8080);
 
 // Add our Application Stuff
 app.use(express.bodyParser());
@@ -154,7 +154,7 @@ var docpadInstanceConfiguration = {
 var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguration, function(err){
 	if (err)  return console.log(err.stack);
 	// Tell DocPad to perform a generation, extend our server with its routes, and watch for changes
-	docpad.action('generate server watch', function(err){
+	docpadInstance.action('generate server watch', function(err){
 		if (err)  return console.log(err.stack);
 	});
 });
