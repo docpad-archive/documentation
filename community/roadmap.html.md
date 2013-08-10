@@ -3,6 +3,8 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 
 ## Current
 
+Want to help? [Contribute!](/docpad/contribute)
+
 - [Importer Plugins](https://github.com/bevry/docpad/issues?labels=affects+importer)
 	- [WordPress](https://github.com/bevry/docpad/issues/49)
 	- [Dropbox](https://github.com/bevry/docpad/issues/386)
