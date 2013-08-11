@@ -1,5 +1,5 @@
 ```
-title: Mass Distribution Media
+title: MDM
 description: New age web platforms for select clients
 support: Small to Medium Sized Clients
 link: http://massdistributionmedia.com/
