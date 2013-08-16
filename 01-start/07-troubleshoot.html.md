@@ -56,7 +56,7 @@ As node.js is like an octopus, able to do many things at the same time, sometime
 There are a few things you can do:
 
 - [Move files that you do not reference in content listings to a raw directory with the raw plugin](https://github.com/bevry/docpad/issues/276)
-- [Set `standalone: true` to the meta data of documents that you regenerate often](http://docpad.org/docs/meta-data#standalone)
+- [Set `standalone: true` to the meta data of documents that you regenerate often](/docpad/meta-data#standalone)
 - Use native/javascript implementations of renderers instead of non-native, non-javascript ones
   - E.g. instead of using sass, use nodesass, stylus, or less
 - [Help us implement performance optimisations](https://github.com/bevry/docpad/issues/529)
