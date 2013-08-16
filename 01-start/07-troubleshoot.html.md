@@ -52,6 +52,16 @@ This happens when the [git](http://git-scm.com) installation is not exposed to y
 As node.js is like an octopus, able to do many things at the same time, sometimes node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running `ulimit -n 8192` in your terminal.
 
 
+### How can I make DocPad go even faster?
+There are a few things you can do:
+
+- [Move files that you do not reference in content listings to a raw directory with the raw plugin](https://github.com/bevry/docpad/issues/276)
+- [Set `standalone: true` to the meta data of documents that you regenerate often](http://docpad.org/docs/meta-data#standalone)
+- Use native/javascript implementations of renderers instead of non-native, non-javascript ones
+  - E.g. instead of using sass, use nodesass, stylus, or less
+- [Help us implement performance optimisations](https://github.com/bevry/docpad/issues/529)
+
+
 ### I upgraded, and it doesn't work
 [Check out the Upgrade Guides here](/docpad/upgrade)
 
