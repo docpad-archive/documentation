@@ -7,6 +7,7 @@ To install a plugin, run `docpad install #{thePluginName}` inside your website's
 
 In older versions of DocPad, you would run `npm install --save docpad-plugin-#{thePluginName}` instead
 
+To uninstall a plugin, you would run `npm uninstall --save docpad-plugin-#{thePluginName}`
 
 
 ## Renderers
