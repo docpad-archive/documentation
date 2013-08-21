@@ -14,6 +14,7 @@ Help spread the word of DocPad:
 
 - Star our [GitHub Repository](https://github.com/bevry/docpad) by clicking the "Star" button on the top right
 - Star our [NPM Package](https://npmjs.org/package/docpad) by running `npm star docpad` in your terminal
+- [Join our DocPad Community on Gittip!](https://www.gittip.com/for/docpad/)
 - Talk about us on Social Media; Twitter, Blogging, Etc
 - Write about your experiences of DocPad on your blog
 - Do a short less than a minute video testimonial of DocPad on Youtube!
