@@ -27,6 +27,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
 - [js2coffee](/plugin/js2coffee/) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
+- [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net/) to JavaScript `.css.ls`
 - [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
 - [move](/plugin/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
 - [multimarkdown](https://github.com/takitapart/docpad-plugin-multimarkdown) - Supports [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) to HTML `.html.(md|markdown)` via [node-multimarkdown](https://github.com/dtjm/node-multimarkdown)
