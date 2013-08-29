@@ -65,6 +65,35 @@ module.exports = (BasePlugin) ->
 The context (what `this`/`@` points to) of event handlers in your plugin will be your plugin's instance.
 
 
+## Flow of Events
+
+Events are fired in the following order:
+
+- `extendTemplateData`
+- `extendCollections`
+- `docpadLoaded`
+- `docpadReady`
+- `docpadDestroy`
+- `consoleSetup`
+- `generateBefore`
+- `populateCollectionsBefore`
+- `populateCollections`
+- `generateAfter`
+- `parseBefore`
+- `parseAfter`
+- `contextualizeBefore`
+- `contextualizeAfter`
+- `renderBefore`
+- `render` (fired for each extension conversion)
+- `renderDocument` (fired for each document render, including layouts)
+- `renderAfter`
+- `writeBefore`
+- `writeAfter`
+- `serverBefore`
+- `serverExtend`
+- `serverAfter`
+
+
 ## Available Events
 
 ### `docpadReady`
