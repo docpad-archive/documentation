@@ -69,6 +69,12 @@ Check out the `ignored` [meta data property](/docpad/meta-data).
 Check out the `dynamic` [meta data property](/docpad/meta-data).
 
 
+## What are render passes?
+Rendering is a multi step process. First we render everything that is a standalone document, that is to say documents that do not including anything else. Once that is done, we then render all documents that include other documents. This is useful as we can render blog posts first, then render the content listings second.
+
+At times, you may have multiple levels of cross document references. For instance if document a references document B which references document C. In this case you would want to up the `renderPasses` configuration option for each amount of cross document references you have.
+
+
 ## How do I create custom 404 and 500 pages?
 Add a `src/documents/404.html` for 404 pages, and `src/documents/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header as mentioned above) your templating engine (e.g. `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/documents/500.html.md.eco`:
 
