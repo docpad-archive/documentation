@@ -5,24 +5,31 @@ cssClasses: ['compact']
 
 ## Introduction
 
-Welcome to the Beginner Guide for DocPad. By the end of this guide, you'll have all the knowledge necessary to create amazing powerful web sites and applications with DocPad. You won't need any special training, and if you are a web developer then you'll already feel right at home.
+Welcome to the Beginner Guide for DocPad. By the end of this guide, you'll know how to create amazing powerful web sites and applications with DocPad. You won't need any special training. (And if you’re a web developer, you'll feel right at home.)
 
-For this guide we'll create a blog and explain what we do step by step. A blog is just a listing of posts/articles as well as some pages. Posts are like status updates on how something is going. Pages on the other hand are something we always want to show.
+For this guide, we'll create a blog, step by step. In this guide, we’ll refer to both **posts** and **pages**.
 
-Great! Lets get started. Oh, and if you ever get stuck, have a question, or need help - [then jump onto any of our official support channels and we'll be right with you](/support). Cheers!
+- **Posts** are like status updates, or articles.  They might be archived, but you probably don’t want to show all of them, all the time.
+- **Pages** are content that always shows.
 
+Great! Lets get started. 
 
-
-
-
-
-
+(Oh…and if you ever get stuck, have a question, or need help, [then jump onto any of our official support channels](/support), and we'll be right with you. Cheers!)
 
 
 
-## Creating the Standard Project Structure
 
-Before we get hacking away on content, we have to create our project and set it up with the [standard structure](/docpad/overview) that DocPad uses. To do this, we'll run the following:
+
+
+
+
+
+
+## Create a standard project structure
+
+Before start any content, we’ll have to create a project and set it up with the [standard structure](/docpad/overview) that DocPad uses. 
+
+To do this, run the following:
 
 ``` bash
 mkdir my-new-website
@@ -30,14 +37,18 @@ cd my-new-website
 docpad run
 ```
 
-When prompted for a skeleton, select `No Skeleton` - that'll set up our standard directory structure for us automatically. The `docpad run` command will also keep running once the action has completed successfully - this is because it also watches for changes and will regenerate our website when changes occur - it'll also start a web server on [http://localhost:9778](http://localhost:9778) so we can view our website as we go.
+When prompted for a skeleton, select `No Skeleton`. That'll set up the standard directory structure for you automatically. 
 
-For now, we'll keep `docpad run` running, but whenever you want to stop it, just hit `CTRL+C` on your keyboard to exit it.
+The `docpad run` command will also *keep* running once the action has completed successfully. That’s because DocPad watches for changes, and regenerate your website when they occur. It also starts a web server on [http://localhost:9778](http://localhost:9778) so you can view your website as you go!
+
+Allow `docpad run` to keep running for now. Whenever you want to stop it, hit `CTRL+C` to exit.
 
 
 ## Adding the Home Page
 
-Lets create our first document, our home page for our website. So lets create the document `src/documents/index.html` and give it the following content:
+Let’s create our first document: our website’s homepage! 
+
+Create `src/documents/index.html`, and give it the following content:
 
 ``` erb
 <html>
@@ -51,21 +62,15 @@ Lets create our first document, our home page for our website. So lets create th
 </html>
 ```
 
-Once you've saved it, if you open up [http://localhost:9778](http://localhost:9778)  (or refresh if you already had it open) then you'll notice that DocPad has already regenerated your website and you'll see the the page we created above rendered inside the browser. Fantastic!
-
-
-
-
-
-
-
-
+Once you've saved it, open [http://localhost:9778](http://localhost:9778) (or refresh, if you had it open already). You'll notice DocPad has already regenerated your website, and the page you created above is rendered in the browser. Fantastic!
 
 
 
 ## Adding the About Page and a Layout
 
-Now that's done, we'll want to add our "About Me" page so people browsing our website can know who we are! To do this, lets create a new document at `src/documents/about.html` and give it the content:
+Now, you'll want to add an “About Me” page so readers can know who you are! 
+
+To do this, create `src/documents/about.html` and give it the content:
 
 ``` erb
 <html>
@@ -79,11 +84,15 @@ Now that's done, we'll want to add our "About Me" page so people browsing our we
 </html>
 ```
 
-Now if we go to [http://localhost:9778/about.html](http://localhost:9778/about.html) we'll be able to see that page in our browser! Awesome.
+Now, if you go to [http://localhost:9778/about.html](http://localhost:9778/about.html), you'll see the page in our browser. Awesome!
 
-However, duplicating that layout information inside our home page and our about page is pretty redundant. For instance, if we wanted to change the contents of `<head>` to something else, then we'll have to change it in two places! This is where layouts come in.
+But you know what’s *not* so awesome?  Duplicating that layout information from the homepage. For instance, if you wanted to change the contents of `<head>`, you’d have to change it in two places! 
+    
+This is where **layouts** come in. Layouts “wrap” around documents, and reduce this kind of redundancy. They define the *surrounding* areas of a document.  
 
-Layouts wrap around our documents, so we can define the surrounding areas of a document only once! So what we will do is move the wrapper stuff of our two documents into a new layout located at `src/layouts/default.html.eco`. Doing so, we'll end up with the following:
+So what you’ll do is move the wrapper stuff from your two documents into a new layout. 
+
+Create `src/layouts/default.html.eco`, with the following:
 
 - `src/layouts/default.html.eco`
 
@@ -98,6 +107,8 @@ Layouts wrap around our documents, so we can define the surrounding areas of a d
 	</body>
 	</html>
 	```
+
+Now, you’ll need to tell your other documents to use the `default` layout:
 
 - `src/documents/index.html`
 
@@ -123,43 +134,72 @@ Layouts wrap around our documents, so we can define the surrounding areas of a d
 	<p>I like long walks on the beach. <strong>Plus I rock at DocPad!</strong></p>
 	```
 
-However, if you go to either the home page or the about page on our web server, you'll notice that their content is just the layout, and don't actually contain any of the document content! This is because we haven't installed the templating engine for our layout yet!
+But if you go to either page on the web server, it won’t work quite as you expect! It’s just the layout, but it’s not populated with the content. 
 
-We've also added a new `isPage` attribute, this is our own custom attribute and has no special meaning in DocPad. However, we will give it special meaning later on when we add our menu listings :)
+That’s because you haven't yet installed a templating engine for your new layout!  Don’t worry…you’ll fix that in just a second.
+
+(Also note the addition of an `isPage` attribute to the documents. It’s a **custom** attribute; it has no special meaning to DocPad. DocPad lets you define *whatever* attributes you want, to use *however* you want.  You’ll come back to `isPage` in a bit, and tell DocPad how to behave when it sees `isPage` in your documents.)
 
 
 ### Installing the Templating Engine
 
-Templating Engines allow us to embed abstractions inside our documents - which is why we have to use them for layouts, as a layout is an abstraction, an abstraction that wraps around a document and outputs the document's content in a specific way :)
+Templating Engines allow us to embed *abstractions* inside documents. That’s why you use layouts. A layout is an *abstraction* that wraps a document and outputs its contents in a specific way.
 
-For this guide, the templating engine we'll be using is [eco](https://github.com/sstephenson/eco) and is available to us via the [eco plugin](/plugin/eco). So lets install that now by quitting DocPad (`CTRL+C`), and running:
+For this guide, we’ll use the [eco](https://github.com/sstephenson/eco) templating engine. It’s available via the [eco plugin](/plugin/eco). 
+
+Let’s install it now. First, quit DocPad (`CTRL+C`), then run:
 
 ``` bash
 docpad install eco
 ```
 
-Once installed, if we run DocPad again (`docpad run`), then go our home page or about page, we'll see that the content actually contains the document content! In other words, it's actually rendered correctly through our eco templating engine! Woot woot.
+Now run DocPad again (`docpad run`). When you visit your homepage or About page, you'll see that the page has been populated with the document’s content! 
 
-Now, why did we do use `<%=` for the document's title, but `<%-` for the document's content? The reasoning for this is that `<%=` will escape the data we give it before outputting the data, whereas `<%-` we output it without escaping it. So why should we escape some things, and not escape others? Generally, whenever the data we want to output is HTML (so the document's content) we want to output it "as is" so without any escaping, however if the content isn't HTML then we want to output it having it escaped. The reasoning for this is say the document title is `3 is > 2` then if we were to output it unescaped we could end up with something like `<title>3 is > 2</title>` which is invalid HTML due to the `>`, however if we were to output it escaped, we would get `<title>3 is &gt; 2</title>` which is valid HTML and will look exactly the same to the user :)
+In other words, it's actually rendered correctly, thanks to the eco templating engine! *w00t w00t!*
+
+
+### To escape, or not to escape…
+
+Sharp-eyed readers may have noticed something curious about the layout file… 
+
+**Why does the document title use `<%=`, while the content uses `<%-`?**
+
+Well eco, `<%=` escapes data before output, while `<%-` outputs data as-is. 
+
+**So why should I escape some things, and not others?** 
+
+Generally, whenever the data to output is HTML (i.e. document content), you probably want to output it as-is (without any escaping). Otherwise, it’s a good idea to escape the data before output. 
+
+Why? Well, imagine the document title is `3 is > 2`. If you tried to output without escaping, you could end up with something like `<title>3 is > 2</title>`, which is invalid HTML (due to the `>`). But if you used escaped output, you  get `<title>3 is &gt; 2</title>`, which is valid HTML (and will still look correct to the user).
 
 
 ### A note on Plugins
 
-Now while we use the eco templating engine in this guide, there are plenty of others we could use too! We find eco is the most beginner friendly as it is most like HTML, however after experimenting with some of the others you may find you'd like to use them instead. Adding support for a new templating engine, pre-processor, or whatever is as simple as installing the plugin for it.
+Although you used the eco templating engine in this guide, there are plenty of others you can use, too! 
 
-But DocPad also supports more than just templating engines, we have a whole range of different plugins to do different things! So be sure to check out everything we've got.
+We think eco is the most beginner-friendly, as it’s the most like HTML. However, after experimenting with some others, you may prefer to use them instead. Adding support for a new templating engine (or pre-processor, or whatever) is as simple as installing the plugin for it.
 
-[You can find the full listing of plugins we have on the Plugins Page](/docpad/plugins).
+But DocPad also supports more than just templating engines. It has a whole range of plugins for all sorts of different things. So be sure to check out everything we've got [on the Plugins page](/docpad/plugins).
 
 
 ### A note on Rendering
 
-Now the reason we can support multiple templating engines is because of the way DocPad renders things - which is extension by extension - so by doing `src/layouts/default.html.eco` we say render from eco to html due to the order of the extensions. For instance, if we did `default.eco.html` we'd want to render from `html` to `eco` which isn't possible - but for somethings like CoffeeScript to JavaScript, you can also do JavaScript to CoffeeScript given you have the right plugins installed. You can also mix and match extensions by doing something like `default.html.md.eco` which renders from eco to markdown, then markdown to html - allowing you to apply abstractions with eco to your markdown documents! Awesome - but for now, way over our scope! hehe. So lets get back on track.
+DocPad can support multiple templating engines because of how it renders things: extension by extension. 
+
+So, by doing `src/layouts/default.html.eco`, DocPad renders from eco to html, due to the order of the extensions. 
+
+Now, if we tried something like `default.eco.html`, it would signal DocPad to try rendering from `html` → `eco`, which isn't possible. But things like CoffeeScript → JavaScript are quite possible. (You could also do JavaScript → CoffeeScript.) Basically, if DocPad has the appropriate plugin, it will render it.
+
+You can also mix and match extensions. By doing something like `default.html.md.eco`, DocPad renders from eco → markdown → html. That would let you use eco abstractions in your markdown documents. Awesome!  
+
+(But I digress…way out of our scope. So let’s get back on track!)
 
 
 ### A note on Meta Data
 
-Now what on earth was with the stuff between the `---` at the top of our documents! That stuff is our _Meta Data_. It is where we can define extra information about our document, such as its title, layout, date, whatever - you are not limited to what you can define here, it's up to you. However there are some pre-defined properties that serve special purposes (such as layout which we just used).
+The stuff between `---` at the top of documents is **meta data**.  It’s where you can define extra information about your document—such as title, layout, date, or whatever else you can think of.  It's up to you.  
+
+There are a few pre-defined properties (like `layout`, which we just used).  Other than that, there’s no limitations on the properties you can use.
 
 [You can learn more about meta data and all the special properties on the Meta Data Page.](/docpad/meta-data)
 
@@ -168,19 +208,29 @@ Now what on earth was with the stuff between the `---` at the top of our documen
 
 ### Adding the Live Reload Plugin
 
-Sweet. So we're going good so far. We've got two documents going, and a layout to abstract them. But as we are making this changes, it sure would be nice if our browser refreshed the page automatically. We can do this with the [live reload plugin](/plugin/livereload), so lets install that now:
+Sweet. So far, so good: we've got two documents, and a layout to abstract them. 
+
+But as we make changes, it sure would be nice if we didn’t have to refresh our browser each time.  
+
+Fortunately, there’s a plugin that can refresh the browser automatically!  Behold: the fabulous [live reload plugin](/plugin/livereload)! 
+
+Let’s install it!
 
 ``` bash
 docpad install livereload
 ```
 
-Then once you've restarted DocPad, whenever you make a change to the files you'll notice the browser still doesn't refresh automatically to show the changes! Why? The reason is that we have to add our Blocks.
+But the next time you use `docpad run`, the browser still won’t refresh automatically! What gives? 
+
+Relax. You just need to add your **Blocks**.
 
 ### Adding the Blocks
 
-Blocks are a way for plugins and even ourselves to be able to easily add scripts, styles and meta elements to our pages. In the instance of the  Live Reload Plugin, it needs the Script Block to be able to inject the needed scripts into the page so it can refresh browser whenever changes are made.
+**Blocks** are a way for plugins (or even *you*) to be able to easily add scripts, styles and meta elements to pages. 
 
-So to add the three default blocks to our layout, we'll update our layout to become:
+In the case of the LiveReload plugin, it needs the a script block in order to inject the necessary scripts into the page.  Those scripts are what will enable the browser to automatically refresh whenever changes are made.
+
+To add the three default blocks to your layout, update it like so:
 
 ``` erb
 <html>
@@ -197,9 +247,13 @@ So to add the three default blocks to our layout, we'll update our layout to bec
 </html>
 ```
 
-Saving that, and manually reloading our browser, we'll notice that our page now has the needed scripts for the Live Reloaded Plugin automatically injected right where the scripts block is outputted. Now if we make a change to any of the files, we'll notice the browser will automatically refresh. Amazing!
+Save your layout. Manually refresh your browser, so that it gets these changes. 
 
-In the next part, we'll work with blocks some more by adding our assets to them.
+Now, your page has the LiveReload scripts injected, right where the scripts block gets output. 
+
+**From now on, whenever you change any file in your DocPad project, the browser will automatically refresh.** Amazing!
+
+In the next part, you'll work with blocks some more, by adding assets to them.
 
 
 
@@ -214,23 +268,35 @@ In the next part, we'll work with blocks some more by adding our assets to them.
 
 ## Adding Assets
 
-It's time to start adding some assets. Before proceeding with this section, please have read the [DocPad Overview Page](/docpad/overview) so you know what each of the directories inside our website structure are for.
+It's time to start adding some assets. But first, you should review [DocPad’s Overview Page](/docpad/overview); you’ll need to be familiar with the overall directory structure of a DocPad project.
+
+Don’t worry.  I won’t go anywhere while you look it over.
+
+…
+
+Finished?  All right...let’s do this!
 
 
 ### Images
 
-Lets add our logo to our layout's header. We'll [download the DocPad logo](http://d.pr/i/cfmt+) and place it inside our files directory at `src/files/images/logo.gif` (binary files should always go inside the files directory). Then inside our layout, we'll add the following to get our logo on each page:
+Let’s add our logo to your layout’s header. 
+
+1. [Download the DocPad logo](http://d.pr/i/cfmt+)
+2. Put it in the following location: `src/files/images/logo.gif` (binary files *always* go in `files/`) 
+3. In your layout, add the following:
 
 ``` html
 <img src="/images/logo.gif" />
 ```
 
-If you are downloading the file directory into the specified location, you may have to restart DocPad. We're working on this.
+(**Note:** If you’re downloading the file directory into the specified location, you may have to restart DocPad. Sorry about that.  We’re working on it!)
 
 
 ### Stylesheets
 
-Now lets make all our `h1` headers red, to do this lets add a stylesheet file inside our documents directory at `src/documents/styles/style.css` that contains:
+Next, let’s make your `h1` headers red. 
+
+To do this, add `style.css` under `documents/styles/`.  Its contents should be:
 
 ``` css
 h1 {
@@ -238,23 +304,32 @@ h1 {
 }
 ```
 
-Then to include it inside our pages, we'll update the styles block inside our layout to:
+Now, to include it in your pages, update the `styles` block in your layout like so:
 
 ``` erb
 <%- @getBlock("styles").add(["/styles/style.css"]).toHTML() %>
 ```
 
-Upon saving, we'll notice that our browser will automatically reload, and that our css file will be injected into the layout making our header red!
+When you save the file, you’ll see the browser reload automatically. And your CSS file will be injected into the layout, making our header red!
 
 
 
 ### Scripts
 
-Now lets add a nifty loading effect using JavaScript and the [jQuery JavaScript Library](http://jquery.com). As always, there's plenty of other JavaScript Libraries you can use, but in this guide we'll go with jQuery.
+Hmm...how about a nifty loading effect?  You can do this with a bit of JavaScript, thanks to the tools provided by JavaScript libraries (such as the oh-so-awesome [jQuery](http://jquery.com)). 
 
- To do this, we'll first [download the jQuery library](http://code.jquery.com/jquery.js) and put it inside our files directory at `src/files/vendor/jquery.js`. The reason we use the file directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them all inside our files directory is a good choice for consistency and speed. Whereas for our own scripts and styles, we probably want to eventually render them with something, so generally we'll just put them in the documents directory to make the transition to rendering engines easier.
+As always, you can use any JavaScript library you want. We’re just choosing jQuery for this guide. Let’s go:
 
- Now that we have jQuery inside our project, we'll add our nifty loading effect by adding a script file at `src/documents/scripts/script.js` and let it contain:
+1. [Download jQuery](http://code.jquery.com/jquery.js)
+2. Move it to `src/files/vendor/jquery.js` 
+
+The purpose of `files` directory is to contain files that you’re probably never going to want to render. Putting all of them in `files` is a good choice for consistency and speed. 
+
+And, since you didn’t write jQuery yourself—unless you’re John Resig (Hi, John!)—it goes in `files/`**`vendor`**.
+
+When it comes to your own scripts and styles, though, chances are you’ll render them with something. So, as a general guideline, put them in `documents/`.  It’ll make the transition to rendering engines easier, when your plans change in the future.  (And whose won’t?)
+
+Now that you’ve got jQuery, add your nifty loading effect in a new file: `src/documents/scripts/script.js`. It should contain:
 
 ``` javascript
 (function(){
@@ -262,15 +337,23 @@ Now lets add a nifty loading effect using JavaScript and the [jQuery JavaScript 
 })();
 ```
 
-Now that's done, lets add those files to our scripts block in our layout:
+Cool.  Now, back in your layout, add those files to your scripts block:
 
 ``` erb
-<%- @getBlock("scripts").add(["/vendor/jquery.js","/scripts/script.js"]).toHTML() %>
+<%- @getBlock("scripts").add(['/vendor/jquery.js','/scripts/script.js']).toHTML() %>
 ```
 
-Upon saving, we'll notice that our content will fade in over a duration of two seconds. Nifty!
+Upon saving, you’ll notice that your content will fade in over a duration of two seconds. Nifty!
 
-Now some of you may wonder why we omitted the [jQuery onDomReady](http://api.jquery.com/ready/) handler in our script file, while off topic of DocPad, the reasoning for this that only code that requires the entire DOM to be loaded needs to go in there. For instance, if your script requires a DOM element that is positioned after where our script tag is, then it we would require it. However, as we inject our scripts in our body element, we already have acess to the body element, and thus therefore can start our `fadeIn` animation immediatly, rather than seeing the page load, then after a few seconds, the DOM eventually loads and then our fade in occurs causing an undesired popping effect.
+----
+
+If you’re used jQuery before, you may have noticed that we omitted the [jQuery onDomReady](http://api.jquery.com/ready/) handler in our script file.  
+
+Well, only code that requires the entire DOM to be loaded needs to go there. For example, if your script requires a DOM element that’s positioned after your script tag, that would require the entire DOM to be loaded. 
+
+However, since DocPad injects scripts into the `body` element, they *already* have access to the `body`.  Therefore, the script can begin the `fadeIn` animation immediately. Otherwise, the script would wait for the entire page to load, then for the DOM to initialize, and *then* it would finally start the fade in. The extra wait time creates an undesired popping effect.
+
+And nobody wants that.
 
 
 
@@ -283,63 +366,73 @@ Now some of you may wonder why we omitted the [jQuery onDomReady](http://api.jqu
 
 
 ## Getting the benefits of Pre-Processors
-Pre-Processors are amazing things. They allow us to write documents in one language (the source language), but export them to a different language (the target language). This is extremely beneficial as you always get to use the syntax that you enjoy, instead of the syntax that you are forced to work with - but most importantly, pre-processors usually offer you more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
+Pre-Processors are amazing things. They allow us to write documents in one language (the “source language”), but export them to a different language (the “target language”). 
+
+This allows you to write code in a much friendlier syntax, instead of restricting you to the syntaxes that browsers expect.  But more importantly, pre-processors often provide powerful features that don’t exist in the target language, allowing you to code with powerful tools while still producing the older languages that browsers understand.
 
 
 ### Using Markdown, a HTML Pre-Processor
-Open the About Page we created earlier (`documents/about.html`). HTML's verbose syntax is terrible for writing content that is more text than markup (e.g. articles, comments, etc). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) ([one of the many HTML Pre-Processors available to us](/docpad/plugins)) is to the rescue!
+Open the About page you created earlier (`documents/about.html`). 
 
-With Markdown, we can update our About Page's content to become:
+HTML’s verbose syntax is cumbersome for writing content that’s more text than markup (e.g. articles, comments, etc.). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) ([one of many HTML pre-processors available](/docpad/plugins)) comes to the rescue!
+
+With Markdown, you can update your About page to the following:
 
 ``` markdown
 I like long walks on the beach. **Plus I rock at DocPad!**
 ```
 
-Which gives us the same result, but with all the benefits of Markdown. Now, just like all rendering engines, we have to:
+**This will produce the same result.**
 
-1. Indicate the rendering we want to perform - so rename `about.html` to `about.html.md` to indicate we want to render from Markdown to HTML
-1. Install the plugin that can do the rendering - so to install the [Marked Markdown Plugin](/plugin/marked) we'll run `docpad install marked`
+But remember: as with all rendering engines, you’ll need to:
 
-Sweet, you're now ready to rock the house with Markdown.
+1. **Indicate the rendering we want to perform.** Rename `about.html` to `about.html.md`.
+1. **Install the renderer plugin.** Run `docpad install marked` to install the [Marked Markdown Plugin](/plugin/marked).
+
+Sweet. Now you’re now ready to rock the house with Markdown.
 
 
-### Using Stylus, a CSS Pre-Processor
-Open the Stylesheet document we created earlier (`documents/styles/style.css`). CSS really hasn't come that far over the years, it has absolutely no abstractions available to us, making it incredibly redundant and painful to write. Fortunately, [Stylus](http://learnboost.github.com/stylus/) ([one of the many CSS Pre-Processors available to us](/docpad/plugins)) is to the rescue!
+### Using Stylus, a CSS pre-processor
+Open the stylesheet document you created earlier (`documents/styles/style.css`). 
 
-Using Stylus, we can update our stylesheet's content to become:
+CSS really hasn’t come that far over the years. It has absolutely no abstractions, making it incredibly redundant and painful to write. Fortunately, [Stylus](http://learnboost.github.com/stylus/) ([one of many CSS pre-processors available](/docpad/plugins)) comes to the rescue!
+
+With Stylus, you can update your stylesheet to the following:
 
 ``` stylus
 h1
 	color: red
 ```
 
-Which gives us the same result, but with all the benefits of Stylus. Now, just like all rendering engines, we have to:
+**This will produce the same result.** 
 
-1. Indicate the rendering we want to perform - so rename `style.css` to `style.css.styl` to indicate we want to render from Stylus to CSS
-1. Install the plugin that can do the rendering - so to install the [Stylus Plugin](/plugin/stylus) we'll run `docpad install stylus`
+But remember: as with all rendering engines, you’ll need to:
 
-Sweet, you're now ready to rock the house with Stylus.
+1. **Indicate the rendering we want to perform.** Rename `style.css` to `style.css.styl`.
+1. **Install the renderer plugin.** Run `docpad install stylus` to install the [Stylus Plugin](/plugin/stylus).
+
+Sweet. Now you’re now ready to rock the house with Stylus.
 
 
 ### Using CoffeeScript, a JavaScript Pre-Processor
-Open the JavaScript document we created earlier (`documents/scripts/script.js`). Sometimes people can get a quite annoyed with JavaScript's verboseness, and very annoyed when they forget a comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org/) ([one of the many JavaScript Pre-Processors available to us](/docpad/plugins)) is to the rescue!
+Open the JavaScript document we created earlier (`documents/scripts/script.js`). 
 
-Using CoffeeScript, we can update our script's content to become:
+Sometimes, people get annoyed with JavaScript's verbosity. Sometimes they get *very* annoyed their entire app breaks because they forgot a comma somewhere. Fortunately, [CoffeeScript](http://coffeescript.org/) ([one of many JavaScript pre-processors available](/docpad/plugins)) comes to the rescue!
+
+With CoffeeScript, you can update your script to the following:
 
 ``` coffeescript
 $("body").hide().fadeIn(1000)
 ```
 
-Which gives us the same result, but with all the benefits of CoffeeScript. Now, just like all rendering engines, we have to:
+**This will produce the same result.** 
 
-1. Indicate the rendering we want to perform - so rename `script.js` to `script.js.coffee` to indicate we want to render from CoffeeScript to JavaScript
-1. Install the plugin that can do the rendering - so to install the [CoffeeScript Plugin](/plugin/coffeescript) we'll run `docpad install coffeescript`
+But remember: as with all rendering engines, you’ll need to:
 
-Sweet, you're now ready to rock the house with CoffeeScript.
+1. **Indicate the rendering we want to perform**. Rename `script.js` to `script.js.coffee`.
+1. **Install the renderer plugin.** Run `docpad install coffeescript` to install the [CoffeeScript Plugin](/plugin/coffeescript).
 
-
-
-
+Sweet. Now you’re ready to rock the house with CoffeeScript.
 
 
 
@@ -347,23 +440,29 @@ Sweet, you're now ready to rock the house with CoffeeScript.
 
 
 
-## Adding some Template Data and Template Helpers via a Configuration File
+
+
+
+
+## Adding some Template Data and Template Helpers using a Configuration File
 
 ### Purpose of a Configuration File
 
-The [DocPad Configuration File](/docpad/config) allows us to configure our DocPad instance, listen to events, and perform some nifty abstractions.
+The [DocPad Configuration File](/docpad/config) allows you to configure your DocPad instance, listen for events, and perform some nifty abstractions.
 
-Consider the case where our document title is empty. With our current solution the title of the page would be ` | My Website`, in which case just having `My Website` would be far more ideal when our document doesn't have a title.
+Consider the case where your document title is empty. Currently, your page’s title would be ` | My Website`...in which case, it would be preferable simply to say `My Website` when the document doesn't have a title.
 
-We could update our title code in our layout template to become:
+You can update your title code in the layout template to:
 
 ``` erb
 <title><%= if @document.title then "#{@document.title} | My Website" else "My Website" %></title>
 ```
 
-Which would achieve the goal, but then we have to update the website title in two places if we want to use something else besides `My Website`, and considering this a common abstraction it would be nice if we could abstract it out, say into a configuration file!
+That will do the trick. But then you’d have to update the site’s title in *two* places, if you want to use something besides `My Website`. Since this is a pretty common abstraction, it would be nice if we could put it into some sort of central location…
 
-So lets create our configuration at the location `my-new-website/docpad.coffee` and give it the contents:
+Like a **configuration file**!
+
+Create the configuration file `my-new-website/docpad.coffee`, with the following content:
 
 ``` coffee
 # Define the Configuration
@@ -375,16 +474,20 @@ docpadConfig = {
 module.exports = docpadConfig
 ```
 
-You'll have to restart DocPad so that DocPad can become aware of the configuration file. Then on, DocPad will automatically reload your configuration when changes occur.
+You’ll need to restart DocPad, so that it sees configuration file. Thereafter, DocPad will automatically reload your configuration when changes occur.
 
-The first part of this configuration is where we actually define our configuration (where the `# ...` is located), and the second part is a [node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we say add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
+The first part of the file is where you’ll define configuration itself (where the `# ...` is located). The second part is a [node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. 
 
-For more information on configuration files and what configuration is available to your, refer to our [Configuration Page](/docpad/config).
+Whenever you see “add some configuration”, it means “add it to the `docpadConfig` object”, which you just defined.
+
+For more information on configuration files and their options, see [Configuration Page](/docpad/config).
 
 
 ### Using TemplateData for Abstractions
 
-Everything that is available to our templates is called [TemplateData](/docpad/template-data) - for instance `@document` is part of our template data. So to be able to abstract out something that our templates will use, we will need to extend our template data. We can do this by modifying our template data configuration property like so:
+Everything available to templates is called [TemplateData](/docpad/template-data). For example, `@document` is part of our template data. So, to be able to abstract something for your templates to use, you’ll need to extend your template data. 
+
+You can do this by modifying your template data configuration property, like so:
 
 ``` coffee
 docpadConfig = {
@@ -396,20 +499,28 @@ docpadConfig = {
 }
 ```
 
-With that, our website title is now abstracted out. We can now update our title element in the template to look be:
+Your website title is now abstracted out.  Simple, wasn’t it?
+
+Now, update the `title` element in your template to:
 
 ``` erb
 <title><%= if @document.title then "#{@document.title} | #{@site.title}" else @site.title %></title>
 ```
 
-However, if we really wanted to (and we probably do) we can abstract out that logic into a function inside our template data.
+From now on, you can change the title of your site in your configuration, and it will update across your entire site.  
+
+But that’s just a string of text. You can take this (or any) abstraction even further, by putting it into a **function** under `templateData`.  That way, your abstractions can include **logic**!
 
 
 ### Abstracting Logic into Template Helpers
 
-When using `.coffee` or `.js` files to define our Configuration File, we are allowed to define functions. Doing so, allows us to use functions within our template data - we call these functions Template Helpers.
+When using `.coffee` or `.js` files for your configuration, you can define functions. That way, you can use those functions in your `templateData`. 
 
-When calling a template helper, the scope of the template helper is exactly the same as the scope of what is calling it. This makes abstracting out logic really really easy. Lets see what it would look like:
+These functions are known as **Template Helpers**.
+
+A template helper’s scope is the same as wherever it’s called from. This makes abstracting out logic really really easy. 
+
+Let’s see what it would look like:
 
 ``` coffee
 docpadConfig = {
@@ -423,15 +534,17 @@ docpadConfig = {
 }
 ```
 
-And our template would become:
+And your template becomes cleaner:
 
 ``` erb
 <title><%= @getPreparedTitle() %></title>
 ```
 
-Now that is awesome. While this was a simple example, we can use this to do some really cool stuff. For instance, [here is an example of it being used to localize dates into french](https://gist.github.com/4166882).
+Now *that’s* awesome. 
 
-If you're writing a plugin, you can use [the extendTemplateData event](/docpad/events) to extend the template data.
+While this was a simple example, you can use this to do some truly cool stuff. For instance, [here’s an example that localize dates into French](https://gist.github.com/4166882)!
+
+If you’re writing a plugin, you can use [the extendTemplateData event](/docpad/events) to extend the `templateData`.
 
 
 
@@ -445,12 +558,18 @@ If you're writing a plugin, you can use [the extendTemplateData event](/docpad/e
 
 ## Adding a Menu Listing for our Pages
 
-Remember our About Page, wouldn't it be nice that when we list more pages, our menu updates automatically. It sure would be, so lets do that.
+Remember your About page? 
+
+Wouldn’t it be nice if, when you added pages, your menu updated automatically? 
+
+It sure would. :) 
 
 
 ### Updating our Layout
 
-Open up your Default Layout (`src/layouts/default.html.eco`) and before the `h1` we'll add the following:
+Open your `default` layout (`src/layouts/default.html.eco`). 
+
+Before the `h1`, add the following:
 
 ``` erb
 <ul>
@@ -464,16 +583,30 @@ Open up your Default Layout (`src/layouts/default.html.eco`) and before the `h1`
 </ul>
 ```
 
-Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then with that collection we find everything that has a `isPage` attribute set to `true` - which is the attribute we defined earlier when first applying our layout to our pages. With that we then convert it from a [Backbone](http://backbonejs.org/#Collection)/[QueryEngine](/queryengine/guide) Collection into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
+Bang! Now you’ve got a navigation menu on every page! 
 
-That's a bit of a mouthful, but give it a while and you'll be a pro in no time. There is one major inefficiency with the above approach, can you guess it?
+Wicked. :D 
 
-The inefficiency is that we perform that query every single time we render a layout, which is a bit silly as the results of that query don't change between renders, so really we only have to query it once and provide access to the results to our collection. Good thing we can do this.
+So, what’s happening here?
+
+1. First, it uses the `getCollection()` [template helper](/docpad/template-data) to fetch the `html` collection. (The `html` collection is a pre-defined collection by DocPad; it contains all the HTML documents in your site.) 
+2. Using that collection, DocPad finds everything where the `isPage` attribute set to `true`. (Remember `isPage`? You defined it earlier, when first applied a layout to your pages.) 
+3. DocPad then converts the results from a [Backbone](http://backbonejs.org/#Collection)/[QueryEngine](/queryengine/guide) Collection into a standard JavaScript `Array` (using [`toJSON()`](http://backbonejs.org/#Collection-toJSON)).
+
+That might seem overwhelming at first, but give it a while. You’ll be a pro in no time. 
+
+There’s one major inefficiency with the above approach. Can you guess where?
+
+In the above code, the query is run *every time* DocPad renders a layout. That’s a bit silly, since that query’s results aren’t going to change between renders. So, really, you only need to query it *once*, and then provide your collection with the results. 
+
+Good thing you can.  Read on.
 
 
 ### Creating Custom Collections via the Configuration File
 
-So then, lets go back to our [DocPad Configuration File](/docpad/config) (`docpad.coffee`) and open it up. This time we want to add the following:
+Go back to your [DocPad Configuration File](/docpad/config) (`docpad.coffee`). 
+
+This time, add the following:
 
 ``` coffee
 docpadConfig = {
@@ -485,20 +618,40 @@ docpadConfig = {
 }
 ```
 
-Then inside our Default Layout, we'll update the `getCollection` line to become:
+Then inside your Default layout, update `getCollection` to:
 	
 ``` erb
 <% for page in @getCollection("pages").toJSON(): %>
 ```
 
-Much better, and way more efficient. Did you spot the difference with the call we used? When performing our query we used the `findAllLive` method instead of the `findAll` method. The reasoning behind this is that `findAllLive` utilizes [QueryEngine's Live Collections](/queryengine/guide) which means that we define our criteria once, then throughout time, we keep our collection up to date. In more technical detail, this works by creating a live child collection of the parent collection (in this case the `html` collection is the parent collection, and our `pages` collection is the child collection). The child collection then subscribes to `add`, `remove`, and `change` events of the parent collection and tests the model that the event was for against our child collection's criteria, and if it passes the collection it adds it, or if it doesn't pass then it removes it. This is way way better than querying everything every single time.
+Much better...and *way* more efficient. 
 
-So then, what about sorting? That's easy enough, we can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument which is the sorting argument `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` which in this case will sort by the filename in ascending order. To do descending order we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add a `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging, to learn about that one as well as what type of queries are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide)
+Did you spot the difference with the call we used? In the query, the new code used the method `findAllLive()` instead of `findAll()`. 
+
+That’s because `findAllLive` utilizes [QueryEngine’s Live Collections](/queryengine/guide), which means that you only define your criteria *once*, and your collection is kept up to date over time. 
+
+To get a bit more technical, this works by creating a live child collection of the parent collection. (In this case, the `html` collection is the parent, and `pages` is the child.) The child collection then subscribes to the parent collection’s `add`, `remove`, and `change` events, and tests the event’s model against the child’s criteria. If it passes, the collection adds it; if not, it removes it. 
+
+This is a tremendous improvement over querying *everything*, *every* single time.
+
+----
+
+What about sorting? That’s easy enough. 
+
+You can sort by adding a second argument to `@getCollection('html').findAllLive({isPage:true})`.  This will be** the  sorting argument**: `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` 
+
+In this case, you’ll sort by filename in ascending order. (To do descending order, change `1` to `-1`.) 
+
+Now you can sort by *any* attribute available on your models. That means you could even add an `order` attribute to our document meta data, and sort using that, if you like. 
+
+(**Note:** There’s also a third parameter, for **paging**. To learn more, including what kinds of queries are available, refer to the [QueryEngine Guide](/queryengine/guide).)
 
 
 ### Setting Default Meta Data Attributes for our Pages
 
-Considering we'd probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages without us always having to add `layout: default` to our [meta data](/docpad/meta-data) for each page. Just like everything, its pretty darn easy if you know how, and here's how:
+Considering you’d probably like all your pages to use the `default` layout, you might make all pages use it without having to add `layout: default` to the [meta data](/docpad/meta-data) for every single one. 
+
+Here’s how:
 
 ``` coffee
 docpadConfig = {
@@ -511,9 +664,21 @@ docpadConfig = {
 }
 ```
 
-So what does this do? Its exactly the same as before, but we use the `add` event automaticaly fired by [backbone](http://backbonejs.org/#Collection-add) whenever a model (a page, file, document, whatever) is added to our collection. Then inside our event, we say we want to set our default meta data attributes for the model - them being setting the layout to `"default"`.
+What’s happening here? 
 
-This ability is priceless when doing more complicated things with DocPad, for instance we use it for this documentation to be able to base the navigation structure of our documentation files off their physical location of our file system pretty easily. For instance, if we have a file `docs/docpad/01-start/04-begin.html.md` we can detect that the project is `docpad` so assign `project: "docpad"` to the meta data, as well as the section is "start" and it is order first - so set `category: "start"` and `categoryOrder: 1` as well, and that our file is `begin` and ordered 4th. That's just one example of more nifty things, there's plenty more you'll discover even more on your own epic journey :)
+It’s the same as before—but this time you used the `add` event, which is automatically fired by [backbone](http://backbonejs.org/#Collection-add) whenever a model (a page/file/document/whatever) gets added to your collection. 
+
+Inside the `add` event, you told DocPad “set the default meta data attributes for the model!”. Specifically, to set the layout’s default value to `"default"`.
+
+This is priceless when doing more complicated things. For instance, we use it in this documentation, in order to be able to base the navigation structure of the documentation files from their physical location on the file system. 
+
+For instance, if we have the file `docs/docpad/01-start/04-begin.html.md`, from the file’s path, we do the following: 
+
+- we can detect that the project is `docpad`, so we assign `project: "docpad"` to the meta data
+- the section is `start`, and it’s first in order, so we set `category: "start"` and `categoryOrder: 1`
+- finally, the file is `begin`, and it’s 4<sup>th</sup> in order
+
+That's just one example. There’s plenty more you’ll discover on your own epic journey!
 
 
 
@@ -525,28 +690,38 @@ This ability is priceless when doing more complicated things with DocPad, for in
 
 
 
-## Adding the Blog Posts
+## Adding Blog Posts
 
-As you now have all the tools and knowledge required to be able to create the blog post section, we've left that part as an exercise for you! We've done this so you can best retain and make use of all the awesomeness you've just learned.
+You now have all the tools and knowledge required to create the blog section! 
 
-- If you need a few pointers to help you get started, here you go :)
-	- Create a new layout called `post` that will use the default layout, use this layout to perform custom styling for your blog post (e.g. `<div class="post"><%- @content %></div>`).
-	- When creating your blog posts, we recommend giving them a `date` meta data attribute in the format of `date: 2012-12-25` so you can sort your blog posts by that date in descending order.
-	- Create a new directory called `posts` that contains all your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection to get all documents inside the `posts` output directory (`/my-new-website/out/posts`). You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.
-	- Create a new page called `posts.html.eco` that lists all your blog posts, this will be more or less the same as our navigation menu. If you would like to display descriptons of the blog posts, just add that as a meta data attribute for the blog posts, then output that meta data attribute. If you want to show the rendered content of the data, you can use `post.contentRenderedWithoutLayouts`. You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.
+We’ve left this as an exercise for you. Use what you’ve learned, and the exercise will help you to retain the knowledge you’ve just gained.
 
-- If you're stuck and need some help, just hop on over to our [IRC Support Channel (docpad on freenode)](http://webchat.freenode.net/?channels=docpad) and someone will be with you soon enough :) [You can also discover all of our available Support Channels via our Support Page.](/support)
+If you need a few pointers to help get started, here you go:
 
-By the way, congratulations - you now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [showcase](/docpad/showcase). To recap, you now know how to:
+- Create a new layout called `post` that uses the `default` layout, and use it to perform custom styling for your blog posts (e.g. `<div class="post"><%- @content %></div>`)
+- When writing a blog post, give them a `date` meta data attribute (in the format of `date: 2012-12-25`), so you can sort them in reverse-chronological order
+- Create a new directory called `posts` to contain all your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection to get all documents inside the `posts/` output directory (`/my-new-website/out/posts/`). 
+- Create a new page called `posts.html.eco` to list all your blog posts. This will be more-or-less the same as your navigation menu. If you want to display descriptions for each post, just add a meta data attribute for blog posts, and output it. 
+- If you want to show the rendered content of that data, try `post.contentRenderedWithoutLayouts()`.
 
-- write documents in any language, markup, pre-processor, templating engine, whatever you wish by installing the necessary plugin for it and changing the extensions for the document
+(You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.)
+
+- If you’re still stuck and need help, just hop on over to our [IRC Support Channel (docpad on freenode)](http://webchat.freenode.net/?channels=docpad) and someone will be with you soon enough :) [You can also discover all of our available Support Channels via our Support Page.](/support)
+
+And, by the way: Congratulations! 
+
+You now possess all the foundations required to be able to write amazing and powerful web applications (like those already in our [showcase](/docpad/showcase)). 
+
+To recap, you learned how to:
+
+- write documents in any language, markup, pre-processor, templating engine—whatever you wish—by installing the necessary plugin and changing the file’s extensions
 - perform powerful abstractions using layouts, meta data, template data, and configuration files
-- create incredibly efficient custom collections filtered and sorted by your own criteria
-- do your own custom listings of content
+- create incredibly efficient custom collections, filtered and sorted by your own criteria
+- create your own custom listings of content
 
-But it doesn't stop there, these were just the foundations - if you can think it, then you're able to accomplish it with DocPad. Really, there are no limits with DocPad - that's why DocPad sets you free.
+But it doesn’t stop here. These were just the foundations. If you can think it, you can do it with DocPad. Really, there are no limits with DocPad. That's why DocPad sets you free.
 
-So, farewell and enjoy your epic journey. The power is yours!
+Farewell!
 
 
 

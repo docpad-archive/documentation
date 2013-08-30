@@ -5,7 +5,7 @@ urls: ['/docs/partners', '/partners', '/support']
 
 ## General Support via StackOverflow
 
-StackOverflow is a community of passionate programmers dedicated to solving problems for each other for any type of programming questions. As you post questions and answers you’ll earn reputation which gives you more abilities on the site. _Be aware that StackOverflow is a community for anything programming, and not just for DocPad so be sure to use the `docpad` tag when asking your question. [If you’re new to Stack Overflow, read their FAQ first.](http://stackoverflow.com/faq)_
+StackOverflow is a community of passionate programmers dedicated to solving problems for each other for any type of programming questions. As you post questions and answers, you’ll earn reputation, which gives you more abilities on the site. _Be aware that StackOverflow is a community for anything programming-related (not just DocPad), so be sure to use the `docpad` tag when asking your question. [If you’re new to Stack Overflow, read their FAQ first.](http://stackoverflow.com/faq)_
 
 [Ask your question. Be sure to use the `docpad` tag.](http://stackoverflow.com/questions/ask)
 
@@ -14,21 +14,21 @@ StackOverflow is a community of passionate programmers dedicated to solving prob
 
 ## Bug Reports via GitHub's Issue Tracker
 
-For bug reports relating to the core, use [DocPad's GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
+For bug reports about DocPad’s core itself, use [DocPad's GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
 
-For bug reports relating to plugins, use the Plugin's GitHub Issue Tracker. You can find it by going to the Plugin's Homepage, then looking for the "Issues" button.
+For bug reports relating to DocPad plugins, use the GitHub Issue Tracker for the plugin you’re having trouble with. You can find it by going to the plugin's homepage, then looking for the "Issues" button.
 
 With your bug reports, be sure to specify:
 
-- Your docpad version `docpad --version`
-- Your node version `node --version`
-- Your npm version `npm --version`
+- Your docpad version (`docpad --version`)
+- Your node version (`node --version`)
+- Your npm version (`npm --version`)
 - Your operating system's name, architecture, and version
 - What you did
 - What happened
 - What you expected
-- The skeleton that was affected (if applicable)
-- The `docpad-debug.log` file when you run docpad in debug mode by specifying the `-d` flag, e.g. `docpad run -d`
+- The skeleton affected (if applicable)
+- The `docpad-debug.log` file when you run DocPad in debug mode (e.g. `docpad run -d`)
 
 [Post your bug report.](https://github.com/bevry/docpad/issues/new)
 
@@ -37,7 +37,7 @@ With your bug reports, be sure to specify:
 
 ## Chat Room via IRC
 
-DocPad operates a the `#docpad` channel on the freenode IRC server. It is a place where you can talk in realtime to other people all about DocPad and try and get support.
+DocPad operates a the `#docpad` channel on the freenode IRC server. It’s a chatroom that’s all about DocPad.
 
 [Join the chat room.](irc://chat.freenode.net:6997/docpad)
 
