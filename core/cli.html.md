@@ -2,57 +2,50 @@
 title: "Command Line Interface"
 ```
 
-- To create your website (if it doesn't already exist), watch for changes, and start the webserver, use:
+<table>
+	<tr>
+		<td>`docpad run`</td>
+		<td>Create a website (if one doesn’t exist), watch for changes, and start the webserver</td>
+	</tr>
 
-	``` bash
-	docpad run
-	```
+	<tr>
+		<td>`docpad scaffold`</td>
+		<td>Generate a website from an existing skeleton</td>
+	</tr>
 
-- To just generate your website from one of the existing skeletons, use:
+	<tr>
+		<td>`docpad generate`</td>
+		<td>Generate website</td>
+	</tr>
 
-	``` bash
-	docpad scaffold
-	```
+	<tr>
+		<td>`docpad watch`</td>
+		<td>Watch website for changes, and regenerate whenever a change is made</td>
+	</tr>
 
-- To just generate your compiled website, use:
+	<tr>
+		<td>`docpad server`</td>
+		<td>Run the DocPad server (to access an already-generated generated website)</td>
+	</tr>
 
-	``` bash
-	docpad generate
-	```
+	<tr>
+		<td>`docpad render filePath`</td>
+		<td>Render standalone files with DocPad programmatically (outputs to STDOUT)</td>
+	</tr>
 
-- To just watch your website for changes and re-generate whenever a change is made, use:
+	<tr>
+		<td>`docpad render inputMarkdownFile.html.md > outputMarkdownFile.html`</td>
+		<td>Render a markdown file, and save the resulting output to a file</td>
+	</tr>
 
-	``` bash
-	docpad watch
-	```
+	<tr>
+		<td>`echo $content | docpad render sampleFileNameWithExtensions`</td>
+		<td>Render STDIN with DocPad programmatically (outputs to STDOUT)</td>
+	</tr>
 
-- To just run the DocPad server to access your already generated website, use:
+	<tr>
+		<td>`echo "**awesome**" | docpad render input.html.md > output.html`</td>
+		<td>Render passed-in markdown, and save the resulting output to a file</td>
+	</tr>
 
-	``` bash
-	docpad server
-	```
-
-- To render standalone files with DocPad programatically (will output to stdout)
-
-	``` bash
-	docpad render filePath
-	```
-
-	E.g. To render a markdown file and save the result to an output file, we would use:
-
-	``` bash
-	docpad render inputMarkdownFile.html.md > outputMarkdownFile.html
-	```
-
-- To render stdin with DocPad programatically (will output to stdout)
-
-	``` bash
-	echo $content | docpad render sampleFileNameWithExtensions
-	```
-
-	E.g. To render passed markdown content and save the result to a file, we would use:
-
-	``` bash
-	echo "**awesome**" | docpad render input.html.md > output.html
-	```
-
+</table>

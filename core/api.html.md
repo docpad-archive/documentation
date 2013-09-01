@@ -2,19 +2,19 @@
 title: "API"
 ```
 
-This page will go over using DocPad as a module, and the API available to you.
+How to use DocPad as a module, and its API.
 
 
 ## Install DocPad
 
-Besides having [Node.js installed](https://github.com/bevry/community/wiki/Installing-Node), you'll want to install DocPad locally to your project, you can do this by running `npm install -f docpad` in your command line. This will install DocPad into `./node_modules/docpad` and make it accessible via [Node.js's require function](http://nodejs.org/docs/latest/api/all.html#all_require) (e.g. `require('docpad')`)
+Besides having [Node.js installed](https://github.com/bevry/community/wiki/Installing-Node), you’ll want to install DocPad locally to your project, you can do this by running `npm install -f docpad` in your command line. This will install DocPad into `./node_modules/docpad` and make it accessible via [Node.js's require function](http://nodejs.org/docs/latest/api/all.html#all_require) (e.g. `require('docpad')`)
 
-If you are wanting to utilise DocPad for rendering, you'll also want to install some rendering [Plugins](/docpad/plugins).
+If you want to utilise DocPad for rendering, you’ll also need to install some rendering [Plugins](/docpad/plugins).
 
 
 ## Create your DocPad Instance
 
-Firstly, you need to create your DocPad instance, you can do this like so:
+First, you need to create your DocPad instance, like so:
 
 ``` javascript
 var docpadInstanceConfiguration = {};
@@ -27,7 +27,7 @@ require('docpad').createInstance(docpadInstanceConfiguration, function(err,docpa
 
 ## Rendering individual files
 
-You can use DocPad as a module to render individual files very easily. This allows you to utilise DocPad for all the rendering inside your application, instead of having to _write **and maintain**_ specific wrappers for each rendering engine yourself.
+Using DocPad as a module to render files is easy. You can let DocPad handle rendering for your application, instead of having to write (and maintain) wrappers for each rendering engine yourself.
 
 ### Render some text with DocPad
 
@@ -57,7 +57,7 @@ docpadInstance.action('render', renderOpts, function(err,result){
 
 ## DocPad CLI Actions
 
-Here is how you would normalise common tasks you would typically achieve with the DocPad command line interface.
+Here’s how to normalise some common tasks you can do with DocPad’s command line interface.
 
 ### Performing a generation
 
@@ -80,7 +80,7 @@ docpadInstance.action('server', function(err,result){
 
 ### Generate and Start the DocPad Server
 
-You can combine actions by separating them with a space, like so:
+You can combine actions by separating them with a space:
 
 ``` javascript
 docpadInstance.action('generate server', function(err,result){
@@ -101,7 +101,12 @@ docpadInstance.action('generate watch', function(err,result){
 
 ## Using the Database
 
-DocPad using [Backbone.js](http://documentcloud.github.com/backbone/) for its Models, and [QueryEngine](https://github.com/bevry/query-engine) for its Collections. Providing a powerful database that you can query in a noSQL type fashion. You can discover the entire query API on the [Using QueryEngine](https://github.com/bevry/query-engine/wiki/Using) wiki page.
+DocPad uses:
+
+- [Backbone.js](http://documentcloud.github.com/backbone/) for its **Models**, and 
+- [QueryEngine](https://github.com/bevry/query-engine) for its **Collections**.
+
+This is the foundation for a powerful database, which takes NoSQL-type queries. You can discover the entire query API on the [Using QueryEngine](https://github.com/bevry/query-engine/wiki/Using) wiki page.
 
 ### Create a Document
 
@@ -129,7 +134,7 @@ resultModel = docpadInstance.getFileAtPath(path,sorting,paging);
 
 ## Using with Express
 
-If you already have an Express.js application, you can do the following to just stick DocPad straight ontop of it:
+If you already have an Express.js application, you can simply stick DocPad straight on top:
 
 ``` javascript
 // Create Server and Express Application
@@ -163,7 +168,7 @@ var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguratio
 // ...
 ```
 
-Here is some code for manually rendering a document (documents are files inside `src/documents`) with a custom route:
+Here’s an example showing how to render a document with a custom route:
 
 ``` javascript
 app.get '/alias-for-home', (req,res,next) ->

@@ -4,7 +4,9 @@ title: "Meta Data"
 
 ## Introduction
 
-Meta data goes at the top of documents, and is defined by any character that repeats 3 or more times. For example, `---` is the most common usage, but you can also use `###` or whatever repeats 3 or more times. By default, we parse the meta data with [YAML](http://www.yaml.org/) but you can also use [CSON](https://github.com/bevry/cson) by doing `--- cson` instead.
+Meta data goes at the top of documents. It’s defined by any character that repeats 3 or more times. The typical usage is `---`, but you can use `###`—or any other character that repeats 3 or more times. 
+
+By default, we parse the meta data with [YAML](http://www.yaml.org). If you like, you can use [CSON](https://github.com/bevry/cson) instead, by beginning the meta data section with `--- cson`.
 
 An example document that uses meta data will look like this:
 
@@ -31,40 +33,42 @@ My example document content
 ### For Files & Documents
 
 #### `title`
-The title for the document. Useful for headings.
+The document’s title. Useful for headings.
 
 #### `name`
 Defaults to the `filename`. The name of the document. Useful for listings.
 
 #### `date`
-Defaults to `mtime`. Useful for setting a custom date via your documents meta data.
+Defaults to `mtime`. Useful for setting a custom date.
 
 #### `slug`
-Defaults to a slugified version of the `relativeBase`. Appears deprecated in favour of `url`.
+(Deprecated in favour of `url`.) Defaults to a “slugified” version of the `relativeBase`. 
 
 #### `url`
-The url that you would like to use as the primary url for the document. When a user accesses a document via a secondary url, the user will be redirected to the primary url automatically.
+The document’s primary URL. When a user accesses a document via a secondary URL, they’ll automatically be redirected to the primary URL.
 
 #### `urls`
-Urls is the secondary urls for a document. It can be a comma seperated values list, or an array of values.
+The document’s secondary URLs. Values can be provided as an array or a comma-separated list.
 
 #### `ignored`
-Defaults to `false`. If set to `true`, the document will not be parsed. Useful for draft documents.
+Defaults to `false`. If `true`, the document will not be parsed. Useful for draft documents.
 
 #### `standalone`
-Defaults to `false`. If set to `true`, when a change is detected for the document, we will only regenerate this document and not anything else (e.g. documents with `referencesOthers` set to `true`).
+Defaults to `false`. If `true`, DocPad will regenerate *only* this document when it changes.  Use this to suppress regeneration of related files (e.g. documents with `referencesOthers` set to `true`).
 
 
 ### For Documents
 
 #### `referencesOthers`
-Defaults to `false`. If set to `true`, this document will be regenerated when a change occurs in another document. It is automatically set to `true` whenever a template helper is called that references another document. This makes so for instance on a blog listing page, when a blog post is changed, we will also regenereate the listing as well as the blog post.
+Defaults to `false`. If `true`, this document will be regenerated when a change occurs in another document. 
+
+If you call a template helper which references another document, this is automatically set to `true`. This is in order to facilitate listings and similar contexts.  For example, if your site has a listing of blog posts, and you make changes to one of those posts, DocPad will regenerate the listing as well as the post.
 
 #### `tags`
-Defaults to `[]`. Tags can be a comma separated values list, or an array of values. While DocPad doesn't use tags for anything specifically, it is nice to have it handled uniformly across websites without you having to do it yourself.
+Defaults to `[]`. Tag values can be provided as an array or a comma-separated list. DocPad doesn’t use tags for anything in particular; it’s just here for your convenience, since it’s a pretty common thing.
 
 #### `dynamic`
-Defaults to `false`. If set to `true`, the document will be re-rendered on each request. This also adds the `req` object to the template data - [req definition here](http://expressjs.com/api.html#request).
+Defaults to `false`. If `true`, the document will be re-rendered on each request. This also adds the `req` object to the template data. ([See `req`’s definition on Express.js.](http://expressjs.com/api.html#request).)
 
 
 
