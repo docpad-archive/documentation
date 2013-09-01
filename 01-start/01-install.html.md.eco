@@ -4,16 +4,16 @@ title: "Install"
 
 _If you are upgrading from one major version to another, be sure to checkout our [Upgrade Guide](/docpad/upgrade) for information relating to backwards compatibility breaks._
 
-1. [Install Node.js & Other Dependencies](/node/install)
+1. [Install Node.js & other dependencies](/node/install)
 
-1. Update NPM and Install DocPad
+1. Update NPM and install DocPad
 
 	``` bash
 	npm install -g npm; npm install -g docpad<%= if (v = @feedr?.feeds?.latestPackage?.version) then '@'+@getVersion(v,2) else '' %>
 	```
 
-1. **When upgrading:** in addition to the above, run `docpad update` inside your project directory to ensure that your local installations of DocPad and its plugins are updated to their latest compatible version
+1. **When upgrading:** run `docpad update` inside your project directory to ensure that your local installation of DocPad and its plugins are up-to-date with the latest compatible version.
 
-1. If you want operating system notifications, follow [these additional instructions](https://github.com/visionmedia/node-growl#install) - ignore the install npm instructions as we already completed them earlier
+1. If you want operating system notifications, follow [these additional instructions](https://github.com/visionmedia/node-growl#install). (Ignore the `install npm` instructions you completed earlier.)
 
-_If you get any errors, try running docpad anyway (most installation errors are non fatal and just for debugging purposes) - if you do get a fatal error then refer to our [Troubleshooting Guide](/docpad/troubleshoot) as it is probably easily fixed. :)._
+_If you get any errors, try running DocPad anyway. Most installation errors are non-fatal, and just for debugging purposes. If you do get a fatal error, check out the [Troubleshooting Guide](/docpad/troubleshoot)...it’s probably easily fixed. :)._

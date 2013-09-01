@@ -4,12 +4,12 @@ ignored: true
 
 ## Welcome to DocPad's Documentation Repository
 
-It's pulled into the Bevry and [DocPad](https://github.com/bevry/docpad-website) websites and rendered by DocPad into beautiful documentation. Feel free to submit pull requests and post issues for it - one of our moderators will get to your changes as quickly as possible :)
+It's pulled into the Bevry and [DocPad](https://github.com/bevry/docpad-website) websites and rendered by DocPad into beautiful documentation. Feel free to submit pull requests and post issues for it; one of our moderators will get to your changes as quickly as possible :)
 
 
 ## Note on Links
 
-Links inside the documentation will look like `/docpad/config` which within GitHub will go to the incorrect URL. This is because these links are short links that are expanded by DocPad during generation process. You can trial this by cloning out the [DocPad Website](https://github.com/bevry/docpad-website) yourself :)
+Links inside the documentation will look like `/docpad/config`, and don’t work within GitHub. That’s because these are short links DocPad expands during generation process. You can try it out by cloning out the [DocPad Website](https://github.com/bevry/docpad-website) yourself :)
 
 
 ## License

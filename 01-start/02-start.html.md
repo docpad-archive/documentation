@@ -5,7 +5,7 @@ title: "Quick Start"
 
 ## Quick Start from a Pre-Made Website
 
-If you want to use one of our [pre-made websites](/docpad/skeletons) websites to get up and running real quickly, just run the following:
+If you want to use one of our [pre-made websites](/docpad/skeletons) to get up and running quickly, just run the following:
 
 ``` bash
 mkdir my-website
@@ -13,14 +13,16 @@ cd my-website
 docpad run
 ```
 
-This will ask you which pre-made website you'd like to use (or even if you don't want to use one). Once you've picked one, we'll clone it out into the current working directory, generate it, watch for changes, and fire up our inbuilt webserver for the website at [http://localhost:9778/](http://localhost:9778/) so you can see your website right away! How awesome!
+This will ask you which pre-made website to use (even if you don’t want to use one). Once you’ve chosen, DocPad will clone it into the current working directory, `generate` it, `watch` for changes, and fire up the built-in web server at [http://localhost:9778/](http://localhost:9778/). You’ll be able to see your site right away! Awesome. :)
 
 
 ## Quick Start from Scratch
 
-If you'd rather get your hands dirty by making your own real basic website from scratch, here's the steps:
+If you’d rather make your own website from scratch, here’show:
 
-1. Create a directory for your website, get inside of it, and initialize an empty docpad project:
+1. Create a directory for your website, and change to it
+
+1. Initialize an empty DocPad project:
 
 	``` bash
 	mkdir my-website
@@ -36,7 +38,7 @@ If you'd rather get your hands dirty by making your own real basic website from 
 
 1. Create the following files:
 
-	1. A layout at `src/layouts/default.html.eco` that contains:
+	1. The layout file `src/layouts/default.html.eco`, with the contents:
 
 		``` erb
 		<html>
@@ -52,7 +54,7 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		</html>
 		```
 
-	2. Another layout at `src/layouts/post.html.eco` that contains:
+	2. The layout file `src/layouts/post.html.eco`, with the contents:
 
 		``` erb
 		---
@@ -62,7 +64,7 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		<div><%- @content %></div>
 		```
 
-	3. A document at `src/documents/posts/hello.html.md` that contains:
+	3. The document `src/documents/posts/hello.html.md`, with the contents:
 
 		``` html
 		---
@@ -72,9 +74,9 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		Hello **World!**
 		```
 
-1. Then when you generate your website by running `docpad run`
+1. Generate your website with `docpad run`
 	
-	1. You will get a html file at `out/posts/hello.html` that contains:
+	1. You’ll get a HTML file at `out/posts/hello.html`, with the contents:
 
 		``` html
 		<html>
@@ -88,11 +90,11 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		</html>
 		```
 		
-	1. And any files inside the `src/files` directory will be copied to the `out` directory. E.g. `src/files/styles/style.css` -> `out/styles/style.css`
+	1. Any files in `src/files/` directory will be copied to `out/` directory. E.g. `src/files/styles/style.css` → `out/styles/style.css`
 
-1. Awesome. Now how did the `<%=...%>` and `<%-...%>` parts get substituted away?
+1. Awesome. Now, how did the `<%=...%>` and `<%-...%>` parts get substituted away?
 
-	1. This is possible because we parse the documents and layouts through a template rendering engine. In this example, we use a template rendering engine called [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things, in fact we could display all the titles and links of our posts with the following:
+	1. This is possible because DocPad parses the documents and layouts with **template rendering engine**. In this example, we used the template rendering engine [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things. In fact, we could display all the titles and links of our posts with the following:
 
 		``` erb
 		<% for post in @getFilesAtPath("posts").toJSON(): %>
@@ -100,11 +102,11 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		<% end %>
 		```
 
-	3. The `@getBlock` stuff is used so plugins can easily add new meta, scripts, and styles to our website. For instance, the [livereload plugin](/plugin/livereload) in order to reload our web page whenever a regeneration occurs will inject a script into our script block, which is then outputted to our page when we do the `<%- @getBlock("scripts").toHTML() %>` in our layout :)
+	3. The `@getBlock()` stuff is allows plugins to easily add new meta, scripts, and styles to your site. For instance, the [livereload plugin](/plugin/livereload) reload your whenever a regeneration occurs. It injects a script into your script block, which is output to your page with `<%- @getBlock("scripts").toHTML() %>` in the layout.
 
-1. Cool. Now how did `Hello **World!**` in our document get converted into `Hello <strong>World!</strong>`?
+1. Cool. Now how did `Hello **World!**` in the document get converted into `Hello <strong>World!</strong>`?
 
-	1. That was possible as that file was a [Markdown](http://daringfireball.net/projects/markdown/basics) file (hence the `.md` extension it had). Markdown is fantastic for working with text based documents, as it really allows you to focus in on your content instead of the syntax for formatting the document!
+	1. That file was a [Markdown](http://daringfireball.net/projects/markdown/basics) file (hence the `.md` extension it had). Markdown is fantastic for working with text-based documents, as it really allows you to focus on the content.
 
-1. Fantastic! Thanks for that! Continue on with the guide to learn a lot more, as this was just the tip of the ice berg - there's a lot more opt-in awesomeness yet to be discovered.
+1. Fantastic! Thanks for that! Continue the guide to learn lots more. This was just the tip of the iceberg; there’s a lot more awesomeness you can opt-in to.
 
