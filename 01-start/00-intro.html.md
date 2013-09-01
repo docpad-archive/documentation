@@ -48,7 +48,7 @@ On the other hand, compare that with DocPad:
 	- In-memory database allows querying without needing a manual installation
 	- Migrations and deployments are handled via `git`, the tool we’re use to
 - **Robust**
-	- Use your desktop counterparts to edit content naturally: sublime, vim, word, byword
+	- Use your desktop counterparts like SublimeText, Vim, Word, Byword to edit content naturally
 	- Abstraction-friendly; code the way you want, how you want
 	- Use whatever language, pre-processor, markup, templating engine you want; it’s all covered by opt-in plugins
 
