@@ -5,7 +5,7 @@ title: "Quick Start"
 
 ## Quick Start from a Pre-Made Website
 
-If you want to use one of our [pre-made websites](/docpad/skeletons) to get up and running quick, just run the following:
+If you want to use one of our [pre-made websites](/docpad/skeletons) to get up and running quickly, just run the following:
 
 ``` bash
 mkdir my-website
