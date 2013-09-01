@@ -57,7 +57,7 @@ Furthermore, thanks to Node’s opt-in, modular philosophy, DocPad benefits from
 - [Browserify](https://github.com/substack/node-browserify) for sharing server code *directly* with the client
 - Native pre-processor rendering such as [CoffeeScript](http://coffeescript.org), [CoffeeKup](http://coffeekup.org), [Stylus](http://learnboost.github.com/stylus), and [LessCSS](http://lesscss.org)
 
-So, as the Node community grows and innovates, so too does DocPad. Awesome.
+And as the Node community grows and innovates, so too does DocPad. Awesome.
 
 
 
