@@ -3,24 +3,24 @@ title: "Extending"
 ```
 
 
-Here are all the different ways that DocPad can be extended.
+Here’s how you can extend DocPad.
 
 ## Module
-DocPad can also be used as a module in other systems
+DocPad can be used as a module in other systems.
 - [You can discover the API accessible to your here](/docpad/api)
 
 ## Configuration Files
-Configuration files allow you to apply site specific extensions and configurations
-- [You can discover how use the configuration files here](/docpad/config)
-- [You can discover the events available to you here](/docpad/events)
+Configuration files allow you to apply site-specific extensions and configurations.
+- [Learn how use configuration files](/docpad/config)
+- [Learn about the available events](/docpad/events)
 
 ## Plugins
-Plugins provide extra functionality to DocPad, and can be re-used across Skeletons
-- [You can discover existing plugins here](/docpad/plugins)
-- [You can learn to write plugins here](/docpad/plugin-write)
-- [You can discover the events available to you here](/docpad/events)
+Plugins provide extra functionality to DocPad, and can be reused across skeletons.
+- [List of DocPad’s plugins](/docpad/plugins)
+- [Learn to write DocPad plugins](/docpad/plugin-write)
+- [Learn about the available events](/docpad/events)
 
 ## Skeletons
-Skeletons are essentially re-usable websites/projects/webapps that you've created with DocPad
-- [You can discover existing skeletons here](/docpad/skeletons)
-- To get your Skeleton during the bootstrap process of DocPad, post an issue on the [docpad-extras](https://github.com/bevry/docpad-extras) [issue tracker](https://github.com/bevry/docpad-extras/issues)
+Skeletons are reusable websites/projects/webapps created with DocPad.
+- [List of existing skeletons](/docpad/skeletons)
+- To get your Skeleton listed during DocPad’s bootstrap process, post an issue on the  [issue tracker](https://github.com/bevry/docpad-extras/issues) for [docpad-extras](https://github.com/bevry/docpad-extras).
