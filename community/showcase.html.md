@@ -70,6 +70,7 @@ welcome to my online portfolio
 - [Jose Quesada](http://josequesada.com/) - [source](https://github.com/quesada/josequesada.docpad) - Homepage of Jose Quesada, a specialist with e-commerce database marketing
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
 - [Leigh Howells](http://leighhowells.com/) - Home planet, blog and portfolio of Designer, tunesmith and UX Consultant, Cambridge, UK.  With added aliens. 
+- [The Mason Jar](http://www.the-mason-jar.com/) - [source](https://github.com/the-mason-jar/www-the-mason-jar) - Hipster cocktails with a back-end powered by GitHub and DocPad.
 - [MeltMedia](http://meltmedia.com/) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
 - [Mimijumi Indonesia](http://mimijumi.co.id) - A distributor site of Mimijumi in Indonesia.
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
