@@ -18,7 +18,7 @@ For bug reports relating to the core, use [DocPad's GitHub Issue Tracker](https:
 
 For bug reports relating to plugins, use the Plugin's GitHub Issue Tracker. You can find it by going to the Plugin's Homepage, then looking for the "Issues" button.
 
-With your bug reports, be sure to specify:
+**With your bug reports, specify:**
 
 - Your docpad version `docpad --version`
 - Your node version `node --version`
