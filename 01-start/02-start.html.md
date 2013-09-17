@@ -5,7 +5,7 @@ title: "Quick Start"
 
 ## Quick Start from a Pre-Made Website
 
-If you want to use one of our [pre-made websites](/docpad/skeletons) websites to get up and running real quickly, just run the following:
+If you want to use one of our [pre-made websites](/docpad/skeletons) to get up and running real quickly, just run the following:
 
 ``` bash
 mkdir my-website
@@ -13,14 +13,14 @@ cd my-website
 docpad run
 ```
 
-This will ask you which pre-made website you'd like to use (or even if you don't want to use one). Once you've picked one, we'll clone it out into the current working directory, generate it, watch for changes, and fire up our inbuilt webserver for the website at [http://localhost:9778/](http://localhost:9778/) so you can see your website right away! How awesome!
+This will ask you which pre-made website you'd like to use (or even if you don't want to use one). Once you've picked one, we'll clone it into the current working directory, generate it, watch for changes, and fire up our inbuilt webserver at [http://localhost:9778/](http://localhost:9778/) so you can see your website right away! How awesome!
 
 
 ## Quick Start from Scratch
 
-If you'd rather get your hands dirty by making your own real basic website from scratch, here's the steps:
+If you'd rather get your hands dirty by making your own basic website from scratch, here's the steps:
 
-1. Create a directory for your website, get inside of it, and initialize an empty docpad project:
+1. Create a directory for your website, change to it and initialize an empty docpad project:
 
 	``` bash
 	mkdir my-website
@@ -72,9 +72,9 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		Hello **World!**
 		```
 
-1. Then when you generate your website by running `docpad run`
+1. Then, when you generate your website by running `docpad run`
 	
-	1. You will get a html file at `out/posts/hello.html` that contains:
+	1. You will get an html file at `out/posts/hello.html` that contains:
 
 		``` html
 		<html>
@@ -88,11 +88,11 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		</html>
 		```
 		
-	1. And any files inside the `src/files` directory will be copied to the `out` directory. E.g. `src/files/styles/style.css` -> `out/styles/style.css`
+	1. And any files inside the `src/files` directory will be copied to the `out` directory, e.g. `src/files/styles/style.css` -> `out/styles/style.css`
 
-1. Awesome. Now how did the `<%=...%>` and `<%-...%>` parts get substituted away?
+1. Awesome. Now, how were the `<%=...%>` and `<%-...%>` parts substituted?
 
-	1. This is possible because we parse the documents and layouts through a template rendering engine. In this example, we use a template rendering engine called [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things, in fact we could display all the titles and links of our posts with the following:
+	1. This is possible because we parse the documents and layouts through a template rendering engine. In this example, we use a template rendering engine called [Eco](https://github.com/sstephenson/eco) (hence the `.eco` extensions of the layouts). Templating engines allows you to do some pretty nifty things! In fact, we could display all the titles and links of our posts with the following:
 
 		``` erb
 		<% for post in @getFilesAtPath("posts").toJSON(): %>
@@ -100,11 +100,10 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		<% end %>
 		```
 
-	3. The `@getBlock` stuff is used so plugins can easily add new meta, scripts, and styles to our website. For instance, the [livereload plugin](/plugin/livereload) in order to reload our web page whenever a regeneration occurs will inject a script into our script block, which is then outputted to our page when we do the `<%- @getBlock("scripts").toHTML() %>` in our layout :)
+	3. The `@getBlock` stuff is used so plugins can easily add new meta, scripts and styles to our website. For instance, the [livereload plugin](/plugin/livereload) that reloads our webpage whenever a regeneration occurs will inject a script into our script block, which is then output to our page when we do the `<%- @getBlock("scripts").toHTML() %>` in our layout :)
 
 1. Cool. Now how did `Hello **World!**` in our document get converted into `Hello <strong>World!</strong>`?
 
-	1. That was possible as that file was a [Markdown](http://daringfireball.net/projects/markdown/basics) file (hence the `.md` extension it had). Markdown is fantastic for working with text based documents, as it really allows you to focus in on your content instead of the syntax for formatting the document!
+	1. That was possible as the file was a [Markdown](http://daringfireball.net/projects/markdown/basics) file (hence its `.md` extension). Markdown is fantastic for working with text-based documents, as it really allows you to focus on your content instead of the syntax for formatting the document!
 
-1. Fantastic! Thanks for that! Continue on with the guide to learn a lot more, as this was just the tip of the ice berg - there's a lot more opt-in awesomeness yet to be discovered.
-
+1. Fantastic! Thanks for that! Continue on with the guide to learn a lot more. This was just the tip of the iceberg, and there's plenty of opt-in awesomeness yet to be discovered.
