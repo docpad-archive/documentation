@@ -2,7 +2,7 @@
 
 ### Current
 
-These skeletons are currently available to you as part of the DocPad bootstrap process:
+These are the current skeletons available for DocPad’s bootstrap process:
 
 <ul>
 	<% for own skeletonName, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
@@ -37,7 +37,7 @@ These skeletons are for older versions of DocPad:
 
 ## Requested
 
-These are skeletons that have not yet been coded up, but have been requested. Please be sure to categorise them in their appropriate license, so we know that we are legally entitled to port them over to DocPad.
+The following skeletons have been requested, but aren’t yet coded up. Please be sure to categorise them in their appropriate license, so we can legally port them over to DocPad.
 
 
 ### Public Domain

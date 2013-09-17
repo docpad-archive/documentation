@@ -1,4 +1,4 @@
-This page serves as a roadmap that details the approximate milestones of DocPad's future.
+This roadmap details the approximate milestones of DocPad’s future.
 
 [Want to help? Contribute!](/docpad/contribute)
 
@@ -23,7 +23,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 
 - Authentication Plugin
 	- Uses GitHub for authentication, validates email address against `package.json` maintainers
-	- Login window trigger by `ctrl/cmd+shift+l`
+	- Login window trigger by `CTL/CMD+Shift+L`
 
 - REST Plugin
 
@@ -33,7 +33,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 		- Support adding and removing of documents
 		- Support adding and removing of files (includes uploading if in the cloud)
 	- Connect
-		- Purchasable Content (e.g. sell premium plugins, tutorials, themes, etc)
+		- Purchasable Content (e.g. sell premium plugins, tutorials, themes, etc.)
 	- Exchange
 		- Community Centre
 			- Chat
@@ -43,9 +43,9 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 			- Skeletons
 			- Plugins
 			- Rate and Discuss
-		- Learning Centre (tutorials, videos, etc)
+		- Learning Centre (tutorials, videos, etc.)
 	- QuickStart
-		- Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc)
+		- Importing content from an existing source (e.g. WordPress, Tumblr, Jekyll, etc.)
 	- Connect
 		- News
 		- Blog
@@ -54,7 +54,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- QuickStart
 		1. Selecting your skeleton
 		2. Selecting your plugins
-		3. Configuring docpad and plugins
+		3. Configuring DocPad and plugins
 	- Administration
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
@@ -169,7 +169,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- Unit Tests
 	- Modular API for rendering single files
 	- Modular API for rendering single content blocks
-	- Hidden files are now ignored in watchr
+	- Hidden files are now ignored in `watchr`
 
 - v3.1
 	- Added an interactive CLI
@@ -191,15 +191,15 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 
 - v2.1
 	- Dynamic Documents
-		- These are rendered per request, and have access to the express.js request object
+		- These are rendered per request, and have access to the `express.js` request object
 		- They enable things like form handling, search, real-time updating data, etc.
 
 - v2.0
 	- Plugin's have their own `package.json`
-		- This specifies the plugin's dependencies
-		- When the plugin is used, docpad will do a `cd $pluginDir; npm install`
-	- Plugins and DocPad configurable through project's `package.json`
-	- Plugins and DocPad configurable through project's `docpad.coffee`
+		- This specifies the plugin’s dependencies
+		- When the plugin is used, DocPad will do: `cd $pluginDir; npm install`
+	- Plugins and DocPad configurable through project’s `package.json`
+	- Plugins and DocPad configurable through project’s `docpad.coffee`
 	- Front-End Administration Plugin
 		- Adds in some client-side javascript
 		- Utilises contentEditable with semantic properties to update
@@ -209,7 +209,7 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 
 ### Version 1
 
-Version 1 focused on improving the scalability, stability, and ease-of-use of docpad. Bringing it to a vastly superior alternative to other static site generators.
+Version 1 focused on improving the scalability, stability, and ease-of-use of DocPad. Bringing it to a vastly superior alternative to other static site generators.
 
 ### Version 0
 

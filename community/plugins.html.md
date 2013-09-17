@@ -3,11 +3,12 @@ Here is a listing of all the plugins available for DocPad. If you have created a
 
 ## Installing
 
-To install a plugin, run `docpad install #{thePluginName}` inside your project directory. As an example, to install the [eco](/plugin/eco/) plugin, you would run `docpad install eco`
+To install a plugin, run `docpad install #{thePluginName}` inside your project directory. For example, to install the [eco](/plugin/eco/) plugin, run `docpad install eco`.
 
 To uninstall a plugin, run `docpad uninstall #{thePluginName}` inside your project directory.
 
-In older versions of DocPad, you would run `npm install --save docpad-plugin-#{thePluginName}` to install, and `npm uninstall --save docpad-plugin-#{thePluginName}` to uninstall.
+### Older DocPad Differences
+In older versions of DocPad, installation was: `npm install --save docpad-plugin-#{thePluginName}`, and uninstallation was `npm uninstall --save docpad-plugin-#{thePluginName}`.
 
 
 ## Renderers
@@ -47,7 +48,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 
 ## Helpers
 
-These are plugins that add extra functionality to DocPad:
+These plugins add extra functionality to DocPad:
 
 - [addthis](https://github.com/mikeumus/docpad-plugin-addthis) - Adds the [AddThis](http://www.addthis.com/) toolbar into your project
 - [assets](https://github.com/mcdee/docpad-plugin-assets) - Change URL of asset files to contain hash of contents, allowing for effective caching whilst enabling cache busting when contents change
@@ -88,7 +89,7 @@ These are plugins that add extra functionality to DocPad:
 
 ## Deployers
 
-These are plugins that make [deploying](/docpad/deploy) to particular services even easier:
+These plugins make [deploying](/docpad/deploy) to specific services even easier:
 
 - [ghpages](/plugin/ghpages) - Deploy to [GitHub Pages](http://pages.github.com/) as easy as `docpad deploy-ghpages`
 - [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation
@@ -97,15 +98,19 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 
 ## Admin Interfaces & Importers
 
-[DocPad's plan from the very beginning has been to be interface agnostic.](https://github.com/bevry/docpad/issues/123) This means that we'll be able to hook whatever admin interface we'd like ontop of DocPad. So far we have the following extensions that add Admin Interfaces to DocPad:
+[DocPad’s plan from the very beginning has been to be *interface agnostic*.](https://github.com/bevry/docpad/issues/123) This means that we’ll be able to hook whatever admin interface we’d like on top of DocPad. 
+
+So far, the following extensions are available to add Admin Interfaces to DocPad:
 
 - [DocPad Collections Editor](https://github.com/cauld/docpad-collections-editor) - A simple WYSIWYG editor for DocPad Collections
 - [MiniCMS](https://npmjs.org/package/docpad-plugin-minicms) - Adds an admin interface to DocPad
 - [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/about.html) as an Admin Interface for DocPad
 
-[We're also working very hard on improving support for importers.](https://github.com/bevry/docpad/issues/500) Importers allow you to import documents from external services into the DocPad database, allowing you to use whatever you want as an admin interface for DocPad. Eventually we will have importers for say Tumblr, WordPress, Joomla, whatever. Allowing you to use DocPad to write and render your website, and them to create and edit your content.
+[We’re also working very hard on improving support for importers.](https://github.com/bevry/docpad/issues/500) Importers let you import documents from external services into the DocPad database, so you can use whatever you want as an admin interface for DocPad. 
 
-So far we have the following importers that pull in data from remote services and make them available as DocPad documents:
+Eventually, we’ll have importers for (e.g.) Tumblr, WordPress, Joomla, whatever. They will empower you to use DocPad to write and render your website, and them to create and edit your content.
+
+So far, we have the following importers for turning remote content into DocPad documents:
 
 - [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap](https://github.com/docpad/twitter-bootstrap.docpad) skeleton to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
 - [repocloner](/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
@@ -137,13 +142,15 @@ These are miscellaneous things that you can do with DocPad:
 
 ## Complete Plugin Listing
 
-You can find a [complete listing of all DocPad Plugins on the NPM Registry using the `docpad-plugin` keyword.](https://npmjs.org/browse/keyword/docpad-plugin) Though note, this listing is not curated by the DocPad Team, so be careful.
+You can find a [complete listing of all DocPad Plugins on the NPM Registry using the `docpad-plugin` keyword.](https://npmjs.org/browse/keyword/docpad-plugin) 
+
+(Please note: this listing is not curated by the DocPad Team, so be careful.)
 
 
 
 ## Create Your Own!
 
-It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Page!](/docpad/plugin-write)
+It’s easy to write plugin for DocPad. [Get started now on our Write a Plugin Page!](/docpad/plugin-write)
 
 
 

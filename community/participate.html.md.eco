@@ -1,44 +1,64 @@
-This page will talk about being a developer for DocPad and what is involved.
+What’s involved in being a DocPad developer?
 
-This guide is also a bit out of date, check out the new [Contributing Guide](/docpad/contribute) for the latest instructions.
+(This guide is a bit out of date. See the new [Contributing Guide](/docpad/contribute) for the latest instructions.)
 
 
 ## Who? What? Why?
-Anyone can be a developer for DocPad, this is because DocPad is entirely open-source, meaning anyone can browse, edit, and share the source-code of DocPad. The source-code is like the original code, the code that developers write to make things happen.
+Anyone can be a developer for DocPad. That’s because DocPad is totally open-source; anyone can browse, edit, and share the source-code of DocPad. The source-code is like the original code, the code that developers write to make things happen.
 
-So what is a developer? A developer can be whatever you want it to be! But I guess it is just someone who participates in the community, the growth, and direction DocPad is going. Naturally, a lot of people end up becoming developers without realising, as their involvement with DocPad increases, so does their amplitude to the commitment to DocPad and its success. For a lot of developers, DocPad's success = your success.
+So, what’s a developer? 
+
+A developer can be whatever you want it to be! But really, it’s anybody who participates in the community, growth, and future direction of DocPad. 
+
+Naturally, lots of people are developers without realising it. As their involvement with DocPad increases, so does their amplitude to the commitment to DocPad and its success. For many developers, DocPad’s success == your success.
 
 
 ## How to participate as a developer?
 
 
 ### Issue Tracker
-The best way to participate is to be active on the [Issue Tracker](/issues). Anything that needs doing for DocPad is logged there. Batches of work are split into monthly sprints called [Milestones](/issues/milestones). Issues are given a type, priority, and status (called buckets). Every issue is great for community participation, however issues with the label `discussion` are actively and urgently seeking developer feedback - so discuss those issues first! Any feedback would be great. Issues with the label `patches welcome` are issues which you can start implementing/coding up yourself, once you are done, submit a [pull request](http://help.github.com/send-pull-requests/) back to the original DocPad project and we'll review your changes and provide feedback :-)
+The best way to participate is to be active on the [Issue Tracker](/issues). **Issues** are great for community participation. Issues labeled `discussion` are seeking developer feedback, so discuss those issues first! **We’d love your feedback!** 
+
+Besides `discussion`, each issue is labeled according `type`, `priority`, and `status`. (Collectively, we call these labels “buckets”.)
+
+**Batches of work** are split into monthly “sprints”, called [Milestones](/issues/milestones). Milestones are really just containers for issues.  When all the issues in a milestone are completed, that milestone is done, and the DocPad team moves on to the next one.
+
+Issues labeled `patches welcome` are issues you can start implementing/coding up yourself. When you’re done, submit a [pull request](http://help.github.com/send-pull-requests/) back to the original DocPad project.  If your changes need more work, we’ll give you some feedback.  Otherwise, if we like what we see, we’ll pull your changes into DocPad.  
 
 
 ### Contribute Code
-If you've found a bug in DocPad, or want to add a new feature yourself. You can get hacking away at the source code, and submit a pull request to get your changes back into the official repository. [You can read more about this on the Contributing Guide here](/docpad/contribute).
+If you’ve found a bug in DocPad, or want to add a new feature yourself, you can start hacking on the source code. Submit a Pull Request, and you can get your changes merged back into the official repository. [You can read more about this on the Contributing Guide here](/docpad/contribute).
 
 
 ### Discuss
-As DocPad developers are spread across the entire world, arranging a time for everyone to get chatting together is quite hard. However, that doesn't mean we don't try.
+Since DocPad developers live around the world, it’s quite difficult to arrange a time for everyone to get together and chat.
 
-You can get chatting with anyone who's around by visiting the IRC channel `#docpad` on Freenode. [Click here to join.](http://webchat.freenode.net/?channels=docpad)
+But that won’t stop us from trying. :)
+
+You can start talking with anyone on the IRC channel `#docpad` on Freenode. [Click here to join.](http://webchat.freenode.net/?channels=docpad)
 
 
 ### Priority Focus
-Each month, we do a sprint bundled with new features from the roadmap and bugs from the issue tracker. We will always aim to get high priority bugs fixed and released as soon as posible. Once the bugs are all done, then we focus on the new features. When a feature is done, we release it to the public right away and then test and validate it's value to the community. Once a feature has been proven to be valuable, we close it. You can read more about this process in the book [The Lean Startup](http://theleanstartup.com/).
+Each month, we do a sprint bundled with new features (from the roadmap) and bugs (from the issue tracker). 
+
+We’ll always aim to release fixes for high priority bugs as soon as possible. Once all the bugs are squashed, we focus on new features. When a new feature is done, we release it to the public right away, in order to test its value to the community. If the feature proves valuable, we close it. 
+
+You can read more about this process in the book [The Lean Startup](http://theleanstartup.com/).
 
 
 #### On fixing bugs first
-The focus on "bugs first, features later" is to ensure that the users of DocPad remain happy. Even though the developers may feel a new feature is crucial to DocPad's success, bugs are very horrible experiences for the existing users. Each day a bug is out in the code base, that is creating negative experiences, and a negative impression of the DocPad project and the DocPad community. Fixing bug's first is essential for having a happy community.
+The focus on “bugs first, features later” is to ensure that the users of DocPad remain happy. Even if developers feel a new feature is crucial to DocPad's success, bugs are horrible experiences for existing users. Every day a bug is out in the code base, it’s creating negative experiences and impressions about DocPad. Fixing bugs first is essential for a happy community.
 
 
 #### Implement and release tasks independently of each other
-As we use the amazing git technology, there is a thing called branching, each new task (feature, bug, etc) to be done should be implemented in it's own branch. This prevents the feature from interfering with other features while you work on it. Once the feature is stable, a DocPad maintainer will pull it with the latest master branch and make sure it is still stable, then merge it into master branch and perform a release. This allows us to implement and release tasks independently on each other. So developers get immediate feedback, and users get immediate results - without any waiting! yay!
+Thanks to the amazing git technology, there’s this thing called **branching**. Each new task—feature, bug, etc.—to be done can (and should) be implemented in its own branch. 
+
+This prevents the feature from interfering with other features while you work on it. Once the feature is stable, a DocPad maintainer will pull it into the latest `master` branch, make sure it’s still stable, and perform a release. 
+
+This allows us to implement and release tasks independently on each other, so developers get immediate feedback, and users get immediate results.  All without any waiting. Yay!
 
 <% if @contributors?.length: %>
 ## Contributors
 
-We'd also like to thank all the countless contributors who have worked with us to help accomplish our shared ambitions, including these <%- @contributors.length %> people: <%- @partial('content/contributors.html.coffee', {contributors:@contributors}) %>
+We’d also like to thank all the countless contributors who have worked with us to help accomplish our shared ambitions, including these <%- @contributors.length %> people: <%- @partial('content/contributors.html.coffee', {contributors:@contributors}) %>
 <% end %>

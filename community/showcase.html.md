@@ -1,9 +1,11 @@
-Feel free to [update this page](http://prose.io/#bevry/docpad-documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
+Feel free to [update this page](http://prose.io/#bevry/docpad-documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. 
+
+**Note:** requires a GitHub account.
 
 
 ## In the press
 
-DocPad mentioned around the web. Oldest first.
+DocPad mentions from around the web (oldest first):
 
 - [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: Covers what is DocPad, getting started with DocPad, and customising DocPad
 - [Dropbox auf dem eigenen Server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
@@ -36,7 +38,7 @@ DocPad mentioned around the web. Oldest first.
 
 ## Websites
 
-Websites built with DocPad. Alphabetically sorted.
+Websites built with DocPad (alphabetical order):
 
 - [24b](http://www.24b.is) - A gallery, a design studio in Paris
 - [Acherno Interior Design](http://acherno.com) - Corporate web site of the biggest interior design studio in Bulgaria
@@ -93,7 +95,7 @@ welcome to my online portfolio
 
 ## Applications
 
-Applications built with DocPad. Alphabetically sorted.
+Applications built with DocPad (alphabetical order):
 
 - [Js2Coffee](https://github.com/rstacruz/js2coffee) - A JavaScript to CoffeeScript compiler
 - [jQuery ScrollTo](http://balupton.github.io/jquery-scrollto/) - Smooth Scrolling to any jQuery/DOM Element. Uses DocPad to compile, watch, and deploy the project.
