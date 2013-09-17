@@ -152,7 +152,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 2. Deploy to GitHub Pages using the plugin
 
 	```
-	docpad deploy-ghpages
+	docpad deploy-ghpages --env static
 	```
 
 
