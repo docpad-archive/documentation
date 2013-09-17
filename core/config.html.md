@@ -4,23 +4,23 @@ title: "Configuration"
 
 ## Configuration Files
 
-The DocPad configuration file sits within the root of your DocPad project and be named as one of the following. Each name provides a special meaing. Here are the valid names:
+The DocPad configuration file sits within the root of your DocPad project and be named as one of the following. Each name provides a special meaning. Here are the valid names:
 
-- `docpad.js` a node javascript file, will generally look like: `module.exports = {/*the configuration*/}`
-- `docpad.json` a json file, does not allow functions, will generally look like: `{/*the configuration*/}`
-- `docpad.coffee` a node coffeescript file, will generally look like: `module.exports = /*the configuration*/`
-- `docpad.cson` a [cson](https://github.com/bevry/cson) file, will generally look like: `/*the configuration*/`
+- `docpad.js` a (Node) javascript file, will generally look like: `module.exports = {/*the configuration*/}`
+- `docpad.json` a JSON file, does not allow functions, will generally look like: `{/*the configuration*/}`
+- `docpad.coffee` a (Node) CoffeeScript file, will generally look like: `module.exports = /*the configuration*/`
+- `docpad.cson` a [CSON](https://github.com/bevry/cson) file, will generally look like: `/*the configuration*/`
 
 The advantage of `docpad.js` and `docpad.coffee` over `docpad.json` and `docpad.cson` is that they allow us to declare functions, as well as call functions. However, for instances where we cannot trust the contents of the configuration files you would want to use the `docpad.json` or `docpad.cson` as they can't do anything naughty.
 
-The advantage of `docpad.coffee` and `docpad.cson` over `docpad.js` and `docpad.json` is that they allow us to use the CoffeeScript syntax which is a lot more lenient.
+The advantage of `docpad.coffee` and `docpad.cson` over `docpad.js` and `docpad.json` is the use CoffeeScript’s syntax, which is a lot more lenient.
 
-Generally, you'll usually always find either a `docpad.coffee` file or a `docpad.cson` file.
+Generally, you’ll usually always find either a `docpad.coffee` file or a `docpad.cson` file.
 
 
 ### Available Configuration
 
-The following code is of a `docpad.coffee` file that contains every single configurable docpad options - in reality you should only include the options that you have actually customised - using the following example for reference only.
+Below is an example `docpad.coffee`, which contains DocPad’s defaults. In your own configuration file, you should only include the options that you’ve actually customised. The following example is for reference only.
 
 ``` coffee
 # DocPad Configuration
@@ -401,26 +401,26 @@ module.exports = docpadConfig
 
 ## Environment Configuration File
 
-We also support `.env` environment configuration file, the format works like so:
+We also support `.env` environment configuration file. The format is:
 
 ```
 KEY=VALUE
 KEY2=VALUE2
 ```
 
-With all key value pairs being added to the `process.env` environment variable.
+All key value pairs are added to the `process.env` environment variable.  This is useful for setting sensitive information (like API keys, database information, etc.). 
 
-It is useful for setting sensitive information such as API keys and database information etc - if using for this purpose, then be sure to add the `.env` file to your `.gitignore` file.
+**If you use `.env` for purposes like this, be sure to add the `.env` file to your `.gitignore` file.**
 
 
 
 
 ## Global Configuration File
-DocPad will also create a global configuration file located at `~/.docpad.cson` (or `~/Dropbox/.docpad.cson` if you have [Dropbox](http://j.mp/dropbox-bal) installed).The `~` indicates your home directory, e.g. `/Users/balupton`, not your project directory.
+DocPad’s global configuration file is located at `~/.docpad.cson` (or `~/Dropbox/.docpad.cson` if you have [Dropbox](http://j.mp/dropbox-bal) installed). (The `~` indicates your home directory, e.g. `/Users/balupton`, not your project directory.)
 
-This file is typically used to store information relating to your DocPad preferences, such as whether or not you have agreed to the [TOS](/tos) and subscribed to our newsletter or not, however it can also be used to load in configuration that you would like applied to all of your projects. Normally, we wouldn't touch this file, however it is useful to on the odd occasion.
+This file is typically used to store information relating to your DocPad preferences, such as whether or not you have agreed to the [TOS](/tos) and subscribed to our newsletter or not. However, it can also be used to specify a configuration that you want applied to all of your projects. Most of the time, you don’t need to edit this file, but it is useful on the odd occasion.
 
-For instance, if we wanted to set the default DocPad port to always be `9779` instead of `9778`, we can update the global configuration file to include:
+For instance, if you wanted to set the default DocPad port to always be `9779` instead of `9778`, you could update the global configuration file to include:
 
 ``` coffee
 {
