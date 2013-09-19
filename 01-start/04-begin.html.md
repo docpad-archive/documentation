@@ -22,7 +22,7 @@ Great, let's get started! Oh, and if you ever get stuck, you have a question or 
 
 ## Creating the Standard Project Structure
 
-Before we get hacking away on content, we have to create our project and set it up with the [DocPad's standard structure](/docpad/overview). To do this, we'll run the following:
+Before we get hacking away on content, we have to create our project and set it up with [DocPad's standard structure](/docpad/overview). To do this, we'll run the following:
 
 ``` bash
 mkdir my-new-website
