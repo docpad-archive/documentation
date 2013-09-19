@@ -9,7 +9,7 @@ Welcome to the Beginner Guide for DocPad. By the end, you'll have all the knowle
 
 For this guide we'll create a [blog](http://en.wikipedia.org/wiki/Blog) and explain step-by-step how it's done. A blog is just a listing of posts/articles as well as some pages. Posts are intended to allow regular new content, like status updates, to be published, whereas Pages are more permanent, usually providing general background information.
 
-Great, let's get started! Oh, and if you ever get stuck, you have a question or need help, then then jump onto any of our [official support channels](/support) and we'll be right with you. Cheers!
+Great, let's get started! Oh, and if you ever get stuck, you have a question or need help, then jump onto any of our [official support channels](/support) and we'll be right with you. Cheers!
 
 
 
