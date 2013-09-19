@@ -103,7 +103,7 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 - [MiniCMS](https://npmjs.org/package/docpad-plugin-minicms) - Adds an admin interface to DocPad
 - [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/about.html) as an Admin Interface for DocPad
 
-[We're also working very hard on improving support for importers.](https://github.com/bevry/docpad/issues/500) Importers allow you to import documents from external services into the DocPad database, allowing you to use whatever you want as an admin interface for DocPad. Eventually we will have importers for say Tumblr, WordPress, Joomla, whatever. Allowing you to use DocPad to write and render your website, and them to create and edit your content.
+[We're also working very hard on improving support for importers.](https://github.com/bevry/docpad/issues/500) Importers allow you to import documents from external services into the DocPad database, allowing you to use whatever you want as an admin interface for DocPad. Eventually we will have importers for say Tumblr, WordPress, Joomla, whatever. Allowing you to use DocPad to write and render your website, and then to create and edit your content.
 
 So far we have the following importers that pull in data from remote services and make them available as DocPad documents:
 

@@ -30,7 +30,7 @@ Despite all the amazing wonder of current web application architectures, they're
 
 
 ## DocPad, a Next Generation Web Architecture
-On the other hand, lets compare that with DocPad, which is:
+On the other hand, let's compare that with DocPad, which is:
 
 - **Inherently fast**
 	- Built on a stay alive and non-blocking platform
