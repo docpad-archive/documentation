@@ -54,4 +54,4 @@ DocPad operates a the `#docpad` channel on the freenode IRC server. It is a plac
 DocPad has several partners whom provide consulting and support services for DocPad.
 
 <!-- the following has to be on the same line to avoid rendering issues -->
-<ul><% for partner in @getCollection('partners').models: %><li id="<%= partner.get('shortname') or partner.get('basename') %>"><h2 class="partner-title"><a href="<%= partner.get('link') %>" title="<%= partner.get('description') %>"><%- partner.get('title') %>. <%- partner.get('support') %>.</a></h2><div class="partner-content"><%- partner.get('contentRenderedWithoutLayouts') %></div></li><% end %></ul>
+<ul class="partners"><% for partner in @getCollection('partners').models: %><li id="<%= partner.get('shortname') or partner.get('basename') %>"><h2 class="partner-title"><a href="<%= partner.get('link') %>" title="<%= partner.get('description') %>"><%- partner.get('title') %>. <%- partner.get('support') %>.</a></h2><div class="partner-content"><%- partner.get('contentRenderedWithoutLayouts') %></div></li><% end %></ul>
