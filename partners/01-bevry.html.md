@@ -10,7 +10,7 @@ Bevry are the creators of DocPad and are available for advisory, training, spons
 
 You can book a paid call directly with one of our individual team members below:
 
-<iframe class="clarity-widget" data-c-id="13025" data-c-display-rate="hourly" data-c-width="" frameborder="0" style="border: 0; height: 0"></iframe>>
+<iframe class="clarity-widget" data-c-id="13025" data-c-display-rate="hourly" data-c-width="" frameborder="0" style="border: 0; height: 0"></iframe>
 <script async src="https://clarity.fm/assets/widget_loader.js"></script>
 
 Alternatively, if you already know what you're after:
