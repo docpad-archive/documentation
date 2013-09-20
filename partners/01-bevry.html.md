@@ -8,7 +8,7 @@ link: http://bevry.me
 
 Bevry are the creators of DocPad and are available for advisory, training, sponsorship, and prioritized development.
 
-You can schedule a paid call directly with one of their individual team members below:
+You can schedule a paid call directly with one of Bevry's individual team members below:
 
 <iframe class="clarity-widget" data-c-id="13025" data-c-display-rate="hourly" data-c-width="" frameborder="0" style="border: 0; height: 0"></iframe>
 <script async src="https://clarity.fm/assets/widget_loader.js"></script>
