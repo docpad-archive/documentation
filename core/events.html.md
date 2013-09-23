@@ -69,7 +69,7 @@ The context (what `this`/`@` points to) of event handlers in your plugin will be
 
 Events are fired in the following order:
 
-- `extendTemplateData`
+1. `extendTemplateData`
 - `extendCollections`
 - `docpadLoaded`
 - <a href="#docpadReady">`docpadReady`</a>
