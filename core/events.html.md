@@ -1,3 +1,35 @@
+<style type="text/css">
+
+.flow-num{
+	padding: 3px 7px;
+	background: orange;
+	border-radius: 3px;
+	margin: 0;
+	font-weight: bold;
+	color: #FFF;
+	box-shadow: 1px 1px rgb(214, 149, 28);
+}
+
+.flow-order{
+	padding: 3px 7px;
+	background: #259dcf;
+	border-radius: 3px;
+	margin: 0;
+	color: #fff;
+	box-shadow: 1px 1px #468DAC;
+}
+
+.info-inlay{
+	padding: 7px 5px 8px 4px;
+	background: #E6E6E6;
+	border-radius: 3px;
+	border: 1px solid #C9C9C9;
+	box-shadow: -1px -1px rgba(111,111,111,0.4);
+}
+
+</style>
+
+
 ## Using Events
 
 ### Event Handler Structure
@@ -96,7 +128,7 @@ Events are fired in the following order:
 
 ## Available Events
 
-### <a id="docpadReady">`docpadReady`</a>
+### <a id="docpadReady">`docpadReady`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">4</span></span>
 Called once DocPad when DocPad is now ready to perform actions which is once it has finished initializing and loading its configuration. Options:
 - `docpad` the docpad instance
 
