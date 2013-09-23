@@ -72,7 +72,7 @@ Events are fired in the following order:
 - `extendTemplateData`
 - `extendCollections`
 - `docpadLoaded`
-- <a href="#docpadReady">`docpadReady`</a>
+- <a href="/#docpadReady">`docpadReady`</a>
 - `docpadDestroy`
 - `consoleSetup`
 - `generateBefore`
