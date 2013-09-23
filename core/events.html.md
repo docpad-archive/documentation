@@ -72,7 +72,7 @@ Events are fired in the following order:
 - `extendTemplateData`
 - `extendCollections`
 - `docpadLoaded`
-- `docpadReady`
+- <a href="docpadReady">`docpadReady`</a>
 - `docpadDestroy`
 - `consoleSetup`
 - `generateBefore`
@@ -96,7 +96,7 @@ Events are fired in the following order:
 
 ## Available Events
 
-### `docpadReady`
+### <a id="docpadReady">`docpadReady`</a>
 Called once DocPad when DocPad is now ready to perform actions which is once it has finished initializing and loading its configuration. Options:
 - `docpad` the docpad instance
 
