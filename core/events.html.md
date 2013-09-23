@@ -75,23 +75,23 @@ Events are fired in the following order:
 - <a href="#docpadReady">`docpadReady`</a>
 - `docpadDestroy`
 - <a href="#consoleSetup">`consoleSetup`</a>
-- `generateBefore`
+- <a href="#generateBefore">`generateBefore`</a>
 - `populateCollectionsBefore`
 - `populateCollections`
-- `generateAfter`
-- `parseBefore`
-- `parseAfter`
+- <a href="#generateAfter">`generateAfter`
+- <a href="#parseBefore">`parseBefore`
+- <a href="#parseAfter">`parseAfter`
 - `contextualizeBefore`
 - `contextualizeAfter`
-- `renderBefore`
-- `render` (fired for each extension conversion)
-- `renderDocument` (fired for each document render, including layouts and [render passes](/docpad/faq#what-are-render-passes))
-- `renderAfter`
-- `writeBefore`
-- `writeAfter`
-- `serverBefore`
-- `serverExtend`
-- `serverAfter`
+- <a href="#renderBefore">`renderBefore`
+- <a href="#render">`render` (fired for each extension conversion)
+- <a href="#renderDocument">`renderDocument` (fired for each document render, including layouts and [render passes](/docpad/faq#what-are-render-passes))
+- <a href="#renderAfter">`renderAfter`
+- <a href="#writeBefore">`writeBefore`
+- <a href="#writeAfter">`writeAfter`
+- <a href="#serverBefore">`serverBefore`
+- <a href="#serverExtend">`serverExtend`
+- <a href="#serverAfter">`serverAfter`
 
 
 ## Available Events
@@ -101,36 +101,36 @@ Called once DocPad when DocPad is now ready to perform actions which is once it 
 - `docpad` the docpad instance
 
 
-### <a id="consoleSetup">`consoleSetup`
+### <a id="consoleSetup">`consoleSetup`</a>
 Called once the command line interface for DocPad has loaded. Options:
 - `consoleInterface` the console interface instance we are using
 - `commander` the instance of [commander](https://github.com/visionmedia/commander.js) we are using
 
 
-### <a id="generateBefore">`generateBefore`
+### <a id="generateBefore">`generateBefore`</a>
 Called just before we start generating your website
 
-### <a id="generateAfter">`generateAfter`
+### <a id="generateAfter">`generateAfter`</a>
 Called just after we've finished generating your website
 
 
-### <a id="parseBefore">`parseBefore`
+### <a id="parseBefore">`parseBefore`</a>
 Called just before we start to parse all the files
 
-### <a id="parseAfter">`parseAfter`
+### <a id="parseAfter">`parseAfter`</a>
 Called just after we've finished parsing all the files
 
 
-### <a id="renderBefore">`renderBefore`
+### <a id="renderBefore">`renderBefore`</a>
 Called just before we start rendering all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 - `templateData` the template data that will be provided to the documents
 
-### <a id="renderAfter">`renderAfter`
+### <a id="renderAfter">`renderAfter`</a>
 Called just just after we've rendered all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
 
-### <a id="render">`render`
+### <a id="render">`render`</a>
 Called per document, for each extension conversion. Used to render one extension to another. Options:
 - `inExtension` the extension we are rendering from
 - `outExtension` the extension we are rendering to
@@ -153,7 +153,7 @@ render: (opts) ->
 		opts.content = content.toUpperCase() # your conversion to be saved
 ```
 
-### <a id="renderDocument">`renderDocument`
+### <a id="renderDocument">`renderDocument`</a>
 Called per document, after all the extensions have been rendered. Used to perform transformations to the entire document. Options:
 - `extension` the resulted extension for our document
 - `templateData` the template data that we will use for this document's rendering
@@ -166,24 +166,24 @@ Example: [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments/
 
 
 
-### <a id="writeBefore">`writeBefore`
+### <a id="writeBefore">`writeBefore`</a>
 Called just before we start writing all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to write
 - `templateData` the template data that was provided to the documents
 
-### <a id="writeAfter">`writeAfter`
+### <a id="writeAfter">`writeAfter`</a>
 Called just just after we've wrote all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 
 
-### <a id="serverBefore">`serverBefore`
+### <a id="serverBefore">`serverBefore`</a>
 Called just before we start setting up the server
 
-### <a id="serverAfter">`serverAfter`
+### <a id="serverAfter">`serverAfter`</a>
 Called just after we finished setting up the server. Often used to extend the server with routes that will be triggered after the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
 
-### <a id="serverExtend">`serverExtend`
+### <a id="serverExtend">`serverExtend`</a>
 Called just while we are setting up the server, and just before the DocPad routes are applied. Used to extend the server with routes that will be triggered before the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
 
