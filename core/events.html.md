@@ -72,9 +72,9 @@ Events are fired in the following order:
 - `extendTemplateData`
 - `extendCollections`
 - `docpadLoaded`
-- <a href="/#docpadReady">`docpadReady`</a>
+- <a href="#docpadReady">`docpadReady`</a>
 - `docpadDestroy`
-- `consoleSetup`
+- <a href="#consoleSetup">`consoleSetup`</a>
 - `generateBefore`
 - `populateCollectionsBefore`
 - `populateCollections`
@@ -101,36 +101,36 @@ Called once DocPad when DocPad is now ready to perform actions which is once it 
 - `docpad` the docpad instance
 
 
-### `consoleSetup`
+### <a id="consoleSetup">`consoleSetup`
 Called once the command line interface for DocPad has loaded. Options:
 - `consoleInterface` the console interface instance we are using
 - `commander` the instance of [commander](https://github.com/visionmedia/commander.js) we are using
 
 
-### `generateBefore`
+### <a id="generateBefore">`generateBefore`
 Called just before we start generating your website
 
-### `generateAfter`
+### <a id="generateAfter">`generateAfter`
 Called just after we've finished generating your website
 
 
-### `parseBefore`
+### <a id="parseBefore">`parseBefore`
 Called just before we start to parse all the files
 
-### `parseAfter`
+### <a id="parseAfter">`parseAfter`
 Called just after we've finished parsing all the files
 
 
-### `renderBefore`
+### <a id="renderBefore">`renderBefore`
 Called just before we start rendering all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 - `templateData` the template data that will be provided to the documents
 
-### `renderAfter`
+### <a id="renderAfter">`renderAfter`
 Called just just after we've rendered all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
 
-### `render`
+### <a id="render">`render`
 Called per document, for each extension conversion. Used to render one extension to another. Options:
 - `inExtension` the extension we are rendering from
 - `outExtension` the extension we are rendering to
@@ -153,7 +153,7 @@ render: (opts) ->
 		opts.content = content.toUpperCase() # your conversion to be saved
 ```
 
-### `renderDocument`
+### <a id="renderDocument">`renderDocument`
 Called per document, after all the extensions have been rendered. Used to perform transformations to the entire document. Options:
 - `extension` the resulted extension for our document
 - `templateData` the template data that we will use for this document's rendering
@@ -166,24 +166,24 @@ Example: [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments/
 
 
 
-### `writeBefore`
+### <a id="writeBefore">`writeBefore`
 Called just before we start writing all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to write
 - `templateData` the template data that was provided to the documents
 
-### `writeAfter`
+### <a id="writeAfter">`writeAfter`
 Called just just after we've wrote all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 
 
-### `serverBefore`
+### <a id="serverBefore">`serverBefore`
 Called just before we start setting up the server
 
-### `serverAfter`
+### <a id="serverAfter">`serverAfter`
 Called just after we finished setting up the server. Often used to extend the server with routes that will be triggered after the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
 
-### `serverExtend`
+### <a id="serverExtend">`serverExtend`
 Called just while we are setting up the server, and just before the DocPad routes are applied. Used to extend the server with routes that will be triggered before the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
 
