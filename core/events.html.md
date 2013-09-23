@@ -153,16 +153,16 @@ Called just before we start to parse all the files
 Called just after we've finished parsing all the files
 
 
-### <a id="renderBefore">`renderBefore`</a>
+### <a id="renderBefore">`renderBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">15</span></span>
 Called just before we start rendering all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 - `templateData` the template data that will be provided to the documents
 
-### <a id="renderAfter">`renderAfter`</a>
+### <a id="renderAfter">`renderAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">18</span></span>
 Called just just after we've rendered all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
 
-### <a id="render">`render`</a>
+### <a id="render">`render`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">16</span></span>
 Called per document, for each extension conversion. Used to render one extension to another. Options:
 - `inExtension` the extension we are rendering from
 - `outExtension` the extension we are rendering to
@@ -185,7 +185,7 @@ render: (opts) ->
 		opts.content = content.toUpperCase() # your conversion to be saved
 ```
 
-### <a id="renderDocument">`renderDocument`</a>
+### <a id="renderDocument">`renderDocument`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">17</span></span>
 Called per document, after all the extensions have been rendered. Used to perform transformations to the entire document. Options:
 - `extension` the resulted extension for our document
 - `templateData` the template data that we will use for this document's rendering
@@ -198,24 +198,24 @@ Example: [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments/
 
 
 
-### <a id="writeBefore">`writeBefore`</a>
+### <a id="writeBefore">`writeBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">19</span></span>
 Called just before we start writing all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to write
 - `templateData` the template data that was provided to the documents
 
-### <a id="writeAfter">`writeAfter`</a>
+### <a id="writeAfter">`writeAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">20</span></span>
 Called just just after we've wrote all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 
 
-### <a id="serverBefore">`serverBefore`</a>
+### <a id="serverBefore">`serverBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">21</span></span>
 Called just before we start setting up the server
 
-### <a id="serverAfter">`serverAfter`</a>
+### <a id="serverAfter">`serverAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">22</span></span>
 Called just after we finished setting up the server. Often used to extend the server with routes that will be triggered after the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
 
-### <a id="serverExtend">`serverExtend`</a>
+### <a id="serverExtend">`serverExtend`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">23</span></span>
 Called just while we are setting up the server, and just before the DocPad routes are applied. Used to extend the server with routes that will be triggered before the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
 
