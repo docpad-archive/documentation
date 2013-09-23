@@ -133,23 +133,23 @@ Called once DocPad when DocPad is now ready to perform actions which is once it 
 - `docpad` the docpad instance
 
 
-### <a id="consoleSetup">`consoleSetup`</a>
+### <a id="consoleSetup">`consoleSetup`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">6</span></span>
 Called once the command line interface for DocPad has loaded. Options:
 - `consoleInterface` the console interface instance we are using
 - `commander` the instance of [commander](https://github.com/visionmedia/commander.js) we are using
 
 
-### <a id="generateBefore">`generateBefore`</a>
+### <a id="generateBefore">`generateBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">7</span></span>
 Called just before we start generating your website
 
-### <a id="generateAfter">`generateAfter`</a>
+### <a id="generateAfter">`generateAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">10</span></span>
 Called just after we've finished generating your website
 
 
-### <a id="parseBefore">`parseBefore`</a>
+### <a id="parseBefore">`parseBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">11</span></span>
 Called just before we start to parse all the files
 
-### <a id="parseAfter">`parseAfter`</a>
+### <a id="parseAfter">`parseAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">12</span></span>
 Called just after we've finished parsing all the files
 
 
