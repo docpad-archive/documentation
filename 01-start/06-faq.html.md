@@ -69,12 +69,39 @@ Check out the `ignored` [meta data property](/docpad/meta-data).
 Check out the `dynamic` [meta data property](/docpad/meta-data).
 
 
+## What are render passes?
+Rendering is a multi step process. First we render everything that is a standalone document, that is to say documents that do not including anything else. Once that is done, we then render all documents that include other documents. This is useful as we can render blog posts first, then render the content listings second.
+
+At times, you may have multiple levels of cross document references. For instance if document a references document B which references document C. In this case you would want to up the `renderPasses` configuration option for each amount of cross document references you have.
+
+
+## How do I create custom 404 and 500 pages?
+Add a `src/documents/404.html` for 404 pages, and `src/documents/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header as mentioned above) your templating engine (e.g. `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/documents/500.html.md.eco`:
+
+```
+---
+layout: default
+title: "An internal error occured - 500"
+dynamic: true
+---
+
+## An error occured on <%= @req.url %>: <%= @err.message %>
+```
+
+
 ## What data is exposed to my template engine?
 Templating engines are renderers for languages which support business logic. For instance, the template engine [Eco](https://github.com/sstephenson/eco) provides us with the following syntax `<% your business logic %>` or to output a variable we can use `<%=some variable%>`.
 
 As such, the data which we expose to our templating engines is called the `templateData`. [Check out the full listing of template data & helpers here.](/docpad/template-data)
 
 For instance, to output the current document's title with eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what eco uses) you access by using the `@` character.
+
+
+## How can I use environment variables in DocPad?
+All environment variables are automatically available in node applications through [`process.env`](http://nodejs.org/api/process.html#process_process_env). DocPad also loads varibles from a special [environment file](/docpad/config#environment-configuration-file). To quickly override existing environment variables for a single invocation of DocPad, specify it on the command line before the `docpad` command:
+```
+$ API_URL=localhost:1234 docpad run
+```
 
 
 ## How do I disable certain plugins?
@@ -98,15 +125,14 @@ Check out the `plugins` [configuration property](/docpad/config).
 
 
 ## How can I get my templating engine to render other DocPad supported markups?
-[Check out the text plugin.](http://docpad.org/plugin/text/)
+[Check out the text plugin.](/plugin/text/)
 
 
 ## How can I re-use particular templates again and again throughout my site?
-[Check out the partials plugin.](http://docpad.org/plugin/partials/)
-
+[Check out the partials plugin.](/plugin/partials/)
 
 
 ## Want more help?
 
 - Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
-- Need support? [Check out our Support Channels](http://docpad.org/support)
+- Need support? [Check out our Support Channels](/support)

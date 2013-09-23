@@ -29,7 +29,7 @@ The other important aspect of documents it that they support meta data. Meta dat
 
 Layouts work in a very similar way to documents in that they are rendered and support meta data, however unlike documents, they don't get output'ed to the out directory - as they only exist to wrap documents and other layouts within themselves. Layouts work in a nested fashion, with the desired layout being defined by the `layout` meta data property within the child layout/document.
 
-Layouts should include the child content; this is done using the `content` [template data](/docpad/template-data) variable. Doing such a thing using the [Eco](https://github.com/sstephenson/eco/) templating engine via the [Eco Plugin](https://github.com/docpad/docpad-plugin-eco)  would look like so `<%- @content %>`.
+Layouts should include the child content; this is done using the `content` [template data](/docpad/template-data) variable. Doing such a thing using the [Eco](https://github.com/sstephenson/eco/) templating engine via the [Eco Plugin](/plugin/eco)  would look like so `<%- @content %>`.
 
 
 ### The Files Directory

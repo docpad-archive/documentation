@@ -3,30 +3,32 @@ title: Contributing
 ```
 
 
-## Support
+## Donations
 
-To get support:
+[With your help, we'll be able to work on DocPad full time! Isn't that awesome? Donate now to let that happen!](/donate)
 
-- For bug reports relating to the core, use our [GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
-- For bug reports relating to plugins, use their GitHub Issue Tracker
-  - You can find the link by going to the plugin's page, then looking for the "Issues" button
-- With your bug reports, be sure to specify:
-		- Your docpad version `docpad --version`
-		- Your node version `node --version`
-		- Your npm version `npm --version`
-		- Your operating system's name, architecture, and version
-		- What you did
-		- What happened
-		- What you expected
-- For everything else that isn't bug reports (e.g. questions, support, etc), use our [Official Support Channels](http://docpad.org/support)
+
+## Publicize
+
+Help spread the word of DocPad:
+
+- Star our [GitHub Repository](https://github.com/bevry/docpad) by clicking the "Star" button on the top right
+- Star our [NPM Package](https://npmjs.org/package/docpad) by running `npm star docpad` in your terminal
+- [Join our DocPad Community on Gittip!](https://www.gittip.com/for/docpad/)
+- Talk about us on Social Media; Twitter, Blogging, Etc
+- Write about your experiences of DocPad on your blog
+- Do a short less than a minute video testimonial of DocPad on Youtube!
+- and just continuing to be awesome
+
 
 
 ## Skeletons
 
-To add a new skeleton to your skeleton listing:
+To add a new skeleton to the skeleton listing:
 
-1. Add your new skeleton to this JSON file: https://github.com/bevry/docpad-extras/blob/docpad-6.x/exchange.json
-2. and submitting a pull request
+1. [Add your new skeleton to our `exchange.json` file](https://github.com/bevry/docpad-extras/edit/docpad-6.x/exchange.json)
+2. Submit the pull request for it (the page for this should appear automatically once you click "Commit Changes" from the previous link)
+
 
 
 ## Documentation
@@ -40,6 +42,7 @@ To update our documentation:
 5. Fill in the details and click submit
 
 
+
 ## Development
 
 To get started making changes to the DocPad core:
@@ -50,6 +53,8 @@ To get started making changes to the DocPad core:
 1. Run `cake setup` to setup our project for development
 1. Run `npm link` to link our local copy as the global instance (so it is available via `docpad`)
 1. Run `cake dev` to compile our source files and recompile on changes
+1. Follow the [Bevry Coding Standards](https://github.com/bevry/community/wiki/Coding-Standards) when writing your changes
+
 
 
 ## Pull Requests
@@ -61,6 +66,7 @@ To get some changes you've made into the official repository:
 1. **When submitting the pull request, specify the `dev` branch as the integration branch (the integration branch is which branch your pull request will be merged into on the official repo)**
 1. If you'd like, feel free to add yourself to the contributors section of the `package.json` file if it exists
 1. By submitting a pull request, you agree that your submission can be used freely and without restraint by those whom your submitting the pull request to
+
 
 
 ## Testing
@@ -75,3 +81,33 @@ Before you submit your changes you'll want to make sure your changes still work 
 	1. Make your docpad setup available: `npm link docpad`
 	1. Clone out the plugins: `cake clone`
 	1. Test the plugins: `cake test`
+
+
+
+## Publishing
+
+To publish a new version:
+
+1. Pull in the latest changes from the master and dev branches
+1. Make sure the tests work, if your publishing a new docpad verison also make sure the [docpad-extras](https://github.com/bevry/docpad-extras) tests work
+1. Add an entry to the changelog following the format of the previous entries, an example of this is:
+	
+	``` markdown
+	- v6.29.0 April 1, 2013
+		- Progress on [issue #474](https://github.com/bevry/docpad/issues/474)
+		- DocPad will now set permissions based on the process's ability
+			- Thanks to [Avi Deitcher](https://github.com/deitch), [Stephan Lough](https://github.com/stephanlough) for [issue #165](https://github.com/bevry/docpad/issues/165)
+		- Updated dependencies
+	```
+
+1. Add any new contributors to the `package.json` file, for their URL use their github profile URL
+1. Increment the version number in the `package.json` file according to the [semver](http://semver.org/) standard, that is:
+	1. If everything will break, increment the major version
+	2. If something may break, increment the minor version
+	3. If nothing will break, increment the revision version
+1. Commit the changes with the title set to something like `v6.29.0. Bugfix. Improvement.` and description set to the changelog entry.
+1. Tag the commit as the version number, e.g. `git tag v6.29.0`
+1. Publish the module: `npm publish`
+1. Merge your changes into the master and dev branches
+1. Push your changes and new tag up to the git repo: `git push origin --all; git push origin --tags`
+1. Party!

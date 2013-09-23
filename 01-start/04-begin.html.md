@@ -9,7 +9,7 @@ Welcome to the Beginner Guide for DocPad. By the end of this guide, you'll have 
 
 For this guide we'll create a blog and explain what we do step by step. A blog is just a listing of posts/articles as well as some pages. Posts are like status updates on how something is going. Pages on the other hand are something we always want to show.
 
-Great! Lets get started. Oh, and if you ever get stuck, have a question, or need help - [then jump onto any of our official support channels and we'll be right with you](http://docpad.org/support). Cheers!
+Great! Lets get started. Oh, and if you ever get stuck, have a question, or need help - [then jump onto any of our official support channels and we'll be right with you](/support). Cheers!
 
 
 
@@ -132,10 +132,10 @@ We've also added a new `isPage` attribute, this is our own custom attribute and 
 
 Templating Engines allow us to embed abstractions inside our documents - which is why we have to use them for layouts, as a layout is an abstraction, an abstraction that wraps around a document and outputs the document's content in a specific way :)
 
-For this guide, the templating engine we'll be using is [eco](https://github.com/sstephenson/eco) and is available to us via the [eco plugin](http://docpad.org/plugin/eco). So lets install that now by quitting DocPad (`CTRL+C`), and running:
+For this guide, the templating engine we'll be using is [eco](https://github.com/sstephenson/eco) and is available to us via the [eco plugin](/plugin/eco). So lets install that now by quitting DocPad (`CTRL+C`), and running:
 
 ``` bash
-npm install --save docpad-plugin-eco
+docpad install eco
 ```
 
 Once installed, if we run DocPad again (`docpad run`), then go our home page or about page, we'll see that the content actually contains the document content! In other words, it's actually rendered correctly through our eco templating engine! Woot woot.
@@ -168,10 +168,10 @@ Now what on earth was with the stuff between the `---` at the top of our documen
 
 ### Adding the Live Reload Plugin
 
-Sweet. So we're going good so far. We've got two documents going, and a layout to abstract them. But as we are making this changes, it sure would be nice if our browser refreshed the page automatically. We can do this with the [live reload plugin](http://docpad.org/plugin/livereload), so lets install that now:
+Sweet. So we're going good so far. We've got two documents going, and a layout to abstract them. But as we are making this changes, it sure would be nice if our browser refreshed the page automatically. We can do this with the [live reload plugin](/plugin/livereload), so lets install that now:
 
 ``` bash
-npm install --save docpad-plugin-livereload
+docpad install livereload
 ```
 
 Then once you've restarted DocPad, whenever you make a change to the files you'll notice the browser still doesn't refresh automatically to show the changes! Why? The reason is that we have to add our Blocks.
@@ -298,7 +298,7 @@ I like long walks on the beach. **Plus I rock at DocPad!**
 Which gives us the same result, but with all the benefits of Markdown. Now, just like all rendering engines, we have to:
 
 1. Indicate the rendering we want to perform - so rename `about.html` to `about.html.md` to indicate we want to render from Markdown to HTML
-1. Install the plugin that can do the rendering - so to install the [RobotSkirt Markdown Plugin](http://docpad.org/plugin/robotskirt) we'll run `npm install --save docpad-plugin-robotskirt`
+1. Install the plugin that can do the rendering - so to install the [Marked Markdown Plugin](/plugin/marked) we'll run `docpad install marked`
 
 Sweet, you're now ready to rock the house with Markdown.
 
@@ -316,7 +316,7 @@ h1
 Which gives us the same result, but with all the benefits of Stylus. Now, just like all rendering engines, we have to:
 
 1. Indicate the rendering we want to perform - so rename `style.css` to `style.css.styl` to indicate we want to render from Stylus to CSS
-1. Install the plugin that can do the rendering - so to install the [Stylus Plugin](http://docpad.org/plugin/stylus) we'll run `npm install --save docpad-plugin-stylus`
+1. Install the plugin that can do the rendering - so to install the [Stylus Plugin](/plugin/stylus) we'll run `docpad install stylus`
 
 Sweet, you're now ready to rock the house with Stylus.
 
@@ -333,7 +333,7 @@ $("body").hide().fadeIn(1000)
 Which gives us the same result, but with all the benefits of CoffeeScript. Now, just like all rendering engines, we have to:
 
 1. Indicate the rendering we want to perform - so rename `script.js` to `script.js.coffee` to indicate we want to render from CoffeeScript to JavaScript
-1. Install the plugin that can do the rendering - so to install the [CoffeeScript Plugin](http://docpad.org/plugin/coffeescript) we'll run `npm install --save docpad-plugin-coffeescript`
+1. Install the plugin that can do the rendering - so to install the [CoffeeScript Plugin](/plugin/coffeescript) we'll run `docpad install coffeescript`
 
 Sweet, you're now ready to rock the house with CoffeeScript.
 
@@ -535,7 +535,7 @@ As you now have all the tools and knowledge required to be able to create the bl
 	- Create a new directory called `posts` that contains all your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection to get all documents inside the `posts` output directory (`/my-new-website/out/posts`). You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.
 	- Create a new page called `posts.html.eco` that lists all your blog posts, this will be more or less the same as our navigation menu. If you would like to display descriptons of the blog posts, just add that as a meta data attribute for the blog posts, then output that meta data attribute. If you want to show the rendered content of the data, you can use `post.contentRenderedWithoutLayouts`. You can refer to the [Meta Data Page](/docpad/meta-data) for more information about what attributes are already available to you.
 
-- If you're stuck and need some help, just hop on over to our [IRC Support Channel (docpad on freenode)](http://webchat.freenode.net/?channels=docpad) and someone will be with you soon enough :) [You can also discover all of our available Support Channels via our Support Page.](http://docpad.org/support)
+- If you're stuck and need some help, just hop on over to our [IRC Support Channel (docpad on freenode)](http://webchat.freenode.net/?channels=docpad) and someone will be with you soon enough :) [You can also discover all of our available Support Channels via our Support Page.](/support)
 
 By the way, congratulations - you now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [showcase](/docpad/showcase). To recap, you now know how to:
 

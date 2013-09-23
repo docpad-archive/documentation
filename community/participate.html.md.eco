@@ -13,7 +13,7 @@ So what is a developer? A developer can be whatever you want it to be! But I gue
 
 
 ### Issue Tracker
-The best way to participate is to be active on the [Issue Tracker](http://docpad.org/issues). Anything that needs doing for DocPad is logged there. Batches of work are split into monthly sprints called [Milestones](http://docpad.org/issues/milestones). Issues are given a type, priority, and status (called buckets). Every issue is great for community participation, however issues with the label `discussion` are actively and urgently seeking developer feedback - so discuss those issues first! Any feedback would be great. Issues with the label `patches welcome` are issues which you can start implementing/coding up yourself, once you are done, submit a [pull request](http://help.github.com/send-pull-requests/) back to the original DocPad project and we'll review your changes and provide feedback :-)
+The best way to participate is to be active on the [Issue Tracker](/issues). Anything that needs doing for DocPad is logged there. Batches of work are split into monthly sprints called [Milestones](/issues/milestones). Issues are given a type, priority, and status (called buckets). Every issue is great for community participation, however issues with the label `discussion` are actively and urgently seeking developer feedback - so discuss those issues first! Any feedback would be great. Issues with the label `patches welcome` are issues which you can start implementing/coding up yourself, once you are done, submit a [pull request](http://help.github.com/send-pull-requests/) back to the original DocPad project and we'll review your changes and provide feedback :-)
 
 
 ### Contribute Code
@@ -31,12 +31,14 @@ Each month, we do a sprint bundled with new features from the roadmap and bugs f
 
 
 #### On fixing bugs first
-The focus on bugs first, features later is to ensure that the users of DocPad remain happiness. Even though the developers may feel a new feature is crucial to DocPad's success, bugs are very horrible experiences for the existing users. Each day a bug is out in the code base, that is creating negative experiences, and a negative impression of the DocPad project and the DocPad community. Fixing bug's first is essential for having a happy community.
+The focus on "bugs first, features later" is to ensure that the users of DocPad remain happy. Even though the developers may feel a new feature is crucial to DocPad's success, bugs are very horrible experiences for the existing users. Each day a bug is out in the code base, that is creating negative experiences, and a negative impression of the DocPad project and the DocPad community. Fixing bug's first is essential for having a happy community.
 
 
 #### Implement and release tasks independently of each other
 As we use the amazing git technology, there is a thing called branching, each new task (feature, bug, etc) to be done should be implemented in it's own branch. This prevents the feature from interfering with other features while you work on it. Once the feature is stable, a DocPad maintainer will pull it with the latest master branch and make sure it is still stable, then merge it into master branch and perform a release. This allows us to implement and release tasks independently on each other. So developers get immediate feedback, and users get immediate results - without any waiting! yay!
 
+<% if @contributors?.length: %>
+## Contributors
 
-## Conclusion
-As always, DocPad loves you.
+We'd also like to thank all the countless contributors who have worked with us to help accomplish our shared ambitions, including these <%- @contributors.length %> people: <%- @partial('content/contributors.html.coffee', {contributors:@contributors}) %>
+<% end %>

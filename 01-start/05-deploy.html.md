@@ -113,6 +113,10 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 1. [Follow the rest of the Nodejitsu guide here](http://nodejitsu.com/paas/getting-started.html)
 
 
+### For deployment to [Modulus](http://modulus.io)
+
+1. [Follow getting started guide](https://modulus.io/codex/getting_started)
+
 
 ### Optional: Custom domains
 
@@ -134,20 +138,21 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 
 2. Upload the generated directory to your server's `public_html` or `htdocs` directory
 
+	1. If you use rsync, [checkout our DocPad rsync deploy script](https://gist.github.com/Hypercubed/5804999)
 
 
 ## To [GitHub Pages](http://pages.github.com/)
 
-1. Install the [GitHub Pages Plugin](http://docpad.org/plugin/ghpages)
+1. Install the [GitHub Pages Plugin](/plugin/ghpages)
 
 	```
-	npm install --save docpad-plugin-ghpages
+	docpad install ghpages
 	```
 
 2. Deploy to GitHub Pages using the plugin
 
 	```
-	docpad deploy-ghpages
+	docpad deploy-ghpages --env static
 	```
 
 

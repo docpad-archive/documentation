@@ -41,7 +41,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 		1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin's name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
 		2. You can now feel free to publish your plugin via npm (e.g. `npm publish`) and add your plugin to the [Plugins wiki page](/docpad/plugins) so others can install it themselves (e.g. `npm install docpad-plugin-#{pluginName}`).
 
-4. That should be all, if you have any problems be sure to report them on the [Issue Tracker](http://docpad.org/issues). Thanks.
+4. That should be all, if you have any problems be sure to report them on the [Issue Tracker](/issues). Thanks.
 
 
 ## Upgrading from 3.x to 4.x

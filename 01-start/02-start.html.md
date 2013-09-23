@@ -20,17 +20,18 @@ This will ask you which pre-made website you'd like to use (or even if you don't
 
 If you'd rather get your hands dirty by making your own real basic website from scratch, here's the steps:
 
-1. Create a directory for your website and get into it:
+1. Create a directory for your website, get inside of it, and initialize an empty docpad project:
 
 	``` bash
 	mkdir my-website
 	cd my-website
+    docpad init
 	```
 
 1. Install the [Eco](http://docpad.org/plugin/eco) and [Marked](http://docpad.org/plugin/marked) rendering plugins:
 
 	``` bash
-	npm install --save docpad-plugin-eco docpad-plugin-marked
+	docpad install eco,marked
 	```
 
 1. Create the following files:
@@ -99,7 +100,7 @@ If you'd rather get your hands dirty by making your own real basic website from 
 		<% end %>
 		```
 
-	3. The `@getBlock` stuff is used so plugins can easily add new meta, scripts, and styles to our website. For instance, the [livereload plugin](http://docpad.org/plugin/livereload) in order to reload our web page whenever a regeneration occurs will inject a script into our script block, which is then outputted to our page when we do the `<%- @getBlock("scripts").toHTML() %>` in our layout :)
+	3. The `@getBlock` stuff is used so plugins can easily add new meta, scripts, and styles to our website. For instance, the [livereload plugin](/plugin/livereload) in order to reload our web page whenever a regeneration occurs will inject a script into our script block, which is then outputted to our page when we do the `<%- @getBlock("scripts").toHTML() %>` in our layout :)
 
 1. Cool. Now how did `Hello **World!**` in our document get converted into `Hello <strong>World!</strong>`?
 
