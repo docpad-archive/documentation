@@ -79,7 +79,7 @@ DocPad will perform these conversions from one format to another by triggering t
 - [Here is the plugin file of an example plugin that performs the synchronous conversion of transorming the content of `txt` files that have the extra `uc` or `uppercase` extension to upper case.](/plugin/yourpluginname/blob/master/src/yourpluginname.plugin.coffee)
 - [Here is the plugin file of the coffeekup plugin that accepts configuration and performs and asynchronous conversion.](/plugin/coffeekup/blob/master/src/coffeekup.plugin.coffee)
 
-An important thing to note about the rendering process is that DocPad knows when and how to call the render event based on the documents extensions. For instance, the document `document.html.md.t` will have two render events fire. The first render event will contain the `inExtension` as `eco`, and the `outExtension` as `md`. The second render event will contain the `inExtension` as `md`, and the `outExtension` as `html`. This is why generally in our plugins we want to check the values of `inExtension` and `outExtension` to make sure our plugin is performing the correct render.
+An important thing to note about the rendering process is that DocPad knows when and how to call the render event based on the documents extensions. For instance, the document `document.html.md.eco` will have two render events fire. The first render event will contain the `inExtension` as `eco`, and the `outExtension` as `md`. The second render event will contain the `inExtension` as `md`, and the `outExtension` as `html`. This is why generally in our plugins we want to check the values of `inExtension` and `outExtension` to make sure our plugin is performing the correct render.
 
 
 ### Other types
