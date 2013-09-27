@@ -104,9 +104,9 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 
 DocPad's plugin/extension infrastructure supports existing coupled interfaces by importing their data directly into the DocPad Database. So if you love using Tumblr, WordPress, Medium, MongoDB or GitHub Repos for your content, you don't have to give them up. Just install the importer plugin for them, and DocPad will import the data from that service into the DocPad database for rendering.
 
-- [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap](https://github.com/docpad/twitter-bootstrap.docpad) skeleton to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
+- [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap Skeleton](https://github.com/docpad/twitter-bootstrap.docpad) to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
 - [repocloner](/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
-- [tumblr](/plugin/tumblr/) - Imports Tumblr data directly into your DocPad Database
+- [tumblr](/plugin/tumblr/) - Imports Tumblr data directly into your DocPad Database, used in the [Syte Skeleton](https://github.com/docpad/syte.docpad) to pull in Tumblr data
 
 
 ### Custom Interfaces
