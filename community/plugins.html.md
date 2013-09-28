@@ -25,7 +25,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [html2coffee](/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
 - [html2jade](/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com/) `.jade.html`
 - [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
-- [js2coffee](/plugin/js2coffee/) - Supports JavaScript to CoffeeScript `.coffee.js`
+- [js2coffee](https://npmjs.org/package/docpad-plugin-js2coffee) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
 - [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net/) to JavaScript `.js.ls`
 - [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
@@ -55,7 +55,6 @@ These are plugins that add extra functionality to DocPad:
 - [basicauth](https://github.com/mikeumus/docpad-plugin-basicauth) - Adds basic authentication to your project
 - [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
 - [datefromfilename](https://github.com/grassator/docpad-plugin-datefromfilename) - Automaticaly set the date meta-data property by determining it from the document's filename
-- [dateurls](https://npmjs.org/package/docpad-plugin-dateurls) - Automatically add `/YEAR/MONTH/DAY/NAME` routes for your posts
 - [cachr](/plugin/cachr/) - Allows you to cache remote urls locally from within your templates
 - [cleanurls](/plugin/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [coffeelint](https://github.com/jking90/docpad-plugin-coffeelint) - Prints [coffeelint](http://www.coffeelint.org/) errors to the console
