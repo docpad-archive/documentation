@@ -3,11 +3,11 @@ Here is a listing of all the plugins available for DocPad. If you have created a
 
 ## Installing
 
-To install a plugin, run `docpad install #{thePluginName}` inside your project directory. As an example, to install the [eco](/plugin/eco/) plugin, you would run `docpad install eco`
+To install a plugin, run `docpad install #{thePluginName}` inside your project directory. As an example, to install the [eco](/plugin/eco/) plugin, you would run `docpad install eco`. Alternatively you can run `npm install --save docpad-plugin-#{thePluginName}` if you prefer.
 
-To uninstall a plugin, run `docpad uninstall #{thePluginName}` inside your project directory.
+To uninstall a plugin, run `docpad uninstall #{thePluginName}` inside your project directory. Alternatively you can run `npm uninstall --save docpad-plugin-#{thePluginName}`
 
-In older versions of DocPad, you would run `npm install --save docpad-plugin-#{thePluginName}` to install, and `npm uninstall --save docpad-plugin-#{thePluginName}` to uninstall.
+In older versions of DocPad (older than v6.46.0 for `docpad install` and older than v6.51.0 for `docpad uninstall`), you would run `npm install --save docpad-plugin-#{thePluginName}` to install, and `npm uninstall --save docpad-plugin-#{thePluginName}` to uninstall.
 
 
 ## Renderers

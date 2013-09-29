@@ -55,6 +55,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [DocPad's Website](http://docpad.org) - [source](https://github.com/bevry/docpad-website) - The DocPad Website
 - [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
 - [Doug Neiner's Code Website](http://code.dougneiner.com/) - [source](https://github.com/dcneiner/dougneiner.docpad) - Husband to one, father to three, jQuery Team Member, Senior Designer at [appendTo](http://appendto.com/)
+- [EduanTech](http://eduantech.com) - [source](https://github.com/Greduan/eduantech.docpad) - Eduán Lávaque's website.
 - [Emmet.io's Website](http://emmet.io/) - [source](https://github.com/emmetio/emmet-docs/) - Emmet (previously known as Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow
 - [Evbogue.com](http://docpad.evbogue.com/) - [source](https://github.com/evbogue/docpad.evbogue.com) - Ev Bogue is a technical writer and web developer fascinated by Node.js and Bitcoin. Site built on Docpad.
 - [Ferrari!=Ferrari](http://ferrari.github.com/) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
