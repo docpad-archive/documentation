@@ -17,9 +17,7 @@ Links inside the documentation will look like `/docpad/config` which within GitH
 [Contributing guide and criteria can be found in the `CONTRIBUTING.md` file.](https://github.com/docpad/documentation/blob/master/CONTRIBUTING.md)
 
 
-## Backers
-
-### Maintainers
+## Maintainers
 
 - [Benjamin Lupton](http://balupton) - [@balupton](https://github.com/balupton)
 - Chase Colman - [@chase](http://github.com/chase)
