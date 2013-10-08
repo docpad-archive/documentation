@@ -2,6 +2,7 @@
 ignored: true
 ```
 
+# Contributing
 
 All pull requests must conform to the following criteria in order to get merged in:
 
