@@ -9,8 +9,8 @@ All pull requests must conform to the following criteria in order to get merged 
 - ### Single paragraph pull requests only
 	Each pull request should only alter one paragrah each, pull requests that alter more than one paragraph at a time will likely need to be redone. This is because monolithic/bundled pull requests are impossible to merge in due to the extreme level of overhead they cause by conflicting +1s and -1s in the same pull request, getting out of date with other changes quicker, getting in conflict with other merged in changes quicker.
 
-- ### Spelling fixes are great
-	We love it when people fix these!
+- ### International (British) English for Text, USA English for Code
+	We love it when people fix spelling errors and typos! We use International English (British) for text (only 27% of our visitors are from the USA), and USA English for code (this is more a technical constraint). Code examples should (where it makes sense to) comply with the [Bevry Coding Standards](https://github.com/bevry/community/wiki/Coding-Standards).
 
 - ### Explain sentence changes
 	Fixing grammar as well any other sentence restructuring will require a description along with the pull request on why this change is better than the original. It turns out that such changes are largely subjective, and that the original may be that way for sound reasons.
