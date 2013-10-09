@@ -79,7 +79,7 @@ Use `findAllLive` when defining long-running custom collections. Usual use cases
 
 Use `findAll` when you are needing once-off/short-living collections. Usual use cases are inside your templates, or inside other events within your plugin.
 
-However, ideally wherever possible you should try and use DocPad's built-in [template helpers](/docpad/template-data#standard-template-helpers) or [APIs](/docpad/api#querying) for querying as these methods are highly optimised for DocPad, which the low-level Query-Engine methods are not.
+However, ideally wherever possible you should try and use DocPad's built-in [template helpers](/docpad/template-data#querying) or [APIs](/docpad/api#querying) for querying as these methods are highly optimised for DocPad, which the low-level Query-Engine methods are not.
 
 
 How can I learn more about the NoSQL queries available and the internals of Query-Engine?
