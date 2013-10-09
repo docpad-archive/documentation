@@ -2,7 +2,7 @@
 title: "Install"
 ```
 
-_If you are upgrading from one major version to another, be sure to checkout our [Upgrade Guide](/docpad/upgrade) for information relating to backwards compatibility breaks._
+_If you are upgrading from one major version to another (e.g. DocPad v5 to DocPad v6), be sure to checkout our [Upgrade Guide](/docpad/upgrade) for information relating to backwards compatibility breaks._
 
 1. [Install Node.js & Other Dependencies](/node/install)
 
