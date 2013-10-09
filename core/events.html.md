@@ -65,73 +65,108 @@ module.exports = (BasePlugin) ->
 The context (what `this`/`@` points to) of event handlers in your plugin will be your plugin's instance.
 
 
-## Flow of Events
-
-Events are fired in the following order:
-
-- `extendTemplateData`
-- `extendCollections`
-- `docpadLoaded`
-- `docpadReady`
-- `docpadDestroy`
-- `consoleSetup`
-- `generateBefore`
-- `populateCollectionsBefore`
-- `populateCollections`
-- `generateAfter`
-- `parseBefore`
-- `parseAfter`
-- `contextualizeBefore`
-- `contextualizeAfter`
-- `renderBefore`
-- `render` (fired for each extension conversion)
-- `renderDocument` (fired for each document render, including layouts and [render passes](/docpad/faq#what-are-render-passes))
-- `renderAfter`
-- `writeBefore`
-- `writeAfter`
-- `serverBefore`
-- `serverExtend`
-- `serverAfter`
-
-
 ## Available Events
 
+Sorted by their flow of execution within DocPad
+
+
+### `extendTemplateData`
+Called each time the configuration for DocPad reloads. Called after most of the configuration has loaded and when it is time to extend our template data.
+
+Options:
+- `templateData` the object to inject your additions to
+
+Use to inject new template data variables and helpers into the template data.
+
+Examples:
+- [Services Plugin](/plugin/services)
+- [Feedr Plugin](/plugin/feedr)
+
+
+### `extendCollections`
+Called each time the configuration for DocPad reloads. Called after most of the configuration has loaded and when it is time to extend our collections.
+
+Use to create additional collections.
+
+Examples:
+- [Partials Plugin](/plugin/partials)
+
+
+### `docpadLoaded`
+Called each time the configuration for DocPad reloads. Called before `docpadReady` as we have to load the configuration in order to be ready.
+
+
+
 ### `docpadReady`
-Called once DocPad when DocPad is now ready to perform actions which is once it has finished initializing and loading its configuration. Options:
-- `docpad` the docpad instance
+Called once DocPad when DocPad is now ready to perform actions which is once it has finished initializing and loading its configuration. Partnered with the `docpadDestroy` event.
 
 
 ### `consoleSetup`
-Called once the command line interface for DocPad has loaded. Options:
+Called once the command line interface for DocPad has loaded.
+
+Options:
 - `consoleInterface` the console interface instance we are using
 - `commander` the instance of [commander](https://github.com/visionmedia/commander.js) we are using
 
+Use to extend the console interface with additional commands.
+
+Examples:
+- [GitHub Pages Plugin](/plugin/ghpages)
+
+
+
+### `populateCollectionsBefore`
+Called just before we start to insert dynamic files into the database. Called before each generation, just before the `generateBefore` event. Partnered with the `populateCollections` event.
+
+### `populateCollections`
+Called just after we've inserted dynamic files into the collections. Called before each generation, just before the `generateBefore` event. Partnered with the `populateCollectionsBefore` event.
+
+Use this for inserting your dynamic files into the database.
+
+Examples:
+- [Tumblr Importer Plugin](/plugin/tumblr)
+
+
 
 ### `generateBefore`
-Called just before we start generating your website
+Called just before we start generating your website. Partnered with the `generateAfter` event.
 
-### `generateAfter`
-Called just after we've finished generating your website
 
 
 ### `parseBefore`
-Called just before we start to parse all the files
+Called just before we start to parse all the files. Partnered with the `parseAfter` event.
 
 ### `parseAfter`
-Called just after we've finished parsing all the files
+Called just after we've finished parsing all the files. Partnered with the `parseBefore` event.
+
+
+
+### `conextualizeBefore`
+Called just before we start to contextualize all the files. Partnered with the `contextualizeAfter` event.
+
+Contextualizing is the process of adding layouts and awareness of other documents to our document.
+
+### `contextualizeAfter`
+Called just after we've finished contextualize all the files. Partnered with the `conextualizeBefore` event.
+
+Contextualizing is the process of adding layouts and awareness of other documents to our document.
+
 
 
 ### `renderBefore`
-Called just before we start rendering all the files. Options:
+Called just before we start rendering all the files. Partnered with the `renderAfter` event.
+
+Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 - `templateData` the template data that will be provided to the documents
 
-### `renderAfter`
-Called just just after we've rendered all the files. Options:
-- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
 
 ### `render`
-Called per document, for each extension conversion. Used to render one extension to another. Options:
+Called per document, for each extension conversion.
+
+Use to render one extension to another.
+
+Options:
 - `inExtension` the extension we are rendering from
 - `outExtension` the extension we are rendering to
 - `templateData` the template data that we will use for this document's rendering
@@ -153,8 +188,13 @@ render: (opts) ->
 		opts.content = content.toUpperCase() # your conversion to be saved
 ```
 
+
 ### `renderDocument`
-Called per document, after all the extensions have been rendered. Used to perform transformations to the entire document. Options:
+Called per document, after all the extensions have been rendered.
+
+Use to perform transformations to the entire document.
+
+Options:
 - `extension` the resulted extension for our document
 - `templateData` the template data that we will use for this document's rendering
 - `file` the model instance for the document we are rendering
@@ -165,24 +205,59 @@ Notes: It is also called for each of the layout rendering for the document, as w
 Example: [The Pygments Plugin](http://docpad.org/plugin/pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g. `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org/) syntax highlighting engine.
 
 
+### `renderAfter`
+Called just just after we've rendered all the files. Partnered with the `renderBefore` event.
+
+Options:
+- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
+
+
 
 ### `writeBefore`
-Called just before we start writing all the files. Options:
+Called just before we start writing all the files. Partnered with the `writeAfter` event.
+
+Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to write
 - `templateData` the template data that was provided to the documents
 
+
 ### `writeAfter`
-Called just just after we've wrote all the files. Options:
+Called just just after we've wrote all the files. Partnered with the `writeBefore` event.
+
+Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 
 
-### `serverBefore`
-Called just before we start setting up the server
 
-### `serverAfter`
-Called just after we finished setting up the server. Often used to extend the server with routes that will be triggered after the DocPad routes. Options:
-- `server` the [express.js](http://expressjs.com/) server instance we are using
+### `generateAfter`
+Called just after we've finished generating your website.  Partnered with the `generateBefore` event.
+
+
+
+### `serverBefore`
+Called just before we start setting up the server. Partnered with the `serverAfter` event.
+
 
 ### `serverExtend`
-Called just while we are setting up the server, and just before the DocPad routes are applied. Used to extend the server with routes that will be triggered before the DocPad routes. Options:
+Called just while we are setting up the server, and just before the DocPad routes are applied.
+
+Use to extend the server with routes that will be triggered before the DocPad routes.
+
+Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
+
+
+### `serverAfter`
+Called just after we finished setting up the server.
+
+Use to extend the server with routes that will be triggered after the DocPad routes.
+
+Options:
+- `server` the [express.js](http://expressjs.com/) server instance we are using
+
+
+
+### `docpadDestroy`
+Called when it is time for DocPad to shutdown.  Partnered with the `docpadReady` event.
+
+Use this to shutdown anything inside your plugins, close all connections, file system handlers, files, etc.
