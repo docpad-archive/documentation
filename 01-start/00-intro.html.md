@@ -77,7 +77,7 @@ For those who like tables, here's the above in table form:
 | Re-render each request |  yes  |  no  |  via [`dynamic` field](/docpad/meta-data#dynamic)  |
 | Extend the webserver  |  yes  |  no  |  via [events](/docpad/events#serverextend) and [api](/docpad/api)  |
 | Watching  |  n/a  |  yes  |  yes  |
-| Differential rendering  |  n/a  |  no  |  yes  |
+| Differential regenerations  |  n/a  |  no  |  yes  |
 | Live reload  |  no  |  no  |  via [`livereload` plugin](/plugin/livereload/)  |
 | Partials  |  no  |  no  |  via [`partials` plugin](/plugin/partials/)  |
 | Manual database installation required  |  yes  |  no  |  no  |
