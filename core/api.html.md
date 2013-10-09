@@ -106,24 +106,40 @@ DocPad using [Backbone.js](http://documentcloud.github.com/backbone/) for its Mo
 ### Create a Document
 
 ``` javascript
-var document = docpadInstance.createDocument(data,options);
+document = docpadInstance.createDocument(data, options)
 ```
 
 ### Get the database
 
 ``` javascript
-var database = docpadInstance.getDatabase();
+database = docpadInstance.getDatabase()
 ```
 
-### Query the database
+### Querying
 
 ``` javascript
-var resultCollection, resultModel;
-resultCollection = docpadInstance.getFiles(query,sorting,paging);
-resultModel = docpadInstance.getFile(query,sorting,paging);
-resultCollection = docpadInstance.getFilesAtPath(path,sorting,paging);
-resultModel = docpadInstance.getFileAtPath(path,sorting,paging);
+// Get files, returns a cached live collection
+resultCollection = docpadInstance.getFiles(query, sorting, paging)
+
+// Get a file
+resultModel = docpadInstance.getFile(query, sorting, paging)
+
+// Get files at path (forwards onto getFiles)
+resultCollection = docpadInstance.getFilesAtPath(path, sorting, paging)
+
+// Get a file at a relative or absolute path or url
+resultModel = docpadInstance.getFileAtPath(path, sorting, paging)
+
+// Get a file by its id
+resultModel = docpadInstance.getFileById(id, {collection:null})
+
+// Get a file by a route, useful when doing server requests
+docpadInstance.getFileByRoute(url, function(err, resultModel){
+	if ( err )  console.log(err.stack)
+})
 ```
+
+[For more information about Querying, check out this FAQ Entry.](/docpad/faq#what-is-findalllive)
 
 
 
@@ -165,11 +181,11 @@ var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguratio
 
 Here is some code for manually rendering a document (documents are files inside `src/documents`) with a custom route:
 
-``` javascript
+``` coffee
 app.get '/alias-for-home', (req,res,next) ->
 	req.templateData = {
 		weDidSomeCustomRendering: true
 	};
 	var document = docpadInstance.getFile({relativePath:'home.html.md'});
-	docpadInstance.serveDocument({document,req,res,next});
+	docpadInstance.serveDocument({document, req, res, next});
 ```
