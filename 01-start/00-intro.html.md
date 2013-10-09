@@ -58,4 +58,32 @@ Besides this, thanks to the opt-in modular philosophy of node, we benefit from a
 So as the node community grows and innovates, so do we. Awesome.
 
 
+## Direct Comparison
+
+For those who like tables, here's the above in table form:
+
+| Feature | Usual CMS (Drupal, Wordpress) | Usual Static Site Generator (Jekyll) | DocPad  |
+|  ----- |  :-----: |  :-----: |  :-----: |
+| Requires  |  cms developers  |  web developers  |  web developers  |
+| Developers proficient in  |  months  |  days  |  days  |
+| Plugin and extension system  |  yes  |  no  |  [yes](/docpad/plugins) |
+| Asset pipeline |  no  |  implicit & bundled  |  [explicit & extendable](/docpad/overview#the-documents-directory)  |
+| Markup languages (markdown, rst, etc) |  no  |  one bundled  |  yes via [plugins](/docpad/plugins#renderers)  |
+| Pre-processors (sass, less, etc)  |  no  |  no  |  yes via [plugins](/docpad/plugins#renderers)  |
+| Template engines (eco, jade, etc)  |  no  |  one bundled  |  yes via [plugins](/docpad/plugins#renderers)  |
+| Database querying  |  yes  |  no  |  yes via [query-engine](https://github.com/bevry/query-engine/wiki/Using) |
+| Layouts |  yes  |  yes  |  yes  |
+| Static website output |  no  |  yes  |  yes  |
+| Re-render each request |  yes  |  no  |  possible, [off by default](/docpad/meta-data#dynamic)  |
+| Extend the webserver  |  yes  |  no  |  yes via [events](/docpad/events#serverextend) and [api](/docpad/api)  |
+| Live reload  |  no  |  no  |  yes via [`livereload` plugin](/plugin/livereload/)  |
+| Partials  |  no  |  no  |  yes via [`partials` plugin](/plugin/partials/)  |
+| Database required  |  yes  |  no  |  no  |
+| Import pages from file system  |  no  |  yes  |  yes   |
+| Import pages from external database (mongodb, mysql, etc)  |  yes  |  no  |  yes via [plugins](/docpad/plugins#admin-interfaces)  |
+| Import pages from external services (tumblr, dropbox, github, etc)  |  no  |  yes  |  yes via [plugins](/docpad/plugins#admin-interfaces)  |
+| Import data from external services (atom, xml, json, etc)  |  no  |  no  |  yes via [`feedr` plugin](/plugin/feedr/)  |
+| WYSIWYG editors  |  yes  |  no  |  yes via [plugins](/docpad/plugins#admin-interfaces)  |
+
+
 
