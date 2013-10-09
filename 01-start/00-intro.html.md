@@ -74,8 +74,8 @@ For those who like tables, here's the above in table form:
 | Database querying  |  Yes  |  No  |  Via [Query-Engine](https://github.com/bevry/query-engine/wiki/Using) |
 | Layouts |  Yes  |  Yes  |  Yes  |
 | Static website output |  No  |  Yes  |  Yes  |
-| Re-render each request |  Yes  |  no  |  Via [`dynamic` field](/docpad/meta-data#dynamic)  |
-| Extend the webserver  |  Yes  |  no  |  Via [events](/docpad/events#serverextend) and [API](/docpad/api)  |
+| Re-render each request |  Yes  |  No  |  Via [`dynamic` field](/docpad/meta-data#dynamic)  |
+| Extend the webserver  |  Yes  |  No  |  Via [events](/docpad/events#serverextend) and [API](/docpad/api)  |
 | Watching  |  N/A  |  Yes  |  Yes  |
 | Differential regenerations  |  N/A  |  No  |  Yes  |
 | Live reload  |  No  |  No  |  Via [`livereload` plugin](/plugin/livereload/)  |
