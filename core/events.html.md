@@ -92,6 +92,7 @@ Examples:
 - [Partials Plugin](/plugin/partials)
 
 
+
 ### `docpadLoaded`
 Called each time the configuration for DocPad reloads. Called before `docpadReady` as we have to load the configuration in order to be ready.
 
@@ -131,25 +132,39 @@ Examples:
 ### `generateBefore`
 Called just before we start generating your website. Partnered with the `generateAfter` event.
 
+Options:
+- `reset` whether or not this is a partial (`false`) or full regeneration (`true`)
+- `server` deprecated, use `getServer()` API method instead
 
 
 ### `parseBefore`
-Called just before we start to parse all the files. Partnered with the `parseAfter` event.
+Called just before we start to load and parse all the files. Partnered with the `parseAfter` event.
+
+Options:
+- `collection` the collection we are working with
+
 
 ### `parseAfter`
-Called just after we've finished parsing all the files. Partnered with the `parseBefore` event.
+Called just after we've finished loading and parsing all the files. Partnered with the `parseBefore` event.
+
+Options:
+- `collection` the collection we are working with
 
 
 
 ### `conextualizeBefore`
-Called just before we start to contextualize all the files. Partnered with the `contextualizeAfter` event.
+Called just before we start to contextualize all the files. Partnered with the `contextualizeAfter` event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
 
-Contextualizing is the process of adding layouts and awareness of other documents to our document.
+Options:
+- `collection` the collection we are working with
+- `templateData` deprecated, use `extendTemplateData` event instead
 
 ### `contextualizeAfter`
-Called just after we've finished contextualize all the files. Partnered with the `conextualizeBefore` event.
+Called just after we've finished contextualize all the files. Partnered with the `conextualizeBefore` event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
 
-Contextualizing is the process of adding layouts and awareness of other documents to our document.
+Options:
+- `collection` the collection we are working with
+- `templateData` deprecated, use `extendTemplateData` event instead
 
 
 
@@ -244,7 +259,9 @@ Called just while we are setting up the server, and just before the DocPad route
 Use to extend the server with routes that will be triggered before the DocPad routes.
 
 Options:
-- `server` the [express.js](http://expressjs.com/) server instance we are using
+- `server` and `serverExpress` are the [express.js](http://expressjs.com/) server instance we are using
+- `serverHttp` is the raw node.js http server we are using
+- `express` is the express module we are using
 
 
 ### `serverAfter`
@@ -253,7 +270,9 @@ Called just after we finished setting up the server.
 Use to extend the server with routes that will be triggered after the DocPad routes.
 
 Options:
-- `server` the [express.js](http://expressjs.com/) server instance we are using
+- `server` and `serverExpress` are the [express.js](http://expressjs.com/) server instance we are using
+- `serverHttp` is the raw node.js http server we are using
+- `express` is the express module we are using
 
 
 
