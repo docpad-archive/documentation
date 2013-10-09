@@ -18,9 +18,13 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 	npm install -g node-inspector
 	```
 
-1. Open Node Inspector up by running `node-inspector` in another Terminal window:
+1. Run:
 
-1. Open up our local DocPad instance for debugging by running:
+        ``` bash
+        node-inspector &
+        ```
+
+1. Open another terminal window and run DocPad instance in debug mode:
 
 	``` bash
 	docpad-debug run
@@ -28,6 +32,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 1. Navigate to http://127.0.0.1:8080/debug?port=5858 in your webkit based browser and start debugging (sometimes you may have to refresh or restart the node inspector or docpad instances).
 
+1. **NOTE**: It might break on the first line of docpad.js , ensure that you play it through or else the docpad server will not be started properly
 
 ## Debugging with [TraceGL](https://trace.gl/) - shareware
 
