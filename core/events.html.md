@@ -1,3 +1,35 @@
+<style type="text/css">
+
+.flow-num{
+	padding: 3px 7px;
+	background: orange;
+	border-radius: 3px;
+	margin: 0;
+	font-weight: bold;
+	color: #FFF;
+	box-shadow: 1px 1px rgb(214, 149, 28);
+}
+
+.flow-order{
+	padding: 3px 7px;
+	background: #259dcf;
+	border-radius: 3px;
+	margin: 0;
+	color: #fff;
+	box-shadow: 1px 1px #468DAC;
+}
+
+.info-inlay{
+	padding: 7px 5px 8px 4px;
+	background: #E6E6E6;
+	border-radius: 3px;
+	border: 1px solid #C9C9C9;
+	box-shadow: -1px -1px rgba(111,111,111,0.4);
+}
+
+</style>
+
+
 ## Using Events
 
 ### Event Handler Structure
@@ -69,68 +101,68 @@ The context (what `this`/`@` points to) of event handlers in your plugin will be
 
 Events are fired in the following order:
 
-- `extendTemplateData`
+1. `extendTemplateData`
 - `extendCollections`
 - `docpadLoaded`
-- `docpadReady`
+- <a href="#docpadReady">`docpadReady`</a>
 - `docpadDestroy`
-- `consoleSetup`
-- `generateBefore`
+- <a href="#consoleSetup">`consoleSetup`</a>
+- <a href="#generateBefore">`generateBefore`</a>
 - `populateCollectionsBefore`
 - `populateCollections`
-- `generateAfter`
-- `parseBefore`
-- `parseAfter`
+- <a href="#generateAfter">`generateAfter`
+- <a href="#parseBefore">`parseBefore`
+- <a href="#parseAfter">`parseAfter`
 - `contextualizeBefore`
 - `contextualizeAfter`
-- `renderBefore`
-- `render` (fired for each extension conversion)
-- `renderDocument` (fired for each document render, including layouts and [render passes](/docpad/faq#what-are-render-passes))
-- `renderAfter`
-- `writeBefore`
-- `writeAfter`
-- `serverBefore`
-- `serverExtend`
-- `serverAfter`
+- <a href="#renderBefore">`renderBefore`
+- <a href="#render">`render` (fired for each extension conversion)
+- <a href="#renderDocument">`renderDocument` (fired for each document render, including layouts and [render passes](/docpad/faq#what-are-render-passes))
+- <a href="#renderAfter">`renderAfter`
+- <a href="#writeBefore">`writeBefore`
+- <a href="#writeAfter">`writeAfter`
+- <a href="#serverBefore">`serverBefore`
+- <a href="#serverExtend">`serverExtend`
+- <a href="#serverAfter">`serverAfter`
 
 
 ## Available Events
 
-### `docpadReady`
+### <a id="docpadReady">`docpadReady`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">4</span></span>
 Called once DocPad when DocPad is now ready to perform actions which is once it has finished initializing and loading its configuration. Options:
 - `docpad` the docpad instance
 
 
-### `consoleSetup`
+### <a id="consoleSetup">`consoleSetup`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">6</span></span>
 Called once the command line interface for DocPad has loaded. Options:
 - `consoleInterface` the console interface instance we are using
 - `commander` the instance of [commander](https://github.com/visionmedia/commander.js) we are using
 
 
-### `generateBefore`
+### <a id="generateBefore">`generateBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">7</span></span>
 Called just before we start generating your website
 
-### `generateAfter`
+### <a id="generateAfter">`generateAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">10</span></span>
 Called just after we've finished generating your website
 
 
-### `parseBefore`
+### <a id="parseBefore">`parseBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">11</span></span>
 Called just before we start to parse all the files
 
-### `parseAfter`
+### <a id="parseAfter">`parseAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">12</span></span>
 Called just after we've finished parsing all the files
 
 
-### `renderBefore`
+### <a id="renderBefore">`renderBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">15</span></span>
 Called just before we start rendering all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 - `templateData` the template data that will be provided to the documents
 
-### `renderAfter`
+### <a id="renderAfter">`renderAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">18</span></span>
 Called just just after we've rendered all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
 
-### `render`
+### <a id="render">`render`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">16</span></span>
 Called per document, for each extension conversion. Used to render one extension to another. Options:
 - `inExtension` the extension we are rendering from
 - `outExtension` the extension we are rendering to
@@ -153,7 +185,7 @@ render: (opts) ->
 		opts.content = content.toUpperCase() # your conversion to be saved
 ```
 
-### `renderDocument`
+### <a id="renderDocument">`renderDocument`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">17</span></span>
 Called per document, after all the extensions have been rendered. Used to perform transformations to the entire document. Options:
 - `extension` the resulted extension for our document
 - `templateData` the template data that we will use for this document's rendering
@@ -162,27 +194,45 @@ Called per document, after all the extensions have been rendered. Used to perfor
 
 Notes: It is also called for each of the layout rendering for the document, as well as for each [render pass](/docpad/faq#what-are-render-passes), as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
 
-Example: [The Pygments Plugin](http://docpad.org/plugin/pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g. `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org/) syntax highlighting engine.
+Example: [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments/blob/master/src/pygments.plugin.coffee#L1) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g. `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org/) syntax highlighting engine.
 
 
 
-### `writeBefore`
+### <a id="writeBefore">`writeBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">19</span></span>
 Called just before we start writing all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to write
 - `templateData` the template data that was provided to the documents
 
-### `writeAfter`
+### <a id="writeAfter">`writeAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">20</span></span>
 Called just just after we've wrote all the files. Options:
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
 
 
-### `serverBefore`
+### <a id="serverBefore">`serverBefore`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">21</span></span>
 Called just before we start setting up the server
 
-### `serverAfter`
+### <a id="serverAfter">`serverAfter`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">22</span></span>
 Called just after we finished setting up the server. Often used to extend the server with routes that will be triggered after the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
 
-### `serverExtend`
+### <a id="serverExtend">`serverExtend`</a> <span class="info-inlay"><span class="flow-order">Flow Order</span> <span class="flow-num">23</span></span>
 Called just while we are setting up the server, and just before the DocPad routes are applied. Used to extend the server with routes that will be triggered before the DocPad routes. Options:
 - `server` the [express.js](http://expressjs.com/) server instance we are using
+
+Example: [The basicAuth Plugin](https://github.com/mikeumus/docpad-plugin-basicauth/blob/master/basicauth.plugin.coffee#L10) uses 'serverExtend' to add express' basicAuth to a route:
+```coffeescript
+serverExtend: (opts) ->
+	{express,server} = opts
+	{config,docpad} = @
+	# docpad = @docpad
+
+	# Synchronous
+	auth = express.basicAuth(dConf.basicAuth.user, dConf.basicAuth.pass)
+
+	server.get dConf.basicAuth.protectedPage, auth
+
+	# Done
+	@
+```
+
+
