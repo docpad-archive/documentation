@@ -68,9 +68,9 @@ For those who like tables, here's the above in table form:
 | Developers proficient in  |  months  |  days  |  days  |
 | Plugin and extension system  |  yes  |  no  |  [yes](/docpad/plugins) |
 | Asset pipeline |  no  |  implicit & bundled  |  [explicit & extendable](/docpad/overview#the-documents-directory)  |
-| Markup languages (markdown, rst, etc) |  no  |  one bundled  |  yes via [plugins](/docpad/plugins#renderers)  |
+| Markup languages (markdown, rst, etc) |  no  |  one bundled  |  via [plugins](/docpad/plugins#renderers)  |
 | Pre-processors (sass, less, etc)  |  no  |  no  |  via [plugins](/docpad/plugins#renderers)  |
-| Template engines (eco, jade, etc)  |  no  |  one bundled  |  yes via [plugins](/docpad/plugins#renderers)  |
+| Template engines (eco, jade, etc)  |  no  |  one bundled  |  via [plugins](/docpad/plugins#renderers)  |
 | Database querying  |  yes  |  no  |  via [query-engine](https://github.com/bevry/query-engine/wiki/Using) |
 | Layouts |  yes  |  yes  |  yes  |
 | Static website output |  no  |  yes  |  yes  |
