@@ -74,14 +74,16 @@ For those who like tables, here's the above in table form:
 | Database querying  |  yes  |  no  |  via [query-engine](https://github.com/bevry/query-engine/wiki/Using) |
 | Layouts |  yes  |  yes  |  yes  |
 | Static website output |  no  |  yes  |  yes  |
-| Re-render each request |  yes  |  no  |  [off by default](/docpad/meta-data#dynamic)  |
+| Re-render each request |  yes  |  no  |  via [`dynamic` field](/docpad/meta-data#dynamic)  |
 | Extend the webserver  |  yes  |  no  |  via [events](/docpad/events#serverextend) and [api](/docpad/api)  |
+| Watching  |  n/a  |  yes  |  yes  |
+| Differential rendering  |  n/a  |  no  |  yes  |
 | Live reload  |  no  |  no  |  via [`livereload` plugin](/plugin/livereload/)  |
 | Partials  |  no  |  no  |  via [`partials` plugin](/plugin/partials/)  |
 | Manual database installation required  |  yes  |  no  |  no  |
 | Import pages from file system  |  no  |  yes  |  yes   |
 | Import pages from external database (mongodb, mysql, etc)  |  yes  |  no  |  via [plugins](/docpad/plugins#admin-interfaces)  |
-| Import pages from external services (tumblr, dropbox, github, etc)  |  no  |  yes  |  via [plugins](/docpad/plugins#admin-interfaces)  |
+| Import pages from external services (tumblr, dropbox, github, etc)  |  no  |  no  |  via [plugins](/docpad/plugins#admin-interfaces)  |
 | Import data from external services (atom, xml, json, etc)  |  no  |  no  |  via [`feedr` plugin](/plugin/feedr/)  |
 | WYSIWYG editors  |  yes  |  no  |  via [plugins](/docpad/plugins#admin-interfaces)  |
 
