@@ -67,7 +67,7 @@ For those who like tables, here's the above in table form:
 | Talent requirements  |  CMS developer  |  Backend+frontend developer  |  Frontend developer  |
 | Developers proficient in  |  Months  |  Days  |  Days  |
 | Plugin and extension system  |  Yes  |  No  |  [Yes](/docpad/extend) |
-| Asset pipeline |  No  |  Implicit & Bundled  |  [Explicit & extendable](/docpad/overview#the-documents-directory)  |
+| Asset pipeline |  No  |  Implicit & bundled  |  [Explicit & extendable](/docpad/overview#the-documents-directory)  |
 | Markup languages (markdown, rst, etc) |  No  |  1 bundled  |  Via [plugins](/docpad/plugins#renderers)  |
 | Pre-processors (sass, less, etc)  |  No  |  No  |  Via [plugins](/docpad/plugins#renderers)  |
 | Template engines (eco, jade, etc)  |  No  |  1 bundled  |  Via [plugins](/docpad/plugins#renderers)  |
