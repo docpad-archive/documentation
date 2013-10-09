@@ -64,7 +64,7 @@ For those who like tables, here's the above in table form:
 
 | Feature | Usual CMS (Drupal, Wordpress) | Usual Static Site Generator (Jekyll) | DocPad  |
 |  ----- |  :-----: |  :-----: |  :-----: |
-| Talent Requirements  |  CMS developer  |  Backend+Frontend developer  |  Frontend developer  |
+| Talent requirements  |  CMS developer  |  Backend+frontend developer  |  Frontend developer  |
 | Developers proficient in  |  Months  |  Days  |  Days  |
 | Plugin and extension system  |  Yes  |  No  |  [Yes](/docpad/extend) |
 | Asset pipeline |  No  |  Implicit & Bundled  |  [Explicit & extendable](/docpad/overview#the-documents-directory)  |
@@ -75,7 +75,7 @@ For those who like tables, here's the above in table form:
 | Layouts |  Yes  |  Yes  |  Yes  |
 | Static website output |  No  |  Yes  |  Yes  |
 | Re-render each request |  Yes  |  no  |  Via [`dynamic` field](/docpad/meta-data#dynamic)  |
-| Extend the webserver  |  Yes  |  no  |  Via [events](/docpad/events#serverextend) and [api](/docpad/api)  |
+| Extend the webserver  |  Yes  |  no  |  Via [events](/docpad/events#serverextend) and [API](/docpad/api)  |
 | Watching  |  N/A  |  Yes  |  Yes  |
 | Differential regenerations  |  N/A  |  No  |  Yes  |
 | Live reload  |  No  |  No  |  Via [`livereload` plugin](/plugin/livereload/)  |
