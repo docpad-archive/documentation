@@ -66,7 +66,7 @@ For those who like tables, here's the above in table form:
 |  ----- |  :-----: |  :-----: |  :-----: |
 | Requires  |  cms developers  |  frontend developers  |  frontend developers  |
 | Developers proficient in  |  months  |  days  |  days  |
-| Plugin and extension system  |  yes  |  no  |  [yes](/docpad/plugins) |
+| Plugin and extension system  |  yes  |  no  |  [yes](/docpad/extend) |
 | Asset pipeline |  no  |  implicit & bundled  |  [explicit & extendable](/docpad/overview#the-documents-directory)  |
 | Markup languages (markdown, rst, etc) |  no  |  one bundled  |  via [plugins](/docpad/plugins#renderers)  |
 | Pre-processors (sass, less, etc)  |  no  |  no  |  via [plugins](/docpad/plugins#renderers)  |
