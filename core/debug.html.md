@@ -20,9 +20,9 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 1. Run:
 
-        ``` bash
-        node-inspector &
-        ```
+    ``` bash
+    node-inspector &
+    ```
 
 1. Open another terminal window and run DocPad instance in debug mode:
 
