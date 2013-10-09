@@ -64,7 +64,7 @@ For those who like tables, here's the above in table form:
 
 | Feature | Usual CMS (Drupal, Wordpress) | Usual Static Site Generator (Jekyll) | DocPad  |
 |  ----- |  :-----: |  :-----: |  :-----: |
-| Requires  |  cms developers  |  web developers  |  web developers  |
+| Requires  |  cms developers  |  frontend developers  |  frontend developers  |
 | Developers proficient in  |  months  |  days  |  days  |
 | Plugin and extension system  |  yes  |  no  |  [yes](/docpad/plugins) |
 | Asset pipeline |  no  |  implicit & bundled  |  [explicit & extendable](/docpad/overview#the-documents-directory)  |
