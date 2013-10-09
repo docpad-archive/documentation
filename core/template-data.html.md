@@ -11,14 +11,19 @@ title: "Template Data & Helpers"
 
 ## Standard Template Helpers
 
+- `include(relativePath)` return the content of another file at the given path
 - `getEnvironment()` &mdash; a string of the current environment(s) we are running under
 - `getEnvironments()` &mdash; an array of the current environments we are running under
 - `referencesOthers()` &mdash; when called, will set the document's `referenceOthers` [meta data](/docpad/meta-data) property to `true`
 - `getDocument()` &mdash; a reference to the current document we are rendering, documents are defined by the [Document Class](https://github.com/bevry/docpad/blob/master/src/lib/models/document.coffee) which extends the [File Class](https://github.com/bevry/docpad/blob/master/src/lib/models/file.coffee) which extends a [Backbone Model](http://documentcloud.github.com/backbone/#Model)
+- `getBlock(blockName)` &mdash; valid block names are:
+	- `scripts` &mdash; a collection of scripts to be outputted
+	- `styles` &mdash; a collection of styles to be outputted
+	- `meta` &mdash; a collection of meta to be outputted
 - `getPath(path,parentPath)` get a path with respect to the path of the current document
-- `getFiles(query,sorting,paging)` get all files that match the arguments, caches the result collection
-- `getFile(query,sorting,paging)` get a single file that matches the arguments
-- `getFilesAtPath(relativePath)` get a file at the given path, path is processed through `getPath`
+
+### Querying
+
 - `getDatabase()` &mdash; a [Query-Engine](https://github.com/bevry/query-engine) collection of all our documents
 - `getCollection(collectionName)` &mdash; a [Query-Engine](https://github.com/bevry/query-engine) collection of a particular sub collection, built in collections are:
 	- `documents` &mdash; for all documents
@@ -26,8 +31,8 @@ title: "Template Data & Helpers"
 	- `layouts` &mdash; for all files
 	- `html` &mdash; for all documents and files and result in a html file
 	- `stylesheet` &mdash; for all stylesheet files (includes stylesheet pre-processor files)
-- `getBlock(blockName)` &mdash; valid block names are:
-	- `scripts` &mdash; a collection of scripts to be outputted
-	- `styles` &mdash; a collection of styles to be outputted
-	- `meta` &mdash; a collection of meta to be outputted
-- `include(relativePath)` return the content of another file at the given path
+- `getFiles(query, sorting, paging)` get all files that match the arguments, caches the result collection
+- `getFile(query, sorting, paging)` get a single file that matches the arguments
+- `getFilesAtPath(relativePath)` get a file at the given path, path is processed through `getPath`
+- `getFileAtPath(path, sorting, paging)` get a single file at the given path, path is processed through `getPath`
+- `getFileById(id, sorting, paging)` get a single file that has the specified id
