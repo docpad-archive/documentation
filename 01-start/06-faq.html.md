@@ -61,6 +61,20 @@ To use eco, simply ensure that you have the extension `.eco` at the end of your 
 The extensions `.html.eco` means process this with Eco and render it as HTML. Alternatively, we can get pretty inventive and do something like this: `.html.md.eco` which means process this with Eco, then Markdown and finally render it as HTML.
 
 
+## What is `findAllLive`?
+The querying abilities within DocPad are provided by a project called [Query-Engine](http://github.com/bevry/query-engine) which adds support for NoSQL queries to JavaScript Objects and Backbone Collections. In DocPad's case, we use Backbone for our Models, so we enhance our collections with Query-Engine to gain NoSQL querying for them.
+
+There are two methods that Query-Engine provides for querying Backbone Collections. The first is `findAll` and the second is `findAllLive`.
+
+`findAll` does a once-off scan of all the models in the collection that matches the criteria and returns the result in a new Backbone Collection, pretty standard stuff.
+
+`findAllLive` creates a new child collection with the original collection as the parent, the new child collection then listens to the change events of the parent, and will automatically test the changes against the child collection's criteria. This is incredibly effecient for long running collections which data changes over time.
+
+Which one should I use? When defining custom collections inside your [docpad configuration file](/docpad/config) you should use `findAllLive`, when you are performing one off queries (like in the case for template helpers) you should use `findAll`. However, instead of using these, wherever possible you should try and use DocPad's built-in [template helpers](/docpad/template-data#standard-template-helpers) or [APIs](/docpad/api#querying) for querying, instead of relying on the low-level Query-Engine methods.
+
+[For more about Query-Engine and the NoSQL queries it supports, see the Query-Engine Using Guide.](https://github.com/bevry/query-engine/wiki/Using)
+
+
 ## How do I hide a document from being rendered? E.g. a draft post.
 Check out the `ignored` [meta data property](/docpad/meta-data).
 
