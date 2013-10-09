@@ -64,28 +64,28 @@ For those who like tables, here's the above in table form:
 
 | Feature | Usual CMS (Drupal, Wordpress) | Usual Static Site Generator (Jekyll) | DocPad  |
 |  ----- |  :-----: |  :-----: |  :-----: |
-| Requires  |  cms developers  |  frontend developers  |  frontend developers  |
-| Developers proficient in  |  months  |  days  |  days  |
-| Plugin and extension system  |  yes  |  no  |  [yes](/docpad/extend) |
-| Asset pipeline |  no  |  implicit & bundled  |  [explicit & extendable](/docpad/overview#the-documents-directory)  |
-| Markup languages (markdown, rst, etc) |  no  |  one bundled  |  via [plugins](/docpad/plugins#renderers)  |
-| Pre-processors (sass, less, etc)  |  no  |  no  |  via [plugins](/docpad/plugins#renderers)  |
-| Template engines (eco, jade, etc)  |  no  |  one bundled  |  via [plugins](/docpad/plugins#renderers)  |
-| Database querying  |  yes  |  no  |  via [query-engine](https://github.com/bevry/query-engine/wiki/Using) |
-| Layouts |  yes  |  yes  |  yes  |
-| Static website output |  no  |  yes  |  yes  |
-| Re-render each request |  yes  |  no  |  via [`dynamic` field](/docpad/meta-data#dynamic)  |
-| Extend the webserver  |  yes  |  no  |  via [events](/docpad/events#serverextend) and [api](/docpad/api)  |
-| Watching  |  n/a  |  yes  |  yes  |
-| Differential regenerations  |  n/a  |  no  |  yes  |
-| Live reload  |  no  |  no  |  via [`livereload` plugin](/plugin/livereload/)  |
-| Partials  |  no  |  no  |  via [`partials` plugin](/plugin/partials/)  |
-| Manual database installation required  |  yes  |  no  |  no  |
-| Import pages from file system  |  no  |  yes  |  yes   |
-| Import pages from external database (mongodb, mysql, etc)  |  yes  |  no  |  via [plugins](/docpad/plugins#admin-interfaces)  |
-| Import pages from external services (tumblr, dropbox, github, etc)  |  no  |  no  |  via [plugins](/docpad/plugins#admin-interfaces)  |
-| Import data from external services (atom, xml, json, etc)  |  no  |  no  |  via [`feedr` plugin](/plugin/feedr/)  |
-| WYSIWYG editors  |  yes  |  no  |  via [plugins](/docpad/plugins#admin-interfaces)  |
+| Talent Requirements  |  CMS developer  |  Backend+Frontend developer  |  Frontend developer  |
+| Developers proficient in  |  Months  |  Days  |  Days  |
+| Plugin and extension system  |  Yes  |  No  |  [Yes](/docpad/extend) |
+| Asset pipeline |  No  |  Implicit & Bundled  |  [Explicit & extendable](/docpad/overview#the-documents-directory)  |
+| Markup languages (markdown, rst, etc) |  No  |  1 bundled  |  Via [plugins](/docpad/plugins#renderers)  |
+| Pre-processors (sass, less, etc)  |  No  |  No  |  Via [plugins](/docpad/plugins#renderers)  |
+| Template engines (eco, jade, etc)  |  No  |  1 bundled  |  Via [plugins](/docpad/plugins#renderers)  |
+| Database querying  |  Yes  |  No  |  Via [Query-Engine](https://github.com/bevry/query-engine/wiki/Using) |
+| Layouts |  Yes  |  Yes  |  Yes  |
+| Static website output |  No  |  Yes  |  Yes  |
+| Re-render each request |  Yes  |  no  |  Via [`dynamic` field](/docpad/meta-data#dynamic)  |
+| Extend the webserver  |  Yes  |  no  |  Via [events](/docpad/events#serverextend) and [api](/docpad/api)  |
+| Watching  |  N/A  |  Yes  |  Yes  |
+| Differential regenerations  |  N/A  |  No  |  Yes  |
+| Live reload  |  No  |  No  |  Via [`livereload` plugin](/plugin/livereload/)  |
+| Partials  |  No  |  No  |  Via [`partials` plugin](/plugin/partials/)  |
+| Manual database installation required  |  Yes  |  No  |  No  |
+| Import pages from file system  |  No  |  Yes  |  Yes   |
+| Import pages from external database (mongodb, mysql, etc)  |  Yes  |  No  |  Via [plugins](/docpad/plugins#admin-interfaces)  |
+| Import pages from external services (tumblr, dropbox, github, etc)  |  No  |  No  |  Via [plugins](/docpad/plugins#admin-interfaces)  |
+| Import data from external services (atom, xml, json, etc)  |  No  |  No  |  Via [`feedr` plugin](/plugin/feedr/)  |
+| WYSIWYG editors  |  Yes  |  No  |  Via [plugins](/docpad/plugins#admin-interfaces)  |
 
 
 
