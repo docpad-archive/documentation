@@ -11,13 +11,7 @@ For this guide we'll create a [blog](http://en.wikipedia.org/wiki/Blog) and expl
 
 Great, let's get started! Oh, and if you ever get stuck, you have a question or need help, then jump onto any of our [official support channels](/support) and we'll be right with you. Cheers!
 
-
-
-
-
-
-
-
+<iframe width="420" height="315" src="//www.youtube.com/embed/5wFYW6v0Y34" frameborder="0" allowfullscreen></iframe>
 
 
 ## Creating the Standard Project Structure

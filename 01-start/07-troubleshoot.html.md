@@ -6,7 +6,7 @@ It seems that this is associated to being behind a firewall or a proxy. [For the
 
 
 ### I got "npm ERR! Failed to parse json"
-Run your project's `package.json` file through [jsonlint](http://jsonlint.com/), there is likely to be an error somewhere in it, perhaps a missing semicolon somewhere, a missing quote?
+Run your project's `package.json` file through [jsonlint](http://jsonlint.com/), there is likely to be an error somewhere in it, perhaps a missing semicolon somewhere, maybe a missing quote, a missinc comma maybe?
 
 
 ### I'm got permission errors when I installed things
@@ -23,7 +23,7 @@ If that fails, we'd recommend either:
 - Asking about it on the [Node.js IRC Chat Room](http://webchat.freenode.net/?channels=node.js) (`#node.js` on freenode)
 
 
-### When I run `docpad run`, Windows asks me what program I would like to open the file in
+### When I run `docpad run` in Windows it asks me what program I would like to open the file in
 It turns out that windows will prefer to treat the local `docpad.js` file as the executable versus the global `docpad.cmd` file. To get around this, type `docpad.cmd run` instead in projects that have a `docpad.js` file. [More information here.](https://github.com/bevry/docpad/issues/561#issuecomment-21494426)
 
 
@@ -33,6 +33,8 @@ File watching is a pretty timid thing that we are currently working on a lot to 
 ``` coffee
 watchOptions: preferredMethods: ['watchFile','watch']
 ```
+
+Mostly Mac OS X users will run across this problem.
 
 
 ### I got "We couldn't find an existing DocPad project inside your current directory..."
@@ -75,13 +77,13 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 
 
 ### I get a whole bunch of npm / missing module/package / installation failed errors
-If your using [Dropbox](http://j.mp/dropbox-bal) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
+If you are using [Dropbox](http://j.mp/dropbox-bal) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
 
 If you're still experiencing issues, then be sure to post about it on the [issue tracker](/issues).
 
 
 ### The growl notifications aren't displaying?
-I got confused by this too, turns out you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [growl website](http://growl.info/). What this package does it provides command line applications the ability to call growl which is needed as docpad is a command line application.
+This means you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [growl website](http://growl.info/). What this package does it provides command line applications the ability to call growl which is needed as docpad is a command line application.
 
 
 ### The exception raised by the jade plug-in during documents generation makes no sense
