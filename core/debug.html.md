@@ -36,7 +36,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 
 
-## Debugging with [TraceGL](https://trace.gl/) - shareware
+## Debugging with [TraceGL](https://trace.gl/) (Shareware, but AMAZING!)
 
 1. [Get TraceGL from their website](https://trace.gl/)
 
