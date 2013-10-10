@@ -36,9 +36,9 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 
 
-## Debugging with [TraceGL](https://trace.gl/) (Shareware, but AMAZING!)
+## Debugging with [TraceGL](https://trace.gl/)
 
-1. [Get TraceGL from their website](https://trace.gl/)
+1. [Get TraceGL from their website](https://trace.gl/). It is shareware, but by gosh it is worth the money, it is AMAZING.
 
 2. Download it to somewhere in your PATH, and run the followig on it:
 
