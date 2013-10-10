@@ -21,7 +21,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 1. Run Node Inspector in that terminal window
 
     ``` bash
-    node-inspector &
+    node-inspector
     ```
 
 1. In another terminal window run the local DocPad installation in debug mode:
