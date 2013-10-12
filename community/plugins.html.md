@@ -69,7 +69,7 @@ These are plugins that add extra functionality to DocPad:
 - [jshint](https://github.com/jking90/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com/) errors to the console
 - [jsexc](https://github.com/JeffreyZhao/docpad-plugin-jscexc) - Adds the ability to apply AOT compilation to JavaScript files
 - [livereload](/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
-- [lunr](https://github.com/brockfanning/docpad-plugin-lunr) - Client-side full-text and faceted search using [Lunr.js](lunrjs.com)
+- [lunr](https://github.com/brockfanning/docpad-plugin-lunr) - Client-side full-text and faceted search using [Lunr.js](http://lunrjs.com)
 - [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from documents folder
 - [nativecomments](/plugin/nativecomments/) - Adds support for native comments to DocPad
 - [paged](/plugin/paged/) - Adds multiple page support to documents allowing you to render one document out to many pages
