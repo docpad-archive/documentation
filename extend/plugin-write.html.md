@@ -57,9 +57,9 @@ This file should look something like this:
 		"url": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname.git"
 	},
 	"engines" : {
-		"node": ">=0.8",
-		"docpad": ">=6"
+		"node": ">=0.8"
 	},
+	"peerDependencies": {
 	"main": "./src/yourpluginname.plugin.coffee"
 }
 ```
