@@ -20,7 +20,6 @@ Links inside the documentation will look like `/docpad/config` which within GitH
 ## Maintainers
 
 - [Benjamin Lupton](http://balupton) - [@balupton](https://github.com/balupton)
-- Chase Colman - [@chase](http://github.com/chase)
 - [Eduán Lávaque](http://eduantech.com) - [@Greduan](https://github.com/Greduan)
 - Paul Dowsett - [@hal-gh](https://github.com/hal-gh)
 - Tony - [@Zearin](https://github.com/Zearin)
