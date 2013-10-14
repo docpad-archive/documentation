@@ -60,6 +60,8 @@ This file should look something like this:
 		"node": ">=0.8"
 	},
 	"peerDependencies": {
+		"docpad": "6"
+	},
 	"main": "./src/yourpluginname.plugin.coffee"
 }
 ```
