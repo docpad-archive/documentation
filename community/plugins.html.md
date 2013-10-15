@@ -72,6 +72,7 @@ These are plugins that add extra functionality to DocPad:
 - [livereload](/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [lunr](https://github.com/brockfanning/docpad-plugin-lunr) - Client-side full-text and faceted search using [Lunr.js](http://lunrjs.com)
 - [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from documents folder
+- [moment](https://github.com/brockfanning/docpad-plugin-moment) - Date formatting and access to [Moment.js](http://momentjs.com/) library
 - [nativecomments](/plugin/nativecomments/) - Adds support for native comments to DocPad
 - [paged](/plugin/paged/) - Adds multiple page support to documents allowing you to render one document out to many pages
 - [partials](/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
