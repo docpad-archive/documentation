@@ -25,7 +25,7 @@ My example document content
 The title for the document. Useful for headings.
 
 #### `layout`
-Defaults to `default`. Tells DocPad what layout to use from the `layouts` folder.
+Defaults to `default`. Tells DocPad what layout to use from the `layouts` folder. Layout files can use other layouts for advanced layout nesting.
 
 #### `name`
 Defaults to the `filename`. The name of the document. Useful for listings.
@@ -38,6 +38,7 @@ Defaults to a slugified version of the `relativeBase`. Appears deprecated in fav
 
 #### `url`
 The url that you would like to use as the primary url for the document. When a user accesses a document via a secondary url, the user will be redirected to the primary url automatically.
+
 #### `urls`
 Urls is the secondary urls for a document. It can be a comma seperated values list, or an array of values.
 
