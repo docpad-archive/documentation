@@ -27,6 +27,17 @@ The title for the document. Useful for headings.
 #### `layout`
 Defaults to `default`. Tells DocPad what layout to use from the `layouts` folder. Layout files can use other layouts for advanced layout nesting.
 
+#### `content`
+Defaults to nothing. Tells DocPad what the file's content is. This metadata is not defined on the file header and is defined after the file header. Anything after the file header has been closed (`---`) is the content.
+
+```
+---
+title: "Example Document"
+layout: "default"
+---
+This here is the `content` metadata! You can omit the quotes on the metadata above BTW.
+```
+
 #### `name`
 Defaults to the `filename`. The name of the document. Useful for listings.
 
