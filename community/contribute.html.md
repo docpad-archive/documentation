@@ -57,9 +57,9 @@ To get started with developing and contributing code, you must first setup your 
 1. Fork the repository of the DocPad Core: https://github.com/bevry/docpad
 1. Clone your fork to your machine then cd into it
 1. Run `npm install` to install any missing dependencies
-1. Run `cake compile` to compile our code and any changes we've made
-1. Run `npm test` to test our DocPad Core
-1. Run `npm link` to make our development instance of our DocPad Core available to other projects
+1. Run `cake compile` to compile the project (or use `cake watch` to compile everytime a change is made)
+1. Run `cake test` to test the project
+1. Run `npm link` to make this development instance of the projects available to other projects (via `npm link docpad`)
 
 ### Setup a DocPad Plugin for Development
 
@@ -67,10 +67,10 @@ To get started with developing and contributing code, you must first setup your 
 1. Fork the repository of the DocPad Plugin you wish to edit
 1. Clone your fork to your machine then cd into it
 1. Run `npm link docpad` to link our local development instance of DocPad that we setup earlier to our DocPad Plugin
-1. Run `npm install` to install any missing dependencies
-1. Run `cake compile` to compile our code and any changes we've made
-1. Run `npm test` to test our DocPad Plugin
-1. Run `npm link` to make our development instance of our DocPad Plugin available to other projects
+1. Run `cake install` to install any missing dependencies
+1. Run `cake compile` to compile the project (or use `cake watch` to compile everytime a change is made)
+1. Run `cake test` to test the project
+1. Run `npm link` to make this development instance of the project available to other projects (via `npm link docpad-plugin-
 1. Once you're all good, proceed to filing a pull request of publishing your plugin
 
 
@@ -78,10 +78,15 @@ To get started with developing and contributing code, you must first setup your 
 
 To get some changes you've made into the official repository:
 
-1. Make your change sin their own branch that is branched off from master, e.g. `git checkout master; git checkout -b your-new-branch`
-1. Test your changes before you submit the pull request (see testing section), if possible, add tests for your change - if you don't know how to fix the tests, submit your pull request and say so, happy to help (but it will slow down integration)
-1. **When submitting the pull request, specify the `dev` branch as the integration branch (the integration branch is which branch your pull request will be merged into on the official repo)**
-1. By submitting a pull request, you agree that your submission can be used freely and without restraint by those whom your submitting the pull request to
+1. Make sure your changes are on their own branch that is branched off from master
+	1. You can do this by: `git checkout master; git checkout -b your-new-branch`
+	1. And push the changes up by: `git push origin your-new-branch`
+1. Make sure all tests are passing: `cake test`
+	1. If possible, add tests for your change, if you don't know how, mention this in your pull request
+1. If the project has a prepublish step, run it: `cake prepublish` (if it doesn't have this step, that command will fail, no worries)
+1. Submit your pull request
+	1. When submitting, if the original project has a `dev` or `integrate` branch, use that as the target branch for your pull request instead of the default `master`
+	1. By submitting a pull request, you agree that your submission can be used freely and without restraint by those whom your submitting the pull request to
 
 
 
@@ -90,21 +95,21 @@ To get some changes you've made into the official repository:
 Before you submit your changes you'll want to make sure your changes still work with our test suite. You can do this by:
 
 1. Run `cake compile` to compile our code and any changes we've made
-1. Run `npm test` to run the tests
+1. Run `cake test` to run the tests
 	1. There are several types of tests that run, the most common is the rendering test, which compares files inside `test/out` to `test/out-expected`
 1. Sometimes you'll also want to test your changes against our supported plugins, to do this:
 	1. Clone our the [docpad-extras](https://github.com/bevry/docpad-extras) repository and cd into it: `git clone https://github.com/bevry/docpad-extras.git; cd docpad-extras`
-	1. Install the dependencies: `npm install`
+	1. Install the dependencies: `cake install`
 	1. Make your docpad setup available: `npm link docpad`
-	1. Clone out the plugins: `npm run-script clone`
-	1. Test the plugins: `npm test`
+	1. Clone out the plugins: `cake clone`
+	1. Test the plugins: `cake test`
 
 
 ## Publishing
 
 To publish a new version:
 
-1. Pull in the latest changes from the master and dev branches
+1. Pull in the latest changes from the `master` branch
 1. Make sure the tests work, if your publishing a new docpad verison also make sure the [docpad-extras](https://github.com/bevry/docpad-extras) tests work
 1. Add an entry to the changelog following the format of the previous entries, an example of this is:
 	
