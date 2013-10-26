@@ -1,4 +1,6 @@
-Here is a listing of all the plugins available for DocPad. If you have created a plugin, be sure to [include it in this listing!](https://github.com/bevry/docpad-documentation/edit/master/community/plugins.html.md) :)
+Here is a listing of all the community submitted extensions that are currently available for DocPad.
+
+Plugins are pulled in automatically on each generation from the [npm registry](http://npmjs.org/keyword/docpad-plugin). You can add your own [Guides](#guides) by sending in a [pull request](https://github.com/bevry/docpad-documentation/edit/master/community/plugins.html.md).
 
 
 ## Installing
@@ -12,7 +14,8 @@ In older versions of DocPad, you would run `npm install --save docpad-plugin-#{t
 
 ## Renderers
 
-These are plugins that add support for extra markups and languages to DocPad:
+These are plugins that add support for extra markups and languages to DocPad.
+They have the `docpad-plugin-renderer` tag in the `keywords` of their `package.json` file.
 
 - [coffeescript](/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
 - [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
@@ -48,7 +51,8 @@ These are plugins that add support for extra markups and languages to DocPad:
 
 ## Helpers
 
-These are plugins that add extra functionality to DocPad:
+These are plugins that add extra functionality to DocPad.
+They have the `docpad-plugin-helper` tag in the `keywords` of their `package.json` file.
 
 - [addthis](https://github.com/mikeumus/docpad-plugin-addthis) - Adds the [AddThis](http://www.addthis.com/) toolbar into your project
 - [assets](https://github.com/mcdee/docpad-plugin-assets) - Change URL of asset files to contain hash of contents, allowing for effective caching whilst enabling cache busting when contents change
@@ -94,7 +98,8 @@ These are plugins that add extra functionality to DocPad:
 
 ## Deployers
 
-These are plugins that make [deploying](/docpad/deploy) to particular services even easier:
+These are plugins that make [deploying](/docpad/deploy) to particular services even easier.
+They have the `docpad-plugin-deployer` tag in the `keywords` of their `package.json` file.
 
 - [ghpages](/plugin/ghpages) - Deploy to [GitHub Pages](http://pages.github.com/) as easy as `docpad deploy-ghpages`
 - [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation
@@ -106,10 +111,12 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 [DocPad's plan from the very beginning has been to be interface agnostic.](https://github.com/bevry/docpad/issues/123) This means that we will be able to utilise existing interfaces, customer interfaces, and decoupled interfaces. Allowing us to always utilise the best experiences for everyone involved.
 
 
-### Existing Interfaces
+### Existing Interfaces (AKA Importers)
+<a id="existing-interfaces"></a>
 <a id="importers"></a>
 
-DocPad's plugin/extension infrastructure supports existing coupled interfaces by importing their data directly into the DocPad Database. So if you love using Tumblr, WordPress, Medium, MongoDB or GitHub Repos for your content, you don't have to give them up. Just install the importer plugin for them, and DocPad will import the data from that service into the DocPad database for rendering.
+These are plugins that import data from particular services directly into your DocPad database. This allows you to continue to use your favourite service for creating content (like Tumblr, WordPress, Medium, MongoDB etc) and still use your favourite service for developing your website (DocPad yeah!). 
+They have the `docpad-plugin-importer` tag in the `keywords` of their `package.json` file.
 
 - [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap Skeleton](https://github.com/docpad/twitter-bootstrap.docpad) to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
 - [repocloner](/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
@@ -118,7 +125,8 @@ DocPad's plugin/extension infrastructure supports existing coupled interfaces by
 
 ### Custom Interfaces
 
-DocPad's plugin/extension infrastructure supports custom Admin Interfaces tightly coupled to the DocPad experience. So far we have the following extensions that add Admin Interfaces to DocPad:
+These are plugins that use DocPad's plugin/extension infrastructure to add their own custom Admin Interfaces to DocPad.
+They have the `docpad-plugin-custominterface` tag in the `keywords` of their `package.json` file.
 
 - [DocPad Collections Editor](https://github.com/cauld/docpad-collections-editor) - A simple WYSIWYG editor for DocPad Collections
 - [MiniCMS](https://npmjs.org/package/docpad-plugin-minicms) - Adds an admin interface to DocPad
@@ -126,17 +134,18 @@ DocPad's plugin/extension infrastructure supports custom Admin Interfaces tightl
 
 ### Decoupled Interfaces
 
-DocPad's plugin/extension infrastructure supports existing decoupled interfaces by providing plugin/extension adapters to the interface allowing the interface to interact directly with the DocPad Database, or theoritically any backend providing an interface was made for it. So far we have the following extensions that add Decoupled Interfaces to DocPad:
+These are plugins that connect an existing decoupled Admin Interface directly to the DocPad database.
+They have the `docpad-plugin-decoupledinterface` tag in the `keywords` of their `package.json` file.
 
-- [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/about.html) as an Admin Interface for DocPad
 - [WebWrite's InlineGUI](/plugin/inlinegui) (not yet ready) - Edit your content from any backend with this inline editing interface
 
 
 
 ## Guides
 
-These are miscellaneous things that you can do with DocPad:
+These are miscellaneous things that you can do with DocPad. Feel free to add your guides and plugins here by sending a [pull request](https://github.com/bevry/docpad-documentation/edit/master/community/plugins.html.md).
 
+- [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403)
 - [Localising and formatting dates](https://gist.github.com/4166882)
 - [Automatically set custom meta data for collections](https://gist.github.com/4166806)
 - [Absolute URL Helper](https://gist.github.com/3939146)
@@ -152,14 +161,12 @@ These are miscellaneous things that you can do with DocPad:
 - [Getting Ruby, SASS and DocPad working on Heroku](https://gist.github.com/4342818)
 - [Respond with JSON when asked to](https://github.com/lzrski/docpad-plugin-json)
 - [Require authentication to view certain documents](http://stackoverflow.com/q/14327676/130638)
-- [Use DocPad and GitHub as a Wiki](https://gist.github.com/balupton/5519403)
 
 
 
-## Complete Plugin Listing
+## Uncategorised Plugins
 
-You can find a [complete listing of all DocPad Plugins on the NPM Registry using the `docpad-plugin` keyword.](https://npmjs.org/browse/keyword/docpad-plugin) Though note, this listing is not curated by the DocPad Team, so be careful.
-
+These are plugins that do not include one of the category tags inside the `keywords` property of their `package.json` file. If you are a plugin author, you will want to address this. [Find the listing here.](http://npmjs.org/keyword/docpad-plugin)
 
 
 ## Create Your Own!
