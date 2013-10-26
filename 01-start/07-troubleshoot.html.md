@@ -2,15 +2,15 @@
 
 
 ### It just hangs after accepting the TOS or subscribing to the newsletter
-It seems that this is associated to being behind a firewall or a proxy. [For the meantime, you can apply this workaround.](https://github.com/bevry/docpad/issues/488)
+It seems that this is associated to being behind a firewall or a proxy. You can apply [this workaround](https://github.com/bevry/docpad/issues/488).
 
 
 ### I got "npm ERR! Failed to parse json"
-Check your project's package.json file with [JSONLint](http://jsonlint.com/), to ensure it does not contain any errors, such as missing semicolons, quotes or commas.
+Check your project's `package.json` file with [JSONLint](http://jsonlint.com/), to ensure it does not contain any errors, such as missing semicolons, quotes or commas.
 
 
-### I'm got permission errors when I installed things
-Chances are this isn't a problem within DocPad, but rather one of your node/npm installation. Run the following in Terminal, once done, try your original action again:
+### I am getting permission errors after I install things
+Chances are this isn't a problem within DocPad, but rather one of your node/npm installations. Run the following in Terminal, once done, try your original action again:
 
 ``` bash
 sudo chown -R $USER /usr/local ~/.npm
@@ -27,7 +27,7 @@ If that fails, we'd recommend either:
 It turns out that Windows will prefer to treat the local `docpad.js` file as the executable versus the global `docpad.cmd` file. To get around this, type `docpad.cmd run` instead in projects that have a `docpad.js` file. [More information here.](https://github.com/bevry/docpad/issues/561#issuecomment-21494426)
 
 
-### Watching doesn't work, works only some of the time, or I get `EISDIR` errors
+### Watching doesn't work; works only some of the time; I get `EISDIR` errors
 File watching is a pretty timid thing that we are currently working on a lot to make better. There are currently two methods we can watch files, `watch` and `watchFile`. `watch` is the default and uses the operating system's watching mechanisms, however sometimes the operating system's watching mechanisms may not be the best. If that is the case, we'd like to switch our watching method to `watchFile` which is a slower, but does work when `watch` doesn't. To do this, add the following to your [docpad configuration file](/docpad/config):
 
 ``` coffee
