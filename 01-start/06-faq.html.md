@@ -13,6 +13,8 @@ For instance, **bold** in Markdown is `**bold**`, where in HTML it is `<strong>b
 
 DocPad supports a true series of markups for your project, it doesn't believe in a one size fits all, but the best tool for a job. Always use the best markup for the job, even if it may be a bit of a learning curve, you'll quickly adjust and be empowered and grateful you did :-)
 
+Remember that DocPad only supports plain text markups. `.doc` or `.rtf` files will not work, while `.txt`, `.md`, `.html` etc. will work since they're composed of pure text, with no extras added by other applications.
+
 
 ## What is a templating engine?
 Often at times we will write documents which start seeming a bit repetitive, or we would like to add a bit of dynamicness to our document. Templating engines allow us to do this, as they allow for the insertion of logic into our chosen markup.
@@ -47,7 +49,7 @@ It sure is, if you are using eco as the rendering engine, you can totally do thi
 
 ``` html
 ---
-title: "My awesome blog post"
+title: My awesome blog post
 meaningOfLife: 42
 ---
 
