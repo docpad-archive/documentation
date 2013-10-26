@@ -36,10 +36,10 @@ To add a new skeleton to the skeleton listing:
 To update our documentation:
 
 1. Our documentation is located at the [`docpad/documentation` repository](https://github.com/docpad/documentation)
-2. Documentation is written in Markdown
-3. You can edit a file by opening that file in the repository browser, and then clicking the "Edit" button
-4. Once done, click save changes or whatever the button says and this will then take you to a "Submit Pull Request" page
-5. Fill in the details and click submit
+1. We have [strict documentation criteria](https://github.com/docpad/documentation/blob/master/CONTRIBUTING.md) that all documentation changes must abide by, be sure to read it
+1. You can edit a file by opening that file in the repository browser, and then clicking the "Edit" button
+1. Once done, click save changes or whatever the button says and this will then take you to a "Submit Pull Request" page
+1. Fill in the details and click submit
 
 
 
