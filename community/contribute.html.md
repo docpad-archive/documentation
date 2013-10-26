@@ -90,10 +90,10 @@ To get started with developing and contributing code, you must first setup your 
 Before you submit changes to the DocPad Core you'll want to make sure they don't break any of our officially supported plugins:
 
 1. Clone the [`docpad-extras` repository](https://github.com/bevry/docpad-extras) and cd into it: `cd ~; git clone https://github.com/bevry/docpad-extras.git; cd docpad-extras`
-1. Install the dependencies: `cake install`
 1. Make your development docpad instance available to the plugin runner: `npm link docpad`
-1. Clone the plugins: `cake clone`
-1. Test the plugins: `cake test`
+1. Install the dependencies: `coffee app.coffee install`
+1. Clone the plugins: `coffee app.coffee clone`
+1. Test the plugins: `coffee app.coffee test`
 
 ### Pull Request
 
