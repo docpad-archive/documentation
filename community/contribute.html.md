@@ -35,7 +35,7 @@ To add a new skeleton to the skeleton listing:
 
 To update our documentation:
 
-1. Our documentation for DocPad is stored in this repository: https://github.com/bevry/docpad-documentation
+1. Our documentation is located at the [`docpad/documentation` repository](https://github.com/docpad/documentation)
 2. Documentation is written in Markdown
 3. You can edit a file by opening that file in the repository browser, and then clicking the "Edit" button
 4. Once done, click save changes or whatever the button says and this will then take you to a "Submit Pull Request" page
@@ -74,9 +74,9 @@ To get started with developing and contributing code, you must first setup your 
 1. Once you're all good, proceed to filing a pull request of publishing your plugin
 
 
-## Pull Requests
+## Publishing
 
-To get some changes you've made into the official repository:
+### Preparation
 
 1. Make sure your changes are on their own branch that is branched off from master
 	1. You can do this by: `git checkout master; git checkout -b your-new-branch`
@@ -84,33 +84,34 @@ To get some changes you've made into the official repository:
 1. Make sure all tests are passing: `cake test`
 	1. If possible, add tests for your change, if you don't know how, mention this in your pull request
 1. If the project has a prepublish step, run it: `cake prepublish` (if it doesn't have this step, that command will fail, no worries)
+
+### Testing the DocPad Core against Plugins
+
+Before you submit changes to the DocPad Core you'll want to make sure they don't break any of our officially supported plugins:
+
+1. Clone the [`docpad-extras` repository](https://github.com/bevry/docpad-extras) and cd into it: `cd ~; git clone https://github.com/bevry/docpad-extras.git; cd docpad-extras`
+1. Install the dependencies: `cake install`
+1. Make your development docpad instance available to the plugin runner: `npm link docpad`
+1. Clone the plugins: `cake clone`
+1. Test the plugins: `cake test`
+
+### Pull Request
+
+To send your changes for the project owner to merge in:
+
 1. Submit your pull request
 	1. When submitting, if the original project has a `dev` or `integrate` branch, use that as the target branch for your pull request instead of the default `master`
 	1. By submitting a pull request, you agree that your submission can be used freely and without restraint by those whom your submitting the pull request to
 
+### Publish
 
+To publish your changes as the project owner:
 
-## Testing the DocPad Core
+1. Increment the version number in the `package.json` file according to the [semver](http://semver.org/) standard, that is:
+	1. If everything will break, increment the major version
+	2. If something may break, increment the minor version
+	3. If nothing will break, increment the revision version
 
-Before you submit your changes you'll want to make sure your changes still work with our test suite. You can do this by:
-
-1. Run `cake compile` to compile our code and any changes we've made
-1. Run `cake test` to run the tests
-	1. There are several types of tests that run, the most common is the rendering test, which compares files inside `test/out` to `test/out-expected`
-1. Sometimes you'll also want to test your changes against our supported plugins, to do this:
-	1. Clone our the [docpad-extras](https://github.com/bevry/docpad-extras) repository and cd into it: `git clone https://github.com/bevry/docpad-extras.git; cd docpad-extras`
-	1. Install the dependencies: `cake install`
-	1. Make your docpad setup available: `npm link docpad`
-	1. Clone out the plugins: `cake clone`
-	1. Test the plugins: `cake test`
-
-
-## Publishing
-
-To publish a new version:
-
-1. Pull in the latest changes from the `master` branch
-1. Make sure the tests work, if your publishing a new docpad verison also make sure the [docpad-extras](https://github.com/bevry/docpad-extras) tests work
 1. Add an entry to the changelog following the format of the previous entries, an example of this is:
 	
 	``` markdown
@@ -121,14 +122,8 @@ To publish a new version:
 		- Updated dependencies
 	```
 
-1. Add any new contributors to the `package.json` file, for their URL use their github profile URL
-1. Increment the version number in the `package.json` file according to the [semver](http://semver.org/) standard, that is:
-	1. If everything will break, increment the major version
-	2. If something may break, increment the minor version
-	3. If nothing will break, increment the revision version
+
 1. Commit the changes with the title set to something like `v6.29.0. Bugfix. Improvement.` and description set to the changelog entry.
-1. Tag the commit as the version number, e.g. `git tag v6.29.0`
-1. Publish the module: `npm publish`
-1. Merge your changes into the master and dev branches
+1. Publish the module to npm and create a git tag for it: `cake publish`
 1. Push your changes and new tag up to the git repo: `git push origin --all; git push origin --tags`
 1. Party!
