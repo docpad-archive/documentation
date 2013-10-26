@@ -6,7 +6,7 @@ It seems that this is associated to being behind a firewall or a proxy. [For the
 
 
 ### I got "npm ERR! Failed to parse json"
-Run your project's `package.json` file through [jsonlint](http://jsonlint.com/), there is likely to be an error somewhere in it, perhaps a missing semicolon somewhere, a missing quote or a missing/misplaced comma.
+Check your project's package.json file with [JSONLint](http://jsonlint.com/), to ensure it does not contain any errors, such as missing semicolons, quotes or commas.
 
 
 ### I'm got permission errors when I installed things
@@ -34,7 +34,7 @@ File watching is a pretty timid thing that we are currently working on a lot to 
 watchOptions: preferredMethods: ['watchFile','watch']
 ```
 
-Mac OS X users are the most likely to run across this issue.
+Mac OS X users are most likely to encounter this issue.
 
 
 ### I got "We couldn't find an existing DocPad project inside your current directory..."
