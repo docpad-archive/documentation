@@ -87,6 +87,8 @@ These are plugins that add extra functionality to DocPad:
 - [umd](/plugin/umd/) - Wrap specified JavaScript documents in the Universal Module Definition (UMD) allowing them to run in AMD, Require.js, CommonJS/Node.js and Vanilla environments automatically
 - [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate .json file for quick loading via AJAX.
 - [navlinks](https://github.com/lucor/docpad-plugin-navlinks) - Adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection.
+- [shortcodes](https://github.com/field/docpad-plugin-shortcodes) - Adds various Wordpress style shortcodes e.g. [video id="123"] to simplify template writing.
+- [alias](https://github.com/field/docpad-plugin-alias) - Adds configurable hard or soft aliases for Docpad documents. 
 
 
 ## Deployers
