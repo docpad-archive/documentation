@@ -34,8 +34,6 @@ Layouts work in a very similar way to documents, in that they are rendered and t
 
 Layouts should include child content, which is done using the `content` [template data](/docpad/template-data#standard-template-data) variable. For instance, the code to use the content variable with the [Eco](https://github.com/sstephenson/eco/) templating engine via the [Eco DocPad plugin](/plugin/eco) would be `<%- @content %>`.
 
-The only "required" file in this directory is the `default.html.ext`. Change `ext` for whatever templating engine you want. It isn't actually required by DocPad, however DocPad does fallback on it if a document doesn't have a layout defined. So it is recommended to at least have this layout defined, even if you don't use it.
-
 
 #### The `render` Directory
 
