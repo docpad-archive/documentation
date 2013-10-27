@@ -1,8 +1,6 @@
 ```
 title: "Quick Start"
 ```
-
-
 ## Quick Start from a Pre-Made Website
 
 If you want to use one of our [pre-made websites](/docpad/skeletons) to get up and running real quickly, just run the following:

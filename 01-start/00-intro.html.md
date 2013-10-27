@@ -1,14 +1,15 @@
 ```
 title: "Intro"
 ```
-
 <iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/i6dp_yqVCT0?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## What is DocPad?
+
 DocPad is a next generation web architecture; allowing for content management via the file system, rendering via plugins, and static site generation for deployment anywhere. It's built with Node.js and Express.js, making it naturally fast and easily extendable.
 
 
 ## Problems with Traditional Web Architectures
+
 Despite all the amazing wonder of current web application architectures, they're mostly:
 
 - **Inherently slow**
@@ -31,6 +32,7 @@ Despite all the amazing wonder of current web application architectures, they're
 
 
 ## DocPad, a Next Generation Web Architecture
+
 On the other hand, let's compare that with DocPad, which is:
 
 - **Inherently fast**
