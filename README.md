@@ -28,5 +28,5 @@ Links inside the documentation will look like `/docpad/config` which within GitH
 ## License
 
 Licensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/)
-<br/>Copyright &copy; 2012-2013 [Bevry Pty Ltd](http://bevry.me)
+<br/>Copyright &copy; 2012+ [Bevry Pty Ltd](http://bevry.me)
 <br/>Copyright &copy; 2011 [Benjamin Lupton](http://balupton.com)
