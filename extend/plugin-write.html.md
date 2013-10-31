@@ -66,7 +66,7 @@ This file should look something like this:
 }
 ```
 
-The reason reason why we do version `2.0.0` is just a general convention. Version 2 plugins are compatible for with DocPad v6, whereas Version 1 plugins are compatible with DocPad v5 (before DocPad v5 plugins were bundled).
+An important thing to note is that our plugin started with the version `2.0.0`. This is because v2 plugins are compatible for with DocPad v6, whereas v1 plugins are compatible with DocPad v5. [This is currently a necessary convention that you must follow.](https://github.com/bevry/docpad/issues/691)
 
 
 
