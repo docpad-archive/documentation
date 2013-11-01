@@ -19,21 +19,22 @@ chmod -R 755 ~/.npm
 
 If that fails, we'd recommend either:
 
-- Re-Installing Node.js with [Bevry's recommended installation instructions](http://bevry.me/node/install)
+- Re-Installing Node.js with Bevry's [recommended installation instructions](http://bevry.me/node/install)
 - Asking about it on the [Node.js IRC Chat Room](http://webchat.freenode.net/?channels=node.js) (`#node.js` on freenode)
 
-### When I run 'npm install' on windows, I get 'gyp ERR! configure error'
 
- - For Windows XP/Vista/7 Install:
-  - [Python](http://www.python.org/download/releases/2.7.3#download) 2.7.3 Recommended 
+### When I run 'npm install' on windows, I get 'gyp ERR! configure error'
+- For Windows XP/Vista/7 Install:
+  - [Python](http://www.python.org/download/) [v2.7.3](http://www.python.org/download/releases/2.7.3#download) Recommended 
   - [Microsoft Visual Studio C++ 2010](http://go.microsoft.com/?linkid=9709949)
- - For 64-bit builds of node and native modules you will also need:
-  - [ Windows 7 64-bit SDK](http://www.microsoft.com/en-us/download/details.aspx?id=8279)
-   - If the install fails, try uninstalling any C++ 2010 x64&x86 Redistributable that you have installed first.
- - If you get errors that the 64-bit compilers are not installed you may also need:
+- For 64-bit builds of Nod.jse and native modules you will also need:
+  - [Windows 7 64-bit SDK](http://www.microsoft.com/en-us/download/details.aspx?id=8279)
+    - If the install fails, try uninstalling any C++ 2010 x64&x86 Redistributable that you have installed first.
+- If you get errors that the 64-bit compilers are not installed you may also need:
   - [compiler update for the Windows SDK 7.1](http://www.microsoft.com/en-us/download/details.aspx?id=4422)
- - For Windows 7/8:
+- For Windows 7/8:
   - [Microsoft Visual Studio C++ 2012 for Windows Desktop](http://go.microsoft.com/?linkid=9816758)
+
 
 ### When I run `docpad run` on Windows, it asks me what program I would like to open the file in
 It turns out that Windows will prefer to treat the local `docpad.js` file as the executable versus the global `docpad.cmd` file. To get around this, type `docpad.cmd run` instead in projects that have a `docpad.js` file. [More information here.](https://github.com/bevry/docpad/issues/561#issuecomment-21494426)
