@@ -1,7 +1,7 @@
 ```
 title: "Intro"
 ```
-<iframe width="640" height="360" src="//www.youtube-nocookie.com/embed/i6dp_yqVCT0?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://www.youtube.com/embed/hvQCXDWh7Wg?list=PLYVl5EnzwqsQs0tBLO6ug6WbqAbrpVbNf" frameborder="0" allowfullscreen></iframe>
 
 ## What is DocPad?
 
@@ -14,7 +14,7 @@ Despite all the amazing wonder of current web application architectures, they're
 
 - **Inherently slow**
 	- Usually built on live then die and blocking platforms
-	- Performance is an afterthought, re-render every single time
+	- Performance is an afterthought, re-render every single time (by default, caching can be enabled to improve this)
 - **Bloated**
 	- Huge include everything code base, little or no code re-use (especially between frameworks)
 	- Overkill for everything, no single project will use every feature of the CMS
@@ -37,7 +37,7 @@ On the other hand, let's compare that with DocPad, which is:
 
 - **Inherently fast**
 	- Built on a stay alive and non-blocking platform
-	- Performance from the ground up, re-render only when changes occur (by default)
+	- Performance from the ground up, re-render only when changes occur (by default, can be configured differently)
 - **Lightweight**
 	- Tiny core with anything re-usable abstracted out into a module other systems can use
 	- Non-essential core functionality moved into opt-in plugins
