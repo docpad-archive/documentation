@@ -51,6 +51,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [chrisbuchholz.me](http://chrisbuchholz.me/) - [source](https://github.com/ChrisBuchholz/chrisbuchholz.github.com) - Personal website of chrisbuchholz
 - [CoApp](http://coapp.org/) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [DataTables Taglib](http://tduchateau.github.com/DataTables-taglib/) - [source](https://github.com/tduchateau/DataTables-taglib/tree/gh-pages) - Website of DataTables-taglib, a JSP taglib that allows to quickly create [DataTables](http://datatables.net) in Java/JEE based web application
+- [DeLingua](http://www.delingua.si) - Slovenian translation company
 - [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com/) - [source](https://github.com/bevry/kitchensink.docpad) - A showcase of everything DocPad can do
 - [DocPad's Website](http://docpad.org) - [source](https://github.com/bevry/docpad-website) - The DocPad Website
 - [DogFeet](http://dogfeet.github.com/) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
