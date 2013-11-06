@@ -168,6 +168,7 @@ var docpadInstanceConfiguration = {
 };
 var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguration, function(err){
 	if (err)  return console.log(err.stack);
+	
 	// Tell DocPad to perform a generation, extend our server with its routes, and watch for changes
 	docpadInstance.action('generate server watch', function(err){
 		if (err)  return console.log(err.stack);
