@@ -14,6 +14,7 @@ In older versions of DocPad, you would run `npm install --save docpad-plugin-#{t
 
 These are plugins that add support for extra markups and languages to DocPad:
 
+- [cmds](https://github.com/pflannery/docpad-plugin-cmds/) - Adds some shell scripting fun. Supports `.anything.bash|.anything.sh|.anything.ps1|.anything.cmd`
 - [coffeescript](/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
 - [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
 - [coffeemugg](https://github.com/pflannery/docpad-plugin-coffeemugg) - Supports [CoffeeMugg](https://github.com/jaekwon/CoffeeMugg)  to anything `.anything.coffee`
