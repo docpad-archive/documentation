@@ -66,7 +66,7 @@ These are plugins that add extra functionality to DocPad:
 - [facebookcomments](https://github.com/mikeumus/docpad-plugin-facebookcomments) - Adds the [Facebook Comment Widget](https://developers.facebook.com/docs/reference/plugins/comments/) to your project
 - [feedr](/plugin/feedr/) - Allows you to render remote feeds within your templates
 - [frontend](https://npmjs.org/package/docpad-plugin-frontend) - CSS and JavaScript asset manager and compiler for DocPad
-- [grunt](http://github.com/robloach/docpad-plugin-grunt) - Run Grunt.js tasks when building with DocPad
+- [grunt](http://github.com/robloach/docpad-plugin-grunt) - Run [Grunt.js](http://gruntjs.com) tasks when building with DocPad
 - [gist](/plugin/gist/)  - Pulls in gists into your document
 - [highlightjs](/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [jshint](https://github.com/jking90/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com/) errors to the console
