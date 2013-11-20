@@ -176,6 +176,13 @@ Options:
 - `templateData` the template data that will be provided to the documents
 
 
+### `renderCollectionBefore` and `renderCollectionAfter`
+
+The renderCollection events are trigerred once per renderPass which lets plugins handle more granular action. Called before and after rendering the collections.
+
+Added by [Bruno Heridet](https://github.com/Delapouite) in DocPad [v6.54](https://github.com/bevry/docpad/blob/master/History.md).
+
+
 ### `render`
 Called per document, for each extension conversion.
 
