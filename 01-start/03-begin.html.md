@@ -11,6 +11,7 @@ For this guide we'll create a [blog](http://en.wikipedia.org/wiki/Blog) and expl
 
 Great, let's get started! Oh, and if you ever get stuck, you have a question or need help, then jump onto any of our [official support channels](/support) and we'll be right with you. Cheers!
 
+Click the headings to proceed to the particular section.
 
 
 
