@@ -1,5 +1,6 @@
 ```
 title: "Beginner Guide"
+urls: ['/start']
 cssClasses: ['compact']
 ```
 
