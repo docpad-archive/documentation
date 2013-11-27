@@ -8,9 +8,9 @@ Here is the standard project structure you'll see in DocPad projects:
 - `my-website/`
 	- `out/`
 	- `src/`
+		- `documents/` (can also be named `render/`)
+		- `files/` (can also be named `static/`)
 		- `layouts/`
-		- `render/`
-		- `static/`
 	- `docpad.coffee`
 	- `package.json`
 
