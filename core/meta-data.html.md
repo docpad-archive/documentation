@@ -25,7 +25,10 @@ My example document content
 The title for the document. Useful for headings.
 
 #### `layout`
-Defaults to `default`. Tells DocPad what layout to use from the `layouts` folder. Layout files can use other layouts for advanced layout nesting.
+Tells DocPad what layout to use from the `layouts` folder. Layout files can use other layouts for advanced layout nesting.
+
+There is no default value. Layouts may have a layout called "default", but that is just a naming choice, rather than an implicit default.
+
 
 #### `name`
 Defaults to the `filename`. The name of the document. Useful for listings.
