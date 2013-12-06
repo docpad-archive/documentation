@@ -19,6 +19,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
 - [coffeemugg](https://github.com/pflannery/docpad-plugin-coffeemugg) - Supports [CoffeeMugg](https://github.com/jaekwon/CoffeeMugg)  to anything `.anything.coffee`
 - [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
+- [cssmin](http://github.com/robloach/docpad-plugin-cssmin) - Supports minification of CSS `.css.cssmin.anything`
 - [eco](/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
 - [haml](/plugin/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
 - [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [HAML Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
