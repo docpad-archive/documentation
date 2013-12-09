@@ -14,7 +14,7 @@ Links inside the documentation will look like `/docpad/config` which within GitH
 
 ## Contributing
 
-[Contributing guide and criteria can be found in the `CONTRIBUTING.md` file.](https://github.com/docpad/documentation/blob/master/CONTRIBUTING.md)
+[The Documentation Guidelines can be viewed on the Bevry Website](http://bevry.me/bevry/documentation-guidelines)
 
 
 ## Maintainers
