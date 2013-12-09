@@ -45,7 +45,7 @@ To update our documentation:
 
 
 ## Coding Standards
-Follow the [Bevry Coding Standards](https://github.com/bevry/community/wiki/Coding-Standards) when writing your changes
+Follow the [Bevry Coding Standards](http://bevry.me/bevry/coding-standards) when writing your changes
 
 
 ## Setup
