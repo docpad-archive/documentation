@@ -108,6 +108,8 @@ To send your changes for the project owner to merge in:
 
 To publish your changes as the project owner:
 
+1. Switch to the master branch: `git checkout master`
+1. Merge in the changes of the feature branch (if applicable)
 1. Increment the version number in the `package.json` file according to the [semver](http://semver.org/) standard, that is:
 	1. If everything will break, increment the major version
 	2. If something may break, increment the minor version
@@ -124,7 +126,7 @@ To publish your changes as the project owner:
 	```
 
 
-1. Commit the changes with the title set to something like `v6.29.0. Bugfix. Improvement.` and description set to the changelog entry.
-1. Publish the module to npm and create a git tag for it: `cake publish`
-1. Push your changes and new tag up to the git repo: `git push origin --all; git push origin --tags`
+1. Commit the changes with the commit title set to something like `v6.29.0. Bugfix. Improvement.` and commit description set to the changelog entry
+1. Publish the module to npm, create a git tag for it, push your master changes and new tags up to origin: `cake publish`
+	1. When prompted for your git tag annotation (your text editor will open up automatically), use the changelog entry that we wrote in step 2, save the prompted file, and close the file
 1. Party!
