@@ -95,6 +95,7 @@ These are plugins that add extra functionality to DocPad:
 - [navlinks](https://github.com/lucor/docpad-plugin-navlinks) - Adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection.
 - [shortcodes](https://github.com/field/docpad-plugin-shortcodes) - Adds various Wordpress style shortcodes e.g. [video id="123"] to simplify template writing.
 - [alias](https://github.com/field/docpad-plugin-alias) - Adds configurable hard or soft aliases for Docpad documents.
+- [browserifybundler](https://github.com/crito/docpad-plugin-browserifybundler) - Bundle your client side JavaScript with browserify.
 
 
 ## Deployers
