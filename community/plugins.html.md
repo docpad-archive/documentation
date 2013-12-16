@@ -19,7 +19,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
 - [coffeemugg](https://github.com/pflannery/docpad-plugin-coffeemugg) - Supports [CoffeeMugg](https://github.com/jaekwon/CoffeeMugg)  to anything `.anything.coffee`
 - [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
-- [cssmin](http://github.com/robloach/docpad-plugin-cssmin) - Supports minification of CSS `.css.cssmin.anything`
+- [cssmin](http://github.com/robloach/docpad-plugin-cssmin) - Supports minification of CSS with [clean-css](http://github.com/GoalSmashers/clean-css) `.css.anything`
 - [eco](/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
 - [haml](/plugin/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
 - [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [HAML Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
@@ -27,7 +27,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [hogan](/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
 - [html2coffee](/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
 - [html2jade](/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com/) `.jade.html`
-- [htmlmin](http://github.com/robloach/docpad-plugin-htmlmin) - Supports minifying HTML with [HTML-Minifier](http://kangax.github.io/html-minifier/) `.html.htmlmin.anything`
+- [htmlmin](http://github.com/robloach/docpad-plugin-htmlmin) - Supports minifying HTML with [HTML-Minifier](http://kangax.github.io/html-minifier/) `.html.anything`
 - [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
 - [js2coffee](https://npmjs.org/package/docpad-plugin-js2coffee) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
