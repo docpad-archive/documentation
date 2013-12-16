@@ -168,11 +168,22 @@ Options:
 - `templateData` the template data that will be provided to the documents
 
 
-### `renderCollectionBefore` and `renderCollectionAfter`
 
-The renderCollection events are trigerred once per renderPass which lets plugins handle more granular action. Called before and after rendering the collections.
+### `renderCollectionBefore`
+Triggered before a render collection is about to be rendered. Added by [Bruno Heridet](https://github.com/Delapouite) with [pull request #608](https://github.com/bevry/docpad/pull/608).
 
-Added by [Bruno Heridet](https://github.com/Delapouite) in DocPad [v6.54](https://github.com/bevry/docpad/blob/master/History.md).
+Options:
+- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
+- `renderPass` which render pass is this render collection for?
+
+
+### `renderCollectionAfter`
+Triggered before a render collection is about to be rendered. Added by [Bruno Heridet](https://github.com/Delapouite) with [pull request #608](https://github.com/bevry/docpad/pull/608).
+
+Options:
+- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
+- `renderPass` which render pass is this render collection for?
+
 
 
 ### `render`
