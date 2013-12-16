@@ -138,18 +138,10 @@ Options:
 
 
 ### `parseBefore`
-Called just before we start to load and parse all the files. Partnered with the `parseAfter` event.
-
-Options:
-- `collection` the collection we are working with
-
+Deprecated/removed since DocPad v6.58.0. See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
 ### `parseAfter`
-Called just after we've finished loading and parsing all the files. Partnered with the `parseBefore` event.
-
-Options:
-- `collection` the collection we are working with
-
+Deprecated/removed since DocPad v6.58.0. See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
 
 ### `conextualizeBefore`
