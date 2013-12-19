@@ -130,7 +130,7 @@ Examples:
 
 
 ### `generateBefore`
-Called just before we start generating your website. Partnered with the `generateAfter` event.
+Called just before we start generating your project. Partnered with the `generateAfter` event.
 
 Options:
 - `reset` whether or not this is a partial (`false`) or full regeneration (`true`)
@@ -255,7 +255,11 @@ Options:
 
 
 ### `generateAfter`
-Called just after we've finished generating your website.  Partnered with the `generateBefore` event.
+Called just after we've finished generating your project.  Partnered with the `generateBefore` event.
+
+
+### `generated`
+Called just after the initial generation has completed.
 
 
 
