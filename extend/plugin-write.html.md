@@ -25,6 +25,19 @@ What this does is extends our BasePlugin from DocPad, and returns the `YourPlugi
 
 The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) is important as it provides some of the tucked away magic for our plugins. But what is even more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you on the Events Page.](/docpad/events)
 
+If you are writing your plugin inside a non-coffeecript dialect, you can use the `BasePlugin.extend({})` method like so:
+
+``` javascript
+// Export Plugin
+module.exports = function (BasePlugin) {
+	// Define Plugin
+	return BasePlugin.extend({
+		// Plugin name
+		name: 'yourpluginname'
+	});
+}
+```
+
 
 ### `package.json`
 
