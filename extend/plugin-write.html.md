@@ -157,7 +157,7 @@ test/
 
 This file simply calls into DocPad and tell it to test our plugin, you will need to modify the `pluginName` property to match your plugin:
 
-```
+``` coffeescript
 # Test our plugin using DocPad's Testers
 require('docpad').require('testers').test({pluginPath: __dirname+'/..'})
 ```
