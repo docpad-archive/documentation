@@ -35,7 +35,7 @@ module.exports = function (BasePlugin) {
 		// Plugin name
 		name: 'yourpluginname'
 	});
-}
+};
 ```
 
 
