@@ -57,7 +57,7 @@ To setup a development environment for contributing to the DocPad core follow th
 
 1. Install CoffeeScript globally: `npm install -g coffee-script` (may require `sudo` access)
 1. Fork the repository of the DocPad Core: https://github.com/bevry/docpad
-1. Clone your fork to your machine then `cd`into it
+1. Clone your fork to your machine then `cd` into it
 1. Run `npm install` to install any missing dependencies
 1. Run `cake compile` to compile the project (or use `cake watch` to compile every time a change is made)
 1. Run `cake test` to test the project
