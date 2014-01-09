@@ -27,7 +27,7 @@ If that fails, we'd recommend either:
 - For Windows XP/Vista/7 Install:
   - [Python](http://www.python.org/download/) [v2.7.3](http://www.python.org/download/releases/2.7.3#download) Recommended 
   - [Microsoft Visual Studio C++ 2010](http://go.microsoft.com/?linkid=9709949)
-- For 64-bit builds of Nod.jse and native modules you will also need:
+- For 64-bit builds of Node.js and native modules you will also need:
   - [Windows 7 64-bit SDK](http://www.microsoft.com/en-us/download/details.aspx?id=8279)
     - If the install fails, try uninstalling any C++ 2010 x64&x86 Redistributable that you have installed first.
 - If you get errors that the 64-bit compilers are not installed you may also need:
