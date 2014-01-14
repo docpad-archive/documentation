@@ -24,9 +24,9 @@ Often at times we will write documents which start seeming a bit repetitive, or 
 
 For instance, if I wanted to display a random number I could do the following:
 
-- Eco: `<%= Math.random() %>`
-- Jade: `#{Math.random()}`
-- HAML: `= Math.random()`
+- [Eco][1]: `<%= Math.random() %>`
+- [Jade][2]: `= Math.random()`
+- [HAML][3]: `= Math.random()`
 
 This is pretty useful, as we can also do things like loops, or assign certain pages or parts of our layout into new files and use them again and again whenever we need them, instead of having to manually duplicate content. This is what empowers us to be able to use Layouts - discussed next.
 
@@ -189,3 +189,7 @@ Check this [GitHub issue](https://github.com/bevry/docpad/issues/749), see if it
 
 - Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
 - Need support? [Check out our Support Channels](/support)
+
+[1]: https://github.com/sstephenson/eco  "Eco"
+[2]: http://jade-lang.com                "Jade"
+[3]: http://haml.info                    "Haml"
