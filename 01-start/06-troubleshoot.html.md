@@ -86,9 +86,9 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 
 - Eco: `<%- content %>` instead of `<%= content %>`
 - Jade: `!= content` instead of `= content`
-- HAML: `!= content` instead of `= content`
+- Haml: `!= content` instead of `= content`
 
-### The output of a variable (like `content`) is empty or null
+### The output of a variable (like `document.title`) is empty or null
 Be sure that you use the correct syntax for your template language, read the documentation of your chosen language.  
 For example: When you want to put the output of a variable into the content of an (HTML) element in Jade, you must not write a whitespace between the element and the `=`. So this is wrong: `title = document.title` and that is correct: `title= document.title`
 
