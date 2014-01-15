@@ -11,7 +11,7 @@ Sure does. [Install it now.](/docpad/install)
 
 Whenever we write something we're using markup. It's merely a way of formatting content. For instance, if we are writing a `.txt` file in notepad, we will be using `plain-text` as the markup. But say we want to get more advanced, and add things like **bold** text or _italic_ text to our content, then we could use a markup like `Microsoft Word (.doc)`, `Rich Text Format (.rtf)` or simply `Markdown (.md)` or `HTML (.html)`. These markups allow us to express our content with rich formatting.
 
-For instance, **bold** in Markdown is `**bold**`, where in HTML it is `<strong>bold</strong>`. The markup that you choose for your content is highly dependent on what content you'd like to write. If you're mostly dealing with structural data (like a page layout) then `HTML`, `Jade`, `HAML`, or `CoffeeKup` would be a good way to go. If you're mostly dealing with textual data (like a blog post) then `Markdown` would probably the way to go.
+For instance, **bold** in Markdown is `**bold**`, where in HTML it is `<strong>bold</strong>`. The markup that you choose for your content is highly dependent on what content you'd like to write. If you're mostly dealing with structural data (like a page layout) then `HTML`, `Jade`, `Haml`, or `CoffeeKup` would be a good way to go. If you're mostly dealing with textual data (like a blog post) then `Markdown` would probably the way to go.
 
 DocPad supports unlimited markups thanks to its plugin system. It doesn't believe in a one size fits all, but in always using the best tool for a job. Its easy to learn new markups, there may be a bit of a learning curve, but you'll quickly adjust, be empowered, and grateful that you now have a new tool under your belt.
 
@@ -24,9 +24,9 @@ Often at times we will write documents which start seeming a bit repetitive, or 
 
 For instance, if I wanted to display a random number I could do the following:
 
-- Eco: `<%= Math.random() %>`
-- Jade: `#{Math.random()}`
-- HAML: `= Math.random()`
+- [Eco][1]: `<%= Math.random() %>`
+- [Jade][2]: `= Math.random()`
+- [Haml][3]: `= Math.random()`
 
 This is pretty useful, as we can also do things like loops, or assign certain pages or parts of our layout into new files and use them again and again whenever we need them, instead of having to manually duplicate content. This is what empowers us to be able to use Layouts - discussed next.
 
@@ -189,3 +189,7 @@ Check this [GitHub issue](https://github.com/bevry/docpad/issues/749), see if it
 
 - Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
 - Need support? [Check out our Support Channels](/support)
+
+[1]: https://github.com/sstephenson/eco  "Eco"
+[2]: http://jade-lang.com                "Jade"
+[3]: http://haml.info                    "Haml"

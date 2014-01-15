@@ -85,8 +85,12 @@ There are a few things you can do:
 Template engines by default _escape_ all variable output. Escaping is when we turn things like the open bracket `<` into it's _html entity_ equivalent `&lt;`. This helps prevent malicious code accidentally being injected into your website which can open the door to XSS attacks. As such, we have to use a special syntax to keep the variable _unescaped_ when outputted. The special syntax is different for the templating engine your using, so here are the ways we know:
 
 - Eco: `<%- content %>` instead of `<%= content %>`
-- Jade: `!{content}` instead of `#{content}`
-- HAML: `!= content` instead of `= content`
+- Jade: `!= content` instead of `= content`
+- Haml: `!= content` instead of `= content`
+
+### The output of a variable (like `document.title`) is empty or null
+Be sure that you use the correct syntax for your template language, read the documentation of your chosen language.  
+For example: When you want to put the output of a variable into the content of an (HTML) element in Jade, you must not write a whitespace between the element and the `=`. So this is wrong: `title = document.title` and that is correct: `title= document.title`
 
 
 ### I get a whole bunch of npm / missing module/package / installation failed errors

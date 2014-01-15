@@ -22,8 +22,8 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
 - [cssmin](http://github.com/robloach/docpad-plugin-cssmin) - Supports minification of CSS with [clean-css](http://github.com/GoalSmashers/clean-css) `.css.anything`
 - [eco](/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
-- [haml](/plugin/haml/) - Supports [HAML](http://haml-lang.com/) to anything `.anything.haml`
-- [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [HAML Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
+- [haml](/plugin/haml/) - Supports [Haml](http://haml-lang.com/) to anything `.anything.haml`
+- [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [Haml Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
 - [handlebars](/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com/) to anything `.anything.(hb|hbs|handlebars)`
 - [hogan](/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
 - [html2coffee](/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
