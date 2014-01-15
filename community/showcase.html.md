@@ -76,6 +76,7 @@ welcome to my online portfolio
 - [Mimijumi Indonesia](http://mimijumi.co.id) - A distributor site of Mimijumi in Indonesia.
 - [Morgan Sutherland](http://msutherl.net/) - tangible media and installation art portfolio
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de/) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
+- [Record Famous](http://recordfamous.com) - Vikram's homepage with some Skrollr
 - [Remy Bach](http://remy.bach.me.uk/) - I'm a Christian, husband and father, front-end dev, gamer, and all around tech nerd!
 - [Rio.js](http://www.riojs.org/) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de janeiro's JavaScript User Group
 - [Rob Rawkes](http://rawkes.com/) - Rawkes is the home of Rob Hawkes, part-time Rawket Scientist and full-time geek. Join him as he explores the outer-reaches of programming, digital media, games, and everything in-between.
