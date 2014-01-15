@@ -92,8 +92,6 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 Be sure that you use the correct syntax for your template language, read the documentation of your chosen language.  
 For example: When you want to put the output of a variable into the content of an (HTML) element in Jade, you must not write a whitespace between the element and the `=`. So this is wrong: `title = document.title` and that is correct: `title= document.title`
 
-### Docpad and Jade have both the `include` function, how to use which?
-To use the helpers of docpad you always need a javascript expression. So for this case it's `!=include(pathToFile)`. For Jade include just write `include pathToFile`.
 
 ### I get a whole bunch of npm / missing module/package / installation failed errors
 If you are using [Dropbox](http://j.mp/dropbox-bal) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
