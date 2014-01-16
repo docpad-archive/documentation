@@ -13,13 +13,6 @@ Check your project's `package.json` file with [JSONLint](http://jsonlint.com/), 
 Chances are this isn't a problem within DocPad, but rather one of your node/npm installations. Run the following in Terminal, once done, try your original action again:
 
 ``` bash
-sudo chown -R $USER /usr/local ~/.npm
-chmod -R 755 ~/.npm
-```
-
-Be sure that you tmp dir is writable for the current user:
-
-``` bash
 sudo chown -R $USER:$GROUPS ~/tmp
 ```
 
