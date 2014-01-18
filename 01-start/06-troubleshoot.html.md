@@ -17,6 +17,12 @@ sudo chown -R $USER /usr/local ~/.npm
 chmod -R 755 ~/.npm
 ```
 
+Be sure that your tmp dir is writable for the current user:
+
+``` bash
+sudo chown -R $USER:$GROUPS ~/tmp
+```
+
 If that fails, we'd recommend either:
 
 - Re-Installing Node.js with Bevry's [recommended installation instructions](http://bevry.me/node/install)
