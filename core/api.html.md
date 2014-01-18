@@ -103,16 +103,36 @@ docpadInstance.action('generate watch', function(err,result){
 
 DocPad using [Backbone.js](http://documentcloud.github.com/backbone/) for its Models, and [QueryEngine](https://github.com/bevry/query-engine) for its Collections. Providing a powerful database that you can query in a noSQL type fashion. You can discover the entire query API on the [Using QueryEngine](https://github.com/bevry/query-engine/wiki/Using) wiki page.
 
-### Create a Document
-
-``` javascript
-document = docpadInstance.createDocument(data, options)
-```
-
 ### Get the database
 
 ``` javascript
 database = docpadInstance.getDatabase()
+```
+
+### Create a Document and File
+
+``` javascript
+document = docpadInstance.createDocument(data, options)
+file = docpadInstance.createFile(data, options)
+```
+
+### Create a Document and File, then add it to the Database
+
+``` javascript
+database = docpadInstance.getDatabase()
+document = docpadInstance.createDocument(data, options)
+file = docpadInstance.createFile(data, options)
+database.add(document)
+database.add(file)
+```
+
+### Parse a Document and File Directory
+
+``` javascript
+// options = {path}
+// next(err, files)
+docpadInstance.parseDocumentDirectory(options, next)
+docpadInstance.parseFileDirectory(options, next)
 ```
 
 ### Querying
