@@ -11,11 +11,12 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- [Youtube](https://github.com/bevry/docpad/issues/571)
 	- [Tumblr](/plugin/tumblr) _**- released**_
 	- [Tags](/plugin/tags) _**- released**_
-- [Importer Speed Optimisations](https://github.com/bevry/docpad/issues/590)
+- [Exporters](https://github.com/bevry/docpad/issues/597)
 - [Web GUI](https://github.com/docpad/gui/issues)
 - [Performance optimisations](https://github.com/bevry/docpad/issues/529)
 - [Run DocPad on the Client Side](https://github.com/bevry/docpad/issues/542)
 - [Official DocPad Blog](https://github.com/bevry/docpad-website/issues/29)
+- [Abstract out all the things](https://github.com/bevry/docpad/issues?milestone=16&state=open)
 
 
 ## Next
@@ -76,7 +77,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- Database caching disabled by default
 
 - v6.55
-	- Database caching
+	- Database caching aka [Importer Speed Optimisations](https://github.com/bevry/docpad/issues/590)
 
 - v6.54
 	- Abstracted out notifications into plugin
