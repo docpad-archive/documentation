@@ -16,7 +16,6 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 - [Performance optimisations](https://github.com/bevry/docpad/issues/529)
 - [Run DocPad on the Client Side](https://github.com/bevry/docpad/issues/542)
 - [Official DocPad Blog](https://github.com/bevry/docpad-website/issues/29)
-- [Fix Watchr once and for all](https://github.com/bevry/watchr/issues/33)
 
 
 ## Next
@@ -63,6 +62,40 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 ## Done
 
 ### Version 6
+
+- v6.60
+	- Added caching http headers
+
+- v6.59
+	- [Fix Watchr once and for all](https://github.com/bevry/watchr/issues/33)
+
+- v6.58
+	- Dynamic documents are rendered through the generate action
+
+- v6.56
+	- Database caching disabled by default
+
+- v6.55
+	- Database caching
+
+- v6.54
+	- Abstracted out notifications into plugin
+	- i18n support without native binary
+
+- v6.53
+	- Locales can now be merged together
+
+- v6.51
+	- Run the local docpad installation if it exists
+
+- v6.49
+	- Cleanup on destroy
+
+- v6.48
+	- Version conflict warning
+
+- v6.47
+	- Inline elements in styles block
 
 - v6.46
 	- [Importer support](https://github.com/bevry/watchr/issues/500)
