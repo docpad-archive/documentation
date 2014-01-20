@@ -155,11 +155,11 @@ test/
 
 #### `src/yourpluginname.test.coffee`
 
-This file simply calls into DocPad and tell it to test our plugin, you will need to modify the `pluginName` property to match your plugin:
+This file simply calls into DocPad and tell it to test our plugin:
 
 ``` coffeescript
 # Test our plugin using DocPad's Testers
-require('docpad').require('testers').test({pluginPath: __dirname+'/..'})
+require('docpad').require('testers').test({testerClass: 'RendererTester', pluginPath: __dirname+'/..'})
 ```
 
 
