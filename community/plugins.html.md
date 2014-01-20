@@ -48,6 +48,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [teacup](https://github.com/hurrymaplelad/docpad-plugin-teacup/) - Supports [Teacup](http://goodeggs.github.io/teacup/) to HTML `.html.coffee`
 - [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](http://textile.sitemonks.com/) to HTML `.html.textile`
 - [typescript](https://github.com/bpampuch/docpad-plugin-tsc) - Supports [TypeScript](http://www.typescriptlang.org/) to JavaScript `.js.ts`
+- [vash](https://github.com/harmony7/docpad-plugin-vash) - Supports [Vash](https://github.com/kirbysayshi/vash), an implementation of the [Razor template syntax](http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx) for JavaScript, to anything `.anything.vash`
 - [yaml](https://github.com/jeremyfa/docpad-plugin-yamljs) - Supports [YAML](http://en.wikipedia.org/wiki/YAML) to JSON `.json.(yaml|yml)` and JSON to YAML `.(yml|yaml).json`
 
 
