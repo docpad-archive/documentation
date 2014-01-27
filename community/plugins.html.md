@@ -61,7 +61,8 @@ These are plugins that add extra functionality to DocPad:
 - [assets](https://github.com/mcdee/docpad-plugin-assets) - Change URL of asset files to contain hash of contents, allowing for effective caching whilst enabling cache busting when contents change
 - [associatedfiles](/plugin/associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
 - [basicauth](https://github.com/mikeumus/docpad-plugin-basicauth) - Adds basic authentication to your project
-- [browserifybundler](https://github.com/crito/docpad-plugin-browserifybundler) - Bundle your client side JavaScript with browserify.
+- [browserifybundles](/plugin/browserifybundles) - Add configuration to your docpad configuration file to create browserify bundles of your scripts
+- [browserifydocs](/plugin/browserifydocs) - Browserify your documents by adding `browserify: true` to their meta data
 - [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
 - [cachr](/plugin/cachr/) - Allows you to cache remote urls locally from within your templates
 - [cleanurls](/plugin/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
