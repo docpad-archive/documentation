@@ -20,7 +20,6 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [coffeemugg](https://github.com/pflannery/docpad-plugin-coffeemugg) - Supports [CoffeeMugg](https://github.com/jaekwon/CoffeeMugg)  to anything `.anything.coffee`
 - [consolidate](http://github.com/robloach/docpad-plugin-consolidate) - Supports many template engines via [Consolidate.js](https://github.com/visionmedia/consolidate.js)
 - [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
-- [cssmin](http://github.com/robloach/docpad-plugin-cssmin) - Supports minification of CSS with [clean-css](http://github.com/GoalSmashers/clean-css) `.css.anything`
 - [eco](/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
 - [haml](/plugin/haml/) - Supports [Haml](http://haml-lang.com/) to anything `.anything.haml`
 - [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [Haml Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
@@ -65,6 +64,7 @@ These are plugins that add extra functionality to DocPad:
 - [browserifydocs](/plugin/browserifydocs) - Browserify your documents by adding `browserify: true` to their meta data
 - [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
 - [cachr](/plugin/cachr/) - Allows you to cache remote urls locally from within your templates
+- [cleancss](/plugin/cleancss) - Concatinate and minify CSS files with the `cleancss: true` meta data
 - [cleanurls](/plugin/cleanurls/) - Adds support for urls like `/blog/hello` as well as the original url `/blog/hello.html`
 - [coffeelint](https://github.com/jking90/docpad-plugin-coffeelint) - Prints [coffeelint](http://www.coffeelint.org/) errors to the console
 - [csv](https://github.com/CycoPH/docpad-plugin-csv/) - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2
