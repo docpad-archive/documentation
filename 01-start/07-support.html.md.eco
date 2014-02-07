@@ -12,6 +12,12 @@ StackOverflow is a community of passionate programmers dedicated to solving prob
 [Find existing questions and answers.](http://stackoverflow.com/questions/tagged/docpad)
 
 
+
+## Documentation Issues
+
+For documentation suggestions, issues, and pull requests use [DocPad's Documentation GitHub Issue Tracker](https://github.com/docpad/documentation/)
+
+
 ## Bug Reports via GitHub's Issue Tracker
 
 For bug reports relating to the core, use [DocPad's GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
