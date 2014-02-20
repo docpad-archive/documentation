@@ -69,6 +69,7 @@ welcome to my online portfolio
 - [Invisible Weight](http://invisibleweight.com/) - The Eating Disorder documentary
 - [Javascript Quiz](http://javascriptquiz.com/) - Regular interactive JavaScript questions to explore the fun world of JavaScript and keep you on your toes
 - [Jose Quesada](http://josequesada.com/) - [source](https://github.com/quesada/josequesada.docpad) - Homepage of Jose Quesada, a specialist with e-commerce database marketing
+- [Komodo IDE](http://komodoide.com/) - [source](https://github.com/Komodo/komodo-website) - Official website for Komodo IDE and Komodo Edit.
 - [Kyle Pool](http://kylpo.com/) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
 - [Leigh Howells](http://leighhowells.com/) - Home planet, blog and portfolio of Designer, tunesmith and UX Consultant, Cambridge, UK.  With added aliens. 
 - [The Mason Jar](http://www.the-mason-jar.com/) - [source](https://github.com/the-mason-jar/www-the-mason-jar) - Hipster cocktails with a back-end powered by GitHub and DocPad.
