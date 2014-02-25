@@ -3,7 +3,7 @@ title: "Install"
 ```
 _If you are upgrading from one major version to another (e.g. DocPad v5 to DocPad v6), be sure to checkout our [Upgrade Guide](/docpad/upgrade) for information relating to backwards compatibility breaks._
 
-1. [Install Node.js & Other Dependencies](/node/install)
+1. [Install Node.js & Other Dependencies](http://bevry.me/learn/node-install)
 
 	DocPad works best with the latest stable Node.js version installed (currently Node.js v0.10). If you're still running the older Node v0.8, we'd recommend upgrading using the instructions above to get the best experience. You can find out what Node.js version you are running with the command: `node --version`
 
