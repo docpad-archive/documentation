@@ -135,7 +135,7 @@ To publish your changes as the project owner:
 
 
 1. Commit the changes with the commit title set to something like `v6.29.0. Bugfix. Improvement.` and commit description set to the changelog entry
-1. Publish the module to npm, create a Git tag for it, push your master changes and new tags up to origin: `cake publish`
+1. Use `cake publish`, which will publish the module to npm, create a Git tag for it, push your master changes and new tags up to origin
     1. When prompted for your Git tag annotation (your text editor will open up automatically), use the changelog entry that we wrote in step 2, save the prompted file, and close the file
 
 And that's it. :)
