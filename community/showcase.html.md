@@ -103,4 +103,5 @@ Applications built with DocPad. Alphabetically sorted.
 - [jQuery ScrollTo](http://balupton.github.io/jquery-scrollto/) - Smooth Scrolling to any jQuery/DOM Element. Uses DocPad to compile, watch, and deploy the project.
 - [jQuery Slide Scroll Panel](http://bevry.github.io/jquery-slidescrollpanel/) - Slide panels in by touch and scrolling
 - [Node Chat](https://github.com/balupton/nodechat.docpad) - Node chat application, built with Socket.io, DocPad, Backbone.js, Twitter Bootstrap, written in CoffeeKup and CoffeeScript
-- [Query Engine](https://github.com/bevry/query-engine) - Query Engine adds support for advanced querying to Backbone.js. Uses DocPad to compile, watch, and test our project automatically.
+- [Query Engine](https://github.com/bevry/query-engine) - Query Engine adds support for advanced querying to Backbone.js. Uses DocPad to compile, watch, and test our project automatically
+- [Semantic UI](http://semantic-ui.com/) - [source](https://github.com/Semantic-Org/Semantic-UI) - CSS Framework. Uses DocPad to compile the entire website and framework together.
