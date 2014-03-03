@@ -1,4 +1,4 @@
-Feel free to [update this page](http://prose.io/#bevry/docpad-documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
+Feel free to [update this page](https://github.com/docpad/documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
 
 
 ## In the press
