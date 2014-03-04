@@ -1,6 +1,13 @@
 ## Known Issues
 
 
+### Regressions we're working on
+The following are issues the DocPad team are aware of and will fix shortly:
+
+- Dynamic pages are behaving weirdly: https://github.com/bevry/docpad/issues/767
+- Ignored documents are showing up in collections and being served: https://github.com/bevry/docpad/issues/807
+
+
 ### It just hangs after accepting the TOS or subscribing to the newsletter
 It seems that this is associated to being behind a firewall or a proxy. You can apply [this workaround](https://github.com/bevry/docpad/issues/488).
 
