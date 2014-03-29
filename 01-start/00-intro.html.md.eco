@@ -157,7 +157,7 @@ Despite all the amazing wonder of current web application architectures, they're
 
 On the other hand, let's compare that with DocPad, which is:
 
-- **Inherently fast**
+- **Website inherently fast**
 	- Built on a stay alive and non-blocking platform
 	- Performance from the ground up, re-render only when changes occur (by default, can be configured differently)
 - **Lightweight**
