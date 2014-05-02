@@ -20,7 +20,9 @@ Since DocPad's events are run synchronously, omitting the `next` callback is per
 
 ### Inside your Configuration File
 
-You can bind to events inside your DocPad configuration file by adding them to the `events` property. Using a `docpad.coffee` file for our configuration, binding to the `serverExtend` event would look like so:
+You can bind to events in your DocPad configuration file by adding them to the `events` property. 
+
+**Example:** Let's use a `docpad.coffee` configuration file. Binding to the `serverExtend` event would look like so:
 
 ``` coffeescript
 docpadConfig =
