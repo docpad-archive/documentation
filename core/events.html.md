@@ -143,13 +143,14 @@ Called just before we start generating your project. Partnered with the `generat
 
 **Options:**
 - `reset` whether or not this is a partial (`false`) or full regeneration (`true`)
-- `server` deprecated, use `getServer()` API method instead
+- <del><code>server</code></del> 
+  <ins>Deprecated; use `getServer()` API method instead</ins>
 
 
-### `parseBefore`
+### <del><code>parseBefore</code></del>
 Deprecated/removed since DocPad v6.58.0. See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
-### `parseAfter`
+### <del><code>parseAfter</code></del>
 Deprecated/removed since DocPad v6.58.0. See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
 
@@ -158,14 +159,16 @@ Called just before we start to contextualize all the files. Partnered with the `
 
 **Options:**
 - `collection` the collection we are working with
-- `templateData` deprecated, use `extendTemplateData` event instead
+- <del><code>templateData</code></del>
+  <ins>Deprecated; use `extendTemplateData` event instead</ins>
 
 ### `contextualizeAfter`
 Called just after we've finished contextualize all the files. Partnered with the `conextualizeBefore` event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
 
 **Options:**
 - `collection` the collection we are working with
-- `templateData` deprecated, use `extendTemplateData` event instead
+- <del><code>templateData</code></del>
+  <ins>Deprecated; use `extendTemplateData` event instead</ins>
 
 
 
