@@ -13,7 +13,7 @@ Whenever we write something we're using markup. It's merely a way of formatting 
 
 For instance, **bold** in Markdown is `**bold**`, where in HTML it is `<strong>bold</strong>`. The markup that you choose for your content is highly dependent on what content you'd like to write. If you're mostly dealing with structural data (like a page layout) then `HTML`, `Jade`, `Haml`, or `CoffeeKup` would be a good way to go. If you're mostly dealing with textual data (like a blog post) then `Markdown` would probably the way to go.
 
-DocPad supports unlimited markups thanks to its plugin system. It doesn't believe in a one size fits all, but in always using the best tool for a job. Its easy to learn new markups, there may be a bit of a learning curve, but you'll quickly adjust, be empowered, and grateful that you now have a new tool under your belt.
+DocPad supports unlimited markups thanks to its plugin system. It doesn't believe in a one size fits all, but in always using the best tool for a job. It's easy to learn new markups, there may be a bit of a learning curve, but you'll quickly adjust, be empowered, and grateful that you now have a new tool under your belt.
 
 DocPad currently only supports rendering plain-text formats, meaning that rendering binary formats like `img` to `jpg` or binary-text formats like `doc` to `rtf` (they're not plain-text formats like `txt`, `docx`, or `xml` but in fact binary formats) does not currently work. [We will be addressing this in a future release of DocPad.](https://github.com/bevry/docpad/issues/684)
 
@@ -49,7 +49,7 @@ title: "My awesome blog post"
 That is your document's meta data. It won't be included in the output of the document, and is where you can assign extra data to your document such as title, date, tags, etc.
 
 
-## Is a document aware of it's meta data?
+## Is a document aware of its meta data?
 
 It sure is, if you are using eco as the rendering engine, you can totally do this:
 

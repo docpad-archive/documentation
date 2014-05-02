@@ -27,7 +27,7 @@ You can get chatting with anyone who's around by visiting the IRC channel `#docp
 
 
 ### Priority Focus
-Each month, we do a sprint bundled with new features from the roadmap and bugs from the issue tracker. We will always aim to get high priority bugs fixed and released as soon as posible. Once the bugs are all done, then we focus on the new features. When a feature is done, we release it to the public right away and then test and validate it's value to the community. Once a feature has been proven to be valuable, we close it. You can read more about this process in the book [The Lean Startup](http://theleanstartup.com/).
+Each month, we do a sprint bundled with new features from the roadmap and bugs from the issue tracker. We will always aim to get high priority bugs fixed and released as soon as posible. Once the bugs are all done, then we focus on the new features. When a feature is done, we release it to the public right away and then test and validate its value to the community. Once a feature has been proven to be valuable, we close it. You can read more about this process in the book [The Lean Startup](http://theleanstartup.com/).
 
 
 #### On fixing bugs first
@@ -35,7 +35,7 @@ The focus on "bugs first, features later" is to ensure that the users of DocPad 
 
 
 #### Implement and release tasks independently of each other
-As we use the amazing git technology, there is a thing called branching, each new task (feature, bug, etc) to be done should be implemented in it's own branch. This prevents the feature from interfering with other features while you work on it. Once the feature is stable, a DocPad maintainer will pull it with the latest master branch and make sure it is still stable, then merge it into master branch and perform a release. This allows us to implement and release tasks independently on each other. So developers get immediate feedback, and users get immediate results - without any waiting! yay!
+As we use the amazing git technology, there is a thing called branching, each new task (feature, bug, etc) to be done should be implemented in its own branch. This prevents the feature from interfering with other features while you work on it. Once the feature is stable, a DocPad maintainer will pull it with the latest master branch and make sure it is still stable, then merge it into master branch and perform a release. This allows us to implement and release tasks independently on each other. So developers get immediate feedback, and users get immediate results - without any waiting! yay!
 
 <% if @getContributors().length: %>
 ## Contributors

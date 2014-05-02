@@ -23,7 +23,7 @@ module.exports = (BasePlugin) ->
 
 What this does is extends our BasePlugin from DocPad, and returns the `YourPlugin` class. Of course you should change the `YourPlugin` references to whatever your plugin is actually called.
 
-The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) is important as it provides some of the tucked away magic for our plugins. But what is even more important, is the plugin events that your plugin will hook into to provide it's functionality. [You can discover the plugin events available to you on the Events Page.](/docpad/events)
+The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) is important as it provides some of the tucked away magic for our plugins. But what is even more important, is the plugin events that your plugin will hook into to provide its functionality. [You can discover the plugin events available to you on the Events Page.](/docpad/events)
 
 If you must insist on writing your plugin inside a non-coffeecript dialect, you may use the `BasePlugin.extend({})` method like so:
 
@@ -106,7 +106,7 @@ Plugins of other types are generated in the same way as Renderers, they simply a
 
 ## Reusable plugins
 
-If you are just adding some basic functionality that is specific to a site then everything we've described thus far is probably enough. However if you're doing something thats more generic, or could be useful to other people, then why not create your plugin so its reusable? This has many advantages, you can distribute your plugin on NPM, you can use it across multiple projects, and you can setup unit tests to ensure your plugin works correctly.
+If you are just adding some basic functionality that is specific to a site then everything we've described thus far is probably enough. However if you're doing something thats more generic, or could be useful to other people, then why not create your plugin so it's reusable? This has many advantages, you can distribute your plugin on NPM, you can use it across multiple projects, and you can setup unit tests to ensure your plugin works correctly.
 
 Here's the extra files that we will need to add to our plugin:
 

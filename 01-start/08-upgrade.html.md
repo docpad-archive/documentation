@@ -65,7 +65,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 
 2. For plugin developers, the way you extend from the `BasePlugin`, and the way you `module.exports` your plugin has changed. [To learn about the new convention, refer to the new _Extending_ guide by clicking here.](/docpad/extend)
 
-3. For those using DocPad as a module, DocPad now supports a `next` callback on it's constructor, allowing you to do `new DocPad(config,next)`. Anything that depends on a DocPad action being completed should go inside the `next` callback. While this is optional, it has provided helpful in eliminating timing problems.
+3. For those using DocPad as a module, DocPad now supports a `next` callback on its constructor, allowing you to do `new DocPad(config,next)`. Anything that depends on a DocPad action being completed should go inside the `next` callback. While this is optional, it has provided helpful in eliminating timing problems.
 
 ## Upgrading from 1.x to 2.x
 
@@ -73,7 +73,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 2. For plugin developers:
 	1. Plugins have been revised to become more future proof and configurable. Plugins must be in their own directory, with the following format: `plugins/${pluginName}/${pluginName}.plugin.coffee`
 	2. Plugin dependencies should no longer be in the docpad's or your project's `package.json` file, but instead in their plugin directory's `package.json` - e.g. `plugins/${pluginName}/package.json` - this file is optional, but recommended.
-	3. If a plugin's `package.json` exists, as well as it's `main` property, docpad will use that as the plugin file's location instead of the location in step 2.1.
+	3. If a plugin's `package.json` exists, as well as its `main` property, docpad will use that as the plugin file's location instead of the location in step 2.1.
 	4. Plugin configuration should be moved to their `package.json` file, to the key `docpad.plugin` which should be an object. This is then customisable by docpad's `package.json` as well as the website's via `docpad.plugin.#{pluginName}`. The configuration of a plugin is available via the `@config` property.
 	5. To access docpad within a plugin, you should now use `@docpad` rather than having it passed through as an argument, this applies for logger too (now use `@logger`).
 	6. A lot of docpad configuration has been moved to `@docpad.config`
