@@ -7,7 +7,7 @@ title: "Configuration"
 The DocPad configuration file sits within the root of your DocPad project and is named as one of the following. Each name provides a special meaning. Here are the valid names:
 
 - `docpad.js` a Node JavaScript file, will generally look like: `module.exports = {/*the configuration*/}`
-- `docpad.json` a json file, does not allow functions, will generally look like: `{/*the configuration*/}`
+- `docpad.json` a JSON file, does not allow functions, will generally look like: `{/*the configuration*/}`
 - `docpad.coffee` a Node coffeescript file, will generally look like: `module.exports = /*the configuration*/`
 - `docpad.cson` a [cson](https://github.com/bevry/cson) file, will generally look like: `/*the configuration*/`
 
