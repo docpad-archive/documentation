@@ -40,10 +40,10 @@ Defaults to `mtime`. Useful for setting a custom date via your documents meta da
 Defaults to a slugified version of the `relativeBase`. Appears deprecated in favour of `url`.
 
 #### `url`
-The url that you would like to use as the primary url for the document. When a user accesses a document via a secondary url, the user will be redirected to the primary url automatically.
+The URL that you would like to use as the primary URL for the document. When a user accesses a document via a secondary URL, the user will be redirected to the primary URL automatically.
 
 #### `urls`
-Urls is the secondary urls for a document. It can be a comma seperated values list, or an array of values.
+The secondary URLs for a document. It can be a comma seperated values list, or an array of values.
 
 #### `ignored`
 Defaults to `false`. If set to `true`, the document will not be parsed. Useful for draft documents.

@@ -147,7 +147,7 @@ resultModel = docpadInstance.getFile(query, sorting, paging)
 // Get files at path (forwards onto getFiles)
 resultCollection = docpadInstance.getFilesAtPath(path, sorting, paging)
 
-// Get a file at a relative or absolute path or url
+// Get a file at a relative or absolute path or URL
 resultModel = docpadInstance.getFileAtPath(path, sorting, paging)
 
 // Get a file by its id

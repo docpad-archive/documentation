@@ -278,7 +278,7 @@ docpadConfig = {
 
 		# Specify some site properties
 		site:
-			# The production url of our website
+			# The production URL of our website
 			url: "http://website.com"
 
 			# The default title of our website

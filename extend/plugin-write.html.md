@@ -55,12 +55,12 @@ This file should look something like this:
 		"something",
 		"somethingelse"
 	],
-	"author": "Copyright holders name <copyright holder's email> (copyright holder's website url)",
+	"author": "Copyright holders name <copyright holder's email> (copyright holder's website URL)",
 	"maintainers": [
-		"Your name <your email> (your github url)"
+		"Your name <your email> (your github URL)"
 	],
 	"contributors": [
-		"Your name <your email> (your github url)"
+		"Your name <your email> (your github URL)"
 	],
 	"bugs": {
 		"url": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname/issues"
