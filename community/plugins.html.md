@@ -62,7 +62,7 @@ These are plugins that add extra functionality to DocPad:
 - [basicauth](https://github.com/mikeumus/docpad-plugin-basicauth) - Adds basic authentication to your project
 - [browserifybundles](/plugin/browserifybundles) - Add configuration to your DocPad configuration file to create browserify bundles of your scripts
 - [browserifydocs](/plugin/browserifydocs) - Browserify your documents by adding `browserify: true` to their meta data
-- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like CoffeeScript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
+- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like CoffeeScript, less, etc.) using [Buildr](https://github.com/balupton/buildr.npm)
 - [cachr](/plugin/cachr/) - Allows you to cache remote URLs locally from within your templates
 - [cleancss](/plugin/cleancss) - Concatinate and minify CSS files with the `cleancss: true` meta data
 - [cleanurls](/plugin/cleanurls/) - Adds support for URLs like `/blog/hello` as well as the original URL `/blog/hello.html`

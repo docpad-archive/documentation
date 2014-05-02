@@ -31,17 +31,17 @@ comparisonTable:  """
 	Implicit & bundled
 	[Explicit & extendable](/docpad/overview#the-documents-directory)
 
-	Markup languages (markdown, rst, etc)
+	Markup languages (markdown, rst, etc.)
 	No
 	1 bundled
 	Via [plugins](/docpad/plugins#renderers)
 
-	Pre-processors (sass, less, etc)
+	Pre-processors (sass, less, etc.)
 	No
 	No
 	Via [plugins](/docpad/plugins#renderers)
 
-	Template engines (eco, jade, etc)
+	Template engines (eco, jade, etc.)
 	No
 	1 bundled
 	Via [plugins](/docpad/plugins#renderers)
@@ -101,17 +101,17 @@ comparisonTable:  """
 	Yes
 	Yes
 
-	Import pages from external database (MongoDB, MySQL etc.)
+	Import pages from external database (MongoDB, MySQL, etc.)
 	Yes
 	No
 	Via [plugins](/docpad/plugins#admin-interfaces)
 
-	Import pages from external services (Tumblr, Dropbox, GitHub etc.)
+	Import pages from external services (Tumblr, Dropbox, GitHub, etc.)
 	No
 	No
 	Via [plugins](/docpad/plugins#admin-interfaces)
 
-	Import data from external services (Atom, XML, JSON etc.)
+	Import data from external services (Atom, XML, JSON, etc.)
 	No
 	No
 	Via [`feedr` plugin](/plugin/feedr/)
@@ -148,7 +148,7 @@ Despite all the amazing wonder of current web application architectures, they're
 	- Uh oh, database not installed or version invalid
 	- Migrations and deployments are a royal pain in the ass
 - **Limited**
-	- WYSIWYG editors are sucky and stupid - why re-invent the wheel? We're already trained with and love our desktop counterparts (Sublime Text, Vim, Byword etc.)
+	- WYSIWYG editors are sucky and stupid - why re-invent the wheel? We're already trained with and love our desktop counterparts (Sublime Text, Vim, Byword, etc.)
 	- Abstractions on the go? Forget it - you're boxed in, unless you've got a machete
 	- Want to use your own pre-processors, markups, and templating engines? Tough, that's handled by the core.
 
@@ -171,7 +171,7 @@ On the other hand, let's compare that with DocPad, which is:
 	- In-memory database gives us querying without the need for a manual installation
 	- Migrations and deployments are handled via Git, the tool we are used to
 - **Robust**
-	- Use your desktop counterparts to edit content naturally (Sublime Text, Vim, Byword etc.)
+	- Use your desktop counterparts to edit content naturally (Sublime Text, Vim, Byword, etc.)
 	- Abstraction friendly - code the way you want, how you want
 	- Use whatever language, pre-processor, markup, templating engine you want - it's all covered via our [opt-in plugins](/docpad/plugins) (if it isn't it's very easy to add)
 

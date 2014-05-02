@@ -299,7 +299,7 @@ _Pre-Processors_ are amazing things. They allow us to write documents in one lan
 
 
 ### Using Markdown, an HTML Pre-Processor
-HTML's verbose syntax is terrible for writing content that is more text than markup (e.g. articles, comments, etc). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) (one of the many HTML Pre-Processors available to us as [Plugins](/docpad/plugins)) comes to the rescue!
+HTML's verbose syntax is terrible for writing content that is more text than markup (e.g. articles, comments, etc.). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) (one of the many HTML Pre-Processors available to us as [Plugins](/docpad/plugins)) comes to the rescue!
 
 Install the [Marked Markdown Plugin](/plugin/marked) by running `docpad install marked`.
 

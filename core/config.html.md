@@ -251,7 +251,7 @@ docpadConfig = {
 	prompts: false  # default
 
 	# Helper Url
-	# Used for subscribing to newsletter, account information, and statistics etc
+	# Used for subscribing to newsletter, account information, and statistics, etc.
 	helperUrl: 'https://docpad.org/helper/'  # default
 
 	# Safe Mode
@@ -368,7 +368,7 @@ docpadConfig = {
 	# Environment Configuration
 
 	# Locale Code
-	# The code we shall use for our locale (e.g. `en`, `fr`, etc)
+	# The code we shall use for our locale (e.g. `en`, `fr`, etc.)
 	# If not set, we will attempt to detect the system's locale, if the locale can't be detected or if our locale file is not found for it, we will revert to `en`
 	localeCode: null  # default
 
@@ -410,7 +410,7 @@ KEY2=VALUE2
 
 With all key value pairs being added to the `process.env` environment variable.
 
-It is useful for setting sensitive information such as API keys and database information etc - if using for this purpose, then be sure to add the `.env` file to your `.gitignore` file.
+It is useful for setting sensitive information such as API keys and database information etc. - if using for this purpose, then be sure to add the `.env` file to your `.gitignore` file.
 
 
 

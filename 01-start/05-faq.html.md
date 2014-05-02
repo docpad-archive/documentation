@@ -33,7 +33,7 @@ This is pretty useful, as we can also do things like loops, or assign certain pa
 
 ## What is a layout?
 
-Layouts wrap over our documents. They are generally the most generic and re-used part of an entire website, or book for that matter. They contain generally the layout of the page, including the structural information and the meta information (used for search engines etc).
+Layouts wrap over our documents. They are generally the most generic and re-used part of an entire website, or book for that matter. They contain generally the layout of the page, including the structural information and the meta information (used for search engines, etc.).
 
 
 ## What is a document's meta information/data?
