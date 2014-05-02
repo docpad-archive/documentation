@@ -46,7 +46,7 @@ The other important aspect of documents it that they support meta data. Meta dat
 
 #### The `files` Directory
 
-Files in this folder are like documents, in that they are output to the `out` directory. The difference lies in that they are not rendered and do not support meta data. This is where you should put everything that doesn't need to be rendered or need meta data. For example, images, vendor files, plain stylesheet and JavaScript files etc.
+Files in this folder are like documents, in that they are output to the `out` directory. The difference lies in that they are not rendered and do not support meta data. This is where you should put everything that doesn't need to be rendered or need meta data. For example, images, vendor files, plain stylesheet and JavaScript files, etc.
 
 
 ### The `docpad.coffee` file
