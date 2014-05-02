@@ -33,7 +33,7 @@ This is pretty useful, as we can also do things like loops, or assign certain pa
 
 ## What is a layout?
 
-Layouts wrap over our documents. They are generally the most generic and re-used part of an entire website, or book for that matter. They contain generally the layout of the page, including the structural information and the meta information (used for search engines etc).
+Layouts wrap over our documents. They are generally the most generic and re-used part of an entire website, or book for that matter. They contain generally the layout of the page, including the structural information and the meta information (used for search engines, etc.).
 
 
 ## What is a document's meta information/data?
@@ -62,7 +62,7 @@ meaningOfLife: 42
 What is the meaning of life? <%= @document.meaningOfLife %>
 ```
 
-To use eco, simply ensure that you have the extension `.eco` at the end of your file. E.g. `my-blog-post.html.eco`. It doesn't have to be at the end, but it mustn't be the first extension (as the first extension is what you are rendering to).
+To use eco, simply ensure that you have the extension `.eco` at the end of your file (e.g., `my-blog-post.html.eco`). It doesn't have to be at the end, but it mustn't be the first extension (as the first extension is what you are rendering to).
 
 
 ## What do the extensions mean?
@@ -96,12 +96,12 @@ How can I learn more about the NoSQL queries available and the internals of Quer
 [Take a look at the Query-Engine Using Guide](https://github.com/bevry/query-engine/wiki/Using)
 
 
-## How do I hide a document from being rendered? E.g. a draft post.
+## How do I hide a document from being rendered (e.g., a draft post)? 
 
 Check out the `ignored` [meta data property](/docpad/meta-data).
 
 
-## How do I re-render a document on each request? E.g. dynamic documents.
+## How do I re-render a document on each request (e.g., dynamic documents)?
 
 Check out the `dynamic` [meta data property](/docpad/meta-data).
 
@@ -115,7 +115,7 @@ At times, you may have multiple levels of cross document references. For instanc
 
 ## How do I create custom 404 and 500 pages?
 
-Add a `src/documents/404.html` for 404 pages, and `src/documents/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header as mentioned above) your templating engine (e.g. `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/documents/500.html.md.eco`:
+Add a `src/documents/404.html` for 404 pages, and `src/documents/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header as mentioned above) your templating engine (e.g., `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/documents/500.html.md.eco`:
 
 ```
 ---

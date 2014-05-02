@@ -227,7 +227,7 @@ Options:
 
 Notes: It is also called for each of the layout rendering for the document, as well as for each [render pass](/docpad/faq#what-are-render-passes), as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
 
-Example: [The Pygments Plugin](http://docpad.org/plugin/pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g. `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org/) syntax highlighting engine.
+Example: [The Pygments Plugin](http://docpad.org/plugin/pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g., `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org) syntax highlighting engine.
 
 
 ### `renderAfter`
@@ -273,9 +273,9 @@ Called just while we are setting up the server, and just before the DocPad route
 Use to extend the server with routes that will be triggered before the DocPad routes.
 
 Options:
-- `server` and `serverExpress` are the [express.js](http://expressjs.com/) server instance we are using
+- `server` and `serverExpress` are the [Express.js](http://expressjs.com) server instance we are using
 - `serverHttp` is the raw Node.js HTTP server we are using
-- `express` is the express module we are using
+- `express` is the Express module we are using
 
 
 ### `serverAfter`
@@ -284,9 +284,9 @@ Called just after we finished setting up the server.
 Use to extend the server with routes that will be triggered after the DocPad routes.
 
 Options:
-- `server` and `serverExpress` are the [express.js](http://expressjs.com/) server instance we are using
+- `server` and `serverExpress` are the [express.js](http://expressjs.com) server instance we are using
 - `serverHttp` is the raw Node.js HTTP server we are using
-- `express` is the express module we are using
+- `express` is the Express module we are using
 
 
 

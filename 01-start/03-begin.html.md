@@ -141,7 +141,7 @@ docpad install eco
 
 Once installed, if we run DocPad again (`docpad run`) and then go our _Homepage_ or _About_ page, we'll see that the content actually contains the document content. In other words, it has rendered correctly through our eco templating engine. Woot woot!
 
-Now, why did we use `<%=` for the document's title, but `<%-` for the document's content? The reason for this is that `<%=` will escape the data we give it before outputting the data, which allows special characters to be interpretted as normal characters. On the other hand, `<%-` will output without performing any escaping, leaving special characters intact. So, why should we escape some things but not others? Generally, whenever the data we want to output is HTML (e.g. the document's content) we want to output it "as is", without any escaping. On the other hand, if we didn't escape document titles, titles such as `3 is > 2` would end up as `<title>3 is > 2</title>`, which is invalid HTML due to the superfluous closing element character, `>`. Thus, using escaping would result in `<title>3 is &gt; 2</title>`, which uses the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) to represent the special character. This is valid HTML and looks exactly the same to the user :)
+Now, why did we use `<%=` for the document's title, but `<%-` for the document's content? The reason for this is that `<%=` will escape the data we give it before outputting the data, which allows special characters to be interpretted as normal characters. On the other hand, `<%-` will output without performing any escaping, leaving special characters intact. So, why should we escape some things but not others? Generally, whenever the data we want to output is HTML (e.g., the document's content) we want to output it "as is", without any escaping. On the other hand, if we didn't escape document titles, titles such as `3 is > 2` would end up as `<title>3 is > 2</title>`, which is invalid HTML due to the superfluous closing element character, `>`. Thus, using escaping would result in `<title>3 is &gt; 2</title>`, which uses the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) to represent the special character. This is valid HTML and looks exactly the same to the user :)
 
 
 ### A note on Plugins
@@ -299,7 +299,7 @@ _Pre-Processors_ are amazing things. They allow us to write documents in one lan
 
 
 ### Using Markdown, an HTML Pre-Processor
-HTML's verbose syntax is terrible for writing content that is more text than markup (e.g. articles, comments, etc). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) (one of the many HTML Pre-Processors available to us as [Plugins](/docpad/plugins)) comes to the rescue!
+HTML's verbose syntax is terrible for writing content that is more text than markup (e.g., articles, comments, etc.). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) (one of the many HTML Pre-Processors available to us as [Plugins](/docpad/plugins)) comes to the rescue!
 
 Install the [Marked Markdown Plugin](/plugin/marked) by running `docpad install marked`.
 
@@ -338,7 +338,7 @@ Sweet, you're now ready to rock the house with Stylus!
 
 
 ### Using CoffeeScript, a JavaScript Pre-Processor
-Sometimes people can get quite irritated with JavaScript's verbosity, and very annoyed at its nit-picking, such as when they forget a single comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org/) (one of the many [JavaScript Pre-Processors](/docpad/plugins) available to us) restores our sanity!
+Sometimes people can get quite irritated with JavaScript's verbosity, and very annoyed at its nit-picking, such as when they forget a single comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org) (one of the many [JavaScript Pre-Processors](/docpad/plugins) available to us) restores our sanity!
 
 Install the [CoffeeScript Plugin](/plugin/coffeescript) by running `docpad install coffeescript`.
 
@@ -545,7 +545,7 @@ This ability is priceless when doing more complicated things with DocPad. For in
 As you now have all the tools and knowledge required to be able to create the blog post section, we've left that part as an exercise for you! We've done this to help you retain and make best use of all the awesomeness you've just learned.
 
 - If you need a few pointers to help you get started, here you go :)
-	- Create a new layout called `post` that will use the default layout. Use it to perform custom styling for your blog post (e.g. `<div class="post"><%- @content %></div>`).
+	- Create a new layout called `post` that will use the default layout. Use it to perform custom styling for your blog post (e.g., `<div class="post"><%- @content %></div>`).
 	- When creating your blog posts, we recommend giving them a `date` meta data attribute in the format of `date: 2012-12-25`, so you can sort your blog posts in descending date order.
 	- Create a new directory called `posts` that contains all of your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection in order to retrieve all documents in the `posts` output directory (`/my-new-website/out/posts`). You can refer to the [Meta Data Page](/docpad/meta-data) for more information about the attributes already available to you.
 	- Create a new page called `posts.html.eco` that lists all your blog posts. This will be, more or less, the same as our navigation menu. If you would like to display descriptons of the blog posts, just add that as a meta data attribute for the blog posts, and then output that meta data attribute. If you want to show the rendered content of the data, you can use `post.contentRenderedWithoutLayouts`. You can refer to the [Meta Data Page](/docpad/meta-data) for more information about the attributes already available to you.

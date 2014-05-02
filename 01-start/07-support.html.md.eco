@@ -34,7 +34,7 @@ For bug reports relating to plugins, use the Plugin's GitHub Issue Tracker. You 
 - What happened
 - What you expected
 - The skeleton that was affected (if applicable)
-- The `docpad-debug.log` file when you run DocPad in debug mode by specifying the `-d` flag, e.g. `docpad run -d`
+- The `docpad-debug.log` file when you run DocPad in debug mode by specifying the `-d` flag (e.g., `docpad run -d`)
 
 [Post your bug report.](https://github.com/bevry/docpad/issues/new)
 

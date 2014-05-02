@@ -16,37 +16,37 @@ These are plugins that add support for extra markups and languages to DocPad:
 
 - [cmds](https://github.com/pflannery/docpad-plugin-cmds/) - Adds some shell scripting fun. Supports `.anything.bash|.anything.sh|.anything.ps1|.anything.cmd`
 - [coffeescript](/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
-- [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org/) to anything `.anything.coffee`
+- [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org) to anything `.anything.coffee`
 - [coffeemugg](https://github.com/pflannery/docpad-plugin-coffeemugg) - Supports [CoffeeMugg](https://github.com/jaekwon/CoffeeMugg)  to anything `.anything.coffee`
 - [consolidate](http://github.com/robloach/docpad-plugin-consolidate) - Supports many template engines via [Consolidate.js](https://github.com/visionmedia/consolidate.js)
 - [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
 - [eco](/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
-- [haml](/plugin/haml/) - Supports [Haml](http://haml-lang.com/) to anything `.anything.haml`
+- [haml](/plugin/haml/) - Supports [Haml](http://haml-lang.com) to anything `.anything.haml`
 - [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [Haml Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
-- [handlebars](/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com/) to anything `.anything.(hb|hbs|handlebars)`
+- [handlebars](/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com) to anything `.anything.(hb|hbs|handlebars)`
 - [hogan](/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
 - [html2coffee](/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
-- [html2jade](/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com/) `.jade.html`
+- [html2jade](/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com) `.jade.html`
 - [htmlmin](http://github.com/robloach/docpad-plugin-htmlmin) - Supports minifying HTML with [HTML-Minifier](http://kangax.github.io/html-minifier/) `.html.anything`
-- [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com/) to anything `.anything.jade`
+- [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com) to anything `.anything.jade`
 - [js2coffee](https://npmjs.org/package/docpad-plugin-js2coffee) - Supports JavaScript to CoffeeScript `.coffee.js`
-- [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org/) to CSS `.css.less`
+- [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org) to CSS `.css.less`
 - [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net/) to JavaScript `.js.ls`
 - [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
-- [move](/plugin/move) - Supports [Move](http://movelang.org/) to JavaScript `.js.move`
+- [move](/plugin/move) - Supports [Move](http://movelang.org) to JavaScript `.js.move`
 - [multimarkdown](https://github.com/takitapart/docpad-plugin-multimarkdown) - Supports [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) to HTML `.html.(md|markdown)` via [node-multimarkdown](https://github.com/dtjm/node-multimarkdown)
 - [php](/plugin/php) - Supports [PHP](http://php.net/) to anything `.anything.(php|phtml)`
 - [robotskirt](/plugin/robotskirt/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [robotskirt](https://github.com/benmills/robotskirt)
-- [roole](https://github.com/georgeosddev/docpad-plugin-roole) - Supports [Roole](http://roole.org/) to CSS `.css.roo`
-- [ruby](/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org/) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.(ruby|erb)`
-- [sass](/plugin/sass/) - Supports [SCSS and SASS](http://sass-lang.com/) to CSS (includes [compass](http://compass-style.org/) support) `.css.(sass|scss)`
-- [slim](https://github.com/patocallaghan/docpad-plugin-slim) - Supports [Slim](http://slim-lang.com/) to anything `.anything.slim`
+- [roole](https://github.com/georgeosddev/docpad-plugin-roole) - Supports [Roole](http://roole.org) to CSS `.css.roo`
+- [ruby](/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.(ruby|erb)`
+- [sass](/plugin/sass/) - Supports [SCSS and SASS](http://sass-lang.com) to CSS (includes [compass](http://compass-style.org) support) `.css.(sass|scss)`
+- [slim](https://github.com/patocallaghan/docpad-plugin-slim) - Supports [Slim](http://slim-lang.com) to anything `.anything.slim`
 - [styl](/plugin/styl/) - Supports [Styl](https://github.com/visionmedia/styl) to CSS `.css.styl`
 - [stylus](/plugin/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.(styl|stylus)`
-- [nodesass](https://github.com/jking90/docpad-plugin-nodesass) - Supports [SCSS](http://sass-lang.com/) to CSS (using [node-sass](https://github.com/andrew/node-sass)) `.css.scss`
+- [nodesass](https://github.com/jking90/docpad-plugin-nodesass) - Supports [SCSS](http://sass-lang.com) to CSS (using [node-sass](https://github.com/andrew/node-sass)) `.css.scss`
 - [teacup](https://github.com/hurrymaplelad/docpad-plugin-teacup/) - Supports [Teacup](http://goodeggs.github.io/teacup/) to HTML `.html.coffee`
-- [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](http://textile.sitemonks.com/) to HTML `.html.textile`
-- [typescript](https://github.com/bpampuch/docpad-plugin-tsc) - Supports [TypeScript](http://www.typescriptlang.org/) to JavaScript `.js.ts`
+- [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](http://textile.sitemonks.com) to HTML `.html.textile`
+- [typescript](https://github.com/bpampuch/docpad-plugin-tsc) - Supports [TypeScript](http://www.typescriptlang.org) to JavaScript `.js.ts`
 - [vash](https://github.com/harmony7/docpad-plugin-vash) - Supports [Vash](https://github.com/kirbysayshi/vash), an implementation of the [Razor template syntax](http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx) for JavaScript, to anything `.anything.vash`
 - [yaml](https://github.com/jeremyfa/docpad-plugin-yamljs) - Supports [YAML](http://en.wikipedia.org/wiki/YAML) to JSON `.json.(yaml|yml)` and JSON to YAML `.(yml|yaml).json`
 
@@ -55,18 +55,18 @@ These are plugins that add support for extra markups and languages to DocPad:
 
 These are plugins that add extra functionality to DocPad:
 
-- [addthis](https://github.com/mikeumus/docpad-plugin-addthis) - Adds the [AddThis](http://www.addthis.com/) toolbar into your project
+- [addthis](https://github.com/mikeumus/docpad-plugin-addthis) - Adds the [AddThis](http://www.addthis.com) toolbar into your project
 - [alias](https://github.com/field/docpad-plugin-alias) - Adds configurable hard or soft aliases for Docpad documents.
 - [assets](https://github.com/mcdee/docpad-plugin-assets) - Change URL of asset files to contain hash of contents, allowing for effective caching whilst enabling cache busting when contents change
 - [associatedfiles](/plugin/associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
 - [basicauth](https://github.com/mikeumus/docpad-plugin-basicauth) - Adds basic authentication to your project
 - [browserifybundles](/plugin/browserifybundles) - Add configuration to your DocPad configuration file to create browserify bundles of your scripts
 - [browserifydocs](/plugin/browserifydocs) - Browserify your documents by adding `browserify: true` to their meta data
-- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like CoffeeScript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
+- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like CoffeeScript, less, etc.) using [Buildr](https://github.com/balupton/buildr.npm)
 - [cachr](/plugin/cachr/) - Allows you to cache remote URLs locally from within your templates
 - [cleancss](/plugin/cleancss) - Concatinate and minify CSS files with the `cleancss: true` meta data
 - [cleanurls](/plugin/cleanurls/) - Adds support for URLs like `/blog/hello` as well as the original URL `/blog/hello.html`
-- [coffeelint](https://github.com/jking90/docpad-plugin-coffeelint) - Prints [coffeelint](http://www.coffeelint.org/) errors to the console
+- [coffeelint](https://github.com/jking90/docpad-plugin-coffeelint) - Prints [coffeelint](http://www.coffeelint.org) errors to the console
 - [csv](https://github.com/CycoPH/docpad-plugin-csv/) - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2
 - [datefromfilename](https://github.com/grassator/docpad-plugin-datefromfilename) - Automaticaly set the date meta-data property by determining it from the document's filename
 - [dateurls](https://github.com/mgroves84/docpad-plugin-dateurls/) - Adds support for date based URLs like `/2013/04/27/hello.html`
@@ -78,23 +78,23 @@ These are plugins that add extra functionality to DocPad:
 - [heapdumper](https://github.com/pflannery/docpad-plugin-heapdumper) - Generates a heapdump snapshot for chosen DocPad event(s), viewable in the chrome profiler
 - [highlightjs](/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [jsexc](https://github.com/JeffreyZhao/docpad-plugin-jscexc) - Adds the ability to apply AOT compilation to JavaScript files
-- [jshint](https://github.com/jking90/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com/) errors to the console
+- [jshint](https://github.com/jking90/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com) errors to the console
 - [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate .json file for quick loading via AJAX.
 - [livereload](/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [lunr](https://github.com/brockfanning/docpad-plugin-lunr) - Client-side full-text and faceted search using [Lunr.js](http://lunrjs.com)
 - [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from documents folder
-- [moment](https://github.com/brockfanning/docpad-plugin-moment) - Date formatting and access to [Moment.js](http://momentjs.com/) library
+- [moment](https://github.com/brockfanning/docpad-plugin-moment) - Date formatting and access to [Moment.js](http://momentjs.com) library
 - [nativecomments](/plugin/nativecomments/) - Adds support for native comments to DocPad
 - [navlinks](https://github.com/lucor/docpad-plugin-navlinks) - Adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection.
 - [paged](/plugin/paged/) - Adds multiple page support to documents allowing you to render one document out to many pages
 - [partials](/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
-- [pygments](/plugin/pygments/) - Adds [Pygments](http://pygments.org/) syntax highlighting to code snippets
+- [pygments](/plugin/pygments/) - Adds [Pygments](http://pygments.org) syntax highlighting to code snippets
 - [react](https://github.com/chrishale/docpad-plugin-react) - Renders markup for [React](http://facebook.github.io/react/) Components
 - [related](/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
 - [rss](https://github.com/hurrymaplelad/docpad-plugin-rss) - Generates an RSS feed for a configurable collection
 - [scheduling](https://github.com/miletbaker/docpad-plugin-scheduling) - Schedules content so that it is not rendered out before the ```date``` specified in the content's meta-data.
 - [services](/plugin/services/) - Adds support for many 3rd party services to DocPad
-- [shortcodes](https://github.com/field/docpad-plugin-shortcodes) - Adds various Wordpress style shortcodes e.g. [video id="123"] to simplify template writing.
+- [shortcodes](https://github.com/field/docpad-plugin-shortcodes) - Adds various Wordpress style shortcodes (e.g., `[video id="123"]`) to simplify template writing.
 - [sitemap](https://github.com/benjamind/docpad-plugin-sitemap) - Generates a `sitemap.xml` file for your site from the `html` documents collection
 - [tableofcontents](https://github.com/takitapart/docpad-plugin-tableofcontents) - Automatically generate table of contents
 - [text](/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
@@ -108,7 +108,7 @@ These are plugins that add extra functionality to DocPad:
 
 These are plugins that make [deploying](/docpad/deploy) to particular services even easier:
 
-- [ghpages](/plugin/ghpages) - Deploy to [GitHub Pages](http://pages.github.com/) as easy as `docpad deploy-ghpages`
+- [ghpages](/plugin/ghpages) - Deploy to [GitHub Pages](http://pages.github.com) as easy as `docpad deploy-ghpages`
 - [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation
 
 

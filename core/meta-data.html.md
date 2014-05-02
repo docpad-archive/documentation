@@ -4,7 +4,7 @@ title: "Meta Data"
 
 ## Introduction
 
-Meta data goes at the top of documents, and is defined by any character that repeats 3 or more times. For example, `---` is the most common usage, but you can also use `###` or whatever repeats 3 or more times. By default, we parse the meta data with [YAML](http://www.yaml.org/) but you can also use [CSON](https://github.com/bevry/cson) by doing `--- cson` instead.
+Meta data goes at the top of documents, and is defined by any character that repeats 3 or more times. For example, `---` is the most common usage, but you can also use `###` or whatever repeats 3 or more times. By default, we parse the meta data with [YAML](http://www.yaml.org) but you can also use [CSON](https://github.com/bevry/cson) by doing `--- cson` instead.
 
 An example document that uses meta data will look like this:
 
@@ -49,7 +49,7 @@ The secondary URLs for a document. It can be a comma seperated values list, or a
 Defaults to `false`. If set to `true`, the document will not be parsed. Useful for draft documents.
 
 #### `standalone`
-Defaults to `false`. If set to `true`, when a change is detected for the document, we will only regenerate this document and not anything else (e.g. documents with `referencesOthers` set to `true`).
+Defaults to `false`. If set to `true`, when a change is detected for the document, we will only regenerate this document and not anything else (e.g., documents with `referencesOthers` set to `true`).
 
 
 ### For Documents
@@ -84,13 +84,13 @@ The unique document indentifier. Defaults to the [cid](http://backbonejs.org/#Mo
 The file's name without the extension.
 
 #### `extension`
-The file's last extension. E.g. will be set to `eco` for the file `hello.md.eco`.
+The file's last extension (e.g., will be set to `eco` for the file `hello.md.eco`).
 
 #### `outExtension`
 The extension used for the output file. Same method as `extension` however it takes layouts into account as well.
 
 #### `extensions`
-The file's extensions as an array. E.g. will be set to `["md","eco"]` for the file `hello.md.eco`.
+The file's extensions as an array (e.g., will be set to `["md","eco"]` for the file `hello.md.eco`).
 
 #### `filename`
 The file's name with the extension.

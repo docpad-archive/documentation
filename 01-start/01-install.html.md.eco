@@ -1,7 +1,7 @@
 ```
 title: "Install"
 ```
-_If you are upgrading from one major version to another (e.g. DocPad v5 to DocPad v6), be sure to checkout our [Upgrade Guide](/docpad/upgrade) for information relating to backwards compatibility breaks._
+_If you are upgrading from one major version to another (e.g., DocPad v5 to DocPad v6), be sure to checkout our [Upgrade Guide](/docpad/upgrade) for information relating to backwards compatibility breaks._
 
 1. [Install Node.js & Other Dependencies](/node/install)
 
@@ -17,6 +17,6 @@ _If you are upgrading from one major version to another (e.g. DocPad v5 to DocPa
 
 1. **When upgrading:** in addition to the above, run `docpad update` inside your project directory to ensure that your local installations of DocPad and its plugins are updated to their latest compatible versions
 
-1. When you run DocPad for the first time, you'll be asked if you agree with the [Terms of Service](http://docpad.org/tos). The TOS is necessary due to our extreme transparancy and respect for our users. We want to make sure that our respect for your information is guaranteed, and that it will never be abused. Without a TOS, expectations can become misaligned and problems could occur, we never want that. We want our users to know the exact measures we take in order to best serve you (collecting statistics, running newsletters, expanding the business, etc), just so you know how highly we regard you over ourselves.
+1. When you run DocPad for the first time, you'll be asked if you agree with the [Terms of Service](http://docpad.org/tos). The TOS is necessary due to our extreme transparancy and respect for our users. We want to make sure that our respect for your information is guaranteed, and that it will never be abused. Without a TOS, expectations can become misaligned and problems could occur, we never want that. We want our users to know the exact measures we take in order to best serve you (collecting statistics, running newsletters, expanding the business, etc.), just so you know how highly we regard you over ourselves.
 
 _If you get any errors, try running DocPad anyway (most installation errors are non fatal and just for debugging purposes). If you do get a fatal error then refer to our [Troubleshooting Guide](/docpad/troubleshoot) as there's probably already a working solution. :-)_

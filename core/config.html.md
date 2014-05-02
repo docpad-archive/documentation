@@ -49,7 +49,7 @@ docpadConfig = {
 
 	# Plugin Paths
 	# An array of special paths which to load single plugins from
-	# E.g. ['/a/path/to/a/docpad-plugin-special']
+	# (e.g., ['/a/path/to/a/docpad-plugin-special'])
 	pluginPaths: []  # default
 
 	# Plugins Paths
@@ -70,7 +70,7 @@ docpadConfig = {
 	# Regenerate Delay
 	# The time (in milliseconds) to wait after a source file has
 	# changed before using it to regenerate. Updating over the
-	# network (e.g. via FTP) can cause a page to be partially
+	# network (e.g., via FTP) can cause a page to be partially
 	# rendered as the page is regenerated *before* the source file
 	# has completed updating: in this case increase this value.
 	regenerateDelay: 100    # default
@@ -117,7 +117,7 @@ docpadConfig = {
 
 	# Ignore Common Patterns
 	# Whether or not we should ignore commonly undesired files from the scanning process
-	# E.g. .DStore, thumbs.db, .git, files that start with a tilda, etc.
+	# (e.g., .DStore, thumbs.db, .git, files that start with a tilda, etc.)
 	ignoreCommonPatterns: true  # default
 
 	# Ignore Custom Patterns
@@ -226,7 +226,7 @@ docpadConfig = {
 	
 	# Detect Encoding
 	# Should we attempt to auto detect the encoding of our files?
-	# Useful when you are using foreign encoding (e.g. GBK) for your files
+	# Useful when you are using foreign encoding (e.g., GBK) for your files
 	# Only works on unix systems currently (limit of iconv module)
 	detectEncoding: false
 
@@ -251,7 +251,7 @@ docpadConfig = {
 	prompts: false  # default
 
 	# Helper Url
-	# Used for subscribing to newsletter, account information, and statistics etc
+	# Used for subscribing to newsletter, account information, and statistics, etc.
 	helperUrl: 'https://docpad.org/helper/'  # default
 
 	# Safe Mode
@@ -368,7 +368,7 @@ docpadConfig = {
 	# Environment Configuration
 
 	# Locale Code
-	# The code we shall use for our locale (e.g. `en`, `fr`, etc)
+	# The code we shall use for our locale (e.g., `en`, `fr`, etc.)
 	# If not set, we will attempt to detect the system's locale, if the locale can't be detected or if our locale file is not found for it, we will revert to `en`
 	localeCode: null  # default
 
@@ -410,13 +410,13 @@ KEY2=VALUE2
 
 With all key value pairs being added to the `process.env` environment variable.
 
-It is useful for setting sensitive information such as API keys and database information etc - if using for this purpose, then be sure to add the `.env` file to your `.gitignore` file.
+It is useful for setting sensitive information such as API keys and database information etc. - if using for this purpose, then be sure to add the `.env` file to your `.gitignore` file.
 
 
 
 
 ## Global Configuration File
-DocPad will also create a global configuration file located at `~/.docpad.cson` (or `~/Dropbox/.docpad.cson` if you have [Dropbox](http://j.mp/dropbox-bal) installed).The `~` indicates your home directory, e.g. `/Users/balupton`, not your project directory.
+DocPad will also create a global configuration file located at `~/.docpad.cson` (or `~/Dropbox/.docpad.cson` if you have [Dropbox](http://j.mp/dropbox-bal) installed).The `~` indicates your home directory (e.g., `/Users/balupton`), not your project directory.
 
 This file is typically used to store information relating to your DocPad preferences, such as whether or not you have agreed to the [TOS](/tos) and subscribed to our newsletter or not, however it can also be used to load in configuration that you would like applied to all of your projects. Normally, we wouldn't touch this file, however it is useful to on the odd occasion.
 

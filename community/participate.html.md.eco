@@ -35,7 +35,7 @@ The focus on "bugs first, features later" is to ensure that the users of DocPad 
 
 
 #### Implement and release tasks independently of each other
-As we use the amazing git technology, there is a thing called branching, each new task (feature, bug, etc) to be done should be implemented in its own branch. This prevents the feature from interfering with other features while you work on it. Once the feature is stable, a DocPad maintainer will pull it with the latest master branch and make sure it is still stable, then merge it into master branch and perform a release. This allows us to implement and release tasks independently on each other. So developers get immediate feedback, and users get immediate results - without any waiting! yay!
+As we use the amazing git technology, there is a thing called branching, each new task (feature, bug, etc.) to be done should be implemented in its own branch. This prevents the feature from interfering with other features while you work on it. Once the feature is stable, a DocPad maintainer will pull it with the latest master branch and make sure it is still stable, then merge it into master branch and perform a release. This allows us to implement and release tasks independently on each other. So developers get immediate feedback, and users get immediate results - without any waiting! yay!
 
 <% if @getContributors().length: %>
 ## Contributors

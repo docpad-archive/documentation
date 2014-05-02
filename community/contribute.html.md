@@ -118,7 +118,7 @@ To publish your changes as the project owner:
 
 1. Switch to the master branch: `git checkout master`
 1. Merge in the changes of the feature branch (if applicable)
-1. Increment the version number in the `package.json` file according to the [semantic versioning](http://semver.org/) standard, that is:
+1. Increment the version number in the `package.json` file according to the [semantic versioning](http://semver.org) standard, that is:
     1. `x.0.0` MAJOR version when you make incompatible API changes,
     1. `x.y.0` MINOR version when you add functionality in a backwards-compatible manner, and
     1. `x.y.z` PATCH version when you make backwards-compatible bug fixes.
