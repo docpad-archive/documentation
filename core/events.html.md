@@ -182,7 +182,7 @@ Called just before we start rendering all the files. Partnered with the `renderA
 
 
 ### `renderCollectionBefore`
-Triggered before a render collection is about to be rendered. Added by [Bruno Heridet](https://github.com/Delapouite) with [pull request #608](https://github.com/bevry/docpad/pull/608).
+Triggered before a render collection is about to be rendered. Added by [Bruno Heridet](https://github.com/Delapouite) with [Pull Request #608](https://github.com/bevry/docpad/pull/608).
 
 **Options:**
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
@@ -190,7 +190,7 @@ Triggered before a render collection is about to be rendered. Added by [Bruno He
 
 
 ### `renderCollectionAfter`
-Triggered before a render collection is about to be rendered. Added by [Bruno Heridet](https://github.com/Delapouite) with [pull request #608](https://github.com/bevry/docpad/pull/608).
+Triggered before a render collection is about to be rendered. Added by [Bruno Heridet](https://github.com/Delapouite) with [Pull Request #608](https://github.com/bevry/docpad/pull/608).
 
 **Options:**
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
@@ -296,7 +296,7 @@ Called just after we finished setting up the server.
 Use to extend the server with routes that will be triggered after the DocPad routes.
 
 **Options:**
-- `server` and `serverExpress` are the [express.js](http://expressjs.com) server instance we are using
+- `server` and `serverExpress` are the [Express.js](http://expressjs.com) server instance we are using
 - `serverHttp` is the raw Node.js HTTP server we are using
 - `express` is the Express module we are using
 
