@@ -30,7 +30,7 @@ title: "Template Data & Helpers"
 	- `documents` &mdash; for all documents
 	- `files` &mdash; for all files
 	- `layouts` &mdash; for all files
-	- `html` &mdash; for all documents and files that result in a html file
+	- `html` &mdash; for all documents and files that result in an HTML file
 	- `stylesheet` &mdash; for all stylesheet files (includes stylesheet pre-processor files)
 - `getFiles(query, sorting, paging)` get all files that match the arguments, caches the result collection
 - `getFile(query, sorting, paging)` get a single file that matches the arguments
