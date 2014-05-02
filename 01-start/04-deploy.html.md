@@ -87,7 +87,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	exitWithMessageOnError "Kudu Sync failed"
 	```
 
-1. Last, create a web.config file in the files directory of your site with the URL rewrite rules shown below. These rules remove the html extensions from your urls. You can see the main portions of this web.config file below. You can download the complete file [here](https://gist.github.com/ntotten/4715760#file-web-config).
+1. Last, create a web.config file in the files directory of your site with the URL rewrite rules shown below. These rules remove the html extensions from your URLs. You can see the main portions of this web.config file below. You can download the complete file [here](https://gist.github.com/ntotten/4715760#file-web-config).
 
 	``` xml
 	<rule name="RemoveHTMLExtensions" stopProcessing="true">

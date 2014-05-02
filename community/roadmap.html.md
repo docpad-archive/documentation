@@ -54,7 +54,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- QuickStart
 		1. Selecting your skeleton
 		2. Selecting your plugins
-		3. Configuring docpad and plugins
+		3. Configuring DocPad and plugins
 	- Administration
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
@@ -65,7 +65,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 ### Version 6
 
 - v6.60
-	- Added caching http headers
+	- Added caching HTTP headers
 
 - v6.59
 	- [Fix Watchr once and for all](https://github.com/bevry/watchr/issues/33)
@@ -87,7 +87,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- Locales can now be merged together
 
 - v6.51
-	- Run the local docpad installation if it exists
+	- Run the local DocPad installation if it exists
 
 - v6.49
 	- Cleanup on destroy
@@ -160,7 +160,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 
 - v6.2
 	- Environment specific configuration
-	- Better node.js deployments
+	- Better Node.js deployments
 	- Better extendability
 
 - v6.1
@@ -225,17 +225,17 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 
 - v2.1
 	- Dynamic Documents
-		- These are rendered per request, and have access to the express.js request object
+		- These are rendered per request, and have access to the Express.js request object
 		- They enable things like form handling, search, real-time updating data, etc.
 
 - v2.0
 	- Plugin's have their own `package.json`
 		- This specifies the plugin's dependencies
-		- When the plugin is used, docpad will do a `cd $pluginDir; npm install`
+		- When the plugin is used, DocPad will do a `cd $pluginDir; npm install`
 	- Plugins and DocPad configurable through project's `package.json`
 	- Plugins and DocPad configurable through project's `docpad.coffee`
 	- Front-End Administration Plugin
-		- Adds in some client-side javascript
+		- Adds in some client-side JavaScript
 		- Utilises contentEditable with semantic properties to update
 	- REST Plugin
 		- Support read and write of files
@@ -243,7 +243,7 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 
 ### Version 1
 
-Version 1 focused on improving the scalability, stability, and ease-of-use of docpad. Bringing it to a vastly superior alternative to other static site generators.
+Version 1 focused on improving the scalability, stability, and ease-of-use of DocPad. Bringing it to a vastly superior alternative to other static site generators.
 
 ### Version 0
 

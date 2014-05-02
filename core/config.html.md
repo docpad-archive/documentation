@@ -6,9 +6,9 @@ title: "Configuration"
 
 The DocPad configuration file sits within the root of your DocPad project and is named as one of the following. Each name provides a special meaning. Here are the valid names:
 
-- `docpad.js` a node javascript file, will generally look like: `module.exports = {/*the configuration*/}`
-- `docpad.json` a json file, does not allow functions, will generally look like: `{/*the configuration*/}`
-- `docpad.coffee` a node coffeescript file, will generally look like: `module.exports = /*the configuration*/`
+- `docpad.js` a Node JavaScript file, will generally look like: `module.exports = {/*the configuration*/}`
+- `docpad.json` a JSON file, does not allow functions, will generally look like: `{/*the configuration*/}`
+- `docpad.coffee` a Node CoffeeScript file, will generally look like: `module.exports = /*the configuration*/`
 - `docpad.cson` a [cson](https://github.com/bevry/cson) file, will generally look like: `/*the configuration*/`
 
 The advantage of `docpad.js` and `docpad.coffee` over `docpad.json` and `docpad.cson` is that they allow us to declare functions, as well as call functions. However, for instances where we cannot trust the contents of the configuration files you would want to use the `docpad.json` or `docpad.cson` as they can't do anything naughty.
@@ -20,7 +20,7 @@ Generally, you'll usually always find either a `docpad.coffee` file or a `docpad
 
 ### Available Configuration
 
-The following code is of a `docpad.coffee` file that contains every single configurable docpad options - in reality you should only include the options that you have actually customised - using the following example for reference only.
+The following code is of a `docpad.coffee` file that contains every single configurable DocPad options - in reality you should only include the options that you have actually customised - using the following example for reference only.
 
 ``` coffee
 # DocPad Configuration
@@ -144,12 +144,12 @@ docpadConfig = {
 	maxAge: 86400000   # default
 
 	# Server Express
-	# The express.js instance that we want DocPad to use
+	# The Express.js instance that we want DocPad to use
 	# If not set, we will create our own
 	serverExpress: null  # default
 
 	# Server HTTP
-	# The node.js HTTP server instance that we want DocPad to use
+	# The Node.js HTTP server instance that we want DocPad to use
 	# If not set, we will create our own
 	serverHttp: null  # default
 
@@ -163,7 +163,7 @@ docpadConfig = {
 	# Whether or not we should extend the server with our custom middleware
 	extendServer: true  # default
 
-	# The standard middlewares (bodeParser, methodOverride, express router)
+	# The standard middlewares (bodeParser, methodOverride, Express router)
 	middlewareStandard: true  # default
 
 	# The standard bodyParser middleware
@@ -172,7 +172,7 @@ docpadConfig = {
 	# The standard methodOverride middleware
 	middlewareMethodOverride: true  # default
 
-	# The standard express router middleware
+	# The standard Express router middleware
 	middlewareExpressRouter: true  # default
 
 	# Our own 404 middleware
@@ -278,7 +278,7 @@ docpadConfig = {
 
 		# Specify some site properties
 		site:
-			# The production url of our website
+			# The production URL of our website
 			url: "http://website.com"
 
 			# The default title of our website

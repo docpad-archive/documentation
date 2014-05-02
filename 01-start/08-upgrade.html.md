@@ -18,7 +18,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 	- Removed `database`, `documents`, `collections`, `blocks` from `templatedata`. Instead, use their helper based alternatives: `getDatabase()`, `getCollection('documents')`, `getCollection('collectionName')`, `getBlock('blockName')`
 - Changes affecting everyone:
 	- Removed the prototypes `String::startsWith`, `String::finishesWith`, `Array::hasCount`, `Array::has` as no one ever used them
-	- Plugin versions have been bumped to `2.x` for DocPad v6.x compatibility. You should update all your docpad plugins versions in your `package.json` to `2.0.x` (e.g. `"docpad-plugin-eco": "2.0.x"`) then run `npm install` to install the new versions of the plugins
+	- Plugin versions have been bumped to `2.x` for DocPad v6.x compatibility. You should update all your DocPad plugins versions in your `package.json` to `2.0.x` (e.g. `"docpad-plugin-eco": "2.0.x"`) then run `npm install` to install the new versions of the plugins
 - Changes affecting pugin developers:
 	- Removed `docpadInstance.documents`. Instead, use `docpadInstance.getCollection('documents')`
 	- Plugin tests are now run via `npm test` on your plugin directory, allowing you to use whatever test runner you want
@@ -35,7 +35,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 	- For end-users this will have an effect wherever `@database` is used, as that is now represented by the new Query-Engine v1.1 collection, which has several changes. The most significant re `@database.find` is now `@database.findAll`, and that they now only have a synchronous interface - e.g. `@database.findAll selector, (err,results) ->` should now be `results = @database.findAll(selector)`
 	- For plugin developers, this affects any `docpad.documents`, `docpad.partials`, and `docpad.layouts` calls with the same advice as those for end-users.
 
-3. Plugins are now handled via [npm dependencies](http://npmjs.org/doc/json.html#dependencies) instead of being directly handled by docpad and end-users. This is the most significant change and affects everybody.
+3. Plugins are now handled via [npm dependencies](http://npmjs.org/doc/json.html#dependencies) instead of being directly handled by DocPad and end-users. This is the most significant change and affects everybody.
 	- For end-users, you will need to add the plugins you use to your website's `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this. Once added to your website's `package.json` file, run a `npm install` to install them.
 	- For plugin developers, there have been several important changes:
 		1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin's name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
@@ -54,9 +54,9 @@ To upgrade your DocPad installation from an older version to the latest, check o
 
 4. Plugin rendering has had a significant change, which is you should no longer use `file.content` to read and update the current document's content. Instead a new argument called `content` wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the [Extending DocPad](/docpad/extend) wiki page.
 
-5. When an error occurs, the error will now be sent back to DocPad using the [AirBrake](http://airbrake.io/) service. If you would like this disabled then you can turn it off by setting `reportErrors` to `false` in your docpad configuration.
+5. When an error occurs, the error will now be sent back to DocPad using the [AirBrake](http://airbrake.io/) service. If you would like this disabled then you can turn it off by setting `reportErrors` to `false` in your DocPad configuration.
 
-6. A lot of unstable or not as popular plugins has been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: admin, authenticate, autoupdate, buildr, html2jade, move, php, rest, roy, and ruby. If you would like to continue using them, you will have to download them manually from the docpad-extras repository and insert them into your website's `plugins` directory.
+6. A lot of unstable or not as popular plugins has been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: admin, authenticate, autoupdate, buildr, html2jade, move, php, rest, roy, and ruby. If you would like to continue using them, you will have to download them manually from the `docpad-extras` repository and insert them into your website's `plugins` directory.
 
 
 ## Upgrading from 2.x to 3.x
@@ -72,18 +72,18 @@ To upgrade your DocPad installation from an older version to the latest, check o
 1. CoffeeScript v1.1.2 does not work with Node 0.5 or 0.6, you have to use v1.1.3 or higher. To do this, re-install CoffeeScript with `npm install -g coffee-script`
 2. For plugin developers:
 	1. Plugins have been revised to become more future proof and configurable. Plugins must be in their own directory, with the following format: `plugins/${pluginName}/${pluginName}.plugin.coffee`
-	2. Plugin dependencies should no longer be in the docpad's or your project's `package.json` file, but instead in their plugin directory's `package.json` - e.g. `plugins/${pluginName}/package.json` - this file is optional, but recommended.
-	3. If a plugin's `package.json` exists, as well as its `main` property, docpad will use that as the plugin file's location instead of the location in step 2.1.
-	4. Plugin configuration should be moved to their `package.json` file, to the key `docpad.plugin` which should be an object. This is then customisable by docpad's `package.json` as well as the website's via `docpad.plugin.#{pluginName}`. The configuration of a plugin is available via the `@config` property.
-	5. To access docpad within a plugin, you should now use `@docpad` rather than having it passed through as an argument, this applies for logger too (now use `@logger`).
-	6. A lot of docpad configuration has been moved to `@docpad.config`
+	2. Plugin dependencies should no longer be in the DocPad's or your project's `package.json` file, but instead in their plugin directory's `package.json` - e.g. `plugins/${pluginName}/package.json` - this file is optional, but recommended.
+	3. If a plugin's `package.json` exists, as well as its `main` property, DocPad will use that as the plugin file's location instead of the location in step 2.1.
+	4. Plugin configuration should be moved to their `package.json` file, to the key `docpad.plugin` which should be an object. This is then customisable by DocPad's `package.json` as well as the website's via `docpad.plugin.#{pluginName}`. The configuration of a plugin is available via the `@config` property.
+	5. To access DocPad within a plugin, you should now use `@docpad` rather than having it passed through as an argument, this applies for logger too (now use `@logger`).
+	6. A lot of DocPad configuration has been moved to `@docpad.config`
 3. DocPad v2 also brings a bunch of new cool features, check out the changelog on the [homepage](https://github.com/balupton/docpad) for more info, and the [FAQ](https://github.com/balupton/docpad/wiki/FAQ) for information on how to use some of these new features :-)
 4. The Bootstrap Skeleton is now the [Kitchensink Skeleton](https://github.com/balupton/kitchensink.docpad)
 
 
 ## Upgrading from 0.x to 1.x
 
-1. Install docpad with the new global dependences `npm install -g coffee-script docpad`
+1. Install DocPad with the new global dependences `npm install -g coffee-script docpad`
 2. Any of your `documents` or `layouts` which use the eco templating engine should have the extension `.eco` appended. E.g. `layouts/default.html` to `layouts/default.html.eco`.
 3. Any of your `documents` or `layouts` which utilise a markup language should have the extension `.html` prepended. E.g. `documents/something-in-markdown.md` to `documents/something-in-markdown.html.md`
 4. These changes allow for some new incredibly powerful possibilities, such as allowing other templating engines other than eco, and allowing for multiple and more explicit markups to be applied to the files.

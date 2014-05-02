@@ -5,7 +5,7 @@ title: Write a Plugin
 
 ## Getting Started
 
-Inside your docpad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g. `plugins/yourpluginname`), and inside your plugin's directory create these two files:
+Inside your DocPad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g. `plugins/yourpluginname`), and inside your plugin's directory create these two files:
 
 
 ### `src/yourpluginname.plugin.coffee`
@@ -25,7 +25,7 @@ What this does is extends our BasePlugin from DocPad, and returns the `YourPlugi
 
 The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) is important as it provides some of the tucked away magic for our plugins. But what is even more important, is the plugin events that your plugin will hook into to provide its functionality. [You can discover the plugin events available to you on the Events Page.](/docpad/events)
 
-If you must insist on writing your plugin inside a non-coffeecript dialect, you may use the `BasePlugin.extend({})` method like so:
+If you must insist on writing your plugin inside a non-CoffeeScript dialect, you may use the `BasePlugin.extend({})` method like so:
 
 ``` javascript
 // Export Plugin
@@ -55,12 +55,12 @@ This file should look something like this:
 		"something",
 		"somethingelse"
 	],
-	"author": "Copyright holders name <copyright holder's email> (copyright holder's website url)",
+	"author": "Copyright holders name <copyright holder's email> (copyright holder's website URL)",
 	"maintainers": [
-		"Your name <your email> (your github url)"
+		"Your name <your email> (your GitHub URL)"
 	],
 	"contributors": [
-		"Your name <your email> (your github url)"
+		"Your name <your email> (your GitHub URL)"
 	],
 	"bugs": {
 		"url": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname/issues"
