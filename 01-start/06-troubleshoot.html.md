@@ -108,7 +108,7 @@ There are a few things you can do:
 
 
 ### Whenever I output a variable (like `content`) it is escaped (`<` rendered as `&lt;`)?
-Template engines by default _escape_ all variable output. Escaping is when we turn things like the open bracket `<` into it's _html entity_ equivalent `&lt;`. This helps prevent malicious code accidentally being injected into your website which can open the door to XSS attacks. As such, we have to use a special syntax to keep the variable _unescaped_ when outputted. The special syntax is different for the templating engine your using, so here are the ways we know:
+Template engines by default _escape_ all variable output. Escaping is when we turn things like the open bracket `<` into its _html entity_ equivalent `&lt;`. This helps prevent malicious code accidentally being injected into your website which can open the door to XSS attacks. As such, we have to use a special syntax to keep the variable _unescaped_ when outputted. The special syntax is different for the templating engine your using, so here are the ways we know:
 
 - Eco: `<%- content %>` instead of `<%= content %>`
 - Jade: `!= content` instead of `= content`
