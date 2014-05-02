@@ -142,7 +142,7 @@ Use this for inserting your dynamic files into the database.
 Called just before we start generating your project. Partnered with the `generateAfter` event.
 
 **Options:**
-- `reset` whether or not this is a partial (`false`) or full regeneration (`true`)
+- `reset` whether or not this is a partial- (`false`) or full-regeneration (`true`)
 - <del><code>server</code></del> 
   <ins>Deprecated; use `getServer()` API method instead</ins>
 
