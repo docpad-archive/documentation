@@ -57,10 +57,10 @@ This file should look something like this:
 	],
 	"author": "Copyright holders name <copyright holder's email> (copyright holder's website URL)",
 	"maintainers": [
-		"Your name <your email> (your github URL)"
+		"Your name <your email> (your GitHub URL)"
 	],
 	"contributors": [
-		"Your name <your email> (your github URL)"
+		"Your name <your email> (your GitHub URL)"
 	],
 	"bugs": {
 		"url": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname/issues"
