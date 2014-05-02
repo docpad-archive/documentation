@@ -99,7 +99,7 @@ There are a few things you can do:
 - [Move files that you do not reference in content listings to a raw directory with the raw plugin](https://github.com/bevry/docpad/issues/276)
 - [Set `standalone: true` to the meta data of documents that you regenerate often](/docpad/meta-data#standalone)
 - Use native/JavaScript implementations of renderers instead of non-native, non-JavaScript ones
-  - E.g. instead of using sass, use nodesass, stylus, or less
+  - E.g. instead of using SASS, use nodesass, Stylus, or Less
 - [Help us implement performance optimisations](https://github.com/bevry/docpad/issues/529)
 
 
