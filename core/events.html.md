@@ -2,11 +2,20 @@
 
 ### Event Handler Structure
 
-Event handlers in DocPad receive two arguments. The first is `opts` which is an object filled with properties that the event may provide to you. The second is `next` which is a completion callback. Both arguments are optional.
+All DocPad events receive two arguments (both optional): 
 
-Events are fired in a synchronous serial fashion, meaning fire the first handler, wait for it to finish, fire the next handler, wait for it to finish, and so on.
+1. `opts`, an simple object containing any options that the event provides
+1. `next`, a completion callback
 
-Omitting the `next` callback is perfectly valid and encouraged when you are writing synchronous code. Synchronous code is code that runs everything from start to finish in one go. Asynchronous code however is code that will run a portion at one time, and another portion at another time. With asynchronous code a completion callback is necessary for us to know when everything has properly run, or rather when it is okay to proceed to the next task (or in this case event handler).
+DocPad's events are fired in a *synchronous* (or *serial*) fashion. In other words, when the first event runs until finished, then the next event fires and runs until finished, and so on. 
+
+*Asynchronous* code, however, has no implicit guarantees about the order of execution. It will fire the first event, and may then immediately fire the second event while the first is still running. 
+
+That's why asynchronous code requires callbacks. When the first event is done, it will run the callback function it was invoked with.  It's the callback's job to signal when it's okay to proceed to the next event. 
+
+Node.js itself is built for asynchronous execution, so it's pretty common for Node.js programs to run asynchronously. 
+
+Since DocPad's events are run synchronously, omitting the `next` callback is perfectly valid (even encouraged) if you're using DocPad in your own synchronous code. (Of course, you're free to write in whatever style works best for you! If you enjoy coding in the asynchronous style, the `next` callback is available for you.)
 
 
 ### Inside your Configuration File
