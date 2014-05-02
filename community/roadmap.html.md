@@ -235,7 +235,7 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 	- Plugins and DocPad configurable through project's `package.json`
 	- Plugins and DocPad configurable through project's `docpad.coffee`
 	- Front-End Administration Plugin
-		- Adds in some client-side javascript
+		- Adds in some client-side JavaScript
 		- Utilises contentEditable with semantic properties to update
 	- REST Plugin
 		- Support read and write of files
