@@ -5,7 +5,7 @@ title: "Template Data & Helpers"
 ## Standard Template Data
 
 - `site` &mdash; an object of several site-specific properties, contains:
-	- `date` &mdash; a javascript date object for the time that the website was last generated
+	- `date` &mdash; a JavaScript date object for the time that the website was last generated
 - `document` &mdash; a JavaScript Object containing the serialised values of our `documentModel` (e.g. `documentModel.toJSON()`)
 - `req` &mdash; dynamic documents will also have this available to the, it is a reference to the current request object created by the [ExpressJS](http://expressjs.com/) framework
 - `content` &mdash; when rendering layouts the `content` template data variable contains the contents of the rendered child content to be injected into the current layout for rendering
