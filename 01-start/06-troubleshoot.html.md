@@ -90,7 +90,7 @@ This happens when the [git](http://git-scm.com) installation is not exposed to y
 
 
 ### I'm getting "EMFILE, too many open files"
-As node.js is like an octopus, able to do many things at the same time, sometimes node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running `ulimit -n 8192` in your terminal.
+As Node.js is like an octopus, able to do many things at the same time, sometimes Node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running `ulimit -n 8192` in your terminal.
 
 
 ### How can I make DocPad go even faster?

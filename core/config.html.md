@@ -149,7 +149,7 @@ docpadConfig = {
 	serverExpress: null  # default
 
 	# Server HTTP
-	# The node.js HTTP server instance that we want DocPad to use
+	# The Node.js HTTP server instance that we want DocPad to use
 	# If not set, we will create our own
 	serverHttp: null  # default
 

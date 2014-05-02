@@ -160,7 +160,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 
 - v6.2
 	- Environment specific configuration
-	- Better node.js deployments
+	- Better Node.js deployments
 	- Better extendability
 
 - v6.1

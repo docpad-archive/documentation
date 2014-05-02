@@ -274,7 +274,7 @@ Use to extend the server with routes that will be triggered before the DocPad ro
 
 Options:
 - `server` and `serverExpress` are the [express.js](http://expressjs.com/) server instance we are using
-- `serverHttp` is the raw node.js http server we are using
+- `serverHttp` is the raw Node.js HTTP server we are using
 - `express` is the express module we are using
 
 
@@ -285,7 +285,7 @@ Use to extend the server with routes that will be triggered after the DocPad rou
 
 Options:
 - `server` and `serverExpress` are the [express.js](http://expressjs.com/) server instance we are using
-- `serverHttp` is the raw node.js http server we are using
+- `serverHttp` is the raw Node.js HTTP server we are using
 - `express` is the express module we are using
 
 
