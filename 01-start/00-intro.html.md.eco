@@ -175,7 +175,7 @@ On the other hand, let's compare that with DocPad, which is:
 	- Abstraction friendly - code the way you want, how you want
 	- Use whatever language, pre-processor, markup, templating engine you want - it's all covered via our [opt-in plugins](/docpad/plugins) (if it isn't it's very easy to add)
 
-Besides this, thanks to the opt-in modular philosophy of node, we benefit from all the innovations of the community as a whole, including:
+Besides this, thanks to the opt-in modular philosophy of Node, we benefit from all the innovations of the community as a whole, including:
 
 - [Socket.io](http://socket.io/) for realtime communication between the server and client-side
 - [Browserify](https://github.com/substack/node-browserify) for being able to share server-side code directly with the client-side
