@@ -148,10 +148,12 @@ Called just before we start generating your project. Partnered with the `generat
 
 
 ### <del><code>parseBefore</code></del>
-<ins>Deprecated/removed since DocPad v6.58.0.</ins> See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
+<ins>Deprecated/removed since DocPad v6.58.0.</ins> 
+See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
 ### <del><code>parseAfter</code></del>
-<ins>Deprecated/removed since DocPad v6.58.0.</ins> See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
+<ins>Deprecated/removed since DocPad v6.58.0.</ins> 
+See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
 
 ### `conextualizeBefore`
