@@ -54,7 +54,7 @@ It turns out that Windows will prefer to treat the local `docpad.js` file as the
 
 
 ### Watching doesn't work; works only some of the time; I get `EISDIR` errors
-File watching is a pretty timid thing that we are currently working on a lot to make better. There are currently two methods we can watch files, `watch` and `watchFile`. `watch` is the default and uses the operating system's watching mechanisms, however sometimes the operating system's watching mechanisms may not be the best. If that is the case, we'd like to switch our watching method to `watchFile` which is a slower, but does work when `watch` doesn't. To do this, add the following to your [docpad configuration file](/docpad/config):
+File watching is a pretty timid thing that we are currently working on a lot to make better. There are currently two methods we can watch files, `watch` and `watchFile`. `watch` is the default and uses the operating system's watching mechanisms, however sometimes the operating system's watching mechanisms may not be the best. If that is the case, we'd like to switch our watching method to `watchFile` which is a slower, but does work when `watch` doesn't. To do this, add the following to your [DocPad configuration file](/docpad/config):
 
 ``` coffee
 watchOptions: preferredMethods: ['watchFile','watch']
@@ -65,7 +65,7 @@ Mac OS X users are most likely to encounter this issue.
 
 ### Watching is very slow to notice changes
 
-Add the following to your [docpad configuration file](/docpad/config):
+Add the following to your [DocPad configuration file](/docpad/config):
 
 
 ``` coffee
@@ -77,7 +77,7 @@ This will introduce problems however if you have previously customised watchOpti
 
 
 ### I got "We couldn't find an existing DocPad project inside your current directory..."
-This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run docpad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](/support).
+This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](/support).
 
 
 ### I'm getting "Could not locate git binary"
@@ -126,7 +126,7 @@ If you're still experiencing issues, then be sure to post about it on the [issue
 
 
 ### The growl notifications aren't displaying?
-This means you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [growl website](http://growl.info/). What this package does it provides command line applications the ability to call growl which is needed as docpad is a command line application.
+This means you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [growl website](http://growl.info/). What this package does it provides command line applications the ability to call growl which is needed as DocPad is a command line application.
 
 
 ### The exception raised by the jade plug-in during documents generation makes no sense

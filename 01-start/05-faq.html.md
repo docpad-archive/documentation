@@ -160,7 +160,7 @@ Check out the `enableUnlistedPlugins` [configuration property](/docpad/config).
 Check out the `plugins` [configuration property](/docpad/config).
 
 
-## Where can I host my docpad website?
+## Where can I host my DocPad website?
 
 [Check out our deployment section here.](/docpad/deploy)
 

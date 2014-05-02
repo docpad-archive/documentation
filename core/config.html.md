@@ -20,7 +20,7 @@ Generally, you'll usually always find either a `docpad.coffee` file or a `docpad
 
 ### Available Configuration
 
-The following code is of a `docpad.coffee` file that contains every single configurable docpad options - in reality you should only include the options that you have actually customised - using the following example for reference only.
+The following code is of a `docpad.coffee` file that contains every single configurable DocPad options - in reality you should only include the options that you have actually customised - using the following example for reference only.
 
 ``` coffee
 # DocPad Configuration

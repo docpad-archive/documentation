@@ -26,15 +26,15 @@ For bug reports relating to plugins, use the Plugin's GitHub Issue Tracker. You 
 
 **With your bug reports, specify:**
 
-- Your docpad version `docpad --version`
-- Your node version `node --version`
+- Your DocPad version `docpad --version`
+- Your Node.js version `node --version`
 - Your npm version `npm --version`
 - Your operating system's name, architecture, and version
 - What you did
 - What happened
 - What you expected
 - The skeleton that was affected (if applicable)
-- The `docpad-debug.log` file when you run docpad in debug mode by specifying the `-d` flag, e.g. `docpad run -d`
+- The `docpad-debug.log` file when you run DocPad in debug mode by specifying the `-d` flag, e.g. `docpad run -d`
 
 [Post your bug report.](https://github.com/bevry/docpad/issues/new)
 

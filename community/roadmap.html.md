@@ -54,7 +54,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- QuickStart
 		1. Selecting your skeleton
 		2. Selecting your plugins
-		3. Configuring docpad and plugins
+		3. Configuring DocPad and plugins
 	- Administration
 		- Enable/Disable Plugins
 		- Configure Plugins and Core
@@ -87,7 +87,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- Locales can now be merged together
 
 - v6.51
-	- Run the local docpad installation if it exists
+	- Run the local DocPad installation if it exists
 
 - v6.49
 	- Cleanup on destroy
@@ -243,7 +243,7 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 
 ### Version 1
 
-Version 1 focused on improving the scalability, stability, and ease-of-use of docpad. Bringing it to a vastly superior alternative to other static site generators.
+Version 1 focused on improving the scalability, stability, and ease-of-use of DocPad. Bringing it to a vastly superior alternative to other static site generators.
 
 ### Version 0
 

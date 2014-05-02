@@ -5,7 +5,7 @@ title: Write a Plugin
 
 ## Getting Started
 
-Inside your docpad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g. `plugins/yourpluginname`), and inside your plugin's directory create these two files:
+Inside your DocPad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g. `plugins/yourpluginname`), and inside your plugin's directory create these two files:
 
 
 ### `src/yourpluginname.plugin.coffee`

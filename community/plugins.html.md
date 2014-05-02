@@ -60,7 +60,7 @@ These are plugins that add extra functionality to DocPad:
 - [assets](https://github.com/mcdee/docpad-plugin-assets) - Change URL of asset files to contain hash of contents, allowing for effective caching whilst enabling cache busting when contents change
 - [associatedfiles](/plugin/associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
 - [basicauth](https://github.com/mikeumus/docpad-plugin-basicauth) - Adds basic authentication to your project
-- [browserifybundles](/plugin/browserifybundles) - Add configuration to your docpad configuration file to create browserify bundles of your scripts
+- [browserifybundles](/plugin/browserifybundles) - Add configuration to your DocPad configuration file to create browserify bundles of your scripts
 - [browserifydocs](/plugin/browserifydocs) - Browserify your documents by adding `browserify: true` to their meta data
 - [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like coffeescript, less, etc) using [Buildr](https://github.com/balupton/buildr.npm)
 - [cachr](/plugin/cachr/) - Allows you to cache remote urls locally from within your templates
@@ -75,7 +75,7 @@ These are plugins that add extra functionality to DocPad:
 - [frontend](https://npmjs.org/package/docpad-plugin-frontend) - CSS and JavaScript asset manager and compiler for DocPad
 - [gist](/plugin/gist/)  - Pulls in gists into your document
 - [grunt](http://github.com/robloach/docpad-plugin-grunt) - Run [Grunt.js](http://gruntjs.com) tasks when building with DocPad
-- [heapdumper](https://github.com/pflannery/docpad-plugin-heapdumper) - Generates a heapdump snapshot for chosen docpad event(s), viewable in the chrome profiler
+- [heapdumper](https://github.com/pflannery/docpad-plugin-heapdumper) - Generates a heapdump snapshot for chosen DocPad event(s), viewable in the chrome profiler
 - [highlightjs](/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [jsexc](https://github.com/JeffreyZhao/docpad-plugin-jscexc) - Adds the ability to apply AOT compilation to JavaScript files
 - [jshint](https://github.com/jking90/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com/) errors to the console
