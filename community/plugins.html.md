@@ -94,7 +94,7 @@ These are plugins that add extra functionality to DocPad:
 - [rss](https://github.com/hurrymaplelad/docpad-plugin-rss) - Generates an RSS feed for a configurable collection
 - [scheduling](https://github.com/miletbaker/docpad-plugin-scheduling) - Schedules content so that it is not rendered out before the ```date``` specified in the content's meta-data.
 - [services](/plugin/services/) - Adds support for many 3rd party services to DocPad
-- [shortcodes](https://github.com/field/docpad-plugin-shortcodes) - Adds various Wordpress style shortcodes e.g. [video id="123"] to simplify template writing.
+- [shortcodes](https://github.com/field/docpad-plugin-shortcodes) - Adds various Wordpress style shortcodes (e.g., `[video id="123"]`) to simplify template writing.
 - [sitemap](https://github.com/benjamind/docpad-plugin-sitemap) - Generates a `sitemap.xml` file for your site from the `html` documents collection
 - [tableofcontents](https://github.com/takitapart/docpad-plugin-tableofcontents) - Automatically generate table of contents
 - [text](/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files

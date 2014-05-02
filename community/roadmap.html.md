@@ -33,7 +33,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 		- Support adding and removing of documents
 		- Support adding and removing of files (includes uploading if in the cloud)
 	- Connect
-		- Purchasable Content (e.g. sell premium plugins, tutorials, themes, etc.)
+		- Purchasable Content (e.g., sell premium plugins, tutorials, themes, etc.)
 	- Exchange
 		- Community Centre
 			- Chat
@@ -45,7 +45,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 			- Rate and Discuss
 		- Learning Centre (tutorials, videos, etc.)
 	- QuickStart
-		- Importing content from an existing source (e.g. wordpress, tumblr, jekyll, etc.)
+		- Importing content from an existing source (e.g., wordpress, tumblr, jekyll, etc.)
 	- Connect
 		- News
 		- Blog

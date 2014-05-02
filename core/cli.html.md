@@ -38,7 +38,7 @@ title: "Command Line Interface"
 	docpad render filePath
 	```
 
-	E.g. To render a markdown file and save the result to an output file, we would use:
+	For example, to render a markdown file and save the result to an output file, we would use:
 
 	``` bash
 	docpad render inputMarkdownFile.html.md > outputMarkdownFile.html
@@ -50,7 +50,7 @@ title: "Command Line Interface"
 	echo $content | docpad render sampleFileNameWithExtensions
 	```
 
-	E.g. To render passed markdown content and save the result to a file, we would use:
+	For example, to render passed markdown content and save the result to a file, we would use:
 
 	``` bash
 	echo "**awesome**" | docpad render input.html.md > output.html
