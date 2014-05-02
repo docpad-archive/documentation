@@ -65,7 +65,7 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 ### Version 6
 
 - v6.60
-	- Added caching http headers
+	- Added caching HTTP headers
 
 - v6.59
 	- [Fix Watchr once and for all](https://github.com/bevry/watchr/issues/33)

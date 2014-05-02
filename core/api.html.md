@@ -179,7 +179,7 @@ app.use(app.router);
 
 // Add DocPad to our Application
 var docpadInstanceConfiguration = {
-	// Give it our express application and http server
+	// Give it our express application and HTTP server
 	serverExpress: app,
 	serverHttp: server,
 	
