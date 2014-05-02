@@ -144,7 +144,7 @@ docpadConfig = {
 	maxAge: 86400000   # default
 
 	# Server Express
-	# The express.js instance that we want DocPad to use
+	# The Express.js instance that we want DocPad to use
 	# If not set, we will create our own
 	serverExpress: null  # default
 
@@ -163,7 +163,7 @@ docpadConfig = {
 	# Whether or not we should extend the server with our custom middleware
 	extendServer: true  # default
 
-	# The standard middlewares (bodeParser, methodOverride, express router)
+	# The standard middlewares (bodeParser, methodOverride, Express router)
 	middlewareStandard: true  # default
 
 	# The standard bodyParser middleware
@@ -172,7 +172,7 @@ docpadConfig = {
 	# The standard methodOverride middleware
 	middlewareMethodOverride: true  # default
 
-	# The standard express router middleware
+	# The standard Express router middleware
 	middlewareExpressRouter: true  # default
 
 	# Our own 404 middleware

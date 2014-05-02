@@ -225,7 +225,7 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 
 - v2.1
 	- Dynamic Documents
-		- These are rendered per request, and have access to the express.js request object
+		- These are rendered per request, and have access to the Express.js request object
 		- They enable things like form handling, search, real-time updating data, etc.
 
 - v2.0
