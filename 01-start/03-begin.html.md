@@ -254,7 +254,7 @@ Then, to include it in our pages, we'll update the _styles Block_ in our `defaul
 <%- @getBlock("styles").add(["/styles/style.css"]).toHTML() %>
 ```
 
-Upon saving, we'll notice that our browser will automatically reload, and that our css file will be injected into the layout making our header red!
+Upon saving, we'll notice that our browser will automatically reload, and that our CSS file will be injected into the layout making our header red!
 
 
 
