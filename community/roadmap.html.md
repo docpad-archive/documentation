@@ -231,7 +231,7 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 - v2.0
 	- Plugin's have their own `package.json`
 		- This specifies the plugin's dependencies
-		- When the plugin is used, docpad will do a `cd $pluginDir; npm install`
+		- When the plugin is used, DocPad will do a `cd $pluginDir; npm install`
 	- Plugins and DocPad configurable through project's `package.json`
 	- Plugins and DocPad configurable through project's `docpad.coffee`
 	- Front-End Administration Plugin
