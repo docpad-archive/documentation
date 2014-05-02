@@ -4,7 +4,7 @@ title: "Meta Data"
 
 ## Introduction
 
-Meta data goes at the top of documents, and is defined by any character that repeats 3 or more times. For example, `---` is the most common usage, but you can also use `###` or whatever repeats 3 or more times. By default, we parse the meta data with [YAML](http://www.yaml.org/) but you can also use [CSON](https://github.com/bevry/cson) by doing `--- cson` instead.
+Meta data goes at the top of documents, and is defined by any character that repeats 3 or more times. For example, `---` is the most common usage, but you can also use `###` or whatever repeats 3 or more times. By default, we parse the meta data with [YAML](http://www.yaml.org) but you can also use [CSON](https://github.com/bevry/cson) by doing `--- cson` instead.
 
 An example document that uses meta data will look like this:
 

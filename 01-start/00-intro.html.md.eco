@@ -177,9 +177,9 @@ On the other hand, let's compare that with DocPad, which is:
 
 Besides this, thanks to the opt-in modular philosophy of Node, we benefit from all the innovations of the community as a whole, including:
 
-- [Socket.io](http://socket.io/) for realtime communication between the server and client-side
+- [Socket.io](http://socket.io) for realtime communication between the server and client-side
 - [Browserify](https://github.com/substack/node-browserify) for being able to share server-side code directly with the client-side
-- Native pre-processor rendering such as [CoffeeScript](http://coffeescript.org/), [CoffeeKup](http://coffeekup.org/), [Stylus](http://learnboost.github.com/stylus/), and [LessCSS](http://lesscss.org/)
+- Native pre-processor rendering such as [CoffeeScript](http://coffeescript.org), [CoffeeKup](http://coffeekup.org), [Stylus](http://learnboost.github.com/stylus/), and [LessCSS](http://lesscss.org)
 
 So as the node community grows and innovates, so do we. Awesome.
 

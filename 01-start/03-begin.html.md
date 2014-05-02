@@ -338,7 +338,7 @@ Sweet, you're now ready to rock the house with Stylus!
 
 
 ### Using CoffeeScript, a JavaScript Pre-Processor
-Sometimes people can get quite irritated with JavaScript's verbosity, and very annoyed at its nit-picking, such as when they forget a single comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org/) (one of the many [JavaScript Pre-Processors](/docpad/plugins) available to us) restores our sanity!
+Sometimes people can get quite irritated with JavaScript's verbosity, and very annoyed at its nit-picking, such as when they forget a single comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org) (one of the many [JavaScript Pre-Processors](/docpad/plugins) available to us) restores our sanity!
 
 Install the [CoffeeScript Plugin](/plugin/coffeescript) by running `docpad install coffeescript`.
 
