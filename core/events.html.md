@@ -22,7 +22,7 @@ Since DocPad's events are run synchronously, omitting the `next` callback is per
 
 You can bind to events in your DocPad configuration file by adding them to the `events` property. 
 
-**Example:** Let's use a `docpad.coffee` configuration file. Binding to the `serverExtend` event would look like so:
+**Example:** Let's use a `docpad.coffee` configuration file. Binding to the [`serverExtend`][] event would look like so:
 
 ``` coffeescript
 docpadConfig =
@@ -53,7 +53,7 @@ The context (what `this`/`@` points to) of event handlers is a shared object bet
 
 ### Inside your Plugins
 
-You can bind to events inside your DocPad plugin by just adding the event handler directly to your plugin's definition. As such, binding to the `render` event to render from one extension to the other would look like so:
+You can bind to events inside your DocPad plugin by just adding the event handler directly to your plugin's definition. As such, binding to the [`render`][] event to render from one extension to the other would look like so:
 
 ``` coffeescript
 # Export Plugin
@@ -105,12 +105,12 @@ Use to create additional collections.
 
 
 ### `docpadLoaded`
-Called each time the configuration for DocPad reloads. Called before `docpadReady` as we have to load the configuration in order to be ready.
+Called each time the configuration for DocPad reloads. Called before [`docpadReady`][] as we have to load the configuration in order to be ready.
 
 
 
 ### `docpadReady`
-Called once DocPad when DocPad is now ready to perform actions which is once it has finished initializing and loading its configuration. Partnered with the `docpadDestroy` event.
+Called once DocPad when DocPad is now ready to perform actions which is once it has finished initializing and loading its configuration. Partnered with the [`docpadDestroy`][] event.
 
 
 ### `consoleSetup`
@@ -128,10 +128,10 @@ Use to extend the console interface with additional commands.
 
 
 ### `populateCollectionsBefore`
-Called just before we start to insert dynamic files into the database. Called before each generation, just before the `generateBefore` event. Partnered with the `populateCollections` event.
+Called just before we start to insert dynamic files into the database. Called before each generation, just before the [`generateBefore`][] event. Partnered with the [`populateCollections`][] event.
 
 ### `populateCollections`
-Called just after we've inserted dynamic files into the collections. Called before each generation, just before the `generateBefore` event. Partnered with the `populateCollectionsBefore` event.
+Called just after we've inserted dynamic files into the collections. Called before each generation, just before the [`generateBefore`][] event. Partnered with the [`populateCollectionsBefore`][] event.
 
 Use this for inserting your dynamic files into the database.
 
@@ -141,7 +141,7 @@ Use this for inserting your dynamic files into the database.
 
 
 ### `generateBefore`
-Called just before we start generating your project. Partnered with the `generateAfter` event.
+Called just before we start generating your project. Partnered with the [`generateAfter`][] event.
 
 **Options:**
 - `reset` whether or not this is a partial- (`false`) or full-regeneration (`true`)
@@ -159,7 +159,7 @@ See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
 
 ### `conextualizeBefore`
-Called just before we start to contextualize all the files. Partnered with the `contextualizeAfter` event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
+Called just before we start to contextualize all the files. Partnered with the [`contextualizeAfter`][] event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
 
 **Options:**
 - `collection` the collection we are working with
@@ -167,7 +167,7 @@ Called just before we start to contextualize all the files. Partnered with the `
   <ins>Deprecated; use `extendTemplateData` event instead</ins>
 
 ### `contextualizeAfter`
-Called just after we've finished contextualize all the files. Partnered with the `conextualizeBefore` event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
+Called just after we've finished contextualize all the files. Partnered with the [`conextualizeBefore`][] event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
 
 **Options:**
 - `collection` the collection we are working with
@@ -177,7 +177,7 @@ Called just after we've finished contextualize all the files. Partnered with the
 
 
 ### `renderBefore`
-Called just before we start rendering all the files. Partnered with the `renderAfter` event.
+Called just before we start rendering all the files. Partnered with the [`renderAfter`][] event.
 
 **Options:**
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
@@ -247,7 +247,7 @@ Use to perform transformations to the entire document.
 
 
 ### `renderAfter`
-Called just just after we've rendered all the files. Partnered with the `renderBefore` event.
+Called just just after we've rendered all the files. Partnered with the [`renderBefore`][] event.
 
 **Options:**
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
@@ -255,7 +255,7 @@ Called just just after we've rendered all the files. Partnered with the `renderB
 
 
 ### `writeBefore`
-Called just before we start writing all the files. Partnered with the `writeAfter` event.
+Called just before we start writing all the files. Partnered with the [`writeAfter`][] event.
 
 **Options:**
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to write
@@ -263,7 +263,7 @@ Called just before we start writing all the files. Partnered with the `writeAfte
 
 
 ### `writeAfter`
-Called just just after we've wrote all the files. Partnered with the `writeBefore` event.
+Called just just after we've wrote all the files. Partnered with the [`writeBefore`][] event.
 
 **Options:**
 - `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
@@ -271,7 +271,7 @@ Called just just after we've wrote all the files. Partnered with the `writeBefor
 
 
 ### `generateAfter`
-Called just after we've finished generating your project.  Partnered with the `generateBefore` event.
+Called just after we've finished generating your project.  Partnered with the [`generateBefore`][] event.
 
 
 ### `generated`
@@ -280,7 +280,7 @@ Called just after the initial generation has completed.
 
 
 ### `serverBefore`
-Called just before we start setting up the server. Partnered with the `serverAfter` event.
+Called just before we start setting up the server. Partnered with the [`serverAfter`][] event.
 
 
 ### `serverExtend`
@@ -307,6 +307,32 @@ Use to extend the server with routes that will be triggered after the DocPad rou
 
 
 ### `docpadDestroy`
-Called when it is time for DocPad to shutdown.  Partnered with the `docpadReady` event.
+Called when it is time for DocPad to shutdown.  Partnered with the [`docpadReady`][] event.
 
 Use this to shutdown anything inside your plugins, close all connections, file system handlers, files, etc.
+
+
+[`extendTemplateData`]:          #extendtemplatedata
+[`extendCollections`]:           #extendcollections
+[`docpadLoaded`]:                #docpadloaded
+[`docpadReady`]:                 #docpadready
+[`consoleSetup`]:                #consolesetup
+[`populateCollectionsBefore`]:   #populatecollectionsbefore
+[`populateCollections`]:         #populatecollections
+[`generateBefore`]:              #generatebefore
+[`contextualizeBefore`]:         #contextualizebefore
+[`contextualizeAfter`]:          #contextualizeafter
+[`renderBefore`]:                #renderbefore
+[`renderCollectionBefore`]:      #rendercollectionbefore
+[`renderCollectionAfter`]:       #rendercollectionafter
+[`render`]:                      #render
+[`renderDocument`]:              #renderdocument
+[`renderAfter`]:                 #renderafter
+[`writeBefore`]:                 #writebefore
+[`writeAfter`]:                  #writeafter
+[`generateAfter`]:               #generateafter
+[`generated`]:                   #generated
+[`serverBefore`]:                #serverbefore
+[`serverExtend`]:                #serverextend
+[`serverAfter`]:                 #serverafter
+[`docpadDestroy`]:               #docpaddestroy
