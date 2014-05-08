@@ -17,7 +17,7 @@ _If you are upgrading from one major version to another (e.g., DocPad v5 to DocP
 
 1. **When upgrading:** in addition to the above, run `docpad update` inside your project directory to ensure that your local installations of DocPad and its plugins are updated to their latest compatible versions
 
-1. Run `docpad init` to initialize install docpad folder structure
+1. Run `docpad init` to initialize the necessary DocPad folder structure in the current folder, which would be your project directory. :)
 
 1. When you run DocPad for the first time, you'll be asked if you agree with the [Terms of Service](http://docpad.org/tos). The TOS is necessary due to our extreme transparancy and respect for our users. We want to make sure that our respect for your information is guaranteed, and that it will never be abused. Without a TOS, expectations can become misaligned and problems could occur, we never want that. We want our users to know the exact measures we take in order to best serve you (collecting statistics, running newsletters, expanding the business, etc.), just so you know how highly we regard you over ourselves.
 
