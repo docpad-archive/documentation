@@ -75,7 +75,7 @@ regenerateDelay: 0
 watchOptions: catchupDelay: 0
 ```
 
-This will introduce problems however if you have previously customised watchOptions, or if your editor uses swapfiles. [More info here.](https://github.com/bevry/docpad/issues/749)
+This will introduce problems however if you have previously customised `watchOptions`, or if your editor uses swapfiles. [More info here.](https://github.com/bevry/docpad/issues/749)
 
 
 ### I got "We couldn't find an existing DocPad project inside your current directory..."
