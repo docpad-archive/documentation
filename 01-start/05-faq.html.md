@@ -46,7 +46,7 @@ title: "My awesome blog post"
 ---
 ```
 
-That is your document's meta data. It won't be included in the output of the document, and is where you can assign extra data to your document such as title, date, tags, etc.
+That is your document's meta data. It won't be included in the output of the document. You can use it to assign extra data to your document such as title, date, tags, etc.
 
 
 ## Is a document aware of its meta data?
