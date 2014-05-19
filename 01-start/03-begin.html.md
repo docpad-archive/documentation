@@ -525,7 +525,9 @@ There is also a third parameter for paging. To learn about this, as well as what
 
 ### Setting Default Meta Data Attributes for our Pages
 
-Considering we'd probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages, so we don't always have to add `layout: default` to the [meta data](/docpad/meta-data) of each page. Just like everything, it's pretty darn easy, if you know how. And here's how:
+Considering we'd probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages, so we don't always have to add `layout: default` to the [meta data](/docpad/meta-data) of each page. 
+
+Just like everything, it's pretty darn easy, if you know how. And here's how:
 
 ``` coffee
 docpadConfig = {
