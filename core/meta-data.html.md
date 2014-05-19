@@ -193,7 +193,7 @@ The rendered content (before being wrapped by the layouts).
 ### For Files & Documents
 
 #### `toJSON()`
-Same as the [Backbone Model toJSON](http://backbonejs.org/#Model-toJSON), but we will also toJSON the original Meta Data to `meta` within the result.
+Same as the [Backbone Model toJSON](http://backbonejs.org/#Model-toJSON), but will also call `toJSON` on the original Meta Data to `meta` within the result.
 
 #### `getMeta()`
 Get the Meta Data [Backbone Model](http://backbonejs.org/#Model) for the file.
