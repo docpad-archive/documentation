@@ -416,7 +416,7 @@ It is useful for setting sensitive information such as API keys and database inf
 
 
 ## Global Configuration File
-DocPad will also create a global configuration file located at `~/.docpad.cson` (or `~/Dropbox/.docpad.cson` if you have [Dropbox](http://j.mp/dropbox-bal) installed).The `~` indicates your home directory (e.g., `/Users/balupton`), not your project directory.
+DocPad will also create a global configuration file located at `~/.docpad.cson` (or `~/Dropbox/.docpad.cson` if you have [Dropbox](http://j.mp/dropbox-bal) installed). The `~` indicates your home directory (e.g., `/Users/balupton`), not your project directory.
 
 This file is typically used to store information relating to your DocPad preferences, such as whether or not you have agreed to the [TOS](/tos) and subscribed to our newsletter or not, however it can also be used to load in configuration that you would like applied to all of your projects. Normally, we wouldn't touch this file, however it is useful to on the odd occasion.
 
