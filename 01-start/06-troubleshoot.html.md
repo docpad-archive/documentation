@@ -54,7 +54,9 @@ It turns out that Windows will prefer to treat the local `docpad.js` file as the
 
 
 ### Watching doesn't work; works only some of the time; I get `EISDIR` errors
-File watching is a pretty timid thing that we are currently working on a lot to make better. There are currently two methods we can watch files, `watch` and `watchFile`. `watch` is the default and uses the operating system's watching mechanisms, however sometimes the operating system's watching mechanisms may not be the best. If that is the case, we'd like to switch our watching method to `watchFile` which is a slower, but does work when `watch` doesn't. To do this, add the following to your [DocPad configuration file](/docpad/config):
+File watching is a pretty timid thing. We're currently working on making it better. There are currently two methods for watching files: `watch` and `watchFile`. The default is `watch`, and it uses the operating system's watching mechanisms. However, sometimes those mechanisms aren't the best. If that's the case, we'd like to switch our watching method to `watchFile`.  It's slower, but it works when `watch` doesn't. 
+
+To do this, add the following to your [DocPad configuration file](/docpad/config):
 
 ``` coffee
 watchOptions: preferredMethods: ['watchFile','watch']
