@@ -540,7 +540,7 @@ docpadConfig = {
 
 So, what does this do? It's exactly the same as before, but we use the `add` event automaticaly fired by [Backbone](http://backbonejs.org/#Collection-add) whenever a model (a page, file, document, whatever) is added to our collection. Then, inside our event, we say we want to set our default meta data attributes for the model; in this case, setting the layout to `"default"`.
 
-This is invaluable when doing more complex things in DocPad. For instance, we use it for this documentation, to allow us to base the navigation structure of our documentation files on their physical location in our file system. Thus, if we have a file `docs/docpad/01-start/04-begin.html.md`, we can detect that the project is `docpad`, and assign `project: "docpad"` to the meta data accordingly. As the section is "start" and it is order first, we set `category: "start"` and `categoryOrder: 1`, and also see that our file is `begin` and ordered 4th. This is just one nifty example. There's plenty more you'll discover on your own epic journey! :)
+This is invaluable when doing more complex things in DocPad. For instance, we use it for this documentation, to allow us to base the navigation structure of our documentation files on their physical location in our file system. Thus, if we have a file `docs/docpad/01-start/04-begin.html.md`, we can detect that the project is `docpad`, and assign `project: "docpad"` to the meta data accordingly. As the section is "start" and it is order first, we set `category: "start"` and `categoryOrder: 1`. We also see that our file is `begin` and ordered 4th. This is just one nifty example. There's plenty more you'll discover on your own epic journey! :)
 
 
 
