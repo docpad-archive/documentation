@@ -78,7 +78,7 @@ Defaults to `false`. If set to `true`, the document will be re-rendered on each 
 ### For Files & Documents
 
 #### `id`
-The unique document indentifier. Defaults to the [cid](http://backbonejs.org/#Model-cid). When we get the `relativePath`, we set the id to that instead.
+The unique document indentifier. Defaults to the [cid](http://backbonejs.org/#Model-cid). When we get the `relativePath`, we set the `id` to that instead.
 
 #### `basename`
 The file's name without the extension.
@@ -132,10 +132,10 @@ The MIME content-type for the source file.
 The MIME content-type for the output file.
 
 #### `ctime`
-The date object for when this file was created.
+The `Date` object for when this file was created.
 
 #### `mtime`
-The date object for when this file was modified.
+The `Date` object for when this file was modified.
 
 #### `encoding`
 The encoding of the file.  Either `binary` or `utf8`.
