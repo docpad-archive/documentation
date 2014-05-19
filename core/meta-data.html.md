@@ -61,7 +61,7 @@ Defaults to `false`. If set to `true`, this document will be regenerated when a 
 Defaults to `[]`. Tags can be a comma separated values list, or an array of values. While DocPad doesn't use tags for anything specifically, it is nice to have it handled uniformly across websites without you having to do it yourself.
 
 #### `dynamic`
-Defaults to `false`. If set to `true`, the document will be re-rendered on each request. This also adds the `req` object to the template data - [req definition here](http://expressjs.com/api.html#request).
+Defaults to `false`. If set to `true`, the document will be re-rendered on each request. This also adds the [`req`](http://expressjs.com/api.html#request) object to the template data.
 
 
 
