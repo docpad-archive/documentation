@@ -110,7 +110,7 @@ Check out the `dynamic` [meta data property](/docpad/meta-data).
 
 ## What are render passes?
 
-Rendering is a multi step process. First we render everything that is a standalone document (i.e. documents that don't including anything else). Once that is done, we then render all documents that include other documents. This is useful, as we can first render blog posts, then render the content listings second.
+Rendering is a multi-step process. First we render everything that is a standalone document (i.e. documents that don't including anything else). Once that is done, we then render all documents that include other documents. This is useful, as we can first render blog posts, then render the content listings second.
 
 At times, you may have multiple levels of cross document references. For instance if document a references document B which references document C. In this case you would want to up the `renderPasses` configuration option for each amount of cross document references you have.
 
