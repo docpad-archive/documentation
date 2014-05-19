@@ -134,7 +134,7 @@ Templating engines are renderers for languages which support business logic. For
 
 As such, the data which we expose to our templating engines is called the `templateData`. [Check out the full listing of template data & helpers here.](/docpad/template-data)
 
-For instance, to output the current document's title with eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what eco uses) you access by using the `@` character.
+For instance, to output the current document's title with Eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what Eco uses) you access by using the `@` character.
 
 
 ## How can I use environment variables in DocPad?
