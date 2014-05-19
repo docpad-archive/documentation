@@ -31,11 +31,11 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com) to anything `.anything.jade`
 - [js2coffee](https://npmjs.org/package/docpad-plugin-js2coffee) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org) to CSS `.css.less`
-- [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net/) to JavaScript `.js.ls`
+- [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net) to JavaScript `.js.ls`
 - [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
 - [move](/plugin/move) - Supports [Move](http://movelang.org) to JavaScript `.js.move`
 - [multimarkdown](https://github.com/takitapart/docpad-plugin-multimarkdown) - Supports [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) to HTML `.html.(md|markdown)` via [node-multimarkdown](https://github.com/dtjm/node-multimarkdown)
-- [php](/plugin/php) - Supports [PHP](http://php.net/) to anything `.anything.(php|phtml)`
+- [php](/plugin/php) - Supports [PHP](http://php.net) to anything `.anything.(php|phtml)`
 - [robotskirt](/plugin/robotskirt/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [robotskirt](https://github.com/benmills/robotskirt)
 - [roole](https://github.com/georgeosddev/docpad-plugin-roole) - Supports [Roole](http://roole.org) to CSS `.css.roo`
 - [ruby](/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.(ruby|erb)`
