@@ -282,7 +282,8 @@ Now that's done, let's add those files to our _scripts Block_ in our `default.ht
 
 Upon saving, we'll notice that our content will fade in over a duration of two seconds. Nifty!
 
-Now, some of you may wonder why we omitted the [jQuery onDomReady](http://api.jquery.com/ready/) handler in our script file. While off-topic for DocPad, the reasoning for this is that only code that requires the entire DOM to be loaded needs it. For instance, if your script requires a DOM element that is positioned after our script tag, then it would be useful. In this instance, as we inject our scripts into our body element, we already have access to the body element, and therefore can start our `fadeIn` animation immediately. This avoids the page loading, then, the DOM loading after a delay, followed by our fade-in with an undesirable "popping" effect.
+Now, some of you may wonder why we omitted the [jQuery onDomReady](http://api.jquery.com/ready/) handler in our script file. While off-topic for DocPad, the reasoning for this is that only code that requires the entire DOM to be loaded needs it. For instance, if your script requires a DOM element that is positioned after our `script` tag, then it would be useful. 
+In this instance, as we inject our scripts into our `body` element, we already have access to the `body` element, and therefore can start our `fadeIn` animation immediately. This avoids the page loading, then, the DOM loading after a delay, followed by our fade-in with an undesirable "popping" effect.
 
 
 
