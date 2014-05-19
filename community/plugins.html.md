@@ -90,6 +90,7 @@ These are plugins that add extra functionality to DocPad:
 - [paged](/plugin/paged/) - Adds multiple page support to documents allowing you to render one document out to many pages
 - [partials](/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](/plugin/pygments/) - Adds [Pygments](http://pygments.org) syntax highlighting to code snippets
+- [raw](/plugin/raw) - Copies all files in the `/raw` directory to `/out` without going through DocPad's generation process. Useful for files that cause out of memory/speed issues when placed in /files directory.
 - [react](https://github.com/chrishale/docpad-plugin-react) - Renders markup for [React](http://facebook.github.io/react/) Components
 - [related](/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
 - [rss](https://github.com/hurrymaplelad/docpad-plugin-rss) - Generates an RSS feed for a configurable collection
