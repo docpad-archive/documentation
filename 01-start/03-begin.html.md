@@ -321,7 +321,7 @@ Open the Stylesheet document we created earlier (`documents/styles/style.css`). 
 
 Install the [Stylus Plugin](/plugin/stylus) by running `docpad install stylus`.
 
-Then, rename `src/documents/styles/style.css` to `src/documents/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `documents` and not in `static` is now obvious: if the stylus stylesheet file were in `static/styles/` folder, it would not have been pre-processed before copying to `out`.
+Then, rename `src/documents/styles/style.css` to `src/documents/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `documents` and not in `static` is now obvious: if the Stylus stylesheet file were in `static/styles/` folder, it would not have been pre-processed before copying to `out`.
 
 Using Stylus syntax, update the stylesheet's content to become:
 
