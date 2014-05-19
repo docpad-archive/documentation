@@ -230,7 +230,7 @@ Used for getting the rendered content.
 #### `isText()`
 Is the file a text file?
 #### `isBinary()`
-IS the file a binary file?
+Is the file a binary file?
 
 #### `setUrl(url)`
 Set the primary URL for the file.
