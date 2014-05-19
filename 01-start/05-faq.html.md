@@ -2,7 +2,7 @@
 title: "FAQ"
 ```
 
-## Does it work on windows?
+## Does it work on Windows?
 
 Sure does. [Install it now.](/docpad/install)
 
