@@ -165,7 +165,7 @@ Check out the `plugins` [configuration property](/docpad/config).
 [Check out our deployment section here.](/docpad/deploy)
 
 
-## How can I get jade to render other DocPad supported markups?
+## How can I get Jade to render other DocPad supported markups?
 
 [Check out the usage section on the Jade Plugin.](https://github.com/docpad/docpad-plugin-jade#usage)
 
