@@ -38,9 +38,9 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 
 
-## Debugging with [TraceGL](https://trace.gl/)
+## Debugging with [TraceGL](https://trace.gl)
 
-1. [Get TraceGL from their website](https://trace.gl/)
+1. [Get TraceGL from their website](https://trace.gl)
 
 	1. It is shareware, but by gosh it is worth the money, it is AMAZING.
 
@@ -60,9 +60,9 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 4. Follow the outputted instructions
 
 
-## Profiling with [NodeTime](https://nodetime.com/)
+## Profiling with [NodeTime](https://nodetime.com)
 
-1. [Get a NodeTime account](https://nodetime.com/)
+1. [Get a NodeTime account](https://nodetime.com)
 
 2. Add your NodeTime API KEY to your environment, recommended way is to run:
 
