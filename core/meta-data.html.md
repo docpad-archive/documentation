@@ -78,7 +78,7 @@ Defaults to `false`. If set to `true`, the document will be re-rendered on each 
 ### For Files & Documents
 
 #### `id`
-The unique document indentifier. Defaults to the [cid](http://backbonejs.org/#Model-cid). When we get the `relativePath`, we set the `id` to that instead.
+The unique document identifier. Defaults to the [cid](http://backbonejs.org/#Model-cid). When we get the `relativePath`, we set the `id` to that instead.
 
 #### `basename`
 The file's name without the extension.
