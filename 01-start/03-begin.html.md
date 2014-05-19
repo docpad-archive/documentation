@@ -450,7 +450,7 @@ And the title of our layout template, `default.html.eco`, would become:
 
 Now that is awesome! While this was a simple example, we can use it to do some really cool stuff. For instance, [here](https://gist.github.com/4166882) is an example of it being used to localize dates into French.
 
-If you're writing a plugin, you can use the [extendTemplateData](/docpad/events) event to extend the template data.
+If you're writing a plugin, you can use the [`extendTemplateData`](/docpad/events) event to extend the template data.
 
 
 
