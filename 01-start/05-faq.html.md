@@ -83,7 +83,7 @@ There are two methods that Query-Engine provides for querying Backbone Collectio
 Never use `findAllLive` for short-lived collections (especially in your templates). It will cause more and more and more child collections and listeners to be created and added, causing a memory leak and unexpected results.
 
 
-Which one should I use and when?
+## Which one should I use and when?
 
 Use `findAllLive` when defining long-running custom collections. Usual use cases are via the `collections` property of your [docpad configuration file](/docpad/config), or via the [`extendCollections` event](/docpad/events#extendcollections) within your plugin.
 
@@ -92,7 +92,7 @@ Use `findAll` when you are needing once-off/short-living collections. Usual use 
 However, ideally wherever possible you should try and use DocPad's built-in [template helpers](/docpad/template-data#querying) or [APIs](/docpad/api#querying) for querying as these methods are highly optimised for DocPad, which the low-level Query-Engine methods are not.
 
 
-How can I learn more about the NoSQL queries available and the internals of Query-Engine?
+## How can I learn more about the NoSQL queries available and the internals of Query-Engine?
 [Take a look at the Query-Engine Using Guide](https://github.com/bevry/query-engine/wiki/Using)
 
 
