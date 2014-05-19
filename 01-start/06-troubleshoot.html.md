@@ -131,7 +131,7 @@ Once it's all working, then you're free to resume Dropbox syncing.
 If you're still experiencing issues, then be sure to post about it on the [issue tracker](/issues).
 
 
-### The growl notifications aren't displaying?
+### The Growl notifications aren't displaying
 This means you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [growl website](http://growl.info/). What this package does it provides command line applications the ability to call growl which is needed as DocPad is a command line application.
 
 
