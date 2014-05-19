@@ -356,7 +356,7 @@ Which gives us the same result, but with all the benefits of CoffeeScript.
 
 This simple procedure can be followed irrespective of your desired JavaScript pre-processor.
 
-Sweet, you're now ready to relax, with a rich cup of CoffeeScript.
+Sweet! Now you're ready to relax, with a rich cup of CoffeeScript.
 
 
 
