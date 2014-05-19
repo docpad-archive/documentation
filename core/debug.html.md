@@ -30,7 +30,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 	./node_modules/docpad/bin/docpad-debug run
 	```
 
-1. Navigate to http://127.0.0.1:8080/debug?port=5858 in your blink based browser (i.e. [Google Chrome](http://www.google.com/chrome/)) and start debugging
+1. Navigate to http://127.0.0.1:8080/debug?port=5858 in your Blink-based browser (i.e. [Google Chrome](http://www.google.com/chrome/)) and start debugging
 
 	1. Sometimes you may have to refresh or restart the Node Inspector or DocPad instances, this is undesired but normal.
    
