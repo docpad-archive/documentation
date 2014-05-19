@@ -122,7 +122,11 @@ For example: When you want to put the output of a variable into the content of a
 
 
 ### I get a whole bunch of npm / missing module/package / installation failed errors
-If you are using [Dropbox](http://j.mp/dropbox-bal) (an online syncing & backup tool) and your project is inside your DropBox folder, then click the dropbox menu icon and select "Pause Syncing". Once this is done, try whatever you were doing again, you may need to run `rm -Rf node_modules; npm install` as well. Once it's all working, then you're free to resume dropbox syncing.
+If you are using [Dropbox](http://j.mp/dropbox-bal) (an online syncing and backup tool) and your project is inside your Dropbox folder, then click the Dropbox menu icon and select "Pause Syncing". 
+
+Once that's done, try whatever you were doing again. You may need to run `rm -Rf node_modules; npm install` as well. 
+
+Once it's all working, then you're free to resume Dropbox syncing.
 
 If you're still experiencing issues, then be sure to post about it on the [issue tracker](/issues).
 
