@@ -485,7 +485,7 @@ Open your default layout, and add the following before the `h1`:
 </ul>
 ```
 
-Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a `isPage` attribute set to `true`, which is the attribute we defined earlier when first applying our layout to our pages. We then convert the result from a [Backbone Collection](http://backbonejs.org/#Collection) / [QueryEngine](/queryengine/guide) into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
+Save it, and BANG! Now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a `isPage` attribute set to `true`, which is the attribute we defined earlier when first applying our layout to our pages. We then convert the result from a [Backbone Collection](http://backbonejs.org/#Collection) / [QueryEngine](/queryengine/guide) into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
 
 That's a bit of a mouthful, but give it a while and you'll be a pro in no time. There is one major inefficiency with the above approach. Can you guess it?
 
