@@ -132,11 +132,11 @@ If you're still experiencing issues, then be sure to post about it on the [issue
 
 
 ### The Growl notifications aren't displaying
-This means you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [growl website](http://growl.info). What this package does it provides command line applications the ability to call growl which is needed as DocPad is a command line application.
+This means you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [Growl website](http://growl.info). This package provides a command line application for calling Growl, which can then be used by DocPad.
 
 
-### The exception raised by the jade plug-in during documents generation makes no sense
-The Jade compiler uses the full file content on the disk to show where the parsing error is. But since Docpad strips the meta header before submitting the data to the jade compiler, you must add the number of lines of this header to get the right error spot in your code.
+### The exception raised by the Jade plug-in during documents generation makes no sense
+The Jade compiler uses the full file content on the disk to show where the parsing error is. But since Docpad strips the meta header before submitting the data to the Jade compiler, you must add the number of lines of this header to get the right error spot in your code.
 
 
 ## Need more help?
