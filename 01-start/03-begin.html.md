@@ -564,7 +564,7 @@ As you now have all the tools and knowledge required to be able to create the bl
 
 - If you're stuck and need some help, just hop on over to the [DocPad IRC Support Channel](http://webchat.freenode.net/?channels=docpad) (#docpad on freenode) and someone will be with you soon enough. :) You can also discover all of our available Support Channels via our [Support Page](/support).
 
-By the way, congratulations! You now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [Showcase](/docpad/showcase). To recap, you now know how to:
+Congratulations! You now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [Showcase](/docpad/showcase). To recap, you now know how to:
 
 - write documents in any language, markup, pre-processor, templating engine, whatever you wish, by installing the necessary plugin for it and changing the extensions of the document
 - perform powerful abstractions using layouts, meta data, template data and configuration files
