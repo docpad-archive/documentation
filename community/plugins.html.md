@@ -75,12 +75,12 @@ These are plugins that add extra functionality to DocPad:
 - [frontend](https://npmjs.org/package/docpad-plugin-frontend) - CSS and JavaScript asset manager and compiler for DocPad
 - [gist](/plugin/gist/)  - Pulls in gists into your document
 - [grunt](http://github.com/robloach/docpad-plugin-grunt) - Run [Grunt.js](http://gruntjs.com) tasks when building with DocPad
-- [heapdumper](https://github.com/pflannery/docpad-plugin-heapdumper) - Generates a heapdump snapshot for chosen DocPad event(s), viewable in the chrome profiler
+- [heapdumper](https://github.com/pflannery/docpad-plugin-heapdumper) - Generates a heapdump snapshot for chosen DocPad event(s), viewable in the Chrome profiler
 - [highlightjs](/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [ignoreincludes](https://github.com/rantecki/docpad-plugin-ignoreincludes) - Avoid writing include files to the `/out` directory
 - [jsexc](https://github.com/JeffreyZhao/docpad-plugin-jscexc) - Adds the ability to apply AOT compilation to JavaScript files
 - [jshint](https://github.com/jking90/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com) errors to the console
-- [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate .json file for quick loading via AJAX.
+- [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate `.json` file for quick loading via AJAX.
 - [livereload](/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [lunr](https://github.com/brockfanning/docpad-plugin-lunr) - Client-side full-text and faceted search using [Lunr.js](http://lunrjs.com)
 - [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from `/documents` folder
