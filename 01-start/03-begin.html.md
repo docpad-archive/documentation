@@ -469,7 +469,7 @@ Remember our _About_ page? Wouldn't it be nice if, when we list more pages, our 
 
 ### Updating our Layout
 
-Open your default layout and, before the `h1`, add the following:
+Open your default layout, and add the following before the `h1`:
 
 - `src/layouts/default.html.eco`
 
