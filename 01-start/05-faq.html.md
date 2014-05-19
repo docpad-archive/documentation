@@ -51,7 +51,9 @@ That is your document's meta data. It won't be included in the output of the doc
 
 ## Is a document aware of its meta data?
 
-It sure is, if you are using eco as the rendering engine, you can totally do this:
+It sure is! 
+
+If you're using Eco as the rendering engine, you can totally do this:
 
 ``` html
 ---
@@ -62,7 +64,7 @@ meaningOfLife: 42
 What is the meaning of life? <%= @document.meaningOfLife %>
 ```
 
-To use eco, simply ensure that you have the extension `.eco` at the end of your file (e.g., `my-blog-post.html.eco`). It doesn't have to be at the end, but it mustn't be the first extension (as the first extension is what you are rendering to).
+To use Eco, simply ensure that you have the extension `.eco` at the end of your file (e.g., `my-blog-post.html.eco`). It doesn't have to be at the end, but it mustn't be the first extension (as the first extension is what you are rendering to).
 
 
 ## What do the extensions mean?
