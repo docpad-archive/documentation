@@ -24,7 +24,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 	node-inspector
 	```
 
-1. In another terminal window run the local DocPad installation in debug mode:
+1. In another terminal window, run the local DocPad installation in debug mode:
 
 	``` bash
 	./node_modules/docpad/bin/docpad-debug run
@@ -32,9 +32,9 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 1. Navigate to http://127.0.0.1:8080/debug?port=5858 in your Blink-based browser (i.e. [Google Chrome](http://www.google.com/chrome/)) and start debugging
 
-	1. Sometimes you may have to refresh or restart the Node Inspector or DocPad instances, this is undesired but normal.
+	1. Sometimes you may have to refresh or restart the Node Inspector or DocPad instances. This is unfortunate, but normal.
    
-	1. It may break on the first line of `docpad.js` file any not reflect this in the view, in that case play through it a few times (by clicking the next button a few times) in order to refresh the view, this is undesired but normal.
+	1. It may break on the first line of `docpad.js` file any not reflect this in the view, in that case play through it a few times (by clicking the next button a few times) in order to refresh the view. This is unfortunate, but normal.
 
 
 
