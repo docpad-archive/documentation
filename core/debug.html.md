@@ -44,7 +44,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 	1. It is shareware, but by gosh it is worth the money, it is AMAZING.
 
-2. Download it to somewhere in your PATH, and run the following on it:
+2. Download it to somewhere in your `PATH`, and run the following on it:
 
 	``` bash
 	mv tracegl.js tracegl
