@@ -69,7 +69,7 @@ These are plugins that add extra functionality to DocPad:
 - [coffeelint](https://github.com/jking90/docpad-plugin-coffeelint) - Prints [coffeelint](http://www.coffeelint.org) errors to the console
 - [csv](https://github.com/CycoPH/docpad-plugin-csv/) - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2
 - [datefromfilename](https://github.com/grassator/docpad-plugin-datefromfilename) - Automaticaly set the date meta-data property by determining it from the document's filename
-- [dateurls](https://github.com/mgroves84/docpad-plugin-dateurls/) - Adds support for date based URLs like `/2013/04/27/hello.html`
+- [dateurls](https://github.com/mgroves84/docpad-plugin-dateurls/) - Adds support for date-based URLs like `/2013/04/27/hello.html`
 - [facebookcomments](https://github.com/mikeumus/docpad-plugin-facebookcomments) - Adds the [Facebook Comment Widget](https://developers.facebook.com/docs/reference/plugins/comments/) to your project
 - [feedr](/plugin/feedr/) - Allows you to render remote feeds within your templates
 - [frontend](https://npmjs.org/package/docpad-plugin-frontend) - CSS and JavaScript asset manager and compiler for DocPad
