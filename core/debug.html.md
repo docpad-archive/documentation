@@ -64,7 +64,7 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 
 1. [Get a NodeTime account](https://nodetime.com)
 
-2. Add your NodeTime API KEY to your environment, recommended way is to run:
+2. Add your `NODETIME` API key to your environment, recommended way is to run:
 
 	``` bash
 	export NODETIME_KEY='YOUR_KEY'
