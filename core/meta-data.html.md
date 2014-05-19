@@ -76,7 +76,7 @@ Defaults to `false`. If set to `true`, the document will be re-rendered on each 
 ### For Files & Documents
 
 #### `id`
-The unique document identifier. Defaults to the [cid](http://backbonejs.org/#Model-cid). When we get the `relativePath`, we set the `id` to that instead.
+The unique document identifier. Defaults to the [cid][Backbone Model cid]. When we get the `relativePath`, we set the `id` to that instead.
 
 #### `basename`
 The file's name without the extension.
@@ -185,25 +185,25 @@ The rendered content (before being wrapped by the layouts).
 
 ### For Everything
 
-[Refer to the Backbone Model Documentation](http://backbonejs.org/#Model)
+[Refer to the Backbone Model Documentation][Backbone Model]
 
 
 ### For Files & Documents
 
 #### `toJSON()`
-Same as the [Backbone Model toJSON](http://backbonejs.org/#Model-toJSON), but will also call `toJSON` on the original meta data to `meta` within the result.
+Same as the [Backbone Model toJSON][], but will also call `toJSON` on the original meta data to `meta` within the result.
 
 #### `getMeta()`
-Get the meta data [Backbone Model](http://backbonejs.org/#Model) for the file.
+Get the meta data [Backbone Model][] for the file.
 
 #### `setMeta(attrs)`
-Same as the [Backbone Model Set](http://backbonejs.org/#Model-set), but for the meta data Model.
+Same as the [Backbone Model Set][], but for the meta data Model.
 
 #### `setDefaults(attrs)`
-Same as the [Backbone Model Set](http://backbonejs.org/#Model-set), but will only set attributes that haven't already been set to something.
+Same as the [Backbone Model Set][], but will only set attributes that haven't already been set to something.
 
 #### `setMetaDefaults(attrs)`
-Same as the [Backbone Model Set](http://backbonejs.org/#Model-set), for the meta data but will only set the meta data Model attributes that haven't already been set to something.
+Same as the [Backbone Model Set][], for the meta data but will only set the meta data Model attributes that haven't already been set to something.
 
 #### `setData(data)`
 Used for setting data of a virtual file (a file that does not have physical path).
@@ -211,14 +211,14 @@ Used for setting data of a virtual file (a file that does not have physical path
 Used for getting the data of a virtual file (a file that does not have physical path).
 
 #### `setBuffer(buffer)`
-Used for setting the source [buffer](http://nodejs.org/api/buffer.html).
+Used for setting the source [buffer][node-buffer].
 #### `getBuffer()`
-Used for getting the source [buffer](http://nodejs.org/api/buffer.html).
+Used for getting the source [buffer][node-buffer].
 
 #### `setStat(stat)`
-Used for setting the [stat](http://nodejs.org/api/fs.html#fs_class_fs_stats) of the file.
+Used for setting the [stat][node-fs-stat] of the file.
 #### `getStat()`
-Used for getting the [stat](http://nodejs.org/api/fs.html#fs_class_fs_stats) of the file.
+Used for getting the [stat][node-fs-stat] of the file.
 
 #### `getContent()`
 Used for getting the parsed source content or the buffer instance if it is a binary file.
@@ -245,3 +245,11 @@ Gets a path relative to the file.
 
 #### `referencesOthers(flag?=true)`
 Whether or not this document references another document. Sets the `referencesOthers` flag.
+
+
+[Backbone Model]: http://backbonejs.org/#Model
+[Backbone Model cid]: http://backbonejs.org/#Model-cid
+[Backbone Model toJSON]: http://backbonejs.org/#Model-toJSON
+[Backbone Model Set]: http://backbonejs.org/#Model-set
+[node-buffer]: http://nodejs.org/api/buffer.html
+[node-fs-stat]: http://nodejs.org/api/fs.html#fs_class_fs_stats
