@@ -9,7 +9,7 @@ Sure does. [Install it now.](/docpad/install)
 
 ## What is markup?
 
-Whenever we write something we're using markup. It's merely a way of formatting content. For instance, if we are writing a `.txt` file in notepad, we will be using `plain-text` as the markup. But say we want to get more advanced, and add things like **bold** text or _italic_ text to our content, then we could use a markup like `Microsoft Word (.doc)`, `Rich Text Format (.rtf)` or simply `Markdown (.md)` or `HTML (.html)`. These markups allow us to express our content with rich formatting.
+Whenever we write something we're using markup. It's merely a way of formatting content. For instance, if we are writing a `.txt` file in Notepad, we will be using `plain-text` as the markup. But say we want to get more advanced, and add things like **bold** text or _italic_ text to our content, then we could use a markup like `Microsoft Word (.doc)`, `Rich Text Format (.rtf)` or simply `Markdown (.md)` or `HTML (.html)`. These markups allow us to express our content with rich formatting.
 
 For instance, **bold** in Markdown is `**bold**`, where in HTML it is `<strong>bold</strong>`. The markup that you choose for your content is highly dependent on what content you'd like to write. If you're mostly dealing with structural data (like a page layout) then `HTML`, `Jade`, `Haml`, or `CoffeeKup` would be a good way to go. If you're mostly dealing with textual data (like a blog post) then `Markdown` would probably the way to go.
 
