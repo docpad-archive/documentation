@@ -80,7 +80,7 @@ There are two methods that Query-Engine provides for querying Backbone Collectio
 
 `findAllLive` creates a new child collection with the original collection as the parent, the new child collection then listens to the change events of the parent, and will automatically test the changes against the child collection's criteria. This is incredibly effecient for long running collections which data changes over time.
 
-Never use `findAllLive` for short lived collections, especially inside your templates, as it will cause more and more and more child collections and listeners to be created and added, causing a memory leak and unexpected results.
+Never use `findAllLive` for short-lived collections (especially in your templates). It will cause more and more and more child collections and listeners to be created and added, causing a memory leak and unexpected results.
 
 
 Which one should I use and when?
