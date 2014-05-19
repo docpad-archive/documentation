@@ -146,7 +146,7 @@ Now, why did we use `<%=` for the document's title, but `<%-` for the document's
 
 ### A note on Plugins
 
-Even though we have chosen to use the Eco templating engine in this guide, there are plenty of others we could use too! We find Eco is the very friendly for beginners, as it is the most like HTML. However, after experimenting with some of the others, you may find you'd like to use them instead. Adding support for a new templating engine, pre-processor or whatever is as simple as installing the plugin for it.
+Even though we have chosen to use the Eco templating engine in this guide, there are plenty of others we could use too! We find Eco is very beginner-friendly, since it's the most like HTML. However, after experimenting with some of the others, you may find you'd like to use them instead. Adding support for a new templating engine, pre-processor or whatever is as simple as installing the plugin for it.
 
 DocPad also supports more than just templating engines, though. We have a whole range of different plugins to do all sorts of things, so be sure to check them out!
 
