@@ -36,8 +36,8 @@ If that fails, we'd recommend either:
 - Asking about it on the [Node.js IRC Chat Room](http://webchat.freenode.net/?channels=node.js) (`#node.js` on freenode)
 
 
-### When I run 'npm install' on windows, I get 'gyp ERR! configure error'
-- For Windows XP/Vista/7 Install:
+### When I run `npm install` on windows, I get `gyp ERR! configure error`
+- For Windows XP/Vista/7 installations:
   - [Python](http://www.python.org/download/) [v2.7.3](http://www.python.org/download/releases/2.7.3#download) Recommended 
   - [Microsoft Visual Studio C++ 2010](http://go.microsoft.com/?linkid=9709949)
 - For 64-bit builds of Node.js and native modules you will also need:
