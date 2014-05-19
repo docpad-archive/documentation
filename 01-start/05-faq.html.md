@@ -74,7 +74,7 @@ The extensions `.html.eco` means process this with Eco and render it as HTML. Al
 
 ## What is `findAllLive`?
 
-The querying abilities within DocPad are provided by a project called [Query-Engine](http://github.com/bevry/query-engine) which adds support for NoSQL queries to JavaScript Objects and Backbone Collections. In DocPad's case, we use Backbone for our Models, so we enhance our collections with Query-Engine to gain NoSQL querying for them.
+DocPad's querying capabiliites are provided by a project called [Query-Engine](http://github.com/bevry/query-engine) which adds support for NoSQL queries to JavaScript Objects and Backbone Collections. In DocPad's case, we use Backbone for our Models, so we enhance our collections with Query-Engine to gain NoSQL querying for them.
 
 There are two methods that Query-Engine provides for querying Backbone Collections. The first is `findAll` and the second is `findAllLive`.
 
