@@ -99,7 +99,7 @@ These are plugins that add extra functionality to DocPad:
 - [shortcodes](https://github.com/field/docpad-plugin-shortcodes) - Adds various Wordpress style shortcodes (e.g., `[video id="123"]`) to simplify template writing.
 - [sitemap](https://github.com/benjamind/docpad-plugin-sitemap) - Generates a `sitemap.xml` file for your site from the `html` documents collection
 - [tableofcontents](https://github.com/takitapart/docpad-plugin-tableofcontents) - Automatically generate table of contents
-- [text](/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
+- [text](/plugin/text/) - Render `templateData` properties without needing template engine, useful for abstraction in configuration files
 - [thumbnails](https://github.com/rantecki/docpad-plugin-thumbnails) - Manages thumbnail generation of your image files
 - [tinylivereload](https://github.com/andruhon/docpad-plugin-tinylivereload) - A LiveReload plugin that doesn't alter your HTML. Works with the Chrome/Firefox LiveReload extensions.
 - [uglify](/plugin/uglify) - Compress and minify JavaScript files with the `uglify: true` meta data
