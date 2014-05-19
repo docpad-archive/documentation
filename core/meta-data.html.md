@@ -71,8 +71,6 @@ Defaults to `false`. If set to `true`, the document will be re-rendered on each 
 
 
 
-
-
 ## Special Attributes
 
 ### For Files & Documents
@@ -193,19 +191,19 @@ The rendered content (before being wrapped by the layouts).
 ### For Files & Documents
 
 #### `toJSON()`
-Same as the [Backbone Model toJSON](http://backbonejs.org/#Model-toJSON), but will also call `toJSON` on the original Meta Data to `meta` within the result.
+Same as the [Backbone Model toJSON](http://backbonejs.org/#Model-toJSON), but will also call `toJSON` on the original meta data to `meta` within the result.
 
 #### `getMeta()`
-Get the Meta Data [Backbone Model](http://backbonejs.org/#Model) for the file.
+Get the meta data [Backbone Model](http://backbonejs.org/#Model) for the file.
 
 #### `setMeta(attrs)`
-Same as the [Backbone Model Set](http://backbonejs.org/#Model-set), but for the Meta Data Model.
+Same as the [Backbone Model Set](http://backbonejs.org/#Model-set), but for the meta data Model.
 
 #### `setDefaults(attrs)`
 Same as the [Backbone Model Set](http://backbonejs.org/#Model-set), but will only set attributes that haven't already been set to something.
 
 #### `setMetaDefaults(attrs)`
-Same as the [Backbone Model Set](http://backbonejs.org/#Model-set), for the Meta Data but will only set the Meta Data Model attributes that haven't already been set to something.
+Same as the [Backbone Model Set](http://backbonejs.org/#Model-set), for the meta data but will only set the meta data Model attributes that haven't already been set to something.
 
 #### `setData(data)`
 Used for setting data of a virtual file (a file that does not have physical path).
