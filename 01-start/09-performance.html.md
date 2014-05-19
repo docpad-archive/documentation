@@ -10,7 +10,7 @@ This plugin allows you to quickly copy files that are found in the `/src/raw`
 directory to the `/out` directory without going through DocPad's rendering, thus
 making it a much quicker process.
 
-Especially useful if placing them in the `/src/static` or the `/src/files`
+Especially useful if placing them in the `/src/static` (or `/src/files`)
 folder is still slow.
 
 Check the [plugins section of the DocPad docs](/docs/plugins) for instructions

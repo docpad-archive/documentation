@@ -9,7 +9,7 @@ Here is the standard project structure you'll see in DocPad projects:
 	- `out/`
 	- `src/`
 		- `documents/` (can also be named `render/`)
-		- `files/` (can also be named `static/`)
+		- `static/` (can also be named `files/`)
 		- `layouts/`
 	- `docpad.coffee`
 	- `package.json`
@@ -25,7 +25,7 @@ This directory contains your website's source files. It contains your layouts, f
 
 - The `layouts` directory
 - The `documents` directory (can also be named `render`)
-- The `files` directory (can also be named `static`)
+- The `static` directory (can also be named `files`)
 
 
 #### The `layouts` Directory
@@ -44,7 +44,7 @@ The reason we do not support direct rendering from `script.coffee` to `script.js
 The other important aspect of documents it that they support meta data. Meta data goes at the top of a document and defines information about that particular document. For instance, its title, date and layout are good examples. Meta data is not restricted to particular values, meaning you can define whatever meta data you want against a document. There are some special meta data properties, however, that perform certain functions (e.g., `layout` is used to specify the layout that should be used to wrap the document). You can find the complete listing of special meta data properties on the [Meta Data page](/docpad/meta-data).
 
 
-#### The `files` Directory
+#### The `static` Directory
 
 Files in this folder are like documents, in that they are output to the `out` directory. The difference lies in that they are not rendered and do not support meta data. This is where you should put everything that doesn't need to be rendered or need meta data. For example, images, vendor files, plain stylesheet and JavaScript files, etc.
 

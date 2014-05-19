@@ -222,7 +222,7 @@ It's time to start adding some assets. Before proceeding with this section, plea
 
 ### Images
 
-Let's add our logo to our layout's header. We'll download the [DocPad logo](http://d.pr/i/cfmt+) and place it in our `files` directory at `src/files/images/logo.gif` (binary files should _always_ go in the `files` directory). Then, we'll add it to the body of our layout, to show our logo on each page:
+Let's add our logo to our layout's header. We'll download the [DocPad logo](http://d.pr/i/cfmt+) and place it in our `static` directory at `src/static/images/logo.gif` (binary files should _always_ go in the `static` directory). Then, we'll add it to the body of our layout, to show our logo on each page:
 
 - `src/layouts/default.html.eco`
 
@@ -262,9 +262,9 @@ Upon saving, we'll notice that our browser will automatically reload, and that o
 
 Now let's add a nifty loading effect using JavaScript and the [jQuery JavaScript Library](http://jquery.com). As always, there's plenty of other JavaScript Libraries you can use, but in this guide we'll go with jQuery.
 
- To do this, we'll first download the [jQuery library](http://code.jquery.com/jquery.js) file and put it in our `files` directory at `src/files/vendor/jquery.js`.
+ To do this, we'll first download the [jQuery library](http://code.jquery.com/jquery.js) file and put it in our `static` directory at `src/static/vendor/jquery.js`.
 
- The reason we use the `files` directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them there is a good choice for consistency and speed. Whereas, we will probably eventually want to render our own scripts and styles with something, so generally we'll just put them in the documents directory to make the transition to rendering engines easier.
+ The reason we use the `static` directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them there is a good choice for consistency and speed. Whereas, we will probably eventually want to render our own scripts and styles with something, so generally we'll just put them in the documents directory to make the transition to rendering engines easier.
 
  Now that we have included jQuery in our project, we'll add our nifty loading effect by adding a script file at `src/documents/scripts/script.js` that contains:
 
@@ -321,7 +321,7 @@ Open the Stylesheet document we created earlier (`documents/styles/style.css`). 
 
 Install the [Stylus Plugin](/plugin/stylus) by running `docpad install stylus`.
 
-Then, rename `src/documents/styles/style.css` to `src/documents/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `documents` and not in `files` is now obvious: if the stylus stylesheet file were in `files/styles/` folder, it would not have been pre-processed before copying to `out`.
+Then, rename `src/documents/styles/style.css` to `src/documents/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `documents` and not in `static` is now obvious: if the stylus stylesheet file were in `static/styles/` folder, it would not have been pre-processed before copying to `out`.
 
 Using Stylus syntax, update the stylesheet's content to become:
 
