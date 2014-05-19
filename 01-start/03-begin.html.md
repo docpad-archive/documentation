@@ -398,7 +398,7 @@ Notice that the `docpadConfig` object is written in CoffeeScript's version of a 
 
 You'll have to restart DocPad so that DocPad can become aware of the configuration file. From then on, DocPad will automatically reload your configuration when changes occur.
 
-The first part of this configuration is where we actually define our configuration (where the `# ...` is located), and the second part is a [node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
+The first part of this configuration is where we actually define our configuration (where the `# ...` is located), and the second part is a [Node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
 
 For more information on configuration files and what configuration is available to your, refer to our [Configuration Page](/docpad/config).
 

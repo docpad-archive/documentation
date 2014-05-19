@@ -17,7 +17,7 @@ Check your project's `package.json` file with [JSONLint](http://jsonlint.com/), 
 
 
 ### I am getting permission errors after I install things
-Chances are this isn't a problem within DocPad, but rather one of your node/npm installations. Run the following in Terminal, once done, try your original action again:
+Chances are this isn't a problem within DocPad, but rather one of your Node/NPM installations. Run the following in Terminal, once done, try your original action again:
 
 ``` bash
 sudo chown -R $USER /usr/local ~/.npm
