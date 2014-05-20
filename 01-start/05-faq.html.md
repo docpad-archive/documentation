@@ -2,14 +2,14 @@
 title: "FAQ"
 ```
 
-## Does it work on windows?
+## Does it work on Windows?
 
 Sure does. [Install it now.](/docpad/install)
 
 
 ## What is markup?
 
-Whenever we write something we're using markup. It's merely a way of formatting content. For instance, if we are writing a `.txt` file in notepad, we will be using `plain-text` as the markup. But say we want to get more advanced, and add things like **bold** text or _italic_ text to our content, then we could use a markup like `Microsoft Word (.doc)`, `Rich Text Format (.rtf)` or simply `Markdown (.md)` or `HTML (.html)`. These markups allow us to express our content with rich formatting.
+Whenever we write something we're using markup. It's merely a way of formatting content. For instance, if we are writing a `.txt` file in Notepad, we will be using `plain-text` as the markup. But say we want to get more advanced, and add things like **bold** text or _italic_ text to our content, then we could use a markup like `Microsoft Word (.doc)`, `Rich Text Format (.rtf)` or simply `Markdown (.md)` or `HTML (.html)`. These markups allow us to express our content with rich formatting.
 
 For instance, **bold** in Markdown is `**bold**`, where in HTML it is `<strong>bold</strong>`. The markup that you choose for your content is highly dependent on what content you'd like to write. If you're mostly dealing with structural data (like a page layout) then `HTML`, `Jade`, `Haml`, or `CoffeeKup` would be a good way to go. If you're mostly dealing with textual data (like a blog post) then `Markdown` would probably the way to go.
 
@@ -46,12 +46,14 @@ title: "My awesome blog post"
 ---
 ```
 
-That is your document's meta data. It won't be included in the output of the document, and is where you can assign extra data to your document such as title, date, tags, etc.
+That is your document's meta data. It won't be included in the output of the document. You can use it to assign extra data to your document such as title, date, tags, etc.
 
 
 ## Is a document aware of its meta data?
 
-It sure is, if you are using eco as the rendering engine, you can totally do this:
+It sure is! 
+
+If you're using Eco as the rendering engine, you can totally do this:
 
 ``` html
 ---
@@ -62,7 +64,7 @@ meaningOfLife: 42
 What is the meaning of life? <%= @document.meaningOfLife %>
 ```
 
-To use eco, simply ensure that you have the extension `.eco` at the end of your file (e.g., `my-blog-post.html.eco`). It doesn't have to be at the end, but it mustn't be the first extension (as the first extension is what you are rendering to).
+To use Eco, simply ensure that you have the extension `.eco` at the end of your file (e.g., `my-blog-post.html.eco`). It doesn't have to be at the end, but it mustn't be the first extension (as the first extension is what you are rendering to).
 
 
 ## What do the extensions mean?
@@ -72,7 +74,7 @@ The extensions `.html.eco` means process this with Eco and render it as HTML. Al
 
 ## What is `findAllLive`?
 
-The querying abilities within DocPad are provided by a project called [Query-Engine](http://github.com/bevry/query-engine) which adds support for NoSQL queries to JavaScript Objects and Backbone Collections. In DocPad's case, we use Backbone for our Models, so we enhance our collections with Query-Engine to gain NoSQL querying for them.
+DocPad's querying capabiliites are provided by a project called [Query-Engine](http://github.com/bevry/query-engine) which adds support for NoSQL queries to JavaScript Objects and Backbone Collections. In DocPad's case, we use Backbone for our Models, so we enhance our collections with Query-Engine to gain NoSQL querying for them.
 
 There are two methods that Query-Engine provides for querying Backbone Collections. The first is `findAll` and the second is `findAllLive`.
 
@@ -80,10 +82,10 @@ There are two methods that Query-Engine provides for querying Backbone Collectio
 
 `findAllLive` creates a new child collection with the original collection as the parent, the new child collection then listens to the change events of the parent, and will automatically test the changes against the child collection's criteria. This is incredibly effecient for long running collections which data changes over time.
 
-Never use `findAllLive` for short lived collections, especially inside your templates, as it will cause more and more and more child collections and listeners to be created and added, causing a memory leak and unexpected results.
+Never use `findAllLive` for short-lived collections (especially in your templates). It will cause more and more and more child collections and listeners to be created and added, causing a memory leak and unexpected results.
 
 
-Which one should I use and when?
+## Which one should I use and when?
 
 Use `findAllLive` when defining long-running custom collections. Usual use cases are via the `collections` property of your [docpad configuration file](/docpad/config), or via the [`extendCollections` event](/docpad/events#extendcollections) within your plugin.
 
@@ -92,7 +94,7 @@ Use `findAll` when you are needing once-off/short-living collections. Usual use 
 However, ideally wherever possible you should try and use DocPad's built-in [template helpers](/docpad/template-data#querying) or [APIs](/docpad/api#querying) for querying as these methods are highly optimised for DocPad, which the low-level Query-Engine methods are not.
 
 
-How can I learn more about the NoSQL queries available and the internals of Query-Engine?
+## How can I learn more about the NoSQL queries available and the internals of Query-Engine?
 [Take a look at the Query-Engine Using Guide](https://github.com/bevry/query-engine/wiki/Using)
 
 
@@ -108,14 +110,14 @@ Check out the `dynamic` [meta data property](/docpad/meta-data).
 
 ## What are render passes?
 
-Rendering is a multi step process. First we render everything that is a standalone document, that is to say documents that do not including anything else. Once that is done, we then render all documents that include other documents. This is useful as we can render blog posts first, then render the content listings second.
+Rendering is a multi-step process. First we render everything that is a standalone document (i.e. documents that don't including anything else). Once that is done, we then render all documents that include other documents. This is useful, as we can first render blog posts, then render the content listings second.
 
 At times, you may have multiple levels of cross document references. For instance if document a references document B which references document C. In this case you would want to up the `renderPasses` configuration option for each amount of cross document references you have.
 
 
 ## How do I create custom 404 and 500 pages?
 
-Add a `src/documents/404.html` for 404 pages, and `src/documents/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header as mentioned above) your templating engine (e.g., `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/documents/500.html.md.eco`:
+Add a `src/documents/404.html` for 404 pages, and `src/documents/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header) your templating engine (e.g., `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/documents/500.html.md.eco`:
 
 ```
 ---
@@ -134,12 +136,14 @@ Templating engines are renderers for languages which support business logic. For
 
 As such, the data which we expose to our templating engines is called the `templateData`. [Check out the full listing of template data & helpers here.](/docpad/template-data)
 
-For instance, to output the current document's title with eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what eco uses) you access by using the `@` character.
+For instance, to output the current document's title with Eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what Eco uses) you access by using the `@` character.
 
 
 ## How can I use environment variables in DocPad?
 
-All environment variables are automatically available in node applications through [`process.env`](http://nodejs.org/api/process.html#process_process_env). DocPad also loads varibles from a special [environment file](/docpad/config#environment-configuration-file). To quickly override existing environment variables for a single invocation of DocPad, specify it on the command line before the `docpad` command:
+All environment variables are automatically available in Node applications through [`process.env`](http://nodejs.org/api/process.html#process_process_env). DocPad also loads varibles from a special [environment file](/docpad/config#environment-configuration-file). 
+
+To quickly override existing environment variables for a single invocation of DocPad, specify it on the command line before the `docpad` command:
 ```
 $ API_URL=localhost:1234 docpad run
 ```
@@ -165,7 +169,7 @@ Check out the `plugins` [configuration property](/docpad/config).
 [Check out our deployment section here.](/docpad/deploy)
 
 
-## How can I get jade to render other DocPad supported markups?
+## How can I get Jade to render other DocPad supported markups?
 
 [Check out the usage section on the Jade Plugin.](https://github.com/docpad/docpad-plugin-jade#usage)
 

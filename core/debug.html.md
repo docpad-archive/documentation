@@ -2,7 +2,9 @@
 title: "Debugging"
 ```
 
-Sometimes things go bad and you need to get into DocPad and work out what's happening. A plugin may be not working as expected, content isn't being generated or you're just curious as to how to do it. Well for that you'll need to get your debugging on.
+Sometimes things go bad, and you need to get into DocPad and work out what's happening. Perhaps a plugin isn't working as expected, or content isn't being generated—or, you're just curious as to how to do it. 
+
+And to do that, you'll need to get your debugging on.
 
 
 ## What you'll need
@@ -24,27 +26,27 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 	node-inspector
 	```
 
-1. In another terminal window run the local DocPad installation in debug mode:
+1. In another terminal window, run the local DocPad installation in debug mode:
 
 	``` bash
 	./node_modules/docpad/bin/docpad-debug run
 	```
 
-1. Navigate to http://127.0.0.1:8080/debug?port=5858 in your blink based browser (i.e. [Google Chrome](http://www.google.com/chrome/)) and start debugging
+1. Navigate to http://127.0.0.1:8080/debug?port=5858 in your Blink-based browser (i.e. [Google Chrome](http://www.google.com/chrome/)) and start debugging
 
-	1. Sometimes you may have to refresh or restart the Node Inspector or DocPad instances, this is undesired but normal.
+	1. Sometimes you may have to refresh or restart the Node Inspector or DocPad instances. This is unfortunate, but normal.
    
-	1. It may break on the first line of `docpad.js` file any not reflect this in the view, in that case play through it a few times (by clicking the next button a few times) in order to refresh the view, this is undesired but normal.
+	1. It may break on the first line of `docpad.js` file any not reflect this in the view, in that case play through it a few times (by clicking the next button a few times) in order to refresh the view. This is unfortunate, but normal.
 
 
 
-## Debugging with [TraceGL](https://trace.gl/)
+## Debugging with [TraceGL](https://trace.gl)
 
-1. [Get TraceGL from their website](https://trace.gl/)
+1. [Get TraceGL from their website](https://trace.gl)
 
-	1. It is shareware, but by gosh it is worth the money, it is AMAZING.
+	1. It's shareware, but by gosh it is worth the money! It is AMAZING.
 
-2. Download it to somewhere in your PATH, and run the followig on it:
+2. Download it to somewhere in your `PATH`, and run the following on it:
 
 	``` bash
 	mv tracegl.js tracegl
@@ -60,11 +62,11 @@ Sometimes things go bad and you need to get into DocPad and work out what's happ
 4. Follow the outputted instructions
 
 
-## Profiling with [NodeTime](https://nodetime.com/)
+## Profiling with [NodeTime](https://nodetime.com)
 
-1. [Get a NodeTime account](https://nodetime.com/)
+1. [Get a NodeTime account](https://nodetime.com)
 
-2. Add your NodeTime API KEY to your environment, recommended way is to run:
+2. Add your `NODETIME` API key to your environment. We recommend the following method:
 
 	``` bash
 	export NODETIME_KEY='YOUR_KEY'

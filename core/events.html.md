@@ -180,7 +180,7 @@ Called just after we've finished contextualize all the files. Partnered with the
 Called just before we start rendering all the files. Partnered with the `renderAfter` event.
 
 **Options:**
-- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
+- `collection` a [query-engine][] [collection][] containing the models we are about to render
 - `templateData` the template data that will be provided to the documents
 
 
@@ -189,7 +189,7 @@ Called just before we start rendering all the files. Partnered with the `renderA
 Triggered before a render collection is about to be rendered. Added by [Bruno Heridet](https://github.com/Delapouite) with [Pull Request #608](https://github.com/bevry/docpad/pull/608).
 
 **Options:**
-- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
+- `collection` a [query-engine][] [collection][] containing the models we are about to render
 - `renderPass` which render pass is this render collection for?
 
 
@@ -197,7 +197,7 @@ Triggered before a render collection is about to be rendered. Added by [Bruno He
 Triggered before a render collection is about to be rendered. Added by [Bruno Heridet](https://github.com/Delapouite) with [Pull Request #608](https://github.com/bevry/docpad/pull/608).
 
 **Options:**
-- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
+- `collection` a [query-engine][] [collection][] containing the models we are about to render
 - `renderPass` which render pass is this render collection for?
 
 
@@ -250,7 +250,7 @@ Use to perform transformations to the entire document.
 Called just just after we've rendered all the files. Partnered with the `renderBefore` event.
 
 **Options:**
-- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we've rendered
+- `collection` a [query-engine][] [collection][] containing the models we've rendered
 
 
 
@@ -258,7 +258,7 @@ Called just just after we've rendered all the files. Partnered with the `renderB
 Called just before we start writing all the files. Partnered with the `writeAfter` event.
 
 **Options:**
-- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to write
+- `collection` a [query-engine][] [collection][] containing the models we are about to write
 - `templateData` the template data that was provided to the documents
 
 
@@ -266,7 +266,7 @@ Called just before we start writing all the files. Partnered with the `writeAfte
 Called just just after we've wrote all the files. Partnered with the `writeBefore` event.
 
 **Options:**
-- `collection` a [query-engine](https://github.com/bevry/query-engine) [collection](https://github.com/bevry/query-engine/wiki/Using) containing the models we are about to render
+- `collection` a [query-engine][] [collection][query-engine collection] containing the models we are about to render
 
 
 
@@ -289,7 +289,7 @@ Called just while we are setting up the server, and just before the DocPad route
 Use to extend the server with routes that will be triggered before the DocPad routes.
 
 **Options:**
-- `server` and `serverExpress` are the [Express.js](http://expressjs.com) server instance we are using
+- `server` and `serverExpress` are the [Express.js][] server instance we are using
 - `serverHttp` is the raw Node.js HTTP server we are using
 - `express` is the Express module we are using
 
@@ -300,7 +300,7 @@ Called just after we finished setting up the server.
 Use to extend the server with routes that will be triggered after the DocPad routes.
 
 **Options:**
-- `server` and `serverExpress` are the [Express.js](http://expressjs.com) server instance we are using
+- `server` and `serverExpress` are the [Express.js][] server instance we are using
 - `serverHttp` is the raw Node.js HTTP server we are using
 - `express` is the Express module we are using
 
@@ -310,3 +310,7 @@ Use to extend the server with routes that will be triggered after the DocPad rou
 Called when it is time for DocPad to shutdown.  Partnered with the `docpadReady` event.
 
 Use this to shutdown anything inside your plugins, close all connections, file system handlers, files, etc.
+
+[query-engine]: https://github.com/bevry/query-engine
+[query-engine collection]: https://github.com/bevry/query-engine/wiki/Using
+[Express.js]: http://expressjs.com

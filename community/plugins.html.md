@@ -1,4 +1,4 @@
-Here is a listing of all the plugins available for DocPad. If you have created a plugin, be sure to [include it in this listing!](https://github.com/bevry/docpad-documentation/edit/master/community/plugins.html.md) :)
+Here's a list of all available DocPad plugins. If you've created a plugin, be sure to [include it in this listing!](https://github.com/bevry/docpad-documentation/edit/master/community/plugins.html.md) :)
 
 
 ## Installing
@@ -31,11 +31,11 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com) to anything `.anything.jade`
 - [js2coffee](https://npmjs.org/package/docpad-plugin-js2coffee) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org) to CSS `.css.less`
-- [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net/) to JavaScript `.js.ls`
+- [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net) to JavaScript `.js.ls`
 - [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
 - [move](/plugin/move) - Supports [Move](http://movelang.org) to JavaScript `.js.move`
 - [multimarkdown](https://github.com/takitapart/docpad-plugin-multimarkdown) - Supports [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) to HTML `.html.(md|markdown)` via [node-multimarkdown](https://github.com/dtjm/node-multimarkdown)
-- [php](/plugin/php) - Supports [PHP](http://php.net/) to anything `.anything.(php|phtml)`
+- [php](/plugin/php) - Supports [PHP](http://php.net) to anything `.anything.(php|phtml)`
 - [robotskirt](/plugin/robotskirt/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [robotskirt](https://github.com/benmills/robotskirt)
 - [roole](https://github.com/georgeosddev/docpad-plugin-roole) - Supports [Roole](http://roole.org) to CSS `.css.roo`
 - [ruby](/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.(ruby|erb)`
@@ -62,35 +62,35 @@ These are plugins that add extra functionality to DocPad:
 - [basicauth](https://github.com/mikeumus/docpad-plugin-basicauth) - Adds basic authentication to your project
 - [browserifybundles](/plugin/browserifybundles) - Add configuration to your DocPad configuration file to create browserify bundles of your scripts
 - [browserifydocs](/plugin/browserifydocs) - Browserify your documents by adding `browserify: true` to their meta data
-- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like CoffeeScript, less, etc.) using [Buildr](https://github.com/balupton/buildr.npm)
+- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like CoffeeScript, LESS, etc.) using [Buildr](https://github.com/balupton/buildr.npm)
 - [cachr](/plugin/cachr/) - Allows you to cache remote URLs locally from within your templates
 - [cleancss](/plugin/cleancss) - Concatinate and minify CSS files with the `cleancss: true` meta data
 - [cleanurls](/plugin/cleanurls/) - Adds support for URLs like `/blog/hello` as well as the original URL `/blog/hello.html`
 - [coffeelint](https://github.com/jking90/docpad-plugin-coffeelint) - Prints [coffeelint](http://www.coffeelint.org) errors to the console
 - [csv](https://github.com/CycoPH/docpad-plugin-csv/) - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2
-- [datefromfilename](https://github.com/grassator/docpad-plugin-datefromfilename) - Automaticaly set the date meta-data property by determining it from the document's filename
-- [dateurls](https://github.com/mgroves84/docpad-plugin-dateurls/) - Adds support for date based URLs like `/2013/04/27/hello.html`
+- [datefromfilename](https://github.com/grassator/docpad-plugin-datefromfilename) - Automaticaly set the `date` meta-data property by determining it from the document's filename
+- [dateurls](https://github.com/mgroves84/docpad-plugin-dateurls/) - Adds support for date-based URLs like `/2013/04/27/hello.html`
 - [facebookcomments](https://github.com/mikeumus/docpad-plugin-facebookcomments) - Adds the [Facebook Comment Widget](https://developers.facebook.com/docs/reference/plugins/comments/) to your project
 - [feedr](/plugin/feedr/) - Allows you to render remote feeds within your templates
 - [frontend](https://npmjs.org/package/docpad-plugin-frontend) - CSS and JavaScript asset manager and compiler for DocPad
 - [gist](/plugin/gist/)  - Pulls in gists into your document
 - [grunt](http://github.com/robloach/docpad-plugin-grunt) - Run [Grunt.js](http://gruntjs.com) tasks when building with DocPad
-- [heapdumper](https://github.com/pflannery/docpad-plugin-heapdumper) - Generates a heapdump snapshot for chosen DocPad event(s), viewable in the chrome profiler
+- [heapdumper](https://github.com/pflannery/docpad-plugin-heapdumper) - Generates a heapdump snapshot for chosen DocPad event(s), viewable in the Chrome profiler
 - [highlightjs](/plugin/highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
-- [ignoreincludes](https://github.com/rantecki/docpad-plugin-ignoreincludes) - Avoid writing include files to the /out directory
+- [ignoreincludes](https://github.com/rantecki/docpad-plugin-ignoreincludes) - Avoid writing include files to the `/out` directory
 - [jsexc](https://github.com/JeffreyZhao/docpad-plugin-jscexc) - Adds the ability to apply AOT compilation to JavaScript files
 - [jshint](https://github.com/jking90/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com) errors to the console
-- [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate .json file for quick loading via AJAX.
+- [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate `.json` file for quick loading via AJAX.
 - [livereload](/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [lunr](https://github.com/brockfanning/docpad-plugin-lunr) - Client-side full-text and faceted search using [Lunr.js](http://lunrjs.com)
-- [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from documents folder
+- [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from `/documents` folder
 - [moment](https://github.com/brockfanning/docpad-plugin-moment) - Date formatting and access to [Moment.js](http://momentjs.com) library
 - [nativecomments](/plugin/nativecomments/) - Adds support for native comments to DocPad
 - [navlinks](https://github.com/lucor/docpad-plugin-navlinks) - Adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection.
 - [paged](/plugin/paged/) - Adds multiple page support to documents allowing you to render one document out to many pages
 - [partials](/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](/plugin/pygments/) - Adds [Pygments](http://pygments.org) syntax highlighting to code snippets
-- [raw](/plugin/raw) - Copies all files in the `/raw` directory to `/out` without going through DocPad's generation process. Useful for files that cause out of memory/speed issues when placed in /files directory.
+- [raw](/plugin/raw) - Copies all files in the `/raw` directory to `/out` without going through DocPad's generation process. Useful for files that cause out of memory/speed issues when placed in `/static` directory.
 - [react](https://github.com/chrishale/docpad-plugin-react) - Renders markup for [React](http://facebook.github.io/react/) Components
 - [related](/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
 - [rss](https://github.com/hurrymaplelad/docpad-plugin-rss) - Generates an RSS feed for a configurable collection
@@ -99,7 +99,7 @@ These are plugins that add extra functionality to DocPad:
 - [shortcodes](https://github.com/field/docpad-plugin-shortcodes) - Adds various Wordpress style shortcodes (e.g., `[video id="123"]`) to simplify template writing.
 - [sitemap](https://github.com/benjamind/docpad-plugin-sitemap) - Generates a `sitemap.xml` file for your site from the `html` documents collection
 - [tableofcontents](https://github.com/takitapart/docpad-plugin-tableofcontents) - Automatically generate table of contents
-- [text](/plugin/text/) - Render templateData properties without needing template engine, useful for abstraction in configuration files
+- [text](/plugin/text/) - Render `templateData` properties without needing template engine, useful for abstraction in configuration files
 - [thumbnails](https://github.com/rantecki/docpad-plugin-thumbnails) - Manages thumbnail generation of your image files
 - [tinylivereload](https://github.com/andruhon/docpad-plugin-tinylivereload) - A LiveReload plugin that doesn't alter your HTML. Works with the Chrome/Firefox LiveReload extensions.
 - [uglify](/plugin/uglify) - Compress and minify JavaScript files with the `uglify: true` meta data
@@ -123,7 +123,7 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 ### Existing Interfaces
 <a id="importers"></a>
 
-DocPad's plugin/extension infrastructure supports existing coupled interfaces by importing their data directly into the DocPad Database. So if you love using Tumblr, WordPress, Medium, MongoDB or GitHub Repos for your content, you don't have to give them up. Just install the importer plugin for them, and DocPad will import the data from that service into the DocPad database for rendering.
+DocPad's plugin/extension infrastructure supports existing coupled interfaces by importing their data directly into the DocPad Database. So if you love using Tumblr, WordPress, Medium, MongoDB, or GitHub repos for your content, you don't have to give them up. Just install the importer plugin for them, and DocPad will import the data from that service into the DocPad database for rendering.
 
 - [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap Skeleton](https://github.com/docpad/twitter-bootstrap.docpad) to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
 - [repocloner](/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
@@ -144,7 +144,7 @@ DocPad's plugin/extension infrastructure supports existing decoupled interfaces 
 
 - [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/about.html) as an Admin Interface for DocPad
 - [WebWrite's InlineGUI](/plugin/inlinegui) (not yet ready) - Edit your content from any backend with this inline editing interface
-- [Edit & Deploy with GitHub.com & GHpages Plugin](https://github.com/Sun-Star-IT/sunstarit.docpad/wiki/Edit-&-Deploy-with-GitHub.com-&-GHpages-Plugin) - Wiki on how to use GitHub.com to edit your DocPad website and then DocPad's ghpages plugin to deploy to GitHub Pages. 
+- [Edit & Deploy with GitHub.com & GHpages Plugin](https://github.com/Sun-Star-IT/sunstarit.docpad/wiki/Edit-&-Deploy-with-GitHub.com-&-GHpages-Plugin) - Wiki on how to use GitHub.com to edit your DocPad website and then DocPad's `ghpages` plugin to deploy to GitHub Pages. 
 
 
 ## Guides

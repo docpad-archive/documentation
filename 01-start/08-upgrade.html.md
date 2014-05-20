@@ -12,15 +12,18 @@ To upgrade your DocPad installation from an older version to the latest, check o
 ## Upgrading from 5.x to 6.x (v6 is the latest stable version)
 
 - Changes affecting configuration:
-	- Removed `documentsPath`, `filesPath`, `layoutsPath` configuration options. Instead, use their array based alternatives: `documentsPaths`, `filesPaths`, `layoutsPaths`
+	- Removed the following configuration options: `documentsPath`, `filesPath`, and `layoutsPath`. Use their array-based alternatives instead: `documentsPaths`, `filesPaths`, and `layoutsPaths`.
+
 - Changes affecting templates:
 	- Removed `require` from `templateData`. Instead, specify it in your `docpad.cson` or `server.coffee` file instead
 	- Removed `database`, `documents`, `collections`, `blocks` from `templatedata`. Instead, use their helper based alternatives: `getDatabase()`, `getCollection('documents')`, `getCollection('collectionName')`, `getBlock('blockName')`
+
 - Changes affecting everyone:
 	- Removed the prototypes `String::startsWith`, `String::finishesWith`, `Array::hasCount`, `Array::has` as no one ever used them
 	- Plugin versions have been bumped to `2.x` for DocPad v6.x compatibility. You should update all your DocPad plugins versions in your `package.json` to `2.0.x` (e.g., `"docpad-plugin-eco": "2.0.x"`) then run `npm install` to install the new versions of the plugins
+
 - Changes affecting pugin developers:
-	- Removed `docpadInstance.documents`. Instead, use `docpadInstance.getCollection('documents')`
+	- Removed `docpadInstance.documents`. Use `docpadInstance.getCollection('documents')` instead.
 	- Plugin tests are now run via `npm test` on your plugin directory, allowing you to use whatever test runner you want
 	- DocPad and the tester helpers have moved from Mocha to [Joe](http://github.com/bevry/joe), you'll probably want to do the same
 
@@ -56,7 +59,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 
 5. When an error occurs, the error will now be sent back to DocPad using the [AirBrake](http://airbrake.io/) service. If you would like this disabled then you can turn it off by setting `reportErrors` to `false` in your DocPad configuration.
 
-6. A lot of unstable or not as popular plugins has been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: admin, authenticate, autoupdate, buildr, html2jade, move, php, rest, roy, and ruby. If you would like to continue using them, you will have to download them manually from the `docpad-extras` repository and insert them into your website's `plugins` directory.
+6. A lot of unstable or less-popular plugins have been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: `admin`, `authenticate`, `autoupdate`, `buildr`, `html2jade`, `move`, `php`, `rest`, `roy`, and `ruby`. If you would like to continue using them, you will have to download them manually from the `docpad-extras` repository and insert them into your website's `plugins` directory.
 
 
 ## Upgrading from 2.x to 3.x
@@ -65,7 +68,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 
 2. For plugin developers, the way you extend from the `BasePlugin`, and the way you `module.exports` your plugin has changed. [To learn about the new convention, refer to the new _Extending_ guide by clicking here.](/docpad/extend)
 
-3. For those using DocPad as a module, DocPad now supports a `next` callback on its constructor, allowing you to do `new DocPad(config,next)`. Anything that depends on a DocPad action being completed should go inside the `next` callback. While this is optional, it has provided helpful in eliminating timing problems.
+3. For those using DocPad as a module, DocPad now supports a `next` callback on its constructor, allowing you to do `new DocPad(config,next)`. Anything that depends on a DocPad action being completed should go inside the `next` callback. While this is optional, it has proven helpful in eliminating timing problems.
 
 ## Upgrading from 1.x to 2.x
 

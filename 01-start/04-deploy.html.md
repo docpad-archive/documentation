@@ -24,7 +24,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	}
 	```
 
-### For deployment to [Heroku](http://www.heroku.com/)
+### For deployment to [Heroku](http://www.heroku.com)
 
 1. Create a `Procfile` file inside your project that contains:
 
@@ -42,7 +42,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 
 
-### For deployment to [AppFog](https://www.appfog.com/)
+### For deployment to [AppFog](https://www.appfog.com)
 
 1. Create a `app.js` file inside your project that contains:
 
@@ -87,7 +87,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	exitWithMessageOnError "Kudu Sync failed"
 	```
 
-1. Last, create a web.config file in the files directory of your site with the URL rewrite rules shown below. These rules remove the html extensions from your URLs. You can see the main portions of this web.config file below. You can download the complete file [here](https://gist.github.com/ntotten/4715760#file-web-config).
+1. Last, create a `web.config` file in the `static` directory of your site with the URL rewrite rules shown below. These rules remove the HTML extensions from your URLs. You can see the main portions of this `web.config` file below. You can download the complete file [here](https://gist.github.com/ntotten/4715760#file-web-config).
 
 	``` xml
 	<rule name="RemoveHTMLExtensions" stopProcessing="true">
@@ -108,7 +108,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 
 
-### For deployment to [Nodejitsu](http://nodejitsu.com/)
+### For deployment to [Nodejitsu](http://nodejitsu.com)
 
 1. [Follow the rest of the Nodejitsu guide here](http://nodejitsu.com/paas/getting-started.html)
 
@@ -141,7 +141,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 	1. If you use rsync, [checkout our DocPad rsync deploy script](https://gist.github.com/Hypercubed/5804999)
 
 
-## To [GitHub Pages](http://pages.github.com/)
+## To [GitHub Pages](http://pages.github.com)
 
 1. Install the [GitHub Pages Plugin](/plugin/ghpages)
 

@@ -146,7 +146,7 @@ Now, why did we use `<%=` for the document's title, but `<%-` for the document's
 
 ### A note on Plugins
 
-Even though we have chosen to use the eco templating engine in this guide, there are plenty of others we could use too! We find eco is the very friendly for beginners, as it is the most like HTML. However, after experimenting with some of the others, you may find you'd like to use them instead. Adding support for a new templating engine, pre-processor or whatever is as simple as installing the plugin for it.
+Even though we have chosen to use the Eco templating engine in this guide, there are plenty of others we could use too! We find Eco is very beginner-friendly, since it's the most like HTML. However, after experimenting with some of the others, you may find you'd like to use them instead. Adding support for a new templating engine, pre-processor, or whatever is as simple as installing the plugin for it.
 
 DocPad also supports more than just templating engines, though. We have a whole range of different plugins to do all sorts of things, so be sure to check them out!
 
@@ -222,7 +222,7 @@ It's time to start adding some assets. Before proceeding with this section, plea
 
 ### Images
 
-Let's add our logo to our layout's header. We'll download the [DocPad logo](http://d.pr/i/cfmt+) and place it in our `files` directory at `src/files/images/logo.gif` (binary files should _always_ go in the `files` directory). Then, we'll add it to the body of our layout, to show our logo on each page:
+Let's add our logo to our layout's header. We'll download the [DocPad logo](http://d.pr/i/cfmt+) and place it in our `static` directory at `src/static/images/logo.gif` (binary files should _always_ go in the `static` directory). Then, we'll add it to the body of our layout, to show our logo on each page:
 
 - `src/layouts/default.html.eco`
 
@@ -262,9 +262,9 @@ Upon saving, we'll notice that our browser will automatically reload, and that o
 
 Now let's add a nifty loading effect using JavaScript and the [jQuery JavaScript Library](http://jquery.com). As always, there's plenty of other JavaScript Libraries you can use, but in this guide we'll go with jQuery.
 
- To do this, we'll first download the [jQuery library](http://code.jquery.com/jquery.js) file and put it in our `files` directory at `src/files/vendor/jquery.js`.
+ To do this, we'll first download the [jQuery library](http://code.jquery.com/jquery.js) file and put it in our `static` directory at `src/static/vendor/jquery.js`.
 
- The reason we use the `files` directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them there is a good choice for consistency and speed. Whereas, we will probably eventually want to render our own scripts and styles with something, so generally we'll just put them in the documents directory to make the transition to rendering engines easier.
+ The reason we use the `static` directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them there is a good choice for consistency and speed. Whereas, we will probably eventually want to render our own scripts and styles with something, so generally we'll just put them in the documents directory to make the transition to rendering engines easier.
 
  Now that we have included jQuery in our project, we'll add our nifty loading effect by adding a script file at `src/documents/scripts/script.js` that contains:
 
@@ -282,7 +282,9 @@ Now that's done, let's add those files to our _scripts Block_ in our `default.ht
 
 Upon saving, we'll notice that our content will fade in over a duration of two seconds. Nifty!
 
-Now, some of you may wonder why we omitted the [jQuery onDomReady](http://api.jquery.com/ready/) handler in our script file. While off-topic for DocPad, the reasoning for this is that only code that requires the entire DOM to be loaded needs it. For instance, if your script requires a DOM element that is positioned after our script tag, then it would be useful. In this instance, as we inject our scripts into our body element, we already have access to the body element, and therefore can start our `fadeIn` animation immediately. This avoids the page loading, then, the DOM loading after a delay, followed by our fade-in with an undesirable "popping" effect.
+Now, some of you may wonder why we omitted the [jQuery onDomReady](http://api.jquery.com/ready/) handler in our script file. While off-topic for DocPad, the reasoning for this is that only code that requires the entire DOM to be loaded needs it. For instance, if your script requires a DOM element that is positioned after our `script` tag, then it would be useful. 
+
+In this instance, as we inject our scripts into our `body` element, we already have access to the `body` element, and therefore can start our `fadeIn` animation immediately. This avoids the page loading, then, the DOM loading after a delay, followed by our fade-in with an undesirable "popping" effect.
 
 
 
@@ -321,7 +323,7 @@ Open the Stylesheet document we created earlier (`documents/styles/style.css`). 
 
 Install the [Stylus Plugin](/plugin/stylus) by running `docpad install stylus`.
 
-Then, rename `src/documents/styles/style.css` to `src/documents/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `documents` and not in `files` is now obvious: if the stylus stylesheet file were in `files/styles/` folder, it would not have been pre-processed before copying to `out`.
+Then, rename `src/documents/styles/style.css` to `src/documents/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `documents` and not in `static` is now obvious: if the Stylus stylesheet file were in `static/styles/` folder, it would not have been pre-processed before copying to `out`.
 
 Using Stylus syntax, update the stylesheet's content to become:
 
@@ -354,7 +356,7 @@ Which gives us the same result, but with all the benefits of CoffeeScript.
 
 This simple procedure can be followed irrespective of your desired JavaScript pre-processor.
 
-Sweet, you're now ready to relax, with a rich cup of CoffeeScript.
+Sweet! Now you're ready to relax, with a rich cup of CoffeeScript.
 
 
 
@@ -394,11 +396,11 @@ docpadConfig = {
 module.exports = docpadConfig
 ```
 
-Notice that the `docpadConfig` object is written in CoffeeScript's version of a JSON object.
+Notice that the `docpadConfig` object is written in CoffeeScript's version of  JSON.
 
 You'll have to restart DocPad so that DocPad can become aware of the configuration file. From then on, DocPad will automatically reload your configuration when changes occur.
 
-The first part of this configuration is where we actually define our configuration (where the `# ...` is located), and the second part is a [node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
+The first part of this configuration is where we actually define our configuration (where the `# ...` is located), and the second part is a [Node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
 
 For more information on configuration files and what configuration is available to your, refer to our [Configuration Page](/docpad/config).
 
@@ -448,7 +450,7 @@ And the title of our layout template, `default.html.eco`, would become:
 
 Now that is awesome! While this was a simple example, we can use it to do some really cool stuff. For instance, [here](https://gist.github.com/4166882) is an example of it being used to localize dates into French.
 
-If you're writing a plugin, you can use the [extendTemplateData](/docpad/events) event to extend the template data.
+If you're writing a plugin, you can use the [`extendTemplateData`](/docpad/events) event to extend the template data.
 
 
 
@@ -467,7 +469,7 @@ Remember our _About_ page? Wouldn't it be nice if, when we list more pages, our 
 
 ### Updating our Layout
 
-Open your default layout and, before the `h1`, add the following:
+Open your default layout, and add the following before the `h1`:
 
 - `src/layouts/default.html.eco`
 
@@ -483,9 +485,11 @@ Open your default layout and, before the `h1`, add the following:
 </ul>
 ```
 
-Save it, and bang, now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a `isPage` attribute set to `true`, which is the attribute we defined earlier when first applying our layout to our pages. We then convert the result from a [Backbone Collection](http://backbonejs.org/#Collection) / [QueryEngine](/queryengine/guide) into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
+Save it, and BANG! Now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a `isPage` attribute set to `true`. (We defined it earlier, when first applying our layout to our pages.) Then, we convert the result from a [Backbone Collection](http://backbonejs.org/#Collection) / [QueryEngine](/queryengine/guide) into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
 
-That's a bit of a mouthful, but give it a while and you'll be a pro in no time. There is one major inefficiency with the above approach. Can you guess it?
+That's a bit of a mouthful, but give it a while and you'll be a pro in no time. 
+
+There is one major inefficiency with the above approach. Can you guess what it is?
 
 Performing the query every single time we render a layout is a bit silly, as the results won't change each time. What we ought to do is query once and provide access to the results of our collection. Let's do it!
 
@@ -508,14 +512,22 @@ In our default layout, `default.html.eco`, we'll update the `getCollection` line
 <% for page in @getCollection("pages").toJSON(): %>
 ```
 
-Much better, and way more efficient. Did you spot the difference with the call we used? When performing our query, we used the `findAllLive` instead of the `findAll` method. The reasoning behind this is that `findAllLive` utilizes [QueryEngine's Live Collections](/queryengine/guide), which allows us to define our criteria once and then, throughout time, keep our collection up-to-date. It works by creating a live child collection of the parent collection (in this case, the `html` collection is the parent collection and our `pages` collection is the child collection). The child collection then subscribes to `add`, `remove` and `change` events of the parent collection and tests the model that the event was for against our child collection's criteria. If it passes the collection, it adds it, and if it doesn't pass then it removes it. This performs much better than querying everything every single time.
+Much better, and way more efficient. 
 
-So then, what about sorting? That's easy enough! We can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument, which is the sorting argument; `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` that, in this case, will sort by the filename in ascending order. To sort in descending order, we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add an `order` attribute to our document meta data and then sort by that if we wanted to. There is also a third parameter for paging. To learn about this, as well as what type of queries are available to you, you can refer to the [QueryEngine Guide](/queryengine/guide).
+Did you spot the difference with the call we used? When performing our query, we used the `findAllLive` instead of the `findAll` method. That's because `findAllLive` uses [QueryEngine's Live Collections](/queryengine/guide), which allows us to define our criteria once, and then continue to keep our collection up-to-date. 
+
+It works by creating a live child collection of the parent collection. (In this case, the `html` collection is the parent collection and our `pages` collection is the child collection.) The child collection then subscribes to the parent collection's `add`, `remove`, and `change` events, and tests the model that the event was for against our child collection's criteria. If it passes the collection, it adds it; if not, then it removes it. This performs much better than querying everything every single time.
+
+So then, what about sorting? That's easy enough! We can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument, which is the sorting argument; `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` that, in this case, will sort by the filename in ascending order. To sort in descending order, we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add an `order` attribute to our document meta data and then sort by that if we wanted to. 
+
+There is also a third parameter for paging. To learn about this, as well as what type of queries are available to you, check out [QueryEngine Guide](/queryengine/guide).
 
 
 ### Setting Default Meta Data Attributes for our Pages
 
-Considering we'd probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages, so we don't always have to add `layout: default` to the [meta data](/docpad/meta-data) of each page. Just like everything, it's pretty darn easy, if you know how. And here's how:
+Considering we'd probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages, so we don't always have to add `layout: default` to the [meta data](/docpad/meta-data) of each page. 
+
+Just like everything, it's pretty darn easy, if you know how. And here's how:
 
 ``` coffee
 docpadConfig = {
@@ -526,9 +538,9 @@ docpadConfig = {
 }
 ```
 
-So, what does this do? It's exactly the same as before, but we use the `add` event automaticaly fired by [backbone](http://backbonejs.org/#Collection-add) whenever a model (a page, file, document, whatever) is added to our collection. Then, inside our event, we say we want to set our default meta data attributes for the model; in this case, setting the layout to `"default"`.
+So, what does this do? It's exactly the same as before, but we use the `add` event automaticaly fired by [Backbone](http://backbonejs.org/#Collection-add) whenever a model (a page, file, document, whatever) is added to our collection. Then, inside our event, we say we want to set our default meta data attributes for the model; in this case, setting the layout to `"default"`.
 
-This ability is priceless when doing more complicated things with DocPad. For instance, we use it for this documentation, to allow us to base the navigation structure of our documentation files on their physical location in our file system. Thus, if we have a file `docs/docpad/01-start/04-begin.html.md`, we can detect that the project is `docpad`, and assign `project: "docpad"` to the meta data accordingly. As the section is "start" and it is order first, we set `category: "start"` and `categoryOrder: 1`, and also see that our file is `begin` and ordered 4th. This is just one nifty example. There's plenty more you'll discover on your own epic journey! :)
+This is invaluable when doing more complex things in DocPad. For instance, we use it for this documentation, to allow us to base the navigation structure of our documentation files on their physical location in our file system. Thus, if we have a file `docs/docpad/01-start/04-begin.html.md`, we can detect that the project is `docpad`, and assign `project: "docpad"` to the meta data accordingly. As the section is "start" and it is order first, we set `category: "start"` and `categoryOrder: 1`. We also see that our file is `begin` and ordered 4th. This is just one nifty example. There's plenty more you'll discover on your own epic journey! :)
 
 
 
@@ -552,7 +564,7 @@ As you now have all the tools and knowledge required to be able to create the bl
 
 - If you're stuck and need some help, just hop on over to the [DocPad IRC Support Channel](http://webchat.freenode.net/?channels=docpad) (#docpad on freenode) and someone will be with you soon enough. :) You can also discover all of our available Support Channels via our [Support Page](/support).
 
-By the way, congratulations! You now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [Showcase](/docpad/showcase). To recap, you now know how to:
+Congratulations! You now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [Showcase](/docpad/showcase). To recap, you now know how to:
 
 - write documents in any language, markup, pre-processor, templating engine, whatever you wish, by installing the necessary plugin for it and changing the extensions of the document
 - perform powerful abstractions using layouts, meta data, template data and configuration files
