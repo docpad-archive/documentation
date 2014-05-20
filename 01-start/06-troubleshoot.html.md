@@ -78,11 +78,11 @@ watchOptions: catchupDelay: 0
 This will introduce problems however if you have previously customised `watchOptions`, or if your editor uses swapfiles. [More info here.](https://github.com/bevry/docpad/issues/749)
 
 
-### I got `We couldn't find an existing DocPad project inside your current directory...`
+### Error: “We couldn't find an existing DocPad project inside your current directory...”
 This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](/support).
 
 
-### I'm getting `Could not locate git binary`
+### Error: “Could not locate git binary”
 This happens when the [git](http://git-scm.com) installation is not exposed to your [PATH variable](http://en.wikipedia.org/wiki/PATH_%28variable%29). You can solve this in either of these two ways:
 
 - Reinstall git and make sure to select the option during installation that asks if you would like to add it to your PATH variable (may also be called, would you like git to be available to the command line)
@@ -91,7 +91,7 @@ This happens when the [git](http://git-scm.com) installation is not exposed to y
 [More information about this here.](https://github.com/bevry/docpad/issues/425)
 
 
-### I'm getting `EMFILE, too many open files`
+### Error: “EMFILE, too many open files”
 As Node.js is like an octopus, able to do many things at the same time, sometimes Node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running `ulimit -n 8192` in your terminal.
 
 
