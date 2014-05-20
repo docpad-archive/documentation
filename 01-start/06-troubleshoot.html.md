@@ -83,10 +83,10 @@ This occurs when you run `docpad run` inside a directory that already has existi
 
 
 ### Error: “Could not locate git binary”
-This happens when the [git](http://git-scm.com) installation is not exposed to your [PATH variable](http://en.wikipedia.org/wiki/PATH_%28variable%29). You can solve this in either of these two ways:
+This happens when the [git](http://git-scm.com) installation is not exposed to your [`PATH` variable](http://en.wikipedia.org/wiki/PATH_%28variable%29). You can solve this in either of these two ways:
 
-- Reinstall git and make sure to select the option during installation that asks if you would like to add it to your PATH variable (may also be called, would you like git to be available to the command line)
-- Manually add the location your git binary resides in to your PATH variable
+- Reinstall git and make sure to select the option during installation that asks if you would like to add it to your `PATH` variable (may also be called, would you like git to be available to the command line)
+- Manually add the location your git binary resides in to your `PATH` variable
 
 [More information about this here.](https://github.com/bevry/docpad/issues/425)
 
