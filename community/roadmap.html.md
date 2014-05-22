@@ -1,4 +1,4 @@
-This page serves as a roadmap that details the approximate milestones of DocPad's future.
+This page serves as a roadmap that details the approximate milestones of DocPad’s future.
 
 [Want to help? Contribute!](/docpad/contribute)
 
@@ -229,11 +229,11 @@ Version 2 focused on improving the possibilities of the plugin infrastructure as
 		- They enable things like form handling, search, real-time updating data, etc.
 
 - v2.0
-	- Plugin's have their own `package.json`
-		- This specifies the plugin's dependencies
+	- Plugin’s have their own `package.json`
+		- This specifies the plugin’s dependencies
 		- When the plugin is used, DocPad will do a `cd $pluginDir; npm install`
-	- Plugins and DocPad configurable through project's `package.json`
-	- Plugins and DocPad configurable through project's `docpad.coffee`
+	- Plugins and DocPad configurable through project’s `package.json`
+	- Plugins and DocPad configurable through project’s `docpad.coffee`
 	- Front-End Administration Plugin
 		- Adds in some client-side JavaScript
 		- Utilises contentEditable with semantic properties to update

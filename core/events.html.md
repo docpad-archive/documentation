@@ -7,22 +7,22 @@ All DocPad events receive two arguments (both optional):
 1. `opts`, an simple object containing any options that the event provides
 1. `next`, a completion callback
 
-DocPad's events are fired in a *synchronous* (or *serial*) fashion. In other words, when the first event runs until finished, then the next event fires and runs until finished, and so on. 
+DocPad’s events are fired in a *synchronous* (or *serial*) fashion. In other words, when the first event runs until finished, then the next event fires and runs until finished, and so on. 
 
 *Asynchronous* code, however, has no implicit guarantees about the order of execution. It will fire the first event, and may then immediately fire the second event while the first is still running. 
 
-That's why asynchronous code requires callbacks. When the first event is done, it will run the callback function it was invoked with.  It's the callback's job to signal when it's okay to proceed to the next event. 
+That’s why asynchronous code requires callbacks. When the first event is done, it will run the callback function it was invoked with.  It’s the callback’s job to signal when it’s okay to proceed to the next event. 
 
-Node.js itself is built for asynchronous execution, so it's pretty common for Node.js programs to run asynchronously. 
+Node.js itself is built for asynchronous execution, so it’s pretty common for Node.js programs to run asynchronously. 
 
-Since DocPad's events are run synchronously, omitting the `next` callback is perfectly valid (even encouraged) if you're using DocPad in your own synchronous code. (Of course, you're free to write in whatever style works best for you! If you enjoy coding in the asynchronous style, the `next` callback is available for you.)
+Since DocPad’s events are run synchronously, omitting the `next` callback is perfectly valid (even encouraged) if you’re using DocPad in your own synchronous code. (Of course, you’re free to write in whatever style works best for you! If you enjoy coding in the asynchronous style, the `next` callback is available for you.)
 
 
 ### Inside your Configuration File
 
 You can bind to events in your DocPad configuration file by adding them to the `events` property. 
 
-**Example:** Let's use a `docpad.coffee` configuration file. Binding to the `serverExtend` event would look like so:
+**Example:** Let’s use a `docpad.coffee` configuration file. Binding to the `serverExtend` event would look like so:
 
 ``` coffeescript
 docpadConfig =
@@ -53,7 +53,7 @@ The context (what `this`/`@` points to) of event handlers is a shared object bet
 
 ### Inside your Plugins
 
-You can bind to events inside your DocPad plugin by just adding the event handler directly to your plugin's definition. As such, binding to the `render` event to render from one extension to the other would look like so:
+You can bind to events inside your DocPad plugin by just adding the event handler directly to your plugin’s definition. As such, binding to the `render` event to render from one extension to the other would look like so:
 
 ``` coffeescript
 # Export Plugin
@@ -73,7 +73,7 @@ module.exports = (BasePlugin) ->
 
 ```
 
-The context (what `this`/`@` points to) of event handlers in your plugin will be your plugin's instance.
+The context (what `this`/`@` points to) of event handlers in your plugin will be your plugin’s instance.
 
 
 ## Available Events
@@ -131,7 +131,7 @@ Use to extend the console interface with additional commands.
 Called just before we start to insert dynamic files into the database. Called before each generation, just before the `generateBefore` event. Partnered with the `populateCollections` event.
 
 ### `populateCollections`
-Called just after we've inserted dynamic files into the collections. Called before each generation, just before the `generateBefore` event. Partnered with the `populateCollectionsBefore` event.
+Called just after we’ve inserted dynamic files into the collections. Called before each generation, just before the `generateBefore` event. Partnered with the `populateCollectionsBefore` event.
 
 Use this for inserting your dynamic files into the database.
 
@@ -167,7 +167,7 @@ Called just before we start to contextualize all the files. Partnered with the `
   <ins>Deprecated; use `extendTemplateData` event instead</ins>
 
 ### `contextualizeAfter`
-Called just after we've finished contextualize all the files. Partnered with the `conextualizeBefore` event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
+Called just after we’ve finished contextualize all the files. Partnered with the `conextualizeBefore` event. Contextualizing is the process of adding layouts and awareness of other documents to our document.
 
 **Options:**
 - `collection` the collection we are working with
@@ -210,7 +210,7 @@ Use to render one extension to another.
 **Options:**
 - `inExtension` the extension we are rendering from
 - `outExtension` the extension we are rendering to
-- `templateData` the template data that we will use for this document's rendering
+- `templateData` the template data that we will use for this document’s rendering
 - `file` the model instance for the document we are rendering
 - `content` the current content that this document contains, you shall overwrite this option with any updates you do
 
@@ -237,7 +237,7 @@ Use to perform transformations to the entire document.
 
 **Options:**
 - `extension` the resulted extension for our document
-- `templateData` the template data that we will use for this document's rendering
+- `templateData` the template data that we will use for this document’s rendering
 - `file` the model instance for the document we are rendering
 - `content` the current content that this document contains, you shall overwrite this option with any updates you do
 
@@ -247,10 +247,10 @@ Use to perform transformations to the entire document.
 
 
 ### `renderAfter`
-Called just just after we've rendered all the files. Partnered with the `renderBefore` event.
+Called just just after we’ve rendered all the files. Partnered with the `renderBefore` event.
 
 **Options:**
-- `collection` a [query-engine][] [collection][] containing the models we've rendered
+- `collection` a [query-engine][] [collection][] containing the models we’ve rendered
 
 
 
@@ -263,7 +263,7 @@ Called just before we start writing all the files. Partnered with the `writeAfte
 
 
 ### `writeAfter`
-Called just just after we've wrote all the files. Partnered with the `writeBefore` event.
+Called just just after we’ve wrote all the files. Partnered with the `writeBefore` event.
 
 **Options:**
 - `collection` a [query-engine][] [collection][query-engine collection] containing the models we are about to render
@@ -271,7 +271,7 @@ Called just just after we've wrote all the files. Partnered with the `writeBefor
 
 
 ### `generateAfter`
-Called just after we've finished generating your project.  Partnered with the `generateBefore` event.
+Called just after we’ve finished generating your project.  Partnered with the `generateBefore` event.
 
 
 ### `generated`

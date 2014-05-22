@@ -2,12 +2,12 @@
 title: "Debugging"
 ```
 
-Sometimes things go bad, and you need to get into DocPad and work out what's happening. Perhaps a plugin isn't working as expected, or content isn't being generated—or, you're just curious as to how to do it. 
+Sometimes things go bad, and you need to get into DocPad and work out what’s happening. Perhaps a plugin isn’t working as expected, or content isn’t being generated—or, you’re just curious as to how to do it. 
 
-And to do that, you'll need to get your debugging on.
+And to do that, you’ll need to get your debugging on.
 
 
-## What you'll need
+## What you’ll need
 
 1. Get a Webkit based browser (both [Google Chrome](http://www.google.com/chrome/) and Safari work great)
 
@@ -44,7 +44,7 @@ And to do that, you'll need to get your debugging on.
 
 1. [Get TraceGL from their website](https://trace.gl)
 
-	1. It's shareware, but by gosh it is worth the money! It is AMAZING.
+	1. It’s shareware, but by gosh it is worth the money! It is AMAZING.
 
 2. Download it to somewhere in your `PATH`, and run the following on it:
 

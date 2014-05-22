@@ -2,7 +2,7 @@
 title: "Command Line Interface"
 ```
 
-- To create your website (if it doesn't already exist), watch for changes, and start the webserver, use:
+- To create your website (if it doesn’t already exist), watch for changes, and start the webserver, use:
 
 	``` bash
 	docpad run

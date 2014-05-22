@@ -1,7 +1,7 @@
 ## Known Issues
 
 
-### Regressions we're working on
+### Regressions we’re working on
 The following are issues the DocPad team are aware of and will fix shortly:
 
 - Dynamic pages are behaving weirdly: https://github.com/bevry/docpad/issues/767
@@ -12,12 +12,12 @@ The following are issues the DocPad team are aware of and will fix shortly:
 It seems that this is associated to being behind a firewall or a proxy. You can apply [this workaround](https://github.com/bevry/docpad/issues/488).
 
 
-### I got "npm ERR! Failed to parse json"
-Check your project's `package.json` file with [JSONLint](http://jsonlint.com/), to ensure it does not contain any errors, such as missing semicolons, quotes or commas.
+### I got “npm ERR! Failed to parse json”
+Check your project’s `package.json` file with [JSONLint](http://jsonlint.com/), to ensure it does not contain any errors, such as missing semicolons, quotes or commas.
 
 
 ### I am getting permission errors after I install things
-Chances are this isn't a problem within DocPad, but rather one of your Node/NPM installations. Run the following in Terminal, once done, try your original action again:
+Chances are this isn’t a problem within DocPad, but rather one of your Node/NPM installations. Run the following in Terminal, once done, try your original action again:
 
 ``` bash
 sudo chown -R $USER /usr/local ~/.npm
@@ -30,9 +30,9 @@ Be sure that your tmp dir is writable for the current user:
 sudo chown -R $USER:$GROUPS ~/tmp
 ```
 
-If that fails, we'd recommend either:
+If that fails, we’d recommend either:
 
-- Re-Installing Node.js with Bevry's [recommended installation instructions](http://bevry.me/node/install)
+- Re-Installing Node.js with Bevry’s [recommended installation instructions](http://bevry.me/node/install)
 - Asking about it on the [Node.js IRC Chat Room](http://webchat.freenode.net/?channels=node.js) (`#node.js` on freenode)
 
 
@@ -40,7 +40,7 @@ If that fails, we'd recommend either:
 - For Windows XP/Vista/7 installations:
   - [Python](http://www.python.org/download/) [v2.7.3](http://www.python.org/download/releases/2.7.3#download) Recommended 
   - [Microsoft Visual Studio C++ 2010](http://go.microsoft.com/?linkid=9709949)
-- For 64-bit builds of Node.js and native modules, you'll also need:
+- For 64-bit builds of Node.js and native modules, you’ll also need:
   - [Windows 7 64-bit SDK](http://www.microsoft.com/en-us/download/details.aspx?id=8279)
     - If the install fails, try uninstalling any C++ 2010 x64&x86 Redistributable that you have installed first.
 - If you get errors that the 64-bit compilers are not installed, you may also need:
@@ -53,8 +53,8 @@ If that fails, we'd recommend either:
 It turns out that Windows will prefer to treat the local `docpad.js` file as the executable versus the global `docpad.cmd` file. To get around this, type `docpad.cmd run` instead in projects that have a `docpad.js` file. [More information here.](https://github.com/bevry/docpad/issues/561#issuecomment-21494426)
 
 
-### Watching doesn't work; works only some of the time; I get `EISDIR` errors
-File watching is a pretty timid thing. We're currently working on making it better. There are currently two methods for watching files: `watch` and `watchFile`. The default is `watch`, and it uses the operating system's watching mechanisms. However, sometimes those mechanisms aren't the best. If that's the case, we'd like to switch our watching method to `watchFile`.  It's slower, but it works when `watch` doesn't. 
+### Watching doesn’t work; works only some of the time; I get `EISDIR` errors
+File watching is a pretty timid thing. We’re currently working on making it better. There are currently two methods for watching files: `watch` and `watchFile`. The default is `watch`, and it uses the operating system’s watching mechanisms. However, sometimes those mechanisms aren’t the best. If that’s the case, we’d like to switch our watching method to `watchFile`.  It’s slower, but it works when `watch` doesn’t. 
 
 To do this, add the following to your [DocPad configuration file](/docpad/config):
 
@@ -78,11 +78,11 @@ watchOptions: catchupDelay: 0
 This will introduce problems however if you have previously customised `watchOptions`, or if your editor uses swapfiles. [More info here.](https://github.com/bevry/docpad/issues/749)
 
 
-### Error: "We couldn't find an existing DocPad project inside your current directory..."
-This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](/support).
+### Error: “We couldn’t find an existing DocPad project inside your current directory...”
+This occurs when you run `docpad run` inside a directory that already has existing files, but doesn’t have a structure that resembles a DocPad project. We can’t directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](/support).
 
 
-### Error: "Could not locate git binary"
+### Error: “Could not locate git binary”
 This happens when the [git](http://git-scm.com) installation is not exposed to your [`PATH` variable](http://en.wikipedia.org/wiki/PATH_%28variable%29). You can solve this in either of these two ways:
 
 - Reinstall git and make sure to select the option during installation that asks if you would like to add it to your `PATH` variable (may also be called, would you like git to be available to the command line)
@@ -91,7 +91,7 @@ This happens when the [git](http://git-scm.com) installation is not exposed to y
 [More information about this here.](https://github.com/bevry/docpad/issues/425)
 
 
-### Error: "EMFILE, too many open files"
+### Error: “EMFILE, too many open files”
 As Node.js is like an octopus, able to do many things at the same time, sometimes Node.js will always try to do too many things than the operating system will let it. In which case, you can increase the amount of files allowed at the same time by running `ulimit -n 8192` in your terminal.
 
 
@@ -105,7 +105,7 @@ There are a few things you can do:
 - [Help us implement performance optimisations](https://github.com/bevry/docpad/issues/529)
 
 
-### I upgraded, and it doesn't work
+### I upgraded, and it doesn’t work
 [Check out the Upgrade Guides here](/docpad/upgrade)
 
 
@@ -122,16 +122,16 @@ For example: When you want to put the output of a variable into the content of a
 
 
 ### I get a whole bunch of npm / missing module/package / installation failed errors
-If you are using [Dropbox](http://j.mp/dropbox-bal) (an online syncing and backup tool) and your project is inside your Dropbox folder, then click the Dropbox menu icon and select "Pause Syncing". 
+If you are using [Dropbox](http://j.mp/dropbox-bal) (an online syncing and backup tool) and your project is inside your Dropbox folder, then click the Dropbox menu icon and select “Pause Syncing”. 
 
-Once that's done, try whatever you were doing again. You may need to run `rm -Rf node_modules; npm install` as well. 
+Once that’s done, try whatever you were doing again. You may need to run `rm -Rf node_modules; npm install` as well. 
 
-Once it's all working, then you're free to resume Dropbox syncing.
+Once it’s all working, then you’re free to resume Dropbox syncing.
 
-If you're still experiencing issues, then be sure to post about it on the [issue tracker](/issues).
+If you’re still experiencing issues, then be sure to post about it on the [issue tracker](/issues).
 
 
-### The Growl notifications aren't displaying
+### The Growl notifications aren’t displaying
 This means you need to [download and install the growlnotify extra](http://growl.cachefly.net/GrowlNotify-1.3.zip) from the [Growl website](http://growl.info). This package provides a command line application for calling Growl, which can then be used by DocPad.
 
 

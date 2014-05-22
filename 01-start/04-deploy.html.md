@@ -5,9 +5,9 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 
 
-### Inside your website's directory
+### Inside your website’s directory
 
-1. Add the following to your website's `package.json` file. Add all the dependencies you are using and make sure their versions are correct - as well as ensure all commas are correctly placed.
+1. Add the following to your website’s `package.json` file. Add all the dependencies you are using and make sure their versions are correct - as well as ensure all commas are correctly placed.
 
 	``` javascript
 	"engines" : {
@@ -120,13 +120,13 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 ### Optional: Custom domains
 
-If you're also wanting to use custom domains for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
+If you’re also wanting to use custom domains for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
 
 1. Ping your server (e.g., `ping balupton.herokuapp.com`)
 
 1. Grab the IP address from the output
 
-1. Login to your domain's DNS manager
+1. Login to your domain’s DNS manager
 
 1. Create an A Record for your domain pointing to that IP address
 
@@ -136,7 +136,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 
 1. Perform a generation for a static production environment using `docpad generate --env static`
 
-2. Upload the generated directory to your server's `public_html` or `htdocs` directory
+2. Upload the generated directory to your server’s `public_html` or `htdocs` directory
 
 	1. If you use rsync, [checkout our DocPad rsync deploy script](https://gist.github.com/Hypercubed/5804999)
 

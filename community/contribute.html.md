@@ -5,14 +5,14 @@ title: Contributing
 
 ## Donations
 
-With your help, we'll be able to work on DocPad full time! Isn't that awesome? [Donate now to let that happen!](/donate)
+With your help, we’ll be able to work on DocPad full time! Isn’t that awesome? [Donate now to let that happen!](/donate)
 
 
 ## Publicize
 
 Help spread the word of DocPad:
 
-- Star our [GitHub Repository](https://github.com/bevry/docpad) by clicking the "Star" button on the top right
+- Star our [GitHub Repository](https://github.com/bevry/docpad) by clicking the “Star” button on the top right
 - Star our [NPM Package](https://npmjs.org/package/docpad) by running `npm star docpad` in your terminal
 - Join our [DocPad Gittip Community](/gittip-community)
 - Join our [DocPad Google+ Community](/google+)
@@ -27,7 +27,7 @@ Help spread the word of DocPad:
 To add a new skeleton to the skeleton listing:
 
 1. Add your new skeleton to our [`exchange.json` file](https://github.com/bevry/docpad-extras/edit/docpad-6.x/exchange.json)
-1. Submit the pull request for it (the page for this should appear automatically once you click "Commit Changes" from the previous link)
+1. Submit the pull request for it (the page for this should appear automatically once you click “Commit Changes” from the previous link)
 
 
 ## Documentation
@@ -36,8 +36,8 @@ To update our documentation:
 
 1. Our documentation is located at the [`docpad/documentation` repository](https://github.com/docpad/documentation)
 1. We have [strict documentation criteria](http://bevry.me/learn/bevry-documentation-guidelines) that all documentation changes must abide by
-1. You can edit a file by opening that file in the repository browser, and then clicking the "Edit" button
-1. Once done, click save changes or whatever the button says and this will then take you to a "Submit Pull Request" page
+1. You can edit a file by opening that file in the repository browser, and then clicking the “Edit” button
+1. Once done, click save changes or whatever the button says and this will then take you to a “Submit Pull Request” page
 1. Fill in the details and click submit
 
 
@@ -88,13 +88,13 @@ Follow these steps in order to implement your changes/improvements into the plug
     1. You can do this by: `git checkout master; git checkout -b your-new-branch`
     1. And push the changes up by: `git push origin your-new-branch`
 1. Make sure all tests are passing: `cake test`
-    1. If possible, add tests for your change, if you don't know how, mention this in your pull request
-1. If the project has a prepublish step, run it: `cake prepublish` (if it doesn't have this step that command will fail)
+    1. If possible, add tests for your change, if you don’t know how, mention this in your pull request
+1. If the project has a prepublish step, run it: `cake prepublish` (if it doesn’t have this step that command will fail)
 
 
 ### Testing the DocPad core against plugins
 
-Before you submit changes to the DocPad core you'll want to make sure they don't break any of our officially supported plugins:
+Before you submit changes to the DocPad core you’ll want to make sure they don’t break any of our officially supported plugins:
 
 1. Clone the [`docpad-extras` repository](https://github.com/bevry/docpad-extras) and `cd` into it
 1. Make your development DocPad instance available to the plugin runner (run `npm link docpad`)
@@ -128,7 +128,7 @@ To publish your changes as the project owner:
     ``` markdown
     - v6.29.0 April 1, 2013
         - Progress on [issue #474](https://github.com/bevry/docpad/issues/474)
-        - DocPad will now set permissions based on the process's ability
+        - DocPad will now set permissions based on the process’s ability
             - Thanks to [Avi Deitcher](https://github.com/deitch), [Stephan Lough](https://github.com/stephanlough) for [issue #165](https://github.com/bevry/docpad/issues/165)
         - Updated dependencies
     ```
@@ -138,4 +138,4 @@ To publish your changes as the project owner:
 1. Use `cake publish`, which will publish the module to npm, create a Git tag for it, push your master changes and new tags up to origin
     1. When prompted for your Git tag annotation (your text editor will open up automatically), enter the changelog entry, save the prompted file, and close the file
 
-And that's it. :)
+And that’s it. :)
