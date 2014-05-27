@@ -159,3 +159,8 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 ## To a Cloud Data Storage Provider (AWS S3, Google Storage, etc.)
 
 1. [Checkout the DocPad Sunny Plugin](https://github.com/bobobo1618/docpad-plugin-sunny)
+
+
+## To a Docker Image
+
+1. [Checkout the DocPad Docker Forge guide](https://github.com/RobLoach/forge/tree/master/docpad)
