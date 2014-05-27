@@ -118,6 +118,11 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 1. [Follow getting started guide](https://modulus.io/codex/getting_started)
 
 
+### For deployment to [Docker](https://www.docker.io/)
+
+1. [Checkout the DocPad Docker Forge guide](https://github.com/RobLoach/forge/tree/master/docpad)
+
+
 ### Optional: Custom domains
 
 If you're also wanting to use custom domains for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
@@ -141,7 +146,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 	1. If you use rsync, [checkout our DocPad rsync deploy script](https://gist.github.com/Hypercubed/5804999)
 
 
-## To [GitHub Pages](http://pages.github.com)
+### For deployment to [GitHub Pages](http://pages.github.com)
 
 1. Install the [GitHub Pages Plugin](/plugin/ghpages)
 
@@ -156,11 +161,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 	```
 
 
-## To a Cloud Data Storage Provider (AWS S3, Google Storage, etc.)
+### For deployment to a Cloud Data Storage Provider (AWS S3, Google Storage, etc.)
 
 1. [Checkout the DocPad Sunny Plugin](https://github.com/bobobo1618/docpad-plugin-sunny)
 
-
-## To a Docker Image
-
-1. [Checkout the DocPad Docker Forge guide](https://github.com/RobLoach/forge/tree/master/docpad)
