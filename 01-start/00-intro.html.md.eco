@@ -127,12 +127,12 @@ comparisonTable:  """
 
 ## What is DocPad?
 
-DocPad is a next-generation web architecture. It handles content management via the file system, rendering via plugins, and provides static site generation for deployment anywhere. It's built with Node.js and Express.js, making it naturally fast and easily extendable.
+DocPad is a next-generation web architecture. It handles content management via the file system, rendering via plugins, and provides static site generation for deployment anywhere. It’s built with Node.js and Express.js, making it naturally fast and easily extendable.
 
 
 ## Problems with Traditional Web Architectures
 
-Despite all the amazing wonder of current web application architectures, they're mostly:
+Despite all the amazing wonder of current web application architectures, they’re mostly:
 
 - **Inherently slow**
 	- Usually built on blocking, live-then-die platforms
@@ -145,23 +145,23 @@ Despite all the amazing wonder of current web application architectures, they're
 	- You require CMS/framework developers instead of web developers
 - **Difficult**
 	- Setting up a new website is time-consuming and complex
-	- Uh oh! "database not installed" or "version invalid"
+	- Uh oh! “database not installed” or “version invalid”
 	- Migrations and deployments are a royal pain in the ass
 - **Limited**
-	- WYSIWYG editors are sucky and stupid - why re-invent the wheel? We're already trained with and love our desktop counterparts (Sublime Text, Vim, Byword, etc.)
-	- Abstractions on the go? Forget it - you're boxed in, unless you've got a machete
-	- Want to use your own pre-processors, markups, and templating engines? Tough: they're handled by the core.
+	- WYSIWYG editors are sucky and stupid - why re-invent the wheel? We’re already trained with and love our desktop counterparts (Sublime Text, Vim, Byword, etc.)
+	- Abstractions on the go? Forget it - you’re boxed in, unless you’ve got a machete
+	- Want to use your own pre-processors, markups, and templating engines? Tough: they’re handled by the core.
 
 
 ## DocPad, a Next Generation Web Architecture
 
-On the other hand, let's compare that with DocPad, which is:
+On the other hand, let’s compare that with DocPad, which is:
 
 - **Website inherently fast**
 	- Built on a non-blocking, stay-alive platform
 	- Performance from the ground up, re-render only when changes occur (by default, can be configured differently)
 - **Lightweight**
-	- Tiny core, with anything that's re-usable abstracted out into modules that other systems can use
+	- Tiny core, with anything that’s re-usable abstracted out into modules that other systems can use
 	- All non-essential core functionality lives in opt-in plugins
 - **Simple**
 	- Tiny learning curve: get started in minutes, and become a pro in days
@@ -173,7 +173,7 @@ On the other hand, let's compare that with DocPad, which is:
 - **Robust**
 	- Use your desktop counterparts to edit content naturally (Sublime Text, Vim, Byword, etc.)
 	- Abstraction friendly - code the way you want, how you want
-	- Use whatever language, pre-processor, markup, templating engine you want - it's all covered via our [opt-in plugins](/docpad/plugins) (and if it isn't, it's very easy to add)
+	- Use whatever language, pre-processor, markup, templating engine you want - it’s all covered via our [opt-in plugins](/docpad/plugins) (and if it isn’t, it’s very easy to add)
 
 Besides this, thanks to the opt-in modular philosophy of Node, we benefit from all the innovations of the community as a whole, including:
 
@@ -186,6 +186,6 @@ So as the Node community grows and innovates, so do we. Awesome.
 
 ## Comparison Table
 
-For those who like tables, here's the above in table form:
+For those who like tables, here’s the above in table form:
 
 <%- @document.comparisonTable %>

@@ -25,7 +25,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 - Changes affecting pugin developers:
 	- Removed `docpadInstance.documents`. Use `docpadInstance.getCollection('documents')` instead.
 	- Plugin tests are now run via `npm test` on your plugin directory, allowing you to use whatever test runner you want
-	- DocPad and the tester helpers have moved from Mocha to [Joe](http://github.com/bevry/joe), you'll probably want to do the same
+	- DocPad and the tester helpers have moved from Mocha to [Joe](http://github.com/bevry/joe), you’ll probably want to do the same
 
 
 ## Upgrading from 4.x to 5.x
@@ -39,9 +39,9 @@ To upgrade your DocPad installation from an older version to the latest, check o
 	- For plugin developers, this affects any `docpad.documents`, `docpad.partials`, and `docpad.layouts` calls with the same advice as those for end-users.
 
 3. Plugins are now handled via [npm dependencies](http://npmjs.org/doc/json.html#dependencies) instead of being directly handled by DocPad and end-users. This is the most significant change and affects everybody.
-	- For end-users, you will need to add the plugins you use to your website's `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this. Once added to your website's `package.json` file, run a `npm install` to install them.
+	- For end-users, you will need to add the plugins you use to your website’s `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this. Once added to your website’s `package.json` file, run a `npm install` to install them.
 	- For plugin developers, there have been several important changes:
-		1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin's name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
+		1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin’s name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
 		2. You can now feel free to publish your plugin via npm (e.g., `npm publish`) and add your plugin to the [Plugins wiki page](/docpad/plugins) so others can install it themselves (e.g., `npm install docpad-plugin-#{pluginName}`).
 
 4. That should be all, if you have any problems be sure to report them on the [Issue Tracker](/issues). Thanks.
@@ -51,15 +51,15 @@ To upgrade your DocPad installation from an older version to the latest, check o
 
 1. Skeletons are no longer cached, which means that you can no longer create a new website using a skeleton while offline. While this can be a pain, it was an essential change in order to improve stability and reduce complexity of the code base.
 
-2. A document's `title` will no longer default to the document's `filename` if not set. Instead a new property called `name` exists, which can be set by your document meta data. This is so the `title` property can be used for Page Titles (e.g., `<title>`) whereas the `name` property can be used for navigation listings etc.
+2. A document’s `title` will no longer default to the document’s `filename` if not set. Instead a new property called `name` exists, which can be set by your document meta data. This is so the `title` property can be used for Page Titles (e.g., `<title>`) whereas the `name` property can be used for navigation listings etc.
 
-3. The DocPad core has been cleaned up a lot, and as such so has the way plugin events are triggered. We now utilise [balUtil's](https://github.com/balupton/bal-util.npm) [emitSync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L257) and [emitAsync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L241) instead of the old `triggerPluginEvent`. This means that for now, plugin priorities are discarded - however they may be added back in the future (so leave them in there if you have them).
+3. The DocPad core has been cleaned up a lot, and as such so has the way plugin events are triggered. We now utilise [balUtil’s](https://github.com/balupton/bal-util.npm) [emitSync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L257) and [emitAsync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L241) instead of the old `triggerPluginEvent`. This means that for now, plugin priorities are discarded - however they may be added back in the future (so leave them in there if you have them).
 
-4. Plugin rendering has had a significant change, which is you should no longer use `file.content` to read and update the current document's content. Instead a new argument called `content` wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the [Extending DocPad](/docpad/extend) wiki page.
+4. Plugin rendering has had a significant change, which is you should no longer use `file.content` to read and update the current document’s content. Instead a new argument called `content` wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the [Extending DocPad](/docpad/extend) wiki page.
 
 5. When an error occurs, the error will now be sent back to DocPad using the [AirBrake](http://airbrake.io/) service. If you would like this disabled then you can turn it off by setting `reportErrors` to `false` in your DocPad configuration.
 
-6. A lot of unstable or less-popular plugins have been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: `admin`, `authenticate`, `autoupdate`, `buildr`, `html2jade`, `move`, `php`, `rest`, `roy`, and `ruby`. If you would like to continue using them, you will have to download them manually from the `docpad-extras` repository and insert them into your website's `plugins` directory.
+6. A lot of unstable or less-popular plugins have been moved out to the new [docpad-extras](https://github.com/bevry/docpad-extras) repository. The plugins moved are: `admin`, `authenticate`, `autoupdate`, `buildr`, `html2jade`, `move`, `php`, `rest`, `roy`, and `ruby`. If you would like to continue using them, you will have to download them manually from the `docpad-extras` repository and insert them into your website’s `plugins` directory.
 
 
 ## Upgrading from 2.x to 3.x
@@ -75,9 +75,9 @@ To upgrade your DocPad installation from an older version to the latest, check o
 1. CoffeeScript v1.1.2 does not work with Node 0.5 or 0.6, you have to use v1.1.3 or higher. To do this, re-install CoffeeScript with `npm install -g coffee-script`
 2. For plugin developers:
 	1. Plugins have been revised to become more future proof and configurable. Plugins must be in their own directory, with the following format: `plugins/${pluginName}/${pluginName}.plugin.coffee`
-	2. Plugin dependencies should no longer be in the DocPad's or your project's `package.json` file, but instead in their plugin directory's `package.json` (e.g., `plugins/${pluginName}/package.json`); this file is optional, but recommended.
-	3. If a plugin's `package.json` exists, as well as its `main` property, DocPad will use that as the plugin file's location instead of the location in step 2.1.
-	4. Plugin configuration should be moved to their `package.json` file, to the key `docpad.plugin` which should be an object. This is then customisable by DocPad's `package.json` as well as the website's via `docpad.plugin.#{pluginName}`. The configuration of a plugin is available via the `@config` property.
+	2. Plugin dependencies should no longer be in the DocPad’s or your project’s `package.json` file, but instead in their plugin directory’s `package.json` (e.g., `plugins/${pluginName}/package.json`); this file is optional, but recommended.
+	3. If a plugin’s `package.json` exists, as well as its `main` property, DocPad will use that as the plugin file’s location instead of the location in step 2.1.
+	4. Plugin configuration should be moved to their `package.json` file, to the key `docpad.plugin` which should be an object. This is then customisable by DocPad’s `package.json` as well as the website’s via `docpad.plugin.#{pluginName}`. The configuration of a plugin is available via the `@config` property.
 	5. To access DocPad within a plugin, you should now use `@docpad` rather than having it passed through as an argument, this applies for logger too (now use `@logger`).
 	6. A lot of DocPad configuration has been moved to `@docpad.config`
 3. DocPad v2 also brings a bunch of new cool features, check out the changelog on the [homepage](https://github.com/balupton/docpad) for more info, and the [FAQ](https://github.com/balupton/docpad/wiki/FAQ) for information on how to use some of these new features :-)

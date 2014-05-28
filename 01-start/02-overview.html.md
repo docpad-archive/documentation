@@ -3,7 +3,7 @@ title: "Overview"
 ```
 ## Standard Project Structure
 
-Here is the standard project structure you'll see in DocPad projects:
+Here is the standard project structure you’ll see in DocPad projects:
 
 - `my-website/`
 	- `out/`
@@ -16,12 +16,12 @@ Here is the standard project structure you'll see in DocPad projects:
 
 ### The `out` Directory
 
-This directory contains anything that DocPad generates. Any new files added to the `src` directory will be found here after being rendered and written by DocPad. However any files that are deleted from the `src` directory will not be deleted from the `out` directory by DocPad, you have to delete them manually. So if you remove a file and it's still there remember to delete it manually. ;-)
+This directory contains anything that DocPad generates. Any new files added to the `src` directory will be found here after being rendered and written by DocPad. However any files that are deleted from the `src` directory will not be deleted from the `out` directory by DocPad, you have to delete them manually. So if you remove a file and it’s still there remember to delete it manually. ;-)
 
 
 ### The `src` Directory
 
-This directory contains your website's source files. It contains your layouts, files to be rendered and be in the output and files that are not to be rendered but will still be in the output. The `src` can have the following folders:
+This directory contains your website’s source files. It contains your layouts, files to be rendered and be in the output and files that are not to be rendered but will still be in the output. The `src` can have the following folders:
 
 - The `layouts` directory
 - The `documents` directory (can also be named `render`)
@@ -46,12 +46,12 @@ The other important aspect of documents it that they support meta data. Meta dat
 
 #### The `static` Directory
 
-Files in this folder are like documents, in that they are output to the `out` directory. The difference lies in that they are not rendered and do not support meta data. This is where you should put everything that doesn't need to be rendered or need meta data. For example, images, vendor files, plain stylesheet and JavaScript files, etc.
+Files in this folder are like documents, in that they are output to the `out` directory. The difference lies in that they are not rendered and do not support meta data. This is where you should put everything that doesn’t need to be rendered or need meta data. For example, images, vendor files, plain stylesheet and JavaScript files, etc.
 
 
 ### The `docpad.coffee` file
 
-The `docpad.coffee` file can have several different extensions. It defines DocPad's settings. You can find full documentation on the [Configuration docs page](/docpad/config).
+The `docpad.coffee` file can have several different extensions. It defines DocPad’s settings. You can find full documentation on the [Configuration docs page](/docpad/config).
 
 
 ### The `package.json` File

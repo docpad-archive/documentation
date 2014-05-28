@@ -7,9 +7,9 @@ This page will go over using DocPad as a module, and the API available to you.
 
 ## Install DocPad
 
-Besides having [Node.js installed](/node/install), you'll want to install DocPad locally to your project, you can do this by running `npm install --save docpad` in your command line. This will install DocPad into `./node_modules/docpad` and make it accessible via [Node.js's require function](http://nodejs.org/docs/latest/api/all.html#all_require) (e.g., `require('docpad')`)
+Besides having [Node.js installed](/node/install), you’ll want to install DocPad locally to your project, you can do this by running `npm install --save docpad` in your command line. This will install DocPad into `./node_modules/docpad` and make it accessible via [Node.js’s require function](http://nodejs.org/docs/latest/api/all.html#all_require) (e.g., `require('docpad')`)
 
-If you are wanting to utilise DocPad for rendering, you'll also want to install some rendering [Plugins](/docpad/plugins).
+If you are wanting to utilise DocPad for rendering, you’ll also want to install some rendering [Plugins](/docpad/plugins).
 
 
 ## Create your DocPad Instance

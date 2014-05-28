@@ -11,11 +11,11 @@ The DocPad configuration file sits within the root of your DocPad project and is
 - `docpad.coffee` a Node CoffeeScript file, will generally look like: `module.exports = /*the configuration*/`
 - `docpad.cson` a [cson](https://github.com/bevry/cson) file, will generally look like: `/*the configuration*/`
 
-The advantage of `docpad.js` and `docpad.coffee` over `docpad.json` and `docpad.cson` is that they allow us to declare functions, as well as call functions. However, for instances where we cannot trust the contents of the configuration files you would want to use the `docpad.json` or `docpad.cson` as they can't do anything naughty.
+The advantage of `docpad.js` and `docpad.coffee` over `docpad.json` and `docpad.cson` is that they allow us to declare functions, as well as call functions. However, for instances where we cannot trust the contents of the configuration files you would want to use the `docpad.json` or `docpad.cson` as they can’t do anything naughty.
 
 The advantage of `docpad.coffee` and `docpad.cson` over `docpad.js` and `docpad.json` is that they allow us to use the CoffeeScript syntax which is a lot more lenient.
 
-Generally, you'll usually find either a `docpad.coffee` file or a `docpad.cson` file.
+Generally, you’ll usually find either a `docpad.coffee` file or a `docpad.cson` file.
 
 
 ### Available Configuration
@@ -412,7 +412,7 @@ All key-value pairs are added to the `process.env` environment variable.
 
 This is useful for setting sensitive information, like API keys, database information, and so on. 
 
-If you're using `.env` using for this purpose, be sure to add `.env` to your `.gitignore` file!
+If you’re using `.env` using for this purpose, be sure to add `.env` to your `.gitignore` file!
 
 
 
@@ -420,7 +420,7 @@ If you're using `.env` using for this purpose, be sure to add `.env` to your `.g
 ## Global Configuration File
 DocPad will also create a global configuration file located at `~/.docpad.cson` (or `~/Dropbox/.docpad.cson` if you have [Dropbox](http://j.mp/dropbox-bal) installed). The `~` indicates your home directory (e.g., `/Users/balupton`), not your project directory.
 
-This file is typically used to store information relating to your DocPad preferences, such as whether or not you have agreed to the [TOS](/tos) and subscribed to our newsletter or not, however it can also be used to load in configuration that you would like applied to all of your projects. Normally, we wouldn't touch this file, however it is useful to on the odd occasion.
+This file is typically used to store information relating to your DocPad preferences, such as whether or not you have agreed to the [TOS](/tos) and subscribed to our newsletter or not, however it can also be used to load in configuration that you would like applied to all of your projects. Normally, we wouldn’t touch this file, however it is useful to on the odd occasion.
 
 For instance, if we wanted to set the default DocPad port to always be `9779` instead of `9778`, we can update the global configuration file to include:
 

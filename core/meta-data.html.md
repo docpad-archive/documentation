@@ -27,7 +27,7 @@ The title for the document. Useful for headings.
 #### `layout`
 Tells DocPad what layout to use from the `layouts` folder. Layout files can use other layouts for advanced layout nesting.
 
-There is no default value. Layouts may have a layout called "default", but that is just a naming choice, rather than an implicit default.
+There is no default value. Layouts may have a layout called “default”, but that is just a naming choice, rather than an implicit default.
 
 
 #### `name`
@@ -58,7 +58,7 @@ Defaults to `false`. If set to `true`, when a change is detected for the documen
 Defaults to `false`. If set to `true`, this document will be regenerated when a change occurs in another document. It is automatically set to `true` whenever a template helper is called that references another document. This makes so for instance on a blog listing page, when a blog post is changed, we will also regenereate the listing as well as the blog post.
 
 #### `tags`
-Defaults to `[]`. Tags can be a comma separated values list, or an array of values. While DocPad doesn't use tags for anything specifically, it is nice to have it handled uniformly across websites without you having to do it yourself.
+Defaults to `[]`. Tags can be a comma separated values list, or an array of values. While DocPad doesn’t use tags for anything specifically, it is nice to have it handled uniformly across websites without you having to do it yourself.
 
 #### `dynamic`
 Defaults to `false`. If set to `true`, the document will be re-rendered on each request. This also adds the [`req`](http://expressjs.com/api.html#request) object to the template data.
@@ -79,19 +79,19 @@ Defaults to `false`. If set to `true`, the document will be re-rendered on each 
 The unique document identifier. Defaults to the [cid][Backbone Model cid]. When we get the `relativePath`, we set the `id` to that instead.
 
 #### `basename`
-The file's name without the extension.
+The file’s name without the extension.
 
 #### `extension`
-The file's last extension (e.g., will be set to `eco` for the file `hello.md.eco`).
+The file’s last extension (e.g., will be set to `eco` for the file `hello.md.eco`).
 
 #### `outExtension`
 The extension used for the output file. Same method as `extension` however it takes layouts into account as well.
 
 #### `extensions`
-The file's extensions as an array (e.g., will be set to `["md","eco"]` for the file `hello.md.eco`).
+The file’s extensions as an array (e.g., will be set to `["md","eco"]` for the file `hello.md.eco`).
 
 #### `filename`
-The file's name with the extension.
+The file’s name with the extension.
 
 #### `path`
 The full path of our source file.
@@ -106,7 +106,7 @@ The full directory path of our source file.
 The full directory path of our output file.
 
 #### `outFilename`
-The file's name with the output extension.
+The file’s name with the output extension.
 
 #### `relativePath`
 The relative path of our source file.
@@ -121,7 +121,7 @@ The relative directory path of our source file.
 The relative directory path of our output file.
 
 #### `relativeBase`
-The relative path of our source file without the file's extension.
+The relative path of our source file without the file’s extension.
 
 #### `contentType`
 The MIME content-type for the source file.
@@ -157,10 +157,10 @@ Defaults to `true`. Whether or not this document should be rendered.
 The file meta data (header) in String format before it has been parsed.
 
 #### `parser`
-Defaults to `yaml`. The parser we used to parse the document's meta data header.
+Defaults to `yaml`. The parser we used to parse the document’s meta data header.
 
 #### `body`
-The file content (without the meta data header) before we've rendered it.
+The file content (without the meta data header) before we’ve rendered it.
 
 #### `rendered`
 Defaults to `false`. Set to `true` once we have been rendered.
@@ -200,10 +200,10 @@ Get the meta data [Backbone Model][] for the file.
 Same as the [Backbone Model Set][], but for the meta data Model.
 
 #### `setDefaults(attrs)`
-Same as the [Backbone Model Set][], but will only set attributes that haven't already been set to something.
+Same as the [Backbone Model Set][], but will only set attributes that haven’t already been set to something.
 
 #### `setMetaDefaults(attrs)`
-Same as the [Backbone Model Set][], for the meta data but will only set the meta data Model attributes that haven't already been set to something.
+Same as the [Backbone Model Set][], for the meta data but will only set the meta data Model attributes that haven’t already been set to something.
 
 #### `setData(data)`
 Used for setting data of a virtual file (a file that does not have physical path).

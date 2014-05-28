@@ -5,7 +5,7 @@ title: Write a Plugin
 
 ## Getting Started
 
-Inside your DocPad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g., `plugins/yourpluginname`), and inside your plugin's directory create these two files:
+Inside your DocPad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g., `plugins/yourpluginname`), and inside your plugin’s directory create these two files:
 
 
 ### `src/yourpluginname.plugin.coffee`
@@ -106,9 +106,9 @@ Plugins of other types are generated in the same way as Renderers, they simply a
 
 ## Reusable plugins
 
-If you are just adding some basic functionality that is specific to a site then everything we've described thus far is probably enough. However if you're doing something thats more generic, or could be useful to other people, then why not create your plugin so it's reusable? This has many advantages, you can distribute your plugin on NPM, you can use it across multiple projects, and you can setup unit tests to ensure your plugin works correctly.
+If you are just adding some basic functionality that is specific to a site then everything we’ve described thus far is probably enough. However if you’re doing something thats more generic, or could be useful to other people, then why not create your plugin so it’s reusable? This has many advantages, you can distribute your plugin on NPM, you can use it across multiple projects, and you can setup unit tests to ensure your plugin works correctly.
 
-Here's the extra files that we will need to add to our plugin:
+Here’s the extra files that we will need to add to our plugin:
 
 ```
 .gitignore
@@ -120,7 +120,7 @@ README.md
 
 You can find the contents of these files on our [example plugin repository](/plugin/yourpluginname).
 
-The `Cakefile` however is worth mentioning, as it makes it to compile our plugin (`cake compile` to compile once, `cake dev` to compile on change) so we don't have to compile it at run-time each time. If you decide to use the cake file to pre-compile our plugin, you'll want to update your `main` property in your plugin's `package.json` to point to the compiled file like so:
+The `Cakefile` however is worth mentioning, as it makes it to compile our plugin (`cake compile` to compile once, `cake dev` to compile on change) so we don’t have to compile it at run-time each time. If you decide to use the cake file to pre-compile our plugin, you’ll want to update your `main` property in your plugin’s `package.json` to point to the compiled file like so:
 
 ``` javascript
 {
@@ -134,10 +134,10 @@ The `Cakefile` however is worth mentioning, as it makes it to compile our plugin
 
 ## Adding tests
 
-We can also add tests for our plugin to ensure it is working correctly. DocPad makes this process pretty darn easy. To do so, we'll need to add these extra files:
+We can also add tests for our plugin to ensure it is working correctly. DocPad makes this process pretty darn easy. To do so, we’ll need to add these extra files:
 
 
-Here's the extra files that we will need to add to our plugin:
+Here’s the extra files that we will need to add to our plugin:
 
 ```
 src/
@@ -158,14 +158,14 @@ test/
 This file simply calls into DocPad and tell it to test our plugin:
 
 ``` coffeescript
-# Test our plugin using DocPad's Testers
+# Test our plugin using DocPad’s Testers
 require('docpad').require('testers').test({testerClass: 'RendererTester', pluginPath: __dirname+'/..'})
 ```
 
 
 #### `src/yourpluginname.tester.coffee`
 
-This file is optional but is essential if you want to tell DocPad to load additional plugins as well as yours, or if you need to do advanced configuration of the test environment. The file exports a class that will be used to test your plugin. For now there's just the one tester type to extend from, `RendererTester` which by default runs your plugin against a folder of documents and compares the output to the contents of the `out-expected` folder. This is all you'll need for most plugins as we're only really concerned about the input and output of our plugins.
+This file is optional but is essential if you want to tell DocPad to load additional plugins as well as yours, or if you need to do advanced configuration of the test environment. The file exports a class that will be used to test your plugin. For now there’s just the one tester type to extend from, `RendererTester` which by default runs your plugin against a folder of documents and compares the output to the contents of the `out-expected` folder. This is all you’ll need for most plugins as we’re only really concerned about the input and output of our plugins.
 
 The [Text Plugin](/plugin/text) is a great example of this, you can find its [tester file here](/plugin/text/blob/master/src/text.tester.coffee).
 
@@ -176,12 +176,12 @@ For more complex plugins you might want to take a look at the [testers.coffee so
 
 This file is optional but is essential if you want your test site required other plugins than just your one.
 
-The [Text Plugin](/plugin/text) is a great example of this, you can find its [test site's package.json file here](/plugin/text/blob/master/test/package.json).
+The [Text Plugin](/plugin/text) is a great example of this, you can find its [test site’s package.json file here](/plugin/text/blob/master/test/package.json).
 
 
 #### `package.json`
 
-You'll want to modify the `package.json` for your plugin to support the test process, simply add the `devDependencies` and `scripts` objects to the configuration as shown below:
+You’ll want to modify the `package.json` for your plugin to support the test process, simply add the `devDependencies` and `scripts` objects to the configuration as shown below:
 
 ``` javascript
 {
@@ -201,12 +201,12 @@ These tell NPM how to test the plugin and add the coffee script dependency for d
 
 ### Writing the tests
 
-DocPad's `RendererTester` will setup an instance of DocPad using the configuration specified in your tester above, it will then generate a site using the documents in the `test/src/documents` folder and compare the results with the files in the `test/out-expected` folder. This way you can quickly and easily test how documents in a site are handled by your plugin. For more complex tests you will have to examing the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee).
+DocPad’s `RendererTester` will setup an instance of DocPad using the configuration specified in your tester above, it will then generate a site using the documents in the `test/src/documents` folder and compare the results with the files in the `test/out-expected` folder. This way you can quickly and easily test how documents in a site are handled by your plugin. For more complex tests you will have to examing the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee).
 
 
 ### Running the tests
 
-Before we can run our unit tests we'll need to get DocPad and your plugin setup correctly. First you will need to clone a copy of the DocPad repository as you'll need the original source to run the tests. You'll then want to set it up and compile it. We're also going to link this copy of DocPad into your NPM module cache so that whenever you use DocPad it actually points to this copy.
+Before we can run our unit tests we’ll need to get DocPad and your plugin setup correctly. First you will need to clone a copy of the DocPad repository as you’ll need the original source to run the tests. You’ll then want to set it up and compile it. We’re also going to link this copy of DocPad into your NPM module cache so that whenever you use DocPad it actually points to this copy.
 
 ``` bash
 git clone https://github.com/bevry/docpad.git
@@ -216,7 +216,7 @@ npm link
 cake compile
 ```
 
-This sets up your copy of DocPad and makes it so that NPM will use this copy instead of the one in the NPM repository. Next you'll need to do a similar setup for your plugin.
+This sets up your copy of DocPad and makes it so that NPM will use this copy instead of the one in the NPM repository. Next you’ll need to do a similar setup for your plugin.
 
 ``` bash
 cd docpad-plugin-yourpluginname
@@ -227,7 +227,7 @@ cake compile
 
 This will install all the dependencies for your plugin, and link the DocPad instance in your plugin with the one we just cloned from GitHub.
 
-Now we're ready to run the tests!
+Now we’re ready to run the tests!
 
 ``` bash
 cake test

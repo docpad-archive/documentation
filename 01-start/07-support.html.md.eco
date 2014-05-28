@@ -15,21 +15,21 @@ StackOverflow is a community of passionate programmers dedicated to solving prob
 
 ## Documentation Issues
 
-For documentation suggestions, issues, and pull requests use [DocPad's Documentation GitHub Issue Tracker](https://github.com/docpad/documentation/)
+For documentation suggestions, issues, and pull requests use [DocPad’s Documentation GitHub Issue Tracker](https://github.com/docpad/documentation/)
 
 
-## Bug Reports via GitHub's Issue Tracker
+## Bug Reports via GitHub’s Issue Tracker
 
-For bug reports relating to the core, use [DocPad's GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
+For bug reports relating to the core, use [DocPad’s GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
 
-For bug reports relating to plugins, use the Plugin's GitHub Issue Tracker. You can find it by going to the Plugin's Homepage, then looking for the "Issues" button.
+For bug reports relating to plugins, use the Plugin’s GitHub Issue Tracker. You can find it by going to the Plugin’s Homepage, then looking for the “Issues” button.
 
 **With your bug reports, specify:**
 
 - Your DocPad version `docpad --version`
 - Your Node.js version `node --version`
 - Your npm version `npm --version`
-- Your operating system's name, architecture, and version
+- Your operating system’s name, architecture, and version
 - What you did
 - What happened
 - What you expected
@@ -47,7 +47,7 @@ DocPad operates a the `#docpad` channel on the freenode IRC server. It is a plac
 
 [Join the chat room.](irc://chat.freenode.net:6997/docpad)
 
-[Don't have an IRC Client? Join the web chat room instead.](http://webchat.freenode.net/?channels=docpad)
+[Don’t have an IRC Client? Join the web chat room instead.](http://webchat.freenode.net/?channels=docpad)
 
 [Read the chat room guidelines.](/chat-guidelines)
 
