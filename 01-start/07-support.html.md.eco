@@ -13,11 +13,6 @@ StackOverflow is a community of passionate programmers dedicated to solving prob
 
 
 
-## Documentation Issues
-
-For documentation suggestions, issues, and pull requests use [DocPad's Documentation GitHub Issue Tracker](https://github.com/docpad/documentation/)
-
-
 ## Bug Reports via GitHub's Issue Tracker
 
 For bug reports relating to the core, use [DocPad's GitHub Issue Tracker](https://github.com/bevry/docpad/issues)
@@ -39,6 +34,13 @@ For bug reports relating to plugins, use the Plugin's GitHub Issue Tracker. You 
 [Post your bug report.](https://github.com/bevry/docpad/issues/new)
 
 [Find existing bug reports and development tasks.](https://github.com/bevry/docpad/issues/new)
+
+
+
+## Documentation Issues
+
+For documentation suggestions, issues, and pull requests use [DocPad's Documentation GitHub Issue Tracker](https://github.com/docpad/documentation/)
+
 
 
 ## Chat Room via IRC
