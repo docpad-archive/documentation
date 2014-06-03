@@ -1,6 +1,5 @@
 ```
 title: "Beginner Guide"
-cssClasses: ['compact']
 ```
 
 ## Introduction
