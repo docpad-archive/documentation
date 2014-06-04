@@ -35,7 +35,7 @@ To add a new skeleton to the skeleton listing:
 To update our documentation:
 
 1. Our documentation is located at the [`docpad/documentation` repository](https://github.com/docpad/documentation)
-1. We have [strict documentation criteria](http://bevry.me/learn/bevry-documentation-guidelines) that all documentation changes must abide by
+1. We have [strict documentation criteria](http://learn.bevry.me/community/documentation-guidelines) that all documentation changes must abide by
 1. You can edit a file by opening that file in the repository browser, and then clicking the "Edit" button
 1. Once done, click save changes or whatever the button says and this will then take you to a "Submit Pull Request" page
 1. Fill in the details and click submit
@@ -43,7 +43,7 @@ To update our documentation:
 
 ## Coding Standards
 
-Follow the [Bevry Coding Standards](http://bevry.me/bevry/coding-standards) when writing your changes
+Follow the [Bevry Coding Standards](http://learn.bevry.me/community/coding-standards) when writing your changes
 
 
 ## Setup
