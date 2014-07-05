@@ -189,6 +189,13 @@ Check out the `plugins` [configuration property](/docpad/config).
 Check this [GitHub issue](https://github.com/bevry/docpad/issues/749), see if it helps. :)
 
 
+## Cannot get past accepting the Terms of Service
+
+Check this [GitHub issue](https://github.com/bevry/docpad/issues/854) for a conversation on this bug.
+
+TL;DR start DocPad with the `--offline` option and see if that works. :)
+
+
 ## Want more help?
 
 - Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
