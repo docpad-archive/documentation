@@ -62,7 +62,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [Emmet.io's Website](http://emmet.io) - [source](https://github.com/emmetio/emmet-docs/) - Emmet (previously known as Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow
 - [Evbogue.com](http://docpad.evbogue.com) - [source](https://github.com/evbogue/docpad.evbogue.com) - Ev Bogue is a technical writer and web developer fascinated by Node.js and Bitcoin. Site built on Docpad.
 - [Ferrari!=Ferrari](http://ferrari.github.com) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
-- [FizzVR](http://fizzvr.com) - [source](https://github.com/fizzvr/vr-web) - Coder, Gamer, Hardcore
+- [FizzVR](http://fizzvr.github.io/) - [source](https://github.com/fizzvr/vr-web) - Coder (Github), Gamer (Steam), Hardcore (SoundCloud)
 - [Florian's Blog](http://blog.boulay.eu) - [source](https://github.com/fboulay/website) - French: Technical blog on Java and technologies around the JVM
 - [FooUnit](http://foounit.org) - Test your JavaScript everywhere!
 - [Game-Icons](http://game-icons.net) - Heaps of free SVG icons
