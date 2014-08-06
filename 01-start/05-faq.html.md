@@ -141,7 +141,7 @@ For instance, to output the current document's title with Eco, you would use: `<
 
 ## How can I use environment variables in DocPad?
 
-All environment variables are automatically available in Node applications through [`process.env`](http://nodejs.org/api/process.html#process_process_env). DocPad also loads varibles from a special [environment file](/docpad/config#environment-configuration-file). 
+All environment variables are automatically available in Node applications through [`process.env`](http://nodejs.org/api/process.html#process_process_env). DocPad also loads variables from a special [environment file](/docpad/config#environment-configuration-file). 
 
 To quickly override existing environment variables for a single invocation of DocPad, specify it on the command line before the `docpad` command:
 ```
