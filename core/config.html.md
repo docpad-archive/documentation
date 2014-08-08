@@ -89,6 +89,7 @@ docpadConfig = {
 	# An array of paths which contents will be treated as documents
 	# If it is a relative path, it will have the resolved `srcPath` prepended to it
 	documentsPaths: [  # default
+		'render'
 		'documents'
 	]
 
@@ -96,6 +97,7 @@ docpadConfig = {
 	# An array of paths which contents will be treated as files
 	# If it is a relative path, it will have the resolved `srcPath` prepended to it
 	filesPaths: [  # default
+		'static'
 		'files'
 		'public'
 	]

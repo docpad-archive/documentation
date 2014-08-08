@@ -33,7 +33,7 @@ This is pretty useful, as we can also do things like loops, or assign certain pa
 
 ## What is a layout?
 
-Layouts wrap over our documents. They are generally the most generic and re-used part of an entire website, or book for that matter. They contain generally the layout of the page, including the structural information and the meta information (used for search engines, etc.).
+Layouts wrap around our documents. They are generally the most generic and re-used part of an entire website, or book for that matter. They contain generally the layout of the page, including the structural information and the meta information (used for search engines, etc.).
 
 
 ## What is a document's meta information/data?
@@ -46,7 +46,7 @@ title: "My awesome blog post"
 ---
 ```
 
-That is your document's meta data. It won't be included in the output of the document. You can use it to assign extra data to your document such as title, date, tags, etc.
+That is your document's meta data. It won't be included in the output of the document. You can use it to assign extra data to your document (such as title, date, tags, etc.).
 
 
 ## Is a document aware of its meta data?
@@ -110,14 +110,14 @@ Check out the `dynamic` [meta data property](/docpad/meta-data).
 
 ## What are render passes?
 
-Rendering is a multi-step process. First we render everything that is a standalone document (i.e. documents that don't including anything else). Once that is done, we then render all documents that include other documents. This is useful, as we can first render blog posts, then render the content listings second.
+Rendering is a multi-step process. First we render everything that is a standalone document (i.e. documents that don't include anything else). Once that is done, we then render all documents that include other documents. This is useful, as we can first render blog posts, then render the content listings second.
 
 At times, you may have multiple levels of cross document references. For instance if document a references document B which references document C. In this case you would want to up the `renderPasses` configuration option for each amount of cross document references you have.
 
 
 ## How do I create custom 404 and 500 pages?
 
-Add a `src/documents/404.html` for 404 pages, and `src/documents/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header) your templating engine (e.g., `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/documents/500.html.md.eco`:
+Add a `src/render/404.html` for 404 pages, and `src/render/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header) your templating engine (e.g., `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/render/500.html.md.eco`:
 
 ```
 ---

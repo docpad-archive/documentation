@@ -199,7 +199,7 @@ var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguratio
 // ...
 ```
 
-Here is some code for manually rendering a document (documents are files inside `src/documents`) with a custom route:
+Here is some code for manually rendering a document (inside `src/render`) with a custom route:
 
 ``` coffee
 app.get '/alias-for-home', (req,res,next) ->

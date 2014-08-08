@@ -147,7 +147,7 @@ test/
 	out-expected/
 		...
 	src/
-		documents/
+		render/
 			...
 	package.json (optional)
 ```
@@ -201,7 +201,7 @@ These tell NPM how to test the plugin and add the coffee script dependency for d
 
 ### Writing the tests
 
-DocPad's `RendererTester` will setup an instance of DocPad using the configuration specified in your tester above, it will then generate a site using the documents in the `test/src/documents` folder and compare the results with the files in the `test/out-expected` folder. This way you can quickly and easily test how documents in a site are handled by your plugin. For more complex tests you will have to examing the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee).
+DocPad's `RendererTester` will setup an instance of DocPad using the configuration specified in your tester above, it will then generate a site using the documents in the `test/src/render` folder and compare the results with the files in the `test/out-expected` folder. This way you can quickly and easily test how documents in a site are handled by your plugin. For more complex tests you will have to examing the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee).
 
 
 ### Running the tests

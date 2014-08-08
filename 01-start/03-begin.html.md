@@ -37,7 +37,7 @@ For now, we'll keep `docpad run` running but, whenever you want to stop it, just
 
 ## Adding the Home Page
 
-Let's create our first document; the _Homepage_ for our website. Create the document `src/documents/index.html` and give it the following content:
+Let's create our first document; the _Homepage_ for our website. Create the document `src/render/index.html` and give it the following content:
 
 ``` erb
 <html>
@@ -65,7 +65,7 @@ Once you've saved it, open up [http://localhost:9778](http://localhost:9778) (or
 
 ## Adding the About Page and a Layout
 
-Now that's done, we'll want to add our "About Me" page so that people browsing our website will know who we are. To do this, let's create a new document at `src/documents/about.html` and give it the content:
+Now that's done, we'll want to add our "About Me" page so that people browsing our website will know who we are. To do this, let's create a new document at `src/render/about.html` and give it the content:
 
 ``` erb
 <html>
@@ -99,7 +99,7 @@ Layouts wrap around our documents, so we can define the surrounding areas of a d
 </html>
 ```
 
-- `src/documents/index.html`
+- `src/render/index.html`
 
 ``` erb
 ---
@@ -111,7 +111,7 @@ isPage: true
 <p>Welcome to My Website!</p>
 ```
 
-- `src/documents/about.html`
+- `src/render/about.html`
 
 ``` erb
 ---
@@ -239,7 +239,7 @@ If you are downloading the file directory into the specified location, you may h
 
 ### Stylesheets
 
-Now let's make all of our `h1` headers red, by adding a stylesheet file in our documents directory at `src/documents/styles/style.css` that contains:
+Now let's make all of our `h1` headers red, by adding a stylesheet file in our render directory at `src/render/styles/style.css` that contains:
 
 ``` css
 h1 {
@@ -261,11 +261,11 @@ Upon saving, we'll notice that our browser will automatically reload, and that o
 
 Now let's add a nifty loading effect using JavaScript and the [jQuery JavaScript Library](http://jquery.com). As always, there's plenty of other JavaScript Libraries you can use, but in this guide we'll go with jQuery.
 
- To do this, we'll first download the [jQuery library](http://code.jquery.com/jquery.js) file and put it in our `static` directory at `src/static/vendor/jquery.js`.
+To do this, we'll first download the [jQuery library](http://code.jquery.com/jquery.js) file and put it in our `static` directory at `src/static/vendor/jquery.js`.
 
- The reason we use the `static` directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them there is a good choice for consistency and speed. Whereas, we will probably eventually want to render our own scripts and styles with something, so generally we'll just put them in the documents directory to make the transition to rendering engines easier.
+The reason we use the `static` directory for vendor files is that it is extremely unlikely we'll ever want to render any vendor files, so having them there is a good choice for consistency and speed. Whereas, we will probably eventually want to render our own scripts and styles with something, so generally we'll just put them in the render directory to make the transition to rendering engines easier.
 
- Now that we have included jQuery in our project, we'll add our nifty loading effect by adding a script file at `src/documents/scripts/script.js` that contains:
+Now that we have included jQuery in our project, we'll add our nifty loading effect by adding a script file at `src/render/scripts/script.js` that contains:
 
 ``` javascript
 (function(){
@@ -304,7 +304,7 @@ HTML's verbose syntax is terrible for writing content that is more text than mar
 
 Install the [Marked Markdown Plugin](/plugin/marked) by running `docpad install marked`.
 
-Then, rename the _About_ page we created earlier from (`documents/about.html`) to (`documents/about.html.md`), to indicate that we want to render from Markdown to HTML, and open it. Writing in Markdown, update its content (leave the existing meta data section as it is) to become:
+Then, rename the _About_ page we created earlier from (`render/about.html`) to (`render/about.html.md`), to indicate that we want to render from Markdown to HTML, and open it. Writing in Markdown, update its content (leave the existing meta data section as it is) to become:
 
 ``` markdown
 I like long walks on the beach. **Plus I rock at DocPad!**
@@ -318,11 +318,11 @@ Sweet, you're now ready to party, Markdown-style! ;)
 
 
 ### Using Stylus, a CSS Pre-Processor
-Open the Stylesheet document we created earlier (`documents/styles/style.css`). CSS really hasn't come that far over the years and, thus, it has absolutely no abstractions available to us, making it incredibly verbose and painful to write. Fortunately, [Stylus](http://learnboost.github.com/stylus/) (one of the many [CSS Pre-Processors](/docpad/plugins) available to us) is our saviour!
+Open the Stylesheet document we created earlier (`render/styles/style.css`). CSS really hasn't come that far over the years and, thus, it has absolutely no abstractions available to us, making it incredibly verbose and painful to write. Fortunately, [Stylus](http://learnboost.github.com/stylus/) (one of the many [CSS Pre-Processors](/docpad/plugins) available to us) is our saviour!
 
 Install the [Stylus Plugin](/plugin/stylus) by running `docpad install stylus`.
 
-Then, rename `src/documents/styles/style.css` to `src/documents/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `documents` and not in `static` is now obvious: if the Stylus stylesheet file were in `static/styles/` folder, it would not have been pre-processed before copying to `out`.
+Then, rename `src/render/styles/style.css` to `src/render/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `render` and not in `static` is now obvious: if the Stylus stylesheet file were in `static/styles/` folder, it would not have been pre-processed before copying to `out`.
 
 Using Stylus syntax, update the stylesheet's content to become:
 
@@ -343,7 +343,7 @@ Sometimes people can get quite irritated with JavaScript's verbosity, and very a
 
 Install the [CoffeeScript Plugin](/plugin/coffeescript) by running `docpad install coffeescript`.
 
-Then rename `documents/scripts/script.js` to `documents/scripts/script.js.coffee`, to indicate we want to render from CoffeeScript to JavaScript, and open it.
+Then rename `render/scripts/script.js` to `render/scripts/script.js.coffee`, to indicate we want to render from CoffeeScript to JavaScript, and open it.
 
 Using CoffeeScript, we can update our file's content to become:
 

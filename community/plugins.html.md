@@ -84,7 +84,7 @@ These are plugins that add extra functionality to DocPad:
 - [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate `.json` file for quick loading via AJAX.
 - [livereload](/plugin/livereload) - Automatically reloads the page whenever a regeneration is performed
 - [lunr](https://github.com/brockfanning/docpad-plugin-lunr) - Client-side full-text and faceted search using [Lunr.js](http://lunrjs.com)
-- [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from `/documents` folder
+- [menu](https://github.com/sergeche/docpad-plugin-menu) - Automatically generates menu from `/render` folder
 - [moment](https://github.com/brockfanning/docpad-plugin-moment) - Date formatting and access to [Moment.js](http://momentjs.com) library
 - [nativecomments](/plugin/nativecomments/) - Adds support for native comments to DocPad
 - [navlinks](https://github.com/lucor/docpad-plugin-navlinks) - Adds the ability to generate a navigation bar for documents with links to the next and previous document of a specified collection.

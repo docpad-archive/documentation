@@ -29,7 +29,7 @@ comparisonTable:  """
 	Asset pipeline
 	No
 	Implicit & bundled
-	[Explicit & extendable](/docpad/overview#the-documents-directory)
+	[Explicit & extendable](/docpad/overview#the-render-directory)
 
 	Markup languages (markdown, rst, etc.)
 	No
