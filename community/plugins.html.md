@@ -105,6 +105,7 @@ These are plugins that add extra functionality to DocPad:
 - [tinylivereload](https://github.com/andruhon/docpad-plugin-tinylivereload) - A LiveReload plugin that doesn't alter your HTML. Works with the Chrome/Firefox LiveReload extensions.
 - [uglify](/plugin/uglify) - Compress and minify JavaScript files with the `uglify: true` meta data
 - [umd](/plugin/umd/) - Wrap specified JavaScript documents in the Universal Module Definition (UMD) allowing them to run in AMD, Require.js, CommonJS/Node.js and Vanilla environments automatically
+- [sanitizer](https://github.com/kennyki/docpad-plugin-sanitizer) - A helper for HTML string sanitization based on Google Caja
 
 
 ## Deployers
