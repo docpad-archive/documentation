@@ -24,27 +24,27 @@ comparisonTable:  """
 	Plugin and extension system
 	Yes
 	No
-	[Yes](/docpad/extend)
+	[Yes](/docs/extend)
 
 	Asset pipeline
 	No
 	Implicit & bundled
-	[Explicit & extendable](/docpad/overview#the-render-directory)
+	[Explicit & extendable](/docs/overview#the-render-directory)
 
 	Markup languages (markdown, rst, etc.)
 	No
 	1 bundled
-	Via [plugins](/docpad/plugins#renderers)
+	Via [plugins](/docs/plugins#renderers)
 
 	Pre-processors (sass, less, etc.)
 	No
 	No
-	Via [plugins](/docpad/plugins#renderers)
+	Via [plugins](/docs/plugins#renderers)
 
 	Template engines (eco, jade, etc.)
 	No
 	1 bundled
-	Via [plugins](/docpad/plugins#renderers)
+	Via [plugins](/docs/plugins#renderers)
 
 	Database querying
 	Yes
@@ -64,12 +64,12 @@ comparisonTable:  """
 	Re-render each request
 	Yes
 	No
-	Via [`dynamic` field](/docpad/meta-data#dynamic)
+	Via [`dynamic` field](/docs/meta-data#dynamic)
 
 	Extend the webserver
 	Yes
 	No
-	Via [events](/docpad/events#serverextend) and [API](/docpad/api)
+	Via [events](/docs/events#serverextend) and [API](/docs/api)
 
 	Watching
 	N/A
@@ -104,12 +104,12 @@ comparisonTable:  """
 	Import pages from external database (MongoDB, MySQL, etc.)
 	Yes
 	No
-	Via [plugins](/docpad/plugins#admin-interfaces)
+	Via [plugins](/docs/plugins#admin-interfaces)
 
 	Import pages from external services (Tumblr, Dropbox, GitHub, etc.)
 	No
 	No
-	Via [plugins](/docpad/plugins#admin-interfaces)
+	Via [plugins](/docs/plugins#admin-interfaces)
 
 	Import data from external services (Atom, XML, JSON, etc.)
 	No
@@ -119,7 +119,7 @@ comparisonTable:  """
 	WYSIWYG editors
 	Yes
 	No
-	Via [plugins](/docpad/plugins#admin-interfaces)
+	Via [plugins](/docs/plugins#admin-interfaces)
 	""".split('\n\n').map((i) -> '| '+i.split('\n').join(' | ')+' |').join('\n')
 ```
 
@@ -173,7 +173,7 @@ On the other hand, let's compare that with DocPad, which is:
 - **Robust**
 	- Use your desktop counterparts to edit content naturally (Sublime Text, Vim, Byword, etc.)
 	- Abstraction friendly - code the way you want, how you want
-	- Use whatever language, pre-processor, markup, templating engine you want - it's all covered via our [opt-in plugins](/docpad/plugins) (and if it isn't, it's very easy to add)
+	- Use whatever language, pre-processor, markup, templating engine you want - it's all covered via our [opt-in plugins](/docs/plugins) (and if it isn't, it's very easy to add)
 
 Besides this, thanks to the opt-in modular philosophy of Node, we benefit from all the innovations of the community as a whole, including:
 
