@@ -138,7 +138,7 @@ DocPad's plugin/extension infrastructure supports custom Admin Interfaces tightl
 
 - [DocPad Collections Editor](https://github.com/cauld/docpad-collections-editor) - A simple WYSIWYG editor for DocPad Collections
 - [MiniCMS](https://npmjs.org/package/docpad-plugin-minicms) - Adds an admin interface to DocPad
-
+- [CMS Docpad](https://github.com/Reaktivate/docpad-cms) - Lightweight CMS UI with WYSIWYG editor for pages and parts
 
 ### Decoupled Interfaces
 
