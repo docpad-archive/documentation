@@ -21,7 +21,7 @@ DocPad mentioned around the web. Oldest first.
 - [DocPad on Redit](http://www.reddit.com/r/docpad/) - a sub-redit dedicated entirely to DocPad stuff
 - [Create professional websites with DocPad](http://emmet.io/blog/docpad/) - DocPad was an ideal solution for [Emmet documentation website](http://docs.emmet.io) because it not only provides a simplified development process, but allows me to reduce my hosting costs greatly
 - [Why the next big thing sucks](https://www.youtube.com/watch?v=nt4Gt6-T8N0) - DocPad founder Benjamin Lupton talks about his experiences founding open-source projects
-- [Intro to Static Site Generators & DocPad](https://www.youtube.com/watch?v=Zu1uhI0uT2o) - DocPad founder Benjamin Lupton talks about the emergence of Static Site Generators and what makes DocPad diffirent to the rest
+- [Intro to Static Site Generators & DocPad](https://www.youtube.com/watch?v=Zu1uhI0uT2o) - DocPad founder Benjamin Lupton talks about the emergence of Static Site Generators and what makes DocPad different to the rest
 - [Why DocPad](http://takitapart.com/posts/why-docpad/) - Why I've built takitapart using a static site generator, and why DocPad won me over
 - [Organising DocPad](http://takitapart.com/posts/organizing-docpad/) - Setting up the basic taxonomy of [takitapart.](http://takitapart.com)
 - [WordPress → Aegea → DocPad](http://blog.sapegin.me/all/docpad) - It was much simpler than I thought and I like the result very much
