@@ -167,7 +167,7 @@ require('docpad').require('testers').test({testerClass: 'RendererTester', plugin
 
 This file is optional but is essential if you want to tell DocPad to load additional plugins as well as yours, or if you need to do advanced configuration of the test environment. The file exports a class that will be used to test your plugin. For now there's just the one tester type to extend from, `RendererTester` which by default runs your plugin against a folder of documents and compares the output to the contents of the `out-expected` folder. This is all you'll need for most plugins as we're only really concerned about the input and output of our plugins.
 
-The [Text Plugin](/plugin/text) is a great example of this, you can find its [tester file here](/plugin/text/blob/master/src/text.tester.coffee).
+The [Eco Plugin](/plugin/eco) is a great example of this, you can find its [tester file here](/plugin/eco/blob/master/src/eco.tester.coffee).
 
 For more complex plugins you might want to take a look at the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee) for more details and other potential testers to extend from.
 
