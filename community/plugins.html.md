@@ -93,6 +93,7 @@ These are plugins that add extra functionality to DocPad:
 - [pygments](/plugin/pygments/) - Adds [Pygments](http://pygments.org) syntax highlighting to code snippets
 - [raw](/plugin/raw) - Copies all files in the `/raw` directory to `/out` without going through DocPad's generation process. Useful for files that cause out of memory/speed issues when placed in `/static` directory.
 - [react](https://github.com/chrishale/docpad-plugin-react) - Renders markup for [React](http://facebook.github.io/react/) Components
+- [redirector](https://github.com/nfriedly/docpad-plugin-redirector) - Creats redirects (301 or meta-refresh) via configuration.
 - [related](/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
 - [rss](https://github.com/hurrymaplelad/docpad-plugin-rss) - Generates an RSS feed for a configurable collection
 - [scheduling](https://github.com/miletbaker/docpad-plugin-scheduling) - Schedules content so that it is not rendered out before the ```date``` specified in the content's meta-data.
@@ -130,6 +131,7 @@ DocPad's plugin/extension infrastructure supports existing coupled interfaces by
 - [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap Skeleton](https://github.com/docpad/twitter-bootstrap.docpad) to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
 - [repocloner](/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
 - [tumblr](/plugin/tumblr/) - Imports Tumblr data directly into your DocPad Database, used in the [Syte Skeleton](https://github.com/docpad/syte.docpad) to pull in Tumblr data
+- [mongodb](https://github.com/nfriedly/docpad-plugin-mongodb) - Imports collections from MongoDB. 
 
 
 ### Custom Interfaces
