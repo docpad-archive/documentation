@@ -146,7 +146,7 @@ DocPad's plugin/extension infrastructure supports custom Admin Interfaces tightl
 
 DocPad's plugin/extension infrastructure supports existing decoupled interfaces by providing plugin/extension adapters to the interface allowing the interface to interact directly with the DocPad Database, or theoritically any backend providing an interface was made for it. So far we have the following extensions that add Decoupled Interfaces to DocPad:
 
-- [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/about.html) as an Admin Interface for DocPad
+- [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/#about) as an Admin Interface for DocPad
 - [WebWrite's InlineGUI](/plugin/inlinegui) (not yet ready) - Edit your content from any backend with this inline editing interface
 - [Edit & Deploy with GitHub.com & GHpages Plugin](https://github.com/Sun-Star-IT/sunstarit.docpad/wiki/Edit-&-Deploy-with-GitHub.com-&-GHpages-Plugin) - Wiki on how to use GitHub.com to edit your DocPad website and then DocPad's `ghpages` plugin to deploy to GitHub Pages. 
 
