@@ -221,7 +221,7 @@ It's time to start adding some assets. Before proceeding with this section, plea
 
 ### Images
 
-Let's add our logo to our layout's header. We'll download the [DocPad logo](http://d.pr/i/cfmt+) and place it in our `static` directory at `src/static/images/logo.gif` (binary files should _always_ go in the `static` directory). Then, we'll add it to the body of our layout, to show our logo on each page:
+Let's add our logo to our layout's header. We'll download the [DocPad logo](https://raw.githubusercontent.com/bevry/designs/1437c9993a77b24c3ad1856087908b508f3ceec6/docpad/flyers/docpad-youtube.gif) and place it in our `static` directory at `src/static/images/logo.gif` (binary files should _always_ go in the `static` directory). Then, we'll add it to the body of our layout, to show our logo on each page:
 
 - `src/layouts/default.html.eco`
 
