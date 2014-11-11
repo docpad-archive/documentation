@@ -34,7 +34,7 @@ title: "Template Data & Helpers"
 	- `stylesheet` &mdash; for all stylesheet files (includes stylesheet pre-processor files)
 - `getFiles(query, sorting, paging)` get all files that match the arguments, caches the result collection
 - `getFile(query, sorting, paging)` get a single file that matches the arguments
-- `getFilesAtPath(relativePath)` get a file at the given path, path is processed through `getPath`
+- `getFilesAtPath(path, sorting, paging)` get a file at the given path, path is processed through `getPath`
 - `getFileAtPath(path, sorting, paging)` get a single file at the given path, path is processed through `getPath`
 - `getFileById(id, sorting, paging)` get a single file that has the specified id
 
