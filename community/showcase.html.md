@@ -33,7 +33,7 @@ DocPad mentioned around the web. Oldest first.
 - [WordPress out, DocPad in](http://joefleming.net/posts/wordpress-out-docpad-in/) - Docpad looked super flexible for generating static sites, but it also allowed you to add dynamic pages to the mix. I couldn't be happier!
 - [DocPad 快速入門](http://blog.faq-book.com/?p=7281) - Chinese: Getting started with DocPad
 - [Multilingual blog on DocPad](http://blog.sapegin.me/all/multilingual-docpad) - How to make a multilingual blog with a single DocPad installation
-
+- [blogger-docpad](https://github.com/dorajistyle/blogger-docpad) - Import Google Blooger articles by label and generate Docpad static blog. It's good example how to handle large number of files with docpad.
 
 ## Websites
 
@@ -58,6 +58,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com) - [source](https://github.com/bevry/kitchensink.docpad) - A showcase of everything DocPad can do
 - [DocPad's Website](http://docpad.org) - [source](https://github.com/bevry/docpad-website) - The DocPad Website
 - [DogFeet](http://dogfeet.github.com) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
+- [Dorajistyle STATIC](http://dorajistyle.net) - Docpad generated Blog from Google Blogger articles.
 - [Doug Neiner's Code Website](http://code.dougneiner.com) - [source](https://github.com/dcneiner/dougneiner.docpad) - Husband to one, father to three, jQuery Team Member, Senior Designer at [appendTo](http://appendto.com)
 - [Emmet.io's Website](http://emmet.io) - [source](https://github.com/emmetio/emmet-docs/) - Emmet (previously known as Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow
 - [Ferrari!=Ferrari](http://ferrari.github.com) - [source](https://github.com/Ferrari/ferrari.docpad) - Chinese: A development blog
