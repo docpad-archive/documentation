@@ -62,7 +62,11 @@ Here is how you would normalise common tasks you would typically achieve with th
 ### Performing a generation
 
 ``` javascript
-docpadInstance.action('generate', function(err,result){
+var generateOpts = {
+	collection: docpad.getCollection("myChangedPages"),  # only regenerate a subset
+	reset:true                                           # default
+};
+docpadInstance.action('generate', generateOpts, function(err,result){
 	if (err)  return console.log(err.stack);
 	console.log('OK');
 });
