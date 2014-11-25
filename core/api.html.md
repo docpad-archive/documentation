@@ -62,10 +62,12 @@ Here is how you would normalise common tasks you would typically achieve with th
 ### Performing a generation
 
 ``` javascript
+// `generateOpts` is optional
 var generateOpts = {
-	collection: docpad.getCollection("myChangedPages"),  # only regenerate a subset
-	reset:true                                           # default
+	collection: docpad.getCollection("myChangedPages"),  // only regenerate a subset
+	reset:true                                           // default
 };
+// Which means it doesn't have to be included in the function call below
 docpadInstance.action('generate', generateOpts, function(err,result){
 	if (err)  return console.log(err.stack);
 	console.log('OK');
