@@ -93,6 +93,7 @@ These are plugins that add extra functionality to DocPad:
 - [partials](/plugin/partials/) - Adds the ability to create re-usable partials for your templates within DocPad
 - [pygments](/plugin/pygments/) - Adds [Pygments](http://pygments.org) syntax highlighting to code snippets
 - [raw](/plugin/raw) - Copies all files in the `/raw` directory to `/out` without going through DocPad's generation process. Useful for files that cause out of memory/speed issues when placed in `/static` directory.
+- [copy](https://github.com/almero-digital-marketing/docpad-plugin-copy) - Alternative to raw pluging with performace optimizations. Copies all files in the `/raw` directory to `/out` without going through DocPad's generation process. Useful for files that cause out of memory/speed issues when placed in `/static` directory.
 - [react](https://github.com/chrishale/docpad-plugin-react) - Renders markup for [React](http://facebook.github.io/react/) Components
 - [redirector](https://github.com/nfriedly/docpad-plugin-redirector) - Creats redirects (301 or meta-refresh) via configuration.
 - [related](/plugin/related/) - Scans your documents `tags: 'tag1', 'tag2'` metadata to produce a listing of related documents
@@ -104,6 +105,7 @@ These are plugins that add extra functionality to DocPad:
 - [tableofcontents](https://github.com/takitapart/docpad-plugin-tableofcontents) - Automatically generate table of contents
 - [text](/plugin/text/) - Render `templateData` properties without needing template engine, useful for abstraction in configuration files
 - [thumbnails](https://github.com/rantecki/docpad-plugin-thumbnails) - Manages thumbnail generation of your image files
+- [imagin](https://github.com/almero-digital-marketing/docpad-plugin-imagin) - Alternative to thumbails plugin with support for `raw` and `copy` plugins for performance optimization. Manages thumbnail generation of your image files.
 - [tinylivereload](https://github.com/andruhon/docpad-plugin-tinylivereload) - A LiveReload plugin that doesn't alter your HTML. Works with the Chrome/Firefox LiveReload extensions.
 - [uglify](/plugin/uglify) - Compress and minify JavaScript files with the `uglify: true` meta data
 - [umd](/plugin/umd/) - Wrap specified JavaScript documents in the Universal Module Definition (UMD) allowing them to run in AMD, Require.js, CommonJS/Node.js and Vanilla environments automatically
