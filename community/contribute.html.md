@@ -53,7 +53,7 @@ To setup a development environment for contributing to a plugin follow these ste
 
 Before you submit changes to the DocPad core you'll want to make sure they don't break any of our officially supported plugins:
 
-1. Clone the [`docpad-extras` repository](https://github.com/docpad/extras) and `cd` into it
+1. Clone the [`docpad/extras` repository](https://github.com/docpad/extras) and `cd` into it
 1. Checkout the `docpad-6.x` branch: `git checkout docpad-6.x`
 1. Make your development DocPad instance available to the plugin runner (run `npm link docpad`)
 1. Install the dependencies: `npm install`
