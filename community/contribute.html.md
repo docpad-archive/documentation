@@ -12,7 +12,7 @@ For the most part, DocPad inherits from the [Bevry Community's Contribution Guid
 
 To add a new skeleton to the skeleton listing:
 
-1. Add your new skeleton to our [`exchange.json` file](https://github.com/bevry/docpad-extras/edit/docpad-6.x/exchange.json)
+1. Add your new skeleton to our [`exchange.json` file](https://github.com/docpad/extras/edit/docpad-6.x/exchange.json)
 1. Submit the pull request for it (the page for this should appear automatically once you click "Commit Changes" from the previous link)
 
 
@@ -26,7 +26,7 @@ To get started with developing and contributing code, you must first setup your 
 
 To setup a development environment for contributing to the DocPad core follow these steps:
 
-1. Fork the repository of the DocPad Core: https://github.com/bevry/docpad
+1. Fork the repository of the DocPad Core: https://github.com/docpad/docpad
 1. Clone your fork to your machine then `cd` into it
 1. Run `npm install` to install any missing dependencies
 1. Run `cake compile` to compile the project (or use `cake watch` to compile every time a change is made)
@@ -53,7 +53,8 @@ To setup a development environment for contributing to a plugin follow these ste
 
 Before you submit changes to the DocPad core you'll want to make sure they don't break any of our officially supported plugins:
 
-1. Clone the [`docpad-extras` repository](https://github.com/bevry/docpad-extras) and `cd` into it
+1. Clone the [`docpad-extras` repository](https://github.com/docpad/extras) and `cd` into it
+1. Checkout the `docpad-6.x` branch: `git checkout docpad-6.x`
 1. Make your development DocPad instance available to the plugin runner (run `npm link docpad`)
 1. Install the dependencies: `npm install`
 1. Clone the plugins: `./app clone`
