@@ -196,6 +196,14 @@ Check this [GitHub issue](https://github.com/bevry/docpad/issues/854) for a conv
 TL;DR start DocPad with the `--offline` option and see if that works. :)
 
 
+## When installing I see a lot about `./cyclic.js`, what is this?
+
+If simply installing DocPad, this is not something to worry about.  npm still
+outputs this although it's not actually doing anything.
+
+So it is normal, don't worry about it.  :)
+
+
 ## Want more help?
 
 - Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
