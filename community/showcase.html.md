@@ -90,6 +90,7 @@ welcome to my online portfolio
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
 - [takitapart.](http://takitapart.com) - akitapart. - pronounced "take-it-apart" - is the blog of Bob VanderClay, web application developer, founding partner at high90, and all around nerd
 - [The Open Document Format](http://www.opendocumentformat.org) - The official website of the OpenOffice ODF file format
+- [Tinacious Design](http://tinaciousdesign.com) – Web design and Development portfolio for Toronto-based Front-end Developer in Toronto, Canada
 - [Tomohisa Oda](http://tomohisaoda.com) - Japanese: Web engineer and designer from Japan
 - [Topcoat.io](http://topcoat.io) - CSS for clean and fast web apps by Adobe
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
