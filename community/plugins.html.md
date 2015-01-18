@@ -131,7 +131,7 @@ These are plugins that make [deploying](/docpad/deploy) to particular services e
 
 DocPad's plugin/extension infrastructure supports existing coupled interfaces by importing their data directly into the DocPad Database. So if you love using Tumblr, WordPress, Medium, MongoDB, or GitHub repos for your content, you don't have to give them up. Just install the importer plugin for them, and DocPad will import the data from that service into the DocPad database for rendering.
 
-- [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Twitter Bootstrap Skeleton](https://github.com/docpad/twitter-bootstrap.docpad) to pull in [Twitter Boostrap](http://twitter.github.io/bootstrap/)
+- [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Bootstrap Skeleton](https://github.com/docpad/twitter-bootstrap.docpad) to pull in [Bootstrap](http://getbootstrap.com/)
 - [repocloner](/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
 - [tumblr](/plugin/tumblr/) - Imports Tumblr data directly into your DocPad Database, used in the [Syte Skeleton](https://github.com/docpad/syte.docpad) to pull in Tumblr data
 - [mongodb](https://github.com/nfriedly/docpad-plugin-mongodb) - Imports collections from MongoDB. 
@@ -147,7 +147,7 @@ DocPad's plugin/extension infrastructure supports custom Admin Interfaces tightl
 
 ### Decoupled Interfaces
 
-DocPad's plugin/extension infrastructure supports existing decoupled interfaces by providing plugin/extension adapters to the interface allowing the interface to interact directly with the DocPad Database, or theoritically any backend providing an interface was made for it. So far we have the following extensions that add Decoupled Interfaces to DocPad:
+DocPad's plugin/extension infrastructure supports existing decoupled interfaces by providing plugin/extension adapters to the interface allowing the interface to interact directly with the DocPad Database, or theoretically any backend providing an interface was made for it. So far we have the following extensions that add Decoupled Interfaces to DocPad:
 
 - [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/#about) as an Admin Interface for DocPad
 - [WebWrite's InlineGUI](/plugin/inlinegui) (not yet ready) - Edit your content from any backend with this inline editing interface
