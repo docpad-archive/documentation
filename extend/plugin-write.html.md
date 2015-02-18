@@ -15,7 +15,7 @@ title: Write a Plugin
 
 	```
 	git init
-	git remote add base https://github.com/docpad/docpad-plugin-yourpluginname
+	git remote add base https://github.com/docpad/docpad-plugin-yourpluginname.git
 	git pull base master
 	npm install
 	```
