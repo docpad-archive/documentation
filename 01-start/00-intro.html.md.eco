@@ -18,108 +18,108 @@ comparisonTable:  """
 
 	Developers proficient in
 	Months
-	Days
-	Days
+	**Days**
+	**Days**
 
 	Plugin and extension system
-	Yes
+	**Yes**
 	No
-	[Yes](/docs/extend)
+	**[Yes](/docs/extend)**
 
 	Asset pipeline
 	No
 	Implicit & bundled
-	[Explicit & extendable](/docs/overview#the-render-directory)
+	**[Explicit & extendable](/docs/overview#the-render-directory)**
 
 	Markup languages (markdown, rst, etc.)
 	No
 	1 bundled
-	Via [plugins](/docs/plugins#renderers)
+	**Via [plugins](/docs/plugins#renderers)**
 
 	Pre-processors (sass, less, etc.)
 	No
 	No
-	Via [plugins](/docs/plugins#renderers)
+	**Via [plugins](/docs/plugins#renderers)**
 
 	Template engines (eco, jade, etc.)
 	No
 	1 bundled
-	Via [plugins](/docs/plugins#renderers)
+	**Via [plugins](/docs/plugins#renderers)**
 
 	Database querying
-	Yes
+	**Yes**
 	No
-	Via [Query-Engine](https://github.com/bevry/query-engine/wiki/Using)
+	**Via [Query-Engine](https://github.com/bevry/query-engine/wiki/Using)**
 
 	Layouts
-	Yes
-	Yes
-	Yes
+	**Yes**
+	**Yes**
+	**Yes**
 
 	Static website output
 	No
-	Yes
-	Yes
+	**Yes**
+	**Yes**
 
 	Re-render each request
-	Yes
+	Always
 	No
-	Via [`dynamic` field](/docs/meta-data#dynamic)
+	**Via [`dynamic` field](/docs/meta-data#dynamic)**
 
 	Extend the webserver
-	Yes
+	**Yes**
 	No
-	Via [events](/docs/events#serverextend) and [API](/docs/api)
+	**Via [events](/docs/events#serverextend) and [API](/docs/api)**
 
 	Watching
-	N/A
-	Yes
-	Yes
+	**N/A**
+	**Yes**
+	**Yes**
 
 	Differential regenerations
-	N/A
+	**N/A**
 	No
-	Yes
+	**Yes**
 
 	Live reload
 	No
 	No
-	Via [`livereload` plugin](/plugin/livereload/)
+	**Via [`livereload` plugin](/plugin/livereload/)**
 
 	Partials
 	No
 	No
-	Via [`partials` plugin](/plugin/partials/)
+	**Via [`partials` plugin](/plugin/partials/)**
 
 	Manual database installation required
 	Yes
-	No
-	No
+	**No**
+	**No**
 
 	Import pages from file system
 	No
-	Yes
-	Yes
+	**Yes**
+	**Yes**
 
 	Import pages from external database (MongoDB, MySQL, etc.)
-	Yes
+	**Yes**
 	No
-	Via [plugins](/docs/plugins#admin-interfaces)
+	**Via [plugins](/docs/plugins#admin-interfaces)**
 
 	Import pages from external services (Tumblr, Dropbox, GitHub, etc.)
 	No
 	No
-	Via [plugins](/docs/plugins#admin-interfaces)
+	**Via [plugins](/docs/plugins#admin-interfaces)**
 
 	Import data from external services (Atom, XML, JSON, etc.)
 	No
 	No
-	Via [`feedr` plugin](/plugin/feedr/)
+	**Via [`feedr` plugin](/plugin/feedr/)**
 
 	WYSIWYG editors
-	Yes
+	**Yes**
 	No
-	Via [plugins](/docs/plugins#admin-interfaces)
+	**Via [plugins](/docs/plugins#admin-interfaces)**
 	""".split('\n\n').map((i) -> '| '+i.split('\n').join(' | ')+' |').join('\n')
 ```
 
