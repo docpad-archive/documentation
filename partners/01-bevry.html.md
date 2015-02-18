@@ -13,4 +13,4 @@ Bevry are the creators of DocPad and are available for advisory, training, spons
 - You can use [Gratipay donations](https://www.gratipay.com/docpad/) to help accomplish the [DocPad roadmap](/docpad/roadmap) in general.
 - For open training requests use the [`bevry/trainings` repository](http://github.com/bevry/trainings).
 - For open meetup requests use the [`bevry/meetups` repository](http://github.com/bevry/meetups).
-- For all other enquiries, email us at us@bevry.me
+- For all other enquiries, email us@bevry.me or tweet [@BevryMe](https://twitter.com/bevryme)
