@@ -102,7 +102,7 @@ Probably the first thing you want to do is to change the name and description of
 Once you update your `package.json` file with the new values, you would want to run `cake prepublish` which will also compile your plugin's meta files with [projectz](https://github.com/bevry/projectz), which is very useful for automatically updating your `README.md` and `LICENSE.md` files with the latest details for your `package.json` file.
 
 
-## Adding tests
+## Testing your Plugin
 
 For testing our plugins, we will take note of the following files:
 
@@ -159,11 +159,12 @@ DocPad's `RendererTester` will setup an instance of DocPad using the configurati
 Before we can run our unit tests we'll need to get DocPad and your plugin setup correctly. First you will need to clone a copy of the DocPad repository as you'll need the original source to run the tests. You'll then want to set it up and compile it. We're also going to link this copy of DocPad into your NPM module cache so that whenever you use DocPad it actually points to this copy.
 
 ``` bash
+cd ~
 git clone https://github.com/bevry/docpad.git
 cd docpad
 npm install
-npm link
 cake compile
+npm link
 ```
 
 This sets up your copy of DocPad and makes it so that NPM will use this copy instead of the one in the NPM repository. Next you'll need to do a similar setup for your plugin.
