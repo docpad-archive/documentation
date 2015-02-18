@@ -5,12 +5,26 @@ title: Write a Plugin
 
 ## Getting Started
 
-Inside your DocPad website directory, create a directory called `plugins`. Inside the `plugins` directory create the directory for your plugin (e.g., `plugins/yourpluginname`), and inside your plugin's directory create these two files:
+1. Make sure you have CoffeeScript installed globally `npm install -g coffee-script` so we can make use of Cakefiles
 
+1. Inside your DocPad website directory, create a directory called `plugins` (i.e. `yourwebsite/plugins`)
 
-### `src/yourpluginname.plugin.coffee`
+1. Inside your new plugins directory, create the directory for your plugin (i.e. `yourwebsite/plugins/yourpluginname`)
 
-The simplest version of this file will contain the following:
+1. Inside your new plugin directory, run the following commands to clone out the [example plugin](https://github.com/docpad/docpad-plugin-yourpluginname) that we will use as our base:
+
+	```
+	git init
+	git remote add base https://github.com/docpad/docpad-plugin-yourpluginname
+	git pull base master
+	npm install
+	```
+
+You will now find several files.
+
+An important thing to note about the `package.json` file is that our plugin starts with the version `2.0.0`. This is because v2 plugins are compatible for with DocPad v6, whereas v1 plugins are compatible with DocPad v5. [This is currently a necessary convention that you must follow.](https://github.com/bevry/docpad/issues/691)
+
+The `src/yourpluginname.plugin.coffee` file is the logic for our plugin. It's current contents will uppercase all documents with `.uc` or `.uppercase` extension. The simplest form of this file (which wouldn't perform anything) would be:
 
 ``` coffee
 # Export Plugin
@@ -21,11 +35,25 @@ module.exports = (BasePlugin) ->
 		name: 'yourpluginname'
 ```
 
-What this does is extends our BasePlugin from DocPad, and returns the `YourPlugin` class. Of course you should change the `YourPlugin` references to whatever your plugin is actually called.
+A more verbose form of this would be:
 
-The [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) is important as it provides some of the tucked away magic for our plugins. But what is even more important, is the plugin events that your plugin will hook into to provide its functionality. [You can discover the plugin events available to you on the Events Page.](/docpad/events)
+``` coffee
+# Export a function that will accept the BasePlugin class from DocPad and then will return our own class that will extend it.
+module.exports = (BasePlugin) ->
+	# Create and return our own class that extends the BasePlugin class
+	class YourpluginnamePlugin extends BasePlugin
+		# Define our plugin name
+		name: 'yourpluginname'
+		
+		# The rest of your plugin definition goes here
+		# ...
+```
 
-If you must insist on writing your plugin inside a non-CoffeeScript dialect, you may use the `BasePlugin.extend({})` method like so:
+Extending the [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) class is important as it provides some of the tucked away magic for our plugins, such as automatically listening for events when a plugin method of the event name is defined. [You can discover the plugin events available to you on the Events Page.](/docpad/events)
+
+There will also be a `Cakefile` that will allow us to compile your plugin using `cake compile`, compile our plugin whenever a change occurs using `cake watch`, run our plugin's tests using `cake test`, and prepare our plugin for publishing using `cake prepublish`, and publish our plugin by using `cake publish`.
+
+If you must insist on writing your plugin inside a non-CoffeeScript dialect, you would use the `BasePlugin.extend({})` method like so:
 
 ``` javascript
 // Export Plugin
@@ -37,50 +65,6 @@ module.exports = function (BasePlugin) {
 	});
 };
 ```
-
-
-### `package.json`
-
-This file should look something like this:
-
-``` json
-{
-	"name": "docpad-plugin-yourpluginname",
-	"version": "2.0.0",
-	"description": "DocPad plugin that adds the ability to render Something to Something Else",
-	"homepage": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname",
-	"keywords": [
-		"docpad",
-		"docpad-plugin",
-		"something",
-		"somethingelse"
-	],
-	"author": "Copyright holders name <copyright holder's email> (copyright holder's website URL)",
-	"maintainers": [
-		"Your name <your email> (your GitHub URL)"
-	],
-	"contributors": [
-		"Your name <your email> (your GitHub URL)"
-	],
-	"bugs": {
-		"url": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname/issues"
-	},
-	"repository" : {
-		"type": "git",
-		"url": "https://github.com/yourgithubusername/docpad-plugin-yourpluginname.git"
-	},
-	"engines" : {
-		"node": ">=0.8"
-	},
-	"peerDependencies": {
-		"docpad": "6"
-	},
-	"main": "./src/yourpluginname.plugin.coffee"
-}
-```
-
-An important thing to note is that our plugin started with the version `2.0.0`. This is because v2 plugins are compatible for with DocPad v6, whereas v1 plugins are compatible with DocPad v5. [This is currently a necessary convention that you must follow.](https://github.com/bevry/docpad/issues/691)
-
 
 
 ## Types of plugins
@@ -103,46 +87,29 @@ Plugins of other types are generated in the same way as Renderers, they simply a
 
 
 
+## Making your Plugin Yours
 
-## Reusable plugins
+Probably the first thing you want to do is to change the name and description of your plugin. There are several spots you would want to do this:
 
-If you are just adding some basic functionality that is specific to a site then everything we've described thus far is probably enough. However if you're doing something thats more generic, or could be useful to other people, then why not create your plugin so it's reusable? This has many advantages, you can distribute your plugin on NPM, you can use it across multiple projects, and you can setup unit tests to ensure your plugin works correctly.
+- The filenames in `src`
 
-Here's the extra files that we will need to add to our plugin:
+- The classname and plugin name in `src/yourpluginname.plugin.coffee`
 
-```
-.gitignore
-.npmignore
-Cakefile
-LICENSE.md
-README.md
-```
+- Various properties inside `package.json`
 
-You can find the contents of these files on our [example plugin repository](/plugin/yourpluginname).
+- The heading and description inside `README.md`
 
-The `Cakefile` however is worth mentioning, as it makes it to compile our plugin (`cake compile` to compile once, `cake dev` to compile on change) so we don't have to compile it at run-time each time. If you decide to use the cake file to pre-compile our plugin, you'll want to update your `main` property in your plugin's `package.json` to point to the compiled file like so:
-
-``` javascript
-{
-	// ...
-	"main": "./out/yourpluginname.plugin.js"
-	// ...
-}
-```
-
+Once you update your `package.json` file with the new values, you would want to run `cake prepublish` which will also compile your plugin's meta files with [projectz](https://github.com/bevry/projectz), which is very useful for automatically updating your `README.md` and `LICENSE.md` files with the latest details for your `package.json` file.
 
 
 ## Adding tests
 
-We can also add tests for our plugin to ensure it is working correctly. DocPad makes this process pretty darn easy. To do so, we'll need to add these extra files:
-
-
-Here's the extra files that we will need to add to our plugin:
+For testing our plugins, we will take note of the following files:
 
 ```
 src/
 	pluginname.test.coffee
-	pluginname.tester.coffee (optional)
+	pluginname.tester.coffee
 test/
 	out-expected/
 		...
@@ -155,7 +122,9 @@ test/
 
 #### `src/yourpluginname.test.coffee`
 
-This file simply calls into DocPad and tell it to test our plugin:
+The compiled version of this file is what our test running executes (`package.json:scripts:test`). It simply loads DocPad's test helpers to test our plugin.
+
+Optionally you can use this file to run your tests multiple times but in different environments. For example, the [paged plugin's customisations](https://github.com/docpad/docpad-plugin-paged/blob/master/src/paged.test.coffee) allows it to test its compatibility with other DocPad plugins.
 
 ``` coffeescript
 # Test our plugin using DocPad's Testers
@@ -174,29 +143,10 @@ For more complex plugins you might want to take a look at the [testers.coffee so
 
 #### `test/package.json`
 
-This file is optional but is essential if you want your test site required other plugins than just your one.
+This file is optional but is essential if you want your test site require other plugins than just your one.
 
 The [Text Plugin](/plugin/text) is a great example of this, you can find its [test site's package.json file here](/plugin/text/blob/master/test/package.json).
 
-
-#### `package.json`
-
-You'll want to modify the `package.json` for your plugin to support the test process, simply add the `devDependencies` and `scripts` objects to the configuration as shown below:
-
-``` javascript
-{
-	// ...
-	"devDependencies": {
-		"coffee-script": "~1.6.2"
-	},
-	"scripts": {
-		"test": "node ./test/yourpluginname.test.js"
-	}
-	// ...
-}
-```
-
-These tell NPM how to test the plugin and add the coffee script dependency for development purposes.
 
 
 ### Writing the tests
