@@ -15,8 +15,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 		"npm": "2"
 	},
 	"dependencies": {
-		"docpad": "6.x",
-		"docpad-plugin-blah": "2.x"
+		"docpad": "6",
+		"docpad-plugin-blah": "2"
 	},
 	"main": "node_modules/docpad/bin/docpad-server",
 	"scripts": {
