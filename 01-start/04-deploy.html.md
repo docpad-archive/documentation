@@ -11,8 +11,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 	``` javascript
 	"engines" : {
-		"node": "0.10",
-		"npm": "1.4"
+		"node": "0.12",
+		"npm": "2"
 	},
 	"dependencies": {
 		"docpad": "6.x",
