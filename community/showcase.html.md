@@ -47,7 +47,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [Beer Advent](http://beeradvent.com) - [source](https://github.com/mattmcmanus/beeradvent.docpad) - A social website dedicated to 2011's best beers
 - [Bevry](http://bevry.me) - Creators of DocPad / Sydney based Node.js, JavaScript and HTML5 company focused on empowering developers.
 - [Ben Dellare](http://www.delarre.net) - [source](https://github.com/benjamind/delarre.docpad) - Coder, maker, hacker, infrequent blogger.
-- [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of [Bevry](http://bevry.me), [DocPad](http://docpad.org), [History.js](http://historyjs.net) and [StartupHostel](http://startuphostel.org). Liberating and empowering the world by making your dreams more accessible.
+- [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of [Bevry](http://bevry.me). Liberating and empowering the world by making your dreams more accessible.
 - [Black Market](http://blackmarket.bg) - Bulgarian fashion company
 - [Boundstar](http://boundstar.com) - Website for a public Starbound game server.
 - [chrisbuchholz.me](http://chrisbuchholz.me) - [source](https://github.com/ChrisBuchholz/chrisbuchholz.github.com) - Personal website of chrisbuchholz
