@@ -18,7 +18,6 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
 - [multimarkdown](https://github.com/takitapart/docpad-plugin-multimarkdown) - Supports [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) to HTML `.html.(md|markdown)` via [node-multimarkdown](https://github.com/dtjm/node-multimarkdown)
 - [orgmode](https://bitbucket.org/bgschaid/docpad-plugin-orgmode/) - Supports converting  [org-mode](http://orgmode.org) to HTML `.html.org` via [org-js](https://github.com/mooz/org-js)
-- [robotskirt](/plugin/robotskirt/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [robotskirt](https://github.com/benmills/robotskirt)
 - [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](http://textile.sitemonks.com) to HTML `.html.textile`
 
 ### Data Markups
