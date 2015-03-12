@@ -14,43 +14,62 @@ In older versions of DocPad, you would run `npm install --save docpad-plugin-#{t
 
 These are plugins that add support for extra markups and languages to DocPad:
 
-- [cmds](https://github.com/pflannery/docpad-plugin-cmds/) - Adds some shell scripting fun. Supports `.anything.bash|.anything.sh|.anything.ps1|.anything.cmd`
-- [coffeescript](/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
-- [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org) to anything `.anything.coffee`
-- [coffeemugg](https://github.com/pflannery/docpad-plugin-coffeemugg) - Supports [CoffeeMugg](https://github.com/jaekwon/CoffeeMugg)  to anything `.anything.coffee`
-- [consolidate](http://github.com/robloach/docpad-plugin-consolidate) - Supports many template engines via [Consolidate.js](https://github.com/visionmedia/consolidate.js)
-- [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
-- [eco](/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
-- [haml](/plugin/haml/) - Supports [Haml](http://haml-lang.com) to anything `.anything.haml`
-- [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [Haml Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
-- [handlebars](/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com) to anything `.anything.(hb|hbs|handlebars)`
-- [hogan](/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
-- [html2coffee](/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
-- [html2jade](/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com) `.jade.html`
-- [htmlmin](http://github.com/robloach/docpad-plugin-htmlmin) - Supports minifying HTML with [HTML-Minifier](http://kangax.github.io/html-minifier/) `.html.anything`
-- [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com) to anything `.anything.jade`
-- [js2coffee](https://npmjs.org/package/docpad-plugin-js2coffee) - Supports JavaScript to CoffeeScript `.coffee.js`
-- [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org) to CSS `.css.less`
-- [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net) to JavaScript `.js.ls`
+### Writing Markups
 - [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
-- [move](/plugin/move) - Supports [Move](http://movelang.org) to JavaScript `.js.move`
 - [multimarkdown](https://github.com/takitapart/docpad-plugin-multimarkdown) - Supports [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) to HTML `.html.(md|markdown)` via [node-multimarkdown](https://github.com/dtjm/node-multimarkdown)
 - [orgmode](https://bitbucket.org/bgschaid/docpad-plugin-orgmode/) - Supports converting  [org-mode](http://orgmode.org) to HTML `.html.org` via [org-js](https://github.com/mooz/org-js)
-- [php](/plugin/php) - Supports [PHP](http://php.net) to anything `.anything.(php|phtml)`
 - [robotskirt](/plugin/robotskirt/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [robotskirt](https://github.com/benmills/robotskirt)
+- [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](http://textile.sitemonks.com) to HTML `.html.textile`
+
+### Data Markups
+- [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
+- [yaml](https://github.com/jeremyfa/docpad-plugin-yamljs) - Supports [YAML](http://en.wikipedia.org/wiki/YAML) to JSON `.json.(yaml|yml)` and JSON to YAML `.(yml|yaml).json`
+
+### CSS Pre-Processors
+- [less](/plugin/less/) - Supports [LessCSS](http://lesscss.org) to CSS `.css.less`
 - [roole](https://github.com/georgeosddev/docpad-plugin-roole) - Supports [Roole](http://roole.org) to CSS `.css.roo`
-- [ruby](/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.(ruby|erb)`
 - [sass](/plugin/sass/) - Supports [SCSS and SASS](http://sass-lang.com) to CSS (includes [compass](http://compass-style.org) support) `.css.(sass|scss)`
-- [slim](https://github.com/patocallaghan/docpad-plugin-slim) - Supports [Slim](http://slim-lang.com) to anything `.anything.slim`
+- [nodesass](https://github.com/jking90/docpad-plugin-nodesass) - Supports [SCSS](http://sass-lang.com) to CSS (using [node-sass](https://github.com/andrew/node-sass)) `.css.scss`
 - [styl](/plugin/styl/) - Supports [Styl](https://github.com/visionmedia/styl) to CSS `.css.styl`
 - [stylus](/plugin/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.(styl|stylus)`
-- [swig](https://github.com/thisispete/docpad-plugin-swig) - Supports [Swig](http://paularmstrong.github.io/swig/) to HTML `.html.swig`
-- [nodesass](https://github.com/jking90/docpad-plugin-nodesass) - Supports [SCSS](http://sass-lang.com) to CSS (using [node-sass](https://github.com/andrew/node-sass)) `.css.scss`
-- [teacup](https://github.com/hurrymaplelad/docpad-plugin-teacup/) - Supports [Teacup](http://goodeggs.github.io/teacup/) to HTML `.html.coffee`
-- [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](http://textile.sitemonks.com) to HTML `.html.textile`
+
+### Javascript Pre-Processors
+- [coffeescript](/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
+- [js2coffee](https://npmjs.org/package/docpad-plugin-js2coffee) - Supports JavaScript to CoffeeScript `.coffee.js`
+- [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net) to JavaScript `.js.ls`
+- [move](/plugin/move) - Supports [Move](http://movelang.org) to JavaScript `.js.move`
 - [typescript](https://github.com/bpampuch/docpad-plugin-tsc) - Supports [TypeScript](http://www.typescriptlang.org) to JavaScript `.js.ts`
+
+### HTML Pre-Processors
+
+#### CoffeeScript Templating Engines
+- [eco](/plugin/eco/) - Supports [Eco](https://github.com/sstephenson/eco) to anything `.anything.eco`
+- [coffeekup](/plugin/coffeekup/) - Supports [CoffeeKup](http://coffeekup.org) to anything `.anything.coffee`
+- [html2coffee](/plugin/html2coffee/) - Supports HTML to CoffeeKup `.coffee.html`
+- [coffeemugg](https://github.com/pflannery/docpad-plugin-coffeemugg) - Supports [CoffeeMugg](https://github.com/jaekwon/CoffeeMugg)  to anything `.anything.coffee`
+- [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [Haml Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
+- [teacup](https://github.com/hurrymaplelad/docpad-plugin-teacup/) - Supports [Teacup](http://goodeggs.github.io/teacup/) to HTML `.html.coffee`
+
+#### HAML-Like Templating Engines
+- [haml](/plugin/haml/) - Supports [Haml](http://haml-lang.com) to anything `.anything.haml`
+- [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com) to anything `.anything.jade`
+- [html2jade](/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com) `.jade.html`
+
+#### Moustache Templating Engines
+- [handlebars](/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com) to anything `.anything.(hb|hbs|handlebars)`
+- [hogan](/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
+
+#### Other Templating Engines
+- [consolidate](http://github.com/robloach/docpad-plugin-consolidate) - Supports many template engines via [Consolidate.js](https://github.com/visionmedia/consolidate.js)
+- [slim](https://github.com/patocallaghan/docpad-plugin-slim) - Supports [Slim](http://slim-lang.com) to anything `.anything.slim`
+- [swig](https://github.com/thisispete/docpad-plugin-swig) - Supports [Swig](http://paularmstrong.github.io/swig/) to HTML `.html.swig`
+- [htmlmin](http://github.com/robloach/docpad-plugin-htmlmin) - Supports minifying HTML with [HTML-Minifier](http://kangax.github.io/html-minifier/) `.html.anything`
 - [vash](https://github.com/harmony7/docpad-plugin-vash) - Supports [Vash](https://github.com/kirbysayshi/vash), an implementation of the [Razor template syntax](http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx) for JavaScript, to anything `.anything.vash`
-- [yaml](https://github.com/jeremyfa/docpad-plugin-yamljs) - Supports [YAML](http://en.wikipedia.org/wiki/YAML) to JSON `.json.(yaml|yml)` and JSON to YAML `.(yml|yaml).json`
+
+### Languages
+- [cmds](https://github.com/pflannery/docpad-plugin-cmds/) - Adds some shell scripting fun. Supports `.anything.bash|.anything.sh|.anything.ps1|.anything.cmd`
+- [php](/plugin/php) - Supports [PHP](http://php.net) to anything `.anything.(php|phtml)`
+- [ruby](/plugin/ruby) - Supports [Ruby](http://www.ruby-lang.org) and [ERuby](http://en.wikipedia.org/wiki/ERuby) to anything `.anything.(ruby|erb)`
 
 
 ## Helpers
