@@ -5,9 +5,9 @@
 These skeletons are currently available to you as part of the DocPad bootstrap process:
 
 <ul>
-	<% for own skeletonName, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
+	<% for own skeletonID, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
 	<li>
-		<a href="<%= skeletonValue.repo.replace(/^git:/,'https:').replace(/\.git$/,'') %>"><%= skeletonName %></a>
+		<a href="<%= skeletonValue.repo.replace(/^git:/,'https:').replace(/\.git$/,'') %>"><%= skeletonValue.name %></a>
 		- <code>branch: <%= skeletonValue.branch or 'master' %></code>
 		- <%= skeletonValue.description %>
 	</li>
