@@ -1,4 +1,4 @@
-``` cson
+``` coffeescript
 title: "Intro"
 comparisonTable:  """
 	Feature
