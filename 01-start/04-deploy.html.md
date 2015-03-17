@@ -18,18 +18,35 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 		"docpad": "6",
 		"docpad-plugin-blah": "2"
 	},
-	"main": "node_modules/docpad/bin/docpad-server",
+	"main": "node_modules/.bin/docpad-server",
 	"scripts": {
-		"start": "node_modules/docpad/bin/docpad-server"
+		"start": "node_modules/.bin/docpad-server",
+		"test": "node_modules/.bin/docpad generate --debug --silent",
+		"info": "node_modules/.bin/docpad info --silent"
 	}
 	```
+
+1. For [Travis CI](http://travis-ci.org) support, add a `.travis.yml` file that contains:
+
+	```
+	# March 17, 2015
+	# https://docpad.org/docs/deploy
+	language: node_js
+	script: "npm test"
+	node_js:
+	  - "0.12"
+	cache:
+	  directories:
+	    - node_modules
+	```
+
 
 ### For deployment to [Heroku](http://www.heroku.com)
 
 1. Create a `Procfile` file inside your project that contains:
 
 	```
-	web: node_modules/docpad/bin/docpad-server
+	web: node_modules/.bin/docpad-server
 	```
 
 1. Set your heroku instance to run in production mode
