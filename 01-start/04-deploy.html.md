@@ -96,7 +96,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	echo Building the DocPad site
 	cd "$DEPLOYMENT_SOURCE"
 	node ./node_modules/docpad/bin/docpad generate
-	exitWithMessageOnError "Docpad generation failed"
+	exitWithMessageOnError "DocPad generation failed"
 
 	# 3. KuduSync
 	echo Kudu Sync from "$DEPLOYMENT_SOURCE/out" to "$DEPLOYMENT_TARGET"
