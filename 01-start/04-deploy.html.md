@@ -95,7 +95,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	# 2. Build DocPad Site
 	echo Building the DocPad site
 	cd "$DEPLOYMENT_SOURCE"
-	node ./node_modules/docpad/bin/docpad generate
+	./node_modules/.bin/docpad generate
 	exitWithMessageOnError "DocPad generation failed"
 
 	# 3. KuduSync
