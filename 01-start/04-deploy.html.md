@@ -28,7 +28,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. For [Travis CI](http://travis-ci.org) support, add a `.travis.yml` file that contains:
 
-	```
+	``` yaml
 	# March 17, 2015
 	# https://docpad.org/docs/deploy
 	language: node_js
