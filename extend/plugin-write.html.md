@@ -215,7 +215,7 @@ Writing good unit tests is hard, but just try to cover all the possible inputs a
 
 
 
-## Maintainence
+## Maintenance
 
 If your plugin becomes popular with the DocPad community, you will have the option of making it an official plugin. This means:
 
