@@ -1,5 +1,7 @@
 Feel free to [update this page](https://github.com/docpad/documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
 
+- [pimatic.org](http://www.pimatic.org)
+
 
 ## In the press
 
