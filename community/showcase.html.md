@@ -1,7 +1,5 @@
 Feel free to [update this page](https://github.com/docpad/documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
 
-- [pimatic.org](http://www.pimatic.org)
-
 
 ## In the press
 
@@ -85,6 +83,7 @@ welcome to my online portfolio
 - [Mimijumi Indonesia](http://mimijumi.co.id) - A distributor site of Mimijumi in Indonesia.
 - [Morgan Sutherland](http://msutherl.net) - tangible media and installation art portfolio
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
+- [pimatic](http://www.pimatic.org) - smart home automation for the raspberry pi
 - [Record Famous](http://recordfamous.com) - [source](https://github.com/recordfamous/recordfamous.com) - Vikram's homepage with some Skrollr
 - [Remy Bach](http://remy.bach.me.uk) - I'm a Christian, husband and father, front-end dev, gamer, and all around tech nerd!
 - [Rio.js](http://www.riojs.org) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de Janeiro's JavaScript User Group
