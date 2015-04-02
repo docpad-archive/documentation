@@ -5,7 +5,7 @@ title: Contributing
 
 ## Bevry
 
-For the most part, DocPad inherits from the [Bevry Community's Contribution Guide](http://learn.bevry.me/guides/contribute), with the following exceptions.
+For the most part, DocPad inherits from the [Bevry Community's Contribution Guide](https://learn.bevry.me/community/contribute), with the following exceptions.
 
 
 ## Skeletons
