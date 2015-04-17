@@ -395,7 +395,7 @@ docpadConfig = {
 module.exports = docpadConfig
 ```
 
-Notice that the `docpadConfig` object is written in CoffeeScript's version of  JSON.
+Notice that the `docpadConfig` object is written in CoffeeScript's version of JSON.
 
 You'll have to restart DocPad so that DocPad can become aware of the configuration file. From then on, DocPad will automatically reload your configuration when changes occur.
 
