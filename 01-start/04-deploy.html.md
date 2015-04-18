@@ -71,9 +71,9 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 
 
-### For deployment to [Windows Azure](http://www.windowsazure.com/en-us/home/scenarios/web-sites/)
+### For deployment to [Windows Azure](http://azure.microsoft.com/en-us/services/app-service/web/)
 
-1. Create a deployment script that triggers the static content generation. To create the script run the following command using the [Windows Azure CLI Tools](http://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/command-line-tools/):
+1. Create a deployment script that triggers the static content generation. To create the script run the following command using the [Windows Azure Cross-Platform Command-Line Interface](http://azure.microsoft.com/en-us/documentation/articles/xplat-cli/):
 
 	```
 	azure site deploymentscript --basic -t bash
@@ -125,19 +125,14 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 
 
-### For deployment to [Nodejitsu](http://nodejitsu.com)
-
-1. [Follow the rest of the Nodejitsu guide here](http://nodejitsu.com/paas/getting-started.html)
-
-
 ### For deployment to [Modulus](http://modulus.io)
 
-1. [Follow getting started guide](https://modulus.io/codex/getting_started)
-
+1. [Follow getting started guide](http://help.modulus.io/customer/portal/articles/1640060-getting-started-guide)
 
 ### For deployment to [Docker](https://www.docker.io/)
 
-1. [Checkout the DocPad Docker Forge guide](https://github.com/RobLoach/forge/tree/master/docpad)
+1. [There is a docker file that should help with deployments.](https://github.com/docpad/dockerfile)
+
 
 
 ### Optional: Custom domains
