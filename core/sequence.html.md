@@ -79,7 +79,7 @@ title: "Sequence Flows"
 					>> watchr.watch config.reloadPaths
 						>> docpad.load
 							>> docpad.generate reset:true
-					>> watchr.watch config.regeneratePAths
+					>> watchr.watch config.regeneratePaths
 						>> docpad.generate reset:true
 					>> watchr.watch config.srcPath
 						>> docpad.generate
