@@ -80,22 +80,22 @@ There are two methods that Query-Engine provides for querying Backbone Collectio
 
 `findAll` does a once-off scan of all the models in the collection that matches the criteria and returns the result in a new Backbone Collection, pretty standard stuff.
 
-`findAllLive` creates a new child collection with the original collection as the parent, the new child collection then listens to the change events of the parent, and will automatically test the changes against the child collection's criteria. This is incredibly effecient for long running collections which data changes over time.
+`findAllLive` creates a new child collection with the original collection as the parent, the new child collection then listens to the change events of the parent, and will automatically test the changes against the child collection's criteria. This is incredibly efficient for long running collections, where data changes over time.
 
 Never use `findAllLive` for short-lived collections (especially in your templates). It will cause more and more and more child collections and listeners to be created and added, causing a memory leak and unexpected results.
 
 
 ## Which one should I use and when?
 
-Use `findAllLive` when defining long-running custom collections. Usual use cases are via the `collections` property of your [docpad configuration file](/docpad/config), or via the [`extendCollections` event](/docpad/events#extendcollections) within your plugin.
+Use `findAllLive` when defining long-running custom collections. Typical use cases are via the `collections` property of your [docpad configuration file](/docpad/config), or via the [`extendCollections` event](/docpad/events#extendcollections) within your plugin.
 
-Use `findAll` when you are needing once-off/short-living collections. Usual use cases are inside your templates, or inside other events within your plugin.
+Use `findAll` when you are needing once-off/short-living collections. Typical use cases are: inside your templates, and inside other events within your plugin.
 
-However, ideally wherever possible you should try and use DocPad's built-in [template helpers](/docpad/template-data#querying) or [APIs](/docpad/api#querying) for querying as these methods are highly optimised for DocPad, which the low-level Query-Engine methods are not.
+However, ideally whereever possible you should try to use DocPad's built-in [template helpers](/docpad/template-data#querying) or [APIs](/docpad/api#querying) for querying as these methods are highly optimised for DocPad, whereas the low-level Query-Engine methods are not.
 
 
 ## How can I learn more about the NoSQL queries available and the internals of Query-Engine?
-[Take a look at the Query-Engine Using Guide](https://github.com/bevry/query-engine/wiki/Using)
+[Take a look at the Guide to Using Query-Engine](https://learn.bevry.me/queryengine/guide)
 
 
 ## How do I hide a document from being rendered (e.g., a draft post)? 
@@ -199,7 +199,7 @@ TL;DR start DocPad with the `--offline` option and see if that works. :)
 ## When installing I see a lot about `./cyclic.js`, what is this?
 
 If simply installing DocPad, this is not something to worry about.  npm still
-outputs this although it's not actually doing anything.
+outputs this, although it's not actually doing anything.
 
 So it is normal, don't worry about it.  :)
 
@@ -207,7 +207,7 @@ So it is normal, don't worry about it.  :)
 ## Want more help?
 
 - Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
-- Need support? [Check out our Support Channels](/support)
+- Need support? [Check out our Support Channels](https://discuss.bevry.me/t/official-bevry-support-channels/63)
 
 [1]: https://github.com/sstephenson/eco  "Eco"
 [2]: http://jade-lang.com                "Jade"
