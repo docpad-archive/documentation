@@ -38,7 +38,7 @@ If that fails, we'd recommend either:
 
 ### When I run `npm install` on windows, I get `gyp ERR! configure error`
 - For Windows XP/Vista/7 installations:
-  - [Python](http://www.python.org/download/) [v2.7.3](http://www.python.org/download/releases/2.7.3#download) Recommended 
+  - [Python](http://www.python.org/download/) [v2.7.8](http://www.python.org/download/releases/2.7.8#download) Recommended 
   - [Microsoft Visual Studio C++ 2010](http://go.microsoft.com/?linkid=9709949)
 - For 64-bit builds of Node.js and native modules, you'll also need:
   - [Windows 7 64-bit SDK](http://www.microsoft.com/en-us/download/details.aspx?id=8279)
