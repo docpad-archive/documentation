@@ -79,7 +79,7 @@ This will introduce problems however if you have previously customised `watchOpt
 
 
 ### Error: "We couldn't find an existing DocPad project inside your current directory..."
-This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](/support).
+This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docpad/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docpad/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](https://discuss.bevry.me/t/getting-support-guide/63/1).
 
 
 ### Error: "Could not locate git binary"
@@ -117,7 +117,7 @@ Template engines by default _escape_ all variable output. Escaping is when we tu
 - Haml: `!= content` instead of `= content`
 
 ### The output of a variable (like `document.title`) is empty or `null`
-Be sure that you use the correct syntax for your template language, read the documentation of your chosen language.  
+Be sure that you use the correct syntax for your template language. Refer to the documentation of your chosen language.
 For example: When you want to put the output of a variable into the content of an (HTML) element in Jade, you must not write a whitespace between the element and the `=`. So this is wrong: `title = document.title` and that is correct: `title= document.title`
 
 
@@ -142,4 +142,4 @@ The Jade compiler uses the full file content on the disk to show where the parsi
 ## Need more help?
 
 - Found a bug? [File a Bug Report on the Issue Tracker](/issues)
-- Need support? [Check out our Support Channels](/support)
+- Need support? [Check out our Support Channels](https://discuss.bevry.me/t/official-bevry-support-channels/63/1)
