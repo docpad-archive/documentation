@@ -69,7 +69,6 @@ Websites built with DocPad. Alphabetically sorted.
 - [Game-Icons](http://game-icons.net) - Heaps of free SVG icons
 - [GeorgeOsd](http://george-osd-site.cloudfoundry.com)	- Hi there, my name is Takeharu.Oshida(GeorgeOsd)
 welcome to my online portfolio
-- [Gwen Bell](http://gwenbell.com) - [source](https://github.com/gwenbell/docpad.gwenbell.com) - Gwen Bell deploys apps, writes about technology and thinks DocPad is the cat's pyjamas.
 - [HTML UI](http://htmlui.com/index.html) - Website all about frontend development
 - [Imaginatr](http://www.imaginatr.com) - Imaginatr is a creative independent studio focused on the development of mobile applications and innovative software
 - [Invisible Weight](http://invisibleweight.com) - The Eating Disorder documentary
