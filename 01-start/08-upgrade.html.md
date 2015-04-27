@@ -22,7 +22,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 	- Removed the prototypes `String::startsWith`, `String::finishesWith`, `Array::hasCount`, `Array::has` as no one ever used them
 	- Plugin versions have been bumped to `2.x` for DocPad v6.x compatibility. You should update all your DocPad plugins versions in your `package.json` to `2.0.x` (e.g., `"docpad-plugin-eco": "2.0.x"`) then run `npm install` to install the new versions of the plugins
 
-- Changes affecting pugin developers:
+- Changes affecting plugin developers:
 	- Removed `docpadInstance.documents`. Use `docpadInstance.getCollection('documents')` instead.
 	- Plugin tests are now run via `npm test` on your plugin directory, allowing you to use whatever test runner you want
 	- DocPad and the tester helpers have moved from Mocha to [Joe](http://github.com/bevry/joe), you'll probably want to do the same
