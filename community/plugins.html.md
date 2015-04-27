@@ -33,10 +33,10 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [stylus](/plugin/stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.(styl|stylus)`
 
 ### Javascript Pre-Processors
-- [coffeescript](/plugin/coffeescript/) - Supports [CoffeeScript](http://jashkenas.github.com/coffee-script/) to JavaScript `.js.coffee`
+- [coffeescript](/plugin/coffeescript/) - Supports [CoffeeScript](http://coffeescript.org/) to JavaScript `.js.coffee`
 - [js2coffee](https://npmjs.org/package/docpad-plugin-js2coffee) - Supports JavaScript to CoffeeScript `.coffee.js`
 - [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net) to JavaScript `.js.ls`
-- [move](/plugin/move) - Supports [Move](http://movelang.org) to JavaScript `.js.move`
+- [move](/plugin/move) - Supports [Move](https://github.com/rsms/move) to JavaScript `.js.move`
 - [typescript](https://github.com/bpampuch/docpad-plugin-tsc) - Supports [TypeScript](http://www.typescriptlang.org) to JavaScript `.js.ts`
 
 ### HTML Pre-Processors
@@ -56,7 +56,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 
 #### Moustache Templating Engines
 - [handlebars](/plugin/handlebars/) - Supports [Handlebars/Moustache](http://handlebarsjs.com) to anything `.anything.(hb|hbs|handlebars)`
-- [hogan](/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.com/hogan.js/) to anything `.anything.hogan`
+- [hogan](/plugin/hogan/) - Supports [Hogan/Mustache](http://twitter.github.io/hogan.js/) to anything `.anything.hogan`
 
 #### Other Templating Engines
 - [consolidate](http://github.com/robloach/docpad-plugin-consolidate) - Supports many template engines via [Consolidate.js](https://github.com/visionmedia/consolidate.js)
@@ -82,7 +82,7 @@ These are plugins that add extra functionality to DocPad:
 - [basicauth](https://github.com/mikeumus/docpad-plugin-basicauth) - Adds basic authentication to your project
 - [browserifybundles](/plugin/browserifybundles) - Add configuration to your DocPad configuration file to create browserify bundles of your scripts
 - [browserifydocs](/plugin/browserifydocs) - Browserify your documents by adding `browserify: true` to their meta data
-- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like CoffeeScript, LESS, etc.) using [Buildr](https://github.com/balupton/buildr.npm)
+- [buildr](/plugin/buildr/) - Supports bundling scripts and styles (including pre-processors like CoffeeScript, LESS, etc.) using [Buildr](https://github.com/balupton/buildr)
 - [cachr](/plugin/cachr/) - Allows you to cache remote URLs locally from within your templates
 - [cleancss](/plugin/cleancss) - Concatinate and minify CSS files with the `cleancss: true` meta data
 - [cleanurls](/plugin/cleanurls/) - Adds support for URLs like `/blog/hello` as well as the original URL `/blog/hello.html`
@@ -209,4 +209,4 @@ It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Pag
 
 ## Requested
 
-[Here is a list of plugins waiting to be coded up :-)](/issues?labels=plugin&sort=created&direction=desc&state=open&page=1)
+[Here is a list of plugins waiting to be coded up :-)](https://github.com/docpad/docpad/issues/)
