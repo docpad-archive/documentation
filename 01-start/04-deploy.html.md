@@ -139,13 +139,9 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 If you're also wanting to use custom domains for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
 
-1. Ping your server (e.g., `ping balupton.herokuapp.com`)
-
-1. Grab the IP address from the output
-
 1. Login to your domain's DNS manager
 
-1. Create an A Record for your domain pointing to that IP address
+1. Create an C Record for your domain pointing to your app url (e.g., `ping balupton.herokuapp.com`)
 
 
 
