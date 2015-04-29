@@ -141,7 +141,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 
 1. Login to your domain's DNS manager
 
-1. Create an C Record for your domain pointing to your app url (e.g., `ping balupton.herokuapp.com`)
+1. Create an CNAME Record for your domain pointing to your app url (e.g., `balupton.herokuapp.com`)
 
 
 
