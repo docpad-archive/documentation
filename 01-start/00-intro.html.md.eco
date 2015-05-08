@@ -49,7 +49,7 @@ comparisonTable:  """
 	Database querying
 	**Yes**
 	No
-	**Via [Query-Engine](https://github.com/bevry/query-engine/wiki/Using)**
+	**Via [Query-Engine](https://github.com/bevry/query-engine)**
 
 	Layouts
 	**Yes**
