@@ -152,7 +152,8 @@ DocPad's plugin/extension infrastructure supports existing coupled interfaces by
 - [downloader](/plugin/downloader/) - Download (and optionally extract) files into your project, used in the [Bootstrap Skeleton](https://github.com/docpad/twitter-bootstrap.docpad) to pull in [Bootstrap](http://getbootstrap.com/)
 - [repocloner](/plugin/repocloner/) - Clone repos into your project, awesome for [creating wikis](https://gist.github.com/balupton/5519403)
 - [tumblr](/plugin/tumblr/) - Imports Tumblr data directly into your DocPad Database, used in the [Syte Skeleton](https://github.com/docpad/syte.docpad) to pull in Tumblr data
-- [mongodb](https://github.com/nfriedly/docpad-plugin-mongodb) - Imports collections from MongoDB. 
+- [mongodb](https://github.com/nfriedly/docpad-plugin-mongodb) - Imports collections from MongoDB.
+- [cloudant](https://github.com/nfriedly/docpad-plugin-cloudant) - Imports collections from Cloudant (CouchDB)
 
 
 ### Custom Interfaces
