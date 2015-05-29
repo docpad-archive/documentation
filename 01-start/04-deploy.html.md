@@ -79,7 +79,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	azure site deploymentscript --basic -t bash
 	```
 
-1. Modify the `deploy.sh` file by chaning the `# Deployment` section to the following lines. You can see a complete example of the deploy.sh file [here](https://gist.github.com/ntotten/4715760#file-deploy-sh).
+1. Modify the `deploy.sh` file by changing the `# Deployment` section to the following lines. You can see a complete example of the deploy.sh file [here](https://gist.github.com/ntotten/4715760#file-deploy-sh).
 
 	``` bash
 	echo Handling deployment.
