@@ -74,7 +74,7 @@ The extensions `.html.eco` means process this with Eco and render it as HTML. Al
 
 ## What is `findAllLive`?
 
-DocPad's querying capabiliites are provided by a project called [Query-Engine](http://github.com/bevry/query-engine) which adds support for NoSQL queries to JavaScript Objects and Backbone Collections. In DocPad's case, we use Backbone for our Models, so we enhance our collections with Query-Engine to gain NoSQL querying for them.
+DocPad's querying capabilities are provided by a project called [Query-Engine](http://github.com/bevry/query-engine) which adds support for NoSQL queries to JavaScript Objects and Backbone Collections. In DocPad's case, we use Backbone for our Models, so we enhance our collections with Query-Engine to gain NoSQL querying for them.
 
 There are two methods that Query-Engine provides for querying Backbone Collections. The first is `findAll` and the second is `findAllLive`.
 
@@ -117,7 +117,7 @@ At times, you may have multiple levels of cross document references. For instanc
 
 ## How do I create custom 404 and 500 pages?
 
-Add a `src/render/404.html` for 404 pages, and `src/render/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header) your templating engine (e.g., `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occured - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/render/500.html.md.eco`:
+Add a `src/render/404.html` for 404 pages, and `src/render/500.html` for 500 pages. If you create a dynamic page (adding the `dynamic: true` meta data header) your templating engine (e.g., `404.html.eco`) will also get access to `req` (the request instance), `res` (the response instance), `err` (the error that occurred - for 500 errors pages only, not for 404 error pages). Allowing you to do something like this for `src/render/500.html.md.eco`:
 
 ```
 ---
