@@ -55,7 +55,7 @@ Websites built with DocPad. Alphabetically sorted.
 - [Doug Neiner's Code Website](http://code.dougneiner.com) - [source](https://github.com/dcneiner/dougneiner.docpad) - Husband to one, father to three, jQuery Team Member, Senior Designer at [appendTo](http://appendto.com)
 - [Emmet.io's Website](http://emmet.io) - [source](https://github.com/emmetio/emmet-docs/) - Emmet (previously known as Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow
 - [Ferrari!=Ferrari](http://ferrari.github.io) - Chinese: A development blog
-- [FizzVR](http://fizzvr.github.io/) - [source](https://github.com/fizzvr/vr-web) - Coder (Github), Gamer (Steam), Hardcore (SoundCloud)
+- [FizzVR](http://fizzvr.github.io/) - [source](https://github.com/fizzvr/vr-web) - Desarrollador web Backend Quito Ecuador
 - [Florian's Blog](http://blog.boulay.eu) - [source](https://github.com/fboulay/website) - French: Technical blog on Java and technologies around the JVM
 - [Game-Icons](http://game-icons.net) - Heaps of free SVG icons
 welcome to my online portfolio
