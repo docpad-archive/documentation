@@ -67,6 +67,7 @@ welcome to my online portfolio
 - [The Mason Jar](http://www.the-mason-jar.com) - [source](https://github.com/the-mason-jar/www-the-mason-jar) - Hipster cocktails with a back-end powered by GitHub and DocPad.
 - [MeltMedia](http://meltmedia.com) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
 - [Morgan Sutherland](http://msutherl.net) - tangible media and installation art portfolio
+- [MS Dev Show](http://msdevshow.com) - The MS Dev Show is the podcast for Microsoft developers covering news and topics such as Azure (cloud), Windows, and cross-platform development using MS tools.
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
 - [pimatic](http://www.pimatic.org) - smart home automation for the raspberry pi
 - [Record Famous](http://recordfamous.com) - Vikram's homepage with some Skrollr
