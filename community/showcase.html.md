@@ -30,6 +30,7 @@ DocPad mentioned around the web. Oldest first.
 - [DocPad 快速入門](http://blog.faq-book.com/?p=7281) - Chinese: Getting started with DocPad
 - [Multilingual blog on DocPad](http://blog.sapegin.me/all/multilingual-docpad) - How to make a multilingual blog with a single DocPad installation
 - [blogger-docpad](https://github.com/dorajistyle/blogger-docpad) - Import Google Blooger articles by label and generate Docpad static blog. It's good example how to handle large number of files with docpad.
+- [YTechie](http://www.ytechie.com/2013/11/blogging-awesomeness-with-a-static-generator-and-markdown/) - Blogging Awesomeness with a Static Generator and Markdown
 
 ## Websites
 
@@ -85,6 +86,7 @@ welcome to my online portfolio
 - [Vicktor Ilieff](http://www.viktorilieff.com) - Viktor Ilieff is an artist, conductor, composer and visionary. His art rests on the principle that the aesthetics of the means of expression should align with the times we live in.
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 - [Notes From Heck](http://adityamukho.com) - Personal website and blog of Aditya Mukhopadhyay, built on the bootstrap skeleton.
+- [YTechie](http://www.ytechie.com) - Blog for Jason Young, Azure Developer and Evangelist
 
 
 ## Applications
