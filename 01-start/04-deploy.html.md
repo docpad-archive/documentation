@@ -195,6 +195,7 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 				"deploy": "node_modules/.bin/docpad deploy-ghpages --silent --env static"
 			}
 		}
+		```
 
 	1. Add a `circle.yml` file to your project with the marked modifications:
 
