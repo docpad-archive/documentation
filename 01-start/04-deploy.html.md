@@ -120,7 +120,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 		<action type="Rewrite" url="{R:1}.html" />
 	</rule>
 	```
-	
+
 1. [Follow the rest of the Azure guide here](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/)
 
 
@@ -173,3 +173,90 @@ If you're also wanting to use custom domains for your website, [follow the Herok
 
 1. [Checkout the DocPad Sunny Plugin](https://github.com/bobobo1618/docpad-plugin-sunny)
 
+
+
+## Continuous Deployment
+
+### Using Circle CI to deploy to GitHub Pages
+
+1. Inside your project directory, do the following:
+
+	1. Add the [GitHub Pages Plugin](/plugin/ghpages) as a Development Dependency
+
+		```
+		npm install --save-dev docpad-plugin-ghpages
+		```
+
+	1. Add a deploy script to your `package.json` `"scripts"` section:
+
+		``` json
+		{
+			"scripts": {
+				"deploy": "node_modules/.bin/docpad deploy-ghpages --silent --env static"
+			}
+		}
+
+	1. Add a `circle.yml` file to your project with the marked modifications:
+
+		``` yaml
+		machine:
+			node:
+				version: "0.12"
+		general:
+			branches:
+				ignore:
+				- gh-pages
+		dependencies:
+			cache_directories:
+				- "node_modules"
+		machine:
+			pre:
+				- git config --global user.email "circle@bevry.me"  # set to your choosing
+				- git config --global user.name "Bevry CircleCI Deployer"  # set to your choosing
+		deployment:
+			production:
+				branch: master
+				owner: docpad  # set this to the github organisation/profile the owns the repository
+				commands:
+					- npm run-script deploy
+		```
+
+	1. Remove the `regenerateEvery` property from your DocPad Configuration File if you have set it, as it will no longer be needed.
+
+1. Create a SSH Key that will be used by Circle CI to deploy to GitHub Pages, do this by:
+
+	1. Create the SSH Key, make note of where it goes, don't bother with a password, use the email that was inside your `circle.yml` file:
+
+		``` bash
+		ssh-keygen -t rsa -b 4096 -C "circle@bevry.me"
+		```
+
+	1. Make note of it's location. Two files will be generated. One with `.pub` at the end, which is the public key, and one without `.pub` which is the private key.
+
+1. Inside your Circle CI account, do the following:
+
+	1. Add any environment variables you may need via `Project Settings -> Tweaks -> Environment Variables`
+
+	1. Add the private key to CircleCI via `Project Settings -> Permissions -> SSH Permissions`. Set the hostname to `github.com`. Use the contents of the private key file for the private key text area.
+
+1. Inside your GitHub Project Settings, do the following:
+
+	1. Add the public key to your GitHub Project by going to `Settings -> Deploy Keys -> Add deploy key`. Specify the title as `CircleCI Deployment` or whatever you like and set the key text area to the contents of the public key. Allow write access.
+
+1. If you want to regenerate your website when an external GitHub Repository changes (for instance updating the DocPad Website when the DocPad Documentation repository changes), you will need to:
+
+	1. Create yourself a Circle CI token via the [Circle CI Account API Page](https://circleci.com/account/api)
+
+	1. Go to the settings of the GitHub Repository that should cause the regeneration, and access `Webhooks & Services -> Add webhook`
+
+		1. Specify the `Payload URL` to be:
+
+			```
+			https://circleci.com/api/v1/project/YOUR_GITHUB_ORG/YOUR_GITHUB_REPO/tree/master?circle-token=THE_CIRCLECI_TOKEN
+			```
+
+		1. Specify `Content type` to be `application/json`, select `Just the push event`, and check `Active`
+
+		1. You can hit that Payload URL whenever you want to retest and rebuild your project
+
+1. All done. You can now delete the local SSH key files that were made, as they serve no further purpose
