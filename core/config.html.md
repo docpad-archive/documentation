@@ -331,7 +331,7 @@ docpadConfig = {
 
 	# Enable Unlisted Plugins
 	# Set to false to only enable plugins that have been explicity set to `true` inside `enabledPlugins`
-	enabledUnlistedPlugins: true  # default
+	enableUnlistedPlugins: true  # default
 
 	# Enabled Plugins
 	enabledPlugins:  # example
