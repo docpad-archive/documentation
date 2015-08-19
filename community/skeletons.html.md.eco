@@ -4,6 +4,13 @@
 
 These skeletons are currently available to you as part of the DocPad bootstrap process:
 
+<% unless @feedr?.feeds?.exchange?.skeletons?: %>
+Something has gone wrong fetching the skeletons, please report this on [this GitHub issue](https://github.com/docpad/website/issues/70). Possible helpful data:
+
+``` json
+<%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
+```
+<% else: %>
 <ul>
 	<% for own skeletonID, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
 	<li>
@@ -13,15 +20,16 @@ These skeletons are currently available to you as part of the DocPad bootstrap p
 	</li>
 	<% end %>
 </ul>
+<% end %>
 
-Want to add yours? [Add it to the listing here.](https://github.com/bevry/docpad-extras/edit/docpad-6.x/exchange.cson)
+Want to add yours? [Add it to the listing here.](https://github.com/docpad/extras/edit/docpad-6.x/exchange.cson)
 
 
-### Experimental 
+### Experimental
 
 These skeletons are currently under construction:
 
-- [Syte](https://github.com/docpad/syte.docpad) `branch: master` - A simple pre-made personal website with blogging and social integrations.
+- [Syte](https://github.com/docpad/docpad-skeleton-syte) `branch: master` - A simple pre-made personal website with blogging and social integrations.
 
 
 ### Older
@@ -30,8 +38,6 @@ These skeletons are for older versions of DocPad:
 
 - [Deckpad](https://github.com/calvinmetcalf/deckpad) `branch: master` - Build rich HTML5 presentations with DocPad
 - [Node Chat](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js
-- [Benjamin Lupton](https://github.com/balupton/balupton.docpad) `branch: docpad-5.x` - [preview](http://balupton.com/) - The personal website/blog of Benjamin Lupton, the creator of DocPad
-
 
 
 ## Requested
