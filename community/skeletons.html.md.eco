@@ -7,8 +7,9 @@ These skeletons are currently available to you as part of the DocPad bootstrap p
 <% unless @feedr?.feeds?.exchange?.skeletons?: %>
 Something has gone wrong fetching the skeletons, please report this on [this GitHub issue](https://github.com/docpad/website/issues/70). Possible helpful data:
 
-``` json
-<%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
+``` javascript
+var exchangeUrl = "<%- @exchangeUrl %>"
+var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
 ```
 <% else: %>
 <ul>
