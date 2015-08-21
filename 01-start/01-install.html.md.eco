@@ -10,7 +10,8 @@ _If you are upgrading from one major version to another (e.g., DocPad v5 to DocP
 1. Update NPM and Install DocPad
 
 	``` bash
-	npm install -g npm; npm install -g docpad<%= if (v = @feedr?.feeds?.latestPackage?.version) then '@'+@getVersion(v,2) else '' %>
+	npm install -g npm
+	npm install -g docpad<%= if (v = @feedr?.feeds?.latestPackage?.version) then '@'+@getVersion(v,2) else '' %>
 	```
 
 	**Note:** The above should not require `sudo`. If it does, we recommend reinstalling Node.js so that it doesn't. Otherwise you're likely to run into permission problems in the future. Follow the Step 1 instructions to reinstall Node.js without requiring `sudo`.
