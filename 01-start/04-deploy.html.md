@@ -4,7 +4,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 ## Deploying DocPad
 
-### Preperation
+### Preparing DocPad for Deployment
 
 1. Ensure your project's `package.json` file contains the following:
 
@@ -45,11 +45,15 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 ## To Static Servers (Apache, Nginx, etc.)
 
+
+### For deployment to a Custom Static Server
+
 1. Perform a generation for a static production environment using `docpad generate --env static`
 
 2. Upload the generated directory to your server's `public_html` or `htdocs` directory
 
 	1. If you use rsync, [checkout our DocPad rsync deploy script](https://gist.github.com/Hypercubed/5804999)
+
 
 
 ### For deployment to [GitHub Pages](http://pages.github.com)
@@ -65,6 +69,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	```
 	docpad deploy-ghpages --env static
 	```
+
+3. If you'd like deployment automatically to GitHub Pages every time your repo updates, check out the [Continuous Deployment Guide](https://docpad.org/docs/deploy#using-circle-ci-to-deploy-to-github-pages)
 
 
 ### For deployment to a Cloud Data Storage Provider (AWS S3, Google Storage, etc.)
