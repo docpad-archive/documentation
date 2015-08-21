@@ -1,13 +1,12 @@
 DocPad websites can be deployed anywhere. Here are a few of the most common deployments.
 
 
-## To a Node.js Hosting Provider
 
+## Deploying DocPad
 
+### Preperation
 
-### Inside your website's directory
-
-1. Add the following to your website's `package.json` file. Add all the dependencies you are using and make sure their versions are correct - as well as ensure all commas are correctly placed.
+1. Ensure your project's `package.json` file contains the following:
 
 	``` javascript
 	"engines" : {
@@ -25,8 +24,10 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 		"info": "node_modules/.bin/docpad info --silent"
 	}
 	```
+	
+	Correct dependencies with what you are actually using.
 
-1. For [Travis CI](http://travis-ci.org) support, add a `.travis.yml` file that contains:
+1. If you'd like [Travis CI](http://travis-ci.org) support, add a `.travis.yml` file that contains:
 
 	``` yaml
 	# March 17, 2015
@@ -39,6 +40,41 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	  directories:
 	    - node_modules
 	```
+
+
+
+## To Static Servers (Apache, Nginx, etc.)
+
+1. Perform a generation for a static production environment using `docpad generate --env static`
+
+2. Upload the generated directory to your server's `public_html` or `htdocs` directory
+
+	1. If you use rsync, [checkout our DocPad rsync deploy script](https://gist.github.com/Hypercubed/5804999)
+
+
+### For deployment to [GitHub Pages](http://pages.github.com)
+
+1. Install the [GitHub Pages Plugin](/plugin/ghpages)
+
+	```
+	docpad install ghpages
+	```
+
+2. Deploy to GitHub Pages using the plugin
+
+	```
+	docpad deploy-ghpages --env static
+	```
+
+
+### For deployment to a Cloud Data Storage Provider (AWS S3, Google Storage, etc.)
+
+1. [Checkout the DocPad Sunny Plugin](https://github.com/bobobo1618/docpad-plugin-sunny)
+
+
+
+
+## To a Node.js Hosting Provider
 
 
 ### For deployment to [Heroku](http://www.heroku.com)
@@ -57,6 +93,58 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. [Follow the rest of the Heroku guide here](http://devcenter.heroku.com/articles/node-js)
 
+1. If you're also wanting to use custom domains for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
+	
+	1. Login to your domain's DNS manager
+	
+	1. Create an CNAME Record for your domain pointing to your app url (e.g., `balupton.herokuapp.com`)
+
+
+
+
+### For deployment to [OpenShift](https://openshift.redhat.com)
+
+1. Create your [OpenShift](https://openshift.redhat.com) account and [install their client tools](https://developers.openshift.com/en/managing-client-tools.html)
+
+1. Create a new OpenShift application for your project:
+
+	``` shell
+	rhc app create PROJECTNAME https://raw.githubusercontent.com/kyrylkov/openshift-iojs/master/metadata/manifest.yml
+	```
+
+1. Set environment variables using:
+	
+	``` shell
+	rhc set-env -a PROJECTNAME NODE_ENV='production'
+	```
+
+1. If you'd like a custom domain, run:
+	
+	``` shell
+	rhc alias-add PROJECTWEBSITE.COM -a PROJECTNAME
+	```
+	
+	Then create CNAME record with your DNS host pointing `PROJECTWEBSITE.COM` to `PROJECTNAME-YOUR_OPENSHIFT_NAMESPACE.rhcloud.com`
+	
+	If you don't know what your OpenShift namespace is, run:
+	
+	``` shell
+	rhc app show -a PROJECTNAME
+	```
+	
+	And it will be listed within the SSH URL.
+
+1. Deploy your project's code to openshift:
+	
+	``` shell
+	rhc app deploy https://github.com/USER/REPO.git#master -a PROJECTNAME
+	```
+
+1. You should be all good now! Check the logs of your app with:
+	
+	``` shell
+	rhc tail -a PROJECTNAME
+	```
 
 
 ### For deployment to [AppFog](https://www.appfog.com)
@@ -129,49 +217,12 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. [Follow getting started guide](http://help.modulus.io/customer/portal/articles/1640060-getting-started-guide)
 
+
 ### For deployment to [Docker](https://www.docker.io/)
 
 1. [There is a docker file that should help with deployments.](https://github.com/docpad/dockerfile)
 
 
-
-### Optional: Custom domains
-
-If you're also wanting to use custom domains for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
-
-1. Login to your domain's DNS manager
-
-1. Create an CNAME Record for your domain pointing to your app url (e.g., `balupton.herokuapp.com`)
-
-
-
-## To Static Servers (Apache, Nginx, etc.)
-
-1. Perform a generation for a static production environment using `docpad generate --env static`
-
-2. Upload the generated directory to your server's `public_html` or `htdocs` directory
-
-	1. If you use rsync, [checkout our DocPad rsync deploy script](https://gist.github.com/Hypercubed/5804999)
-
-
-### For deployment to [GitHub Pages](http://pages.github.com)
-
-1. Install the [GitHub Pages Plugin](/plugin/ghpages)
-
-	```
-	docpad install ghpages
-	```
-
-2. Deploy to GitHub Pages using the plugin
-
-	```
-	docpad deploy-ghpages --env static
-	```
-
-
-### For deployment to a Cloud Data Storage Provider (AWS S3, Google Storage, etc.)
-
-1. [Checkout the DocPad Sunny Plugin](https://github.com/bobobo1618/docpad-plugin-sunny)
 
 
 
