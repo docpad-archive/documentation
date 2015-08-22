@@ -14,9 +14,11 @@ _If you are upgrading from one major version to another (e.g., DocPad v5 to DocP
 	npm install -g docpad<%= if (v = @feedr?.feeds?.latestPackage?.version) then '@'+@getVersion(v,2) else '' %>
 	```
 
-	**Note:** The above should not require `sudo`. If it does, we recommend reinstalling Node.js so that it doesn't. Otherwise you're likely to run into permission problems in the future. Follow the Step 1 instructions to reinstall Node.js without requiring `sudo`.
+	**Note:** If you encounter permission errors with the above, do not use `sudo`, in our experience using `sudo` with node only creates further issues (regardless of DocPad). Follow our Step 1 instructions for a way to install Node.js with permissions that never require the use of `sudo`.
+	
+	You can verify DocPad has installed correctly by using `docpad -v` to output DocPad's version number.
 
-1. **When upgrading:** in addition to the above, run `docpad update` inside your project directory to ensure that your local installations of DocPad and its plugins are updated to their latest compatible versions
+1. **When upgrading:** in addition to the above, run `docpad update` inside your project directory to ensure that your local installation of DocPad and its plugins are updated to their latest compatible versions,
 
 1. When you run DocPad for the first time using `docpad run`, you'll be asked if you agree with the [Terms of Service](/tos). The TOS is necessary due to our extreme transparency and respect for our users. We want to make sure that our respect for your information is guaranteed, and that it will never be abused. Without a TOS, expectations can become misaligned and problems could occur. We would never want that. We want our users to know the exact measures we take in order to best serve you (collecting statistics, running newsletters, expanding the business, etc.), just so you know how highly we regard you over ourselves. If you run into trouble with the ToS, check [this FAQ entry](/docs/faq#cannot-get-past-accepting-the-terms-of-service).
 
