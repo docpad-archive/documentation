@@ -11,12 +11,12 @@ rvm:
 
 # Prepare and run our tests
 install: gem install travis
-before_script: travis login --github-token $GITHUB_TRAVIS_TOKEN
-script: travis restart -r $TRAVIS_REBUILD_REPO
+before_script: travis login --github-token "$GITHUB_TRAVIS_TOKEN"
+script: travis restart -r "$TRAVIS_REBUILD_REPO"
 
 # Custom deployment
 # travis encrypt "GITHUB_TRAVIS_TOKEN=$GITHUB_TRAVIS_TOKEN" --add env.global
 env:
   global:
     - TRAVIS_REBUILD_REPO='docpad/website'
-    - secure: dLmKltD3yk/f9jiDVO5os41cTRFMeMq4uZ4hPRlfI4JmfpTjIoCPEgjz+UG3E5UxUSar28GsQueNro8chYWMQBfty4OfQ8lSda+M9YRxNZMDxu09C9fMk/GOEOPo34wyeoEWGe5zP44J/zBg/qbQfAK+LD+stD2dqPmgjX8uczc=
+    - secure: WZQTSijC2F4q/P24/KNqIsiyvrjpF9e7RpUYUKx92kq1sWLnTv1nLa1W4+RiD4V93wI8k2qDzSneK8ntXTG8fiHeH0k2XsoKgxWmfZmV7F2bSORHWIvGpHVgeSpkr1HAykH9j7mzn0snMZIW4HsFkC5OBrQ93nVdKKyEuJPRmLQ=
