@@ -19,13 +19,13 @@ rvm:
 # Doesn't use --debug on `travis login` as that will output our github token
 install: gem install travis --no-rdoc --no-ri
 script: >
-  if [ ! -z $GITHUB_TRAVIS_TOKEN ]; then;
+  if [ ! -z $GITHUB_TRAVIS_TOKEN ]; then
     echo "Deploying";
     travis login --skip-completion-check --org --github-token "$GITHUB_TRAVIS_TOKEN";
     travis restart --debug --skip-completion-check --org -r docpad/website;
     travis restart --debug --skip-completion-check --org -r bevry/learn;
-    echo "Deployed"
-  else;
+    echo "Deployed";
+  else
     echo "Skipped deploy";
   fi
 
