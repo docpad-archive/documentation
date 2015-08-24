@@ -16,12 +16,11 @@ rvm:
 
 # Prepare and run our tests
 install: gem install travis --no-rdoc --no-ri
-before_script: travis login --skip-completion-check --github-token "$GITHUB_TRAVIS_TOKEN"
-script: travis restart --skip-completion-check -r "$TRAVIS_REBUILD_REPO"
+script: travis restart --debug --skip-completion-check -r "$TRAVIS_REBUILD_REPO" -t "$TRAVIS_ACCESS_TOKEN"
 
 # Custom deployment
-# travis encrypt "GITHUB_TRAVIS_TOKEN=$GITHUB_TRAVIS_TOKEN" --add env.global
+# travis encrypt "TRAVIS_ACCESS_TOKEN=$TRAVIS_ACCESS_TOKEN" --add env.global
 env:
   global:
     - TRAVIS_REBUILD_REPO='docpad/website'
-    - secure: WZQTSijC2F4q/P24/KNqIsiyvrjpF9e7RpUYUKx92kq1sWLnTv1nLa1W4+RiD4V93wI8k2qDzSneK8ntXTG8fiHeH0k2XsoKgxWmfZmV7F2bSORHWIvGpHVgeSpkr1HAykH9j7mzn0snMZIW4HsFkC5OBrQ93nVdKKyEuJPRmLQ=
+    - secure: Tvz/lldT5kIskI6uZkC2jdMj6lQZk90cCUdovH/wu8F2m32C5c8wNR3C70ZqMEwAATFfpyIeYlVJs3WTM1H3OjLyJSROfna4LdIYByNDyXV5O745a+2NoOiPB+ehbf9/W3P1BVazw4S7vTh9cJ4EmdpEtvol7CkBHmNp/fJPbtg=

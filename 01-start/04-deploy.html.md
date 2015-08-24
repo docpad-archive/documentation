@@ -250,9 +250,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. Enable Travis CI for the repository, then inside the repository directory, do the following:
 
-	1. Add this `.travis.yml` file to your project:
-
-		<script src="https://gist.github.com/balupton/a10abaf708c835eed154.js?file=travisci-main.yaml"></script>
+	1. Add [this `.travis.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/travisci-main.yml) to your project.
 
 	1. Run the following commands (with the appropriate substitions):
 
@@ -265,9 +263,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. If you want to regenerate your website when an external GitHub Repository changes (for instance updating the DocPad Website when the DocPad Documentation repository changes), you will need to Enable Travis CI for that repository, then inside that repository directory, do the following:
 
-	1. Add this `.travis.yml` file to your project:
-
-		<script src="https://gist.github.com/balupton/a10abaf708c835eed154.js?file=travisci-other.yaml"></script>
+	1. Add [this `.travis.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/travisci-other.yml) to your project.
 
 	1. Run the following commands (with the appropriate substitions):
 
@@ -283,9 +279,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. Inside your project directory, do the following:
 
-	1. Add this `circle.yml` file to your project with the marked modifications:
-
-		<script src="https://gist.github.com/balupton/a10abaf708c835eed154.js?file=circleci-main.yaml"></script>
+	1. Add [this `circle.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/circleci-main.yml) to your project with the marked modifications.
 
 	1. Commit and push the changes.
 
