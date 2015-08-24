@@ -1,8 +1,13 @@
 # August 21, 2015
-# https://github.com/bevry/base
+# https://docpad.org/docs/deploy
 
 # Use the latest travis infrastructure
 sudo: false
+
+# Run travis only on the master branch
+branches:
+  only:
+    - master
 
 # We use node
 language: ruby
