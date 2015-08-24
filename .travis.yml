@@ -12,12 +12,11 @@ branches:
 # We use node
 language: ruby
 rvm:
-  - ruby-head
+  - "2.2"
 
 # Prepare and run our tests
-install: gem install travis
-before_script: travis login --skip-completion-check --github-token "$GITHUB_TRAVIS_TOKEN"
-script: travis restart --skip-completion-check -r "$TRAVIS_REBUILD_REPO"
+install: gem install travis --no-rdoc --no-ri
+script:  travis login --skip-completion-check --github-token "$GITHUB_TRAVIS_TOKEN" && travis restart --skip-completion-check -r "$TRAVIS_REBUILD_REPO"
 
 # Custom deployment
 # travis encrypt "GITHUB_TRAVIS_TOKEN=$GITHUB_TRAVIS_TOKEN" --add env.global
