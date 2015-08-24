@@ -246,7 +246,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. Inside your GitHub account, do the following:
 
-	1. [Create a Personal Access Token](https://github.com/settings/tokens/new) callled `Travis CI Deployer` that has `repo` and `public_repo` checked (uncheck everything else), make note of the token we'll use it later
+	1. [Create a Personal Access Token](https://github.com/settings/tokens/new) callled `Travis CI Deployer` that has `repo` and `public_repo` checked (uncheck everything else), make note of the token we'll use it later (this same token can be used for all the repos you have access to).
 
 1. Inside your project directory, do the following:
 
@@ -285,7 +285,11 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 			fi
 		```
 	
-	1. Run `travis encrypt "YOUR_GITHUB_USERNAME:THE_PERSONAL_ACCESS_TOKEN" --add env.global`, substitute `YOUR_GITHUB_USERNAME` and `THE_PERSONAL_ACCESS_TOKEN` with the appropriate values
+	1. Run (substitute `YOUR_GITHUB_USERNAME` and `THE_PERSONAL_ACCESS_TOKEN` with the appropriate values):
+	
+		``` bash
+		travis encrypt "YOUR_GITHUB_USERNAME:THE_PERSONAL_ACCESS_TOKEN" --add env.global
+		```
 
 
 1. All done, your next push to master will be automatically deployed.
