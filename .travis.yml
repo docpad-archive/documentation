@@ -15,9 +15,10 @@ rvm:
   - "2.2"
 
 # Prepare and run our tests
+# This should be easier, but https://github.com/travis-ci/travis.rb/issues/315 is a thing
 install: gem install travis --no-rdoc --no-ri
 script: >
-  travis login --skip-completion-check --github-token "$GITHUB_TRAVIS_TOKEN";
+  travis login --debug --skip-completion-check --org --github-token "$GITHUB_TRAVIS_TOKEN";
   export TRAVIS_ACCESS_TOKEN=`cat ~/.travis/config.yml | grep access_token | sed 's/ *access_token: *//'`;
   travis restart --debug --skip-completion-check -r docpad/website -t "$TRAVIS_ACCESS_TOKEN";
   travis restart --debug --skip-completion-check -r bevry/learn -t "$TRAVIS_ACCESS_TOKEN";
