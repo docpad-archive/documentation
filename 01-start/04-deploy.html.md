@@ -24,7 +24,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 		"info": "node_modules/.bin/docpad info --silent"
 	}
 	```
-	
+
 	Correct dependencies with what you are actually using.
 
 
@@ -85,9 +85,9 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 1. [Follow the rest of the Heroku guide here](http://devcenter.heroku.com/articles/node-js)
 
 1. If you're also wanting to use custom domains for your website, [follow the Heroku Guide here](https://devcenter.heroku.com/articles/custom-domains), or alternatively here is a generic guide:
-	
+
 	1. Login to your domain's DNS manager
-	
+
 	1. Create an CNAME Record for your domain pointing to your app url (e.g., `balupton.herokuapp.com`)
 
 
@@ -104,35 +104,35 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	```
 
 1. Set environment variables using:
-	
+
 	``` shell
 	rhc set-env -a PROJECTNAME NODE_ENV='production'
 	```
 
 1. If you'd like a custom domain, run:
-	
+
 	``` shell
 	rhc alias-add PROJECTWEBSITE.COM -a PROJECTNAME
 	```
-	
+
 	Then create CNAME record with your DNS host pointing `PROJECTWEBSITE.COM` to `PROJECTNAME-YOUR_OPENSHIFT_NAMESPACE.rhcloud.com`
-	
+
 	If you don't know what your OpenShift namespace is, run:
-	
+
 	``` shell
 	rhc app show -a PROJECTNAME
 	```
-	
+
 	And it will be listed within the SSH URL.
 
 1. Deploy your project's code to openshift:
-	
+
 	``` shell
 	rhc app deploy https://github.com/USER/REPO.git#master -a PROJECTNAME
 	```
 
 1. You should be all good now! Check the logs of your app with:
-	
+
 	``` shell
 	rhc tail -a PROJECTNAME
 	```
@@ -248,55 +248,33 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 	1. [Create a Personal Access Token](https://github.com/settings/tokens/new) callled `Travis CI Deployer` that has `repo` and `public_repo` checked (uncheck everything else), make note of the token we'll use it later (this same token can be used for all the repos you have access to).
 
-1. Inside your project directory, do the following:
+1. Enable Travis CI for the repository, then inside the repository directory, do the following:
 
-	1. Add a `.travis.yml` file to your project with the marked modifications:
-		
-		``` yaml
-		# August 24, 2015
-		# https://docpad.org/docs/deploy
-		
-		# Use the latest travis infrastructure
-		sudo: false
-		
-		# We use node
-		language: node_js
-		node_js:
-		 	- iojs
-		cache:
-			directories:
-				- node_modules
-		
-		# Prepare and run our tests
-		script: "npm test"
-		
-		# Custom deployment
-		after_success: >
-			if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) &&
-				[ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-				echo "Deploying"
-				git config --global user.email "travisci@bevry.me"
-				# ^ Substitute with your preference
-				git config --global user.name "Bevry Travis CI Deployer"
-				# ^ Substitute with your preference
-				git remote rm origin
-				git remote add origin "https://$GITHUB_AUTH@github.com/docpad/website.git"
-				# ^ Substitute with your deploy repo location
-				npm run-script deploy
-				echo "Deployed"
-			else
-				echo "Skipped deploy"
-			fi
-		```
-	
-	1. Run (substitute `YOUR_GITHUB_USERNAME` and `THE_PERSONAL_ACCESS_TOKEN` with the appropriate values):
-	
-		``` bash
-		travis encrypt "YOUR_GITHUB_USERNAME:THE_PERSONAL_ACCESS_TOKEN" --add env.global
+	1. Add this `.travis.yml` file to your project:
+
+		<script src="https://gist.github.com/balupton/a10abaf708c835eed154.js?file=travisci-main.yaml"></script>
+
+	1. Run the following commands (with the appropriate substitions):
+
+		``` shell
+		travis encrypt "DEPLOY_USER=$YOUR_GITHUB_USERNAME" --add env.global
+		travis encrypt "DEPLOY_TOKEN=$THE_PERSONAL_ACCESS_TOKEN" --add env.global
 		```
 
+	1. Commit and push the changes.
 
-	1. Commit the changes.
+1. If you want to regenerate your website when an external GitHub Repository changes (for instance updating the DocPad Website when the DocPad Documentation repository changes), you will need to Enable Travis CI for that repository, then inside that repository directory, do the following:
+
+	1. Add this `.travis.yml` file to your project:
+
+		<script src="https://gist.github.com/balupton/a10abaf708c835eed154.js?file=travisci-other.yaml"></script>
+
+	1. Run the following commands (with the appropriate substitions):
+
+		``` shell
+		travis encrypt "TRAVIS_REBUILD_REPO=$GITHUB_USERNAME/$GITHUB_REPO" --add env.global
+		travis encrypt "GITHUB_TRAVIS_TOKEN=$THE_PERSONAL_ACCESS_TOKEN" --add env.global
+		```
 
 1. All done, your next push to master will be automatically deployed.
 
@@ -305,35 +283,11 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. Inside your project directory, do the following:
 
-	1. Add a `circle.yml` file to your project with the marked modifications:
+	1. Add this `circle.yml` file to your project with the marked modifications:
 
-		``` yaml
-		# August 24, 2015
-		# https://docpad.org/docs/deploy
-		
-		machine:
-			node:
-				version: "0.12"
-		general:
-			branches:
-				ignore:
-				- gh-pages
-		dependencies:
-			cache_directories:
-				- "node_modules"
-		machine:
-			pre:
-				- git config --global user.email "circleci@bevry.me"  # set to your choosing
-				- git config --global user.name "Bevry Circle CI Deployer"  # set to your choosing
-		deployment:
-			production:
-				branch: master
-				owner: docpad  # set this to the github organisation/profile the owns the repository
-				commands:
-					- npm run-script deploy
-		```
-	
-	1. Commit the changes.
+		<script src="https://gist.github.com/balupton/a10abaf708c835eed154.js?file=circleci-main.yaml"></script>
+
+	1. Commit and push the changes.
 
 1. Create a SSH Key that will be used by Circle CI to deploy to GitHub Pages, do this by:
 
