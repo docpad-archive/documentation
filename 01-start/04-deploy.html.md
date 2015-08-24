@@ -275,9 +275,13 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 			if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) &&
 				[ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 				echo "Deploying"
-				git config --global user.email "travisci@bevry.me"  # substitute with your preference
-				git config --global user.name "Bevry Travis CI Deployer"  # substitute with your preference
-				git remote rm origin && git remote add origin "https://$GITHUB_AUTH@github.com/docpad/website.git"
+				git config --global user.email "travisci@bevry.me"
+				# ^ Substitute with your preference
+				git config --global user.name "Bevry Travis CI Deployer"
+				# ^ Substitute with your preference
+				git remote rm origin
+				git remote add origin "https://$GITHUB_AUTH@github.com/docpad/website.git"
+				# ^ Substitute with your deploy repo location
 				npm run-script deploy
 				echo "Deployed"
 			else
