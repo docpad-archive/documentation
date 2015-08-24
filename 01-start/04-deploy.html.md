@@ -253,8 +253,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	1. Add a `.travis.yml` file to your project with the marked modifications:
 		
 		``` yaml
-		# August 21, 2015
-		# https://github.com/bevry/base
+		# August 24, 2015
+		# https://docpad.org/docs/deploy
 		
 		# Use the latest travis infrastructure
 		sudo: false
@@ -298,6 +298,9 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	1. Add a `circle.yml` file to your project with the marked modifications:
 
 		``` yaml
+		# August 24, 2015
+		# https://docpad.org/docs/deploy
+		
 		machine:
 			node:
 				version: "0.12"
@@ -310,8 +313,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 				- "node_modules"
 		machine:
 			pre:
-				- git config --global user.email "circle@bevry.me"  # set to your choosing
-				- git config --global user.name "Bevry CircleCI Deployer"  # set to your choosing
+				- git config --global user.email "circleci@bevry.me"  # set to your choosing
+				- git config --global user.name "Bevry Circle CI Deployer"  # set to your choosing
 		deployment:
 			production:
 				branch: master
