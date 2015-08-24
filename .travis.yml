@@ -16,11 +16,12 @@ rvm:
 
 # Prepare and run our tests
 install: gem install travis --no-rdoc --no-ri
-script: travis restart --debug --skip-completion-check -r "$TRAVIS_REBUILD_REPO" -t "$TRAVIS_ACCESS_TOKEN"
+script: >
+  travis restart --debug --skip-completion-check -r docpad/website -t "$TRAVIS_ACCESS_TOKEN";
+  travis restart --debug --skip-completion-check -r bevry/learn -t "$TRAVIS_ACCESS_TOKEN";
 
 # Custom deployment
 # travis encrypt "TRAVIS_ACCESS_TOKEN=$TRAVIS_ACCESS_TOKEN" --add env.global
 env:
   global:
-    - TRAVIS_REBUILD_REPO='docpad/website'
     - secure: WhkN0jQ5FU8rjgNOSYrF5+aNSGtsNKqs+rr4LW1J6vvjdZMnJkakerDZaPc7V/8xg3mqQto52Y5BPkWTeu3Yywo7TZGUwE90Hpgk9WUh26rvlNReP9AqY2k0aJzZlcKbL6V4VB6lF0D+gUaOQhfvUYLpUu+kMeyq7TEkjq2RULU=
