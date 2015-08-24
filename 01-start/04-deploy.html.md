@@ -27,21 +27,6 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	
 	Correct dependencies with what you are actually using.
 
-1. If you'd like [Travis CI](http://travis-ci.org) support, add a `.travis.yml` file that contains:
-
-	``` yaml
-	# March 17, 2015
-	# https://docpad.org/docs/deploy
-	language: node_js
-	script: "npm test"
-	node_js:
-	  - "0.12"
-	cache:
-	  directories:
-	    - node_modules
-	```
-
-
 
 ## To Static Servers (Apache, Nginx, etc.)
 
@@ -234,7 +219,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 ## Continuous Deployment
 
-### Using Circle CI to deploy to GitHub Pages
+### To GitHub Pages
 
 1. Inside your project directory, do the following:
 
@@ -253,6 +238,62 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 			}
 		}
 		```
+
+	1. Remove the `regenerateEvery` property from your DocPad Configuration File if you have set it, as it will no longer be needed.
+
+
+#### Using Travis CI
+
+1. Inside your GitHub account, do the following:
+
+	1. [Create a Personal Access Token](https://github.com/settings/tokens/new) callled `Travis CI Deployer` that has `repo` and `public_repo` checked (uncheck everything else), make note of the token we'll use it later
+
+1. Inside your project directory, do the following:
+
+	1. Add a `.travis.yml` file to your project with the marked modifications:
+		
+		``` yaml
+		# August 21, 2015
+		# https://github.com/bevry/base
+		
+		# Use the latest travis infrastructure
+		sudo: false
+		
+		# We use node
+		language: node_js
+		node_js:
+		 	- iojs
+		cache:
+			directories:
+				- node_modules
+		
+		# Prepare and run our tests
+		script: "npm test"
+		
+		# Custom deployment
+		after_success: >
+			if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) &&
+				[ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+				echo "Deploying"
+				git config --global user.email "travisci@bevry.me"  # substitute with your preference
+				git config --global user.name "Bevry Travis CI Deployer"  # substitute with your preference
+				git remote rm origin && git remote add origin "https://$GITHUB_AUTH@github.com/docpad/website.git"
+				npm run-script deploy
+				echo "Deployed"
+			else
+				echo "Skipped deploy"
+			fi
+		```
+	
+	1. Run `travis encrypt "YOUR_GITHUB_USERNAME:THE_PERSONAL_ACCESS_TOKEN" --add env.global`, substitute `YOUR_GITHUB_USERNAME` and `THE_PERSONAL_ACCESS_TOKEN` with the appropriate values
+
+
+1. All done, your next push to master will be automatically deployed.
+
+
+#### Using Circle CI
+
+1. Inside your project directory, do the following:
 
 	1. Add a `circle.yml` file to your project with the marked modifications:
 
@@ -278,8 +319,6 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 				commands:
 					- npm run-script deploy
 		```
-
-	1. Remove the `regenerateEvery` property from your DocPad Configuration File if you have set it, as it will no longer be needed.
 
 1. Create a SSH Key that will be used by Circle CI to deploy to GitHub Pages, do this by:
 
@@ -315,6 +354,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 		1. Specify `Content type` to be `application/json`, select `Just the push event`, and check `Active`
 
-		1. You can hit that Payload URL whenever you want to retest and rebuild your project
+		1. You can hit that Payload URL whenever you want to retest and rebuild your project.
 
-1. All done. You can now delete the local SSH key files that were made, as they serve no further purpose
+1. All done, your next push to master will be automatically deployed.
+
+	1. You can now delete the local SSH key files that were made, as they serve no further purpose.
