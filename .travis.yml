@@ -4,23 +4,20 @@
 # Use the latest travis infrastructure
 sudo: false
 
-# Run travis only on the master branch
-branches:
-  only:
-    - master
-
 # We use node
 language: ruby
 rvm:
   - "2.2"
 
 # Custom Notifications
+# travis encrypt "$TRAVIS_NOTIFICATION_EMAIL" --add notifications.email.recipients
+# travis encrypt "$SLACK_SUBDOMAIN:$SLACK_TRAVIS_TOKEN#updates" --add notifications.slack
 notifications:
   email:
     recipients:
       secure: bQrOlL3jkqeOJp6rjUrY2p1kbw5Yrknv0hmGjU1if7lMhBjnEpaksRSBqEPDJlIFfv0i4VmN2BDt8BkhrUCJ2NxRYt5Os+8rVzz55Dw08Yq2qwyg3VnTtJBiCXgmtm6FVJxBbHhHF1zMeET3r9vK3Po1WTx67nuYcITu2NzntBU=
   slack:
-    secure: Scu84Q2q4dqJ2j21V5ux4jpBXljjuLlX2dOKk8UCQWbrt6cht1Tu0FXFFaqxZUvPJfBzJvuEledVPy0VPcvPecp2XesL/XOYbdxXfX25cBBj0DfAKrwGXNnSPuFsTRfgLif6kXd6RRJKFjQq0YazkOxPZrkxChJsNRBnlc8STp0=
+    secure: PiSiUfXw/pYDvlvIlLKXyhu2AgtgxmkOHYRqBlFiMIb58w7ZKHgneTHw58dqs/M4GPMmLvLN972/fp4vNaZmlL35IkFSF8FUC6WA2GbXfEimXIB53HrK+5+tk7ZxtBVsSQ6pC5ZJHnPCw2lCAzGjy8aMbyzsfxFlR7DLE5d3lyA=
 
 # Prepare and run our tests
 # This should be easier, but https://github.com/travis-ci/travis.rb/issues/315 is a thing
