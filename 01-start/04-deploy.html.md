@@ -250,7 +250,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. Enable Travis CI for the repository, then inside the repository directory, do the following:
 
-	1. Add [this `.travis.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/travisci-main.yml) to your project.
+	1. Add [this `.travis.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/travisci-main.yml) to your project (make any necessary changes to the Custom Configuration section).
 
 	1. Run the following commands (with the appropriate substitions):
 
@@ -263,12 +263,11 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. If you want to regenerate your website when an external GitHub Repository changes (for instance updating the DocPad Website when the DocPad Documentation repository changes), you will need to Enable Travis CI for that repository, then inside that repository directory, do the following:
 
-	1. Add [this `.travis.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/travisci-other.yml) to your project.
+	1. Add [this `.travis.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/travisci-other.yml) to your project (make any necessary changes to the Custom Configuration section).
 
 	1. Run the following commands (with the appropriate substitions):
 
 		``` shell
-		travis encrypt "TRAVIS_REBUILD_REPO=$GITHUB_USERNAME/$GITHUB_REPO" --add env.global
 		travis encrypt "GITHUB_TRAVIS_TOKEN=$THE_PERSONAL_ACCESS_TOKEN" --add env.global
 		```
 
@@ -279,7 +278,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. Inside your project directory, do the following:
 
-	1. Add [this `circle.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/circleci-main.yml) to your project with the marked modifications.
+	1. Add [this `circle.yml` file](https://gist.githubusercontent.com/balupton/a10abaf708c835eed154/raw/circleci-main.yml) to your project (make any necessary changes to the Custom Configuration section).
 
 	1. Commit and push the changes.
 
