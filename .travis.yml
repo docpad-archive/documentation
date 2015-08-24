@@ -11,8 +11,9 @@ rvm:
 
 # Prepare and run our tests
 install: gem install travis
-before_script: travis login --no-interactive --github-token "$GITHUB_TRAVIS_TOKEN"
-script: travis restart --no-interactive -r "$TRAVIS_REBUILD_REPO"
+script: >
+  travis login --no-interactive --github-token "$GITHUB_TRAVIS_TOKEN"
+  travis restart --no-interactive -r "$TRAVIS_REBUILD_REPO"
 
 # Custom deployment
 # travis encrypt "GITHUB_TRAVIS_TOKEN=$GITHUB_TRAVIS_TOKEN" --add env.global
