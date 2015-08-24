@@ -296,6 +296,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 		```
 
 
+	1. Commit the changes.
+
 1. All done, your next push to master will be automatically deployed.
 
 
@@ -330,6 +332,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 				commands:
 					- npm run-script deploy
 		```
+	
+	1. Commit the changes.
 
 1. Create a SSH Key that will be used by Circle CI to deploy to GitHub Pages, do this by:
 
