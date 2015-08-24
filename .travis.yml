@@ -14,16 +14,25 @@ language: ruby
 rvm:
   - "2.2"
 
+# Custom Notifications
+notifications:
+  email:
+    recipients:
+      secure: bQrOlL3jkqeOJp6rjUrY2p1kbw5Yrknv0hmGjU1if7lMhBjnEpaksRSBqEPDJlIFfv0i4VmN2BDt8BkhrUCJ2NxRYt5Os+8rVzz55Dw08Yq2qwyg3VnTtJBiCXgmtm6FVJxBbHhHF1zMeET3r9vK3Po1WTx67nuYcITu2NzntBU=
+  slack:
+    secure: Scu84Q2q4dqJ2j21V5ux4jpBXljjuLlX2dOKk8UCQWbrt6cht1Tu0FXFFaqxZUvPJfBzJvuEledVPy0VPcvPecp2XesL/XOYbdxXfX25cBBj0DfAKrwGXNnSPuFsTRfgLif6kXd6RRJKFjQq0YazkOxPZrkxChJsNRBnlc8STp0=
+
 # Prepare and run our tests
 # This should be easier, but https://github.com/travis-ci/travis.rb/issues/315 is a thing
 # Doesn't use --debug on `travis login` as that will output our github token
 install: gem install travis --no-rdoc --no-ri
 script: >
   if [ ! -z $GITHUB_TRAVIS_TOKEN ]; then
-    echo "Deploying";
+    echo "Deploying...";
     travis login --skip-completion-check --org --github-token "$GITHUB_TRAVIS_TOKEN";
-    travis restart --debug --skip-completion-check --org -r docpad/website;
-    travis restart --debug --skip-completion-check --org -r bevry/learn;
+    export TRAVIS_ACCESS_TOKEN=`cat ~/.travis/config.yml | grep access_token | sed 's/ *access_token: *//'`;
+    travis restart --debug --skip-completion-check --org -r docpad/website -t "$TRAVIS_ACCESS_TOKEN";
+    travis restart --debug --skip-completion-check --org -r bevry/learn -t "$TRAVIS_ACCESS_TOKEN";
     echo "Deployed";
   else
     echo "Skipped deploy";
