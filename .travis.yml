@@ -17,11 +17,13 @@ rvm:
 # Prepare and run our tests
 install: gem install travis --no-rdoc --no-ri
 script: >
+  travis login --skip-completion-check --github-token "$GITHUB_TRAVIS_TOKEN";
+  export TRAVIS_ACCESS_TOKEN=`cat ~/.travis/config.yml | grep access_token | sed 's/ *access_token: *//'`;
   travis restart --debug --skip-completion-check -r docpad/website -t "$TRAVIS_ACCESS_TOKEN";
   travis restart --debug --skip-completion-check -r bevry/learn -t "$TRAVIS_ACCESS_TOKEN";
 
 # Custom deployment
-# travis encrypt "TRAVIS_ACCESS_TOKEN=$TRAVIS_ACCESS_TOKEN" --add env.global
+# travis encrypt "GITHUB_TRAVIS_TOKEN=$GITHUB_TRAVIS_TOKEN" --add env.global
 env:
   global:
-    - secure: WhkN0jQ5FU8rjgNOSYrF5+aNSGtsNKqs+rr4LW1J6vvjdZMnJkakerDZaPc7V/8xg3mqQto52Y5BPkWTeu3Yywo7TZGUwE90Hpgk9WUh26rvlNReP9AqY2k0aJzZlcKbL6V4VB6lF0D+gUaOQhfvUYLpUu+kMeyq7TEkjq2RULU=
+    - secure: SvdcDndEF45I4b6e1a0ywKXkkkTEnX4f0CkqDqvcPJ9iWFQ034JlE7RWoL1qkvi/COVBa4tFwrEutIdguAli90+3JTzB+c8N9/tIpNPznPL29cp4/I+/xJv2Zu1mC8nZ5YmKKY3Wep3Tgl9tfCxcJ/FC2lMTu+nyE1/hoTWDIec=
