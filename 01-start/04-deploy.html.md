@@ -271,6 +271,8 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 		travis encrypt "GITHUB_TRAVIS_TOKEN=$THE_PERSONAL_ACCESS_TOKEN" --add env.global
 		```
 
+	1. Commit and push the changes.
+
 1. All done, your next push to master will be automatically deployed.
 
 
