@@ -198,7 +198,7 @@ These are miscellaneous things that you can do with DocPad:
 
 ## Complete Plugin Listing
 
-You can find a [complete listing of all DocPad Plugins on the NPM Registry using the `docpad-plugin` keyword.](https://npmjs.org/browse/keyword/docpad-plugin) Though note, this listing is not curated by the DocPad Team, so be careful.
+You can find a [complete listing of all DocPad Plugins on the NPM Registry using the `docpad-plugin` keyword.](https://www.npmjs.com/browse/keyword/docpad-plugin) Though note, this listing is not curated by the DocPad Team, so be careful.
 
 
 
