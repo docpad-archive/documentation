@@ -5,7 +5,7 @@ _If you are upgrading from one major version to another (e.g. DocPad v5 to DocPa
 
 1. [Install Node & Other Dependencies](/node/install)
 
-	Node.js versions 0.12 and higher are supported, as well as any [io.js](https://iojs.org) version. Node.js versions 0.10 and earlier are no longer supported. Use the shell command `node --version` to find our which node version you are using.
+	Node.js versions 0.12 and higher are supported, as well as any [io.js](https://iojs.org) version. Node.js v0.10 and earlier will not work. Use the shell command `node --version` to find out which node version you are using.
 
 1. Update [npm](https://docs.npmjs.com) and install DocPad
 
