@@ -38,6 +38,8 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [livescript](/plugin/livescript/) - Supports [LiveScript](http://livescript.net) to JavaScript `.js.ls`
 - [move](/plugin/move) - Supports [Move](https://github.com/rsms/move) to JavaScript `.js.move`
 - [typescript](https://github.com/bpampuch/docpad-plugin-tsc) - Supports [TypeScript](http://www.typescriptlang.org) to JavaScript `.js.ts`
+- [babel](https://github.com/williammalo/docpad-plugin-babel/) - Supports ES6 to JavaScript using [Babel](http://babeljs.io/) `.js.babel`
+- [traceur](https://github.com/pflannery/docpad-plugin-traceur/) - Supports ES6 to JavaScript using [Traceur](https://github.com/google/traceur-compiler) `.js.traceur`
 
 ### HTML Pre-Processors
 
