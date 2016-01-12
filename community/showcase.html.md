@@ -77,6 +77,7 @@ welcome to my online portfolio
 - [Rio.js](http://www.riojs.org) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de Janeiro's JavaScript User Group
 - [Rob Rawkes](http://rawkes.com) - Rawkes is the home of Rob Hawkes, part-time Rawket Scientist and full-time geek. Join him as he explores the outer-reaches of programming, digital media, games, and everything in-between.
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
+- [Surrey Vascular Surgeon](http://www.surreyvascularsurgeon.com) - Used to create a wesbite to explain vascular surgical services provided by me. Wanted a static website with fast load times. 
 - [takitapart.](http://takitapart.com) - akitapart. - pronounced "take-it-apart" - is the blog of Bob VanderClay, web application developer, founding partner at high90, and all around nerd
 - [The Open Document Format](http://www.opendocumentformat.org) - The official website of the OpenOffice ODF file format
 - [Tinacious Design](http://tinaciousdesign.com) – Web design and Development portfolio for Toronto-based Front-end Developer in Toronto, Canada
