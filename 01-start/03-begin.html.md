@@ -33,6 +33,8 @@ docpad run
 
 The standard directory structure will be set up by the `init` command (don't worry about the `--offline` option for the moment). The subsequent `run` command will start a web server on <http://localhost:9778>, watch for changes, and regenerate the website when they occur. This runs in the foreground; you can stop it any time by pressing `CTRL+C`. (For the moment we'll keep it running.)
 
+Note that when a new directory structure is set up it may be created with `src/documents` and `src/files` directories, rather than `src/render` and `src/static`. You should remove the `documents` and `files` directories and create `render` and `static` directories in order to follow the new naming conventions.
+
 
 ## Adding the Home Page
 
@@ -82,7 +84,7 @@ Now if we go to [http://localhost:9778/about.html](http://localhost:9778/about.h
 
 However, duplicating that layout information inside our _Homepage_ and our _About_ page is pretty redundant. For instance, if we wanted to change the contents of `<head>` to something else, then we'll have to change it in two places! This is where layouts come in.
 
-Layouts wrap around our documents, so we can define the surrounding areas of a document only once. Let's move the wrapper stuff of our two documents into a new layout located at `src/layouts/default.html.eco`, so that we end up with the following:
+Layouts wrap around our `render` files, so we can define the surrounding areas of a document only once. Let's move the wrapper stuff of our two `render` files into a new layout located at `src/layouts/default.html.eco`, so that we end up with the following:
 
 - `src/layouts/default.html.eco`
 
@@ -129,7 +131,7 @@ We've also added a new `isPage` attribute, this is our own custom attribute and 
 
 ### Installing the Templating Engine
 
-_Templating Engines_ allow us to embed abstractions inside our documents - which is why we have to use them for layouts, as a layout is an abstraction, an abstraction that wraps around a document and outputs the document's content in a specific way :)
+_Templating Engines_ allow us to embed abstractions inside our `render` files - which is why we have to use them for layouts, as a layout is an abstraction, an abstraction that wraps around a document and outputs the document's content in a specific way :)
 
 For this guide, the templating engine we'll be using is [eco](https://github.com/sstephenson/eco) and is available to us via the [eco plugin](/plugin/eco). So let's install that now by quitting DocPad (`CTRL+C`), and running:
 
@@ -153,12 +155,12 @@ You can find the full listing of plugins we have on the [Plugins](/docpad/plugin
 
 ### A note on Rendering
 
-Now, the reason we can support multiple templating engines is because of the way DocPad renders things, file extension by extension. Thus, by creating the file `default.html.eco`, we can render from `eco` to `html`. Conversely, if we tried `default.eco.html`, we'd be trying to render from `html` to `eco`, which wouldn't actually be very useful or even possible. However, other combinations can be rendered in both directions, such as CoffeeScript to JavaScript and JavaScript to CoffeeScript, provided you have the right plugins installed. You can also mix and match extensions, such as `default.html.md.eco`, which renders from `eco` to `md` (markdown) and then `md` to `html`. This allows you to apply abstractions with eco to your markdown documents. Awesome! For now, though, it's way out of our scope, so let's get back on track!
+Now, the reason we can support multiple templating engines is because of the way DocPad renders things, file extension by extension. Thus, by creating the file `default.html.eco`, we can render from `eco` to `html`. Conversely, if we tried `default.eco.html`, we'd be trying to render from `html` to `eco`, which wouldn't actually be very useful or even possible. However, other combinations can be rendered in both directions, such as CoffeeScript to JavaScript and JavaScript to CoffeeScript, provided you have the right plugins installed. You can also mix and match extensions, such as `default.html.md.eco`, which renders from `eco` to `md` (markdown) and then `md` to `html`. This allows you to apply abstractions with eco to your markdown `render` files. Awesome! For now, though, it's way out of our scope, so let's get back on track!
 
 
 ### A note on Meta Data
 
-What on earth was with the stuff between the `---` at the top of our documents? That stuff is our _meta data_. It is where we can define extra information about our document, such as its title, layout, date, whatever. You are not limited to what you can define here; it's up to you. However, there are some pre-defined properties that serve special purposes (such as layout, which we just used).
+What on earth was with the stuff between the `---` at the top of our `render` files? That stuff is our _meta data_. It is where we can define extra information about our document, such as its title, layout, date, whatever. You are not limited to what you can define here; it's up to you. However, there are some pre-defined properties that serve special purposes (such as layout, which we just used).
 
 You can learn more about meta data and all the special properties on our [Meta Data](/docpad/meta-data) page.
 
@@ -167,7 +169,7 @@ You can learn more about meta data and all the special properties on our [Meta D
 
 ### Adding the Live Reload Plugin
 
-Sweet, so we're doing well so far! We've got two documents, and a layout to abstract them. As we are making changes, it sure would be nice if our browser refreshed the page automatically! We can do this with the [Live Reload Plugin](/plugin/livereload), so let's install that now:
+Sweet, so we're doing well so far! We've got two `render` files, and a layout to abstract them. As we are making changes, it sure would be nice if our browser refreshed the page automatically! We can do this with the [Live Reload Plugin](/plugin/livereload), so let's install that now:
 
 ``` bash
 docpad install livereload
@@ -295,7 +297,7 @@ In this instance, as we inject our scripts into our `body` element, we already h
 
 
 ## Getting the benefits of Pre-Processors
-_Pre-Processors_ are amazing things. They allow us to write documents in one language (the source language), and export them to a different language (the target language). This is extremely beneficial, as it allows you to use the syntax that you enjoy, instead of the syntax that you are sometimes forced to work with. Most importantly, however, pre-processors often offer more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
+_Pre-Processors_ are amazing things. They allow us to write `render` files in one language (the source language), and export them to a different language (the target language). This is extremely beneficial, as it allows you to use the syntax that you enjoy, instead of the syntax that you are sometimes forced to work with. Most importantly, however, pre-processors often offer more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
 
 
 ### Using Markdown, an HTML Pre-Processor
@@ -564,7 +566,7 @@ As you now have all the tools and knowledge required to be able to create the bl
 
 Congratulations! You now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [Showcase](/docpad/showcase). To recap, you now know how to:
 
-- write documents in any language, markup, pre-processor, templating engine, whatever you wish, by installing the necessary plugin for it and changing the extensions of the document
+- write `render` files in any language, markup, pre-processor, templating engine, whatever you wish, by installing the necessary plugin for it and changing the extensions of the document
 - perform powerful abstractions using layouts, meta data, template data and configuration files
 - create incredibly efficient custom collections, filtered and sorted by your own criteria
 - do your own custom listings of content
