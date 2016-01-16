@@ -291,7 +291,7 @@ In this instance, as we inject our scripts into our `body` element, we already h
 
 
 ## Getting the benefits of Pre-Processors
-_Pre-Processors_ are amazing things. They allow us to write `render` files in one language (the source language), and export them to a different language (the target language). This is extremely beneficial, as it allows you to use the syntax that you enjoy, instead of the syntax that you are sometimes forced to work with. Most importantly, however, pre-processors often offer more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern developers while still working with old languages.
+_Pre-Processors_ are amazing things. They allow us to write `render` files in one language (the source language), and export them to a different language (the target language). This is extremely beneficial, as it allows you to use the syntax that you enjoy, instead of the syntax that you are sometimes forced to work with. Most importantly, however, pre-processors often offer more robust and clean functionality than the target language supports out of the box, allowing you to make use of modern development tools while still working with old languages.
 
 
 ### Using Markdown, an HTML Pre-Processor
