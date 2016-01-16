@@ -27,12 +27,11 @@ Before we get hacking away on content, we have to create our project and set it 
 ``` bash
 mkdir my-new-website
 cd my-new-website
+docpad --offline init
 docpad run
 ```
 
-When prompted for a skeleton, select `No Skeleton`, which will set up our standard directory structure automatically. The `docpad run` command will also keep running once the action has completed successfully. This is because it also watches for changes and will regenerate our website when they occur. It'll also start a web server on [http://localhost:9778](http://localhost:9778) so that we can view our website as we go.
-
-For now, we'll keep `docpad run` running but, whenever you want to stop it, just hit `CTRL+C` on your keyboard to exit it.
+The standard directory structure will be set up by the `init` command (don't worry about the `--offline` option for the moment). The subsequent `run` command will start a web server on <http://localhost:9778>, watch for changes, and regenerate the website when they occur. This runs in the foreground; you can stop it any time by pressing `CTRL+C`. (For the moment we'll keep it running.)
 
 
 ## Adding the Home Page
