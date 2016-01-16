@@ -54,13 +54,7 @@ Let's create our first document; the _Homepage_ for our website. Create the docu
 
 Once you've saved it, open up [http://localhost:9778](http://localhost:9778) (or refresh if you already had it open) and you'll notice that DocPad has already regenerated your website and see the page we created rendered inside the browser. Fantastic!
 
-
-
-
-
-
-
-
+At this point, if you're using revision control (such as Git), you may want to add the `out/` directory to the list of files to ignore, since that should never be committed.
 
 
 
