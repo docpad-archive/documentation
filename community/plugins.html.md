@@ -51,6 +51,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [coffeemugg](https://github.com/pflannery/docpad-plugin-coffeemugg) - Supports [CoffeeMugg](https://github.com/jaekwon/CoffeeMugg)  to anything `.anything.coffee`
 - [hamlcoffee](https://github.com/ashnur/docpad-plugin-hamlcoffee/) - Supports [Haml Coffee](https://github.com/netzpirat/haml-coffee/) to HTML `.html.hamlc`
 - [teacup](https://github.com/hurrymaplelad/docpad-plugin-teacup/) - Supports [Teacup](http://goodeggs.github.io/teacup/) to HTML `.html.coffee`
+- [without](https://github.com/ukoloff/docpad-plugin-without) - Supports [withOut](https://github.com/ukoloff/without) to HTML `.html.coffee`
 
 #### HAML-Like Templating Engines
 - [haml](/plugin/haml/) - Supports [Haml](http://haml-lang.com) to anything `.anything.haml`
