@@ -4,7 +4,7 @@
 
 All DocPad events receive two arguments (both optional): 
 
-1. `opts`, an simple object containing any options that the event provides
+1. `opts`, a simple object containing any options that the event provides
 1. `next`, a completion callback
 
 DocPad's events are fired in a *synchronous* (or *serial*) fashion. In other words, when the first event runs until finished, then the next event fires and runs until finished, and so on. 
