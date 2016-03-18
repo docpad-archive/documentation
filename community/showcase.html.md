@@ -14,7 +14,7 @@ DocPad mentioned around the web. Oldest first.
 - [DocPad Talk @ Paris.js](http://djebbz.github.com/docpad-paris-js/) - Presentation of DocPad at Paris.js, May 30th 2012
 - [Ben Dellare's Blog](http://www.delarre.net) - Great blog full of DocPad articles, including [Going Static](http://www.delarre.net/posts/going-static.html), [Blogging with DocPad](http://www.delarre.net/posts/blogging-with-docpad.html), and [Creating a DocPad Plugin](http://www.delarre.net/posts/creating-a-docpad-plugin.html)
 - [Rapid Web Development with DocPad](https://vimeo.com/53755097) - DocPad founder Benjamin Lupton gives an overview of DocPad and showcases what building a site is like in it
-- [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](http://www.windowsazure.com/en-us/home/scenarios/web-sites/)
+- [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](https://azure.microsoft.com/en-us/free/)
 - [DocPad on Redit](http://www.reddit.com/r/docpad/) - a sub-redit dedicated entirely to DocPad stuff
 - [Create professional websites with DocPad](http://emmet.io/blog/docpad/) - DocPad was an ideal solution for [Emmet documentation website](http://docs.emmet.io) because it not only provides a simplified development process, but allows me to reduce my hosting costs greatly
 - [Why the next big thing sucks](https://www.youtube.com/watch?v=nt4Gt6-T8N0) - DocPad founder Benjamin Lupton talks about his experiences founding open-source projects
@@ -44,7 +44,6 @@ Websites built with DocPad. Alphabetically sorted.
 - [Ben Dellare](http://www.delarre.net) - [source](https://github.com/benjamind/delarre.docpad) - Coder, maker, hacker, infrequent blogger.
 - [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of [Bevry](http://bevry.me). Liberating and empowering the world by making your dreams more accessible.
 - [Black Market](http://blackmarket.bg) - Bulgarian fashion company
-- [chrisbuchholz.me](http://chrisbuchholz.me) - [source](https://github.com/ChrisBuchholz/chrisbuchholz.github.com) - Personal website of chrisbuchholz
 - [CoApp](http://coapp.org) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [Cumulocity](https://cumulocity.com) - Internet of Things platform
 - [DataTables Taglib](http://tduchateau.github.com/DataTables-taglib/) - [source](https://github.com/tduchateau/DataTables-taglib/tree/gh-pages) - Website of DataTables-taglib, a JSP taglib that allows to quickly create [DataTables](http://datatables.net) in Java/JEE based web application
