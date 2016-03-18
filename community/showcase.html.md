@@ -14,7 +14,7 @@ DocPad mentioned around the web. Oldest first.
 - [DocPad Talk @ Paris.js](http://djebbz.github.com/docpad-paris-js/) - Presentation of DocPad at Paris.js, May 30th 2012
 - [Ben Dellare's Blog](http://www.delarre.net) - Great blog full of DocPad articles, including [Going Static](http://www.delarre.net/posts/going-static.html), [Blogging with DocPad](http://www.delarre.net/posts/blogging-with-docpad.html), and [Creating a DocPad Plugin](http://www.delarre.net/posts/creating-a-docpad-plugin.html)
 - [Rapid Web Development with DocPad](https://vimeo.com/53755097) - DocPad founder Benjamin Lupton gives an overview of DocPad and showcases what building a site is like in it
-- [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](http://www.windowsazure.com/en-us/home/scenarios/web-sites/)
+- [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](https://azure.microsoft.com/en-us/free/)
 - [DocPad on Redit](http://www.reddit.com/r/docpad/) - a sub-redit dedicated entirely to DocPad stuff
 - [Create professional websites with DocPad](http://emmet.io/blog/docpad/) - DocPad was an ideal solution for [Emmet documentation website](http://docs.emmet.io) because it not only provides a simplified development process, but allows me to reduce my hosting costs greatly
 - [Why the next big thing sucks](https://www.youtube.com/watch?v=nt4Gt6-T8N0) - DocPad founder Benjamin Lupton talks about his experiences founding open-source projects
@@ -44,12 +44,10 @@ Websites built with DocPad. Alphabetically sorted.
 - [Ben Dellare](http://www.delarre.net) - [source](https://github.com/benjamind/delarre.docpad) - Coder, maker, hacker, infrequent blogger.
 - [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of [Bevry](http://bevry.me). Liberating and empowering the world by making your dreams more accessible.
 - [Black Market](http://blackmarket.bg) - Bulgarian fashion company
-- [chrisbuchholz.me](http://chrisbuchholz.me) - [source](https://github.com/ChrisBuchholz/chrisbuchholz.github.com) - Personal website of chrisbuchholz
 - [CoApp](http://coapp.org) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [Cumulocity](https://cumulocity.com) - Internet of Things platform
 - [DataTables Taglib](http://tduchateau.github.com/DataTables-taglib/) - [source](https://github.com/tduchateau/DataTables-taglib/tree/gh-pages) - Website of DataTables-taglib, a JSP taglib that allows to quickly create [DataTables](http://datatables.net) in Java/JEE based web application
 - [DeLingua](http://www.delingua.si) - Slovenian translation company
-- [DocPad's Kitchensink](http://docpad-kitchensink.herokuapp.com) - [source](https://github.com/bevry/kitchensink.docpad) - A showcase of everything DocPad can do
 - [DocPad's Website](http://docpad.org) - [source](https://github.com/bevry/docpad-website) - The DocPad Website
 - [DogFeet](http://dogfeet.github.com) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
 - [Dorajistyle STATIC](http://dorajistyle.net) - Docpad generated Blog from Google Blogger articles.
@@ -72,9 +70,7 @@ welcome to my online portfolio
 - [MS Dev Show](http://msdevshow.com) - The MS Dev Show is the podcast for Microsoft developers covering news and topics such as Azure (cloud), Windows, and cross-platform development using MS tools.
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
 - [pimatic](http://www.pimatic.org) - smart home automation for the raspberry pi
-- [Record Famous](http://recordfamous.com) - Vikram's homepage with some Skrollr
 - [Remy Bach](http://remy.bach.me.uk) - I'm a Christian, husband and father, front-end dev, gamer, and all around tech nerd!
-- [Rio.js](http://www.riojs.org) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de Janeiro's JavaScript User Group
 - [Rob Rawkes](http://rawkes.com) - Rawkes is the home of Rob Hawkes, part-time Rawket Scientist and full-time geek. Join him as he explores the outer-reaches of programming, digital media, games, and everything in-between.
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
 - [Surrey Vascular Surgeon](http://www.surreyvascularsurgeon.com) - Used to create a wesbite to explain vascular surgical services provided by me. Wanted a static website with fast load times. 
@@ -84,7 +80,6 @@ welcome to my online portfolio
 - [Tomohisa Oda](http://tomohisaoda.com) - Japanese: Web engineer and designer from Japan
 - [Topcoat.io](http://topcoat.io) - CSS for clean and fast web apps by Adobe
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
-- [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
 - [Vicktor Ilieff](http://www.viktorilieff.com) - Viktor Ilieff is an artist, conductor, composer and visionary. His art rests on the principle that the aesthetics of the means of expression should align with the times we live in.
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 - [Notes From Heck](http://adityamukho.com) - Personal website and blog of Aditya Mukhopadhyay, built on the bootstrap skeleton.
