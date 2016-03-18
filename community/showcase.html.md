@@ -70,9 +70,7 @@ welcome to my online portfolio
 - [MS Dev Show](http://msdevshow.com) - The MS Dev Show is the podcast for Microsoft developers covering news and topics such as Azure (cloud), Windows, and cross-platform development using MS tools.
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
 - [pimatic](http://www.pimatic.org) - smart home automation for the raspberry pi
-- [Record Famous](http://recordfamous.com) - Vikram's homepage with some Skrollr
 - [Remy Bach](http://remy.bach.me.uk) - I'm a Christian, husband and father, front-end dev, gamer, and all around tech nerd!
-- [Rio.js](http://www.riojs.org) - [source](https://github.com/zenorocha/riojs-website/) - Portuguese: Rio de Janeiro's JavaScript User Group
 - [Rob Rawkes](http://rawkes.com) - Rawkes is the home of Rob Hawkes, part-time Rawket Scientist and full-time geek. Join him as he explores the outer-reaches of programming, digital media, games, and everything in-between.
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
 - [Surrey Vascular Surgeon](http://www.surreyvascularsurgeon.com) - Used to create a wesbite to explain vascular surgical services provided by me. Wanted a static website with fast load times. 
@@ -82,7 +80,6 @@ welcome to my online portfolio
 - [Tomohisa Oda](http://tomohisaoda.com) - Japanese: Web engineer and designer from Japan
 - [Topcoat.io](http://topcoat.io) - CSS for clean and fast web apps by Adobe
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
-- [uberFrak](http://uberfrak.com) - French: Silly uchronias and fake stories
 - [Vicktor Ilieff](http://www.viktorilieff.com) - Viktor Ilieff is an artist, conductor, composer and visionary. His art rests on the principle that the aesthetics of the means of expression should align with the times we live in.
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 - [Notes From Heck](http://adityamukho.com) - Personal website and blog of Aditya Mukhopadhyay, built on the bootstrap skeleton.
