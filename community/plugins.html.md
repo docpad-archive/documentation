@@ -16,9 +16,8 @@ These are plugins that add support for extra markups and languages to DocPad:
 
 ### Writing Markups
 - [marked](/plugin/marked/) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [marked](https://github.com/chjj/marked)
-- [multimarkdown](https://github.com/docpad/docpad-plugin-multimarkdown) - Supports [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) to HTML `.html.(md|markdown)` via [node-multimarkdown](https://github.com/dtjm/node-multimarkdown)
 - [orgmode](https://bitbucket.org/bgschaid/docpad-plugin-orgmode/) - Supports converting  [org-mode](http://orgmode.org) to HTML `.html.org` via [org-js](https://github.com/mooz/org-js)
-- [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](http://textile.sitemonks.com) to HTML `.html.textile`
+- [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](https://www.npmjs.com/package/textile-js) to HTML `.html.textile`
 - [markit](https://github.com/tbusser/docpad-plugin-markit) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [markdown-it](https://github.com/markdown-it/markdown-it)
 
 ### Data Markups
@@ -54,7 +53,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [without](https://github.com/ukoloff/docpad-plugin-without) - Supports [withOut](https://github.com/ukoloff/without) to HTML `.html.coffee`
 
 #### HAML-Like Templating Engines
-- [haml](/plugin/haml/) - Supports [Haml](http://haml-lang.com) to anything `.anything.haml`
+- [haml](/plugin/haml/) - Supports [Haml](http://haml.info) to anything `.anything.haml`
 - [jade](/plugin/jade/) - Supports [Jade](http://jade-lang.com) to anything `.anything.jade`
 - [html2jade](/plugin/html2jade) - Supports HTML to [Jade](http://jade-lang.com) `.jade.html`
 
