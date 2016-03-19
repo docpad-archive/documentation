@@ -74,7 +74,7 @@ Now that's done, we'll want to add our "About Me" page so that people browsing o
 </html>
 ```
 
-Now if we go to [http://localhost:9778/about.html](http://localhost:9778/about.html), we'll be able to see that page in our browser. Awesome!
+Now if we go to <a href="http://localhost:9778/about.html" rel="nofollow">http://localhost:9778/about.html</a>, we'll be able to see that page in our browser. Awesome!
 
 However, duplicating that layout information inside our _Homepage_ and our _About_ page is pretty redundant. For instance, if we wanted to change the contents of `<head>` to something else, then we'll have to change it in two places! This is where layouts come in.
 
