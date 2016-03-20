@@ -10,7 +10,7 @@ DocPad mentioned around the web. Oldest first.
 - [HTML UI on DocPad](http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html) - Extensive writeup on their thoughts of docpad and how they are using it
 - [Rebuilding JavaScriptQuiz.com with Node.js](http://www.aaron-powell.com/javascript/rebuilding-javascript-quiz-in-nodejs) - Covers their experience moving from Posterous to DocPad
 - [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japanese: Covers getting started with DocPad and a comparison with other static site generators
-- [Shop Talk Show Podcast](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and [Doug Neiner](http://code.dougneiner.com)'s workflow (4 minutes in)
+- [Shop Talk Show Podcast](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and <a href="http://code.dougneiner.com" rel="nofollow">Doug Neiner's</a> workflow (4 minutes in)
 - [DocPad Talk @ Paris.js](http://djebbz.github.com/docpad-paris-js/) - Presentation of DocPad at Paris.js, May 30th 2012
 - [Ben Dellare's Blog](http://www.delarre.net) - Great blog full of DocPad articles, including [Going Static](http://www.delarre.net/posts/going-static.html), [Blogging with DocPad](http://www.delarre.net/posts/blogging-with-docpad.html), and [Creating a DocPad Plugin](http://www.delarre.net/posts/creating-a-docpad-plugin.html)
 - [Rapid Web Development with DocPad](https://vimeo.com/53755097) - DocPad founder Benjamin Lupton gives an overview of DocPad and showcases what building a site is like in it
