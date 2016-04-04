@@ -1,6 +1,14 @@
 Feel free to [update this page](https://github.com/docpad/documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
 
 
+## Trainings
+
+DocPad have these trainings available:
+
+- [PluralSight: Build a Better Blog with a Static Site Generator](https://www.pluralsight.com/courses/static-site-generator-build-better-blog) - [Intro Video](https://www.youtube.com/watch?v=gHz9ZyxwcGQ)
+
+
+
 ## In the press
 
 DocPad mentioned around the web. Oldest first.
