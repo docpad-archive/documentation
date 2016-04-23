@@ -62,9 +62,9 @@ And to do that, you'll need to get your debugging on.
 4. Follow the outputted instructions
 
 
-## Profiling with [NodeTime](https://nodetime.com)
+## Profiling with [Node.js Monitoring by AppDynamics](https://www.appdynamics.com/nodejs/)
 
-1. [Get a NodeTime account](https://nodetime.com)
+1. [Get a AppDynamics account](https://portal.appdynamics.com/account/signup/signupForm/)
 
 2. Add your `NODETIME` API key to your environment. We recommend the following method:
 
