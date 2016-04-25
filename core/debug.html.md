@@ -40,11 +40,11 @@ And to do that, you'll need to get your debugging on.
 
 
 
-## Debugging with [TraceGL](https://trace.gl)
+## Debugging with [TraceGL](https://github.com/traceglMPL/tracegl)
 
-1. [Get TraceGL from their website](https://trace.gl)
-
-	1. It's shareware, but by gosh it is worth the money! It is AMAZING.
+1. Follow the instructions on the TraceGL ReadMe
+	
+	1. https://github.com/traceglMPL/tracegl 
 
 2. Download it to somewhere in your `PATH`, and run the following on it:
 
@@ -62,9 +62,9 @@ And to do that, you'll need to get your debugging on.
 4. Follow the outputted instructions
 
 
-## Profiling with [NodeTime](https://nodetime.com)
+## Profiling with [Node.js Monitoring by AppDynamics](https://www.appdynamics.com/nodejs/)
 
-1. [Get a NodeTime account](https://nodetime.com)
+1. [Get a AppDynamics account](https://portal.appdynamics.com/account/signup/signupForm/)
 
 2. Add your `NODETIME` API key to your environment. We recommend the following method:
 
