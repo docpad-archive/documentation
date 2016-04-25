@@ -323,3 +323,32 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 1. All done, your next push to master will be automatically deployed.
 
 	1. You can now delete the local SSH key files that were made, as they serve no further purpose.
+
+### To GitLab Pages
+
+Project repository must be at [GitLab](https://gitlab.com/).
+If it is already somewhere else, GitLab allows to setup automatic mirroring.
+
+Just add single file `.gitlab-ci.yml` to project root:
+
+```yaml
+image: node
+
+cache:
+  paths:
+  - node_modules/
+
+pages:
+  before_script:
+  - npm install --production
+  script:
+  - node_modules/.bin/docpad generate --env=static
+  - mv out public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+```
+
+Commit, push, wait a minute and enjoy! :-)
