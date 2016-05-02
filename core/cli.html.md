@@ -2,6 +2,12 @@
 title: "Command Line Interface"
 ```
 
+- To discover what commands are available:
+
+	``` bash
+	docpad --help
+	```
+
 - To create your website (if it doesn't already exist), watch for changes, and start the webserver, use:
 
 	``` bash
