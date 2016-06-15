@@ -28,9 +28,9 @@ To setup a development environment for contributing to the DocPad core follow th
 
 1. Fork the repository of the DocPad Core: https://github.com/docpad/docpad
 1. Clone your fork to your machine then `cd` into it
-1. Run `npm install` to install any missing dependencies
-1. Run `cake compile` to compile the project (or use `cake watch` to compile every time a change is made)
-1. Run `cake test` to test the project
+1. Run `npm run-script prepare` to install any missing dependencies
+1. Run `npm run-scripe compile` to compile the project
+1. Run `npm test` to test the project
 1. Run `npm link` to make this development instance of the projects available to other projects (via `npm link docpad`)
 
 
@@ -43,7 +43,7 @@ To setup a development environment for contributing to a plugin follow these ste
 1. Clone your fork to your machine then `cd` into it
 1. Run `npm link docpad` to link our local development instance of DocPad that we setup earlier to our DocPad plugin
 1. Run `cake install` to install any missing dependencies
-1. Run `cake compile` to compile the project (or use `cake watch` to compile everytime a change is made)
+1. Run `cake compile` to compile the project
 1. Run `cake test` to test the project
 1. Run `npm link` to make this development instance of the project available to other projects (via `npm link docpad-plugin-PLUGINNAME`)
 
