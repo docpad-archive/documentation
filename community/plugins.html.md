@@ -19,6 +19,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [orgmode](https://bitbucket.org/bgschaid/docpad-plugin-orgmode/) - Supports converting  [org-mode](http://orgmode.org) to HTML `.html.org` via [org-js](https://github.com/mooz/org-js)
 - [textile](https://github.com/Greduan/docpad-plugin-textile) - Supports [Textile](https://www.npmjs.com/package/textile-js) to HTML `.html.textile`
 - [markit](https://github.com/tbusser/docpad-plugin-markit) - Supports [Markdown](http://daringfireball.net/projects/markdown/basics) to HTML `.html.(md|markdown)` via [markdown-it](https://github.com/markdown-it/markdown-it)
+- [asciidoc](https://github.com/fboulay/docpad-plugin-asciidoc) - Supports [Asciidoc](http://asciidoctor.org/docs/what-is-asciidoc/) to HTML `.html.adoc` via [asciidoctor.js](https://github.com/asciidoctor/asciidoctor.js)
 
 ### Data Markups
 - [cson](/plugin/cson/) - Supports [CSON](https://github.com/bevry/cson) to JSON `.json.cson`
