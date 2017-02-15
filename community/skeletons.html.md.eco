@@ -26,6 +26,11 @@ var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
 Want to add yours? [Add it to the listing here.](https://github.com/docpad/extras/edit/docpad-6.x/exchange.cson)
 
 
+### Projects
+
+[You can also find DocPad projects on GitHub using the `docpad-project` topic.](https://github.com/search?q=topic%3Adocpad-project&type=Repositories)
+
+
 ### Experimental
 
 These skeletons are currently under construction:
