@@ -51,6 +51,7 @@ module.exports = (BasePlugin) ->
 
 Extending the [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) class is important as it provides some of the tucked away magic for our plugins, such as automatically listening for events when a plugin method of the event name is defined. [You can discover the plugin events available to you on the Events Page.](/docpad/events)
 
+You will also have npm scripts avail
 There will also be a `Cakefile` that will allow us to compile your plugin using `cake compile`, compile our plugin whenever a change occurs using `cake watch`, run our plugin's tests using `cake test`, and prepare our plugin for publishing using `cake prepublish`, and publish our plugin by using `cake publish`.
 
 If you must insist on writing your plugin inside a non-CoffeeScript dialect, you would use the `BasePlugin.extend({})` method like so:
@@ -163,7 +164,7 @@ cd ~
 git clone https://github.com/bevry/docpad.git
 cd docpad
 npm install
-cake compile
+npm run compile
 npm link
 ```
 
