@@ -141,5 +141,4 @@ The Jade compiler uses the full file content on the disk to show where the parsi
 
 ## Need more help?
 
-- Found a bug? [File a Bug Report on the Issue Tracker](/issues)
-- Need support? [Check out our Support Channels](https://discuss.bevry.me/t/official-bevry-support-channels/63/1)
+[Check out our Support Channels.](/support)
