@@ -23,7 +23,7 @@ If you've found a bug in DocPad, or want to add a new feature yourself. You can 
 ### Discuss
 As DocPad developers are spread across the entire world, arranging a time for everyone to get chatting together is quite hard. However, that doesn't mean we don't try.
 
-You can get chatting with anyone who's around by visiting the IRC channel `#docpad` on Freenode. [Click here to join.](http://webchat.freenode.net/?channels=docpad)
+You can get chatting with anyone who's around by joining our [chat channels](/chat).
 
 
 ### Priority Focus
@@ -36,9 +36,3 @@ The focus on "bugs first, features later" is to ensure that the users of DocPad 
 
 #### Implement and release tasks independently of each other
 As we use the amazing git technology, there is a thing called branching, each new task (feature, bug, etc.) to be done should be implemented in its own branch. This prevents the feature from interfering with other features while you work on it. Once the feature is stable, a DocPad maintainer will pull it with the latest master branch and make sure it is still stable, then merge it into master branch and perform a release. This allows us to implement and release tasks independently on each other. So developers get immediate feedback, and users get immediate results - without any waiting! yay!
-
-<% if @getContributors().length: %>
-## Contributors
-
-We'd also like to thank all the countless contributors who have worked with us to help accomplish our shared ambitions, including these <%- @getContributors().length %> people: <%- @partial('content/contributors.html.coffee', {contributors:@getContributors()}) %>
-<% end %>
