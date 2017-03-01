@@ -206,8 +206,7 @@ So it is normal, don't worry about it.  :)
 
 ## Want more help?
 
-- Getting errors? [Try our Troubleshooting Page](/docpad/troubleshoot)
-- Need support? [Check out our Support Channels](https://discuss.bevry.me/t/official-bevry-support-channels/63)
+[Visit our support page.](/support)
 
 [1]: https://github.com/sstephenson/eco  "Eco"
 [2]: http://jade-lang.com                "Jade"
