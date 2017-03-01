@@ -23,16 +23,18 @@ notifications:
 # This should be easier, but https://github.com/travis-ci/travis.rb/issues/315 is a thing
 # Doesn't use --debug on `travis login` as that will output our github token
 install: gem install travis --no-rdoc --no-ri
-script: >
+script: |
+  set -e 
+  set -o pipefail
   if [ ! -z $GITHUB_TRAVIS_TOKEN ]; then
-    echo "Deploying...";
-    travis login --skip-completion-check --org --github-token "$GITHUB_TRAVIS_TOKEN";
-    export TRAVIS_ACCESS_TOKEN=`cat ~/.travis/config.yml | grep access_token | sed 's/ *access_token: *//'`;
-    travis restart --debug --skip-completion-check --org -r docpad/website -t "$TRAVIS_ACCESS_TOKEN";
-    travis restart --debug --skip-completion-check --org -r bevry/learn -t "$TRAVIS_ACCESS_TOKEN";
-    echo "Deployed";
+    echo "Deploying..."
+    travis login --skip-completion-check --org --github-token "$GITHUB_TRAVIS_TOKEN"
+    export TRAVIS_ACCESS_TOKEN=`cat ~/.travis/config.yml | grep access_token | sed 's/ *access_token: *//'`
+    travis restart --debug --skip-completion-check --org -r docpad/website -t "$TRAVIS_ACCESS_TOKEN"
+    travis restart --debug --skip-completion-check --org -r bevry/learn -t "$TRAVIS_ACCESS_TOKEN"
+    echo "Deployed"
   else
-    echo "Skipped deploy";
+    echo "Skipped deploy"
   fi
 
 # Custom deployment
