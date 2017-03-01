@@ -11,6 +11,8 @@ Something has gone wrong fetching the skeletons, please report this on [this Git
 var exchangeUrl = "<%- @exchangeUrl %>"
 var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
 ```
+
+[For the meantime, you can use this GitHub search instead.](https://github.com/search?q=topic%3Adocpad-project)
 <% else: %>
 <ul>
 	<% for own skeletonID, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
