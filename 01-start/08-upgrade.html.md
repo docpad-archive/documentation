@@ -30,9 +30,9 @@ To upgrade your DocPad installation from an older version to the latest, check o
 
 ## Upgrading from 4.x to 5.x
 
-1. Documents, Partials and Layouts (which extend from the File Class) are now [Backbone Models](http://documentcloud.github.com/backbone/#Model)
+1. Documents, Partials and Layouts (which extend from the File Class) are now [Backbone Models](http://backbonejs.org/#Model)
 	- For end-users this will have minimal effect, as `@document` inside the `templateData` will have all the same attributes. However, any function calls will now only be accessible via the new `@documentModel`. This is because `@documentModel` is the backbone model, and `@document` is the JSONified version of the backbone model (e.g., `@document` is the same as `@documentModel.toJSON()`).
-	- For plugin developers this affects how you will retrieve and set attributes for documents - which now use the [Backbone getters and setters](http://documentcloud.github.com/backbone/#Model-get) instead of directly reading and writing to and from the attributes directly (e.g., `document.relatedDocuments = []` now becomes `document.set(relatedDocuments:[])` instead)
+	- For plugin developers this affects how you will retrieve and set attributes for documents - which now use the [Backbone getters and setters](http://backbonejs.org/#Model-get) instead of directly reading and writing to and from the attributes directly (e.g., `document.relatedDocuments = []` now becomes `document.set(relatedDocuments:[])` instead)
 
 2. [Query-Engine](https://github.com/bevry/query-engine) has been updated from version 0.6 to version 1.1
 	- For end-users this will have an effect wherever `@database` is used, as that is now represented by the new Query-Engine v1.1 collection, which has several changes. The most significant re `@database.find` is now `@database.findAll`, and that they now only have a synchronous interface - (e.g., `@database.findAll selector, (err,results) ->` should now be `results = @database.findAll(selector)`)
