@@ -40,5 +40,5 @@ title: "Template Data & Helpers"
 
 [Document Class]: https://github.com/bevry/docpad/blob/master/src/lib/models/document.coffee
 [File Class]: https://github.com/bevry/docpad/blob/master/src/lib/models/file.coffee
-[Backbone Model]: http://documentcloud.github.com/backbone/#Model
+[Backbone Model]: http://backbonejs.org/#Model
 [Query-Engine]: https://github.com/bevry/query-engine
