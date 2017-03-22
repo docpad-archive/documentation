@@ -52,6 +52,9 @@ var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
 	</li>
 	<% end %>
 </ul>
+
+[You can also find other projects built with DocPad with this GitHub Search.](https://github.com/search?q=topic%3Adocpad-project)
+
 <% end %>
 
 Want to add yours? [Add it to the exchange.](https://github.com/docpad/extras/blob/docpad-6.x/exchange.json)
