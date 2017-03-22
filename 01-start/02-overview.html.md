@@ -59,4 +59,4 @@ The `docpad.coffee` file can have several different extensions. It defines DocPa
 
 ### The `package.json` File
 
-This file is needed for every Node.js application. It defines the dependencies that your application requires, such as the DocPad version that your site is developed with and the plugins you are running. You can learn more about `package.json` files on [this page](/node/ecosystem) of our [Hands on Node Training](/node/preface).
+This file is needed for every Node.js application. It defines the dependencies that your application requires, such as the DocPad version that your site is developed with and the plugins you are running. You can learn more about `package.json` files on [this page](https://learn.bevry.me/node/ecosystem) of our [Hands on Node Training](https://learn.bevry.me/node/preface).
