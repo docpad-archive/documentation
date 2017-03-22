@@ -65,7 +65,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 #### Other Templating Engines
 - [consolidate](http://github.com/robloach/docpad-plugin-consolidate) - Supports many template engines via [Consolidate.js](https://github.com/visionmedia/consolidate.js)
 - [slim](https://github.com/patocallaghan/docpad-plugin-slim) - Supports [Slim](http://slim-lang.com) to anything `.anything.slim`
-- [swig](https://github.com/thisispete/docpad-plugin-swig) - Supports [Swig](http://paularmstrong.github.io/swig/) to HTML `.html.swig`
+- [swig](https://github.com/thisispete/docpad-plugin-swig) - Supports [Swig](https://github.com/paularmstrong/swig/) to HTML `.html.swig`
 - [htmlmin](http://github.com/robloach/docpad-plugin-htmlmin) - Supports minifying HTML with [HTML-Minifier](http://kangax.github.io/html-minifier/) `.html.anything`
 - [vash](https://github.com/harmony7/docpad-plugin-vash) - Supports [Vash](https://github.com/kirbysayshi/vash), an implementation of the [Razor template syntax](http://weblogs.asp.net/scottgu/archive/2010/07/02/introducing-razor.aspx) for JavaScript, to anything `.anything.vash`
 
