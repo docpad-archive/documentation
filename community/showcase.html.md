@@ -1,17 +1,36 @@
 Feel free to [update this page](https://github.com/docpad/documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
 
+## News
+
+Official updates from the DocPad team:
+
+- [DocPad Blog](https://blog.docpad.org)
+- [Bevry's Blog](https://blog.bevry.me)
+- [`#announcements` on the Bevry Slack](https://bevry.slack.com/messages/C099WE4UU/) - [Invite Link](https://slack.bevry.me)
+
 
 ## Trainings
 
-DocPad have these trainings available:
+Trainings covering DocPad. Oldest first.
 
-- [PluralSight: Build a Better Blog with a Static Site Generator](https://www.pluralsight.com/courses/static-site-generator-build-better-blog) - [Intro Video](https://www.youtube.com/watch?v=gHz9ZyxwcGQ)
+- [DocPad Workshop at HasGeek 1/2](https://www.youtube.com/watch?v=Zu1uhI0uT2o) - March 2013
+- [DocPad Workshop at HasGeek 2/2](https://www.youtube.com/watch?v=-LxKYZDeSsc) - March 2013
+- [PluralSight: Build a Better Blog with a Static Site Generator](https://www.pluralsight.com/courses/static-site-generator-build-better-blog) - [Intro Video](https://www.youtube.com/watch?v=gHz9ZyxwcGQ) - March 2016
 
 
+## Videos
 
-## In the press
+Videos about DocPad. Oldest first.
 
-DocPad mentioned around the web. Oldest first.
+- [Rapid Web Development with DocPad](https://www.youtube.com/watch?v=hvQCXDWh7Wg) - December 2012
+- [Why DocPad Importers are HUGE!](https://www.youtube.com/watch?v=gEHXiZ4Wj4I) - July 2013
+- [DocPad's Ecosystem](https://www.youtube.com/watch?v=5PxNY9w7Cj0) - September 2013
+- [DocPad at Toronto Node.js Meetup](https://www.youtube.com/watch?v=i6dp_yqVCT0) - July 2013
+
+
+## Posts
+
+Community updates about DocPad. Oldest first.
 
 - [DogFeet on DocPad](http://dogfeet.github.com/articles/2011/docpad.html) - Korean: Covers what is DocPad, getting started with DocPad, and customising DocPad
 - [Dropbox auf dem eigenen Server](http://maxhaesslein.de/blog/1329055694) - German: Covers installing DropBox on both your local machine and your server's machine to easily sync your DocPad website
@@ -20,13 +39,9 @@ DocPad mentioned around the web. Oldest first.
 - [JekyllのNode版であるDocpadを使ってみる](http://tomohisaoda.com/posts/2012/using_docpad.html) - Japanese: Covers getting started with DocPad and a comparison with other static site generators
 - [Shop Talk Show Podcast](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and <a href="http://code.dougneiner.com" rel="nofollow">Doug Neiner's</a> workflow (4 minutes in)
 - [DocPad Talk @ Paris.js](http://djebbz.github.com/docpad-paris-js/) - Presentation of DocPad at Paris.js, May 30th 2012
-- [Ben Dellare's Blog](http://www.delarre.net) - Great blog full of DocPad articles, including [Going Static](http://www.delarre.net/posts/going-static.html), [Blogging with DocPad](http://www.delarre.net/posts/blogging-with-docpad.html), and [Creating a DocPad Plugin](http://www.delarre.net/posts/creating-a-docpad-plugin.html)
 - [Rapid Web Development with DocPad](https://vimeo.com/53755097) - DocPad founder Benjamin Lupton gives an overview of DocPad and showcases what building a site is like in it
 - [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](https://azure.microsoft.com/en-us/free/)
-- [DocPad on Redit](http://www.reddit.com/r/docpad/) - a sub-redit dedicated entirely to DocPad stuff
 - [Create professional websites with DocPad](http://emmet.io/blog/docpad/) - DocPad was an ideal solution for [Emmet documentation website](http://docs.emmet.io) because it not only provides a simplified development process, but allows me to reduce my hosting costs greatly
-- [Why the next big thing sucks](https://www.youtube.com/watch?v=nt4Gt6-T8N0) - DocPad founder Benjamin Lupton talks about his experiences founding open-source projects
-- [Intro to Static Site Generators & DocPad](https://www.youtube.com/watch?v=Zu1uhI0uT2o) - DocPad founder Benjamin Lupton talks about the emergence of Static Site Generators and what makes DocPad different to the rest
 - [Why DocPad](http://takitapart.com/posts/why-docpad/) - Why I've built takitapart using a static site generator, and why DocPad won me over
 - [Organising DocPad](http://takitapart.com/posts/organizing-docpad/) - Setting up the basic taxonomy of [takitapart.](http://takitapart.com)
 - [WordPress → Aegea → DocPad](http://blog.sapegin.me/all/docpad) - It was much simpler than I thought and I like the result very much
@@ -40,6 +55,7 @@ DocPad mentioned around the web. Oldest first.
 - [blogger-docpad](https://github.com/dorajistyle/blogger-docpad) - Import Google Blooger articles by label and generate Docpad static blog. It's good example how to handle large number of files with docpad.
 - [YTechie](http://www.ytechie.com/2013/11/blogging-awesomeness-with-a-static-generator-and-markdown/) - Blogging Awesomeness with a Static Generator and Markdown
 
+
 ## Websites
 
 Websites built with DocPad. Alphabetically sorted.
@@ -49,7 +65,6 @@ Websites built with DocPad. Alphabetically sorted.
 - [Andrew Goodricke: Javascript Developer](http://andrewgoodricke.com/) - UK based Freelance JavaScript Web Application Developer with blog.
 - [Artem Sapegin](http://blog.sapegin.me) - [source](https://github.com/sapegin/blog.sapegin.me) - Blog of Russian front-end developer: JavaScript, Stylus, Grunt.js, etc.
 - [Bevry](http://bevry.me) - Creators of DocPad / Sydney based Node.js, JavaScript and HTML5 company focused on empowering developers.
-- [Ben Dellare](http://www.delarre.net) - [source](https://github.com/benjamind/delarre.docpad) - Coder, maker, hacker, infrequent blogger.
 - [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of [Bevry](http://bevry.me). Liberating and empowering the world by making your dreams more accessible.
 - [Black Market](http://blackmarket.bg) - Bulgarian fashion company
 - [CoApp](http://coapp.org) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
@@ -71,7 +86,7 @@ welcome to my online portfolio
 - [Imaginatr](http://www.imaginatr.com) - Imaginatr is a creative independent studio focused on the development of mobile applications and innovative software
 - [Jose Quesada](http://josequesada.com) - [source](https://github.com/quesada/josequesada.docpad) - Homepage of Jose Quesada, a specialist with e-commerce database marketing
 - [Kyle Pool](http://kylpo.com) - [source](https://github.com/kylpo/kylpo.com) - I'm in practice-mode: working hard for a successful life that improves the world.
-- [Leigh Howells](http://leighhowells.com) - Home planet, blog and portfolio of Designer, tunesmith and UX Consultant, Cambridge, UK.  With added aliens. 
+- [Leigh Howells](http://leighhowells.com) - Home planet, blog and portfolio of Designer, tunesmith and UX Consultant, Cambridge, UK.  With added aliens.
 - [The Mason Jar](http://www.the-mason-jar.com) - [source](https://github.com/the-mason-jar/www-the-mason-jar) - Hipster cocktails with a back-end powered by GitHub and DocPad.
 - [MeltMedia](http://meltmedia.com) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
 - [Morgan Sutherland](http://msutherl.net) - tangible media and installation art portfolio
@@ -81,7 +96,7 @@ welcome to my online portfolio
 - [Remy Bach](http://remy.bach.me.uk) - I'm a Christian, husband and father, front-end dev, gamer, and all around tech nerd!
 - [Rob Rawkes](http://rawkes.com) - Rawkes is the home of Rob Hawkes, part-time Rawket Scientist and full-time geek. Join him as he explores the outer-reaches of programming, digital media, games, and everything in-between.
 - [ShareLaTeX.com Blog](https://www.sharelatex.com/blog/) - Used to generate static pages for the blog
-- [Surrey Vascular Surgeon](http://www.surreyvascularsurgeon.com) - Used to create a wesbite to explain vascular surgical services provided by me. Wanted a static website with fast load times. 
+- [Surrey Vascular Surgeon](http://www.surreyvascularsurgeon.com) - Used to create a wesbite to explain vascular surgical services provided by me. Wanted a static website with fast load times.
 - [takitapart.](http://takitapart.com) - akitapart. - pronounced "take-it-apart" - is the blog of Bob VanderClay, web application developer, founding partner at high90, and all around nerd
 - [The Open Document Format](http://www.opendocumentformat.org) - The official website of the OpenOffice ODF file format
 - [Tinacious Design](http://tinaciousdesign.com) – Web design and Development portfolio for Toronto-based Front-end Developer in Toronto, Canada
@@ -94,11 +109,9 @@ welcome to my online portfolio
 - [YTechie](http://www.ytechie.com) - Blog for Jason Young, Azure Developer and Evangelist
 
 
-## Applications
+## Defunct
 
-Applications built with DocPad. Alphabetically sorted.
+These links are now defunct:
 
-- [jQuery ScrollTo](http://balupton.github.io/jquery-scrollto/) - Smooth Scrolling to any jQuery/DOM Element. Uses DocPad to compile, watch, and deploy the project.
-- [jQuery Slide Scroll Panel](http://bevry.github.io/jquery-slidescrollpanel/) - Slide panels in by touch and scrolling
-- [Query Engine](https://github.com/bevry/query-engine) - Query Engine adds support for advanced querying to Backbone.js. Uses DocPad to compile, watch, and test our project automatically
-- [Semantic UI](http://semantic-ui.com) - [source](https://github.com/Semantic-Org/Semantic-UI) - CSS Framework. Uses DocPad to compile the entire website and framework together.
+- [Ben Dellare](http://www.delarre.net) - [source](https://github.com/benjamind/delarre.docpad) - Coder, maker, hacker, infrequent blogger.
+- [Ben Dellare's Blog](http://www.delarre.net) - Great blog full of DocPad articles, including [Going Static](http://www.delarre.net/posts/going-static.html), [Blogging with DocPad](http://www.delarre.net/posts/blogging-with-docpad.html), and [Creating a DocPad Plugin](http://www.delarre.net/posts/creating-a-docpad-plugin.html)
