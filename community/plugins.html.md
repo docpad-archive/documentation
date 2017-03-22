@@ -212,9 +212,3 @@ You can find a [complete listing of all DocPad Plugins on the NPM Registry using
 ## Create Your Own!
 
 It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Page!](https://docpad.org/docs/plugin-write)
-
-
-
-## Requested
-
-[Here is a list of plugins waiting to be coded up :-)](https://github.com/docpad/docpad/issues/)
