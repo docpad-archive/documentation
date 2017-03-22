@@ -90,8 +90,8 @@ Called each time the configuration for DocPad reloads. Called after most of the 
 Use to inject new template data variables and helpers into the template data.
 
 **Examples:**
-- [Services Plugin](/plugin/services)
-- [Feedr Plugin](/plugin/feedr)
+- [Services Plugin](https://github.com/docpad/docpad-plugin-services)
+- [Feedr Plugin](https://github.com/docpad/docpad-plugin-feedr)
 
 
 ### `extendCollections`
@@ -100,7 +100,7 @@ Called each time the configuration for DocPad reloads. Called after most of the 
 Use to create additional collections.
 
 **Examples:**
-- [Partials Plugin](/plugin/partials)
+- [Partials Plugin](https://github.com/docpad/docpad-plugin-partials)
 
 
 
@@ -123,7 +123,7 @@ Called once the command line interface for DocPad has loaded.
 Use to extend the console interface with additional commands.
 
 **Examples:**
-- [GitHub Pages Plugin](/plugin/ghpages)
+- [GitHub Pages Plugin](https://github.com/docpad/docpad-plugin-ghpages)
 
 
 
@@ -136,7 +136,7 @@ Called just after we've inserted dynamic files into the collections. Called befo
 Use this for inserting your dynamic files into the database.
 
 **Examples:**
-- [Tumblr Importer Plugin](/plugin/tumblr)
+- [Tumblr Importer Plugin](https://github.com/docpad/docpad-plugin-tumblr)
 
 
 
@@ -243,7 +243,7 @@ Use to perform transformations to the entire document.
 
 **Notes:** It is also called for each of the layout rendering for the document, as well as for each [render pass](/docs/faq#what-are-render-passes), as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
 
-**Example:** [The Pygments Plugin](/plugin/pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g., `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org) syntax highlighting engine.
+**Example:** [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g., `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org) syntax highlighting engine.
 
 
 ### `renderAfter`

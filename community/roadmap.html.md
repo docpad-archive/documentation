@@ -9,8 +9,8 @@ This page serves as a roadmap that details the approximate milestones of DocPad'
 	- [WordPress](https://github.com/bevry/docpad/issues/49)
 	- [Dropbox](https://github.com/bevry/docpad/issues/386)
 	- [Youtube](https://github.com/bevry/docpad/issues/571)
-	- [Tumblr](/plugin/tumblr) _**- released**_
-	- [Tags](/plugin/tags) _**- released**_
+	- [Tumblr](https://github.com/docpad/docpad-plugin-tumblr) _**- released**_
+	- [Tags](https://github.com/docpad/docpad-plugin-tags) _**- released**_
 - [Exporters](https://github.com/bevry/docpad/issues/597)
 - [Web GUI](https://github.com/docpad/gui/issues)
 - [Performance optimisations](https://github.com/bevry/docpad/issues/529)

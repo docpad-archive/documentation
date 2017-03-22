@@ -176,12 +176,12 @@ Check out the `plugins` [configuration property](/docs/config).
 
 ## How can I get my templating engine to render other DocPad supported markups?
 
-[Check out the text plugin.](/plugin/text/)
+[Check out the text plugin.](https://github.com/docpad/docpad-plugin-text/)
 
 
 ## How can I re-use particular templates again and again throughout my site?
 
-[Check out the partials plugin.](/plugin/partials/)
+[Check out the partials plugin.](https://github.com/docpad/docpad-plugin-partials/)
 
 
 ## How do I make DocPad detect file changes faster?

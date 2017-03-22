@@ -76,8 +76,8 @@ Renderers are used to convert one particular type of text format, to another typ
 
 DocPad will perform these conversions from one format to another by triggering the `render` event. A plugin can hook into this event by adding the `render` function inside it.
 
-- [Here is the plugin file of an example plugin that performs the synchronous conversion of transforming the content of `txt` files that have the extra `uc` or `uppercase` extension to upper case.](/plugin/yourpluginname/blob/master/src/yourpluginname.plugin.coffee)
-- [Here is the plugin file of the coffeekup plugin that accepts configuration and performs and asynchronous conversion.](/plugin/coffeekup/blob/master/src/coffeekup.plugin.coffee)
+- [Here is the plugin file of an example plugin that performs the synchronous conversion of transforming the content of `txt` files that have the extra `uc` or `uppercase` extension to upper case.](https://github.com/docpad/docpad-plugin-yourpluginname/blob/master/src/yourpluginname.plugin.coffee)
+- [Here is the plugin file of the coffeekup plugin that accepts configuration and performs and asynchronous conversion.](https://github.com/docpad/docpad-plugin-coffeekup/blob/master/src/coffeekup.plugin.coffee)
 
 An important thing to note about the rendering process is that DocPad knows when and how to call the render event based on the documents extensions. For instance, the document `document.html.md.eco` will have two render events fire. The first render event will contain the `inExtension` as `eco`, and the `outExtension` as `md`. The second render event will contain the `inExtension` as `md`, and the `outExtension` as `html`. This is why generally in our plugins we want to check the values of `inExtension` and `outExtension` to make sure our plugin is performing the correct render.
 
@@ -137,7 +137,7 @@ require('docpad').require('testers').test({testerClass: 'RendererTester', plugin
 
 This file is optional but is essential if you want to tell DocPad to load additional plugins as well as yours, or if you need to do advanced configuration of the test environment. The file exports a class that will be used to test your plugin. For now there's just the one tester type to extend from, `RendererTester` which by default runs your plugin against a folder of documents and compares the output to the contents of the `out-expected` folder. This is all you'll need for most plugins as we're only really concerned about the input and output of our plugins.
 
-The [Eco Plugin](/plugin/eco) is a great example of this, you can find its [tester file here](/plugin/eco/blob/master/src/eco.tester.coffee).
+The [Eco Plugin](https://github.com/docpad/docpad-plugin-eco) is a great example of this, you can find its [tester file here](https://github.com/docpad/docpad-plugin-eco/blob/master/src/eco.tester.coffee).
 
 For more complex plugins you might want to take a look at the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee) for more details and other potential testers to extend from.
 
@@ -146,7 +146,7 @@ For more complex plugins you might want to take a look at the [testers.coffee so
 
 This file is optional but is essential if you want your test site require other plugins than just your one.
 
-The [Text Plugin](/plugin/text) is a great example of this, you can find its [test site's package.json file here](/plugin/text/blob/master/test/package.json).
+The [Text Plugin](https://github.com/docpad/docpad-plugin-text) is a great example of this, you can find its [test site's package.json file here](https://github.com/docpad/docpad-plugin-text/blob/master/test/package.json).
 
 
 

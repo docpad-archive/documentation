@@ -35,7 +35,7 @@ The `render` and `documents` directories, and the `static` and `files` directori
 
 Layouts work in a very similar way to files in `render`, in that they are rendered and they support meta data. Unlike the files in `render`, however, they are not output to the `out` directory, as they only exist to wrap files in `render` and other layouts within themselves. Layouts work in a nested fashion, with the desired layout being defined by the `layout` meta data property within the child layout/document.
 
-Layouts should include child content, which is done using the `content` [template data](/docs/template-data#standard-template-data) variable. For instance, the code to use the content variable with the [Eco](https://github.com/sstephenson/eco/) templating engine via the [Eco DocPad plugin](/plugin/eco) would be `<%- @content %>`.
+Layouts should include child content, which is done using the `content` [template data](/docs/template-data#standard-template-data) variable. For instance, the code to use the content variable with the [Eco](https://github.com/sstephenson/eco/) templating engine via the [Eco DocPad plugin](https://github.com/docpad/docpad-plugin-eco) would be `<%- @content %>`.
 
 
 #### The `render` Directory

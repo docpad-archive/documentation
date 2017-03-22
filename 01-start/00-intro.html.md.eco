@@ -84,12 +84,12 @@ comparisonTable:  """
 	Live reload
 	No
 	No
-	**Via [`livereload` plugin](/plugin/livereload/)**
+	**Via [`livereload` plugin](https://github.com/docpad/docpad-plugin-livereload/)**
 
 	Partials
 	No
 	No
-	**Via [`partials` plugin](/plugin/partials/)**
+	**Via [`partials` plugin](https://github.com/docpad/docpad-plugin-partials/)**
 
 	Manual database installation required
 	Yes
@@ -114,7 +114,7 @@ comparisonTable:  """
 	Import data from external services (Atom, XML, JSON, etc.)
 	No
 	No
-	**Via [`feedr` plugin](/plugin/feedr/)**
+	**Via [`feedr` plugin](https://github.com/docpad/docpad-plugin-feedr/)**
 
 	WYSIWYG editors
 	**Yes**

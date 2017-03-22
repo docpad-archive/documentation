@@ -43,7 +43,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 ### For deployment to [GitHub Pages](http://pages.github.com)
 
-1. Install the [GitHub Pages Plugin](/plugin/ghpages)
+1. Install the [GitHub Pages Plugin](https://github.com/docpad/docpad-plugin-ghpages)
 
 	```
 	docpad install ghpages
@@ -223,7 +223,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 
 1. Inside your project directory, do the following:
 
-	1. Add the [GitHub Pages Plugin](/plugin/ghpages) as a Development Dependency
+	1. Add the [GitHub Pages Plugin](https://github.com/docpad/docpad-plugin-ghpages) as a Development Dependency
 
 		```
 		npm install --save-dev docpad-plugin-ghpages

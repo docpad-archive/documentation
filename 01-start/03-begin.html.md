@@ -127,7 +127,7 @@ We've also added a new `isPage` attribute, this is our own custom attribute and 
 
 _Templating Engines_ allow us to embed abstractions inside our `render` files - which is why we have to use them for layouts, as a layout is an abstraction, an abstraction that wraps around a document and outputs the document's content in a specific way :)
 
-For this guide, the templating engine we'll be using is [eco](https://github.com/sstephenson/eco) and is available to us via the [eco plugin](/plugin/eco). So let's install that now by quitting DocPad (`CTRL+C`), and running:
+For this guide, the templating engine we'll be using is [eco](https://github.com/sstephenson/eco) and is available to us via the [eco plugin](https://github.com/docpad/docpad-plugin-eco). So let's install that now by quitting DocPad (`CTRL+C`), and running:
 
 ``` bash
 docpad install eco
@@ -163,7 +163,7 @@ You can learn more about meta data and all the special properties on our [Meta D
 
 ### Adding the Live Reload Plugin
 
-Sweet, so we're doing well so far! We've got two `render` files, and a layout to abstract them. As we are making changes, it sure would be nice if our browser refreshed the page automatically! We can do this with the [Live Reload Plugin](/plugin/livereload), so let's install that now:
+Sweet, so we're doing well so far! We've got two `render` files, and a layout to abstract them. As we are making changes, it sure would be nice if our browser refreshed the page automatically! We can do this with the [Live Reload Plugin](https://github.com/docpad/docpad-plugin-livereload), so let's install that now:
 
 ``` bash
 docpad install livereload
@@ -297,7 +297,7 @@ _Pre-Processors_ are amazing things. They allow us to write `render` files in on
 ### Using Markdown, an HTML Pre-Processor
 HTML's verbose syntax is terrible for writing content that is more text than markup (e.g., articles, comments, etc.). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) (one of the many HTML Pre-Processors available to us as [Plugins](/docs/plugins)) comes to the rescue!
 
-Install the [Marked Markdown Plugin](/plugin/marked) by running `docpad install marked`.
+Install the [Marked Markdown Plugin](https://github.com/docpad/docpad-plugin-marked) by running `docpad install marked`.
 
 Then, rename the _About_ page we created earlier from (`render/about.html`) to (`render/about.html.md`), to indicate that we want to render from Markdown to HTML, and open it. Writing in Markdown, update its content (leave the existing meta data section as it is) to become:
 
@@ -315,7 +315,7 @@ Sweet, you're now ready to party, Markdown-style! ;)
 ### Using Stylus, a CSS Pre-Processor
 Open the Stylesheet document we created earlier (`render/styles/style.css`). CSS really hasn't come that far over the years and, thus, it has absolutely no abstractions available to us, making it incredibly verbose and painful to write. Fortunately, [Stylus](http://learnboost.github.com/stylus/) (one of the many [CSS Pre-Processors](/docs/plugins) available to us) is our saviour!
 
-Install the [Stylus Plugin](/plugin/stylus) by running `docpad install stylus`.
+Install the [Stylus Plugin](https://github.com/docpad/docpad-plugin-stylus) by running `docpad install stylus`.
 
 Then, rename `src/render/styles/style.css` to `src/render/styles/style.css.styl`, to indicate we want to render from Stylus to CSS, and open it. The reason why we created the style file in `render` and not in `static` is now obvious: if the Stylus stylesheet file were in `static/styles/` folder, it would not have been pre-processed before copying to `out`.
 
@@ -336,7 +336,7 @@ Sweet, you're now ready to rock the house with Stylus!
 ### Using CoffeeScript, a JavaScript Pre-Processor
 Sometimes people can get quite irritated with JavaScript's verbosity, and very annoyed at its nit-picking, such as when they forget a single comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org) (one of the many [JavaScript Pre-Processors](/docs/plugins) available to us) restores our sanity!
 
-Install the [CoffeeScript Plugin](/plugin/coffeescript) by running `docpad install coffeescript`.
+Install the [CoffeeScript Plugin](https://github.com/docpad/docpad-plugin-coffeescript) by running `docpad install coffeescript`.
 
 Then rename `render/scripts/script.js` to `render/scripts/script.js.coffee`, to indicate we want to render from CoffeeScript to JavaScript, and open it.
 
