@@ -19,9 +19,9 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	},
 	"main": "node_modules/.bin/docpad-server",
 	"scripts": {
-		"start": "node_modules/.bin/docpad-server",
-		"test": "node_modules/.bin/docpad generate --debug --silent",
-		"info": "node_modules/.bin/docpad info --silent"
+		"start": "docpad-server",
+		"test": "docpad generate --debug --silent --env static",
+		"info": "docpad info --silent"
 	}
 	```
 
@@ -73,7 +73,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 1. Create a `Procfile` file inside your project that contains:
 
 	```
-	web: node_modules/.bin/docpad-server
+	web: npm start
 	```
 
 1. Set your heroku instance to run in production mode
@@ -138,18 +138,6 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	```
 
 
-### For deployment to [AppFog](https://www.appfog.com)
-
-1. Create a `app.js` file inside your project that contains:
-
-	``` javascript
-	module.exports = require(__dirname+'/node_modules/docpad/out/bin/docpad-server');
-	```
-
-1. [Follow the rest of the AppFog guide here](https://docs.appfog.com/getting-started)
-
-
-
 ### For deployment to [Windows Azure](http://azure.microsoft.com/en-us/services/app-service/web/)
 
 1. Create a deployment script that triggers the static content generation. To create the script run the following command using the [Windows Azure Cross-Platform Command-Line Interface](http://azure.microsoft.com/en-us/documentation/articles/xplat-cli/):
@@ -174,7 +162,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 	# 2. Build DocPad Site
 	echo Building the DocPad site
 	cd "$DEPLOYMENT_SOURCE"
-	./node_modules/.bin/docpad generate
+	npm test
 	exitWithMessageOnError "DocPad generation failed"
 
 	# 3. KuduSync
@@ -234,7 +222,7 @@ DocPad websites can be deployed anywhere. Here are a few of the most common depl
 		``` json
 		{
 			"scripts": {
-				"deploy": "node_modules/.bin/docpad deploy-ghpages --silent --env static"
+				"deploy": "docpad deploy-ghpages --silent --env static"
 			}
 		}
 		```
@@ -342,7 +330,7 @@ pages:
   before_script:
   - npm install --production
   script:
-  - node_modules/.bin/docpad generate --env=static
+  - npm test
   - mv out public
   artifacts:
     paths:
