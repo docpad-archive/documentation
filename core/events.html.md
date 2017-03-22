@@ -2,25 +2,25 @@
 
 ### Event Handler Structure
 
-All DocPad events receive two arguments (both optional): 
+All DocPad events receive two arguments (both optional):
 
 1. `opts`, a simple object containing any options that the event provides
 1. `next`, a completion callback
 
-DocPad's events are fired in a *synchronous* (or *serial*) fashion. In other words, when the first event runs until finished, then the next event fires and runs until finished, and so on. 
+DocPad's events are fired in a *synchronous* (or *serial*) fashion. In other words, when the first event runs until finished, then the next event fires and runs until finished, and so on.
 
-*Asynchronous* code, however, has no implicit guarantees about the order of execution. It will fire the first event, and may then immediately fire the second event while the first is still running. 
+*Asynchronous* code, however, has no implicit guarantees about the order of execution. It will fire the first event, and may then immediately fire the second event while the first is still running.
 
-That's why asynchronous code requires callbacks. When the first event is done, it will run the callback function it was invoked with.  It's the callback's job to signal when it's okay to proceed to the next event. 
+That's why asynchronous code requires callbacks. When the first event is done, it will run the callback function it was invoked with.  It's the callback's job to signal when it's okay to proceed to the next event.
 
-Node.js itself is built for asynchronous execution, so it's pretty common for Node.js programs to run asynchronously. 
+Node.js itself is built for asynchronous execution, so it's pretty common for Node.js programs to run asynchronously.
 
 Since DocPad's events are run synchronously, omitting the `next` callback is perfectly valid (even encouraged) if you're using DocPad in your own synchronous code. (Of course, you're free to write in whatever style works best for you! If you enjoy coding in the asynchronous style, the `next` callback is available for you.)
 
 
 ### Inside your Configuration File
 
-You can bind to events in your DocPad configuration file by adding them to the `events` property. 
+You can bind to events in your DocPad configuration file by adding them to the `events` property.
 
 **Example:** Let's use a `docpad.coffee` configuration file. Binding to the `serverExtend` event would look like so:
 
@@ -145,16 +145,16 @@ Called just before we start generating your project. Partnered with the `generat
 
 **Options:**
 - `reset` whether or not this is a partial- (`false`) or full-regeneration (`true`)
-- <del><code>server</code></del> 
+- <del><code>server</code></del>
   <ins>Deprecated; use `getServer()` API method instead</ins>
 
 
 ### <del><code>parseBefore</code></del>
-<ins>Deprecated/removed since DocPad v6.58.0.</ins> 
+<ins>Deprecated/removed since DocPad v6.58.0.</ins>
 See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
 ### <del><code>parseAfter</code></del>
-<ins>Deprecated/removed since DocPad v6.58.0.</ins> 
+<ins>Deprecated/removed since DocPad v6.58.0.</ins>
 See [issue #736](https://github.com/bevry/docpad/issues/736) for information.
 
 
@@ -241,7 +241,7 @@ Use to perform transformations to the entire document.
 - `file` the model instance for the document we are rendering
 - `content` the current content that this document contains, you shall overwrite this option with any updates you do
 
-**Notes:** It is also called for each of the layout rendering for the document, as well as for each [render pass](/docpad/faq#what-are-render-passes), as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
+**Notes:** It is also called for each of the layout rendering for the document, as well as for each [render pass](/docs/faq#what-are-render-passes), as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
 
 **Example:** [The Pygments Plugin](/plugin/pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g., `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org) syntax highlighting engine.
 

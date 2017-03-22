@@ -139,7 +139,7 @@ These are plugins that add extra functionality to DocPad:
 
 ## Deployers
 
-These are plugins that make [deploying](/docpad/deploy) to particular services even easier:
+These are plugins that make [deploying](/docs/deploy) to particular services even easier:
 
 - [ghpages](https://github.com/docpad/docpad-plugin-ghpages) - Deploy to [GitHub Pages](http://pages.github.com) as easy as `docpad deploy-ghpages`
 - [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation
@@ -177,7 +177,7 @@ DocPad's plugin/extension infrastructure supports existing decoupled interfaces 
 
 - [Use Prose with DocPad to create a Wiki](https://gist.github.com/balupton/5519403) - Tutorial on how to use [Prose.io](http://prose.io/#about) as an Admin Interface for DocPad
 - [WebWrite's InlineGUI](https://github.com/docpad/docpad-plugin-inlinegui) (not yet ready) - Edit your content from any backend with this inline editing interface
-- [Edit & Deploy with GitHub.com & GHpages Plugin](https://github.com/Sun-Star-IT/sunstarit.docpad/wiki/Edit-&-Deploy-with-GitHub.com-&-GHpages-Plugin) - Wiki on how to use GitHub.com to edit your DocPad website and then DocPad's `ghpages` plugin to deploy to GitHub Pages. 
+- [Edit & Deploy with GitHub.com & GHpages Plugin](https://github.com/Sun-Star-IT/sunstarit.docpad/wiki/Edit-&-Deploy-with-GitHub.com-&-GHpages-Plugin) - Wiki on how to use GitHub.com to edit your DocPad website and then DocPad's `ghpages` plugin to deploy to GitHub Pages.
 
 
 ## Guides
@@ -211,7 +211,7 @@ You can find a [complete listing of all DocPad Plugins on the NPM Registry using
 
 ## Create Your Own!
 
-It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Page!](/docpad/plugin-write)
+It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Page!](/docs/plugin-write)
 
 
 

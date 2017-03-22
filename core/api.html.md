@@ -9,7 +9,7 @@ This page will go over using DocPad as a module, and the API available to you.
 
 Besides having [Node.js installed](/node/install), you'll want to install DocPad locally to your project, you can do this by running `npm install --save docpad` in your command line. This will install DocPad into `./node_modules/docpad` and make it accessible via [Node.js's require function](http://nodejs.org/docs/latest/api/all.html#all_require) (e.g., `require('docpad')`)
 
-If you are wanting to utilise DocPad for rendering, you'll also want to install some rendering [Plugins](/docpad/plugins).
+If you are wanting to utilise DocPad for rendering, you'll also want to install some rendering [Plugins](/docs/plugins).
 
 
 ## Create your DocPad Instance
@@ -165,7 +165,7 @@ docpadInstance.getFileByRoute(url, function(err, resultModel){
 })
 ```
 
-[For more information about Querying, check out this FAQ Entry.](/docpad/faq#what-is-findalllive)
+[For more information about Querying, check out this FAQ Entry.](/docs/faq#what-is-findalllive)
 
 
 
@@ -188,13 +188,13 @@ var docpadInstanceConfiguration = {
 	// Give it our express application and HTTP server
 	serverExpress: app,
 	serverHttp: server,
-	
+
 	// Tell it not to load the standard middlewares (as we handled that above)
 	middlewareStandard: false
 };
 var docpadInstance = require('docpad').createInstance(docpadInstanceConfiguration, function(err){
 	if (err)  return console.log(err.stack);
-	
+
 	// Tell DocPad to perform a generation, extend our server with its routes, and watch for changes
 	docpadInstance.action('generate server watch', function(err){
 		if (err)  return console.log(err.stack);

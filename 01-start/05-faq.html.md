@@ -4,7 +4,7 @@ title: "FAQ"
 
 ## Does it work on Windows?
 
-Sure does. [Install it now.](/docpad/install)
+Sure does. [Install it now.](/docs/install)
 
 
 ## What is markup?
@@ -51,7 +51,7 @@ That is your document's meta data. It won't be included in the output of the doc
 
 ## Is a document aware of its meta data?
 
-It sure is! 
+It sure is!
 
 If you're using Eco as the rendering engine, you can totally do this:
 
@@ -87,25 +87,25 @@ Never use `findAllLive` for short-lived collections (especially in your template
 
 ## Which one should I use and when?
 
-Use `findAllLive` when defining long-running custom collections. Typical use cases are via the `collections` property of your [docpad configuration file](/docpad/config), or via the [`extendCollections` event](/docpad/events#extendcollections) within your plugin.
+Use `findAllLive` when defining long-running custom collections. Typical use cases are via the `collections` property of your [docpad configuration file](/docs/config), or via the [`extendCollections` event](/docs/events#extendcollections) within your plugin.
 
 Use `findAll` when you are needing once-off/short-living collections. Typical use cases are inside your templates or inside other events within your plugin.
 
-However, ideally wherever possible you should try to use DocPad's built-in [template helpers](/docpad/template-data#querying) or [APIs](/docpad/api#querying) for querying as these methods are highly optimised for DocPad, whereas the low-level Query-Engine methods are not.
+However, ideally wherever possible you should try to use DocPad's built-in [template helpers](/docs/template-data#querying) or [APIs](/docs/api#querying) for querying as these methods are highly optimised for DocPad, whereas the low-level Query-Engine methods are not.
 
 
 ## How can I learn more about the NoSQL queries available and the internals of Query-Engine?
 [Take a look at the Guide to Using Query-Engine](https://learn.bevry.me/queryengine/guide)
 
 
-## How do I hide a document from being rendered (e.g., a draft post)? 
+## How do I hide a document from being rendered (e.g., a draft post)?
 
-Check out the `ignored` [meta data property](/docpad/meta-data).
+Check out the `ignored` [meta data property](/docs/meta-data).
 
 
 ## How do I re-render a document on each request (e.g., dynamic documents)?
 
-Check out the `dynamic` [meta data property](/docpad/meta-data).
+Check out the `dynamic` [meta data property](/docs/meta-data).
 
 
 ## What are render passes?
@@ -134,14 +134,14 @@ dynamic: true
 
 Templating engines are renderers for languages which support business logic. For instance, the template engine [Eco](https://github.com/sstephenson/eco) provides us with the following syntax `<% your business logic %>` or to output a variable we can use `<%=some variable%>`.
 
-As such, the data which we expose to our templating engines is called the `templateData`. [Check out the full listing of template data & helpers here.](/docpad/template-data)
+As such, the data which we expose to our templating engines is called the `templateData`. [Check out the full listing of template data & helpers here.](/docs/template-data)
 
 For instance, to output the current document's title with Eco, you would use: `<%=@document.title%>`. The reason for the `@` is because Eco associates the `templateData` to the current scope, which with CoffeeScript (what Eco uses) you access by using the `@` character.
 
 
 ## How can I use environment variables in DocPad?
 
-All environment variables are automatically available in Node applications through [`process.env`](http://nodejs.org/api/process.html#process_process_env). DocPad also loads variables from a special [environment file](/docpad/config#environment-configuration-file). 
+All environment variables are automatically available in Node applications through [`process.env`](http://nodejs.org/api/process.html#process_process_env). DocPad also loads variables from a special [environment file](/docs/config#environment-configuration-file).
 
 To quickly override existing environment variables for a single invocation of DocPad, specify it on the command line before the `docpad` command:
 ```
@@ -151,22 +151,22 @@ $ API_URL=localhost:1234 docpad run
 
 ## How do I disable certain plugins?
 
-Check out the `enabledPlugins` [configuration property](/docpad/config).
+Check out the `enabledPlugins` [configuration property](/docs/config).
 
 
 ## How do I only enable the plugins that I actually use?
 
-Check out the `enableUnlistedPlugins` [configuration property](/docpad/config).
+Check out the `enableUnlistedPlugins` [configuration property](/docs/config).
 
 
 ## How do I customise the configuration sent to a plugin?
 
-Check out the `plugins` [configuration property](/docpad/config).
+Check out the `plugins` [configuration property](/docs/config).
 
 
 ## Where can I host my DocPad website?
 
-[Check out our deployment section here.](/docpad/deploy)
+[Check out our deployment section here.](/docs/deploy)
 
 
 ## How can I get Jade to render other DocPad supported markups?

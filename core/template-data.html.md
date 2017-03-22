@@ -15,7 +15,7 @@ title: "Template Data & Helpers"
 - `include(relativePath)` return the content of another file at the given path
 - `getEnvironment()` &mdash; a string of the current environment(s) we are running under
 - `getEnvironments()` &mdash; an array of the current environments we are running under
-- `referencesOthers()` &mdash; when called, will set the document's `referenceOthers` [meta data](/docpad/meta-data) property to `true`
+- `referencesOthers()` &mdash; when called, will set the document's `referenceOthers` [meta data](/docs/meta-data) property to `true`
 - `getDocument()` &mdash; a reference to the current document we are rendering, documents are defined by the [Document Class][] which extends the [File Class][] which extends a [Backbone Model][]
 - `getBlock(blockName)` &mdash; valid block names are:
 	- `scripts` &mdash; a collection of scripts to be outputted

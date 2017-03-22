@@ -6,7 +6,7 @@ cssClasses: ['compact']
 
 ## Upgrade Instructions
 
-To upgrade your DocPad installation from an older version to the latest, check out the [latest installation instructions](/docpad/install) as well as the upgrade manuals below.
+To upgrade your DocPad installation from an older version to the latest, check out the [latest installation instructions](/docs/install) as well as the upgrade manuals below.
 
 
 ## Upgrading from 5.x to 6.x (v6 is the latest stable version)
@@ -42,7 +42,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 	- For end-users, you will need to add the plugins you use to your website's `package.json` file. You can refer the [`package.json` file of the `canvas.docpad` skeleton here](https://github.com/bevry/canvas.docpad/blob/docpad-5.x/package.json#L30-43) for how to do this. Once added to your website's `package.json` file, run a `npm install` to install them.
 	- For plugin developers, there have been several important changes:
 		1. All plugins must now have `docpad-plugin` inside the `keywords` property of their `package.json` file. It is also highly recommended to ensure your plugin's name follows the `docpad-plugin-#{pluginName}` convention as this may become mandatory at a later date.
-		2. You can now feel free to publish your plugin via npm (e.g., `npm publish`) and add your plugin to the [Plugins wiki page](/docpad/plugins) so others can install it themselves (e.g., `npm install docpad-plugin-#{pluginName}`).
+		2. You can now feel free to publish your plugin via npm (e.g., `npm publish`) and add your plugin to the [Plugins wiki page](/docs/plugins) so others can install it themselves (e.g., `npm install docpad-plugin-#{pluginName}`).
 
 4. That should be all, if you have any problems be sure to report them on the [Issue Tracker](/issues). Thanks.
 
@@ -55,7 +55,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 
 3. The DocPad core has been cleaned up a lot, and as such so has the way plugin events are triggered. We now utilise [balUtil's](https://github.com/balupton/bal-util.npm) [emitSync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L257) and [emitAsync](https://github.com/balupton/bal-util.npm/blob/master/lib/events.coffee#L241) instead of the old `triggerPluginEvent`. This means that for now, plugin priorities are discarded - however they may be added back in the future (so leave them in there if you have them).
 
-4. Plugin rendering has had a significant change, which is you should no longer use `file.content` to read and update the current document's content. Instead a new argument called `content` wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the [Extending DocPad](/docpad/extend) wiki page.
+4. Plugin rendering has had a significant change, which is you should no longer use `file.content` to read and update the current document's content. Instead a new argument called `content` wil be passed, and it should be written to as well. This is a breaking change, and all renderers must be updated to facilitate this change. To learn the new way, then check out the [Extending DocPad](/docs/extend) wiki page.
 
 5. When an error occurs, the error will now be sent back to DocPad using the [AirBrake](http://airbrake.io/) service. If you would like this disabled then you can turn it off by setting `reportErrors` to `false` in your DocPad configuration.
 
@@ -66,7 +66,7 @@ To upgrade your DocPad installation from an older version to the latest, check o
 
 1. A lot of property names of the `File` class have changed. The `File` class is used for all documents and layouts, which would likely affect you when rendering properties from documents inside your templates (e.g., `@document.title`). This change was made to better correlate the names with their values (before the correlation was quite ambiguous). [You can find the current set of properties and their descriptions here.](https://github.com/bevry/docpad/blob/master/lib/file.coffee#L12)
 
-2. For plugin developers, the way you extend from the `BasePlugin`, and the way you `module.exports` your plugin has changed. [To learn about the new convention, refer to the new _Extending_ guide by clicking here.](/docpad/extend)
+2. For plugin developers, the way you extend from the `BasePlugin`, and the way you `module.exports` your plugin has changed. [To learn about the new convention, refer to the new _Extending_ guide by clicking here.](/docs/extend)
 
 3. For those using DocPad as a module, DocPad now supports a `next` callback on its constructor, allowing you to do `new DocPad(config,next)`. Anything that depends on a DocPad action being completed should go inside the `next` callback. While this is optional, it has proven helpful in eliminating timing problems.
 

@@ -22,7 +22,7 @@ Click the headings to proceed to the particular section.
 
 ## Creating the Standard Project Structure
 
-Before we get hacking away on content, we have to create our project and set it up with [DocPad's standard structure](/docpad/overview). To do this, we'll run the following:
+Before we get hacking away on content, we have to create our project and set it up with [DocPad's standard structure](/docs/overview). To do this, we'll run the following:
 
 ``` bash
 mkdir my-new-website
@@ -144,7 +144,7 @@ Even though we have chosen to use the Eco templating engine in this guide, there
 
 DocPad also supports more than just templating engines, though. We have a whole range of different plugins to do all sorts of things, so be sure to check them out!
 
-You can find the full listing of plugins we have on the [Plugins](/docpad/plugins) page.
+You can find the full listing of plugins we have on the [Plugins](/docs/plugins) page.
 
 
 ### A note on Rendering
@@ -156,7 +156,7 @@ Now, the reason we can support multiple templating engines is because of the way
 
 What on earth was with the stuff between the `---` at the top of our `render` files? That stuff is our _meta data_. It is where we can define extra information about our document, such as its title, layout, date, whatever. You are not limited to what you can define here; it's up to you. However, there are some pre-defined properties that serve special purposes (such as layout, which we just used).
 
-You can learn more about meta data and all the special properties on our [Meta Data](/docpad/meta-data) page.
+You can learn more about meta data and all the special properties on our [Meta Data](/docs/meta-data) page.
 
 
 ## Adding the Live Reload Plugin and Blocks
@@ -211,7 +211,7 @@ In the next part, we'll work with blocks some more by adding our assets to them.
 
 ## Adding Assets
 
-It's time to start adding some assets. Before proceeding with this section, please read the [DocPad Overview Page](/docpad/overview) so you know what each of the directories inside our website structure are for.
+It's time to start adding some assets. Before proceeding with this section, please read the [DocPad Overview Page](/docs/overview) so you know what each of the directories inside our website structure are for.
 
 
 ### Images
@@ -276,7 +276,7 @@ Now that's done, let's add those files to our _scripts Block_ in our `default.ht
 
 Upon saving, we'll notice that our content will fade in over a duration of two seconds. Nifty!
 
-Now, some of you may wonder why we omitted the [jQuery onDomReady](http://api.jquery.com/ready/) handler in our script file. While off-topic for DocPad, the reasoning for this is that only code that requires the entire DOM to be loaded needs it. For instance, if your script requires a DOM element that is positioned after our `script` tag, then it would be useful. 
+Now, some of you may wonder why we omitted the [jQuery onDomReady](http://api.jquery.com/ready/) handler in our script file. While off-topic for DocPad, the reasoning for this is that only code that requires the entire DOM to be loaded needs it. For instance, if your script requires a DOM element that is positioned after our `script` tag, then it would be useful.
 
 In this instance, as we inject our scripts into our `body` element, we already have access to the `body` element, and therefore can start our `fadeIn` animation immediately. This avoids the page loading, then, the DOM loading after a delay, followed by our fade-in with an undesirable "popping" effect.
 
@@ -295,7 +295,7 @@ _Pre-Processors_ are amazing things. They allow us to write `render` files in on
 
 
 ### Using Markdown, an HTML Pre-Processor
-HTML's verbose syntax is terrible for writing content that is more text than markup (e.g., articles, comments, etc.). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) (one of the many HTML Pre-Processors available to us as [Plugins](/docpad/plugins)) comes to the rescue!
+HTML's verbose syntax is terrible for writing content that is more text than markup (e.g., articles, comments, etc.). Fortunately, [Markdown](http://daringfireball.net/projects/markdown/) (one of the many HTML Pre-Processors available to us as [Plugins](/docs/plugins)) comes to the rescue!
 
 Install the [Marked Markdown Plugin](/plugin/marked) by running `docpad install marked`.
 
@@ -313,7 +313,7 @@ Sweet, you're now ready to party, Markdown-style! ;)
 
 
 ### Using Stylus, a CSS Pre-Processor
-Open the Stylesheet document we created earlier (`render/styles/style.css`). CSS really hasn't come that far over the years and, thus, it has absolutely no abstractions available to us, making it incredibly verbose and painful to write. Fortunately, [Stylus](http://learnboost.github.com/stylus/) (one of the many [CSS Pre-Processors](/docpad/plugins) available to us) is our saviour!
+Open the Stylesheet document we created earlier (`render/styles/style.css`). CSS really hasn't come that far over the years and, thus, it has absolutely no abstractions available to us, making it incredibly verbose and painful to write. Fortunately, [Stylus](http://learnboost.github.com/stylus/) (one of the many [CSS Pre-Processors](/docs/plugins) available to us) is our saviour!
 
 Install the [Stylus Plugin](/plugin/stylus) by running `docpad install stylus`.
 
@@ -334,7 +334,7 @@ Sweet, you're now ready to rock the house with Stylus!
 
 
 ### Using CoffeeScript, a JavaScript Pre-Processor
-Sometimes people can get quite irritated with JavaScript's verbosity, and very annoyed at its nit-picking, such as when they forget a single comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org) (one of the many [JavaScript Pre-Processors](/docpad/plugins) available to us) restores our sanity!
+Sometimes people can get quite irritated with JavaScript's verbosity, and very annoyed at its nit-picking, such as when they forget a single comma somewhere and their entire app breaks. Fortunately, [CoffeeScript](http://coffeescript.org) (one of the many [JavaScript Pre-Processors](/docs/plugins) available to us) restores our sanity!
 
 Install the [CoffeeScript Plugin](/plugin/coffeescript) by running `docpad install coffeescript`.
 
@@ -366,7 +366,7 @@ Sweet! Now you're ready to relax, with a rich cup of CoffeeScript.
 
 ### Purpose of a Configuration File
 
-The [DocPad Configuration File](/docpad/config) allows us to configure our DocPad instance, listen to events and perform some nifty abstractions.
+The [DocPad Configuration File](/docs/config) allows us to configure our DocPad instance, listen to events and perform some nifty abstractions.
 
 Consider the case where our document title is empty. With our current solution, the title of the page would be ` | My Website`. A page title of `My Website` would look far better when our document doesn't have a title.
 
@@ -396,12 +396,12 @@ You'll have to restart DocPad so that DocPad can become aware of the configurati
 
 The first part of this configuration is where we actually define our configuration (where the `# ...` is located), and the second part is a [Node convention](http://nodejs.org/docs/latest/api/modules.html#modules_module_exports) for exporting data from one file to another. Whenever we add some configuration, you'll want to add it to the `docpadConfig` object we just defined.
 
-For more information on configuration files and what configuration is available to your, refer to our [Configuration Page](/docpad/config).
+For more information on configuration files and what configuration is available to your, refer to our [Configuration Page](/docs/config).
 
 
 ### Using TemplateData for Abstractions
 
-Everything that is available to our templates is called [TemplateData](/docpad/template-data). For instance, `@document` is part of our template data. To be able to abstract out something that our templates will use, we will need to extend our template data. We can do this by modifying our template data configuration property in `/docpad.coffee` like so:
+Everything that is available to our templates is called [TemplateData](/docs/template-data). For instance, `@document` is part of our template data. To be able to abstract out something that our templates will use, we will need to extend our template data. We can do this by modifying our template data configuration property in `/docpad.coffee` like so:
 
 ``` coffee
 docpadConfig = {
@@ -444,7 +444,7 @@ And the title of our layout template, `default.html.eco`, would become:
 
 Now that is awesome! While this was a simple example, we can use it to do some really cool stuff. For instance, [here](https://gist.github.com/4166882) is an example of it being used to localize dates into French.
 
-If you're writing a plugin, you can use the [`extendTemplateData`](/docpad/events) event to extend the template data.
+If you're writing a plugin, you can use the [`extendTemplateData`](/docs/events) event to extend the template data.
 
 
 
@@ -479,9 +479,9 @@ Open your default layout, and add the following before the `h1`:
 </ul>
 ```
 
-Save it, and BANG! Now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docpad/template-data) to fetch the `html` collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a `isPage` attribute set to `true`. (We defined it earlier, when first applying our layout to our pages.) Then, we convert the result from a [Backbone Collection](http://backbonejs.org/#Collection) / [QueryEngine](/queryengine/guide) into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
+Save it, and BANG! Now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](/docs/template-data) to fetch the `html` collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a `isPage` attribute set to `true`. (We defined it earlier, when first applying our layout to our pages.) Then, we convert the result from a [Backbone Collection](http://backbonejs.org/#Collection) / [QueryEngine](/queryengine/guide) into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
 
-That's a bit of a mouthful, but give it a while and you'll be a pro in no time. 
+That's a bit of a mouthful, but give it a while and you'll be a pro in no time.
 
 There is one major inefficiency with the above approach. Can you guess what it is?
 
@@ -490,7 +490,7 @@ Performing the query every single time we render a layout is a bit silly, as the
 
 ### Creating Custom Collections via the Configuration File
 
-Let's go back to our [DocPad Configuration File](/docpad/config) (`docpad.coffee`) and open it up. This time we want to add the following:
+Let's go back to our [DocPad Configuration File](/docs/config) (`docpad.coffee`) and open it up. This time we want to add the following:
 
 ``` coffee
 docpadConfig = {
@@ -501,25 +501,25 @@ docpadConfig = {
 ```
 
 In our default layout, `default.html.eco`, we'll update the `getCollection` line to become:
-	
+
 ``` erb
 <% for page in @getCollection("pages").toJSON(): %>
 ```
 
-Much better, and way more efficient. 
+Much better, and way more efficient.
 
-Did you spot the difference with the call we used? When performing our query, we used the `findAllLive` instead of the `findAll` method. That's because `findAllLive` uses [QueryEngine's Live Collections](/queryengine/guide), which allows us to define our criteria once, and then continue to keep our collection up-to-date. 
+Did you spot the difference with the call we used? When performing our query, we used the `findAllLive` instead of the `findAll` method. That's because `findAllLive` uses [QueryEngine's Live Collections](/queryengine/guide), which allows us to define our criteria once, and then continue to keep our collection up-to-date.
 
 It works by creating a live child collection of the parent collection. (In this case, the `html` collection is the parent collection and our `pages` collection is the child collection.) The child collection then subscribes to the parent collection's `add`, `remove`, and `change` events, and tests the model that the event was for against our child collection's criteria. If it passes the collection, it adds it; if not, then it removes it. This performs much better than querying everything every single time.
 
-So then, what about sorting? That's easy enough! We can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument, which is the sorting argument; `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` that, in this case, will sort by the filename in ascending order. To sort in descending order, we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add an `order` attribute to our document meta data and then sort by that if we wanted to. 
+So then, what about sorting? That's easy enough! We can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument, which is the sorting argument; `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` that, in this case, will sort by the filename in ascending order. To sort in descending order, we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add an `order` attribute to our document meta data and then sort by that if we wanted to.
 
 There is also a third parameter for paging. To learn about this, as well as what type of queries are available to you, check out [QueryEngine Guide](/queryengine/guide).
 
 
 ### Setting Default Meta Data Attributes for our Pages
 
-Considering we'd probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages, so we don't always have to add `layout: default` to the [meta data](/docpad/meta-data) of each page. 
+Considering we'd probably like all our pages to use the default layout, we may be lazy enough to want to set this by default for all our pages, so we don't always have to add `layout: default` to the [meta data](/docs/meta-data) of each page.
 
 Just like everything, it's pretty darn easy, if you know how. And here's how:
 
@@ -553,12 +553,12 @@ As you now have all the tools and knowledge required to be able to create the bl
 - If you need a few pointers to help you get started, here you go :)
 	- Create a new layout called `post` that will use the default layout. Use it to perform custom styling for your blog post (e.g., `<div class="post"><%- @content %></div>`).
 	- When creating your blog posts, we recommend giving them a `date` meta data attribute in the format of `date: 2012-12-25`, so you can sort your blog posts in descending date order.
-	- Create a new directory called `posts` that contains all of your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection in order to retrieve all documents in the `posts` output directory (`/my-new-website/out/posts`). You can refer to the [Meta Data Page](/docpad/meta-data) for more information about the attributes already available to you.
-	- Create a new page called `posts.html.eco` that lists all your blog posts. This will be, more or less, the same as our navigation menu. If you would like to display descriptions of the blog posts, just add that as a meta data attribute for the blog posts, and then output that meta data attribute. If you want to show the rendered content of the data, you can use `post.contentRenderedWithoutLayouts`. You can refer to the [Meta Data Page](/docpad/meta-data) for more information about the attributes already available to you.
+	- Create a new directory called `posts` that contains all of your blog posts, and use the query `relativeOutDirPath: 'posts'` for your custom collection in order to retrieve all documents in the `posts` output directory (`/my-new-website/out/posts`). You can refer to the [Meta Data Page](/docs/meta-data) for more information about the attributes already available to you.
+	- Create a new page called `posts.html.eco` that lists all your blog posts. This will be, more or less, the same as our navigation menu. If you would like to display descriptions of the blog posts, just add that as a meta data attribute for the blog posts, and then output that meta data attribute. If you want to show the rendered content of the data, you can use `post.contentRenderedWithoutLayouts`. You can refer to the [Meta Data Page](/docs/meta-data) for more information about the attributes already available to you.
 
 - If you're stuck and need some help, just hop on over to the [DocPad IRC Support Channel](http://webchat.freenode.net/?channels=docpad) (#docpad on freenode) and someone will be with you soon enough. :) You can also discover all of our available Support Channels via our [Support Page](/support).
 
-Congratulations! You now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [Showcase](/docpad/showcase). To recap, you now know how to:
+Congratulations! You now possess all the foundations required to be able to write amazing and powerful web applications like those already in our [Showcase](/docs/showcase). To recap, you now know how to:
 
 - write `render` files in any language, markup, pre-processor, templating engine, whatever you wish, by installing the necessary plugin for it and changing the extensions of the document
 - perform powerful abstractions using layouts, meta data, template data and configuration files
@@ -578,4 +578,4 @@ So, farewell and enjoy your epic journey. The power is yours!
 
 ## Deployment
 
-[Deployment is the next page of this guide.](/docpad/deploy)
+[Deployment is the next page of this guide.](/docs/deploy)

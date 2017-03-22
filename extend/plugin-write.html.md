@@ -44,12 +44,12 @@ module.exports = (BasePlugin) ->
 	class YourpluginnamePlugin extends BasePlugin
 		# Define our plugin name
 		name: 'yourpluginname'
-		
+
 		# The rest of your plugin definition goes here
 		# ...
 ```
 
-Extending the [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) class is important as it provides some of the tucked away magic for our plugins, such as automatically listening for events when a plugin method of the event name is defined. [You can discover the plugin events available to you on the Events Page.](/docpad/events)
+Extending the [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) class is important as it provides some of the tucked away magic for our plugins, such as automatically listening for events when a plugin method of the event name is defined. [You can discover the plugin events available to you on the Events Page.](/docs/events)
 
 You will also have npm scripts avail
 There will also be a `Cakefile` that will allow us to compile your plugin using `cake compile`, compile our plugin whenever a change occurs using `cake watch`, run our plugin's tests using `cake test`, and prepare our plugin for publishing using `cake prepublish`, and publish our plugin by using `cake publish`.
@@ -84,7 +84,7 @@ An important thing to note about the rendering process is that DocPad knows when
 
 ### Other types
 
-Plugins of other types are generated in the same way as Renderers, they simply aim to achieve different results. While Renderers primarily use the `render` event to trigger their behaviour other plugin types use a variety of events such as `writeBefore` and `parseAfter` to alter the creation of documents and add additional functionality. [Click here for more information on event types](/docpad/events)
+Plugins of other types are generated in the same way as Renderers, they simply aim to achieve different results. While Renderers primarily use the `render` event to trigger their behaviour other plugin types use a variety of events such as `writeBefore` and `parseAfter` to alter the creation of documents and add additional functionality. [Click here for more information on event types](/docs/events)
 
 
 
@@ -193,20 +193,20 @@ Hopefully you should now see output similar to the following:
 
 yourpluginname
 yourpluginname ➞  create
-yourpluginname ➞  create ✔   
+yourpluginname ➞  create ✔
 yourpluginname ➞  load plugin yourpluginname
-yourpluginname ➞  load plugin yourpluginname ✔   
+yourpluginname ➞  load plugin yourpluginname ✔
 yourpluginname ➞  generate
 yourpluginname ➞  generate ➞  action
-yourpluginname ➞  generate ➞  action ✔   
+yourpluginname ➞  generate ➞  action ✔
 yourpluginname ➞  generate ➞  results
-yourpluginname ➞  generate ➞  results ✔   
-yourpluginname ➞  generate ✔  
+yourpluginname ➞  generate ➞  results ✔
+yourpluginname ➞  generate ✔
 yourpluginname ➞  server
-yourpluginname ➞  server ✔   
+yourpluginname ➞  server ✔
 yourpluginname ➞  finish up
-yourpluginname ➞  finish up ✔   
-yourpluginname ✔  
+yourpluginname ➞  finish up ✔
+yourpluginname ✔
 
 6/6 tests ran successfully, everything passed
 OK
