@@ -40,7 +40,6 @@ Community updates about DocPad. Oldest first.
 - [Shop Talk Show Podcast](http://shoptalkshow.com/episodes/010-with-doug-neiner/) - A live web design and development podcast chat about the benefits of DocPad and <a href="http://code.dougneiner.com" rel="nofollow">Doug Neiner's</a> workflow (4 minutes in)
 - [DocPad Talk @ Paris.js](http://djebbz.github.com/docpad-paris-js/) - Presentation of DocPad at Paris.js, May 30th 2012
 - [Rapid Web Development with DocPad](https://vimeo.com/53755097) - DocPad founder Benjamin Lupton gives an overview of DocPad and showcases what building a site is like in it
-- [Static Site Generation with DocPad on Windows Azure Web Sites](http://blog.ntotten.com/2013/01/11/static-site-generation-with-docpad-on-windows-azure-web-sites/) - Tutorial on how to setup and deploy DocPad to [Windows Azure Web Sites](https://azure.microsoft.com/en-us/free/)
 - [Create professional websites with DocPad](http://emmet.io/blog/docpad/) - DocPad was an ideal solution for [Emmet documentation website](http://docs.emmet.io) because it not only provides a simplified development process, but allows me to reduce my hosting costs greatly
 - [Why DocPad](http://takitapart.com/posts/why-docpad/) - Why I've built takitapart using a static site generator, and why DocPad won me over
 - [Organising DocPad](http://takitapart.com/posts/organizing-docpad/) - Setting up the basic taxonomy of [takitapart.](http://takitapart.com)
@@ -50,7 +49,6 @@ Community updates about DocPad. Oldest first.
 - [Converting to Docpad](http://fulljamesnet.herokuapp.com/articles/converting-to-docpad) - Web development worked perfectly
 - [How to contribute to the Topcoat blog](http://vimeo.com/68060525) - Walks you through Adobe's workflow of using DocPad for the [Topcoat website](http://topcoat.io) and deploying to a GitHub Organisation Page
 - [WordPress out, DocPad in](http://joefleming.net/posts/wordpress-out-docpad-in/) - Docpad looked super flexible for generating static sites, but it also allowed you to add dynamic pages to the mix. I couldn't be happier!
-- [DocPad 快速入門](http://blog.faq-book.com/?p=7281) - Chinese: Getting started with DocPad
 - [Multilingual blog on DocPad](http://blog.sapegin.me/all/multilingual-docpad) - How to make a multilingual blog with a single DocPad installation
 - [blogger-docpad](https://github.com/dorajistyle/blogger-docpad) - Import Google Blooger articles by label and generate Docpad static blog. It's good example how to handle large number of files with docpad.
 - [YTechie](http://www.ytechie.com/2013/11/blogging-awesomeness-with-a-static-generator-and-markdown/) - Blogging Awesomeness with a Static Generator and Markdown
@@ -58,20 +56,18 @@ Community updates about DocPad. Oldest first.
 
 ## Websites
 
-Websites built with DocPad. Alphabetically sorted.
+Websites built with DocPad. Alphabetically sorted. [Active listing](https://github.com/search?q=topic%3Adocpad-project). Historical listing:
 
 - [Acherno Interior Design](http://acherno.com) - Corporate web site of the biggest interior design studio in Bulgaria
 - [AlloyUI](http://alloyui.com) - [source](https://github.com/liferay/alloyui.com) - AlloyUI is a UI framework built on top of YUI3 that provides a simple API for building high scalable applications
 - [Andrew Goodricke: Javascript Developer](http://andrewgoodricke.com/) - UK based Freelance JavaScript Web Application Developer with blog.
 - [Artem Sapegin](http://blog.sapegin.me) - [source](https://github.com/sapegin/blog.sapegin.me) - Blog of Russian front-end developer: JavaScript, Stylus, Grunt.js, etc.
 - [Bevry](http://bevry.me) - Creators of DocPad / Sydney based Node.js, JavaScript and HTML5 company focused on empowering developers.
-- [Benjamin Lupton](http://balupton.com) - [source](https://github.com/balupton/balupton.docpad) - Founder of [Bevry](http://bevry.me). Liberating and empowering the world by making your dreams more accessible.
 - [Black Market](http://blackmarket.bg) - Bulgarian fashion company
 - [CoApp](http://coapp.org) - [source](https://github.com/coapp/coapp.org) - CoApp is an open-source package management system for Windows
 - [Cumulocity](https://cumulocity.com) - Internet of Things platform
 - [DataTables Taglib](http://tduchateau.github.com/DataTables-taglib/) - [source](https://github.com/tduchateau/DataTables-taglib/tree/gh-pages) - Website of DataTables-taglib, a JSP taglib that allows to quickly create [DataTables](http://datatables.net) in Java/JEE based web application
 - [DeLingua](http://www.delingua.si) - Slovenian translation company
-- [DocPad's Website](http://docpad.org) - [source](https://github.com/bevry/docpad-website) - The DocPad Website
 - [DogFeet](http://dogfeet.github.com) - [source](https://github.com/dogfeet/dogfeet.docpad) - Korean: A development blog
 - [Dorajistyle STATIC](http://dorajistyle.net) - Docpad generated Blog from Google Blogger articles.
 - [Doug Neiner's Code Website](http://code.dougneiner.com) - [source](https://github.com/dcneiner/dougneiner.docpad) - Husband to one, father to three, jQuery Team Member, Senior Designer at [appendTo](http://appendto.com)
@@ -89,7 +85,6 @@ welcome to my online portfolio
 - [Leigh Howells](http://leighhowells.com) - Home planet, blog and portfolio of Designer, tunesmith and UX Consultant, Cambridge, UK.  With added aliens.
 - [The Mason Jar](http://www.the-mason-jar.com) - [source](https://github.com/the-mason-jar/www-the-mason-jar) - Hipster cocktails with a back-end powered by GitHub and DocPad.
 - [MeltMedia](http://meltmedia.com) - An enterprise level web application development firm and interactive design agency based in Tempe, Arizona
-- [Morgan Sutherland](http://msutherl.net) - tangible media and installation art portfolio
 - [MS Dev Show](http://msdevshow.com) - The MS Dev Show is the podcast for Microsoft developers covering news and topics such as Azure (cloud), Windows, and cross-platform development using MS tools.
 - [Open Device Lab Hamburg](http://hamburg.opendevicelab.de) - Open Device Lab Hamburg. Come and test your Websites on a wide range of devices for free!
 - [pimatic](http://www.pimatic.org) - smart home automation for the raspberry pi
@@ -99,7 +94,6 @@ welcome to my online portfolio
 - [Surrey Vascular Surgeon](http://www.surreyvascularsurgeon.com) - Used to create a wesbite to explain vascular surgical services provided by me. Wanted a static website with fast load times.
 - [takitapart.](http://takitapart.com) - akitapart. - pronounced "take-it-apart" - is the blog of Bob VanderClay, web application developer, founding partner at high90, and all around nerd
 - [The Open Document Format](http://www.opendocumentformat.org) - The official website of the OpenOffice ODF file format
-- [Tinacious Design](http://tinaciousdesign.com) – Web design and Development portfolio for Toronto-based Front-end Developer in Toronto, Canada
 - [Tomohisa Oda](http://tomohisaoda.com) - Japanese: Web engineer and designer from Japan
 - [Topcoat.io](http://topcoat.io) - CSS for clean and fast web apps by Adobe
 - [The Open Document Format's Plugfest](http://www.odfplugfest.org) - The ODF plugfests are an ongoing series of vendor-neutral events, bringing together implementers and stakeholders of the standard
@@ -107,11 +101,3 @@ welcome to my online portfolio
 - [v1rtual](http://v1rtual.net) - English & German: Blog about hacking, electronics, turtels and stuff
 - [Notes From Heck](http://adityamukho.com) - Personal website and blog of Aditya Mukhopadhyay, built on the bootstrap skeleton.
 - [YTechie](http://www.ytechie.com) - Blog for Jason Young, Azure Developer and Evangelist
-
-
-## Defunct
-
-These links are now defunct:
-
-- [Ben Dellare](http://www.delarre.net) - [source](https://github.com/benjamind/delarre.docpad) - Coder, maker, hacker, infrequent blogger.
-- [Ben Dellare's Blog](http://www.delarre.net) - Great blog full of DocPad articles, including [Going Static](http://www.delarre.net/posts/going-static.html), [Blogging with DocPad](http://www.delarre.net/posts/blogging-with-docpad.html), and [Creating a DocPad Plugin](http://www.delarre.net/posts/creating-a-docpad-plugin.html)
