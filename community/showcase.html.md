@@ -1,4 +1,3 @@
-Feel free to [update this page](https://github.com/docpad/documentation/edit/master/community/showcase.html.md) with your own projects or others which you have found. Note: requires a github account.
 
 ## News
 
@@ -26,6 +25,35 @@ Videos about DocPad. Oldest first.
 - [Why DocPad Importers are HUGE!](https://www.youtube.com/watch?v=gEHXiZ4Wj4I) - July 2013
 - [DocPad's Ecosystem](https://www.youtube.com/watch?v=5PxNY9w7Cj0) - September 2013
 - [DocPad at Toronto Node.js Meetup](https://www.youtube.com/watch?v=i6dp_yqVCT0) - July 2013
+
+
+## Skeletons
+
+These skeletons are currently available to you as part of the DocPad bootstrap process:
+
+<% unless @feedr?.feeds?.exchange?.skeletons?: %>
+Something has gone wrong fetching the skeletons, please report this on [this GitHub issue](https://github.com/docpad/website/issues/70). Possible helpful data:
+
+``` javascript
+var exchangeUrl = "<%- @exchangeUrl %>"
+var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
+```
+
+[For the meantime, you can use this GitHub search.](https://github.com/search?q=topic%3Adocpad-project)
+
+<% else: %>
+<ul>
+	<% for own skeletonID, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
+	<li>
+		<a href="<%= skeletonValue.repo.replace(/^git:/,'https:').replace(/\.git$/,'') %>"><%= skeletonValue.name %></a>
+		- <code>branch: <%= skeletonValue.branch or 'master' %></code>
+		- <%= skeletonValue.description %>
+	</li>
+	<% end %>
+</ul>
+<% end %>
+
+Want to add yours? [Add it to the listing here.](https://github.com/docpad/extras/blob/docpad-6.x/exchange.cson)
 
 
 ## Posts

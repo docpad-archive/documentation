@@ -1,63 +1,8 @@
-This page serves as a roadmap that details the approximate milestones of DocPad's future.
+This page serves as a roadmap what DocPad has done and plans to do.
 
-[Want to help? Contribute!](https://docpad.org/docs/contribute)
+[You can find out what we have planned over at our Trello.](/trello)
 
-
-## Current
-
-- [Importer Plugins](https://github.com/bevry/docpad/issues?labels=affects+importer)
-	- [WordPress](https://github.com/bevry/docpad/issues/49)
-	- [Dropbox](https://github.com/bevry/docpad/issues/386)
-	- [Youtube](https://github.com/bevry/docpad/issues/571)
-	- [Tumblr](https://github.com/docpad/docpad-plugin-tumblr) _**- released**_
-	- [Tags](https://github.com/docpad/docpad-plugin-tags) _**- released**_
-- [Exporters](https://github.com/bevry/docpad/issues/597)
-- [Web GUI](https://github.com/docpad/gui/issues)
-- [Performance optimisations](https://github.com/bevry/docpad/issues/529)
-- [Run DocPad on the Client Side](https://github.com/bevry/docpad/issues/542)
-- [Official DocPad Blog](https://github.com/bevry/docpad-website/issues/29)
-- [Abstract out all the things](https://github.com/bevry/docpad/issues?milestone=16&state=open)
-
-
-## Next
-
-- Authentication Plugin
-	- Uses GitHub for authentication, validates email address against `package.json` maintainers
-	- Login window trigger by `ctrl/cmd+shift+l`
-
-- REST Plugin
-
-- Web GUI
-	- Editing
-		- Support adding and removing of resources
-		- Support adding and removing of documents
-		- Support adding and removing of files (includes uploading if in the cloud)
-	- Connect
-		- Purchasable Content (e.g., sell premium plugins, tutorials, themes, etc.)
-	- Exchange
-		- Community Centre
-			- Chat
-			- Discussion Boards
-			- ShowCase
-		- Extension Centre
-			- Skeletons
-			- Plugins
-			- Rate and Discuss
-		- Learning Centre (tutorials, videos, etc.)
-	- QuickStart
-		- Importing content from an existing source (e.g., wordpress, tumblr, jekyll, etc.)
-	- Connect
-		- News
-		- Blog
-		- Polls
-		- Stats
-	- QuickStart
-		1. Selecting your skeleton
-		2. Selecting your plugins
-		3. Configuring DocPad and plugins
-	- Administration
-		- Enable/Disable Plugins
-		- Configure Plugins and Core
+[Want to help? Check out our Contribute Guide.](https://docpad.org/docs/contribute)
 
 
 ## Done

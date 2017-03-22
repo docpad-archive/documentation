@@ -12,7 +12,7 @@ For the most part, DocPad inherits from the [Bevry Community's Contribution Guid
 
 To add a new skeleton to the skeleton listing:
 
-1. Add your new skeleton to our [`exchange.json` file](https://github.com/docpad/extras/edit/docpad-6.x/exchange.json)
+1. Add your new skeleton to our [`exchange.json` file](https://github.com/docpad/extras/blob/docpad-6.x/exchange.cson)
 1. Submit the pull request for it (the page for this should appear automatically once you click "Commit Changes" from the previous link)
 
 
