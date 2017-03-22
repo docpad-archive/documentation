@@ -12,7 +12,8 @@ var exchangeUrl = "<%- @exchangeUrl %>"
 var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
 ```
 
-[For the meantime, you can use this GitHub search instead.](https://github.com/search?q=topic%3Adocpad-project)
+[For the meantime, you can use this GitHub search.](https://github.com/search?q=topic%3Adocpad-project)
+
 <% else: %>
 <ul>
 	<% for own skeletonID, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
@@ -26,60 +27,3 @@ var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
 <% end %>
 
 Want to add yours? [Add it to the listing here.](https://github.com/docpad/extras/edit/docpad-6.x/exchange.cson)
-
-
-### Projects
-
-[You can also find DocPad projects on GitHub using the `docpad-project` topic.](https://github.com/search?q=topic%3Adocpad-project&type=Repositories)
-
-
-### Experimental
-
-These skeletons are currently under construction:
-
-- [Syte](https://github.com/docpad/docpad-skeleton-syte) `branch: master` - A simple pre-made personal website with blogging and social integrations.
-
-
-### Older
-
-These skeletons are for older versions of DocPad:
-
-- [Deckpad](https://github.com/calvinmetcalf/deckpad) `branch: master` - Build rich HTML5 presentations with DocPad
-- [Node Chat](https://github.com/balupton/nodechat.docpad) `branch: master` - A local chat application built with DocPad, Socket.io and Backbone.js
-
-
-## Requested
-
-These are skeletons that have not yet been coded up, but have been requested. Please be sure to categorise them in their appropriate license, so we know that we are legally entitled to port them over to DocPad.
-
-
-### Public Domain
-- all implemented so far
-
-### MIT License
-- Codex Hub - [preview](http://alogicalparadox.com/codex-hub/) - [source](https://github.com/logicalparadox/codex-hub)
-- Hunch - [preview](http://rsms.me/) - [source](https://github.com/rsms/tumblr-theme-hunch)
-- Courier - [preview](http://couriertheme.tumblr.com/) - [source](https://github.com/davidyeiser/courier)
-- Skeleton - [preview](http://www.getskeleton.com/) - [source](https://github.com/dhgamache/Skeleton)
-- Svbtle - [preview](http://gravityonmars.com/2012/03/28/svbtle-based-on-wordpress/) - [source](https://github.com/gravityonmars/wp-svbtle)
-
-### Creative Commons
-- Manifest - [preview](http://demo.jimbarraud.com/manifest/) - [download](http://themes.jimbarraud.com/manifest/)
-- HTML5Up - [preview](http://html5up.net/)
-
-### Apache License
-- [Bootswatch](http://bootswatch.com/)
-
-### GPL Licensed
-- Rockstar - [preview](http://www.woothemes.com/2009/09/rockstar/)
-- Type Based - [preview](http://www.woothemes.com/2008/11/typebased/)
-- Skeptical - [preview](http://www.woothemes.com/2010/09/skeptical/)
-- The Morning After - [preview](http://www.woothemes.com/2010/06/themorningafter/)
-- Bueno - [preview](http://www.woothemes.com/2009/11/bueno/)
-
-### Unknown License
-- Effector - [preview](http://effectortheme.tumblr.com/)
-- Lightweight - [preview](http://www.tumblr.com/theme/10820)
-
-### Paid
-- [Wrap Bootstrap Themes](http://wrapbootstrap.com/themes)
