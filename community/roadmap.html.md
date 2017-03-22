@@ -1,6 +1,6 @@
 This page serves as a roadmap that details the approximate milestones of DocPad's future.
 
-[Want to help? Contribute!](/docs/contribute)
+[Want to help? Contribute!](https://docpad.org/docs/contribute)
 
 
 ## Current

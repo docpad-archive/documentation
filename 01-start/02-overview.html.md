@@ -35,7 +35,7 @@ The `render` and `documents` directories, and the `static` and `files` directori
 
 Layouts work in a very similar way to files in `render`, in that they are rendered and they support meta data. Unlike the files in `render`, however, they are not output to the `out` directory, as they only exist to wrap files in `render` and other layouts within themselves. Layouts work in a nested fashion, with the desired layout being defined by the `layout` meta data property within the child layout/document.
 
-Layouts should include child content, which is done using the `content` [template data](/docs/template-data#standard-template-data) variable. For instance, the code to use the content variable with the [Eco](https://github.com/sstephenson/eco/) templating engine via the [Eco DocPad plugin](https://github.com/docpad/docpad-plugin-eco) would be `<%- @content %>`.
+Layouts should include child content, which is done using the `content` [template data](https://docpad.org/docs/template-data#standard-template-data) variable. For instance, the code to use the content variable with the [Eco](https://github.com/sstephenson/eco/) templating engine via the [Eco DocPad plugin](https://github.com/docpad/docpad-plugin-eco) would be `<%- @content %>`.
 
 
 #### The `render` Directory
@@ -44,7 +44,7 @@ These are files that we would like to render. Rendering occurs extension to exte
 
 The reason we do not support direct rendering from `script.coffee` to `script.js` is that such a convention would eliminate the ability to combine extension renderings, also because ambiguity between extensions that can be rendered in multiple ways. For instance the `coffee` extension could be rendered using [CoffeeScript](http://coffeescript.org) to JavaScript or using [CoffeeKup](http://coffeekup.org) to HTML. However, if you really want to use just a single extension, such a thing is supported by the `renderSingleExtensions` meta property.
 
-The other important aspect of files in `render` it that they support meta data. Meta data goes at the top of a document and defines information about that particular document. For instance, its title, date and layout are good examples. Meta data is not restricted to particular values, meaning you can define whatever meta data you want against a document. There are some special meta data properties, however, that perform certain functions (e.g., `layout` is used to specify the layout that should be used to wrap the document). You can find the complete listing of special meta data properties on the [Meta Data page](/docs/meta-data).
+The other important aspect of files in `render` it that they support meta data. Meta data goes at the top of a document and defines information about that particular document. For instance, its title, date and layout are good examples. Meta data is not restricted to particular values, meaning you can define whatever meta data you want against a document. There are some special meta data properties, however, that perform certain functions (e.g., `layout` is used to specify the layout that should be used to wrap the document). You can find the complete listing of special meta data properties on the [Meta Data page](https://docpad.org/docs/meta-data).
 
 
 #### The `static` Directory
@@ -54,7 +54,7 @@ Files in this folder, like those in `render`, are output to the `out` directory.
 
 ### The `docpad.coffee` file
 
-The `docpad.coffee` file can have several different extensions. It defines DocPad's settings. You can find full documentation on the [Configuration docs page](/docs/config).
+The `docpad.coffee` file can have several different extensions. It defines DocPad's settings. You can find full documentation on the [Configuration docs page](https://docpad.org/docs/config).
 
 
 ### The `package.json` File

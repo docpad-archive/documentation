@@ -1,6 +1,6 @@
 This page will talk about being a developer for DocPad and what is involved.
 
-This guide is also a bit out of date, check out the new [Contributing Guide](/docs/contribute) for the latest instructions.
+This guide is also a bit out of date, check out the new [Contributing Guide](https://docpad.org/docs/contribute) for the latest instructions.
 
 
 ## Who? What? Why?
@@ -17,7 +17,7 @@ The best way to participate is to be active on the [Issue Tracker](/issues). Any
 
 
 ### Contribute Code
-If you've found a bug in DocPad, or want to add a new feature yourself. You can get hacking away at the source code, and submit a pull request to get your changes back into the official repository. [You can read more about this on the Contributing Guide here](/docs/contribute).
+If you've found a bug in DocPad, or want to add a new feature yourself. You can get hacking away at the source code, and submit a pull request to get your changes back into the official repository. [You can read more about this on the Contributing Guide here](https://docpad.org/docs/contribute).
 
 
 ### Discuss

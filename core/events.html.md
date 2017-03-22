@@ -241,7 +241,7 @@ Use to perform transformations to the entire document.
 - `file` the model instance for the document we are rendering
 - `content` the current content that this document contains, you shall overwrite this option with any updates you do
 
-**Notes:** It is also called for each of the layout rendering for the document, as well as for each [render pass](/docs/faq#what-are-render-passes), as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
+**Notes:** It is also called for each of the layout rendering for the document, as well as for each [render pass](https://docpad.org/docs/faq#what-are-render-passes), as such care should be taken with ensuring your transformation does not re-transform an already transformed part.
 
 **Example:** [The Pygments Plugin](https://github.com/docpad/docpad-plugin-pygments) more or less uses this event to search for all `<code>` HTML elements that have the CSS class `highlight` (e.g., `<code class="highlight">`) and replaces the element with one that has been syntax highlighted by the popular [pygments](http://pygments.org) syntax highlighting engine.
 

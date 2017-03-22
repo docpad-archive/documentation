@@ -56,7 +56,7 @@ It turns out that Windows will prefer to treat the local `docpad.js` file as the
 ### Watching doesn't work; works only some of the time; I get `EISDIR` errors
 File watching is a pretty timid thing. We're currently working on making it better. There are currently two methods for watching files: `watch` and `watchFile`. The default is `watch`, and it uses the operating system's watching mechanisms. However, sometimes those mechanisms aren't the best. If that's the case, we'd like to switch our watching method to `watchFile`.  It's slower, but it works when `watch` doesn't.
 
-To do this, add the following to your [DocPad configuration file](/docs/config):
+To do this, add the following to your [DocPad configuration file](https://docpad.org/docs/config):
 
 ``` coffee
 watchOptions: preferredMethods: ['watchFile','watch']
@@ -67,7 +67,7 @@ Mac OS X users are most likely to encounter this issue.
 
 ### Watching is very slow to notice changes
 
-Add the following to your [DocPad configuration file](/docs/config):
+Add the following to your [DocPad configuration file](https://docpad.org/docs/config):
 
 
 ``` coffee
@@ -79,7 +79,7 @@ This will introduce problems however if you have previously customised `watchOpt
 
 
 ### Error: "We couldn't find an existing DocPad project inside your current directory..."
-This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](/docs/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](/docs/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](https://discuss.bevry.me/t/getting-support-guide/63/1).
+This occurs when you run `docpad run` inside a directory that already has existing files, but doesn't have a structure that resembles a DocPad project. We can't directly ask you if you would like to use an existing [skeleton](https://docpad.org/docs/skeletons) for the basis of your new website, as pulling in a skeleton inside a non-empty directory may overwrite your existing files. If would like to still use a skeleton for the basis of your new website, you will have to run DocPad inside a new empty directory. If you would like to start your website from scratch (not use an existing skeleton) then you can follow the [Getting Started](https://docpad.org/docs/start) guide. Hope that helps :) [If you need more help then check out our Support Channels](https://discuss.bevry.me/t/getting-support-guide/63/1).
 
 
 ### Error: "Could not locate git binary"
@@ -99,14 +99,14 @@ As Node.js is like an octopus, able to do many things at the same time, sometime
 There are a few things you can do:
 
 - [Move files that you do not reference in content listings to a raw directory with the raw plugin](https://github.com/bevry/docpad/issues/276)
-- [Set `standalone: true` to the meta data of documents that you regenerate often](/docs/meta-data#standalone)
+- [Set `standalone: true` to the meta data of documents that you regenerate often](https://docpad.org/docs/meta-data#standalone)
 - Use native/JavaScript implementations of renderers instead of non-native, non-JavaScript ones
   - (e.g., instead of using SASS, use nodesass, Stylus, or Less)
 - [Help us implement performance optimisations](https://github.com/bevry/docpad/issues/529)
 
 
 ### I upgraded, and it doesn't work
-[Check out the Upgrade Guides here](/docs/upgrade)
+[Check out the Upgrade Guides here](https://docpad.org/docs/upgrade)
 
 
 ### Whenever I output a variable (like `content`) it is escaped (`<` rendered as `&lt;`)?

@@ -139,7 +139,7 @@ These are plugins that add extra functionality to DocPad:
 
 ## Deployers
 
-These are plugins that make [deploying](/docs/deploy) to particular services even easier:
+These are plugins that make [deploying](https://docpad.org/docs/deploy) to particular services even easier:
 
 - [ghpages](https://github.com/docpad/docpad-plugin-ghpages) - Deploy to [GitHub Pages](http://pages.github.com) as easy as `docpad deploy-ghpages`
 - [sunny](https://github.com/bobobo1618/docpad-plugin-sunny) - Uploads site to cloud (AWS, Google Storage) after generation
@@ -211,7 +211,7 @@ You can find a [complete listing of all DocPad Plugins on the NPM Registry using
 
 ## Create Your Own!
 
-It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Page!](/docs/plugin-write)
+It's easy to write plugin for DocPad. [Get started now on our Write a Plugin Page!](https://docpad.org/docs/plugin-write)
 
 
 

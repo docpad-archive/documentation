@@ -16,5 +16,5 @@ making it a much quicker process.
 Especially useful if placing them in the `/src/static` (or `/src/files`)
 folder is still slow.
 
-Check the [plugins section of the DocPad docs](/docs/plugins) for instructions
+Check the [plugins section of the DocPad docs](https://docpad.org/docs/plugins) for instructions
 on how to install plugins.
