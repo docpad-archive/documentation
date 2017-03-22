@@ -479,7 +479,7 @@ Open your default layout, and add the following before the `h1`:
 </ul>
 ```
 
-Save it, and BANG! Now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](https://docpad.org/docs/template-data) to fetch the `html` collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a `isPage` attribute set to `true`. (We defined it earlier, when first applying our layout to our pages.) Then, we convert the result from a [Backbone Collection](http://backbonejs.org/#Collection) / [QueryEngine](/queryengine/guide) into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
+Save it, and BANG! Now we've got our navigation menu on each page! Wicked. So what does that do? Well first it uses the `getCollection` [template helper](https://docpad.org/docs/template-data) to fetch the `html` collection, which is a pre-defined collection by DocPad that contains all the HTML documents in our website. Then, with that collection, we find everything that has a `isPage` attribute set to `true`. (We defined it earlier, when first applying our layout to our pages.) Then, we convert the result from a [Backbone Collection](http://backbonejs.org/#Collection) / [QueryEngine](https://github.com/bevry/query-engine) into a standard JavaScript Array using [`toJSON`](http://backbonejs.org/#Collection-toJSON).
 
 That's a bit of a mouthful, but give it a while and you'll be a pro in no time.
 
@@ -508,13 +508,13 @@ In our default layout, `default.html.eco`, we'll update the `getCollection` line
 
 Much better, and way more efficient.
 
-Did you spot the difference with the call we used? When performing our query, we used the `findAllLive` instead of the `findAll` method. That's because `findAllLive` uses [QueryEngine's Live Collections](/queryengine/guide), which allows us to define our criteria once, and then continue to keep our collection up-to-date.
+Did you spot the difference with the call we used? When performing our query, we used the `findAllLive` instead of the `findAll` method. That's because `findAllLive` uses [QueryEngine's Live Collections](https://github.com/bevry/query-engine), which allows us to define our criteria once, and then continue to keep our collection up-to-date.
 
 It works by creating a live child collection of the parent collection. (In this case, the `html` collection is the parent collection and our `pages` collection is the child collection.) The child collection then subscribes to the parent collection's `add`, `remove`, and `change` events, and tests the model that the event was for against our child collection's criteria. If it passes the collection, it adds it; if not, then it removes it. This performs much better than querying everything every single time.
 
 So then, what about sorting? That's easy enough! We can sort by changing `@getCollection('html').findAllLive({isPage:true})` to add a second argument, which is the sorting argument; `@getCollection('html').findAllLive({isPage:true},[{filename:1}])` that, in this case, will sort by the filename in ascending order. To sort in descending order, we would change the `1` to become `-1`. Now we can sort by any attribute available on our models, which means that we could even add an `order` attribute to our document meta data and then sort by that if we wanted to.
 
-There is also a third parameter for paging. To learn about this, as well as what type of queries are available to you, check out [QueryEngine Guide](/queryengine/guide).
+There is also a third parameter for paging. To learn about this, as well as what type of queries are available to you, check out [QueryEngine Guide](https://github.com/bevry/query-engine).
 
 
 ### Setting Default Meta Data Attributes for our Pages
