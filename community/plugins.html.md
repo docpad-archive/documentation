@@ -80,7 +80,6 @@ These are plugins that add support for extra markups and languages to DocPad:
 These are plugins that add extra functionality to DocPad:
 
 - [addthis](https://github.com/mikeumus/docpad-plugin-addthis) - Adds the [AddThis](http://www.addthis.com) toolbar into your project
-- [alias](https://github.com/field/docpad-plugin-alias) - Adds configurable hard or soft aliases for Docpad documents.
 - [assets](https://github.com/mcdee/docpad-plugin-assets) - Change URL of asset files to contain hash of contents, allowing for effective caching whilst enabling cache busting when contents change
 - [associatedfiles](https://github.com/docpad/docpad-plugin-associatedfiles) - Lets you easily associate files to a particular document, and then grab the collection for them
 - [authentication](https://github.com/SteveMcArthur/docpad-plugin-authentication) - Handles authentication and login functionality via social login (ie google, facebook, twitter or github) for your docpad application. Protects pages from unauthenticated users.
