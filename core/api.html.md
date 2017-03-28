@@ -5,6 +5,11 @@ title: "API"
 This page will go over using DocPad as a module, and the API available to you.
 
 
+## Technical API
+
+[DocPad has auto-generated Technical API from its source code, check it out!](http://master.docpad.docpad.surge.sh/docs/)
+
+
 ## Install DocPad
 
 Besides having [Node.js installed](https://learn.bevry.me/node/install), you'll want to install DocPad locally to your project, you can do this by running `npm install --save docpad` in your command line. This will install DocPad into `./node_modules/docpad` and make it accessible via [Node.js's require function](http://nodejs.org/docs/latest/api/all.html#all_require) (e.g., `require('docpad')`)
