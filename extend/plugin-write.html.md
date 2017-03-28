@@ -22,7 +22,7 @@ title: Write a Plugin
 
 You will now find several files.
 
-An important thing to note about the `package.json` file is that our plugin starts with the version `2.0.0`. This is because v2 plugins are compatible for with DocPad v6, whereas v1 plugins are compatible with DocPad v5. [This is currently a necessary convention that you must follow.](https://github.com/bevry/docpad/issues/691)
+An important thing to note about the `package.json` file is that our plugin starts with the version `2.0.0`. This is because v2 plugins are compatible for with DocPad v6, whereas v1 plugins are compatible with DocPad v5. [This is currently a necessary convention that you must follow.](https://github.com/docpad/docpad/issues/691)
 
 The `src/yourpluginname.plugin.coffee` file is the logic for our plugin. It's current contents will uppercase all documents with `.uc` or `.uppercase` extension. The simplest form of this file (which wouldn't perform anything) would be:
 
@@ -49,7 +49,7 @@ module.exports = (BasePlugin) ->
 		# ...
 ```
 
-Extending the [BasePlugin](https://github.com/bevry/docpad/blob/master/src/lib/plugin.coffee) class is important as it provides some of the tucked away magic for our plugins, such as automatically listening for events when a plugin method of the event name is defined. [You can discover the plugin events available to you on the Events Page.](https://docpad.org/docs/events)
+Extending the [BasePlugin](https://github.com/docpad/docpad/blob/master/src/lib/plugin.coffee) class is important as it provides some of the tucked away magic for our plugins, such as automatically listening for events when a plugin method of the event name is defined. [You can discover the plugin events available to you on the Events Page.](https://docpad.org/docs/events)
 
 You will also have npm scripts avail
 There will also be a `Cakefile` that will allow us to compile your plugin using `cake compile`, compile our plugin whenever a change occurs using `cake watch`, run our plugin's tests using `cake test`, and prepare our plugin for publishing using `cake prepublish`, and publish our plugin by using `cake publish`.
@@ -139,7 +139,7 @@ This file is optional but is essential if you want to tell DocPad to load additi
 
 The [Eco Plugin](https://github.com/docpad/docpad-plugin-eco) is a great example of this, you can find its [tester file here](https://github.com/docpad/docpad-plugin-eco/blob/master/src/eco.tester.coffee).
 
-For more complex plugins you might want to take a look at the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee) for more details and other potential testers to extend from.
+For more complex plugins you might want to take a look at the [testers.coffee source](https://github.com/docpad/docpad/blob/master/src/lib/testers.coffee) for more details and other potential testers to extend from.
 
 
 #### `test/package.json`
@@ -152,7 +152,7 @@ The [Text Plugin](https://github.com/docpad/docpad-plugin-text) is a great examp
 
 ### Writing the tests
 
-DocPad's `RendererTester` will setup an instance of DocPad using the configuration specified in your tester above, it will then generate a site using the documents in the `test/src/render` folder and compare the results with the files in the `test/out-expected` folder. This way you can quickly and easily test how documents in a site are handled by your plugin. For more complex tests you will have to examing the [testers.coffee source](https://github.com/bevry/docpad/blob/master/src/lib/testers.coffee).
+DocPad's `RendererTester` will setup an instance of DocPad using the configuration specified in your tester above, it will then generate a site using the documents in the `test/src/render` folder and compare the results with the files in the `test/out-expected` folder. This way you can quickly and easily test how documents in a site are handled by your plugin. For more complex tests you will have to examing the [testers.coffee source](https://github.com/docpad/docpad/blob/master/src/lib/testers.coffee).
 
 
 ### Running the tests
@@ -161,10 +161,10 @@ Before we can run our unit tests we'll need to get DocPad and your plugin setup 
 
 ``` bash
 cd ~
-git clone https://github.com/bevry/docpad.git
+git clone https://github.com/docpad/docpad.git
 cd docpad
 npm install
-npm run compile
+npm run our:compile
 npm link
 ```
 
@@ -182,7 +182,7 @@ This will install all the dependencies for your plugin, and link the DocPad inst
 Now we're ready to run the tests!
 
 ``` bash
-cake test
+npm test
 ```
 
 Hopefully you should now see output similar to the following:
