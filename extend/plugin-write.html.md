@@ -227,6 +227,6 @@ npm run our:release:prepare
 If your plugin becomes popular with the DocPad community, you will have the option of making it an official plugin. This means:
 
 1. Transferring it to the DocPad GitHub Organisation so that it can be maintained by the DocPad Extras Team
-1. Running `npm owner add balupton mikeumus robloach` in your plugin directory to give the DocPad Core Team publishing rights
+1. Running `npm owner add bevryme` in your plugin directory to give the DocPad Core Team publishing rights
 1. The Core Team can then give publish rights to whomever from the Extra Team wants to take accountability for the plugin
 1. The Extras Team can then alert the maintainers of the plugin of things that need doing (preferably via a pull request) so the maintainers can just merge and publish
