@@ -5,8 +5,6 @@ title: Write a Plugin
 
 ## Getting Started
 
-1. Make sure you have CoffeeScript installed globally `npm install -g coffee-script` so we can make use of Cakefiles
-
 1. Inside your DocPad website directory, create a directory called `plugins` (i.e. `yourwebsite/plugins`)
 
 1. Inside your new plugins directory, create the directory for your plugin (i.e. `yourwebsite/plugins/yourpluginname`)
@@ -17,7 +15,7 @@ title: Write a Plugin
 	git init
 	git remote add base https://github.com/docpad/docpad-plugin-yourpluginname.git
 	git pull base master
-	npm install
+	npm run our:setup
 	```
 
 You will now find several files.
@@ -51,10 +49,23 @@ module.exports = (BasePlugin) ->
 
 Extending the [BasePlugin](https://github.com/docpad/docpad/blob/master/src/lib/plugin.coffee) class is important as it provides some of the tucked away magic for our plugins, such as automatically listening for events when a plugin method of the event name is defined. [You can discover the plugin events available to you on the Events Page.](https://docpad.org/docs/events)
 
-You will also have npm scripts avail
-There will also be a `Cakefile` that will allow us to compile your plugin using `cake compile`, compile our plugin whenever a change occurs using `cake watch`, run our plugin's tests using `cake test`, and prepare our plugin for publishing using `cake prepublish`, and publish our plugin by using `cake publish`.
+If you prefer to write your plugins with ES6 JavaScript, you can do it like so:
 
-If you must insist on writing your plugin inside a non-CoffeeScript dialect, you would use the `BasePlugin.extend({})` method like so:
+``` javascript
+// Export Plugin
+module.exports = function (BasePlugin) {
+	// Define Plugin
+	return class YourpluginnamePlugin extends ({
+		// Plugin name
+		get name () { return 'yourpluginname' }
+		
+		// Initial plugin configuration
+		get initialConfig () { return {} }
+	});
+};
+```
+
+If you prefer to write your plugins with ES5 JavaScript, you can use the `BasePlugin.extend({})` method like so:
 
 ``` javascript
 // Export Plugin
@@ -100,7 +111,7 @@ Probably the first thing you want to do is to change the name and description of
 
 - The heading and description inside `README.md`
 
-Once you update your `package.json` file with the new values, you would want to run `cake prepublish` which will also compile your plugin's meta files with [projectz](https://github.com/bevry/projectz), which is very useful for automatically updating your `README.md` and `LICENSE.md` files with the latest details for your `package.json` file.
+Once you update your `package.json` file with the new values, you would want to run `npm run our:release:prepare` which will also compile your plugin's meta files with [projectz](https://github.com/bevry/projectz), which is very useful for automatically updating your `README.md` and `LICENSE.md` files with the latest details for your `package.json` file.
 
 
 ## Testing your Plugin
@@ -163,7 +174,7 @@ Before we can run our unit tests we'll need to get DocPad and your plugin setup 
 cd ~
 git clone https://github.com/docpad/docpad.git
 cd docpad
-npm install
+npm run our:setup
 npm run our:compile
 npm link
 ```
@@ -172,9 +183,8 @@ This sets up your copy of DocPad and makes it so that NPM will use this copy ins
 
 ``` bash
 cd docpad-plugin-yourpluginname
-npm install
-npm link docpad
-cake compile
+npm run our:setup
+npm run our:compile
 ```
 
 This will install all the dependencies for your plugin, and link the DocPad instance in your plugin with the one we just cloned from GitHub.
@@ -182,7 +192,7 @@ This will install all the dependencies for your plugin, and link the DocPad inst
 Now we're ready to run the tests!
 
 ``` bash
-npm test
+npm run our:test
 ```
 
 Hopefully you should now see output similar to the following:
