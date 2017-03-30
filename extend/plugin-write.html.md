@@ -15,7 +15,8 @@ title: Write a Plugin
 	git init
 	git remote add base https://github.com/docpad/docpad-plugin-yourpluginname.git
 	git pull base master
-	npm run our:setup
+	npm run our:setup     # installs dependencies, and prepares the docpad dependency for development
+	npm run our:commpile  # compile your plugin
 	```
 
 You will now find several files.
@@ -168,34 +169,13 @@ DocPad's `RendererTester` will setup an instance of DocPad using the configurati
 
 ### Running the tests
 
-Before we can run our unit tests we'll need to get DocPad and your plugin setup correctly. First you will need to clone a copy of the DocPad repository as you'll need the original source to run the tests. You'll then want to set it up and compile it. We're also going to link this copy of DocPad into your NPM module cache so that whenever you use DocPad it actually points to this copy.
+To run the full test suite, including compilation and meta updates, you would run:
 
 ``` bash
-cd ~
-git clone https://github.com/docpad/docpad.git
-cd docpad
-npm run our:setup
-npm run our:compile
-npm link
+npm run our:release:prepare
 ```
 
-This sets up your copy of DocPad and makes it so that NPM will use this copy instead of the one in the NPM repository. Next you'll need to do a similar setup for your plugin.
-
-``` bash
-cd docpad-plugin-yourpluginname
-npm run our:setup
-npm run our:compile
-```
-
-This will install all the dependencies for your plugin, and link the DocPad instance in your plugin with the one we just cloned from GitHub.
-
-Now we're ready to run the tests!
-
-``` bash
-npm run our:test
-```
-
-Hopefully you should now see output similar to the following:
+Which will output something like:
 
 ``` bash
 > docpad-plugin-yourpluginname@2.0.0 test /Users/balupton/Projects/docpad-extras/plugins/yourpluginname
@@ -224,6 +204,22 @@ OK
 
 Writing good unit tests is hard, but just try to cover all the possible inputs and expected outputs for your plugin and you will be making a good start.
 
+
+### Linking DocPad
+
+If you are working on a development copy of DocPad, you can use it instead by running the following inside the DocPad instance directory:
+
+```
+npm run our:release:prepare
+npm link
+```
+
+Then inside your plugin, run:
+
+```
+npm link docpad
+npm run our:release:prepare
+```
 
 
 ## Maintenance
