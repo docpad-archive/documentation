@@ -82,41 +82,39 @@ Layouts wrap around our `render` files, so we can define the surrounding areas o
 
 - `src/layouts/default.html.eco`
 
-``` erb
-<html>
-<head>
-	<title><%= @document.title %> | My Website</title>
-</head>
-<body>
-	<h1><%= @document.title %></h1>
-	<%- @content %>
-</body>
-</html>
-```
+	 ``` erb
+	<html>
+	<head>
+		<title><%= @document.title %> | My Website</title>
+	</head>
+	<body>
+		<h1><%= @document.title %></h1>
+		<%- @content %>
+	</body>
+	</html>
+	```
 
 - `src/render/index.html`
 
-``` erb
----
-title: "Welcome!"
-layout: "default"
-isPage: true
----
-
-<p>Welcome to My Website!</p>
-```
+	``` erb
+	---
+	title: "Welcome!"
+	layout: "default"
+	isPage: true
+	---
+	<p>Welcome to My Website!</p>
+	```
 
 - `src/render/about.html`
 
-``` erb
----
-title: "About Me"
-layout: "default"
-isPage: true
----
-
-<p>I like long walks on the beach. <strong>Plus I rock at DocPad!</strong></p>
-```
+	``` erb
+	---
+	title: "About Me"
+	layout: "default"
+	isPage: true
+	---
+	<p>I like long walks on the beach. <strong>Plus I rock at DocPad!</strong></p>
+	```
 
 However, if you go to either the _Homepage_ or the _About_ page on our web server, you'll notice that their content is just the layout, and don't actually contain any of the document content. This is because we haven't installed the templating engine for our layout yet.
 
