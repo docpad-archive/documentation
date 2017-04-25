@@ -81,6 +81,16 @@ The context (what `this`/`@` points to) of event handlers in your plugin will be
 Sorted by their flow of execution within DocPad
 
 
+### `extendCollections`
+Called each time the configuration for DocPad reloads. Called after most of the configuration has loaded and when it is time to extend our collections.
+
+Use to create additional collections.
+
+**Examples:**
+- [Partials Plugin](https://github.com/docpad/docpad-plugin-partials)
+
+
+
 ### `extendTemplateData`
 Called each time the configuration for DocPad reloads. Called after most of the configuration has loaded and when it is time to extend our template data.
 
@@ -92,16 +102,6 @@ Use to inject new template data variables and helpers into the template data.
 **Examples:**
 - [Services Plugin](https://github.com/docpad/docpad-plugin-services)
 - [Feedr Plugin](https://github.com/docpad/docpad-plugin-feedr)
-
-
-### `extendCollections`
-Called each time the configuration for DocPad reloads. Called after most of the configuration has loaded and when it is time to extend our collections.
-
-Use to create additional collections.
-
-**Examples:**
-- [Partials Plugin](https://github.com/docpad/docpad-plugin-partials)
-
 
 
 ### `docpadLoaded`
