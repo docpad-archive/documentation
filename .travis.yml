@@ -9,12 +9,6 @@ install:
   - gem install travis --no-rdoc --no-ri
 script:
   - eval "$(curl -s https://raw.githubusercontent.com/balupton/awesome-travis/master/scripts/travis-another.bash)"
-# travis env set OTHER_REPO_SLUG 'bevry/website' --public
-# travis env set GITHUB_TRAVIS_TOKEN "$GITHUB_TRAVIS_TOKEN"
-
-# Custom Notifications
-# travis encrypt "$TRAVIS_NOTIFICATION_EMAIL" --add notifications.email.recipients
-# travis encrypt "$SLACK_SUBDOMAIN:$SLACK_TRAVIS_TOKEN#updates" --add notifications.slack
 notifications:
   email:
     recipients:
