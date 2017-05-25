@@ -46,7 +46,7 @@ var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
 <ul>
 	<% for own skeletonID, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
 	<li>
-		<a href="<%= skeletonValue.repo.replace(/^git:/,'https:').replace(/\.git$/,'') + '/tree/ ' + (skeletonValue.branch or 'master') %>"><%= skeletonValue.name %></a>
+		<a href="<%= skeletonValue.repo.replace(/^git:/,'https:').replace(/\.git$/,'') + '/tree/' + (skeletonValue.branch or 'master') %>"><%= skeletonValue.name %></a>
 		- <code>branch: <%= skeletonValue.branch or 'master' %></code>
 		- <%= skeletonValue.description %>
 	</li>
