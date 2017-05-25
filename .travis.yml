@@ -1,13 +1,16 @@
-# August 25, 2015
+# 2017 May 25
 # https://docpad.org/docs/deploy
-
-# Use the latest travis infrastructure
+# https://github.com/balupton/awesome-travis
 sudo: false
-
-# We use node
 language: ruby
 rvm:
   - "2.2"
+install:
+  - gem install travis --no-rdoc --no-ri
+script:
+  - eval "$(curl -s https://raw.githubusercontent.com/balupton/awesome-travis/master/scripts/travis-another.bash)"
+# travis env set OTHER_REPO_SLUG 'bevry/website' --public
+# travis env set GITHUB_TRAVIS_TOKEN "$GITHUB_TRAVIS_TOKEN"
 
 # Custom Notifications
 # travis encrypt "$TRAVIS_NOTIFICATION_EMAIL" --add notifications.email.recipients
@@ -18,27 +21,3 @@ notifications:
       secure: bQrOlL3jkqeOJp6rjUrY2p1kbw5Yrknv0hmGjU1if7lMhBjnEpaksRSBqEPDJlIFfv0i4VmN2BDt8BkhrUCJ2NxRYt5Os+8rVzz55Dw08Yq2qwyg3VnTtJBiCXgmtm6FVJxBbHhHF1zMeET3r9vK3Po1WTx67nuYcITu2NzntBU=
   slack:
     secure: PiSiUfXw/pYDvlvIlLKXyhu2AgtgxmkOHYRqBlFiMIb58w7ZKHgneTHw58dqs/M4GPMmLvLN972/fp4vNaZmlL35IkFSF8FUC6WA2GbXfEimXIB53HrK+5+tk7ZxtBVsSQ6pC5ZJHnPCw2lCAzGjy8aMbyzsfxFlR7DLE5d3lyA=
-
-# Prepare and run our tests
-# This should be easier, but https://github.com/travis-ci/travis.rb/issues/315 is a thing
-# Doesn't use --debug on `travis login` as that will output our github token
-install: gem install travis --no-rdoc --no-ri
-script: |
-  set -e 
-  set -o pipefail
-  if [ ! -z $GITHUB_TRAVIS_TOKEN ]; then
-    echo "Deploying..."
-    travis login --skip-completion-check --org --github-token "$GITHUB_TRAVIS_TOKEN"
-    export TRAVIS_ACCESS_TOKEN=`cat ~/.travis/config.yml | grep access_token | sed 's/ *access_token: *//'`
-    travis restart --debug --skip-completion-check --org -r docpad/website -t "$TRAVIS_ACCESS_TOKEN"
-    travis restart --debug --skip-completion-check --org -r bevry/learn -t "$TRAVIS_ACCESS_TOKEN"
-    echo "Deployed"
-  else
-    echo "Skipped deploy"
-  fi
-
-# Custom deployment
-# travis encrypt "GITHUB_TRAVIS_TOKEN=$GITHUB_TRAVIS_TOKEN" --add env.global
-env:
-  global:
-    - secure: SvdcDndEF45I4b6e1a0ywKXkkkTEnX4f0CkqDqvcPJ9iWFQ034JlE7RWoL1qkvi/COVBa4tFwrEutIdguAli90+3JTzB+c8N9/tIpNPznPL29cp4/I+/xJv2Zu1mC8nZ5YmKKY3Wep3Tgl9tfCxcJ/FC2lMTu+nyE1/hoTWDIec=
