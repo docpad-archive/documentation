@@ -129,7 +129,7 @@ comparisonTable:  """
 
 <!-- DocPad is a next-generation web architecture. It handles content management via the file system, rendering via plugins, and provides static site generation for deployment anywhere. It's built with Node.js and Express.js, making it naturally fast and easily extendable. -->
 
-DocPad is a dynamic static-site generator. That is a content management system that takes content from several sources, like files on your computer, and renders them into incredibly fast static output. DocPad's dynamic abilities allows you to pull in data from several sources, re-render when changes occur, and even add dynamic things like contact forms or admin interfaces to your website if desired. DocPad is the ideal choice offering an intuitive rapid web development experience for building web application front-ends and for building websites which content changes a max of once per hour.
+DocPad is a dynamic static-site generator. That is a content management system that takes content from several sources, like files on your computer, and renders them into incredibly fast static output. DocPad's dynamic abilities allows you to pull in data from several sources, re-render when changes occur, and even add dynamic things like contact forms or admin interfaces to your website if desired. DocPad is the ideal choice offering an intuitive rapid web development experience for building web application front-ends and for building websites which content do not change more than once per hour.
 
 
 ## Problems with Traditional Web Architectures
