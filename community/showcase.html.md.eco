@@ -31,30 +31,23 @@ Videos about DocPad. Oldest first.
 
 These skeletons are currently available to you as part of the DocPad bootstrap process:
 
-<% unless @feedr?.feeds?.exchange?.skeletons?: %>
-
+<% unless @getExchangeData()?.skeletons: %>
 Something has gone wrong fetching the skeletons, please report this on [this GitHub issue](https://github.com/docpad/website/issues/70). Possible helpful data:
 
 ``` javascript
-var exchangeUrl = "<%- @exchangeUrl %>"
-var exchangeData = <%- JSON.stringify(@feedr?.feeds?.exchange, null, '  ') %>
+var exchangeUrl = "<%- @getExchangeData() %>"
+var exchangeData = <%- JSON.stringify(@getExchangeData(), null, '  ') %>
 ```
 
 [For the meantime, you can use this GitHub search.](https://github.com/search?q=topic%3Adocpad-project)
-
 <% else: %>
-<ul>
-	<% for own skeletonID, skeletonValue of @feedr?.feeds?.exchange?.skeletons or {}: %>
-	<li>
-		<a href="<%= skeletonValue.repo.replace(/^git:/,'https:').replace(/\.git$/,'') + '/tree/' + (skeletonValue.branch or 'master') %>"><%= skeletonValue.name %></a>
-		- <code>branch: <%= skeletonValue.branch or 'master' %></code>
-		- <%= skeletonValue.description %>
-	</li>
-	<% end %>
-</ul>
+<ul><% for own skeletonID, skeletonValue of @getExchangeData().skeletons or {}: %><li>
+	<a href="<%= skeletonValue.repo.replace(/^git:/,'https:').replace(/\.git$/,'') + '/tree/' + (skeletonValue.branch or 'master') %>"><%= skeletonValue.name %></a>
+	- <code>branch: <%= skeletonValue.branch or 'master' %></code>
+	- <%= skeletonValue.description %>
+</li><% end %></ul>
 
 [You can also find other projects built with DocPad with this GitHub Search.](https://github.com/search?q=topic%3Adocpad-project)
-
 <% end %>
 
 Want to add yours? [Add it to the exchange.](https://github.com/docpad/extras/blob/docpad-6.x/exchange.json)

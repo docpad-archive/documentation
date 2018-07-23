@@ -11,7 +11,7 @@ _If you are upgrading from one major version to another (e.g. DocPad v5 to DocPa
 
 	``` shell
 	npm install -g npm
-	npm install -g docpad<%= if (v = @feedr?.feeds?.latestPackage?.version) then '@'+@getVersion(v,2) else '' %>
+	npm install -g docpad<%= if (v = @getLatestData()?.version) then '@'+@getVersion(v,2) else '' %>
 	```
 
 	**Note:** If you encounter permission errors with the above, do not use `sudo`, in our experience using `sudo` with node only creates further issues (regardless of DocPad). Follow our Step 1 instructions for a way to install Node with permissions that never require the use of `sudo`.
