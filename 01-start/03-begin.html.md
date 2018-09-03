@@ -32,7 +32,7 @@ docpad install serve
 docpad run
 ```
 
-The standard directory structure will be set up by the `init` command. The subsequent `run` command will start a web server on <http://localhost:9778> (thanks to the [`serve` plugin](/p/serve), watch for changes, and regenerate the website when they occur. This runs in the foreground; you can stop it any time by pressing `CTRL+C`. (For the moment we'll keep it running.)
+The standard directory structure will be set up by the `init` command. The subsequent `run` command will start a web server on <http://localhost:9778> (thanks to the [`serve` plugin](/p/serve)), watch for changes, and regenerate the website when they occur. This runs in the foreground; you can stop it any time by pressing `CTRL+C`. (For the moment we'll keep it running.)
 
 Note that when a new directory structure is set up it may be created with `src/documents` and `src/files` directories, rather than `src/render` and `src/static`. You should remove the `documents` and `files` directories and create `render` and `static` directories in order to follow the new naming conventions.
 
