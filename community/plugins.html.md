@@ -129,6 +129,7 @@ These are plugins that add extra functionality to DocPad:
 - [tableofcontents](https://github.com/takitapart/docpad-plugin-tableofcontents) - Automatically generate table of contents
 - [text](https://github.com/docpad/docpad-plugin-text/) - Render `templateData` properties without needing template engine, useful for abstraction in configuration files
 - [thumbnails](https://github.com/rantecki/docpad-plugin-thumbnails) - Manages thumbnail generation of your image files
+- [imagedimensions](https://github.com/knoblochtobias/docpad-plugin-imagedimensions) - Get the size of in image in your static files.
 - [imagin](https://github.com/almero-digital-marketing/docpad-plugin-imagin) - Alternative to thumbails plugin with support for `raw` and `copy` plugins for performance optimization. Manages thumbnail generation of your image files.
 - [tinylivereload](https://github.com/andruhon/docpad-plugin-tinylivereload) - A LiveReload plugin that doesn't alter your HTML. Works with the Chrome/Firefox LiveReload extensions.
 - [uglify](https://github.com/docpad/docpad-plugin-uglify) - Compress and minify JavaScript files with the `uglify: true` meta data
