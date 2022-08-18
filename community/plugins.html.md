@@ -29,7 +29,7 @@ These are plugins that add support for extra markups and languages to DocPad:
 - [less](https://github.com/docpad/docpad-plugin-less/) - Supports [LessCSS](http://lesscss.org) to CSS `.css.less`
 - [roole](https://github.com/georgeosddev/docpad-plugin-roole) - Supports [Roole](http://roole.org) to CSS `.css.roo`
 - [sass](https://github.com/docpad/docpad-plugin-sass/) - Supports [SCSS and SASS](http://sass-lang.com) to CSS (includes [compass](http://compass-style.org) support) `.css.(sass|scss)`
-- [nodesass](https://github.com/jking90/docpad-plugin-nodesass) - Supports [SCSS](http://sass-lang.com) to CSS (using [node-sass](https://github.com/andrew/node-sass)) `.css.scss`
+- [nodesass](https://github.com/docpad/docpad-plugin-nodesass) - Supports [SCSS](http://sass-lang.com) to CSS (using [node-sass](https://github.com/andrew/node-sass)) `.css.scss`
 - [styl](https://github.com/docpad/docpad-plugin-styl/) - Supports [Styl](https://github.com/visionmedia/styl) to CSS `.css.styl`
 - [stylus](https://github.com/docpad/docpad-plugin-stylus/) - Supports [Stylus](http://learnboost.github.com/stylus/) to CSS `.css.(styl|stylus)`
 
@@ -90,7 +90,7 @@ These are plugins that add extra functionality to DocPad:
 - [cachr](https://github.com/docpad/docpad-plugin-cachr/) - Allows you to cache remote URLs locally from within your templates
 - [cleancss](https://github.com/docpad/docpad-plugin-cleancss) - Concatinate and minify CSS files with the `cleancss: true` meta data
 - [cleanurls](https://github.com/docpad/docpad-plugin-cleanurls/) - Adds support for URLs like `/blog/hello` as well as the original URL `/blog/hello.html`
-- [coffeelint](https://github.com/jking90/docpad-plugin-coffeelint) - Prints [coffeelint](http://www.coffeelint.org) errors to the console
+- [coffeelint](https://github.com/docpad/docpad-plugin-coffeelint) - Prints [coffeelint](http://www.coffeelint.org) errors to the console
 - [csv](https://github.com/CycoPH/docpad-plugin-csv/) - Adds support for CSV data mapping. The comma seperated data files work just like a database, map from column 1 to column 2
 - [datefromfilename](https://github.com/grassator/docpad-plugin-datefromfilename) - Automaticaly set the `date` meta-data property by determining it from the document's filename
 - [dateurls](https://github.com/mgroves84/docpad-plugin-dateurls/) - Adds support for date-based URLs like `/2013/04/27/hello.html`
@@ -104,7 +104,7 @@ These are plugins that add extra functionality to DocPad:
 - [highlightjs](https://github.com/docpad/docpad-plugin-highlightjs/) - Adds [Highlight.js](https://github.com/isagalaev/highlight.js) syntax highlighting to code snippets
 - [ignoreincludes](https://github.com/rantecki/docpad-plugin-ignoreincludes) - Avoid writing include files to the `/out` directory
 - [jsexc](https://github.com/JeffreyZhao/docpad-plugin-jscexc) - Adds the ability to apply AOT compilation to JavaScript files
-- [jshint](https://github.com/jking90/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com) errors to the console
+- [jshint](https://github.com/docpad/docpad-plugin-jshint) - Prints [JSHint](http://www.jshint.com) errors to the console
 - [jsonfragment](https://github.com/field/docpad-plugin-jsonfragment) - Writes each documents content without layout and its meta data into a separate `.json` file for quick loading via AJAX.
 - [livereload](https://github.com/docpad/docpad-plugin-livereload) - Automatically reloads the page whenever a regeneration is performed
 - [lunr](https://github.com/brockfanning/docpad-plugin-lunr) - Client-side full-text and faceted search using [Lunr.js](http://lunrjs.com)
